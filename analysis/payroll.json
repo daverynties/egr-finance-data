@@ -1,0 +1,538 @@
+{
+  "method": "Payroll costs = PR-journal debits minus credits on Expenditure-type accounts only (cash/balance-sheet sides of the payroll entries excluded; PR journals net to $0 by double-entry). Excludes interfund transfers and GASB-34 fund. PR entries are twice-monthly summary postings (e.g. 'SUMMARY PR 07/13/2023'); individual paycheck detail is not in these files.",
+  "currency": "USD",
+  "fiscal_year": "July 1 - June 30",
+  "fy2024": {
+    "total_payroll": 9128711.86,
+    "pr_journal_lines": 3499,
+    "by_fund": {
+      "101": 7358387.13,
+      "592": 858483.3,
+      "202": 361332.99,
+      "203": 352470.17,
+      "692": 168899.06,
+      "677": 29139.21
+    },
+    "by_department": [
+      {
+        "fund": "101",
+        "dept": "345",
+        "dept_name": "PUBLIC SAFETY",
+        "payroll": 4277115.72
+      },
+      {
+        "fund": "101",
+        "dept": "751",
+        "dept_name": "RECREATION",
+        "payroll": 689655.04
+      },
+      {
+        "fund": "592",
+        "dept": "542",
+        "dept_name": "MAINS AND HYDRANTS",
+        "payroll": 621234.6
+      },
+      {
+        "fund": "101",
+        "dept": "260",
+        "dept_name": "FINANCE",
+        "payroll": 533955.63
+      },
+      {
+        "fund": "101",
+        "dept": "172",
+        "dept_name": "CITY MANAGER",
+        "payroll": 370884.94
+      },
+      {
+        "fund": "101",
+        "dept": "265",
+        "dept_name": "CITY BUILDINGS",
+        "payroll": 266824.71
+      },
+      {
+        "fund": "101",
+        "dept": "778",
+        "dept_name": "GROUNDS MAINTENANCE",
+        "payroll": 262922.34
+      },
+      {
+        "fund": "101",
+        "dept": "528",
+        "dept_name": "YARD WASTE COLLECTION/REFUSE/COMPOST",
+        "payroll": 203433.24
+      },
+      {
+        "fund": "692",
+        "dept": "570",
+        "dept_name": "MOTOR EQUIPMENT EXPENDITURES",
+        "payroll": 168899.06
+      },
+      {
+        "fund": "592",
+        "dept": "550",
+        "dept_name": "SEWER EXPENDITURES",
+        "payroll": 161553.69
+      },
+      {
+        "fund": "101",
+        "dept": "209",
+        "dept_name": "ASSESSOR",
+        "payroll": 153837.16
+      },
+      {
+        "fund": "101",
+        "dept": "756",
+        "dept_name": "POOL PROGRAMS",
+        "payroll": 144525.18
+      },
+      {
+        "fund": "202",
+        "dept": "463",
+        "dept_name": "ROUTINE MAINTENANCE",
+        "payroll": 137490.29
+      },
+      {
+        "fund": "203",
+        "dept": "463",
+        "dept_name": "ROUTINE MAINTENANCE",
+        "payroll": 135638.25
+      },
+      {
+        "fund": "101",
+        "dept": "371",
+        "dept_name": "ZONING ADMINISTRATION",
+        "payroll": 115703.65
+      },
+      {
+        "fund": "101",
+        "dept": "779",
+        "dept_name": "RECREATION SPORTS",
+        "payroll": 98959.06
+      },
+      {
+        "fund": "202",
+        "dept": "483",
+        "dept_name": "STREET ADMINISTRATION",
+        "payroll": 81307.54
+      },
+      {
+        "fund": "203",
+        "dept": "483",
+        "dept_name": "STREET ADMINISTRATION",
+        "payroll": 81301.11
+      },
+      {
+        "fund": "101",
+        "dept": "771",
+        "dept_name": "TREE MAINTENANCE AND REMOVAL",
+        "payroll": 68873.8
+      },
+      {
+        "fund": "203",
+        "dept": "447",
+        "dept_name": "CITY ENGINEERING",
+        "payroll": 67399.99
+      },
+      {
+        "fund": "592",
+        "dept": "447",
+        "dept_name": "CITY ENGINEERING",
+        "payroll": 67375.13
+      },
+      {
+        "fund": "202",
+        "dept": "447",
+        "dept_name": "CITY ENGINEERING",
+        "payroll": 67369.24
+      },
+      {
+        "fund": "202",
+        "dept": "478",
+        "dept_name": "WINTER MAINTENANCE",
+        "payroll": 60067.29
+      },
+      {
+        "fund": "101",
+        "dept": "777",
+        "dept_name": "RECREATION PROGRAMMING",
+        "payroll": 53913.75
+      },
+      {
+        "fund": "203",
+        "dept": "478",
+        "dept_name": "WINTER MAINTENANCE",
+        "payroll": 52757.05
+      },
+      {
+        "fund": "101",
+        "dept": "781",
+        "dept_name": "MIDDLE SCHOOL SPORTS",
+        "payroll": 45784.64
+      },
+      {
+        "fund": "677",
+        "dept": "852",
+        "dept_name": "HEALTH CARE ADMINISTRATION",
+        "payroll": 29139.21
+      },
+      {
+        "fund": "101",
+        "dept": "192",
+        "dept_name": "ELECTIONS",
+        "payroll": 20518.77
+      },
+      {
+        "fund": "101",
+        "dept": "485",
+        "dept_name": "GASLIGHT VILLAGE BUSINESS DISTRICT",
+        "payroll": 20222.92
+      },
+      {
+        "fund": "101",
+        "dept": "783",
+        "dept_name": "AQUATIC CLUB (WAVES)",
+        "payroll": 18479.43
+      },
+      {
+        "fund": "203",
+        "dept": "474",
+        "dept_name": "TRAFFIC SERVICES",
+        "payroll": 15373.77
+      },
+      {
+        "fund": "202",
+        "dept": "474",
+        "dept_name": "TRAFFIC SERVICES",
+        "payroll": 15098.63
+      },
+      {
+        "fund": "101",
+        "dept": "101",
+        "dept_name": "CITY COMMISSION",
+        "payroll": 8804.37
+      },
+      {
+        "fund": "592",
+        "dept": "543",
+        "dept_name": "METERS",
+        "payroll": 7873.03
+      },
+      {
+        "fund": "101",
+        "dept": "775",
+        "dept_name": "SPECIAL EVENTS",
+        "payroll": 3972.78
+      },
+      {
+        "fund": "592",
+        "dept": "545",
+        "dept_name": "METER READING AND COLLECTING",
+        "payroll": 446.85
+      }
+    ],
+    "payroll_share_of_all_operating_exp": 29.4,
+    "payroll_share_of_headline_spending": 33.1,
+    "all_operating_exp_for_reference": 31025082.92
+  },
+  "fy2025": {
+    "total_payroll": 9033577.8,
+    "pr_journal_lines": 3594,
+    "by_fund": {
+      "101": 7188298.68,
+      "592": 874757.05,
+      "203": 424108.82,
+      "202": 374448.46,
+      "692": 141140.38,
+      "677": 30824.41
+    },
+    "by_department": [
+      {
+        "fund": "101",
+        "dept": "345",
+        "dept_name": "PUBLIC SAFETY",
+        "payroll": 3957001.13
+      },
+      {
+        "fund": "101",
+        "dept": "751",
+        "dept_name": "RECREATION",
+        "payroll": 755527.01
+      },
+      {
+        "fund": "592",
+        "dept": "542",
+        "dept_name": "MAINS AND HYDRANTS",
+        "payroll": 623031.03
+      },
+      {
+        "fund": "101",
+        "dept": "260",
+        "dept_name": "FINANCE",
+        "payroll": 551017.63
+      },
+      {
+        "fund": "101",
+        "dept": "172",
+        "dept_name": "CITY MANAGER",
+        "payroll": 361891.37
+      },
+      {
+        "fund": "101",
+        "dept": "265",
+        "dept_name": "CITY BUILDINGS",
+        "payroll": 302038.67
+      },
+      {
+        "fund": "101",
+        "dept": "778",
+        "dept_name": "GROUNDS MAINTENANCE",
+        "payroll": 273325.6
+      },
+      {
+        "fund": "101",
+        "dept": "528",
+        "dept_name": "YARD WASTE COLLECTION/REFUSE/COMPOST",
+        "payroll": 207743.86
+      },
+      {
+        "fund": "592",
+        "dept": "550",
+        "dept_name": "SEWER EXPENDITURES",
+        "payroll": 171213.28
+      },
+      {
+        "fund": "101",
+        "dept": "209",
+        "dept_name": "ASSESSOR",
+        "payroll": 168007.27
+      },
+      {
+        "fund": "203",
+        "dept": "463",
+        "dept_name": "ROUTINE MAINTENANCE",
+        "payroll": 149053.79
+      },
+      {
+        "fund": "692",
+        "dept": "570",
+        "dept_name": "MOTOR EQUIPMENT EXPENDITURES",
+        "payroll": 141140.38
+      },
+      {
+        "fund": "202",
+        "dept": "463",
+        "dept_name": "ROUTINE MAINTENANCE",
+        "payroll": 129104.18
+      },
+      {
+        "fund": "101",
+        "dept": "779",
+        "dept_name": "RECREATION SPORTS",
+        "payroll": 121959.24
+      },
+      {
+        "fund": "101",
+        "dept": "371",
+        "dept_name": "ZONING ADMINISTRATION",
+        "payroll": 121940.27
+      },
+      {
+        "fund": "203",
+        "dept": "478",
+        "dept_name": "WINTER MAINTENANCE",
+        "payroll": 101751.72
+      },
+      {
+        "fund": "101",
+        "dept": "756",
+        "dept_name": "POOL PROGRAMS",
+        "payroll": 97249.91
+      },
+      {
+        "fund": "202",
+        "dept": "483",
+        "dept_name": "STREET ADMINISTRATION",
+        "payroll": 81929.74
+      },
+      {
+        "fund": "203",
+        "dept": "483",
+        "dept_name": "STREET ADMINISTRATION",
+        "payroll": 81922.34
+      },
+      {
+        "fund": "202",
+        "dept": "478",
+        "dept_name": "WINTER MAINTENANCE",
+        "payroll": 73569.66
+      },
+      {
+        "fund": "203",
+        "dept": "447",
+        "dept_name": "CITY ENGINEERING",
+        "payroll": 68196.86
+      },
+      {
+        "fund": "592",
+        "dept": "447",
+        "dept_name": "CITY ENGINEERING",
+        "payroll": 68171.28
+      },
+      {
+        "fund": "202",
+        "dept": "447",
+        "dept_name": "CITY ENGINEERING",
+        "payroll": 68164.82
+      },
+      {
+        "fund": "101",
+        "dept": "771",
+        "dept_name": "TREE MAINTENANCE AND REMOVAL",
+        "payroll": 66263.72
+      },
+      {
+        "fund": "101",
+        "dept": "777",
+        "dept_name": "RECREATION PROGRAMMING",
+        "payroll": 62011.62
+      },
+      {
+        "fund": "101",
+        "dept": "781",
+        "dept_name": "MIDDLE SCHOOL SPORTS",
+        "payroll": 51894.48
+      },
+      {
+        "fund": "101",
+        "dept": "783",
+        "dept_name": "AQUATIC CLUB (WAVES)",
+        "payroll": 31609.49
+      },
+      {
+        "fund": "677",
+        "dept": "852",
+        "dept_name": "HEALTH CARE ADMINISTRATION",
+        "payroll": 30824.41
+      },
+      {
+        "fund": "203",
+        "dept": "474",
+        "dept_name": "TRAFFIC SERVICES",
+        "payroll": 23184.11
+      },
+      {
+        "fund": "101",
+        "dept": "192",
+        "dept_name": "ELECTIONS",
+        "payroll": 22294.19
+      },
+      {
+        "fund": "202",
+        "dept": "474",
+        "dept_name": "TRAFFIC SERVICES",
+        "payroll": 21680.06
+      },
+      {
+        "fund": "101",
+        "dept": "485",
+        "dept_name": "GASLIGHT VILLAGE BUSINESS DISTRICT",
+        "payroll": 20310.89
+      },
+      {
+        "fund": "592",
+        "dept": "543",
+        "dept_name": "METERS",
+        "payroll": 10517.82
+      },
+      {
+        "fund": "101",
+        "dept": "101",
+        "dept_name": "CITY COMMISSION",
+        "payroll": 8928.59
+      },
+      {
+        "fund": "101",
+        "dept": "775",
+        "dept_name": "SPECIAL EVENTS",
+        "payroll": 7283.74
+      },
+      {
+        "fund": "592",
+        "dept": "545",
+        "dept_name": "METER READING AND COLLECTING",
+        "payroll": 1823.64
+      }
+    ],
+    "payroll_share_of_all_operating_exp": 29.3,
+    "payroll_share_of_headline_spending": 33.8,
+    "all_operating_exp_for_reference": 30841463.63
+  },
+  "largest_yoy_changes": [
+    {
+      "fund": "101",
+      "dept": "345",
+      "dept_name": "PUBLIC SAFETY",
+      "fy2024": 4277115.72,
+      "fy2025": 3957001.13,
+      "change": -320114.59,
+      "change_pct": -7.5
+    },
+    {
+      "fund": "101",
+      "dept": "751",
+      "dept_name": "RECREATION",
+      "fy2024": 689655.04,
+      "fy2025": 755527.01,
+      "change": 65871.97,
+      "change_pct": 9.6
+    },
+    {
+      "fund": "203",
+      "dept": "478",
+      "dept_name": "WINTER MAINTENANCE",
+      "fy2024": 52757.05,
+      "fy2025": 101751.72,
+      "change": 48994.67,
+      "change_pct": 92.9
+    },
+    {
+      "fund": "101",
+      "dept": "756",
+      "dept_name": "POOL PROGRAMS",
+      "fy2024": 144525.18,
+      "fy2025": 97249.91,
+      "change": -47275.27,
+      "change_pct": -32.7
+    },
+    {
+      "fund": "101",
+      "dept": "265",
+      "dept_name": "CITY BUILDINGS",
+      "fy2024": 266824.71,
+      "fy2025": 302038.67,
+      "change": 35213.96,
+      "change_pct": 13.2
+    },
+    {
+      "fund": "692",
+      "dept": "570",
+      "dept_name": "MOTOR EQUIPMENT EXPENDITURES",
+      "fy2024": 168899.06,
+      "fy2025": 141140.38,
+      "change": -27758.68,
+      "change_pct": -16.4
+    }
+  ],
+  "total_yoy": {
+    "fy2024": 9128711.86,
+    "fy2025": 9033577.8,
+    "change": -95134.06,
+    "change_pct": -1.0
+  },
+  "notes": [
+    "PR journals also post to pooled-cash (099) and Health Care Fund (677) cash accounts; only the expenditure side is counted here to avoid double-counting.",
+    "Public safety uses distinct pay codes (7110/7130/7170, labeled 'NO FICA') vs. other departments (7060); both are included.",
+    "Fringe benefits booked outside PR journals (e.g., direct pension contributions) are not in these totals."
+  ]
+}

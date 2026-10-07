@@ -1,0 +1,332 @@
+{
+  "fiscal_year": "July 1 - June 30",
+  "currency": "USD",
+  "method": "Net revenue = credits minus debits on chart-of-accounts type 'Revenue'. Interfund transfers-in (dept 930) and GASB-34 fund 901 excluded. Bond/debt proceeds shown separately as financing, not operating revenue.",
+  "citywide_by_source": {
+    "fy2024": {
+      "charges for services & fees": 6381927.71,
+      "fines, forfeits & penalties": 72758.21,
+      "gasb34 (excluded)": 0.0,
+      "grants": 583448.14,
+      "insurance premium contributions": 1622672.68,
+      "interest & investment earnings": 2768319.55,
+      "interfund transfers in (excluded)": 2726455.5,
+      "licenses & permits": 76808.82,
+      "other revenue": 3582456.32,
+      "pension contributions": 1389398.49,
+      "property taxes": 12862164.31,
+      "property taxes (interest & penalties)": 17824.99,
+      "special assessments": 10995.5,
+      "state aid (general)": 3396527.43,
+      "state distributions (other)": 187764.29,
+      "state revenue sharing (other)": 24630.55,
+      "state revenue sharing (sales tax)": 1359843.0
+    },
+    "fy2025": {
+      "bond/debt proceeds (financing)": 1735000.0,
+      "charges for services & fees": 6403825.13,
+      "fines, forfeits & penalties": 67359.12,
+      "grants": 294381.99,
+      "insurance premium contributions": 1971426.05,
+      "interest & investment earnings": 2548352.57,
+      "interfund transfers in (excluded)": 3132449.83,
+      "licenses & permits": 84021.25,
+      "other revenue": 1555157.67,
+      "pension contributions": 1104487.22,
+      "property taxes": 13621562.59,
+      "property taxes (interest & penalties)": 19918.41,
+      "special assessments": 19621.77,
+      "state aid (general)": 1675578.43,
+      "state distributions (other)": 89387.43,
+      "state revenue sharing (other)": 23796.63,
+      "state revenue sharing (sales tax)": 1355969.0
+    }
+  },
+  "year_over_year": {
+    "interest & investment earnings": {
+      "fy2024": 2768319.55,
+      "fy2025": 2548352.57,
+      "change": -219966.98,
+      "change_pct": -7.9
+    },
+    "licenses & permits": {
+      "fy2024": 76808.82,
+      "fy2025": 84021.25,
+      "change": 7212.43,
+      "change_pct": 9.4
+    },
+    "pension contributions": {
+      "fy2024": 1389398.49,
+      "fy2025": 1104487.22,
+      "change": -284911.27,
+      "change_pct": -20.5
+    },
+    "state distributions (other)": {
+      "fy2024": 187764.29,
+      "fy2025": 89387.43,
+      "change": -98376.86,
+      "change_pct": -52.4
+    },
+    "special assessments": {
+      "fy2024": 10995.5,
+      "fy2025": 19621.77,
+      "change": 8626.27,
+      "change_pct": 78.5
+    },
+    "property taxes": {
+      "fy2024": 12862164.31,
+      "fy2025": 13621562.59,
+      "change": 759398.28,
+      "change_pct": 5.9
+    },
+    "state revenue sharing (sales tax)": {
+      "fy2024": 1359843.0,
+      "fy2025": 1355969.0,
+      "change": -3874.0,
+      "change_pct": -0.3
+    },
+    "charges for services & fees": {
+      "fy2024": 6381927.71,
+      "fy2025": 6403825.13,
+      "change": 21897.42,
+      "change_pct": 0.3
+    },
+    "state revenue sharing (other)": {
+      "fy2024": 24630.55,
+      "fy2025": 23796.63,
+      "change": -833.92,
+      "change_pct": -3.4
+    },
+    "property taxes (interest & penalties)": {
+      "fy2024": 17824.99,
+      "fy2025": 19918.41,
+      "change": 2093.42,
+      "change_pct": 11.7
+    },
+    "other revenue": {
+      "fy2024": 3582456.32,
+      "fy2025": 1555157.67,
+      "change": -2027298.65,
+      "change_pct": -56.6
+    },
+    "gasb34 (excluded)": {
+      "fy2024": 0.0,
+      "fy2025": 0,
+      "change": 0.0,
+      "change_pct": null
+    },
+    "grants": {
+      "fy2024": 583448.14,
+      "fy2025": 294381.99,
+      "change": -289066.15,
+      "change_pct": -49.5
+    },
+    "interfund transfers in (excluded)": {
+      "fy2024": 2726455.5,
+      "fy2025": 3132449.83,
+      "change": 405994.33,
+      "change_pct": 14.9
+    },
+    "insurance premium contributions": {
+      "fy2024": 1622672.68,
+      "fy2025": 1971426.05,
+      "change": 348753.37,
+      "change_pct": 21.5
+    },
+    "state aid (general)": {
+      "fy2024": 3396527.43,
+      "fy2025": 1675578.43,
+      "change": -1720949.0,
+      "change_pct": -50.7
+    },
+    "bond/debt proceeds (financing)": {
+      "fy2024": 0,
+      "fy2025": 1735000.0,
+      "change": 1735000.0,
+      "change_pct": null
+    },
+    "fines, forfeits & penalties": {
+      "fy2024": 72758.21,
+      "fy2025": 67359.12,
+      "change": -5399.09,
+      "change_pct": -7.4
+    }
+  },
+  "by_fund_excl_transfers": {
+    "fy2024": {
+      "101": 14681888.03,
+      "202": 1160224.33,
+      "203": 456648.42,
+      "204": 1586763.43,
+      "265": 12137.79,
+      "286": 495460.0,
+      "308": 365978.59,
+      "372": 583691.12,
+      "408": 2178443.3,
+      "592": 5161921.56,
+      "677": 1499457.68,
+      "692": 875708.76,
+      "731": 4929732.31,
+      "736": 338489.17,
+      "810": 10995.5
+    },
+    "fy2025": {
+      "101": 15315338.83,
+      "202": 1139920.93,
+      "203": 444051.63,
+      "204": 1674469.55,
+      "205": 39000.0,
+      "265": 3777.56,
+      "286": 256340.26,
+      "308": 364252.2,
+      "372": 612324.21,
+      "408": 1776372.69,
+      "592": 5315325.09,
+      "677": 1861562.5,
+      "692": 882736.17,
+      "731": 2534517.93,
+      "736": 330233.94,
+      "810": 19621.77
+    }
+  },
+  "major_fund_detail": {
+    "101": {
+      "FY24": {
+        "charges for services & fees": 451134.12,
+        "fines, forfeits & penalties": 16475.35,
+        "grants": 129257.56,
+        "interest & investment earnings": 833764.64,
+        "licenses & permits": 76808.82,
+        "other revenue": 1432430.54,
+        "property taxes": 10337517.57,
+        "property taxes (interest & penalties)": 15031.93,
+        "state aid (general)": 4993.95,
+        "state revenue sharing (other)": 24630.55,
+        "state revenue sharing (sales tax)": 1359843.0
+      },
+      "FY25": {
+        "charges for services & fees": 409750.1,
+        "fines, forfeits & penalties": 18442.03,
+        "grants": 53708.92,
+        "interest & investment earnings": 878965.71,
+        "licenses & permits": 84021.25,
+        "other revenue": 1499987.31,
+        "property taxes": 10972979.34,
+        "property taxes (interest & penalties)": 17455.7,
+        "state aid (general)": 262.84,
+        "state revenue sharing (other)": 23796.63,
+        "state revenue sharing (sales tax)": 1355969.0
+      }
+    },
+    "202": {
+      "FY24": {
+        "interest & investment earnings": 2554.3,
+        "state aid (general)": 1037106.02,
+        "state distributions (other)": 120564.01
+      },
+      "FY25": {
+        "state aid (general)": 1086450.56,
+        "state distributions (other)": 53470.37
+      }
+    },
+    "203": {
+      "FY24": {
+        "interest & investment earnings": 65.68,
+        "state aid (general)": 389382.46,
+        "state distributions (other)": 67200.28
+      },
+      "FY25": {
+        "state aid (general)": 408134.57,
+        "state distributions (other)": 35917.06
+      }
+    },
+    "204": {
+      "FY24": {
+        "interest & investment earnings": 8993.34,
+        "property taxes": 1576026.49,
+        "property taxes (interest & penalties)": 1743.6
+      },
+      "FY25": {
+        "property taxes": 1672914.1,
+        "property taxes (interest & penalties)": 1555.45
+      }
+    },
+    "408": {
+      "FY24": {
+        "interest & investment earnings": 128443.3,
+        "other revenue": 2050000.0
+      },
+      "FY25": {
+        "bond/debt proceeds (financing)": 1735000.0,
+        "interest & investment earnings": 41372.69
+      }
+    },
+    "592": {
+      "FY24": {
+        "charges for services & fees": 5117743.18,
+        "fines, forfeits & penalties": 44145.07,
+        "interest & investment earnings": 33.31
+      },
+      "FY25": {
+        "charges for services & fees": 5128455.1,
+        "fines, forfeits & penalties": 45139.53,
+        "state aid (general)": 141730.46
+      }
+    },
+    "677": {
+      "FY24": {
+        "insurance premium contributions": 1452807.0,
+        "interest & investment earnings": 7920.95,
+        "other revenue": 38729.73
+      },
+      "FY25": {
+        "insurance premium contributions": 1823508.38,
+        "other revenue": 38054.12
+      }
+    },
+    "692": {
+      "FY24": {
+        "charges for services & fees": 813050.41,
+        "interest & investment earnings": 1362.3,
+        "other revenue": 61296.05
+      },
+      "FY25": {
+        "charges for services & fees": 865619.93,
+        "other revenue": 17116.24
+      }
+    },
+    "731": {
+      "FY24": {
+        "interest & investment earnings": 1575288.82,
+        "pension contributions": 1389398.49,
+        "state aid (general)": 1965045.0
+      },
+      "FY25": {
+        "interest & investment earnings": 1430030.71,
+        "pension contributions": 1104487.22
+      }
+    }
+  },
+  "reconciliation_sanity_check": {
+    "all_funds_revenue_excl_transfers": {
+      "FY24": 34337539.99,
+      "FY25": 32569845.26
+    },
+    "all_funds_gross_operating_expenditures": {
+      "FY24": 31025082.92,
+      "FY25": 30841463.63
+    },
+    "difference_revenue_minus_expenditures": {
+      "FY24": 3312457.07,
+      "FY25": 1728381.63
+    },
+    "caveat": "Positive difference does not equal fund-balance change: revenue is modified-accrual and includes bond proceeds (financing) and fiduciary-fund investment activity; expenditures exclude transfers-out. Audited GF balance rose $537,519 in FY2025 (ACFR via commission packet)."
+  },
+  "notes": [
+    "731-560-5390.01 'Monies Received From State' ($1,965,045 in FY2024, $0 in FY2025) sits in 'state aid (general)'; per methodology this mirrors the $1,965,045 pension transfer on 101-965-9950.12 which has no GL activity \u2014 treat as a pension funding movement, not recurring state aid.",
+    "408-671-6750.00 'Contrib from private sources' ($2,050,000 in FY2024, $0 in FY2025) sits in 'other revenue' \u2014 a one-time private contribution to the parks capital fund.",
+    "FY2025 bond/debt proceeds ($1,735,000 on 372-000-6980.00) match the Feb 2025 bond sale in the adopted budget; shown as financing, excluded from operating-revenue comparisons.",
+    "Interest & investment earnings include pension-trust (731) investment gains/losses, which swing with markets.",
+    "Insurance premium contributions (677/736) and pension contributions (731) are internal/fiduciary flows, reported for completeness, not as city operating revenue."
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "fund": "592",
+  "fund_name": "WATER & SEWER FUND (enterprise)",
+  "method": "Operating revenues = Revenue-type accounts excl. transfers-in (dept 930). Operating expenditures = Expenditure-type accounts excl. transfers-out (dept 965). Transfers shown separately. FY2026 YTD included for context (thru 3/31/2026).",
+  "fy2024": {
+    "operating_revenues": 5161921.56,
+    "operating_expenditures": 4193405.2,
+    "operating_margin": 968516.36,
+    "operating_margin_pct": 18.8,
+    "transfers_in": 250000.0,
+    "transfers_out": 0.0,
+    "net_after_transfers": 1218516.36,
+    "revenue_detail_over_1k": {
+      "592-600-6400.00": {
+        "desc": "WATER READINESS",
+        "amount": 2891138.03
+      },
+      "592-600-6460.00": {
+        "desc": "SEWAGE DISPOSAL CHARGES",
+        "amount": 1308653.19
+      },
+      "592-600-6420.00": {
+        "desc": "METERED WATER SALES",
+        "amount": 903818.73
+      },
+      "592-000-6570.00": {
+        "desc": "PENALTIES & INTEREST",
+        "amount": 44145.07
+      },
+      "592-600-6470.00": {
+        "desc": "WATER TAP & METER REVENUE",
+        "amount": 8514.1
+      },
+      "592-600-6540.00": {
+        "desc": "MISCELLANEOUS REVENUE",
+        "amount": 5619.13
+      }
+    },
+    "top_expense_accounts": {
+      "592-550-8175.00": {
+        "desc": "BULK SUPPLY - SEWER",
+        "amount": 1077652.8
+      },
+      "592-542-8170.00": {
+        "desc": "BULK SUPPLY - WATER",
+        "amount": 875661.74
+      },
+      "592-560-9680.00": {
+        "desc": "DEPRECIATION",
+        "amount": 628686.94
+      },
+      "592-542-7060.00": {
+        "desc": "SALARIES & WAGES - PERMANENT",
+        "amount": 342888.88
+      },
+      "592-542-9470.00": {
+        "desc": "AUTO EXPENSE",
+        "amount": 135589.31
+      },
+      "592-542-7170.00": {
+        "desc": "HEALTH CARE",
+        "amount": 126517.37
+      },
+      "592-542-8010.00": {
+        "desc": "CONTRACTUAL SERVICES",
+        "amount": 114444.96
+      },
+      "592-550-7060.00": {
+        "desc": "SALARIES & WAGES - PERMANENT",
+        "amount": 104227.81
+      },
+      "592-560-8070.00": {
+        "desc": "GENERAL FUND FEES",
+        "amount": 99999.96
+      },
+      "592-542-7400.18": {
+        "desc": "WATER MAIN MTRL AND ACCES",
+        "amount": 74939.77
+      },
+      "592-545-8010.00": {
+        "desc": "CONTRACTUAL SERVICES",
+        "amount": 64505.16
+      },
+      "592-542-7190.00": {
+        "desc": "PENSION",
+        "amount": 58945.89
+      }
+    }
+  },
+  "fy2025": {
+    "operating_revenues": 5315325.09,
+    "operating_expenditures": 4001021.14,
+    "operating_margin": 1314303.95,
+    "operating_margin_pct": 24.7,
+    "transfers_in": 287438.06,
+    "transfers_out": 0.0,
+    "net_after_transfers": 1601742.01,
+    "revenue_detail_over_1k": {
+      "592-600-6400.00": {
+        "desc": "WATER READINESS",
+        "amount": 2893615.61
+      },
+      "592-600-6460.00": {
+        "desc": "SEWAGE DISPOSAL CHARGES",
+        "amount": 1305276.7
+      },
+      "592-600-6420.00": {
+        "desc": "METERED WATER SALES",
+        "amount": 908970.57
+      },
+      "592-000-5390.01": {
+        "desc": "MONIES RECEIVED FROM STATE",
+        "amount": 141730.46
+      },
+      "592-000-6570.00": {
+        "desc": "PENALTIES & INTEREST",
+        "amount": 45139.53
+      },
+      "592-600-6540.00": {
+        "desc": "MISCELLANEOUS REVENUE",
+        "amount": 11454.65
+      },
+      "592-600-6470.00": {
+        "desc": "WATER TAP & METER REVENUE",
+        "amount": 9137.57
+      }
+    },
+    "top_expense_accounts": {
+      "592-550-8175.00": {
+        "desc": "BULK SUPPLY - SEWER",
+        "amount": 1040114.37
+      },
+      "592-542-8170.00": {
+        "desc": "BULK SUPPLY - WATER",
+        "amount": 933900.56
+      },
+      "592-560-9680.00": {
+        "desc": "DEPRECIATION",
+        "amount": 680986.18
+      },
+      "592-542-7060.00": {
+        "desc": "SALARIES & WAGES - PERMANENT",
+        "amount": 316718.01
+      },
+      "592-542-9470.00": {
+        "desc": "AUTO EXPENSE",
+        "amount": 142188.76
+      },
+      "592-542-7170.00": {
+        "desc": "HEALTH CARE",
+        "amount": 110403.85
+      },
+      "592-550-7060.00": {
+        "desc": "SALARIES & WAGES - PERMANENT",
+        "amount": 106441.5
+      },
+      "592-560-8070.00": {
+        "desc": "GENERAL FUND FEES",
+        "amount": 99999.96
+      },
+      "592-542-8010.52": {
+        "desc": "LSL HYDRO EXCAVATING",
+        "amount": 82759.75
+      },
+      "592-542-7400.18": {
+        "desc": "WATER MAIN MTRL AND ACCES",
+        "amount": 61383.31
+      },
+      "592-542-7190.00": {
+        "desc": "PENSION",
+        "amount": 60485.65
+      },
+      "592-545-8010.00": {
+        "desc": "CONTRACTUAL SERVICES",
+        "amount": 60217.04
+      }
+    }
+  },
+  "fy2026_ytd_thru_2026_03_31": {
+    "budgeted_revenue": 5443470.0,
+    "ytd_revenue": 4039604.6,
+    "budgeted_expenditures": 6775270.0,
+    "ytd_expenditures": 3765726.19
+  },
+  "is_self_sustaining": true,
+  "verdict": "Yes \u2014 the Water & Sewer utility pays for itself. In both FY2024 and FY2025, operating revenues (mainly metered water sales and sewage disposal charges) exceeded operating expenditures, leaving an operating margin of $968,516 in FY2024 and $1,314,304 in FY2025. Transfers were small relative to operations (in: $287,438; out: $0 in FY2025). The utility is not being subsidized by the General Fund, nor is it subsidizing other city operations at a material scale.",
+  "notes": [
+    "Wholesale water purchases from the City of Grand Rapids (~$2.0M/yr, per check register) are the utility's largest cost and are booked in fund 592.",
+    "Capital spending on water/sewer infrastructure flows through 592 expenditure accounts; large projects can swing the margin year to year."
+  ]
+}

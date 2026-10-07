@@ -1,0 +1,969 @@
+{
+  "as_of": "2026-03-31",
+  "expected_pace_pct": 75,
+  "method": "FY2026 amended budget vs YTD actual thru 3/31/2026 (9 of 12 months = 75% pace). Expenditures exclude interfund transfers-out (dept 965) and GASB-34 fund 901. A 3/31 snapshot is NOT an overrun finding: spending is seasonal, capital purchases are lumpy, budgets are routinely amended before year-end.",
+  "by_fund": [
+    {
+      "fund": "265",
+      "fund_name": "DRUG LAW ENFORCEMENT FUND",
+      "amended_budget": 1200.0,
+      "ytd_actual": 1200.0,
+      "pct_consumed": 100.0,
+      "pace_flag": "ahead of pace"
+    },
+    {
+      "fund": "308",
+      "fund_name": "PARKS MILLAGE DEBT SERVICE",
+      "amended_budget": 361500.0,
+      "ytd_actual": 361000.0,
+      "pct_consumed": 99.9,
+      "pace_flag": "ahead of pace"
+    },
+    {
+      "fund": "372",
+      "fund_name": "MUNICIPAL COMPLEX DEBT SERVICE",
+      "amended_budget": 631850.0,
+      "ytd_actual": 631350.0,
+      "pct_consumed": 99.9,
+      "pace_flag": "ahead of pace"
+    },
+    {
+      "fund": "309",
+      "fund_name": "PARKS MILLAGE DEBT SERVICE (2025)",
+      "amended_budget": 146230.0,
+      "ytd_actual": 145730.84,
+      "pct_consumed": 99.7,
+      "pace_flag": "ahead of pace"
+    },
+    {
+      "fund": "408",
+      "fund_name": "PARKS CAPITAL PROJECT FUND",
+      "amended_budget": 1701200.0,
+      "ytd_actual": 1691715.32,
+      "pct_consumed": 99.4,
+      "pace_flag": "ahead of pace"
+    },
+    {
+      "fund": "692",
+      "fund_name": "MOTOR EQUIPMENT REVOLVING FUND",
+      "amended_budget": 2123940.0,
+      "ytd_actual": 1873326.15,
+      "pct_consumed": 88.2,
+      "pace_flag": "ahead of pace"
+    },
+    {
+      "fund": "203",
+      "fund_name": "LOCAL STREET FUND",
+      "amended_budget": 2114940.0,
+      "ytd_actual": 1758517.84,
+      "pct_consumed": 83.1,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "677",
+      "fund_name": "HEALTH CARE FUND",
+      "amended_budget": 2321000.0,
+      "ytd_actual": 1847040.37,
+      "pct_consumed": 79.6,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "731",
+      "fund_name": "RETIREMENT SYSTEM FUND",
+      "amended_budget": 1575000.0,
+      "ytd_actual": 1176742.57,
+      "pct_consumed": 74.7,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "736",
+      "fund_name": "OTHER POSTEMPLOYMENT BENEFITS TRUST FUND",
+      "amended_budget": 469000.0,
+      "ytd_actual": 348096.59,
+      "pct_consumed": 74.2,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "amended_budget": 14787100.0,
+      "ytd_actual": 9609771.59,
+      "pct_consumed": 65.0,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "204",
+      "fund_name": "MUNICIPAL STREET FUND",
+      "amended_budget": 517900.0,
+      "ytd_actual": 310072.71,
+      "pct_consumed": 59.9,
+      "pace_flag": "behind pace"
+    },
+    {
+      "fund": "592",
+      "fund_name": "WATER & SEWER FUND",
+      "amended_budget": 6775270.0,
+      "ytd_actual": 3765726.19,
+      "pct_consumed": 55.6,
+      "pace_flag": "behind pace"
+    },
+    {
+      "fund": "202",
+      "fund_name": "MAJOR STREET FUND",
+      "amended_budget": 2743670.0,
+      "ytd_actual": 1488815.87,
+      "pct_consumed": 54.3,
+      "pace_flag": "behind pace"
+    }
+  ],
+  "by_department": [
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "346",
+      "dept_name": "PUBLIC SAFETY STATE PROGRAMS",
+      "amended_budget": 5500.0,
+      "ytd_actual": 8221.76,
+      "pct_consumed": 149.5,
+      "pace_flag": "OVER BUDGET"
+    },
+    {
+      "fund": "265",
+      "fund_name": "DRUG LAW ENFORCEMENT FUND",
+      "dept": "347",
+      "dept_name": "DRUG SEIZURE",
+      "amended_budget": 1200.0,
+      "ytd_actual": 1200.0,
+      "pct_consumed": 100.0,
+      "pace_flag": "ahead of pace"
+    },
+    {
+      "fund": "203",
+      "fund_name": "LOCAL STREET FUND",
+      "dept": "451",
+      "dept_name": "STREET CONSTRUCTION",
+      "amended_budget": 887000.0,
+      "ytd_actual": 886026.9,
+      "pct_consumed": 99.9,
+      "pace_flag": "ahead of pace"
+    },
+    {
+      "fund": "308",
+      "fund_name": "PARKS MILLAGE DEBT SERVICE",
+      "dept": "905",
+      "dept_name": "DEBT SERVICE",
+      "amended_budget": 361500.0,
+      "ytd_actual": 361000.0,
+      "pct_consumed": 99.9,
+      "pace_flag": "ahead of pace"
+    },
+    {
+      "fund": "372",
+      "fund_name": "MUNICIPAL COMPLEX DEBT SERVICE",
+      "dept": "905",
+      "dept_name": "DEBT SERVICE",
+      "amended_budget": 631850.0,
+      "ytd_actual": 631350.0,
+      "pct_consumed": 99.9,
+      "pace_flag": "ahead of pace"
+    },
+    {
+      "fund": "309",
+      "fund_name": "PARKS MILLAGE DEBT SERVICE (2025)",
+      "dept": "905",
+      "dept_name": "DEBT SERVICE",
+      "amended_budget": 146230.0,
+      "ytd_actual": 145730.84,
+      "pct_consumed": 99.7,
+      "pace_flag": "ahead of pace"
+    },
+    {
+      "fund": "408",
+      "fund_name": "PARKS CAPITAL PROJECT FUND",
+      "dept": "786",
+      "dept_name": "PARKS TURF PROJECTS",
+      "amended_budget": 240000.0,
+      "ytd_actual": 239191.27,
+      "pct_consumed": 99.7,
+      "pace_flag": "ahead of pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "447",
+      "dept_name": "CITY ENGINEERING",
+      "amended_budget": 58000.0,
+      "ytd_actual": 57739.04,
+      "pct_consumed": 99.6,
+      "pace_flag": "ahead of pace"
+    },
+    {
+      "fund": "408",
+      "fund_name": "PARKS CAPITAL PROJECT FUND",
+      "dept": "785",
+      "dept_name": "PARKS PLAYGROUND PROJECTS",
+      "amended_budget": 808500.0,
+      "ytd_actual": 805137.12,
+      "pct_consumed": 99.6,
+      "pace_flag": "ahead of pace"
+    },
+    {
+      "fund": "408",
+      "fund_name": "PARKS CAPITAL PROJECT FUND",
+      "dept": "788",
+      "dept_name": "PARKS MANHATTAN PROJECT MILLAGE",
+      "amended_budget": 652700.0,
+      "ytd_actual": 647386.93,
+      "pct_consumed": 99.2,
+      "pace_flag": "ahead of pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "875",
+      "dept_name": "GENERAL ADMINISTRATION",
+      "amended_budget": 860170.0,
+      "ytd_actual": 850579.0,
+      "pct_consumed": 98.9,
+      "pace_flag": "ahead of pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "621",
+      "dept_name": "LAKE TREATMENT",
+      "amended_budget": 25000.0,
+      "ytd_actual": 24289.64,
+      "pct_consumed": 97.2,
+      "pace_flag": "ahead of pace"
+    },
+    {
+      "fund": "203",
+      "fund_name": "LOCAL STREET FUND",
+      "dept": "478",
+      "dept_name": "WINTER MAINTENANCE",
+      "amended_budget": 236490.0,
+      "ytd_actual": 222253.88,
+      "pct_consumed": 94.0,
+      "pace_flag": "ahead of pace"
+    },
+    {
+      "fund": "203",
+      "fund_name": "LOCAL STREET FUND",
+      "dept": "474",
+      "dept_name": "TRAFFIC SERVICES",
+      "amended_budget": 40180.0,
+      "ytd_actual": 36052.13,
+      "pct_consumed": 89.7,
+      "pace_flag": "ahead of pace"
+    },
+    {
+      "fund": "692",
+      "fund_name": "MOTOR EQUIPMENT REVOLVING FUND",
+      "dept": "570",
+      "dept_name": "MOTOR EQUIPMENT EXPENDITURES",
+      "amended_budget": 2123940.0,
+      "ytd_actual": 1873326.15,
+      "pct_consumed": 88.2,
+      "pace_flag": "ahead of pace"
+    },
+    {
+      "fund": "202",
+      "fund_name": "MAJOR STREET FUND",
+      "dept": "478",
+      "dept_name": "WINTER MAINTENANCE",
+      "amended_budget": 286150.0,
+      "ytd_actual": 244894.37,
+      "pct_consumed": 85.6,
+      "pace_flag": "ahead of pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "781",
+      "dept_name": "MIDDLE SCHOOL SPORTS",
+      "amended_budget": 81450.0,
+      "ytd_actual": 66214.22,
+      "pct_consumed": 81.3,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "203",
+      "fund_name": "LOCAL STREET FUND",
+      "dept": "447",
+      "dept_name": "CITY ENGINEERING",
+      "amended_budget": 103630.0,
+      "ytd_actual": 83752.91,
+      "pct_consumed": 80.8,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "202",
+      "fund_name": "MAJOR STREET FUND",
+      "dept": "474",
+      "dept_name": "TRAFFIC SERVICES",
+      "amended_budget": 474970.0,
+      "ytd_actual": 382995.25,
+      "pct_consumed": 80.6,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "204",
+      "fund_name": "MUNICIPAL STREET FUND",
+      "dept": "445",
+      "dept_name": "STORM SEWER",
+      "amended_budget": 20000.0,
+      "ytd_actual": 16060.52,
+      "pct_consumed": 80.3,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "677",
+      "fund_name": "HEALTH CARE FUND",
+      "dept": "852",
+      "dept_name": "HEALTH CARE ADMINISTRATION",
+      "amended_budget": 2321000.0,
+      "ytd_actual": 1847040.37,
+      "pct_consumed": 79.6,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "771",
+      "dept_name": "TREE MAINTENANCE AND REMOVAL",
+      "amended_budget": 210860.0,
+      "ytd_actual": 166759.65,
+      "pct_consumed": 79.1,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "202",
+      "fund_name": "MAJOR STREET FUND",
+      "dept": "463",
+      "dept_name": "ROUTINE MAINTENANCE",
+      "amended_budget": 556750.0,
+      "ytd_actual": 421164.5,
+      "pct_consumed": 75.6,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "731",
+      "fund_name": "RETIREMENT SYSTEM FUND",
+      "dept": "560",
+      "dept_name": "GENERAL ADMINISTRATION",
+      "amended_budget": 1575000.0,
+      "ytd_actual": 1176742.57,
+      "pct_consumed": 74.7,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "485",
+      "dept_name": "GASLIGHT VILLAGE BUSINESS DISTRICT",
+      "amended_budget": 309540.0,
+      "ytd_actual": 230972.82,
+      "pct_consumed": 74.6,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "736",
+      "fund_name": "OTHER POSTEMPLOYMENT BENEFITS TRUST FUND",
+      "dept": "560",
+      "dept_name": "GENERAL ADMINISTRATION",
+      "amended_budget": 469000.0,
+      "ytd_actual": 348096.59,
+      "pct_consumed": 74.2,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "592",
+      "fund_name": "WATER & SEWER FUND",
+      "dept": "447",
+      "dept_name": "CITY ENGINEERING",
+      "amended_budget": 78630.0,
+      "ytd_actual": 55091.93,
+      "pct_consumed": 70.1,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "172",
+      "dept_name": "CITY MANAGER",
+      "amended_budget": 496280.0,
+      "ytd_actual": 347498.46,
+      "pct_consumed": 70.0,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "592",
+      "fund_name": "WATER & SEWER FUND",
+      "dept": "542",
+      "dept_name": "MAINS AND HYDRANTS",
+      "amended_budget": 3700010.0,
+      "ytd_actual": 2589335.18,
+      "pct_consumed": 70.0,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "751",
+      "dept_name": "RECREATION",
+      "amended_budget": 964910.0,
+      "ytd_actual": 656773.99,
+      "pct_consumed": 68.1,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "345",
+      "dept_name": "PUBLIC SAFETY",
+      "amended_budget": 5736620.0,
+      "ytd_actual": 3891883.19,
+      "pct_consumed": 67.8,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "209",
+      "dept_name": "ASSESSOR",
+      "amended_budget": 199080.0,
+      "ytd_actual": 134848.18,
+      "pct_consumed": 67.7,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "448",
+      "dept_name": "STREET LIGHTING",
+      "amended_budget": 123200.0,
+      "ytd_actual": 83321.49,
+      "pct_consumed": 67.6,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "210",
+      "dept_name": "CITY ATTORNEY",
+      "amended_budget": 300000.0,
+      "ytd_actual": 198835.81,
+      "pct_consumed": 66.3,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "260",
+      "dept_name": "FINANCE",
+      "amended_budget": 884210.0,
+      "ytd_actual": 583408.92,
+      "pct_consumed": 66.0,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "203",
+      "fund_name": "LOCAL STREET FUND",
+      "dept": "463",
+      "dept_name": "ROUTINE MAINTENANCE",
+      "amended_budget": 699040.0,
+      "ytd_actual": 457577.46,
+      "pct_consumed": 65.5,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "371",
+      "dept_name": "ZONING ADMINISTRATION",
+      "amended_budget": 182920.0,
+      "ytd_actual": 118598.37,
+      "pct_consumed": 64.8,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "592",
+      "fund_name": "WATER & SEWER FUND",
+      "dept": "545",
+      "dept_name": "METER READING AND COLLECTING",
+      "amended_budget": 104290.0,
+      "ytd_actual": 67493.4,
+      "pct_consumed": 64.7,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "779",
+      "dept_name": "RECREATION SPORTS",
+      "amended_budget": 286050.0,
+      "ytd_actual": 180889.48,
+      "pct_consumed": 63.2,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "101",
+      "dept_name": "CITY COMMISSION",
+      "amended_budget": 30350.0,
+      "ytd_actual": 18904.81,
+      "pct_consumed": 62.3,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "777",
+      "dept_name": "RECREATION PROGRAMMING",
+      "amended_budget": 111870.0,
+      "ytd_actual": 69660.24,
+      "pct_consumed": 62.3,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "778",
+      "dept_name": "GROUNDS MAINTENANCE",
+      "amended_budget": 546060.0,
+      "ytd_actual": 332076.99,
+      "pct_consumed": 60.8,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "528",
+      "dept_name": "YARD WASTE COLLECTION/REFUSE/COMPOST",
+      "amended_budget": 553220.0,
+      "ytd_actual": 333928.72,
+      "pct_consumed": 60.4,
+      "pace_flag": "on pace"
+    },
+    {
+      "fund": "204",
+      "fund_name": "MUNICIPAL STREET FUND",
+      "dept": "444",
+      "dept_name": "SIDEWALKS",
+      "amended_budget": 492900.0,
+      "ytd_actual": 294012.19,
+      "pct_consumed": 59.6,
+      "pace_flag": "behind pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "775",
+      "dept_name": "SPECIAL EVENTS",
+      "amended_budget": 171110.0,
+      "ytd_actual": 98093.25,
+      "pct_consumed": 57.3,
+      "pace_flag": "behind pace"
+    },
+    {
+      "fund": "202",
+      "fund_name": "MAJOR STREET FUND",
+      "dept": "447",
+      "dept_name": "CITY ENGINEERING",
+      "amended_budget": 277330.0,
+      "ytd_actual": 148719.93,
+      "pct_consumed": 53.6,
+      "pace_flag": "behind pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "756",
+      "dept_name": "POOL PROGRAMS",
+      "amended_budget": 289150.0,
+      "ytd_actual": 141855.05,
+      "pct_consumed": 49.1,
+      "pace_flag": "behind pace"
+    },
+    {
+      "fund": "202",
+      "fund_name": "MAJOR STREET FUND",
+      "dept": "483",
+      "dept_name": "STREET ADMINISTRATION",
+      "amended_budget": 148470.0,
+      "ytd_actual": 72860.1,
+      "pct_consumed": 49.1,
+      "pace_flag": "behind pace"
+    },
+    {
+      "fund": "203",
+      "fund_name": "LOCAL STREET FUND",
+      "dept": "483",
+      "dept_name": "STREET ADMINISTRATION",
+      "amended_budget": 148600.0,
+      "ytd_actual": 72854.56,
+      "pct_consumed": 49.0,
+      "pace_flag": "behind pace"
+    },
+    {
+      "fund": "592",
+      "fund_name": "WATER & SEWER FUND",
+      "dept": "550",
+      "dept_name": "SEWER EXPENDITURES",
+      "amended_budget": 1996940.0,
+      "ytd_actual": 947462.76,
+      "pct_consumed": 47.4,
+      "pace_flag": "behind pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "265",
+      "dept_name": "CITY BUILDINGS",
+      "amended_budget": 2138680.0,
+      "ytd_actual": 934182.25,
+      "pct_consumed": 43.7,
+      "pace_flag": "behind pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "783",
+      "dept_name": "AQUATIC CLUB (WAVES)",
+      "amended_budget": 167370.0,
+      "ytd_actual": 65290.93,
+      "pct_consumed": 39.0,
+      "pace_flag": "behind pace"
+    },
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "dept": "192",
+      "dept_name": "ELECTIONS",
+      "amended_budget": 55500.0,
+      "ytd_actual": 14945.33,
+      "pct_consumed": 26.9,
+      "pace_flag": "behind pace"
+    },
+    {
+      "fund": "202",
+      "fund_name": "MAJOR STREET FUND",
+      "dept": "451",
+      "dept_name": "STREET CONSTRUCTION",
+      "amended_budget": 1000000.0,
+      "ytd_actual": 218181.72,
+      "pct_consumed": 21.8,
+      "pace_flag": "behind pace"
+    },
+    {
+      "fund": "592",
+      "fund_name": "WATER & SEWER FUND",
+      "dept": "543",
+      "dept_name": "METERS",
+      "amended_budget": 68400.0,
+      "ytd_actual": 13307.27,
+      "pct_consumed": 19.5,
+      "pace_flag": "behind pace"
+    },
+    {
+      "fund": "592",
+      "fund_name": "WATER & SEWER FUND",
+      "dept": "560",
+      "dept_name": "GENERAL ADMINISTRATION",
+      "amended_budget": 827000.0,
+      "ytd_actual": 93035.65,
+      "pct_consumed": 11.2,
+      "pace_flag": "behind pace"
+    },
+    {
+      "fund": "204",
+      "fund_name": "MUNICIPAL STREET FUND",
+      "dept": "451",
+      "dept_name": "STREET CONSTRUCTION",
+      "amended_budget": 5000.0,
+      "ytd_actual": 0.0,
+      "pct_consumed": 0.0,
+      "pace_flag": "behind pace"
+    }
+  ],
+  "revenue_collection_by_fund": [
+    {
+      "fund": "101",
+      "fund_name": "GENERAL FUND",
+      "budgeted_revenue": 15335970.0,
+      "ytd_collected": 14173593.44,
+      "pct_collected": 92.4
+    },
+    {
+      "fund": "202",
+      "fund_name": "MAJOR STREET FUND",
+      "budgeted_revenue": 1121250.0,
+      "ytd_collected": 625614.65,
+      "pct_collected": 55.8
+    },
+    {
+      "fund": "203",
+      "fund_name": "LOCAL STREET FUND",
+      "budgeted_revenue": 421040.0,
+      "ytd_collected": 261107.04,
+      "pct_collected": 62.0
+    },
+    {
+      "fund": "204",
+      "fund_name": "MUNICIPAL STREET FUND",
+      "budgeted_revenue": 2033810.0,
+      "ytd_collected": 2018870.81,
+      "pct_collected": 99.3
+    },
+    {
+      "fund": "205",
+      "fund_name": "PUBLIC SAFETY FUND",
+      "budgeted_revenue": 0.0,
+      "ytd_collected": 26000.0,
+      "pct_collected": null
+    },
+    {
+      "fund": "265",
+      "fund_name": "DRUG LAW ENFORCEMENT FUND",
+      "budgeted_revenue": 4200.0,
+      "ytd_collected": 4235.0,
+      "pct_collected": 100.8
+    },
+    {
+      "fund": "286",
+      "fund_name": "FED-AMERICAN RESCUE PLAN ACT",
+      "budgeted_revenue": 0.0,
+      "ytd_collected": 69.45,
+      "pct_collected": null
+    },
+    {
+      "fund": "308",
+      "fund_name": "PARKS MILLAGE DEBT SERVICE",
+      "budgeted_revenue": 362100.0,
+      "ytd_collected": 360731.55,
+      "pct_collected": 99.6
+    },
+    {
+      "fund": "309",
+      "fund_name": "PARKS MILLAGE DEBT SERVICE (2025)",
+      "budgeted_revenue": 146600.0,
+      "ytd_collected": 145905.52,
+      "pct_collected": 99.5
+    },
+    {
+      "fund": "372",
+      "fund_name": "MUNICIPAL COMPLEX DEBT SERVICE",
+      "budgeted_revenue": 632700.0,
+      "ytd_collected": 630266.35,
+      "pct_collected": 99.6
+    },
+    {
+      "fund": "408",
+      "fund_name": "PARKS CAPITAL PROJECT FUND",
+      "budgeted_revenue": 384690.0,
+      "ytd_collected": 418713.25,
+      "pct_collected": 108.8
+    },
+    {
+      "fund": "592",
+      "fund_name": "WATER & SEWER FUND",
+      "budgeted_revenue": 5443470.0,
+      "ytd_collected": 4039604.6,
+      "pct_collected": 74.2
+    },
+    {
+      "fund": "677",
+      "fund_name": "HEALTH CARE FUND",
+      "budgeted_revenue": 2299550.0,
+      "ytd_collected": 1512974.87,
+      "pct_collected": 65.8
+    },
+    {
+      "fund": "692",
+      "fund_name": "MOTOR EQUIPMENT REVOLVING FUND",
+      "budgeted_revenue": 988500.0,
+      "ytd_collected": 528429.52,
+      "pct_collected": 53.5
+    },
+    {
+      "fund": "731",
+      "fund_name": "RETIREMENT SYSTEM FUND",
+      "budgeted_revenue": 1575950.0,
+      "ytd_collected": 1330672.56,
+      "pct_collected": 84.4
+    },
+    {
+      "fund": "736",
+      "fund_name": "OTHER POSTEMPLOYMENT BENEFITS TRUST FUND",
+      "budgeted_revenue": 306000.0,
+      "ytd_collected": 123994.91,
+      "pct_collected": 40.5
+    },
+    {
+      "fund": "810",
+      "fund_name": "SPECIAL ASSESSMENT FUND",
+      "budgeted_revenue": 10110.0,
+      "ytd_collected": 7490.24,
+      "pct_collected": 74.1
+    }
+  ],
+  "largest_over_budget_accounts": [
+    {
+      "gl": "692-570-9700.21",
+      "desc": "VEHICLES",
+      "fund": "692",
+      "dept": "570",
+      "budget": 1180000.0,
+      "ytd": 1441259.65,
+      "over_by": 261259.65,
+      "pct": 122.1
+    },
+    {
+      "gl": "101-345-7400.01",
+      "desc": "UNIFORMS",
+      "fund": "101",
+      "dept": "345",
+      "budget": 28000.0,
+      "ytd": 46253.04,
+      "over_by": 18253.04,
+      "pct": 165.2
+    },
+    {
+      "gl": "692-570-9300.00",
+      "desc": "REPAIRS & MAINTENANCE",
+      "fund": "692",
+      "dept": "570",
+      "budget": 60000.0,
+      "ytd": 74729.61,
+      "over_by": 14729.61,
+      "pct": 124.5
+    },
+    {
+      "gl": "203-478-7060.00",
+      "desc": "SALARIES & WAGES - PERMANENT",
+      "fund": "203",
+      "dept": "478",
+      "budget": 55000.0,
+      "ytd": 69371.91,
+      "over_by": 14371.91,
+      "pct": 126.1
+    },
+    {
+      "gl": "736-560-8330.00",
+      "desc": "PHARMACY",
+      "fund": "736",
+      "dept": "560",
+      "budget": 60000.0,
+      "ytd": 72924.28,
+      "over_by": 12924.28,
+      "pct": 121.5
+    },
+    {
+      "gl": "692-570-7540.00",
+      "desc": "OP. SUP - PARTS",
+      "fund": "692",
+      "dept": "570",
+      "budget": 60000.0,
+      "ytd": 72463.14,
+      "over_by": 12463.14,
+      "pct": 120.8
+    },
+    {
+      "gl": "101-779-7400.00",
+      "desc": "OPERATING SUPPLIES",
+      "fund": "101",
+      "dept": "779",
+      "budget": 43900.0,
+      "ytd": 53814.13,
+      "over_by": 9914.13,
+      "pct": 122.6
+    },
+    {
+      "gl": "101-101-9560.01",
+      "desc": "GRAND VALLEY METRO COUNCIL",
+      "fund": "101",
+      "dept": "101",
+      "budget": 3200.0,
+      "ytd": 11570.0,
+      "over_by": 8370.0,
+      "pct": 361.6
+    },
+    {
+      "gl": "202-478-7400.16",
+      "desc": "ROAD SALT",
+      "fund": "202",
+      "dept": "478",
+      "budget": 62000.0,
+      "ytd": 67291.62,
+      "over_by": 5291.62,
+      "pct": 108.5
+    },
+    {
+      "gl": "101-371-9470.00",
+      "desc": "AUTO EXPENSE",
+      "fund": "101",
+      "dept": "371",
+      "budget": 600.0,
+      "ytd": 5095.5,
+      "over_by": 4495.5,
+      "pct": 849.2
+    },
+    {
+      "gl": "203-474-7060.00",
+      "desc": "SALARIES & WAGES - PERMANENT",
+      "fund": "203",
+      "dept": "474",
+      "budget": 7800.0,
+      "ytd": 11318.84,
+      "over_by": 3518.84,
+      "pct": 145.1
+    },
+    {
+      "gl": "101-448-9701.00",
+      "desc": "SMALL CAPITAL",
+      "fund": "101",
+      "dept": "448",
+      "budget": 10000.0,
+      "ytd": 13101.62,
+      "over_by": 3101.62,
+      "pct": 131.0
+    },
+    {
+      "gl": "203-447-9470.00",
+      "desc": "AUTO EXPENSE",
+      "fund": "203",
+      "dept": "447",
+      "budget": 3000.0,
+      "ytd": 6065.21,
+      "over_by": 3065.21,
+      "pct": 202.2
+    },
+    {
+      "gl": "101-771-7060.00",
+      "desc": "SALARIES & WAGES - PERMANENT",
+      "fund": "101",
+      "dept": "771",
+      "budget": 39300.0,
+      "ytd": 42022.74,
+      "over_by": 2722.74,
+      "pct": 106.9
+    },
+    {
+      "gl": "101-346-9580.00",
+      "desc": "ST TRNG GRANT-POLICE / PA302",
+      "fund": "101",
+      "dept": "346",
+      "budget": 5500.0,
+      "ytd": 8221.76,
+      "over_by": 2721.76,
+      "pct": 149.5
+    }
+  ],
+  "counts": {
+    "departments_over_budget": 1,
+    "departments_ahead_of_pace": 15,
+    "departments_behind_pace": 14
+  }
+}
