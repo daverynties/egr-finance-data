@@ -1,0 +1,154 @@
+{
+  "fiscal_year": "July 1 - June 30",
+  "currency": "USD",
+  "categories": {
+    "police & public safety": {
+      "fy2024_actual": 4941244.11,
+      "fy2025_actual": 4690846.4,
+      "fy2026_budget": 5743320.0,
+      "fy2026_ytd_actual_thru_2026_03_31": 3901304.95
+    },
+    "roads": {
+      "fy2024_actual": 4650036.66,
+      "fy2025_actual": 5058809.02,
+      "fy2026_budget": 5557710.0,
+      "fy2026_ytd_actual_thru_2026_03_31": 3698466.95
+    },
+    "parks & recreation": {
+      "fy2024_actual": 6673513.36,
+      "fy2025_actual": 5387087.25,
+      "fy2026_budget": 4555030.0,
+      "fy2026_ytd_actual_thru_2026_03_31": 3493618.76
+    },
+    "city administration": {
+      "fy2024_actual": 3657085.24,
+      "fy2025_actual": 3400093.6,
+      "fy2026_budget": 3318050.0,
+      "fy2026_ytd_actual_thru_2026_03_31": 2498591.7
+    },
+    "water & sewer": {
+      "fy2024_actual": 4193405.2,
+      "fy2025_actual": 4001021.14,
+      "fy2026_budget": 6775270.0,
+      "fy2026_ytd_actual_thru_2026_03_31": 3765726.19
+    },
+    "buildings": {
+      "fy2024_actual": 1173693.44,
+      "fy2025_actual": 1932487.82,
+      "fy2026_budget": 2138680.0,
+      "fy2026_ytd_actual_thru_2026_03_31": 934182.25
+    },
+    "debt service": {
+      "fy2024_actual": 947500.0,
+      "fy2025_actual": 1005485.0,
+      "fy2026_budget": 1139580.0,
+      "fy2026_ytd_actual_thru_2026_03_31": 1138080.84
+    },
+    "vehicles & equipment": {
+      "fy2024_actual": 876231.2,
+      "fy2025_actual": 758163.93,
+      "fy2026_budget": 2123940.0,
+      "fy2026_ytd_actual_thru_2026_03_31": 1873326.15
+    },
+    "other": {
+      "fy2024_actual": 452334.52,
+      "fy2025_actual": 468480.06,
+      "fy2026_budget": 553220.0,
+      "fy2026_ytd_actual_thru_2026_03_31": 333928.72
+    },
+    "employee health care (internal service)": {
+      "fy2024_actual": 1544146.41,
+      "fy2025_actual": 2026084.08,
+      "fy2026_budget": 2321000.0,
+      "fy2026_ytd_actual_thru_2026_03_31": 1847040.37
+    },
+    "pension trust (fiduciary)": {
+      "fy2024_actual": 1660194.13,
+      "fy2025_actual": 1680536.86,
+      "fy2026_budget": 1575000.0,
+      "fy2026_ytd_actual_thru_2026_03_31": 1176742.57
+    },
+    "opeb trust (fiduciary)": {
+      "fy2024_actual": 255698.65,
+      "fy2025_actual": 432368.47,
+      "fy2026_budget": 469000.0,
+      "fy2026_ytd_actual_thru_2026_03_31": 348096.59
+    }
+  },
+  "fund_totals_operating_expenditures": {
+    "fy2024": {
+      "101": 13166031.12,
+      "202": 1366594.01,
+      "203": 2400285.74,
+      "204": 654698.37,
+      "265": 0.0,
+      "308": 364250.0,
+      "372": 583250.0,
+      "408": 3960298.09,
+      "592": 4193405.2,
+      "677": 1544146.41,
+      "692": 876231.2,
+      "731": 1660194.13,
+      "736": 255698.65
+    },
+    "fy2025": {
+      "101": 13674333.68,
+      "202": 1443018.72,
+      "203": 2741847.88,
+      "204": 552150.61,
+      "265": 16120.0,
+      "308": 362950.0,
+      "372": 610750.0,
+      "408": 2542118.26,
+      "592": 4001021.14,
+      "677": 2026084.08,
+      "692": 758163.93,
+      "731": 1680536.86,
+      "736": 432368.47
+    },
+    "fund_names": {
+      "099": "CASH/POOLED (AGENCY)",
+      "101": "GENERAL FUND",
+      "202": "MAJOR STREET FUND",
+      "203": "LOCAL STREET FUND",
+      "204": "MUNICIPAL STREET FUND",
+      "205": "PUBLIC SAFETY FUND",
+      "265": "DRUG LAW ENFORCEMENT FUND",
+      "286": "FED-AMERICAN RESCUE PLAN ACT",
+      "308": "PARKS MILLAGE DEBT SERVICE",
+      "309": "PARKS MILLAGE DEBT SERVICE (2025)",
+      "372": "MUNICIPAL COMPLEX DEBT SERVICE",
+      "408": "PARKS CAPITAL PROJECT FUND",
+      "592": "WATER & SEWER FUND",
+      "677": "HEALTH CARE FUND",
+      "692": "MOTOR EQUIPMENT REVOLVING FUND",
+      "731": "RETIREMENT SYSTEM FUND",
+      "736": "OTHER POSTEMPLOYMENT BENEFITS TRUST FUND",
+      "810": "SPECIAL ASSESSMENT FUND",
+      "901": "GASB 34 FUND",
+      "701": "TAX COLLECTION (AGENCY)",
+      "305": "? (not in chart of accounts)"
+    }
+  },
+  "total_city_spending_fy2025": {
+    "figure": 26702474.22,
+    "definition": "Total FY2025 operating expenditures of all governmental funds (general, street, parks capital, debt service, special revenue) plus the Water & Sewer enterprise fund, EXCLUDING interfund transfers (depts 930/965) and EXCLUDING the GASB 34 government-wide conversion fund (901). Internal-service funds (Health Care 677, Motor Equipment 692) and fiduciary trust funds (Retirement 731, OPEB 736) are excluded from this headline figure to avoid double-counting costs also recorded as departmental expenditures (e.g., health premiums, equipment rental charges); their totals are reported separately.",
+    "fy2024_comparable": 27565043.73
+  },
+  "all_funds_gross_operating_fy2025": {
+    "figure": 30841463.63,
+    "caveat": "Includes internal-service and fiduciary funds; overstates consolidated spending by roughly the amount of internal charges (e.g., ~$1.2M employer health premiums recorded both as departmental fringe expenditures and as Health Care Fund claim expenditures)."
+  },
+  "interfund_transfer_treatment": {
+    "decision": "Interfund transfers (department 930 transfers-in, department 965 transfers-out) are EXCLUDED from all spending totals to avoid double-counting the same dollars in both the sending and receiving funds.",
+    "fy2025_transfers_out_total": 3232449.83,
+    "fy2024_transfers_out_total": 2862455.5
+  },
+  "sources": [
+    "GL Activity by Journal Type 7.1.23-6.30.24.xlsx (FY2024 actuals)",
+    "GL Transactions 7.1.24-6.30.25.xlsx (FY2025 actuals)",
+    "YTD GL Detail thru 3-31-26.xlsx (FY2026 amended budget vs YTD actual thru 3/31/2026)",
+    "Chart of Accounts.xlsx (account types, fund/dept structure)",
+    "Fund transfers 6.30.24.xlsx / 6-30-2025.xlsx / 6.30.26.xlsx (transfer identification)"
+  ]
+}
