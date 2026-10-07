@@ -1,1 +1,137 @@
-IyBGaW5kaW5ncyBNZW1vIOKAlCBFYXN0IEdyYW5kIFJhcGlkcyBTcGVuZGluZyBBbmFseXNpcyAobWVyZ2VkLCAyMDI2LTEwLTA3KQoKTWVyZ2VkIGZyb20gV29ya3N0cmVhbSBBIChmaW5hbmNpYWwtZmlsZSBhbmFseXNpcykgYW5kIFdvcmtzdHJlYW0gQiAob2ZmaWNpYWwgcHVibGljIHJlY29yZHMpLgpFdmVyeSBudW1iZXIgYmVsb3cgdHJhY2VzIHRvIGEgZmlsZSBpbiB0aGlzIGRpcmVjdG9yeSBvciBhIFVSTCBpbiBgc291cmNlcy5tZGAuCk5ldXRyYWwgZnJhbWluZyB0aHJvdWdob3V0OiBmbGFncyBhcmUgInRoaW5ncyB3b3J0aCB1bmRlcnN0YW5kaW5nLCIgbm90IGFsbGVnYXRpb25zLgoKIyMgQ3Jvc3MtY2hlY2sgKGNvb3JkaW5hdG9yIFFDKTogY29tcHV0ZWQgdG90YWxzIHJlY29uY2lsZSB0byB0aGUgYXVkaXRlZCBmaW5hbmNpYWxzCgotIFdvcmtzdHJlYW0gQSdzICoqRlkyMDI1IGhlYWRsaW5lOiAkMjYsNzAyLDQ3NC4yMioqID0gb3BlcmF0aW5nIGV4cGVuZGl0dXJlcyBvZiBhbGwgZ292ZXJubWVudGFsIGZ1bmRzCiAgKyBXYXRlciAmIFNld2VyIGVudGVycHJpc2UgZnVuZCArIE1vdG9yIEVxdWlwbWVudCBSZXZvbHZpbmcgRnVuZCwgKipleGNsdWRpbmcqKiBpbnRlcmZ1bmQKICB0cmFuc2ZlcnMgKCQzLDIzMiw0NTApLCBHQVNCLTM0IGNvbnZlcnNpb24gZW50cmllcywgYW5kIHRoZSBIZWFsdGggQ2FyZSAvIFBlbnNpb24gLyBPUEVCCiAgdHJ1c3QgZnVuZHMgKGV4Y2x1ZGVkIHRvIGF2b2lkIGRvdWJsZS1jb3VudGluZyBjb3N0cyBhbHNvIGJvb2tlZCBhcyBkZXBhcnRtZW50YWwgc3BlbmRpbmcpLgotIFRoZSBnb3Zlcm5tZW50YWwtZnVuZHMgcG9ydGlvbiBvZiB0aGF0IGZpZ3VyZSA9ICoqJDIxLDk0MywyODkqKiwgdnMuIHRoZSBhdWRpdGVkIEFDRlIKICAoRlkgZW5kZWQgNi8zMC8yMDI1KSBnb3Zlcm5tZW50YWwtZnVuZCBleHBlbmRpdHVyZXMgb2YgKiokMjEsOTQzLDI5NSoqIOKAlCBhICoqJDYgZGlmZmVyZW5jZQogIChyb3VuZGluZykqKi4gVGhlIGNvbXB1dGVkIHRvdGFsIGlzIHZlcmlmaWVkIGFnYWluc3QgdGhlIGF1ZGl0LgotIEFjY3J1YWwtYmFzaXMgInByaW1hcnkgZ292ZXJubWVudCBleHBlbnNlcyIgaW4gdGhlIEFDRlIgYXJlICQxOSwwNjcsMzMzIChkaWZmZXJlbnQKICBhY2NvdW50aW5nIGJhc2lzOyBub3QgZGlyZWN0bHkgY29tcGFyYWJsZSB0byB0aGUgbW9kaWZpZWQtYWNjcnVhbCBoZWFkbGluZSkuCi0gR0wgZmlsZXMgYmFsYW5jZSB0byAkMC4wMCAoZGViaXRzIOKIkiBjcmVkaXRzKTsgY2hlY2stcmVnaXN0ZXIgcGFyc2VkIHRvdGFscyBtYXRjaCBib3RoCiAgcmVwb3J0IGZvb3RlcnMgdG8gdGhlIGNlbnQuCgojIyBOb3RlIG9uIHRoZSBudW1iZXJzIGluIHRoZSBvcmlnaW5hbCBzaXRlIGJyaWVmCgpUaGUgYnJpZWYncyBleGFtcGxlIGZpZ3VyZXMgd2VyZSBzcG90LWNoZWNrZWQ6IGJ1aWxkaW5ncyAkMS4xN00g4oaSICQxLjkzTSAoKzY1JSkgYW5kCnB1YmxpYyBzYWZldHkgJDQuOTNNIOKGkiAkNC42N00gKOKIkjUlKSBib3RoIG1hdGNoIHRoZSB2ZXJpZmllZCBkYXRhIChhY3R1YWxzOiAkMSwxNzMsNjkzIOKGkgokMSw5MzIsNDg4OyAkNCw5NDEsMjQ0IOKGkiAkNCw2OTAsODQ2KS4gKipCdXQgdGhlIGJyaWVmJ3MgaGVhZGxpbmUgIiQyOS4yTSIgZG9lcyBub3QgbWF0Y2g6CnZlcmlmaWVkIEZZMjAyNSB0b3RhbCBjaXR5IHNwZW5kaW5nIGlzICQyNi43TS4qKiBEbyBub3QgdXNlICQyOS4yTSBvciB0aGUgKzEuNyUgY2hhbmdlCmZpZ3VyZSAodmVyaWZpZWQgRlkyNOKGkkZZMjUgY2hhbmdlIG9uIHRoZSBzYW1lIGRlZmluaXRpb246ICQyNy41N00g4oaSICQyNi43ME0sIOKIkjMuMSUpLgpUaGUgcG9saWNlLXVuaWZvcm1zIGV4YW1wbGUgKCQyOEsgYnVkZ2V0IC8gJDQ2LDI1MyBzcGVudCkgd2FzIG5vdCBzZXBhcmF0ZWx5IHZlcmlmaWVkIOKAlAp2ZXJpZnkgcGVyLWl0ZW0gYmVmb3JlIHVzZS4KCiMjIFRoZSAxMCBtb3N0IGltcG9ydGFudCB2ZXJpZmllZCBmaW5kaW5ncwoKMS4gKipGWTIwMjUgdG90YWwgY2l0eSBzcGVuZGluZyB3YXMgJDI2LDcwMiw0NzQqKiAoZGVmaW5pdGlvbiBhYm92ZTsgcmVjb25jaWxlcyB0byB0aGUKICAgYXVkaXRlZCBBQ0ZSIHdpdGhpbiAkNikuIEZZMjAyNCBjb21wYXJhYmxlOiAkMjcsNTY1LDA0NC4gU291cmNlOiBHTCBmaWxlcyDihpIKICAgYHNwZW5kaW5nLmpzb25gOyBBQ0ZSIHZpYSBOb3YgMjUsIDIwMjUgY29tbWlzc2lvbiBwYWNrZXQuCgoyLiAqKk9ubHkgfjMwJSBvZiBhIHJlc2lkZW50J3MgcHJvcGVydHktdGF4IGJpbGwgZ29lcyB0byBDaXR5IEhhbGwuKiogMjAyNSBob21lc3RlYWQgbGV2eToKICAgKio0Ny40OTk1IG1pbGxzKiogdG90YWw7IHRoZSBDaXR5IG9mIEVHUiBsZXZpZXMganVzdCAxNC4yMTA3IG1pbGxzIChvcGVyYXRpbmcgMTEuMTQxOSwKICAgcm9hZHMgMS45NjMyLCBjb21wbGV4IGRlYnQgMC42MTI5LCBwYXJrcyBkZWJ0IDAuMzUwOCArIDAuMTQxOSkuIFRoZSByZXN0OiBFR1Igc2Nob29scwogICAxMS43ODk0LCBLZW50IENvdW50eSA1Ljc1NzMsIEtlbnQgSVNEIDUuMzUxNSwgR1JDQyAxLjY3OTMsIFN0YXRlIEVkdWNhdGlvbiBUYXggNi4wLAogICBUaGUgUmFwaWQgMS4zODE3LCBLREwgMS4wODMyLiBTY2hvb2wgZGVidCBhbG9uZSAoOS45NSBtaWxscykgaXMgNzAlIG9mIHRoZSBlbnRpcmUgY2l0eQogICBsZXZ5LiBOb24taG9tZXN0ZWFkIHBheXMgNjUuNDk5NSAoYWRkcyB0aGUgMTgtbWlsbCBzY2hvb2wgb3BlcmF0aW5nIGxldnkpLgogICBTb3VyY2U6IGNpdHkncyBvZmZpY2lhbCBtaWxsYWdlIGRvY3VtZW50ICg2LzI1LzIwMjYpIOKGkiBgdGF4Lmpzb25gLgoKMy4gKipUaGUgcGFya2luZy1kZWNrIGJvbmQgaXMgb24gdGhlIE5vdmVtYmVyIDMsIDIwMjYgYmFsbG90IOKAlCBub3QgeWV0IGFwcHJvdmVkLioqIFVwIHRvCiAgICoqJDksMDAwLDAwMCoqIGluIEdPIHVubGltaXRlZC10YXggYm9uZHMgKG1heCAyMC15ZWFyIHRlcm0gcGVyIHNlcmllcykgZm9yIGEgfjI0MC1zcGFjZQogICBkZWNrIG9uIEJhZ2xleSBhdCB0aGUgRUdSIHNjaG9vbHMgbG90LCBwbHVzIHRyYWZmaWMgc2lnbmFscyBhbmQgcGVkZXN0cmlhbi8KICAgbWljcm9tb2JpbGl0eSBpbmZyYXN0cnVjdHVyZS4gQmFsbG90IGVzdGltYXRlczogKiowLjU5MjIgbWlsbHMgZmlyc3QgeWVhciwgMC40OTI1CiAgIGF2ZXJhZ2UqKiAoYSBjb3JyZWN0ZWQgcmVzb2x1dGlvbiBmaXhlZCAwLjQ0OTI1IOKGkiAwLjQ5MjU7IHZvdGUgNC0xLTIpLiBCeSBhcml0aG1ldGljCiAgIChubyBvZmZpY2lhbCBkb2xsYXIgZmlndXJlIHB1Ymxpc2hlZCk6IH4kMTE4L3lyIGZpcnN0IHllYXIgb24gYSAkMjAwLDAwMCB0YXhhYmxlIHZhbHVlCiAgICh+JDQwMEsgaG9tZSksIH4kOTguNTAveXIgYXZlcmFnZSDigJQgYWJvdXQgMS4yJSBhZGRlZCB0byB0aGUgaG9tZXN0ZWFkIHJhdGUuIFRoZSBzYW1lCiAgIGJhbGxvdCBhbHNvIGNhcnJpZXMgdGhlIEtlbnQgQ291bnR5IGphaWwgbWlsbGFnZSAoMC45OC1taWxsIHJlbmV3YWwraW5jcmVhc2UpLgogICBTb3VyY2U6IG9mZmljaWFsIHNwZWNpYWwtbWVldGluZyBtaW51dGVzOyBgdGF4Lmpzb25gLgoKNC4gKipNYW5oYXR0YW4gUGFyayBpcyB0aGUgY2l0eSdzIGJpZ2dlc3QgYWN0aXZlIGNhcGl0YWwgcHJvamVjdDogJDIsMzc3LDAyNyBpbiBGWTIwMjUsCiAgIHVwIDI3MiUgZnJvbSAkNjM4LDg0OSBpbiBGWTIwMjQuKiogRlkyMDI0IHdhcyBkZXNpZ24gKFZpcmlkaXMgRGVzaWduIEdyb3VwICQxMjEsMDgwKQogICBhbmQgZWFybHkgc2l0ZSB3b3JrIChHcm91bmRoYXdnIEV4Y2F2YXRpbmcgJDQ4OSw5ODMpOyBGWTIwMjUgaXMgY29uc3RydWN0aW9uIGJ5CiAgIEthdGVyYmVyZy1WZXJIYWdlIEluYyAoJDEsOTM5LDk3MCBib29rZWQ7ICQxLDk4MSwzMTEgaW4gY2hlY2tzLCBpbmNsLiBzaW5nbGUgcGF5bWVudHMKICAgb2YgJDcwOCwzOTYgYW5kICQ1OTQsNTY3KS4gQ3VtdWxhdGl2ZSBGWTI0K0ZZMjUg4omIICQzLjAyTSwgY29uc2lzdGVudCB3aXRoIHNlY29uZGFyeQogICByZXBvcnRpbmcgb2YgYSB+JDMuMThNIHByb2dyYW0uIFNvdXJjZTogR0wgam91cm5hbCBkZXNjcmlwdGlvbnM7IGNoZWNrIHJlZ2lzdGVyLgoKNS4gKipQYXJrcyBwbGF5Z3JvdW5kIGNhcGl0YWwgd291bmQgZG93biBhcyBNYW5oYXR0YW4gUGFyayByYW1wZWQgdXA6ICQzLDI5MCw5NDMKICAgKEZZMjAyNCkg4oaSICQxMjUsODA2IChGWTIwMjUpLioqIE5ldCBwYXJrcyAmIHJlY3JlYXRpb24gc3BlbmRpbmcgZmVsbCAkNi42N00g4oaSICQ1LjM5TSDigJQKICAgYSBjb21wbGV0ZWQgcHJvamVjdCBwaGFzZSBvZmZzZXR0aW5nIHRoZSBNYW5oYXR0YW4gUGFyayBidWlsZC4gU291cmNlOiBHTCBmaWxlcy4KCjYuICoqQ2l0eSBidWlsZGluZ3MgY2FwaXRhbCBzcGVuZGluZyByb3NlIDE1NiUgKCQzMjksMTU1IOKGkiAkODQzLDQ5NSksIGFuZCBpdCBpcwogICBpdGVtaXplZDoqKiBhIERQVyBzYWx0L2FnZ3JlZ2F0ZSBzdG9yYWdlIGJ1aWxkaW5nICh+JDI3NUsgKyAkMzRLIHN0ZWVsKSwgSFZBQyBjYXBpdGFsCiAgIHJlcGxhY2VtZW50cyAofiQxMTBLICsgfiQxMDZLKSwgZmxvb3JpbmcgKCQxMDlLKSwgYW5kIGFuIEVHUiBsaWJyYXJ5IHN0dWR5IHJvb20KICAgKCQ1NkspLiBTb3VyY2U6IEZZMjAyNSBHTCBqb3VybmFsIGRlc2NyaXB0aW9ucyBvbiAxMDEtMjY1LTk3MDAuMDAuCgo3LiAqKkVtcGxveWVlIHBoYXJtYWN5IGNvc3RzIGp1bXBlZCAxNTMlICgkMTYxLDc3MSDihpIgJDQwOSw4NzksICskMjQ4LDEwOCkqKiBpbiB0aGUKICAgSGVhbHRoIENhcmUgRnVuZCwgc3ByZWFkIGFjcm9zcyB0d2ljZS1tb250aGx5IEJsdWUgQ3Jvc3MgY2xhaW0gcGF5bWVudHMgd2l0aCBubwogICBzaW5nbGUgYW5vbWFsb3VzIHBheW1lbnQuIE1lZGljYWwgKEhSQSkgY2xhaW1zIHJvc2UgMjclICgkNjYxSyDihpIgJDg0MkspOyB0b3RhbAogICBIZWFsdGggQ2FyZSBGdW5kIHNwZW5kaW5nIHJvc2UgMzElIHRvICQyLDAyNiwwODQuICoqVGhlIGNhdXNlICh1dGlsaXphdGlvbiwgc3BlY2lhbHR5CiAgIGRydWdzLCBlbnJvbGxtZW50KSBpcyBub3QgaW4gdGhlc2UgZmlsZXMuKiogU291cmNlOiBHTCBmaWxlcy4KCjguICoqRlkyMDI2IGZsZWV0IGJ1eWluZyBpcyBvdmVyIGJ1ZGdldCBhdCB0aGUgNzUlIG1hcmsg4oCUIHRydWNrcyBpZGVudGlmaWVkLioqCiAgIE1vdG9yIEVxdWlwbWVudCB2ZWhpY2xlIHB1cmNoYXNlczogJDEsMTgwLDAwMCBidWRnZXQgdnMgJDEsNDQxLDI2MCBzcGVudCB0aHJvdWdoCiAgIDMvMzEvMjAyNiAoMTIyJTsgJDI2MSwyNjAgb3ZlcikuIERldGFpbDogJDU2NywwOTEgSW50ZXJuYXRpb25hbCBzZXdlciB0cnVjaywKICAgJDExOCw4ODggbG9hZGVyLCAkNzcsNjYyIGV4Y2F2YXRvciwgdHdvIGR1bXAgdHJ1Y2tzIH4kMTE0LDg2MSBlYWNoIHBsdXMgdXBmaXRzLAogICAkMTIxLDE2NiBmb3IgdHdvIHJlcGxhY2VtZW50cy4gKipBIDMvMzEgY29tcGFyaXNvbiBpcyBub3QgYW4gb3ZlcnJ1biBmaW5kaW5nKiog4oCUCiAgIGNhcGl0YWwgYnVkZ2V0cyBhcmUgcm91dGluZWx5IGFtZW5kZWQgYW5kIHB1cmNoYXNlcyBhcmUgbHVtcHkuIDUxIGFjY291bnRzIGFyZSBvdmVyCiAgIGJ1ZGdldCBhdCB0aGUgNzUlIG1hcmsgb3ZlcmFsbCAodGltaW5nIGNhdmVhdCBhcHBsaWVzIHRvIGFsbCkuIFNvdXJjZTogWVREIGZpbGUuCgo5LiAqKlRoZSBjaGVjay1yZWdpc3RlciBmaWxlcyBhcmUgbWlzbGFiZWxlZCBieSBvbmUgZmlzY2FsIHllYXIsIGFuZCB0d28tdGhpcmRzIG9mCiAgIHJlZ2lzdGVyIGRvbGxhcnMgYXJlIHRheCBwYXNzLXRocm91Z2hzLCBub3QgY2l0eSBzcGVuZGluZy4qKiAiRlkyMDI0IENoZWNrCiAgIFJlZ2lzdGVyLnhsc3giIGhvbGRzIGNoZWNrcyBkYXRlZCA3LzMvMjAyNOKAkzYvMzAvMjAyNTsgIkZZMjAyNSBDaGVjayBSZWdzaXRlci54bHN4IgogICBob2xkcyA3LzEvMjAyNeKAkzYvNC8yMDI2IChwYXJ0aWFsKS4gKipObyBGWTIwMjQtZGF0ZWQgY2hlY2sgZGF0YSB3YXMgcHJvdmlkZWQuKioKICAgfiQzMy4yTS95ciBvZiByZWdpc3RlciBkb2xsYXJzIGFyZSBwcm9wZXJ0eS10YXggcGFzcy10aHJvdWdocyB0byBzY2hvb2xzLCBjb3VudHksCiAgIElTRCwgYW5kIEdSQ0Mg4oCUIGV4Y2x1ZGVkIGZyb20gdmVuZG9yIGFuYWx5c2lzLiBDaXR5LXZlbmRvciBjaGVja3M6ICQxNy41TSAoRlkyMDI1KS4KICAgVGhlIHJlZ2lzdGVyIGFsc28gb21pdHMgcGF5cm9sbCAoQUNIKSBhbmQgd2lyZXMuIFNvdXJjZTogYm90aCByZWdpc3RlciBmaWxlcy4KCjEwLiAqKlZlbmRvciBzcGVuZGluZyBpcyBjb25jZW50cmF0ZWQgYnV0IGV4cGxhaW5hYmxlOiB0b3AgMTAgdmVuZG9ycyA9IDU5LjglIG9mCiAgICBjaXR5LXZlbmRvciBjaGVja3MuKiogVG9wIDUgKEZZMjAyNSBjaGVja3MpOiBHcmFuZCBSYXBpZHMgQ2l0eSBUcmVhc3VyZXIgJDIsMDQ3LDYzMgogICAgKG1vbnRobHkgd2hvbGVzYWxlIHdhdGVyIHB1cmNoYXNlcyksIEthdGVyYmVyZy1WZXJIYWdlICQxLDk4MSwzMTEgKE1hbmhhdHRhbiBQYXJrKSwKICAgIE1pY2hpZ2FuIFBhdmluZyAkMSw4MzksMjQ3IChzdHJlZXQgcmVzdXJmYWNpbmcpLCBLZW50IERpc3RyaWN0IExpYnJhcnkgJDEsMDQ5LDI0MAogICAgKGxpYnJhcnkgY29udHJhY3QvbWlsbGFnZSByZW1pdHRhbmNlKSwgVVMgQmFuayAkOTczLDcwMCAoYm9uZCBkZWJ0IHNlcnZpY2UpLgogICAgQ29udGV4dDogdGhlIGNpdHkncyBHZW5lcmFsIEZ1bmQgYmFsYW5jZSBlbmRlZCBGWTIwMjUgYXQgJDcsMjgxLDQwMSAofjUwJSBvZgogICAgZXhwZW5kaXR1cmVzLCB3ZWxsIGFib3ZlIHR5cGljYWwgMjUlIGJlbmNobWFya3MpOyBhZG9wdGVkIEZZMjAyNS0yNiBhbGwtZnVuZHMKICAgIGJ1ZGdldCBpcyAkMzcsNjY5LDMxMC4gU291cmNlOiBjaGVjayByZWdpc3RlcnM7IEFDRlI7IGFkb3B0ZWQgYnVkZ2V0LgoKIyMgQ2xhaW1zIGV4cGxpY2l0bHkgTk9UIHZlcmlmaWVkCgotIFRoZSAqKnJlYXNvbioqIHBoYXJtYWN5IGFuZCBtZWRpY2FsIGNsYWltcyByb3NlIOKAlCBuZWVkcyBiZW5lZml0cy9jbGFpbXMgZGV0YWlsLgotIFdoZXRoZXIgYW55IEZZMjAyNiBvdmVyLWJ1ZGdldCBhY2NvdW50IGZpbmlzaGVzIHRoZSB5ZWFyIG92ZXIgYnVkZ2V0IOKAlCBuZWVkcyBmaW5hbAogIGFtZW5kZWQgYnVkZ2V0cyBhbmQgeWVhci1lbmQgYWN0dWFscy4KLSBXaGF0IHByb2plY3QgdGhlIHNwcmluZy0yMDI2IEFKWiBDb25jcmV0ZSBwYXltZW50cyAoJDYxLDg2OSDihpIgJDM2MCwyMDgsICs0ODIlKQogIGJlbG9uZyB0byDigJQgbmVlZHMgaW52b2ljZXMgb3IgcG9zdC0zLzMxLzIwMjYgcHJvamVjdCBjb2RpbmcuCi0gVGhlIHNwbGl0IG9mIEdyYW5kIFJhcGlkcyBDaXR5IFRyZWFzdXJlciBwYXltZW50cyBiZXR3ZWVuIHdob2xlc2FsZSB3YXRlciBhbmQgZmVlcy4KLSBXaGF0IHRoZSAkNTQ1LDEzOCBpbiBGaWZ0aCBUaGlyZCBCYW5rIHB1cmNoYXNpbmctY2FyZCBzZXR0bGVtZW50cyBib3VnaHQuCi0gV2h5IHRoZSBEQiBwZW5zaW9uIGNvbnRyaWJ1dGlvbiBmZWxsICQxLDM4MCwwMDAg4oaSICQxLDEwMCwwMDAg4oCUIG5lZWRzIGFjdHVhcmlhbCBkYXRhLgotIFdoeSBPUEVCIG1lZGljYWwgY2xhaW1zIHRyaXBsZWQgKCQ1OSw5Njcg4oaSICQxODcsOTQyKS4KLSBGWTIwMjQgdmVuZG9yIHRvdGFscyDigJQgbm8gRlkyMDI0LWRhdGVkIGNoZWNrIGRhdGEgcHJvdmlkZWQuCi0gV2hldGhlciB0aGUgJDEwMEvigJMkMTM2SyBhbm51YWwgdHJhbnNmZXIgaW1iYWxhbmNlICg2Nzcg4oaSIE9QRUIgdHJ1c3QpIGlzIGEgYm9va2luZwogIGFydGlmYWN0IOKAlCB0aGUgcmVjZWl2aW5nIGVudHJ5IGlzIG5vdCBpbiB0aGVzZSBleHRyYWN0cy4KLSBUaGUgJDEsOTY1LDA0NSBwZW5zaW9uIHRyYW5zZmVyIG9uIEdMIDEwMS05NjUtOTk1MC4xMiAoYSBHTCBudW1iZXIgd2l0aCBubyBhY3Rpdml0eQogIGluIHRoZSBGWTIwMjQgZXh0cmFjdCBhbmQgbm8gY2hhcnQtb2YtYWNjb3VudHMgZW50cnkpLgotIE9mZmljaWFsIGRvbGxhciBpbXBhY3Qgb2YgdGhlIHBhcmtpbmcgYm9uZCBvbiBhIHNhbXBsZSBob21lIChjaXR5IHB1Ymxpc2hlZCBtaWxsYWdlCiAgb25seSk7IDIwMjYgd2ludGVyIG1pbGxhZ2UgcmF0ZXMgKG5vdCB5ZXQgbGV2aWVkKTsgZnVsbCBvZmZpY2lhbCB0ZXh0IG9mIHRoZSAkOU0KICBib25kIHJlc29sdXRpb24gKGNvcnJlY3Rpb24gdmVyaWZpZWQgdmlhIG9mZmljaWFsIG1pbnV0ZXM7IGNvbXBsZXRlIGJhbGxvdCB0ZXh0IG9ubHkKICB2aWEgYSBjb21taXNzaW9uZXIncyBzZWNvbmRhcnkgd3JpdGUtdXApOyB0aGUgY2l0eSdzIG93biBGWTIwMjYtMjcgYnVkZ2V0IGJvb2sKICAoZmlndXJlcyB2aWEgYWdlbmRhLXBhY2tldCBtaXJyb3Igb25seSk7IGNlcnRpZmllZCBjYW52YXNzIGZvciB0aGUgTm92IDIwMjUgc2Nob29sCiAgbWlsbGFnZXM7IHBlci1wcm9qZWN0IGFjdHVhbCBzcGVuZGluZyBhbmQgdmVuZG9yIG5hbWVzIGJleW9uZCB0aGUgR0wgKHdvdWxkIG5lZWQKICBwYWNrZXQtYnktcGFja2V0IHJldmlldyk7IGxhZGRlci10cnVjayAofiQxLjdNKSBhbmQgZW5naW5lICh+JDcwMEspIGZpZ3VyZXMKICAoc2Vjb25kYXJ5IHJlcG9ydGluZyBvbmx5KTsgd2hldGhlciB0aGUgcGFya2luZyBwcm9wb3NhbCBwYXNzZXMgKGVsZWN0aW9uIDExLzMvMjAyNikuCgojIyBEYXRhLXF1YWxpdHkgbm90ZXMgZm9yIHRoZSBzaXRlIGJ1aWxkZXIKCi0gTGFiZWwgYWxsIHZlbmRvciBmaWd1cmVzIGJ5ICoqYWN0dWFsIGNoZWNrLWRhdGUgZmlzY2FsIHllYXIqKiwgbm90IGJ5IHRoZSByZWdpc3RlcgogIGZpbGVuYW1lcyAodGhleSBhcmUgb2ZmIGJ5IG9uZSB5ZWFyKS4KLSBUaGUgY2hlY2sgcmVnaXN0ZXIgaXMgYSAqKmNvbXBsZW1lbnQqKiB0byB0aGUgR0wsIG5vdCBhIHJlY29uY2lsaWF0aW9uIG9mIGl0CiAgKCQxNy41TSBjaXR5LXZlbmRvciBjaGVja3MgdnMgJDI2LjdNIEdMIG9wZXJhdGluZyBleHBlbmRpdHVyZXMpLgotIEJ1ZGdldC12cy1ZVEQgY29tcGFyaXNvbnMgYXQgMy8zMSAoNzUlIG9mIHRoZSBmaXNjYWwgeWVhcikgYXJlIHRpbWluZyBzbmFwc2hvdHMsCiAgbm90IG92ZXJydW4gZmluZGluZ3Mg4oCUIHRoZSBtZXRob2RvbG9neSBwYWdlIG11c3QgY2FycnkgdGhpcyBjYXZlYXQuCi0gRXZlcnkgY2F0ZWdvcnkgdG90YWwgaW4gYHNwZW5kaW5nLmpzb25gIHJlY29uY2lsZXMgZXhhY3RseSB0byBmdW5kIHRvdGFsczsgdGhlCiAgdHJ1c3QtZnVuZCBjYXRlZ29yaWVzIChoZWFsdGggY2FyZSwgcGVuc2lvbiwgT1BFQikgYXJlIHJlcG9ydGVkIHNlcGFyYXRlbHkgdG8KICBhdm9pZCBkb3VibGUtY291bnRpbmcuCg==
+# Findings Memo — East Grand Rapids Spending Analysis (merged, 2026-10-07)
+
+Merged from Workstream A (financial-file analysis) and Workstream B (official public records).
+Every number below traces to a file in this directory or a URL in `sources.md`.
+Neutral framing throughout: flags are "things worth understanding," not allegations.
+
+## Cross-check (coordinator QC): computed totals reconcile to the audited financials
+
+- Workstream A's **FY2025 headline: $26,702,474.22** = operating expenditures of all governmental funds
+  + Water & Sewer enterprise fund + Motor Equipment Revolving Fund, **excluding** interfund
+  transfers ($3,232,450), GASB-34 conversion entries, and the Health Care / Pension / OPEB
+  trust funds (excluded to avoid double-counting costs also booked as departmental spending).
+- The governmental-funds portion of that figure = **$21,943,289**, vs. the audited ACFR
+  (FY ended 6/30/2025) governmental-fund expenditures of **$21,943,295** — a **$6 difference
+  (rounding)**. The computed total is verified against the audit.
+- Accrual-basis "primary government expenses" in the ACFR are $19,067,333 (different
+  accounting basis; not directly comparable to the modified-accrual headline).
+- GL files balance to $0.00 (debits − credits); check-register parsed totals match both
+  report footers to the cent.
+
+## Note on the numbers in the original site brief
+
+The brief's example figures were spot-checked: buildings $1.17M → $1.93M (+65%) and
+public safety $4.93M → $4.67M (−5%) both match the verified data (actuals: $1,173,693 →
+$1,932,488; $4,941,244 → $4,690,846). **But the brief's headline "$29.2M" does not match:
+verified FY2025 total city spending is $26.7M.** Do not use $29.2M or the +1.7% change
+figure (verified FY24→FY25 change on the same definition: $27.57M → $26.70M, −3.1%).
+The police-uniforms example ($28K budget / $46,253 spent) was not separately verified —
+verify per-item before use.
+
+## The 10 most important verified findings
+
+1. **FY2025 total city spending was $26,702,474** (definition above; reconciles to the
+   audited ACFR within $6). FY2024 comparable: $27,565,044. Source: GL files →
+   `spending.json`; ACFR via Nov 25, 2025 commission packet.
+
+2. **Only ~30% of a resident's property-tax bill goes to City Hall.** 2025 homestead levy:
+   **47.4995 mills** total; the City of EGR levies just 14.2107 mills (operating 11.1419,
+   roads 1.9632, complex debt 0.6129, parks debt 0.3508 + 0.1419). The rest: EGR schools
+   11.7894, Kent County 5.7573, Kent ISD 5.3515, GRCC 1.6793, State Education Tax 6.0,
+   The Rapid 1.3817, KDL 1.0832. School debt alone (9.95 mills) is 70% of the entire city
+   levy. Non-homestead pays 65.4995 (adds the 18-mill school operating levy).
+   Source: city's official millage document (6/25/2026) → `tax.json`.
+
+3. **The parking-deck bond is on the November 3, 2026 ballot — not yet approved.** Up to
+   **$9,000,000** in GO unlimited-tax bonds (max 20-year term per series) for a ~240-space
+   deck on Bagley at the EGR schools lot, plus traffic signals and pedestrian/
+   micromobility infrastructure. Ballot estimates: **0.5922 mills first year, 0.4925
+   average** (a corrected resolution fixed 0.44925 → 0.4925; vote 4-1-2). By arithmetic
+   (no official dollar figure published): ~$118/yr first year on a $200,000 taxable value
+   (~$400K home), ~$98.50/yr average — about 1.2% added to the homestead rate. The same
+   ballot also carries the Kent County jail millage (0.98-mill renewal+increase).
+   Source: official special-meeting minutes; `tax.json`.
+
+4. **Manhattan Park is the city's biggest active capital project: $2,377,027 in FY2025,
+   up 272% from $638,849 in FY2024.** FY2024 was design (Viridis Design Group $121,080)
+   and early site work (Groundhawg Excavating $489,983); FY2025 is construction by
+   Katerberg-VerHage Inc ($1,939,970 booked; $1,981,311 in checks, incl. single payments
+   of $708,396 and $594,567). Cumulative FY24+FY25 ≈ $3.02M, consistent with secondary
+   reporting of a ~$3.18M program. Source: GL journal descriptions; check register.
+
+5. **Parks playground capital wound down as Manhattan Park ramped up: $3,290,943
+   (FY2024) → $125,806 (FY2025).** Net parks & recreation spending fell $6.67M → $5.39M —
+   a completed project phase offsetting the Manhattan Park build. Source: GL files.
+
+6. **City buildings capital spending rose 156% ($329,155 → $843,495), and it is
+   itemized:** a DPW salt/aggregate storage building (~$275K + $34K steel), HVAC capital
+   replacements (~$110K + ~$106K), flooring ($109K), and an EGR library study room
+   ($56K). Source: FY2025 GL journal descriptions on 101-265-9700.00.
+
+7. **Employee pharmacy costs jumped 153% ($161,771 → $409,879, +$248,108)** in the
+   Health Care Fund, spread across twice-monthly Blue Cross claim payments with no
+   single anomalous payment. Medical (HRA) claims rose 27% ($661K → $842K); total
+   Health Care Fund spending rose 31% to $2,026,084. **The cause (utilization, specialty
+   drugs, enrollment) is not in these files.** Source: GL files.
+
+8. **FY2026 fleet buying is over budget at the 75% mark — trucks identified.**
+   Motor Equipment vehicle purchases: $1,180,000 budget vs $1,441,260 spent through
+   3/31/2026 (122%; $261,260 over). Detail: $567,091 International sewer truck,
+   $118,888 loader, $77,662 excavator, two dump trucks ~$114,861 each plus upfits,
+   $121,166 for two replacements. **A 3/31 comparison is not an overrun finding** —
+   capital budgets are routinely amended and purchases are lumpy. 51 accounts are over
+   budget at the 75% mark overall (timing caveat applies to all). Source: YTD file.
+
+9. **The check-register files are mislabeled by one fiscal year, and two-thirds of
+   register dollars are tax pass-throughs, not city spending.** "FY2024 Check
+   Register.xlsx" holds checks dated 7/3/2024–6/30/2025; "FY2025 Check Regsiter.xlsx"
+   holds 7/1/2025–6/4/2026 (partial). **No FY2024-dated check data was provided.**
+   ~$33.2M/yr of register dollars are property-tax pass-throughs to schools, county,
+   ISD, and GRCC — excluded from vendor analysis. City-vendor checks: $17.5M (FY2025).
+   The register also omits payroll (ACH) and wires. Source: both register files.
+
+10. **Vendor spending is concentrated but explainable: top 10 vendors = 59.8% of
+    city-vendor checks.** Top 5 (FY2025 checks): Grand Rapids City Treasurer $2,047,632
+    (monthly wholesale water purchases), Katerberg-VerHage $1,981,311 (Manhattan Park),
+    Michigan Paving $1,839,247 (street resurfacing), Kent District Library $1,049,240
+    (library contract/millage remittance), US Bank $973,700 (bond debt service).
+    Context: the city's General Fund balance ended FY2025 at $7,281,401 (~50% of
+    expenditures, well above typical 25% benchmarks); adopted FY2025-26 all-funds
+    budget is $37,669,310. Source: check registers; ACFR; adopted budget.
+
+## Claims explicitly NOT verified
+
+- The **reason** pharmacy and medical claims rose — needs benefits/claims detail.
+- Whether any FY2026 over-budget account finishes the year over budget — needs final
+  amended budgets and year-end actuals.
+- What project the spring-2026 AJZ Concrete payments ($61,869 → $360,208, +482%)
+  belong to — needs invoices or post-3/31/2026 project coding.
+- The split of Grand Rapids City Treasurer payments between wholesale water and fees.
+- What the $545,138 in Fifth Third Bank purchasing-card settlements bought.
+- Why the DB pension contribution fell $1,380,000 → $1,100,000 — needs actuarial data.
+- Why OPEB medical claims tripled ($59,967 → $187,942).
+- FY2024 vendor totals — no FY2024-dated check data provided.
+- Whether the $100K–$136K annual transfer imbalance (677 → OPEB trust) is a booking
+  artifact — the receiving entry is not in these extracts.
+- The $1,965,045 pension transfer on GL 101-965-9950.12 (a GL number with no activity
+  in the FY2024 extract and no chart-of-accounts entry).
+- Official dollar impact of the parking bond on a sample home (city published millage
+  only); 2026 winter millage rates (not yet levied); full official text of the $9M
+  bond resolution (correction verified via official minutes; complete ballot text only
+  via a commissioner's secondary write-up); the city's own FY2026-27 budget book
+  (figures via agenda-packet mirror only); certified canvass for the Nov 2025 school
+  millages; per-project actual spending and vendor names beyond the GL (would need
+  packet-by-packet review); ladder-truck (~$1.7M) and engine (~$700K) figures
+  (secondary reporting only); whether the parking proposal passes (election 11/3/2026).
+
+## Data-quality notes for the site builder
+
+- Label all vendor figures by **actual check-date fiscal year**, not by the register
+  filenames (they are off by one year).
+- The check register is a **complement** to the GL, not a reconciliation of it
+  ($17.5M city-vendor checks vs $26.7M GL operating expenditures).
+- Budget-vs-YTD comparisons at 3/31 (75% of the fiscal year) are timing snapshots,
+  not overrun findings — the methodology page must carry this caveat.
+- Every category total in `spending.json` reconciles exactly to fund totals; the
+  trust-fund categories (health care, pension, OPEB) are reported separately to
+  avoid double-counting.

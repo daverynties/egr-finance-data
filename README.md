@@ -1,1 +1,35 @@
-IyBFYXN0IEdyYW5kIFJhcGlkcyBDaXR5IFNwZW5kaW5nIOKAlCBkYXRhICYgc2l0ZQoKUmVzaWRlbnQtZnJpZW5kbHkgYW5hbHlzaXMgb2YgQ2l0eSBvZiBFYXN0IEdyYW5kIFJhcGlkcyBmaW5hbmNlcywgYnVpbHQgZnJvbSBGT0lBIGZpbmFuY2lhbCByZWNvcmRzLgoKIyMgV2hhdCdzIGhlcmUKCi0gYHJhdy9gIOKAlCB0aGUgRk9JQSByZWNvcmRzIGZyb20gdGhlIENpdHkgQ2xlcmsgKEp1bmUgMTUsIDIwMjYpLCBjb252ZXJ0ZWQgZnJvbSB0aGUKICBvcmlnaW5hbCBzcHJlYWRzaGVldHMgdG8gY2xlYW4gQ1NWcyAocmVwb3J0IGhlYWRlcnMvZm9vdGVycyByZW1vdmVkLCBkYXRhIHRhYmxlcyBvbmx5IOKAlAogIG5vIGRlc2t0b3Agc29mdHdhcmUgbmVlZGVkIHRvIG9wZW4gdGhlbSk6IEdMIHRyYW5zYWN0aW9uIGRldGFpbCwgWVREIGJ1ZGdldC12cy1hY3R1YWwsCiAgY2hlY2sgcmVnaXN0ZXJzLCBmdW5kIHRyYW5zZmVycywgY2hhcnQgb2YgYWNjb3VudHMuCi0gYGFuYWx5c2lzL2Ag4oCUIG5vcm1hbGl6ZWQgYW5hbHlzaXM6IHNwZW5kaW5nIGJ5IGNhdGVnb3J5IChGWTI0L0ZZMjUgYWN0dWFscywgRlkyNiBidWRnZXQvWVREKSwKICB2ZW5kb3IgcmFua2luZ3MsIGJ1ZGdldCBmbGFncywgY2FwaXRhbCBwcm9qZWN0cywgbWlsbGFnZSBicmVha2Rvd24sIG1ldGhvZG9sb2d5LCBzb3VyY2VzLgotIGBzaXRlL2Ag4oCUIHRoZSBwdWJsaWMtZmFjaW5nIHdlYnNpdGUgKGBpbmRleC5odG1sYCksIGJ1aWx0IGZyb20gdGhlIHZlcmlmaWVkIGFuYWx5c2lzLgoKIyMgS2V5IHZlcmlmaWVkIGZpZ3VyZXMKCi0gRlkyMDI1IHRvdGFsIGNpdHkgc3BlbmRpbmc6ICoqJDI2LDcwMiw0NzQqKiAoYWxsIGdvdmVybm1lbnRhbCBmdW5kcyArIFdhdGVyICYgU2V3ZXIgZW50ZXJwcmlzZSArCiAgTW90b3IgRXF1aXBtZW50IFJldm9sdmluZyBGdW5kLCBleGNsdWRpbmcgaW50ZXJmdW5kIHRyYW5zZmVycykuIEdvdmVybm1lbnRhbC1mdW5kcyBwb3J0aW9uCiAgbWF0Y2hlcyB0aGUgYXVkaXRlZCBBQ0ZSIHdpdGhpbiAkNi4KLSBGWTIwMjQg4oaSIEZZMjAyNSBjaGFuZ2U6ICoq4oiSMy4xJSoqLgotIEZpc2NhbCB5ZWFyOiBKdWx5IDEg4oCTIEp1bmUgMzAuCgojIyBQYXJraW5nIHByb3Bvc2FsCgpTaG93biBzZXBhcmF0ZWx5IG9uIHRoZSBzaXRlOiBwcm9wb3NlZCBwYXJraW5nLWZhY2lsaXR5IGJvbmQvbWlsbGFnZSBpcyAqKm9uIHRoZSBiYWxsb3QKTm92ZW1iZXIgMywgMjAyNiDigJQgbm90IGFwcHJvdmVkKiouIEZpcnN0LXllYXIgcmF0ZSAwLjU5MjIgbWlsbHM7IGRvbGxhciBmaWd1cmVzIGFyZSBkZXJpdmVkCmFyaXRobWV0aWNhbGx5IGZyb20gdGhhdCByYXRlLCBub3Qgb2ZmaWNpYWwgY2l0eSBmaWd1cmVzLgoKIyMgRGF0YSBub3RlcwoKLSBDaGVjay1yZWdpc3RlciBmaWxlcyBhcmUgbWlzbGFiZWxlZCBieSBvbmUgZmlzY2FsIHllYXIgaW4gdGhlaXIgZmlsZW5hbWVzOyBmaWd1cmVzIGluIHRoZQogIGFuYWx5c2lzIGFyZSBsYWJlbGVkIGJ5IGFjdHVhbCBjaGVjayBkYXRlcy4gTm8gRlkyMDI0LWRhdGVkIGNoZWNrIGRhdGEgZXhpc3RzLgotIH4kMzNNL3lyIG9mIHJlZ2lzdGVyIGRvbGxhcnMgYXJlIHByb3BlcnR5LXRheCBwYXNzLXRocm91Z2hzIChzY2hvb2xzLCBjb3VudHksIElTRCwgR1JDQyksCiAgZXhjbHVkZWQgZnJvbSB2ZW5kb3IgYW5hbHlzaXMuIFBheXJvbGwgKEFDSC93aXJlcykgaXMgbm90IGluIHRoZSBjaGVjayByZWdpc3RlcnMuCi0gU2VlIGBhbmFseXNpcy9tZXRob2RvbG9neS5tZGAgZm9yIGZ1bGwgbWV0aG9kb2xvZ3kgYW5kIGxpbWl0YXRpb25zLgo=
+# East Grand Rapids City Spending — data & site
+
+Resident-friendly analysis of City of East Grand Rapids finances, built from FOIA financial records.
+
+## What's here
+
+- `raw/` — the FOIA records from the City Clerk (June 15, 2026), converted from the
+  original spreadsheets to clean CSVs (report headers/footers removed, data tables only —
+  no desktop software needed to open them): GL transaction detail, YTD budget-vs-actual,
+  check registers, fund transfers, chart of accounts.
+- `analysis/` — normalized analysis: spending by category (FY24/FY25 actuals, FY26 budget/YTD),
+  vendor rankings, budget flags, capital projects, millage breakdown, methodology, sources.
+- `site/` — the public-facing website (`index.html`), built from the verified analysis.
+
+## Key verified figures
+
+- FY2025 total city spending: **$26,702,474** (all governmental funds + Water & Sewer enterprise +
+  Motor Equipment Revolving Fund, excluding interfund transfers). Governmental-funds portion
+  matches the audited ACFR within $6.
+- FY2024 → FY2025 change: **−3.1%**.
+- Fiscal year: July 1 – June 30.
+
+## Parking proposal
+
+Shown separately on the site: proposed parking-facility bond/millage is **on the ballot
+November 3, 2026 — not approved**. First-year rate 0.5922 mills; dollar figures are derived
+arithmetically from that rate, not official city figures.
+
+## Data notes
+
+- Check-register files are mislabeled by one fiscal year in their filenames; figures in the
+  analysis are labeled by actual check dates. No FY2024-dated check data exists.
+- ~$33M/yr of register dollars are property-tax pass-throughs (schools, county, ISD, GRCC),
+  excluded from vendor analysis. Payroll (ACH/wires) is not in the check registers.
+- See `analysis/methodology.md` for full methodology and limitations.
