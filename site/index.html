@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="color-scheme" content="light dark" />
+  <meta name="color-scheme" content="light" />
   <meta name="description" content="A plain-English, source-traceable look at East Grand Rapids city spending, vendors, projects and property taxes." />
   <link rel="icon" href="data:," />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,46 +12,26 @@
   <title>East Grand Rapids City Spending</title>
   <style>
     :root {
-      color-scheme: light dark;
-      --bg: #f7f9fb;
+      color-scheme: light;
+      --bg: #f4f7f9;
       --surface: #ffffff;
-      --surface-2: #edf3f6;
-      --ink: #112635;
-      --muted: #516574;
-      --line: #cfdae0;
+      --surface-2: #eaf0f3;
+      --ink: #162a38;
+      --muted: #405563;
+      --line: #c7d3da;
       --navy: #083f60;
-      --navy-2: #0b5279;
-      --teal: #0c8277;
-      --green: #3d8b68;
-      --amber: #b67a22;
-      --sky: #5b9fc4;
+      --navy-2: #084c70;
+      --teal: #086e66;
+      --green: #1e6848;
+      --amber: #80520c;
+      --sky: #3f83a8;
       --soft-blue: #dcebf3;
-      --soft-amber: #f6ead4;
-      --soft-green: #deeee6;
+      --soft-amber: #f5e7cc;
+      --soft-green: #dbece3;
       --shadow: 0 16px 50px rgba(14, 42, 58, .08);
       --radius-s: 8px;
       --radius-m: 14px;
       --radius-l: 24px;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0b151c;
-        --surface: #111f29;
-        --surface-2: #172a35;
-        --ink: #edf5f8;
-        --muted: #a8bdc8;
-        --line: #29414e;
-        --navy: #74b9d8;
-        --navy-2: #9bcde3;
-        --teal: #5cc6b4;
-        --green: #78c39d;
-        --amber: #e6b565;
-        --sky: #6fb4d6;
-        --soft-blue: #173448;
-        --soft-amber: #3d301d;
-        --soft-green: #19362d;
-        --shadow: 0 18px 56px rgba(0,0,0,.28);
-      }
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -120,7 +100,6 @@
     .cat-button span:nth-child(2) { font-weight: 600; }
     .cat-button b { font: 500 .82rem/1.2 "IBM Plex Mono", monospace; }
     .detail-panel { background: var(--navy); color: #fff; padding: 30px; min-height: 454px; display: flex; flex-direction: column; }
-    @media (prefers-color-scheme: dark) { .detail-panel { background: #123247; } }
     .detail-panel .eyebrow { color: #a9d6ea; }
     .detail-number { margin: 18px 0 8px; font-size: clamp(2.7rem, 7vw, 5rem); line-height: .9; font-weight: 700; letter-spacing: -.05em; }
     .detail-change { color: #cce6f1; }
@@ -165,14 +144,25 @@
     .pace-track i { display: block; height: 100%; width: min(var(--w),100%); background: var(--teal); }
     .budget-row.above .pace-track i { background: var(--amber); }
     .budget-rate { text-align: right; color: var(--navy); font: 500 .88rem/1.2 "IBM Plex Mono", monospace; }
-    .payroll-shell { display: grid; grid-template-columns: .72fr 1.28fr; gap: 26px; }
-    .payroll-total { padding: 30px; background: var(--surface); border: 1px solid var(--line); }
-    .payroll-total strong { display: block; margin: 14px 0 8px; color: var(--navy); font-size: clamp(3.4rem,8vw,5.4rem); line-height: .9; letter-spacing: -.05em; }
-    .payroll-total p { margin: 0; color: var(--muted); }
-    .payroll-list { border-top: 1px solid var(--line); }
-    .payroll-row { display: grid; grid-template-columns: 1fr auto; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); }
-    .payroll-row span { display: block; margin-top: 4px; color: var(--muted); font-size: .88rem; }
-    .payroll-row b { color: var(--navy); font: 500 .86rem/1.25 "IBM Plex Mono", monospace; text-align: right; }
+    .payroll-shell { display: grid; gap: 18px; }
+    .payroll-total { display: grid; grid-template-columns: minmax(230px,.55fr) 1fr; gap: 28px; align-items: end; padding: 30px; background: var(--surface); border: 1px solid var(--line); }
+    .payroll-total strong { display: block; margin: 14px 0 0; color: var(--navy); font-size: clamp(3.4rem,8vw,5.4rem); line-height: .9; letter-spacing: -.05em; }
+    .payroll-total p { margin: 0; color: var(--muted); font-size: 1.05rem; }
+    .payroll-table { width: 100%; border-collapse: collapse; font-size: .93rem; }
+    .payroll-table th, .payroll-table td { padding: 13px 12px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+    .payroll-table th { color: var(--muted); font-size: .78rem; font-weight: 600; text-align: left; }
+    .payroll-table th:first-child, .payroll-table td:first-child { padding-left: 0; }
+    .payroll-table th:nth-child(3), .payroll-table th:nth-child(4), .payroll-table td:nth-child(3), .payroll-table td:nth-child(4) { text-align: right; }
+    .payroll-table td:first-child { font-weight: 650; }
+    .payroll-table td:nth-child(3), .payroll-table td:nth-child(4) { font: 500 .8rem/1.25 "IBM Plex Mono", monospace; }
+    .payroll-table .fund-label { display: inline-block; padding: 4px 7px; background: var(--surface-2); color: var(--muted); font-size: .76rem; line-height: 1.2; }
+    .payroll-table .change-up { color: var(--amber); }
+    .payroll-table .change-down { color: var(--green); }
+    .sort-button { display: inline-flex; align-items: center; gap: 6px; border: 0; padding: 4px 0; background: transparent; color: inherit; font-size: inherit; font-weight: inherit; cursor: pointer; }
+    .sort-button::after { content: "↕"; color: var(--teal); font: 500 .72rem/1 "IBM Plex Mono", monospace; }
+    .sort-button[aria-pressed="true"]::after { content: "↓"; }
+    .sort-button[data-direction="asc"][aria-pressed="true"]::after { content: "↑"; }
+    .payroll-method { margin: 17px 0 0; color: var(--muted); font-size: .84rem; }
     .explain-gap { margin-top: 22px; padding: 20px 22px; background: var(--soft-amber); }
     .explain-gap .status { display: inline-block; margin-bottom: 8px; }
     .explain-gap p { margin: 0; color: var(--muted); }
@@ -432,6 +422,22 @@
       .peer-table td::before { content: attr(data-label); color: var(--muted); font: 600 .78rem/1.2 "Source Sans 3", sans-serif; text-align: left; }
       .peer-table td:first-child { display: block; margin-bottom: 7px; text-align: left; }
       .peer-table td:first-child::before { content: none; }
+      .payroll-total { grid-template-columns: 1fr; gap: 18px; padding: 24px; }
+      .payroll-table, .payroll-table tbody, .payroll-table tbody tr, .payroll-table tbody td { display: block; width: 100%; }
+      .payroll-table thead { display: block; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+      .payroll-table thead tr { display: flex; justify-content: flex-end; gap: 18px; }
+      .payroll-table thead th { display: none; padding: 0; border: 0; }
+      .payroll-table thead th:nth-child(3), .payroll-table thead th:nth-child(4) { display: block; }
+      .payroll-table tbody tr { display: grid; grid-template-columns: 1fr auto; gap: 5px 14px; padding: 17px 0; border-bottom: 1px solid var(--line); }
+      .payroll-table tbody td, .payroll-table tbody td:first-child { padding: 0; border: 0; text-align: left; }
+      .payroll-table tbody td:first-child { grid-column: 1 / -1; font-size: 1rem; }
+      .payroll-table tbody td:nth-child(2) { grid-column: 1 / -1; }
+      .payroll-table tbody td:nth-child(3), .payroll-table tbody td:nth-child(4) { display: grid; grid-template-columns: 1fr auto; gap: 12px; margin-top: 5px; text-align: right; }
+      .payroll-table tbody td:nth-child(3) { grid-column: 1 / -1; }
+      .payroll-table tbody td:nth-child(4) { grid-column: 1 / -1; }
+      .payroll-table tbody td::before { content: attr(data-label); color: var(--muted); font: 600 .78rem/1.2 "Source Sans 3", sans-serif; text-align: left; }
+      .payroll-table tbody td:first-child::before, .payroll-table tbody td:nth-child(2)::before { content: none; }
+      .payroll-method { font-size: .8rem; }
       .ledger-row, .budget-row { grid-template-columns: 1fr auto; gap: 10px 14px; }
       .ledger-track, .pace-track { grid-column: 1 / -1; grid-row: 2; }
       .ledger-value, .budget-rate { grid-column: 2; grid-row: 1; }
@@ -463,7 +469,7 @@
       <span>Sections</span><span class="nav-toggle-icon" aria-hidden="true"></span>
     </button>
     <div class="nav-links" id="navLinks">
-      <a href="#overview">Overview</a><a href="#taxes">Taxes</a><a href="#ballot">Ballot</a><a href="#revenue">Revenue</a><a href="#spending">Spending</a><a href="#budget">Budget</a><a href="#changes">Changes</a><a href="#payroll">Payroll</a><a href="#flags">Context</a><a href="#vendors">Vendors</a><a href="#projects">Projects</a><a href="#health">Health</a><a href="#compare">Compare</a><a href="#utility">Utility</a><a href="#savings">Savings</a><a href="#ask-data">Ask</a><a href="#method">Method</a><a href="#about">About</a>
+      <a href="#overview">Overview</a><a href="#taxes">Taxes</a><a href="#ballot">Ballot</a><a href="#spending">Spending</a><a href="#compare">Compare</a><a href="#ask-data">Ask</a><a href="#about">About</a>
     </div>
     <span class="freshness">Analysis dated Oct. 7, 2026</span>
   </div>
@@ -808,17 +814,52 @@
       </summary>
       <div class="section-disclosure-body">
     <div class="payroll-shell">
-      <div class="payroll-total"><span class="eyebrow">FY2025 city payroll</span><strong>$9.03M</strong><p>Public safety accounted for $3.96M, or 44% of the payroll total.</p></div>
-      <details open class="disclosure">
-        <summary><span>Payroll by department</span><small>5 departments</small></summary>
+      <div class="payroll-total"><div><span class="eyebrow">FY2025 city payroll</span><strong>$9.03M</strong></div><p>Public safety accounted for $3.96M, or 44% of the payroll total. The table below shows every department identified in the payroll journals.</p></div>
+      <details open class="disclosure disclosure-wide">
+        <summary><span>Payroll by department and fund</span><small>36 departments</small></summary>
         <div class="disclosure-body">
-          <div class="payroll-list" aria-label="Selected FY2025 payroll by department">
-            <div class="payroll-row"><div><strong>Public safety</strong><span>Down $320,115, the largest departmental change in either direction</span></div><b>$3.96M · −7.5%</b></div>
-            <div class="payroll-row"><div><strong>Recreation</strong><span>Next-largest payroll area shown</span></div><b>$756K · +9.6%</b></div>
-            <div class="payroll-row"><div><strong>Water/sewer mains &amp; hydrants</strong><span>Utility field operations</span></div><b>$623K</b></div>
-            <div class="payroll-row"><div><strong>Finance</strong><span>Finance department payroll</span></div><b>$551K</b></div>
-            <div class="payroll-row"><div><strong>Winter maintenance</strong><span>Nearly doubled in a heavy snow year</span></div><b>+$49K</b></div>
-          </div>
+          <table class="payroll-table" aria-label="FY2025 payroll for all 36 departments, with change from FY2024">
+            <thead><tr><th>Department</th><th>Fund</th><th aria-sort="descending"><button class="sort-button" type="button" data-payroll-sort="payroll" data-direction="desc" aria-pressed="true">FY2025 payroll</button></th><th aria-sort="none"><button class="sort-button" type="button" data-payroll-sort="change" data-direction="desc" aria-pressed="false">Change vs FY2024</button></th></tr></thead>
+            <tbody id="payrollTableBody">
+              <tr data-payroll="3957001" data-change="-320115"><td>Public Safety</td><td><span class="fund-label">General Fund</span></td><td data-label="FY2025 payroll">$3,957,001</td><td data-label="Change vs FY2024" class="change-down">−$320,115 (−7.5%)</td></tr>
+              <tr data-payroll="755527" data-change="65872"><td>Recreation</td><td><span class="fund-label">General Fund</span></td><td data-label="FY2025 payroll">$755,527</td><td data-label="Change vs FY2024" class="change-up">+$65,872 (+9.6%)</td></tr>
+              <tr data-payroll="623031" data-change="1796"><td>Mains and Hydrants</td><td><span class="fund-label">Water &amp; Sewer</span></td><td data-label="FY2025 payroll">$623,031</td><td data-label="Change vs FY2024" class="change-up">+$1,796 (+0.3%)</td></tr>
+              <tr data-payroll="551018" data-change="17062"><td>Finance</td><td><span class="fund-label">General Fund</span></td><td data-label="FY2025 payroll">$551,018</td><td data-label="Change vs FY2024" class="change-up">+$17,062 (+3.2%)</td></tr>
+              <tr data-payroll="361891" data-change="-8994"><td>City Manager</td><td><span class="fund-label">General Fund</span></td><td data-label="FY2025 payroll">$361,891</td><td data-label="Change vs FY2024" class="change-down">−$8,994 (−2.4%)</td></tr>
+              <tr data-payroll="302039" data-change="35214"><td>City Buildings</td><td><span class="fund-label">General Fund</span></td><td data-label="FY2025 payroll">$302,039</td><td data-label="Change vs FY2024" class="change-up">+$35,214 (+13.2%)</td></tr>
+              <tr data-payroll="273326" data-change="10403"><td>Grounds Maintenance</td><td><span class="fund-label">General Fund</span></td><td data-label="FY2025 payroll">$273,326</td><td data-label="Change vs FY2024" class="change-up">+$10,403 (+4.0%)</td></tr>
+              <tr data-payroll="207744" data-change="4311"><td>Yard Waste Collection/Refuse/Compost</td><td><span class="fund-label">General Fund</span></td><td data-label="FY2025 payroll">$207,744</td><td data-label="Change vs FY2024" class="change-up">+$4,311 (+2.1%)</td></tr>
+              <tr data-payroll="171213" data-change="9660"><td>Sewer Expenditures</td><td><span class="fund-label">Water &amp; Sewer</span></td><td data-label="FY2025 payroll">$171,213</td><td data-label="Change vs FY2024" class="change-up">+$9,660 (+6.0%)</td></tr>
+              <tr data-payroll="168007" data-change="14170"><td>Assessor</td><td><span class="fund-label">General Fund</span></td><td data-label="FY2025 payroll">$168,007</td><td data-label="Change vs FY2024" class="change-up">+$14,170 (+9.2%)</td></tr>
+              <tr data-payroll="149054" data-change="13416"><td>Routine Maintenance</td><td><span class="fund-label">Local Streets</span></td><td data-label="FY2025 payroll">$149,054</td><td data-label="Change vs FY2024" class="change-up">+$13,416 (+9.9%)</td></tr>
+              <tr data-payroll="141140" data-change="-27759"><td>Motor Equipment Expenditures</td><td><span class="fund-label">Motor Equipment</span></td><td data-label="FY2025 payroll">$141,140</td><td data-label="Change vs FY2024" class="change-down">−$27,759 (−16.4%)</td></tr>
+              <tr data-payroll="129104" data-change="-8386"><td>Routine Maintenance</td><td><span class="fund-label">Major Streets</span></td><td data-label="FY2025 payroll">$129,104</td><td data-label="Change vs FY2024" class="change-down">−$8,386 (−6.1%)</td></tr>
+              <tr data-payroll="121959" data-change="23000"><td>Recreation Sports</td><td><span class="fund-label">General Fund</span></td><td data-label="FY2025 payroll">$121,959</td><td data-label="Change vs FY2024" class="change-up">+$23,000 (+23.2%)</td></tr>
+              <tr data-payroll="121940" data-change="6237"><td>Zoning Administration</td><td><span class="fund-label">General Fund</span></td><td data-label="FY2025 payroll">$121,940</td><td data-label="Change vs FY2024" class="change-up">+$6,237 (+5.4%)</td></tr>
+              <tr data-payroll="101752" data-change="48995"><td>Winter Maintenance</td><td><span class="fund-label">Local Streets</span></td><td data-label="FY2025 payroll">$101,752</td><td data-label="Change vs FY2024" class="change-up">+$48,995 (+92.9%)</td></tr>
+              <tr data-payroll="97250" data-change="-47275"><td>Pool Programs</td><td><span class="fund-label">General Fund</span></td><td data-label="FY2025 payroll">$97,250</td><td data-label="Change vs FY2024" class="change-down">−$47,275 (−32.7%)</td></tr>
+              <tr data-payroll="81930" data-change="622"><td>Street Administration</td><td><span class="fund-label">Major Streets</span></td><td data-label="FY2025 payroll">$81,930</td><td data-label="Change vs FY2024" class="change-up">+$622 (+0.8%)</td></tr>
+              <tr data-payroll="81922" data-change="621"><td>Street Administration</td><td><span class="fund-label">Local Streets</span></td><td data-label="FY2025 payroll">$81,922</td><td data-label="Change vs FY2024" class="change-up">+$621 (+0.8%)</td></tr>
+              <tr data-payroll="73570" data-change="13502"><td>Winter Maintenance</td><td><span class="fund-label">Major Streets</span></td><td data-label="FY2025 payroll">$73,570</td><td data-label="Change vs FY2024" class="change-up">+$13,502 (+22.5%)</td></tr>
+              <tr data-payroll="68197" data-change="797"><td>City Engineering</td><td><span class="fund-label">Local Streets</span></td><td data-label="FY2025 payroll">$68,197</td><td data-label="Change vs FY2024" class="change-up">+$797 (+1.2%)</td></tr>
+              <tr data-payroll="68171" data-change="796"><td>City Engineering</td><td><span class="fund-label">Water &amp; Sewer</span></td><td data-label="FY2025 payroll">$68,171</td><td data-label="Change vs FY2024" class="change-up">+$796 (+1.2%)</td></tr>
+              <tr data-payroll="68165" data-change="796"><td>City Engineering</td><td><span class="fund-label">Major Streets</span></td><td data-label="FY2025 payroll">$68,165</td><td data-label="Change vs FY2024" class="change-up">+$796 (+1.2%)</td></tr>
+              <tr data-payroll="66264" data-change="-2610"><td>Tree Maintenance and Removal</td><td><span class="fund-label">General Fund</span></td><td data-label="FY2025 payroll">$66,264</td><td data-label="Change vs FY2024" class="change-down">−$2,610 (−3.8%)</td></tr>
+              <tr data-payroll="62012" data-change="8098"><td>Recreation Programming</td><td><span class="fund-label">General Fund</span></td><td data-label="FY2025 payroll">$62,012</td><td data-label="Change vs FY2024" class="change-up">+$8,098 (+15.0%)</td></tr>
+              <tr data-payroll="51894" data-change="6110"><td>Middle School Sports</td><td><span class="fund-label">General Fund</span></td><td data-label="FY2025 payroll">$51,894</td><td data-label="Change vs FY2024" class="change-up">+$6,110 (+13.3%)</td></tr>
+              <tr data-payroll="31609" data-change="13130"><td>Aquatic Club (Waves)</td><td><span class="fund-label">General Fund</span></td><td data-label="FY2025 payroll">$31,609</td><td data-label="Change vs FY2024" class="change-up">+$13,130 (+71.1%)</td></tr>
+              <tr data-payroll="30824" data-change="1685"><td>Health Care Administration</td><td><span class="fund-label">Health Care</span></td><td data-label="FY2025 payroll">$30,824</td><td data-label="Change vs FY2024" class="change-up">+$1,685 (+5.8%)</td></tr>
+              <tr data-payroll="23184" data-change="7810"><td>Traffic Services</td><td><span class="fund-label">Local Streets</span></td><td data-label="FY2025 payroll">$23,184</td><td data-label="Change vs FY2024" class="change-up">+$7,810 (+50.8%)</td></tr>
+              <tr data-payroll="22294" data-change="1775"><td>Elections</td><td><span class="fund-label">General Fund</span></td><td data-label="FY2025 payroll">$22,294</td><td data-label="Change vs FY2024" class="change-up">+$1,775 (+8.7%)</td></tr>
+              <tr data-payroll="21680" data-change="6581"><td>Traffic Services</td><td><span class="fund-label">Major Streets</span></td><td data-label="FY2025 payroll">$21,680</td><td data-label="Change vs FY2024" class="change-up">+$6,581 (+43.6%)</td></tr>
+              <tr data-payroll="20311" data-change="88"><td>Gaslight Village Business District</td><td><span class="fund-label">General Fund</span></td><td data-label="FY2025 payroll">$20,311</td><td data-label="Change vs FY2024" class="change-up">+$88 (+0.4%)</td></tr>
+              <tr data-payroll="10518" data-change="2645"><td>Meters</td><td><span class="fund-label">Water &amp; Sewer</span></td><td data-label="FY2025 payroll">$10,518</td><td data-label="Change vs FY2024" class="change-up">+$2,645 (+33.6%)</td></tr>
+              <tr data-payroll="8929" data-change="124"><td>City Commission</td><td><span class="fund-label">General Fund</span></td><td data-label="FY2025 payroll">$8,929</td><td data-label="Change vs FY2024" class="change-up">+$124 (+1.4%)</td></tr>
+              <tr data-payroll="7284" data-change="3311"><td>Special Events</td><td><span class="fund-label">General Fund</span></td><td data-label="FY2025 payroll">$7,284</td><td data-label="Change vs FY2024" class="change-up">+$3,311 (+83.3%)</td></tr>
+              <tr data-payroll="1824" data-change="1377"><td>Meter Reading and Collecting</td><td><span class="fund-label">Water &amp; Sewer</span></td><td data-label="FY2025 payroll">$1,824</td><td data-label="Change vs FY2024" class="change-up">+$1,377 (+308.1%)</td></tr>
+            </tbody>
+          </table>
+          <p class="payroll-method"><strong>Method:</strong> Figures come from twice-monthly payroll journal summaries in the FOIA general-ledger files; individual paycheck detail is not in the files. Fringe benefits booked outside payroll journals, such as direct pension contributions, are not included.</p>
           <div class="explain-gap"><span class="status docs">Needs additional documentation</span><p><strong>Why public-safety payroll fell.</strong> The supplied files show the size of the decrease, but not whether it came from unfilled positions, overtime, reclassification or another cause.</p></div>
         </div>
       </details>
@@ -1164,6 +1205,25 @@
   ];
   const changeList=document.getElementById('changeList'), cmax=Math.max(...changes.map(x=>Math.max(x.a,x.b)));
   changes.forEach(x=>{const d=x.b-x.a,p=d/x.a*100;const row=document.createElement('div');row.className='change-row';row.innerHTML=`<div class="change-title"><strong>${x.name}</strong><small>${x.why}</small></div><div class="spark"><div class="spark-track"><i style="width:${x.b/cmax*100}%"></i></div><span>${compact(x.a)} → ${compact(x.b)}</span></div><div class="change-amount ${x.tone}">${d>=0?'+':'−'}${compact(Math.abs(d))}<br>${p>=0?'↑':'↓'} ${Math.abs(p).toFixed(1)}%</div>`;changeList.appendChild(row)});
+
+  const payrollBody=document.getElementById('payrollTableBody'), payrollSortButtons=document.querySelectorAll('[data-payroll-sort]');
+  payrollSortButtons.forEach(button=>button.addEventListener('click',()=>{
+    const key=button.dataset.payrollSort;
+    const active=button.getAttribute('aria-pressed')==='true';
+    const direction=active&&button.dataset.direction==='desc'?'asc':'desc';
+    const rows=Array.from(payrollBody.rows);
+    rows.sort((a,b)=>{
+      const difference=Number(a.dataset[key])-Number(b.dataset[key]);
+      return direction==='asc'?difference:-difference;
+    });
+    rows.forEach(row=>payrollBody.appendChild(row));
+    payrollSortButtons.forEach(other=>{
+      const selected=other===button;
+      other.setAttribute('aria-pressed',String(selected));
+      other.dataset.direction=selected?direction:'desc';
+      other.closest('th').setAttribute('aria-sort',selected?(direction==='desc'?'descending':'ascending'):'none');
+    });
+  }));
 
   const flags=[
     {t:'Manhattan Park construction ramped up',m:'$2.38M in FY2025 · +272%',s:'explained',p:'This was the construction phase of a voter-approved parks project, not an overrun. FY2025 spending included $1.94M booked to Katerberg-VerHage.',tx:[['Jun 11, 2025','Katerberg-VerHage','$708,396','408-788-9700.00'],['Dec 11, 2024','Katerberg-VerHage','$594,567','408-788-9700.00'],['May 21, 2025','Katerberg-VerHage','$232,268','408-788-9700.00']]},
