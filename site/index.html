@@ -82,8 +82,7 @@
     .jumpbar a { text-decoration: none; color: var(--muted); font-size: .86rem; font-weight: 600; }
     .jumpbar a:hover, .jumpbar a:focus { color: var(--navy); }
     .nav-brand { display: flex; flex: 0 0 auto; align-items: center; gap: 10px; }
-    .nav-mark { display: grid; width: 30px; height: 34px; flex: 0 0 auto; place-items: center; background: #083f60; color: #fff; }
-    .nav-mark svg { width: 19px; height: 24px; }
+    .nav-mark { display: grid; width: 30px; height: 34px; flex: 0 0 auto; place-items: center; color: var(--navy); font-family: Georgia, "Times New Roman", serif; font-size: 2rem; font-weight: 700; line-height: 1; }
     .nav-title { color: var(--ink); font-size: .86rem; font-weight: 700; white-space: nowrap; }
     .nav-links { display: flex; flex-wrap: wrap; align-items: center; gap: 7px 16px; }
     .nav-toggle { display: none; border: 0; background: transparent; padding: 2px 0; align-items: center; justify-content: space-between; font-weight: 700; cursor: pointer; }
@@ -489,9 +488,7 @@
 <nav class="jumpbar" aria-label="Page sections">
   <div class="wrap">
     <div class="nav-brand">
-      <span class="nav-mark" role="img" aria-label="East Grand Rapids E mark">
-        <svg viewBox="0 0 23 29" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2h19v5H8v4h11v5H8v6h13v5H2z"/></svg>
-      </span>
+      <span class="nav-mark" role="img" aria-label="East Grand Rapids E mark">E</span>
       <span class="nav-title">East Grand Rapids City Spending</span>
     </div>
     <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks">
