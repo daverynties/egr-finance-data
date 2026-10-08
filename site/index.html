@@ -77,6 +77,15 @@
     .jumpbar .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 7px 18px; padding: 12px 0; }
     .jumpbar a { text-decoration: none; color: var(--muted); font-size: .86rem; font-weight: 600; }
     .jumpbar a:hover, .jumpbar a:focus { color: var(--navy); }
+    .nav-links { display: flex; flex-wrap: wrap; align-items: center; gap: 7px 18px; }
+    .nav-toggle { display: none; width: 100%; border: 0; background: transparent; padding: 2px 0; align-items: center; justify-content: space-between; font-weight: 700; cursor: pointer; }
+    .nav-toggle-icon, .nav-toggle-icon::before, .nav-toggle-icon::after { display: block; width: 20px; height: 2px; background: currentColor; content: ""; transition: transform .2s ease, opacity .2s ease; }
+    .nav-toggle-icon { position: relative; }
+    .nav-toggle-icon::before { position: absolute; top: -6px; }
+    .nav-toggle-icon::after { position: absolute; top: 6px; }
+    .nav-toggle[aria-expanded="true"] .nav-toggle-icon { background: transparent; }
+    .nav-toggle[aria-expanded="true"] .nav-toggle-icon::before { top: 0; transform: rotate(45deg); }
+    .nav-toggle[aria-expanded="true"] .nav-toggle-icon::after { top: 0; transform: rotate(-45deg); }
     .freshness { margin-left: auto; color: var(--muted); font: 500 .72rem/1.2 "IBM Plex Mono", monospace; }
     .hero { padding: clamp(68px, 10vw, 126px) 0 52px; }
     .eyebrow { color: var(--navy-2); font: 500 .78rem/1.2 "IBM Plex Mono", monospace; letter-spacing: .08em; text-transform: uppercase; }
@@ -162,7 +171,7 @@
     .payroll-total p { margin: 0; color: var(--muted); }
     .payroll-list { border-top: 1px solid var(--line); }
     .payroll-row { display: grid; grid-template-columns: 1fr auto; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); }
-    .payroll-row span { color: var(--muted); font-size: .88rem; }
+    .payroll-row span { display: block; margin-top: 4px; color: var(--muted); font-size: .88rem; }
     .payroll-row b { color: var(--navy); font: 500 .86rem/1.25 "IBM Plex Mono", monospace; text-align: right; }
     .explain-gap { margin-top: 22px; padding: 20px 22px; background: var(--soft-amber); }
     .explain-gap .status { display: inline-block; margin-bottom: 8px; }
@@ -171,6 +180,11 @@
     .health-stat { padding: 26px; background: var(--surface); }
     .health-stat strong { display: block; margin: 11px 0 7px; color: var(--navy); font-size: 2rem; line-height: 1; }
     .health-stat p { margin: 0; color: var(--muted); font-size: .9rem; }
+    .obligation-total { margin-top: 24px; padding: 26px; display: grid; grid-template-columns: .8fr 1.2fr; gap: 30px; align-items: end; background: var(--navy); color: #fff; }
+    .obligation-total .eyebrow { color: #a9d6ea; }
+    .obligation-total strong { display: block; margin-top: 10px; font-size: clamp(2.5rem,6vw,4rem); line-height: .95; letter-spacing: -.045em; }
+    .obligation-total p { margin: 0; color: #d8e8ef; }
+    .obligation-grid { margin-top: 1px; }
     .benchmark { margin-top: 24px; padding: 24px; background: var(--soft-blue); }
     .benchmark-track { position: relative; height: 14px; margin: 18px 0 9px; background: color-mix(in srgb, var(--line) 72%, transparent); }
     .benchmark-track i { display: block; width: 53%; height: 100%; background: var(--teal); }
@@ -268,6 +282,18 @@
     .answer { display: none; margin-top: 22px; padding: 20px; background: rgba(255,255,255,.1); border-left: 3px solid #7fd0c1; }
     .answer.show { display: block; }
     .answer a { color: #bfe8f6; }
+    .disclosure { border: 1px solid var(--line); background: var(--surface); }
+    .disclosure > summary { list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 20px 22px; cursor: pointer; color: var(--navy); }
+    .disclosure > summary::-webkit-details-marker { display: none; }
+    .disclosure > summary::after { content: "+"; flex: 0 0 auto; font: 500 1.5rem/1 "IBM Plex Mono", monospace; color: var(--teal); }
+    .disclosure[open] > summary::after { content: "−"; }
+    .disclosure > summary small { margin-left: auto; color: var(--muted); font: 500 .72rem/1.2 "IBM Plex Mono", monospace; }
+    .disclosure[open] > summary { border-bottom: 1px solid var(--line); }
+    .disclosure-body { padding: 22px; }
+    .disclosure-wide { width: 100%; }
+    .payroll-shell .disclosure { align-self: start; }
+    .payroll-shell .disclosure-body { padding-top: 0; }
+    .payroll-shell .explain-gap { margin-bottom: 0; }
     .method-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; }
     .method-card { padding: 24px; background: var(--surface); border: 1px solid var(--line); }
     .method-card p, .method-card li { color: var(--muted); font-size: .92rem; }
@@ -287,7 +313,7 @@
     :focus-visible { outline: 3px solid color-mix(in srgb, var(--sky) 70%, transparent); outline-offset: 3px; }
     @media (max-width: 850px) {
       .freshness { width: 100%; margin-left: 0; }
-      .hero-grid, .section-head, .explorer, .tax-shell, .savings, .budget-intro, .payroll-shell, .utility-shell { grid-template-columns: 1fr; }
+      .hero-grid, .section-head, .explorer, .tax-shell, .savings, .budget-intro, .payroll-shell, .utility-shell, .obligation-total { grid-template-columns: 1fr; }
       .health-grid { grid-template-columns: 1fr 1fr; }
       .big-number { margin-top: 18px; }
       .insight-grid { grid-template-columns: repeat(2,1fr); }
@@ -300,8 +326,12 @@
     }
     @media (max-width: 580px) {
       .wrap { width: min(100% - 24px, 1160px); }
-      .jumpbar .wrap { gap: 7px 13px; }
-      .jumpbar a { font-size: .78rem; }
+      .jumpbar .wrap { display: block; padding: 11px 0; }
+      .nav-toggle { display: flex; }
+      .nav-links { display: none; padding: 13px 0 5px; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0; }
+      .jumpbar.menu-open .nav-links { display: grid; }
+      .jumpbar a { font-size: .86rem; padding: 10px 4px; border-top: 1px solid color-mix(in srgb, var(--line) 72%, transparent); }
+      .freshness { display: none; }
       .hero { padding-top: 48px; }
       h1 { font-size: clamp(2.6rem, 15vw, 4.2rem); }
       .big-number { font-size: 4.25rem; }
@@ -334,7 +364,12 @@
 <a class="skip" href="#content">Skip to content</a>
 <nav class="jumpbar" aria-label="Page sections">
   <div class="wrap">
-    <a href="#overview">Overview</a><a href="#revenue">Revenue</a><a href="#spending">Spending</a><a href="#budget">Budget</a><a href="#changes">Changes</a><a href="#payroll">Payroll</a><a href="#flags">Context</a><a href="#vendors">Vendors</a><a href="#projects">Projects</a><a href="#health">Health</a><a href="#utility">Utility</a><a href="#taxes">Taxes</a><a href="#method">Method</a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks">
+      <span>Sections</span><span class="nav-toggle-icon" aria-hidden="true"></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#overview">Overview</a><a href="#taxes">Taxes</a><a href="#revenue">Revenue</a><a href="#spending">Spending</a><a href="#budget">Budget</a><a href="#changes">Changes</a><a href="#payroll">Payroll</a><a href="#flags">Context</a><a href="#vendors">Vendors</a><a href="#projects">Projects</a><a href="#health">Health</a><a href="#utility">Utility</a><a href="#savings">Savings</a><a href="#ask-data">Ask</a><a href="#method">Method</a>
+    </div>
     <span class="freshness">Analysis dated Oct. 7, 2026</span>
   </div>
 </nav>
@@ -365,6 +400,37 @@
       <article class="insight"><span class="num">02</span><strong>$5.39M</strong><p>Parks and recreation remained the largest plain-English category.</p></article>
       <article class="insight"><span class="num">03</span><strong>59.8%</strong><p>Top 10 vendors’ share of city-vendor checks — mostly major utilities, projects and debt service.</p></article>
       <article class="insight"><span class="num">04</span><strong>~30%</strong><p>City Hall’s share of a 2025 homestead property-tax bill. The rest goes to other authorities.</p></article>
+    </div>
+  </section>
+
+  <section class="section wrap" id="taxes">
+    <div class="section-head">
+      <h2>Your property taxes, separated.</h2>
+      <p class="lede">Enter taxable value — not market value. This uses the most recent complete levy year, 2025, and separates City Hall from schools, county, state and other authorities.</p>
+    </div>
+    <div class="tax-shell">
+      <div class="tax-input">
+        <div class="eyebrow" style="color:#bfe0ee">2025 homestead estimate</div>
+        <label for="taxable">Home taxable value</label>
+        <input id="taxable" inputmode="numeric" value="300,000" aria-describedby="taxHelp" />
+        <div id="taxHelp" style="color:#cfe0e8;font-size:.84rem;margin-top:8px">Taxable value is shown on your assessment notice. It is not the asking price or market value.</div>
+        <div class="tax-total"><strong id="taxTotal">$14,250</strong><span>estimated annual total · 47.4995 mills</span></div>
+      </div>
+      <div class="tax-results">
+        <div class="tax-chart">
+          <div class="donut" aria-hidden="true"></div>
+          <div class="tax-legend" id="taxLegend"></div>
+        </div>
+        <div class="tax-detail">
+          <details><summary>See every levy</summary><div id="levyLines"></div></details>
+        </div>
+        <div class="proposal">
+          <span class="proposal-status">On the ballot November 3, 2026 · not approved</span>
+          <strong>Proposed public parking facility and pedestrian safety bond</strong>
+          <div>First-year estimate: <b id="parkingFirst">$178</b> at 0.5922 mills. Average: <b id="parkingAvg">$148</b> at 0.4925 mills.</div>
+          <p style="margin:8px 0 0;color:var(--muted);font-size:.84rem">These dollar figures are arithmetic from the published millage rates, not official city sample-home estimates. Up to $9M in bonds; maximum 20-year term per series.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -461,15 +527,20 @@
     </div>
     <div class="payroll-shell">
       <div class="payroll-total"><span class="eyebrow">FY2025 city payroll</span><strong>$9.03M</strong><p>Public safety accounted for $3.96M, or 44% of the payroll total.</p></div>
-      <div class="payroll-list" aria-label="Selected FY2025 payroll by department">
-        <div class="payroll-row"><div><strong>Public safety</strong><span>Down $320,115, the largest departmental change in either direction</span></div><b>$3.96M · −7.5%</b></div>
-        <div class="payroll-row"><div><strong>Recreation</strong><span>Next-largest payroll area shown</span></div><b>$756K · +9.6%</b></div>
-        <div class="payroll-row"><div><strong>Water/sewer mains &amp; hydrants</strong><span>Utility field operations</span></div><b>$623K</b></div>
-        <div class="payroll-row"><div><strong>Finance</strong><span>Finance department payroll</span></div><b>$551K</b></div>
-        <div class="payroll-row"><div><strong>Winter maintenance</strong><span>Nearly doubled in a heavy snow year</span></div><b>+$49K</b></div>
-      </div>
+      <details class="disclosure">
+        <summary><span>Payroll by department</span><small>5 departments</small></summary>
+        <div class="disclosure-body">
+          <div class="payroll-list" aria-label="Selected FY2025 payroll by department">
+            <div class="payroll-row"><div><strong>Public safety</strong><span>Down $320,115, the largest departmental change in either direction</span></div><b>$3.96M · −7.5%</b></div>
+            <div class="payroll-row"><div><strong>Recreation</strong><span>Next-largest payroll area shown</span></div><b>$756K · +9.6%</b></div>
+            <div class="payroll-row"><div><strong>Water/sewer mains &amp; hydrants</strong><span>Utility field operations</span></div><b>$623K</b></div>
+            <div class="payroll-row"><div><strong>Finance</strong><span>Finance department payroll</span></div><b>$551K</b></div>
+            <div class="payroll-row"><div><strong>Winter maintenance</strong><span>Nearly doubled in a heavy snow year</span></div><b>+$49K</b></div>
+          </div>
+          <div class="explain-gap"><span class="status docs">Needs additional documentation</span><p><strong>Why public-safety payroll fell.</strong> The supplied files show the size of the decrease, but not whether it came from unfilled positions, overtime, reclassification or another cause.</p></div>
+        </div>
+      </details>
     </div>
-    <div class="explain-gap"><span class="status docs">Needs additional documentation</span><p><strong>Why public-safety payroll fell.</strong> The supplied files show the size of the decrease, but not whether it came from unfilled positions, overtime, reclassification or another cause.</p></div>
   </section>
 
   <section class="section wrap" id="flags">
@@ -497,13 +568,16 @@
       <h2>Big purchases and projects.</h2>
       <p class="lede">Approved amounts, spending to date and status are shown separately. “Not separately published” means exactly that — not zero, and not an estimate.</p>
     </div>
-    <div class="projects" id="projectGrid"></div>
+    <details class="disclosure disclosure-wide">
+      <summary><span>View project cards</span><small>6 projects</small></summary>
+      <div class="disclosure-body"><div class="projects" id="projectGrid"></div></div>
+    </details>
   </section>
 
   <section class="section wrap" id="health">
     <div class="section-head">
       <h2>Financial health.</h2>
-      <p class="lede">The General Fund ended FY2025 with a strong reserve. The supplied files also show annual debt service and pension contributions, but not the city’s complete long-term obligation picture.</p>
+      <p class="lede">The General Fund ended FY2025 with a strong reserve. The audited FY2024 financial report fills in the city’s debt, pension and retiree-health obligations as of June 30, 2024.</p>
     </div>
     <div class="health-grid">
       <div class="health-stat"><span class="eyebrow">General Fund balance</span><strong>$7,281,401</strong><p>Up $537,519 during FY2025.</p></div>
@@ -515,16 +589,20 @@
       <div class="benchmark-track" aria-label="General Fund reserve was 53 percent of annual spending; typical benchmark is 25 percent"><i></i><span></span></div>
       <div class="benchmark-labels"><span>0%</span><span>25% benchmark</span><span>53% actual</span><span>100%</span></div>
     </div>
+    <div class="obligation-total">
+      <div><span class="eyebrow">Total long-term liabilities · June 30, 2024</span><strong>$20,753,625</strong></div>
+      <p>Governmental debt, net pension liability and retiree-health liability combined. These audited obligations are distinct from one year’s operating spending.</p>
+    </div>
+    <div class="health-grid obligation-grid">
+      <div class="health-stat"><span class="eyebrow">Governmental debt</span><strong>$9,746,938</strong><p>Down from $10,483,247 a year earlier. That is $852 per resident and 0.81% of state equalized value. Debt has declined from $10.45M in 2015; the 2022 parks bond appears as the intervening bump.</p></div>
+      <div class="health-stat"><span class="eyebrow">Net pension liability</span><strong>$8,474,514</strong><p>Down $3,365,691 during FY2024. The closed defined-benefit plan was 59.2% funded: $12.30M in assets against a $20.77M liability. A one-time $1.9M state grant went to the city because the plan was under 60% funded.</p></div>
+      <div class="health-stat"><span class="eyebrow">Retiree health · OPEB</span><strong>$2,532,173</strong><p>The audited liability for other post-employment benefits, principally retiree health care.</p></div>
+    </div>
     <div class="context-pair">
-      <div class="context-note"><strong>Defined-benefit pension contribution</strong><p>The contribution fell from $1,380,000 to $1,100,000. Whether that reflects improved funding or a policy choice requires actuarial data.</p></div>
+      <div class="context-note"><strong>Total direct and overlapping debt · $78,020,799</strong><p>This includes the city’s $9.75M plus the East Grand Rapids taxpayer share of other units’ debt: schools $65.78M, Kent County $1.97M and GRCC $0.52M. Those overlapping amounts are borne through the other taxing units, not the city budget.</p></div>
       <div class="context-note"><strong>Proposed parking bond</strong><p>The $9M proposal is on the November 3, 2026 ballot and is not approved. By arithmetic, its first-year millage would add roughly 1.2% to the total homestead tax rate.</p></div>
     </div>
-    <div class="docs-list" aria-label="Financial measures not available in the supplied files">
-      <div class="docs-row"><strong>Total outstanding debt</strong><span class="status docs">Needs additional documentation</span></div>
-      <div class="docs-row"><strong>Net pension liability and funded status</strong><span class="status docs">Needs additional documentation</span></div>
-      <div class="docs-row"><strong>OPEB liability</strong><span class="status docs">Needs additional documentation</span></div>
-    </div>
-    <p class="scope-note">These measures are reported in the city’s full Annual Comprehensive Financial Report, not in the financial files analyzed here.</p>
+    <p class="scope-note">Debt, pension and OPEB figures are from the city’s audited FY2024 Annual Comprehensive Financial Report for the year ended June 30, 2024. FY2025 city pension contributions later fell from $1.38M to $1.10M; the audited FY2025 funded status was not part of the supplied report.</p>
   </section>
 
   <section class="section wrap" id="utility">
@@ -548,36 +626,7 @@
     </div>
   </section>
 
-  <section class="section wrap" id="taxes">
-    <div class="section-head">
-      <h2>Your property taxes, separated.</h2>
-      <p class="lede">Enter taxable value — not market value. This uses the most recent complete levy year, 2025, and separates City Hall from schools, county, state and other authorities.</p>
-    </div>
-    <div class="tax-shell">
-      <div class="tax-input">
-        <div class="eyebrow" style="color:#bfe0ee">2025 homestead estimate</div>
-        <label for="taxable">Home taxable value</label>
-        <input id="taxable" inputmode="numeric" value="300,000" aria-describedby="taxHelp" />
-        <div id="taxHelp" style="color:#cfe0e8;font-size:.84rem;margin-top:8px">Taxable value is shown on your assessment notice. It is not the asking price or market value.</div>
-        <div class="tax-total"><strong id="taxTotal">$14,250</strong><span>estimated annual total · 47.4995 mills</span></div>
-      </div>
-      <div class="tax-results">
-        <div class="tax-chart">
-          <div class="donut" aria-hidden="true"></div>
-          <div class="tax-legend" id="taxLegend"></div>
-        </div>
-        <div class="tax-detail">
-          <details><summary>See every levy</summary><div id="levyLines"></div></details>
-        </div>
-        <div class="proposal">
-          <span class="proposal-status">On the ballot November 3, 2026 · not approved</span>
-          <strong>Proposed public parking facility and pedestrian safety bond</strong>
-          <div>First-year estimate: <b id="parkingFirst">$178</b> at 0.5922 mills. Average: <b id="parkingAvg">$148</b> at 0.4925 mills.</div>
-          <p style="margin:8px 0 0;color:var(--muted);font-size:.84rem">These dollar figures are arithmetic from the published millage rates, not official city sample-home estimates. Up to $9M in bonds; maximum 20-year term per series.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   <section class="section wrap" id="savings">
     <div class="section-head">
@@ -638,19 +687,24 @@
       <h2>How the analysis works.</h2>
       <p class="lede">Primary data came from a June 2026 FOIA response from the East Grand Rapids City Clerk and was checked against the audited financial report.</p>
     </div>
-    <div class="method-grid">
-      <article class="method-card"><h3>What counts as spending</h3><p>Net expenditures across governmental funds, Water & Sewer and Motor Equipment, excluding transfers between city funds and GASB conversion entries. Health care, pension and retiree-health trusts are reported separately to avoid double counting.</p></article>
-      <article class="method-card"><h3>Fiscal-year dates</h3><p>East Grand Rapids runs July 1–June 30. FY2025 means July 1, 2024 through June 30, 2025. FY2026 year-to-date figures stop March 31, 2026 — 75% through the year.</p></article>
-      <article class="method-card"><h3>What a flag means</h3><p>A neutral prompt for context: above budget at an interim date, a large year-over-year move, a vendor spike, concentration, a large payment or detail absent from the supplied files. It is never an allegation.</p></article>
-      <article class="method-card"><h3>What the data cannot show</h3><p>The check register omits payroll, ACH, wires and P-card purchase detail. No FY2024-dated check register was provided. Interim budget comparisons cannot establish a final overrun.</p></article>
-    </div>
-    <div class="source-links">
-      <a class="button" href="https://www.eastgrmi.gov/ArchiveCenter/ViewFile/Item/1648" target="_blank" rel="noopener">FY2025–26 city budget ↗</a>
-      <a class="button" href="https://eastgrmi.gov/ArchiveCenter/ViewFile/Item/1539" target="_blank" rel="noopener">FY2024 audit ↗</a>
-      <a class="button" href="https://www.eastgrmi.gov/DocumentCenter/View/37/millagerates?bidId=" target="_blank" rel="noopener">Official millage rates ↗</a>
-      <a class="button" href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/953?html=true" target="_blank" rel="noopener">Parking bond minutes ↗</a>
-      <a class="button" href="https://www.eastgrmi.gov/550/Tax-Bill-Estimator-Millage-Rates" target="_blank" rel="noopener">City tax estimator ↗</a>
-    </div>
+    <details class="disclosure disclosure-wide">
+      <summary><span>View methodology and sources</span><small>4 notes · 5 sources</small></summary>
+      <div class="disclosure-body">
+        <div class="method-grid">
+          <article class="method-card"><h3>What counts as spending</h3><p>Net expenditures across governmental funds, Water & Sewer and Motor Equipment, excluding transfers between city funds and GASB conversion entries. Health care, pension and retiree-health trusts are reported separately to avoid double counting.</p></article>
+          <article class="method-card"><h3>Fiscal-year dates</h3><p>East Grand Rapids runs July 1–June 30. FY2025 means July 1, 2024 through June 30, 2025. FY2026 year-to-date figures stop March 31, 2026 — 75% through the year.</p></article>
+          <article class="method-card"><h3>What a flag means</h3><p>A neutral prompt for context: above budget at an interim date, a large year-over-year move, a vendor spike, concentration, a large payment or detail absent from the supplied files. It is never an allegation.</p></article>
+          <article class="method-card"><h3>What the data cannot show</h3><p>The check register omits payroll, ACH, wires and P-card purchase detail. No FY2024-dated check register was provided. Interim budget comparisons cannot establish a final overrun.</p></article>
+        </div>
+        <div class="source-links">
+          <a class="button" href="https://www.eastgrmi.gov/ArchiveCenter/ViewFile/Item/1648" target="_blank" rel="noopener">FY2025–26 city budget ↗</a>
+          <a class="button" href="https://eastgrmi.gov/ArchiveCenter/ViewFile/Item/1539" target="_blank" rel="noopener">FY2024 audit ↗</a>
+          <a class="button" href="https://www.eastgrmi.gov/DocumentCenter/View/37/millagerates?bidId=" target="_blank" rel="noopener">Official millage rates ↗</a>
+          <a class="button" href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/953?html=true" target="_blank" rel="noopener">Parking bond minutes ↗</a>
+          <a class="button" href="https://www.eastgrmi.gov/550/Tax-Bill-Estimator-Millage-Rates" target="_blank" rel="noopener">City tax estimator ↗</a>
+        </div>
+      </div>
+    </details>
   </section>
 </main>
 <footer><div class="wrap">Amounts rounded for readability; drill-downs retain source precision. Analysis is a fixed snapshot dated October 7, 2026.</div></footer>
@@ -661,6 +715,18 @@
 
 <script>
 (function(){
+  const jumpbar=document.querySelector('.jumpbar'), navToggle=document.getElementById('navToggle'), navLinks=document.getElementById('navLinks');
+  function setMenu(open){jumpbar.classList.toggle('menu-open',open);navToggle.setAttribute('aria-expanded',String(open))}
+  navToggle.onclick=()=>setMenu(navToggle.getAttribute('aria-expanded')!=='true');
+  navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',e=>{
+    if(matchMedia('(max-width: 580px)').matches){
+      e.preventDefault();
+      const target=document.querySelector(a.getAttribute('href'));
+      setMenu(false);
+      requestAnimationFrame(()=>target&&target.scrollIntoView({behavior:'instant',block:'start'}));
+    }
+  }));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&jumpbar.classList.contains('menu-open')){setMenu(false);navToggle.focus()}});
   const money = n => new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
   const compact = n => n>=1000000 ? '$'+(n/1000000).toFixed(n>=10000000?1:2).replace(/\.0$/,'')+'M' : '$'+Math.round(n/1000)+'K';
   const categories = [
@@ -723,7 +789,7 @@
     ['Grand Rapids City Treasurer',2047632.23,18,'+4.7%','Wholesale water & sewer supply'],['Katerberg-VerHage',1981310.95,8,'+9.8%','Manhattan Park construction'],['Michigan Paving & Materials',1839246.81,7,'−51.8%','Major and local street construction'],['Kent District Library',1049240.19,9,'+4.6%','Library contract / millage remittance'],['US Bank',973700,4,'+2.0%','Bond debt service'],['Groundhawg Excavating',966345.19,10,'−17.1%','Lead service lines, streets and sidewalks'],['Fifth Third Bank',545137.75,13,'−20.5%','Purchasing-card settlements; detail unavailable'],['Fer-Pal Construction USA',434144,1,'+10.6%','Water-main capital work'],['Corby Energy Services',431801.66,3,'−27.2%','Sewer relining and storm sewer'],['Consumers Energy',303513.56,23,'−9.9%','Utility service']
   ];
   const vt=document.getElementById('vendorTable');
-  vendors.forEach((v,i)=>{const r=document.createElement('div');r.className='vendor-row';r.innerHTML=`<div class="vendor-rank">${String(i+1).padStart(2,'0')}</div><div><div class="vendor-name">${v[0]}</div><div class="vendor-context">${v[4]}</div></div><div class="vendor-money">${money(v[1])}</div><div class="vendor-change">${v[2]} payments</div><div class="vendor-change">${v[3]} Jul–May</div>`;vt.appendChild(r)});
+  vendors.forEach((v,i)=>{const r=document.createElement('div');r.className='vendor-row';r.innerHTML=`<div class="vendor-rank">${String(i+1).padStart(2,'0')}</div><div><div class="vendor-name">${v[0]}</div><div class="vendor-context">${v[4]}</div></div><div class="vendor-money">${money(v[1])}</div><div class="vendor-change">${v[2]} ${v[2]===1?'payment':'payments'}</div><div class="vendor-change">${v[3]} Jul–May</div>`;vt.appendChild(r)});
 
   const projects=[
     {name:'Manhattan Park improvement',amount:'$3.18M program figure',status:'Construction phase',fund:'2021 Parks Improvement Millage',spent:'$3.02M in FY2024 + FY2025 GL activity',desc:'Playground, splash pad, restroom, shelters, landscape, volleyball and pickleball. Katerberg-VerHage was the FY2025 general contractor.',src:'https://www.eastgrmi.gov/ArchiveCenter/ViewFile/Item/1648'},
