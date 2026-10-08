@@ -1,0 +1,1215 @@
+month,fund,check,vid,vendor,date,amount,void,aggregated
+2024-07,11,133266,112177,"123.NET, Inc",07/11/2024,526.55,False,False
+2024-07,11,133267,112750,7 Mindsets Academy LLC,07/11/2024,4200.0,False,False
+2024-07,11,133268,105189,"AAA Lead Inspections, Inc.",07/11/2024,315.0,False,False
+2024-07,11,133269,96789,City of East Grand Rapids.,07/11/2024,2440.58,False,False
+2024-07,11,133270,5140,Consumers Energy,07/11/2024,396.44,False,False
+2024-07,11,133271,111635,DeHamer Landscaping,07/11/2024,10771.71,False,False
+2024-07,11,133272,100572,DTE Energy,07/11/2024,1482.85,False,False
+2024-07,11,133273,103269,"Elite Fund, Inc.",07/11/2024,280.0,False,False
+2024-07,11,133274,111138,ESS Midwest Inc.,07/11/2024,23167.21,False,False
+2024-07,11,133275,91415,Fire Pros Inc.,07/11/2024,6410.25,False,False
+2024-07,11,133276,101521,Flying Dutchman Flags,07/11/2024,128.0,False,False
+2024-07,11,133277,110233,FMX,07/11/2024,11599.41,False,False
+2024-07,11,133278,109051,Frontline Education,07/11/2024,3651.37,False,False
+2024-07,11,133279,13070,Gordon Food Service,07/11/2024,601.83,False,False
+2024-07,11,133280,111207,Hire Quest,07/11/2024,2697.9,False,False
+2024-07,11,133281,70947,KSS Enterprises,07/11/2024,559.16,False,False
+2024-07,11,133282,110885,Mighty Kicks West Michigan,07/11/2024,408.0,True,False
+2024-07,11,133283,112749,[individual],07/11/2024,66.25,False,False
+2024-07,11,133284,70189,Purity Cylinder Gases Inc.,07/11/2024,2297.27,False,False
+2024-07,11,133285,112752,Rapid City Football Club,07/11/2024,2178.0,False,False
+2024-07,11,133286,111339,Red Rover Technologies,07/11/2024,9273.36,False,False
+2024-07,11,133287,102542,Skyward Inc.,07/11/2024,32819.0,False,False
+2024-07,11,133288,131,State of Michigan,07/11/2024,180.0,False,False
+2024-07,11,133289,97593,West Michigan Risk Mgmt Trust,07/11/2024,185869.51,False,False
+2024-07,11,133290,132,Michigan State Disbursement Unit,07/12/2024,85.75,False,False
+2024-07,11,133291,112754,AJZ Concrete LLC,07/18/2024,40138.5,False,False
+2024-07,11,133292,111932,BP Energy Retail Company LLC,07/18/2024,1347.95,False,False
+2024-07,11,133293,107808,BSB Communications,07/18/2024,5302.45,False,False
+2024-07,11,133294,96789,City of East Grand Rapids.,07/18/2024,8083.48,False,False
+2024-07,11,133295,5140,Consumers Energy,07/18/2024,1987.34,False,False
+2024-07,11,133296,5140,Consumers Energy,07/18/2024,11835.44,False,False
+2024-07,11,133297,107633,Dean Transportation,07/18/2024,774.97,False,False
+2024-07,11,133298,111138,ESS Midwest Inc.,07/18/2024,22405.16,False,False
+2024-07,11,133299,13070,Gordon Food Service,07/18/2024,421.18,False,False
+2024-07,11,133300,110123,"Grand Rapids Building Services, Inc.",07/18/2024,3363.0,False,False
+2024-07,11,133301,108999,Great Lakes Coca-Cola Distribution,07/18/2024,323.99,False,False
+2024-07,11,133302,111207,Hire Quest,07/18/2024,5822.12,False,False
+2024-07,11,133303,110869,Instructure,07/18/2024,28700.0,False,False
+2024-07,11,133304,102046,"JW Pepper & Son, Inc.",07/18/2024,105.99,True,False
+2024-07,11,133305,104152,Kent Communications Inc.,07/18/2024,303.8,False,False
+2024-07,11,133306,94610,Kent County Treasurer,07/18/2024,105.34,False,False
+2024-07,11,133307,111331,Krupp Farms,07/18/2024,708.0,False,False
+2024-07,11,133308,96377,Maple Hill Golf Course,07/18/2024,2700.0,False,False
+2024-07,11,133309,111834,Mathnasium of Grand Rapids East,07/18/2024,339.0,False,False
+2024-07,11,133310,103969,Michigan Office Solutions,07/18/2024,6.23,False,False
+2024-07,11,133311,103279,National Insurance Services,07/18/2024,5252.33,False,False
+2024-07,11,133312,91755,Ok Conference,07/18/2024,3083.0,False,False
+2024-07,11,133313,111788,People Driven Technology,07/18/2024,14627.11,False,False
+2024-07,11,133314,111241,PowerStrength Training System,07/18/2024,19745.0,False,False
+2024-07,11,133315,105910,TurnKey Network Solutions,07/18/2024,120.0,False,False
+2024-07,11,133316,112003,"Wells Fargo Financial Leasing, Inc.",07/18/2024,5118.46,False,False
+2024-07,11,133317,105,Grand Rapids City Treasurer,07/26/2024,6315.08,False,False
+2024-07,11,133318,107603,ADN Administrators,07/25/2024,1597.4,False,False
+2024-07,11,133319,105248,Cengage Learning / Gale,07/25/2024,50.0,False,False
+2024-07,11,133320,96789,City of East Grand Rapids.,07/25/2024,662.82,False,False
+2024-07,11,133321,5140,Consumers Energy,07/25/2024,41680.42,False,False
+2024-07,11,133322,100572,DTE Energy,07/25/2024,4349.54,False,False
+2024-07,11,133323,70343,Floor Care Concepts,07/25/2024,12360.0,False,False
+2024-07,11,133324,111207,Hire Quest,07/25/2024,3281.34,False,False
+2024-07,11,133325,110710,Identisys Inc,07/25/2024,2699.68,False,False
+2024-07,11,133326,106759,International Baccalaureate Organizatio,07/25/2024,13467.0,False,False
+2024-07,11,133327,103582,Kent Education Foundation,07/25/2024,100.0,False,False
+2024-07,11,133328,116,Mea Financial Services,07/25/2024,146.43,False,False
+2024-07,11,133329,102,Messa,07/25/2024,279110.88,False,False
+2024-07,11,133330,111720,Plummers Disposal,07/25/2024,440.0,False,False
+2024-07,11,133331,112752,Rapid City Football Club,07/25/2024,498.0,False,False
+2024-07,11,133332,96914,"Robbins Lock Shop, Inc.",07/25/2024,15.0,False,False
+2024-07,11,133333,112472,School Equity Caucus,07/25/2024,1000.0,False,False
+2024-07,11,133334,104,United Way of Kent County,07/25/2024,34.53,False,False
+2024-07,11,133335,109600,Xello,07/25/2024,1920.0,False,False
+2024-07,11,133336,132,Michigan State Disbursement Unit,07/26/2024,85.75,False,False
+2024-07,29,28784,101696,Big Bob's Pizza,07/11/2024,708.05,False,False
+2024-07,29,28785,112142,Franca's Pizzeria,07/11/2024,623.0,False,False
+2024-07,29,28786,111542,Mission BBQ,07/11/2024,1329.79,False,False
+2024-07,29,28787,108701,The Pita House,07/11/2024,1108.28,False,False
+2024-07,29,28788,111689,PJ DA DJ Sound & Entertainment,07/11/2024,1600.0,False,False
+2024-07,29,28789,111072,[individual],07/11/2024,86.56,False,False
+2024-07,29,28790,112136,Red Bowl,07/11/2024,802.85,False,False
+2024-07,29,28791,112137,Tacos el Cunado Alpine,07/11/2024,1207.5,False,False
+2024-07,29,28792,107633,Dean Transportation,07/18/2024,374.23,False,False
+2024-07,29,28793,70619,School Datebooks Inc.,07/25/2024,792.5,False,False
+2024-07,46,278,97561,Sehi Computer Products,07/18/2024,100980.0,False,False
+2024-07,47,15,95095,Owen-Ames-Kimball Co.,07/18/2024,582962.5,False,False
+2024-07,47,16,111513,Pure Architects,07/18/2024,190011.16,False,False
+2024-07,47,17,112711,SME,07/18/2024,8800.0,False,False
+2024-08,11,,107633,Dean Transportation,08/01/2024,15007.2,False,False
+2024-08,11,,101666,"Elevator Service, LLC",08/01/2024,3579.0,False,False
+2024-08,11,,108306,HUDL,08/01/2024,17700.0,False,False
+2024-08,11,,21030,Kent Intermediate School District,08/01/2024,23110.69,False,False
+2024-08,11,,111821,ArbiterPay,08/08/2024,3155.0,False,False
+2024-08,11,,101101,Aventric Technologies,08/08/2024,5502.0,False,False
+2024-08,11,,70056,Central Michigan Paper Co.,08/08/2024,2640.0,False,False
+2024-08,11,,109391,Cereal City Science,08/08/2024,3255.33,False,False
+2024-08,11,,111134,CoachComm LLC,08/08/2024,3790.0,False,False
+2024-08,11,,112763,D.C. Humphrys Co. Inc.,08/08/2024,1594.6,False,False
+2024-08,11,,107633,Dean Transportation,08/08/2024,1992.3,False,False
+2024-08,11,,111635,DeHamer Landscaping,08/08/2024,10771.71,False,False
+2024-08,11,,111138,ESS Midwest Inc.,08/08/2024,29184.76,False,False
+2024-08,11,,112174,Exponential Inclusion LLC,08/08/2024,11637.5,False,False
+2024-08,11,,99499,Fifth Third Bank - for Cash,08/08/2024,5000.0,False,False
+2024-08,11,,109979,Halverson Engineering LLC,08/08/2024,2751.0,False,False
+2024-08,11,,111207,Hire Quest,08/08/2024,5704.09,False,False
+2024-08,11,,21030,Kent Intermediate School District,08/08/2024,1956.92,False,False
+2024-08,11,,96907,Meyer Music,08/08/2024,2060.91,False,False
+2024-08,11,,70189,Purity Cylinder Gases Inc.,08/08/2024,1882.16,False,False
+2024-08,11,,101285,"Pylman Power, Inc",08/08/2024,15280.0,False,False
+2024-08,11,,112752,Rapid City Football Club,08/08/2024,1032.0,False,False
+2024-08,11,,102542,Skyward Inc.,08/08/2024,19007.0,False,False
+2024-08,11,,97593,West Michigan Risk Mgmt Trust,08/08/2024,10863.5,False,False
+2024-08,11,,112043,CESA 5,08/15/2024,3300.0,False,False
+2024-08,11,,96789,City of East Grand Rapids.,08/15/2024,7313.78,False,False
+2024-08,11,,5140,Consumers Energy,08/15/2024,27997.35,False,False
+2024-08,11,,110123,"Grand Rapids Building Services, Inc.",08/15/2024,3363.0,False,False
+2024-08,11,,96925,Medco Supply Company,08/15/2024,1246.14,False,False
+2024-08,11,,101791,Superior Groundcover Inc.,08/15/2024,4062.15,False,False
+2024-08,11,,105,Grand Rapids City Treasurer,08/23/2024,6639.0,False,False
+2024-08,11,,70056,Central Michigan Paper Co.,08/22/2024,1320.0,False,False
+2024-08,11,,5140,Consumers Energy,08/22/2024,28045.67,False,False
+2024-08,11,,112704,"Critical Response Group, Inc.",08/22/2024,10317.0,False,False
+2024-08,11,,107633,Dean Transportation,08/22/2024,4546.02,False,False
+2024-08,11,,100572,DTE Energy,08/22/2024,4127.62,False,False
+2024-08,11,,111138,ESS Midwest Inc.,08/22/2024,21957.57,False,False
+2024-08,11,,110123,"Grand Rapids Building Services, Inc.",08/22/2024,2750.0,False,False
+2024-08,11,,111513,Pure Architects,08/22/2024,1043.2,False,False
+2024-08,11,,112003,"Wells Fargo Financial Leasing, Inc.",08/22/2024,5118.46,False,False
+2024-08,11,,107603,ADN Administrators,08/29/2024,1930.45,False,False
+2024-08,11,,111821,ArbiterPay,08/29/2024,20000.0,False,False
+2024-08,11,,70056,Central Michigan Paper Co.,08/29/2024,3960.0,False,False
+2024-08,11,,109391,Cereal City Science,08/29/2024,7863.72,False,False
+2024-08,11,,111138,ESS Midwest Inc.,08/29/2024,29590.55,False,False
+2024-08,11,,111925,Grant Newton Media LLC,08/29/2024,1600.0,False,False
+2024-08,11,,111207,Hire Quest,08/29/2024,7426.61,False,False
+2024-08,11,,21030,Kent Intermediate School District,08/29/2024,11061.96,False,False
+2024-08,11,,96907,Meyer Music,08/29/2024,1633.19,False,False
+2024-08,11,,103279,National Insurance Services,08/29/2024,5567.24,False,False
+2024-08,11,,112461,Savvas Learning Company,08/29/2024,19806.54,False,False
+2024-08,11,,111690,[individual],08/29/2024,1224.0,False,False
+2024-08,11,,102,Messa,08/29/2024,294707.05,False,False
+2024-08,29,,107633,Dean Transportation,08/08/2024,1721.9,False,False
+2024-08,29,,111383,Morehouse Baskeball Camp,08/08/2024,2990.0,False,False
+2024-08,29,,96484,Scholastic Inc.,08/08/2024,1594.14,False,False
+2024-08,29,,112764,Timber Wolf Young Life,08/08/2024,12160.0,False,False
+2024-08,29,,111716,Victor's Veer Camp,08/08/2024,4800.0,False,False
+2024-08,29,,107633,Dean Transportation,08/15/2024,1785.17,False,False
+2024-08,29,,107633,Dean Transportation,08/22/2024,2474.69,False,False
+2024-08,29,,100103,GVSU-AWRI,08/29/2024,1500.0,False,False
+2024-08,46,,112751,Vector Tech Group,08/01/2024,25935.0,False,False
+2024-08,47,,111513,Pure Architects,08/15/2024,2465.0,False,False
+2024-08,47,,111513,Pure Architects,08/22/2024,172419.87,False,False
+2024-08,47,,95095,Owen-Ames-Kimball Co.,08/29/2024,438124.34,False,False
+2024-08,11,,,"Payments under $1,000 (aggregated)",,22735.47,False,True
+2024-08,29,,,"Payments under $1,000 (aggregated)",,10246.73,False,True
+2024-09,11,,111207,Hire Quest,09/05/2024,3550.96,False,False
+2024-09,11,,70764,City of Grand Rapids,09/05/2024,1080.0,False,False
+2024-09,11,,107633,Dean Transportation,09/05/2024,2978.2,False,False
+2024-09,11,,110164,[individual],09/05/2024,2388.18,False,False
+2024-09,11,,21030,Kent Intermediate School District,09/05/2024,1554.99,False,False
+2024-09,11,,111714,Phoenix Interiors,09/05/2024,4990.0,False,False
+2024-09,11,,101791,Superior Groundcover Inc.,09/05/2024,4475.25,False,False
+2024-09,11,,109030,Turfix,09/05/2024,1800.0,False,False
+2024-09,11,,112777,Elevate Technology Partners,09/12/2024,6000.0,False,False
+2024-09,11,,111207,Hire Quest,09/12/2024,6910.79,False,False
+2024-09,11,,106671,Houghton Mifflin Harcourt,09/12/2024,26000.0,False,False
+2024-09,11,,111932,BP Energy Retail Company LLC,09/18/2024,1515.21,False,False
+2024-09,11,,109391,Cereal City Science,09/18/2024,1715.29,False,False
+2024-09,11,,96789,City of East Grand Rapids.,09/18/2024,8452.91,False,False
+2024-09,11,,5140,Consumers Energy,09/18/2024,36866.87,False,False
+2024-09,11,,111138,ESS Midwest Inc.,09/18/2024,27873.1,False,False
+2024-09,11,,110123,"Grand Rapids Building Services, Inc.",09/18/2024,3363.0,False,False
+2024-09,11,,103279,National Insurance Services,09/18/2024,6038.64,False,False
+2024-09,11,,90129,Racquet Sports,09/18/2024,51830.0,False,False
+2024-09,11,,109030,Turfix,09/18/2024,5000.0,False,False
+2024-09,11,,112003,"Wells Fargo Financial Leasing, Inc.",09/18/2024,5118.46,False,False
+2024-09,11,,97593,West Michigan Risk Mgmt Trust,09/18/2024,8900.5,False,False
+2024-09,11,,105,Grand Rapids City Treasurer,09/27/2024,7774.94,False,False
+2024-09,11,,107603,ADN Administrators,09/26/2024,1587.05,False,False
+2024-09,11,,90914,Berger Chevrolet Inc.,09/26/2024,1291.11,False,False
+2024-09,11,,95542,Calvin University,09/26/2024,19200.0,False,False
+2024-09,11,,70056,Central Michigan Paper Co.,09/26/2024,2456.0,False,False
+2024-09,11,,96789,City of East Grand Rapids.,09/26/2024,2816.5,False,False
+2024-09,11,,5140,Consumers Energy,09/26/2024,28644.31,False,False
+2024-09,11,,107633,Dean Transportation,09/26/2024,9079.25,False,False
+2024-09,11,,100572,DTE Energy,09/26/2024,4354.15,False,False
+2024-09,11,,111138,ESS Midwest Inc.,09/26/2024,23463.39,False,False
+2024-09,11,,111207,Hire Quest,09/26/2024,7783.48,False,False
+2024-09,11,,102,Messa,09/26/2024,284701.1,False,False
+2024-09,11,,108591,SA Morman & CO,09/26/2024,7720.0,False,False
+2024-09,11,,100983,Standard Electric Company,09/26/2024,3549.61,False,False
+2024-09,11,,109496,Turnitin,09/26/2024,19400.31,False,False
+2024-09,29,,107633,Dean Transportation,09/05/2024,11027.71,False,False
+2024-09,29,,96484,Scholastic Inc.,09/05/2024,3122.15,False,False
+2024-09,29,,110608,[individual],09/12/2024,6731.98,False,False
+2024-09,29,,96907,Meyer Music,09/12/2024,1494.0,False,False
+2024-09,29,,112778,Michigan Sports Photo,09/12/2024,2500.0,False,False
+2024-09,29,,96484,Scholastic Inc.,09/18/2024,6072.58,True,False
+2024-09,29,,95544,YMCA Camp Manitou-Lin,09/18/2024,6650.0,False,False
+2024-09,29,,110888,East Grand Rapids Friends Of The Library,09/18/2024,10000.0,False,False
+2024-09,29,,96484,Scholastic Inc.,09/18/2024,5901.27,False,False
+2024-09,29,,70491,American Youth Foundation,09/26/2024,8473.0,False,False
+2024-09,29,,107633,Dean Transportation,09/26/2024,1785.89,False,False
+2024-09,29,,112860,[individual],09/26/2024,5643.11,False,False
+2024-09,46,,111788,People Driven Technology,09/26/2024,8351.7,False,False
+2024-09,47,,100316,State Of Mi - Dept Of Treasury,09/05/2024,6000.0,False,False
+2024-09,47,,111513,Pure Architects,09/18/2024,177794.0,False,False
+2024-09,47,,112711,SME,09/18/2024,24000.0,False,False
+2024-09,47,,95095,Owen-Ames-Kimball Co.,09/26/2024,586622.32,False,False
+2024-09,11,,,"Payments under $1,000 (aggregated)",,17114.24,False,True
+2024-09,29,,,"Payments under $1,000 (aggregated)",,3598.5,False,True
+2024-10,11,,112174,Exponential Inclusion LLC,10/03/2024,5825.0,False,False
+2024-10,11,,112002,FinalForms,10/03/2024,2357.0,False,False
+2024-10,11,,106181,Maner Costerisan,10/03/2024,22000.0,False,False
+2024-10,11,,112863,Midwest Suburban Superintendents Assoc.,10/03/2024,2600.0,False,False
+2024-10,11,,107660,Penchura,10/03/2024,1245.1,False,False
+2024-10,11,,70189,Purity Cylinder Gases Inc.,10/03/2024,3363.89,False,False
+2024-10,11,,107633,Dean Transportation,10/10/2024,3524.0,False,False
+2024-10,11,,95542,Calvin University,10/10/2024,5604.67,False,False
+2024-10,11,,107182,Copperline Plumbing,10/10/2024,1274.38,False,False
+2024-10,11,,111138,ESS Midwest Inc.,10/10/2024,94959.11,False,False
+2024-10,11,,111207,Hire Quest,10/10/2024,8913.77,False,False
+2024-10,11,,96907,Meyer Music,10/10/2024,2454.99,False,False
+2024-10,11,,108709,Todd Wenzel,10/10/2024,46969.0,False,False
+2024-10,11,,112614,"X-Pert Truck and Trailer, LLC",10/10/2024,1430.78,False,False
+2024-10,11,,111821,ArbiterPay,10/10/2024,10000.0,False,False
+2024-10,11,,105,Grand Rapids City Treasurer,10/17/2024,3900.89,False,False
+2024-10,11,,111932,BP Energy Retail Company LLC,10/17/2024,1318.18,False,False
+2024-10,11,,70056,Central Michigan Paper Co.,10/17/2024,1320.0,False,False
+2024-10,11,,96789,City of East Grand Rapids.,10/17/2024,10715.77,False,False
+2024-10,11,,5140,Consumers Energy,10/17/2024,34713.38,False,False
+2024-10,11,,107182,Copperline Plumbing,10/17/2024,1574.45,False,False
+2024-10,11,,110123,"Grand Rapids Building Services, Inc.",10/17/2024,3363.0,False,False
+2024-10,11,,21030,Kent Intermediate School District,10/17/2024,2088.58,False,False
+2024-10,11,,101285,"Pylman Power, Inc",10/17/2024,4455.0,False,False
+2024-10,11,,105910,TurnKey Network Solutions,10/17/2024,1260.0,False,False
+2024-10,11,,112003,"Wells Fargo Financial Leasing, Inc.",10/17/2024,5118.46,False,False
+2024-10,11,,105,Grand Rapids City Treasurer,10/25/2024,3796.49,False,False
+2024-10,11,,107603,ADN Administrators,10/24/2024,1728.55,False,False
+2024-10,11,,5140,Consumers Energy,10/24/2024,25606.31,False,False
+2024-10,11,,100572,DTE Energy,10/24/2024,4389.01,False,False
+2024-10,11,,111138,ESS Midwest Inc.,10/24/2024,29448.14,False,False
+2024-10,11,,94610,Kent County Treasurer,10/24/2024,5604.9,False,False
+2024-10,11,,106181,Maner Costerisan,10/24/2024,2500.0,False,False
+2024-10,11,,102,Messa,10/24/2024,288282.68,False,False
+2024-10,11,,103279,National Insurance Services,10/24/2024,5720.55,False,False
+2024-10,11,,112881,Greater Michigan Distributors,10/29/2024,4862.81,False,False
+2024-10,11,,107633,Dean Transportation,10/31/2024,8739.0,False,False
+2024-10,11,,100572,DTE Energy,10/31/2024,2314.2,False,False
+2024-10,11,,111207,Hire Quest,10/31/2024,9349.91,False,False
+2024-10,11,,90366,Scantron,10/31/2024,1063.0,False,False
+2024-10,11,,112885,[individual],10/31/2024,3750.0,False,False
+2024-10,29,,110202,[individual],10/10/2024,5000.0,False,False
+2024-10,29,,112868,"Christina Soontornvat, LLC",10/10/2024,18000.0,False,False
+2024-10,29,,107633,Dean Transportation,10/10/2024,1521.49,False,False
+2024-10,29,,98656,EGR HS PTO,10/10/2024,1000.0,False,False
+2024-10,29,,98644,EGR Middle School PTO,10/10/2024,2500.0,False,False
+2024-10,29,,111138,ESS Midwest Inc.,10/10/2024,15088.16,False,False
+2024-10,29,,99367,John S. Hyatt & Assoc. Inc.,10/10/2024,3625.81,False,False
+2024-10,29,,111288,[individual],10/17/2024,1800.0,False,False
+2024-10,29,,112874,I Understand,10/17/2024,1320.0,False,False
+2024-10,29,,107353,[individual],10/17/2024,1500.0,False,False
+2024-10,29,,103788,[individual],10/17/2024,1800.0,False,False
+2024-10,29,,107633,Dean Transportation,10/31/2024,4402.39,False,False
+2024-10,29,,103401,Holiday Coach Co.,10/31/2024,3759.62,False,False
+2024-10,47,,95095,Owen-Ames-Kimball Co.,10/17/2024,835927.15,False,False
+2024-10,47,,111513,Pure Architects,10/17/2024,181654.0,False,False
+2024-10,47,,95095,Owen-Ames-Kimball Co.,10/31/2024,35747.17,False,False
+2024-10,11,,,"Payments under $1,000 (aggregated)",,21184.1,False,True
+2024-10,29,,,"Payments under $1,000 (aggregated)",,5931.04,False,True
+2024-11,11,,107182,Copperline Plumbing,11/07/2024,9234.3,False,False
+2024-11,11,,107633,Dean Transportation,11/07/2024,12387.14,False,False
+2024-11,11,,101666,"Elevator Service, LLC",11/07/2024,3579.0,False,False
+2024-11,11,,111138,ESS Midwest Inc.,11/07/2024,88005.33,False,False
+2024-11,11,,93974,Grand Rapids Community College,11/07/2024,2089.0,False,False
+2024-11,11,,111207,Hire Quest,11/07/2024,8374.27,False,False
+2024-11,11,,112887,Jan Miller Burkins Consulting LLC,11/07/2024,14078.0,False,False
+2024-11,11,,111788,People Driven Technology,11/07/2024,1994.7,False,False
+2024-11,11,,111241,PowerStrength Training System,11/07/2024,19745.0,False,False
+2024-11,11,,70189,Purity Cylinder Gases Inc.,11/07/2024,1646.89,False,False
+2024-11,11,,111954,Royal Truck & Trailer,11/07/2024,11950.0,False,False
+2024-11,11,,102542,Skyward Inc.,11/07/2024,10634.0,False,False
+2024-11,11,,111821,ArbiterPay,11/14/2024,20000.0,False,False
+2024-11,11,,111932,BP Energy Retail Company LLC,11/14/2024,6517.56,False,False
+2024-11,11,,70056,Central Michigan Paper Co.,11/14/2024,3960.0,False,False
+2024-11,11,,112043,CESA 5,11/14/2024,1500.0,False,False
+2024-11,11,,96789,City of East Grand Rapids.,11/14/2024,8977.16,False,False
+2024-11,11,,5140,Consumers Energy,11/14/2024,36264.34,False,False
+2024-11,11,,107182,Copperline Plumbing,11/14/2024,5863.12,False,False
+2024-11,11,,13070,Gordon Food Service,11/14/2024,1497.8,False,False
+2024-11,11,,110123,"Grand Rapids Building Services, Inc.",11/14/2024,3065.0,False,False
+2024-11,11,,111207,Hire Quest,11/14/2024,5758.96,False,False
+2024-11,11,,104152,Kent Communications Inc.,11/14/2024,2113.8,False,False
+2024-11,11,,21030,Kent Intermediate School District,11/14/2024,6665.97,False,False
+2024-11,11,,102,Messa,11/14/2024,283546.85,False,False
+2024-11,11,,103279,National Insurance Services,11/14/2024,5591.99,False,False
+2024-11,11,,111788,People Driven Technology,11/14/2024,7149.19,False,False
+2024-11,11,,109941,PFM Financial Advisors LLC,11/14/2024,1200.0,False,False
+2024-11,11,,112893,Sports Imports Inc.,11/14/2024,5554.2,False,False
+2024-11,11,,97593,West Michigan Risk Mgmt Trust,11/14/2024,4499.0,False,False
+2024-11,11,,97378,Ottawa Area ISD,11/14/2024,51880.0,False,False
+2024-11,11,,105,Grand Rapids City Treasurer,11/22/2024,7523.69,False,False
+2024-11,29,,107633,Dean Transportation,11/07/2024,2310.87,False,False
+2024-11,29,,111138,ESS Midwest Inc.,11/07/2024,16300.06,False,False
+2024-11,29,,112890,[individual],11/11/2024,1000.0,False,False
+2024-11,29,,111914,Great Lakes Invitational Conference Ass,11/14/2024,1115.0,False,False
+2024-11,29,,111333,ICON Sign,11/14/2024,1155.32,False,False
+2024-11,29,,107667,MUNUM,11/14/2024,3360.0,False,False
+2024-11,29,,3057,Scholastic Book Fairs,11/14/2024,2144.28,False,False
+2024-11,29,,105032,Vormittag Tree Farm,11/14/2024,6035.0,False,False
+2024-11,47,,111513,Pure Architects,11/14/2024,176021.78,False,False
+2024-11,11,,,"Payments under $1,000 (aggregated)",,10615.97,False,True
+2024-11,29,,,"Payments under $1,000 (aggregated)",,5378.59,False,True
+2024-12,47,29,,Owen-Ames-Kimball Co.,12/05/2024,290322.76,False,False
+2024-12,47,30,,Pure Architects,12/11/2024,169077.03,False,False
+2024-12,47,31,,Pure Architects,12/19/2024,16020.0,False,False
+2024-12,29,28899,,"ADCO Specialties, Inc.",12/05/2024,500.0,False,False
+2024-12,29,28900,,[individual],12/05/2024,538.97,False,False
+2024-12,29,28901,,[individual],12/05/2024,25.0,False,False
+2024-12,29,28902,,[individual],12/05/2024,250.0,False,False
+2024-12,29,28903,,City of East Grand Rapids.,12/05/2024,3381.29,False,False
+2024-12,29,28904,,[individual],12/05/2024,108.06,False,False
+2024-12,29,28905,,[individual],12/05/2024,375.46,False,False
+2024-12,29,28906,,Dean Transportation,12/05/2024,4444.71,False,False
+2024-12,29,28907,,[individual],12/05/2024,600.0,False,False
+2024-12,29,28908,,Grand Rapids Civic Theatre,12/05/2024,345.0,False,False
+2024-12,29,28909,,Grant Newton Media LLC,12/05/2024,2460.0,False,False
+2024-12,29,28910,,[individual],12/05/2024,175.42,False,False
+2024-12,29,28911,,Kent Intermediate School District,12/05/2024,125.0,False,False
+2024-12,29,28912,,[individual],12/05/2024,104.59,False,False
+2024-12,29,28913,,[individual],12/05/2024,1739.45,False,False
+2024-12,29,28914,,Western Michigan University,12/05/2024,322.0,False,False
+2024-12,29,28915,,[individual],12/05/2024,3220.42,False,False
+2024-12,29,28916,,Scholastic Book Fairs,12/05/2024,5682.68,False,False
+2024-12,29,28917,,EGR Hockey Boosters,12/11/2024,1000.0,False,False
+2024-12,29,28918,,[individual],12/11/2024,257.68,False,False
+2024-12,29,28919,,[individual],12/19/2024,599.0,False,False
+2024-12,29,28920,,Fifth Third Bank - for Cash,12/19/2024,500.0,False,False
+2024-12,29,28921,,Breton PTO,12/19/2024,1000.0,False,False
+2024-12,29,28922,,[individual],12/19/2024,2530.0,False,False
+2024-12,11,133720,,Avi Systems Inc.,12/05/2024,565.91,False,False
+2024-12,11,133721,,[individual],12/05/2024,100.0,False,False
+2024-12,11,133722,,[individual],12/05/2024,400.0,False,False
+2024-12,11,133723,,Chemsearchfe,12/05/2024,804.95,False,False
+2024-12,11,133724,,[individual],12/05/2024,116.25,False,False
+2024-12,11,133725,,City of East Grand Rapids.,12/05/2024,655.5,False,False
+2024-12,11,133726,,Clark Hill PLC,12/05/2024,300.0,False,False
+2024-12,11,133727,,Consumers Energy,12/05/2024,25246.99,False,False
+2024-12,11,133728,,Dean Transportation,12/05/2024,21499.54,False,False
+2024-12,11,133729,,[individual],12/05/2024,1178.41,False,False
+2024-12,11,133730,,DTE Energy,12/05/2024,3530.36,False,False
+2024-12,11,133731,,ESS Midwest Inc.,12/05/2024,55371.87,False,False
+2024-12,11,133732,,Exponential Inclusion LLC,12/05/2024,5812.5,False,False
+2024-12,11,133733,,Fire Pros Inc.,12/05/2024,1470.2,False,False
+2024-12,11,133734,,Fixall Electric Motor Service Inc,12/05/2024,2044.25,False,False
+2024-12,11,133735,,[individual],12/05/2024,400.0,False,False
+2024-12,11,133736,,[individual],12/05/2024,800.0,False,False
+2024-12,11,133737,,Gordon Food Service,12/05/2024,614.5,False,False
+2024-12,11,133738,,Great Lakes Coca-Cola Distribution,12/05/2024,313.64,False,False
+2024-12,11,133739,,[individual],12/05/2024,126.5,False,False
+2024-12,11,133740,,Hire Quest,12/05/2024,16343.48,False,False
+2024-12,11,133741,,[individual],12/05/2024,190.0,False,False
+2024-12,11,133742,,[individual],12/05/2024,600.0,False,False
+2024-12,11,133743,,Meyer Music,12/05/2024,372.26,False,False
+2024-12,11,133744,,Michigan Office Solutions,12/05/2024,14347.47,False,False
+2024-12,11,133745,,"Mulder Waterproofing & Sealants, Inc.",12/05/2024,2950.0,False,False
+2024-12,11,133746,,Oakenhearth Armory,12/05/2024,45.0,False,False
+2024-12,11,133747,,Purity Cylinder Gases Inc.,12/05/2024,1675.75,False,False
+2024-12,11,133748,,[individual],12/05/2024,2337.0,False,False
+2024-12,11,133749,,Royal Truck & Trailer,12/05/2024,1450.0,False,False
+2024-12,11,133750,,Sensitography,12/05/2024,300.0,False,False
+2024-12,11,133751,,Spartan Distributors Inc.,12/05/2024,140.44,False,False
+2024-12,11,133752,,DTE Energy,12/05/2024,5526.12,False,False
+2024-12,11,133753,,Fixall Electric Motor Service Inc,12/05/2024,28.17,False,False
+2024-12,11,133754,,Kent Education Foundation,12/05/2024,60.0,False,False
+2024-12,11,133755,,[individual],12/05/2024,131.68,False,False
+2024-12,11,133756,,"Wells Fargo Financial Leasing, Inc.",12/05/2024,5118.46,False,False
+2024-12,11,133757,,Michigan State Disbursement Unit,12/13/2024,447.5,False,False
+2024-12,11,133758,,"123.NET, Inc",12/11/2024,559.14,False,False
+2024-12,11,133759,,Bergsma Plumbing,12/11/2024,550.0,False,False
+2024-12,11,133760,,Brainard Enterprise Corp,12/11/2024,620.0,False,False
+2024-12,11,133761,,Classic Race Management & Classic Tee's,12/11/2024,432.0,False,False
+2024-12,11,133762,,CMC Neptune,12/11/2024,2700.0,False,False
+2024-12,11,133763,,[individual],12/11/2024,531.76,False,False
+2024-12,11,133764,,"Elevator Service, LLC",12/11/2024,5165.0,False,False
+2024-12,11,133765,,[individual],12/11/2024,240.0,False,False
+2024-12,11,133766,,[individual],12/11/2024,400.0,False,False
+2024-12,11,133767,,Forest Hills Northern High,12/11/2024,475.0,False,False
+2024-12,11,133768,,Gordon Food Service,12/11/2024,697.78,False,False
+2024-12,11,133769,,Holwerda-Snoap Sporting Goods,12/11/2024,100.0,False,False
+2024-12,11,133770,,Kent Communications Inc.,12/11/2024,206.87,False,False
+2024-12,11,133771,,Meyer Music,12/11/2024,269.37,False,False
+2024-12,11,133772,,Michigan Office Solutions,12/11/2024,1167.0,False,False
+2024-12,11,133773,,Michigan Organization on Adolescent Sexual Health,12/11/2024,2580.9,False,False
+2024-12,11,133774,,MSVMA,12/11/2024,80.0,False,False
+2024-12,11,133775,,[individual],12/11/2024,1844.0,False,False
+2024-12,11,133776,,The UPS Store,12/11/2024,161.66,False,False
+2024-12,11,133777,,TK Elevator Corporation,12/11/2024,2295.48,False,False
+2024-12,11,133778,,[individual],12/11/2024,700.0,False,False
+2024-12,11,133779,,[individual],12/11/2024,115.0,False,False
+2024-12,11,133780,,Big Rapids High School,12/19/2024,220.0,False,False
+2024-12,11,133781,,BP Energy Retail Company LLC,12/19/2024,10360.08,False,False
+2024-12,11,133782,,Cedar Crest Dairy Inc.,12/19/2024,2896.3,False,False
+2024-12,11,133783,,City of East Grand Rapids.,12/19/2024,12448.95,False,False
+2024-12,11,133784,,Clark Hill PLC,12/19/2024,520.0,False,False
+2024-12,11,133785,,Consumers Energy,12/19/2024,31415.06,False,False
+2024-12,11,133786,,Copperline Plumbing,12/19/2024,4284.16,False,False
+2024-12,11,133787,,Corewell Health,12/19/2024,3091.88,False,False
+2024-12,11,133788,,EGR Team Boosters,12/19/2024,13650.0,False,False
+2024-12,11,133789,,ESS Midwest Inc.,12/19/2024,31102.18,False,False
+2024-12,11,133790,,Flying Dutchman Flags,12/19/2024,59.39,False,False
+2024-12,11,133791,,Forest Hills Eastern High School,12/19/2024,40.0,False,False
+2024-12,11,133792,,Gordon Food Service,12/19/2024,12081.32,False,False
+2024-12,11,133793,,"Grand Rapids Building Services, Inc.",12/19/2024,3363.0,False,False
+2024-12,11,133794,,Graybar,12/19/2024,571.32,False,False
+2024-12,11,133795,,Hire Quest,12/19/2024,16313.14,False,False
+2024-12,11,133796,,Hudsonville High School,12/19/2024,200.0,False,False
+2024-12,11,133797,,International Baccalaureate Organizatio,12/19/2024,23001.0,False,False
+2024-12,11,133798,,Messa,12/19/2024,290665.2,False,False
+2024-12,11,133799,,Michigan Music Conference,12/19/2024,180.0,False,False
+2024-12,11,133800,,[individual],12/19/2024,500.0,False,False
+2024-12,11,133801,,ODP Business Solutions LLC,12/19/2024,72.86,False,False
+2024-12,11,133802,,Oxford University Press,12/19/2024,873.18,False,False
+2024-12,11,133803,,People Driven Technology,12/19/2024,20717.0,False,False
+2024-12,11,133804,,"Secrest, Wardle, Lynch,",12/19/2024,113.05,False,False
+2024-12,11,133805,,Standard Electric Company,12/19/2024,103.39,False,False
+2024-12,11,133806,,Straight Line Fence,12/19/2024,2160.0,False,False
+2024-12,11,133807,,"Wells Fargo Financial Leasing, Inc.",12/19/2024,5118.46,False,False
+2024-12,11,133808,,West Michigan Risk Mgmt Trust,12/19/2024,8900.5,False,False
+2024-12,11,133809,,Wheeler-Monterusso Business Machines,12/19/2024,282.97,False,False
+2024-12,11,133810,,[individual],12/19/2024,2804.0,False,False
+2024-12,11,133811,,Gateway Financial Solutions,12/27/2024,165.32,False,False
+2024-12,11,133812,,Grand Rapids City Treasurer,12/27/2024,7809.59,False,False
+2024-12,11,133813,,Michigan State Disbursement Unit,12/27/2024,447.5,False,False
+2024-12,11,133814,,United Way of Kent County,12/27/2024,68.63,False,False
+2024-12,11,133815,,Mea Financial Services,12/27/2024,292.64,False,False
+2024-12,11,133816,,Dean Transportation,12/30/2024,7865.1,False,False
+2024-12,11,133817,,DTE Energy,12/30/2024,11357.27,False,False
+2024-12,11,133818,,National Insurance Services,12/30/2024,5767.6,False,False
+2024-12,11,133819,,DTE Energy,12/30/2024,1061.5,False,False
+2025-01,47,32,,Pure Architects,01/09/2025,205321.35,False,False
+2025-01,47,33,,Owen-Ames-Kimball Co.,01/30/2025,638012.42,False,False
+2025-01,46,281,,Moss,01/09/2025,17408.53,False,False
+2025-01,29,28923,,Bright Star Children's Theater,01/09/2025,3577.5,False,False
+2025-01,29,28924,,Dean Transportation,01/09/2025,2264.1,False,False
+2025-01,29,28925,,Grand Rapids Gymnastics,01/09/2025,124.0,False,False
+2025-01,29,28926,,Mason Public Schools,01/09/2025,125.0,False,False
+2025-01,29,28927,,Vormittag Tree Farm,01/09/2025,252.0,False,False
+2025-01,29,28928,,EGR Crew,01/16/2025,655.0,False,False
+2025-01,29,28929,,ESS Midwest Inc.,01/16/2025,3150.94,False,False
+2025-01,29,28930,,[individual],01/16/2025,75.0,False,False
+2025-01,29,28931,,[individual],01/16/2025,75.0,False,False
+2025-01,29,28932,,Scholastic Book Fairs,01/16/2025,3743.38,False,False
+2025-01,29,28933,,AMF Eastbrook Lanes,01/23/2025,737.18,False,False
+2025-01,29,28934,,Dean Transportation,01/23/2025,216.32,False,False
+2025-01,29,28935,,"Compass Coach, Inc.",01/30/2025,400.0,False,False
+2025-01,29,28936,,EGR Varsity Football Parents Club,01/30/2025,408.04,False,False
+2025-01,29,28937,,Engrave Detail,01/30/2025,387.0,False,False
+2025-01,29,28938,,USS Silversides Submarine Museum,01/30/2025,1740.0,False,False
+2025-01,11,133820,,Consumers Energy,01/02/2025,24993.85,False,False
+2025-01,11,133821,,ESS Midwest Inc.,01/02/2025,28045.37,False,False
+2025-01,11,133822,,Hire Quest,01/02/2025,15158.81,False,False
+2025-01,11,133823,,Kent Communications Inc.,01/02/2025,217.68,False,False
+2025-01,11,133824,,Miss Dig 811,01/02/2025,901.52,False,False
+2025-01,11,133825,,Purity Cylinder Gases Inc.,01/02/2025,2790.48,False,False
+2025-01,11,133826,,Grand Rapids City Treasurer,01/10/2025,41.53,False,False
+2025-01,11,133827,,Mea Financial Services,01/10/2025,146.43,False,False
+2025-01,11,133828,,Michigan State Disbursement Unit,01/10/2025,447.5,False,False
+2025-01,11,133829,,"123.NET, Inc",01/09/2025,548.33,False,False
+2025-01,11,133830,,"AAA Lead Inspections, Inc.",01/09/2025,2350.0,False,False
+2025-01,11,133831,,Cedar Crest Dairy Inc.,01/09/2025,1733.25,False,False
+2025-01,11,133832,,Copperline Plumbing,01/09/2025,1268.0,False,False
+2025-01,11,133833,,Corewell Health,01/09/2025,59.8,False,False
+2025-01,11,133834,,Crisis Prevention Institute,01/09/2025,200.0,False,False
+2025-01,11,133835,,Dean Transportation,01/09/2025,4880.04,False,False
+2025-01,11,133836,,[individual],01/09/2025,240.0,False,False
+2025-01,11,133837,,Exponential Inclusion LLC,01/09/2025,7887.5,False,False
+2025-01,11,133838,,Fire Pros Inc.,01/09/2025,1031.5,False,False
+2025-01,11,133839,,Gordon Food Service,01/09/2025,7070.79,False,False
+2025-01,11,133840,,Graybar,01/09/2025,3564.0,False,False
+2025-01,11,133841,,Hire Quest,01/09/2025,4028.36,False,False
+2025-01,11,133842,,HPS LLC,01/09/2025,2380.0,False,False
+2025-01,11,133843,,Huntington Bank,01/09/2025,500.0,False,False
+2025-01,11,133844,,Meyer Music,01/09/2025,377.51,False,False
+2025-01,11,133845,,Michigan Office Solutions,01/09/2025,5668.64,False,False
+2025-01,11,133846,,MSBOA - District 10,01/09/2025,75.0,False,False
+2025-01,11,133847,,People Driven Technology,01/09/2025,664.9,False,False
+2025-01,11,133848,,"Thrun Law Firm, P.C.",01/09/2025,2500.0,False,False
+2025-01,11,133849,,Tobins Lake Studios,01/09/2025,465.0,False,False
+2025-01,11,133850,,[individual],01/09/2025,301.4,False,False
+2025-01,11,133851,,[individual],01/16/2025,500.0,False,False
+2025-01,11,133852,,[individual],01/16/2025,500.0,False,False
+2025-01,11,133853,,BP Energy Retail Company LLC,01/16/2025,16696.52,False,False
+2025-01,11,133854,,Cedar Crest Dairy Inc.,01/16/2025,186.95,False,False
+2025-01,11,133855,,Central Michigan Paper Co.,01/16/2025,1515.0,False,False
+2025-01,11,133856,,City of East Grand Rapids.,01/16/2025,8209.63,False,False
+2025-01,11,133857,,Consumers Energy,01/16/2025,32181.29,False,False
+2025-01,11,133858,,Copperline Plumbing,01/16/2025,4329.69,False,False
+2025-01,11,133859,,Corewell Health,01/16/2025,174.0,False,False
+2025-01,11,133860,,[individual],01/16/2025,750.0,False,False
+2025-01,11,133861,,[individual],01/16/2025,500.0,False,False
+2025-01,11,133862,,ESS Midwest Inc.,01/16/2025,53422.51,False,False
+2025-01,11,133863,,"Follett Content Solutions, LLC",01/16/2025,1139.95,False,False
+2025-01,11,133864,,Gordon Food Service,01/16/2025,7158.09,False,False
+2025-01,11,133865,,"Grand Rapids Building Services, Inc.",01/16/2025,3363.0,False,False
+2025-01,11,133866,,Hire Quest,01/16/2025,9511.74,False,False
+2025-01,11,133867,,[individual],01/16/2025,2319.5,False,False
+2025-01,11,133868,,Kent Intermediate School District,01/16/2025,5966.0,False,False
+2025-01,11,133869,,"Leslie's Pool Supplies, Inc.",01/16/2025,581.98,False,False
+2025-01,11,133870,,Messa,01/16/2025,299168.66,False,False
+2025-01,11,133871,,MSVMA,01/16/2025,700.0,False,False
+2025-01,11,133872,,National Insurance Services,01/16/2025,5574.88,False,False
+2025-01,11,133873,,[individual],01/16/2025,129.0,False,False
+2025-01,11,133874,,[individual],01/16/2025,360.0,False,False
+2025-01,11,133875,,"Wells Fargo Financial Leasing, Inc.",01/16/2025,5118.46,False,False
+2025-01,11,133876,,Grand Rapids City Treasurer,01/24/2025,7373.13,False,False
+2025-01,11,133877,,Mea Financial Services,01/24/2025,258.22,False,False
+2025-01,11,133878,,Michigan State Disbursement Unit,01/24/2025,447.5,False,False
+2025-01,11,133879,,United Way of Kent County,01/24/2025,61.55,False,False
+2025-01,11,133880,,ADN Administrators,01/23/2025,5150.55,False,False
+2025-01,11,133881,,Bergsma Plumbing,01/23/2025,825.0,False,False
+2025-01,11,133882,,Chemsearchfe,01/23/2025,895.0,False,False
+2025-01,11,133883,,Consumers Energy,01/23/2025,24400.11,False,False
+2025-01,11,133884,,Dean Transportation,01/23/2025,1825.2,False,False
+2025-01,11,133885,,DTE Energy,01/23/2025,8053.89,False,False
+2025-01,11,133886,,Foundation Building Materials,01/23/2025,636.48,False,False
+2025-01,11,133887,,Gordon Food Service,01/23/2025,7281.99,False,False
+2025-01,11,133888,,"Leslie's Pool Supplies, Inc.",01/23/2025,678.97,False,False
+2025-01,11,133889,,ArbiterPay,01/30/2025,18000.0,False,False
+2025-01,11,133890,,Calvin University,01/30/2025,19200.0,False,False
+2025-01,11,133891,,Cedar Crest Dairy Inc.,01/30/2025,3847.7,False,False
+2025-01,11,133892,,Dean Transportation,01/30/2025,6401.32,False,False
+2025-01,11,133893,,DTE Energy,01/30/2025,8409.27,False,False
+2025-01,11,133894,,[individual],01/30/2025,234.0,False,False
+2025-01,11,133895,,ESS Midwest Inc.,01/30/2025,29113.03,False,False
+2025-01,11,133896,,Fire Pros Inc.,01/30/2025,759.4,False,False
+2025-01,11,133897,,Foundation Building Materials,01/30/2025,330.24,False,False
+2025-01,11,133898,,Gordon Food Service,01/30/2025,4837.57,False,False
+2025-01,11,133899,,Great Lakes Coca-Cola Distribution,01/30/2025,300.18,False,False
+2025-01,11,133900,,Hire Quest,01/30/2025,15260.18,False,False
+2025-01,11,133901,,International Baccalaureate Organizatio,01/30/2025,327.0,False,False
+2025-01,11,133902,,Kent Intermediate School District,01/30/2025,14987.9,False,False
+2025-01,11,133903,,Meyer Music,01/30/2025,889.92,False,False
+2025-01,11,133904,,Michigan Office Solutions,01/30/2025,1535.05,False,False
+2025-01,11,133905,,MSVMA,01/30/2025,280.0,False,False
+2025-01,11,133906,,[individual],01/30/2025,45.0,False,False
+2025-01,11,133907,,SA Morman & CO,01/30/2025,845.36,False,False
+2025-01,11,133908,,[individual],01/30/2025,200.0,False,False
+2025-01,11,133909,,[individual],01/30/2025,1764.0,False,False
+2025-01,11,133910,,TurnKey Network Solutions,01/30/2025,1741.25,False,False
+2025-01,11,133911,,[individual],01/30/2025,300.0,False,False
+2025-01,11,133912,,[individual],01/30/2025,150.0,False,False
+2025-01,11,133913,,X-treme Demolition Inc,01/30/2025,7850.0,False,False
+2025-02,47,34,,"AAA Lead Inspections, Inc.",02/06/2025,10510.0,False,False
+2025-02,47,35,,Owen-Ames-Kimball Co.,02/06/2025,2403.25,False,False
+2025-02,47,36,,Pure Architects,02/06/2025,8980.0,False,False
+2025-02,47,37,,SME,02/06/2025,3000.0,False,False
+2025-02,47,38,,Owen-Ames-Kimball Co.,02/19/2025,616102.79,False,False
+2025-02,47,39,,Pure Architects,02/19/2025,259245.0,False,False
+2025-02,47,40,,Owen-Ames-Kimball Co.,02/27/2025,26076.0,False,False
+2025-02,47,41,,Pure Architects,02/27/2025,3425.0,False,False
+2025-02,41,620,,Pure Architects,02/19/2025,25500.0,False,False
+2025-02,29,28939,,Allendale Public Schools,02/06/2025,100.0,False,False
+2025-02,29,28940,,Dean Transportation,02/06/2025,440.9,False,False
+2025-02,29,28941,,[individual],02/06/2025,568.22,False,False
+2025-02,29,28942,,[individual],02/06/2025,80.52,False,False
+2025-02,29,28943,,[individual],02/06/2025,1037.28,False,False
+2025-02,29,28944,,[individual],02/06/2025,20.0,False,False
+2025-02,29,28945,,[individual],02/13/2025,258.25,False,False
+2025-02,29,28946,,[individual],02/13/2025,30.0,False,False
+2025-02,29,28947,,MSBOA - District 10,02/13/2025,230.0,False,False
+2025-02,29,28948,,[individual],02/13/2025,245.27,False,False
+2025-02,29,28949,,Van Andel Institute,02/13/2025,378.0,False,False
+2025-02,29,28950,,[individual],02/13/2025,30.94,False,False
+2025-02,29,28951,,[individual],02/19/2025,245.94,False,False
+2025-02,29,28952,,[individual],02/19/2025,64.99,False,False
+2025-02,29,28953,,Grand Rapids Gymnastics,02/19/2025,62.5,False,False
+2025-02,29,28954,,MSBOA,02/19/2025,93.0,False,False
+2025-02,29,28955,,[individual],02/19/2025,650.0,False,False
+2025-02,29,28956,,American Classical League,02/27/2025,123.0,False,False
+2025-02,29,28957,,[individual],02/27/2025,1928.03,False,False
+2025-02,29,28958,,[individual],02/27/2025,40.06,False,False
+2025-02,29,28959,,[individual],02/27/2025,135.65,False,False
+2025-02,29,28960,,[individual],02/27/2025,60.0,False,False
+2025-02,29,28961,,[individual],02/27/2025,1000.0,False,False
+2025-02,29,28962,,[individual],02/27/2025,457.48,False,False
+2025-02,29,28963,,Helen DeVos Children's Hospital Foundation,02/27/2025,500.0,False,False
+2025-02,29,28964,,[individual],02/27/2025,288.61,False,False
+2025-02,29,28965,,[individual],02/27/2025,348.54,False,False
+2025-02,29,28966,,Michigan Junior Classical League,02/27/2025,13.0,False,False
+2025-02,29,28967,,Santa Claus Girls,02/27/2025,655.5,False,False
+2025-02,29,28968,,[individual],02/27/2025,148.81,False,False
+2025-02,29,28969,,State Alliance of Michigan YMCAs,02/27/2025,6090.0,False,False
+2025-02,29,28970,,Townline Poultry,02/27/2025,84.0,False,False
+2025-02,29,28971,,[individual],02/27/2025,82.33,False,False
+2025-02,29,28972,,[individual],02/27/2025,375.22,False,False
+2025-02,11,133914,,"123.NET, Inc",02/06/2025,567.35,False,False
+2025-02,11,133915,,BSB Communications,02/06/2025,962.5,False,False
+2025-02,11,133916,,Central Michigan Paper Co.,02/06/2025,1320.0,False,False
+2025-02,11,133917,,City of East Grand Rapids.,02/06/2025,1231.22,False,False
+2025-02,11,133918,,Cummins,02/06/2025,1480.38,False,False
+2025-02,11,133919,,Dean Transportation,02/06/2025,5496.32,False,False
+2025-02,11,133920,,"Elevator Service, LLC",02/06/2025,3740.06,False,False
+2025-02,11,133921,,[individual],02/06/2025,67.0,False,False
+2025-02,11,133922,,Gordon Food Service,02/06/2025,14908.32,False,False
+2025-02,11,133923,,Hire Quest,02/06/2025,7282.28,False,False
+2025-02,11,133924,,Iscorp,02/06/2025,3000.0,False,False
+2025-02,11,133925,,Kent Communications Inc.,02/06/2025,344.64,False,False
+2025-02,11,133926,,Purity Cylinder Gases Inc.,02/06/2025,896.88,False,False
+2025-02,11,133927,,[individual],02/06/2025,750.0,False,False
+2025-02,11,133928,,Spartan Distributors Inc.,02/06/2025,477.81,False,False
+2025-02,11,133929,,The UPS Store,02/06/2025,118.58,False,False
+2025-02,11,133930,,[individual],02/06/2025,67.0,False,False
+2025-02,11,133931,,Gateway Financial Solutions,02/14/2025,233.01,False,False
+2025-02,11,133932,,Michigan State Disbursement Unit,02/14/2025,447.5,False,False
+2025-02,11,133933,,Aventric Technologies,02/13/2025,163.0,False,False
+2025-02,11,133934,,BP Energy Retail Company LLC,02/13/2025,25499.02,False,False
+2025-02,11,133935,,[individual],02/13/2025,300.0,False,False
+2025-02,11,133936,,Calvin University,02/13/2025,4003.34,False,False
+2025-02,11,133937,,Cedar Crest Dairy Inc.,02/13/2025,3013.7,False,False
+2025-02,11,133938,,Central Michigan Paper Co.,02/13/2025,5433.0,False,False
+2025-02,11,133939,,City of East Grand Rapids.,02/13/2025,8720.95,False,False
+2025-02,11,133940,,Consumers Energy,02/13/2025,67.64,False,False
+2025-02,11,133941,,Copperline Plumbing,02/13/2025,1726.18,False,False
+2025-02,11,133942,,[individual],02/13/2025,234.73,False,False
+2025-02,11,133943,,ESS Midwest Inc.,02/13/2025,27589.7,False,False
+2025-02,11,133944,,Fixall Electric Motor Service Inc,02/13/2025,502.91,False,False
+2025-02,11,133945,,Gordon Food Service,02/13/2025,6613.26,False,False
+2025-02,11,133946,,"Grand Rapids Building Services, Inc.",02/13/2025,3363.0,False,False
+2025-02,11,133947,,Grand Rapids Christian High School,02/13/2025,138.15,False,False
+2025-02,11,133948,,Huntington National Bank.,02/13/2025,1500.0,False,False
+2025-02,11,133949,,Kent Intermediate School District,02/13/2025,18435.6,False,False
+2025-02,11,133950,,Meyer Music,02/13/2025,55.65,False,False
+2025-02,11,133951,,MSBOA,02/13/2025,37.0,False,False
+2025-02,11,133952,,[individual],02/13/2025,122.0,False,False
+2025-02,11,133953,,National Insurance Services,02/13/2025,5629.72,False,False
+2025-02,11,133954,,Outside Pin Consulting Ltd.,02/13/2025,10000.0,False,False
+2025-02,11,133955,,Red Rover Technologies,02/13/2025,2450.0,False,False
+2025-02,11,133956,,Spectrum Lanes,02/13/2025,325.0,False,False
+2025-02,11,133957,,[individual],02/13/2025,846.0,False,False
+2025-02,11,133958,,"Wells Fargo Financial Leasing, Inc.",02/13/2025,5118.46,False,False
+2025-02,11,133959,,ADN Administrators,02/19/2025,1718.2,False,False
+2025-02,11,133960,,Consumers Energy,02/19/2025,35896.41,False,False
+2025-02,11,133961,,Copperline Plumbing,02/19/2025,756.18,False,False
+2025-02,11,133962,,Creative Ice Rental,02/19/2025,130.0,False,False
+2025-02,11,133963,,[individual],02/19/2025,1000.0,False,False
+2025-02,11,133964,,Gordon Food Service,02/19/2025,7047.51,False,False
+2025-02,11,133965,,Hire Quest,02/19/2025,8847.56,False,False
+2025-02,11,133966,,[individual],02/19/2025,112.0,False,False
+2025-02,11,133967,,Sensitography,02/19/2025,300.0,False,False
+2025-02,11,133968,,Southern Little League,02/19/2025,1325.0,False,False
+2025-02,11,133969,,The UPS Store,02/19/2025,23.38,False,False
+2025-02,11,133970,,[individual],02/19/2025,192.0,False,False
+2025-02,11,133971,,Gateway Financial Solutions,02/28/2025,160.62,False,False
+2025-02,11,133972,,Grand Rapids City Treasurer,02/28/2025,7427.74,False,False
+2025-02,11,133973,,Mea Financial Services,02/28/2025,297.83,False,False
+2025-02,11,133974,,Michigan State Disbursement Unit,02/28/2025,447.5,False,False
+2025-02,11,133975,,United Way of Kent County,02/28/2025,80.58,False,False
+2025-02,11,133976,,[individual],02/27/2025,125.86,False,False
+2025-02,11,133977,,[individual],02/27/2025,69.5,False,False
+2025-02,11,133978,,Buist Electric Inc.,02/27/2025,1956.17,False,False
+2025-02,11,133979,,Cedar Crest Dairy Inc.,02/27/2025,1495.0,False,False
+2025-02,11,133980,,Central Michigan Paper Co.,02/27/2025,1320.0,False,False
+2025-02,11,133981,,Cereal City Science,02/27/2025,606.42,False,False
+2025-02,11,133982,,[individual],02/27/2025,122.0,False,False
+2025-02,11,133983,,City of East Grand Rapids.,02/27/2025,2230.91,False,False
+2025-02,11,133984,,Clark Hill PLC,02/27/2025,67.0,False,False
+2025-02,11,133985,,[individual],02/27/2025,75.0,False,False
+2025-02,11,133986,,Consumers Energy,02/27/2025,28598.27,False,False
+2025-02,11,133987,,Dean Transportation,02/27/2025,8903.68,False,False
+2025-02,11,133988,,DTE Energy,02/27/2025,9732.52,False,False
+2025-02,11,133989,,[individual],02/27/2025,456.0,False,False
+2025-02,11,133990,,Environmental Safety,02/27/2025,700.0,False,False
+2025-02,11,133991,,ESS Midwest Inc.,02/27/2025,29259.34,False,False
+2025-02,11,133992,,Gordon Food Service,02/27/2025,7701.75,False,False
+2025-02,11,133993,,Great Lakes Coca-Cola Distribution,02/27/2025,343.5,False,False
+2025-02,11,133994,,Hire Quest,02/27/2025,14988.05,False,False
+2025-02,11,133995,,Kent Intermediate School District,02/27/2025,856.78,False,False
+2025-02,11,133996,,Messa,02/27/2025,292738.32,False,False
+2025-02,11,133997,,Meyer Music,02/27/2025,62.65,False,False
+2025-02,11,133998,,Michigan Office Solutions,02/27/2025,3743.41,False,False
+2025-02,11,133999,,MSVMA,02/27/2025,105.0,False,False
+2025-02,11,134000,,[individual],02/27/2025,67.0,False,False
+2025-02,11,134001,,Service Express,02/27/2025,2100.0,False,False
+2025-02,11,134002,,[individual],02/27/2025,868.0,False,False
+2025-02,11,134003,,[individual],02/27/2025,65.0,False,False
+2025-02,11,134004,,Vanden Berg Piano,02/27/2025,195.0,False,False
+2025-02,11,134005,,West Michigan Fitness Service,02/27/2025,1065.0,False,False
+2025-02,11,134006,,Wheeler-Monterusso Business Machines,02/27/2025,142.48,False,False
+2025-03,47,42,,Owen-Ames-Kimball Co.,03/19/2025,94163.61,False,False
+2025-03,47,43,,Pure Architects,03/19/2025,253265.63,False,False
+2025-03,47,44,,Owen-Ames-Kimball Co.,03/27/2025,274169.81,False,False
+2025-03,47,45,,Pure Architects,03/27/2025,5625.0,False,False
+2025-03,29,28973,,[individual],03/06/2025,200.0,False,False
+2025-03,29,28974,,Dean Transportation,03/06/2025,3562.9,False,False
+2025-03,29,28975,,[individual],03/06/2025,48.58,False,False
+2025-03,29,28976,,Holiday Coach Co.,03/06/2025,3437.43,False,False
+2025-03,29,28977,,Lakeside PTO,03/06/2025,500.0,False,False
+2025-03,29,28978,,[individual],03/06/2025,181.45,False,False
+2025-03,29,28979,,West Catholic High School,03/06/2025,40.0,False,False
+2025-03,29,28980,,Western Michigan University,03/06/2025,322.0,False,False
+2025-03,29,28981,,Cash,03/13/2025,100.0,False,False
+2025-03,29,28982,,Dean Transportation,03/13/2025,580.64,False,False
+2025-03,29,28983,,[individual],03/13/2025,548.17,False,False
+2025-03,29,28984,,[individual],03/13/2025,175.0,False,False
+2025-03,29,28985,,[individual],03/13/2025,495.36,False,False
+2025-03,29,28986,,[individual],03/13/2025,129.64,False,False
+2025-03,29,28987,,Madsen Wire Products,03/13/2025,523.0,False,False
+2025-03,29,28988,,"Merchandise Equipment & Supply, Inc.",03/13/2025,2058.27,False,False
+2025-03,29,28989,,[individual],03/13/2025,655.26,False,False
+2025-03,29,28990,,Van Andel Institute,03/13/2025,770.0,False,False
+2025-03,29,28991,,Grand Classroom,03/18/2025,63676.0,False,False
+2025-03,29,28992,,[individual],03/19/2025,360.0,False,False
+2025-03,29,28993,,Dean Transportation,03/19/2025,2036.97,False,False
+2025-03,29,28994,,[individual],03/19/2025,1000.0,False,False
+2025-03,29,28995,,ESS Midwest Inc.,03/19/2025,12300.8,False,False
+2025-03,29,28996,,[individual],03/19/2025,253.28,False,False
+2025-03,29,28997,,[individual],03/19/2025,570.88,False,False
+2025-03,29,28998,,Ja'Duke Backdrops,03/19/2025,425.0,False,False
+2025-03,29,28999,,[individual],03/19/2025,300.0,False,False
+2025-03,29,29000,,ProMec Engineering Services,03/19/2025,3000.0,False,False
+2025-03,29,29001,,Robo Promo,03/19/2025,125.0,False,False
+2025-03,29,29002,,[individual],03/19/2025,500.0,False,False
+2025-03,29,29003,,T Shirt Wonders LLC,03/19/2025,1940.0,False,False
+2025-03,29,29004,,Brand Impact,03/27/2025,965.95,False,False
+2025-03,29,29005,,"Compass Coach, Inc.",03/27/2025,4366.0,False,False
+2025-03,29,29006,,[individual],03/27/2025,1850.0,False,False
+2025-03,29,29007,,[individual],03/27/2025,86.68,False,False
+2025-03,29,29008,,[individual],03/27/2025,351.75,False,False
+2025-03,29,29009,,Holwerda-Snoap Sporting Goods,03/27/2025,80.0,False,False
+2025-03,29,29010,,Hopkins Public Schools,03/27/2025,150.0,False,False
+2025-03,29,29011,,[individual],03/27/2025,279.25,False,False
+2025-03,29,29012,,Junior Achievement of the MI Great Lakes,03/27/2025,2520.0,False,False
+2025-03,29,29013,,[individual],03/27/2025,400.0,False,False
+2025-03,29,29014,,Robo Promo,03/27/2025,650.0,False,False
+2025-03,29,29015,,[individual],03/27/2025,250.0,False,False
+2025-03,11,134007,,Gateway Financial Solutions,03/05/2025,233.01,False,False
+2025-03,11,134008,,"123.NET, Inc",03/06/2025,574.02,False,False
+2025-03,11,134009,,Cedar Crest Dairy Inc.,03/06/2025,2694.59,False,False
+2025-03,11,134010,,Clique Lanes,03/06/2025,2500.0,False,False
+2025-03,11,134011,,Corewell Health,03/06/2025,3109.74,False,False
+2025-03,11,134012,,[individual],03/06/2025,65.0,False,False
+2025-03,11,134013,,Dean Transportation,03/06/2025,13800.32,False,False
+2025-03,11,134014,,DTE Energy,03/06/2025,8544.23,False,False
+2025-03,11,134015,,Exponential Inclusion LLC,03/06/2025,3943.75,False,False
+2025-03,11,134016,,Gordon Food Service,03/06/2025,7257.13,False,False
+2025-03,11,134017,,Grand Rapids Community College,03/06/2025,3367.76,False,False
+2025-03,11,134018,,[individual],03/06/2025,122.0,False,False
+2025-03,11,134019,,Hire Quest,03/06/2025,8215.64,False,False
+2025-03,11,134020,,Purity Cylinder Gases Inc.,03/06/2025,1015.56,False,False
+2025-03,11,134021,,Sparq Data Solutions,03/06/2025,900.0,False,False
+2025-03,11,134022,,The Six Shifts,03/06/2025,4752.0,False,False
+2025-03,11,134023,,Avi Systems Inc.,03/13/2025,565.91,False,False
+2025-03,11,134024,,BP Energy Retail Company LLC,03/13/2025,26259.34,False,False
+2025-03,11,134025,,Buist Electric Inc.,03/13/2025,1290.5,False,False
+2025-03,11,134026,,Cedar Crest Dairy Inc.,03/13/2025,1528.56,False,False
+2025-03,11,134027,,[individual],03/13/2025,663.48,False,False
+2025-03,11,134028,,EGR Ski Team,03/13/2025,2268.1,False,False
+2025-03,11,134029,,ESS Midwest Inc.,03/13/2025,26122.45,False,False
+2025-03,11,134030,,[individual],03/13/2025,50.0,False,False
+2025-03,11,134031,,Gordon Food Service,03/13/2025,5891.45,False,False
+2025-03,11,134032,,"Grand Rapids Building Services, Inc.",03/13/2025,3363.0,False,False
+2025-03,11,134033,,Holwerda-Snoap Sporting Goods,03/13/2025,1298.0,False,False
+2025-03,11,134034,,Kent Communications Inc.,03/13/2025,445.46,False,False
+2025-03,11,134035,,Kent Intermediate School District,03/13/2025,20.0,False,False
+2025-03,11,134036,,Meyer Music,03/13/2025,530.54,False,False
+2025-03,11,134037,,Michigan AEYC,03/13/2025,720.0,False,False
+2025-03,11,134038,,MSBOA - District 10,03/13/2025,25.0,False,False
+2025-03,11,134039,,[individual],03/13/2025,910.0,False,False
+2025-03,11,134040,,[individual],03/13/2025,122.0,False,False
+2025-03,11,134041,,"Thrun Law Firm, P.C.",03/13/2025,3297.0,False,False
+2025-03,11,134042,,TK Elevator Corporation,03/13/2025,548.75,False,False
+2025-03,11,134043,,Vernier Software & Technology,03/13/2025,837.0,False,False
+2025-03,11,134044,,[individual],03/13/2025,228.0,False,False
+2025-03,11,134045,,Gordon Food Service,03/13/2025,684.11,False,False
+2025-03,11,134046,,[individual],03/13/2025,266.45,False,False
+2025-03,11,134047,,Gateway Financial Solutions,03/14/2025,126.71,False,False
+2025-03,11,134048,,Michigan State Disbursement Unit,03/14/2025,447.5,False,False
+2025-03,11,134049,,Chemsearchfe,03/19/2025,1499.9,False,False
+2025-03,11,134050,,City of East Grand Rapids.,03/19/2025,8473.59,False,False
+2025-03,11,134051,,Consumers Energy,03/19/2025,33166.29,False,False
+2025-03,11,134052,,[individual],03/19/2025,67.0,False,False
+2025-03,11,134053,,Dean Transportation,03/19/2025,6828.5,False,False
+2025-03,11,134054,,ESS Midwest Inc.,03/19/2025,43401.17,False,False
+2025-03,11,134055,,Flying Dutchman Flags,03/19/2025,56.53,False,False
+2025-03,11,134056,,Gordon Food Service,03/19/2025,6329.81,False,False
+2025-03,11,134057,,Grand Rapids Public Schools,03/19/2025,71803.16,False,False
+2025-03,11,134058,,[individual],03/19/2025,228.75,False,False
+2025-03,11,134059,,Hire Quest,03/19/2025,6984.76,False,False
+2025-03,11,134060,,Hobart Sales & Service,03/19/2025,236.11,False,False
+2025-03,11,134061,,Kent Communications Inc.,03/19/2025,354.91,False,False
+2025-03,11,134062,,Kent Intermediate School District,03/19/2025,13061.32,False,False
+2025-03,11,134063,,Meyer Music,03/19/2025,538.31,False,False
+2025-03,11,134064,,[individual],03/19/2025,115.7,False,False
+2025-03,11,134065,,National Insurance Services,03/19/2025,6787.29,False,False
+2025-03,11,134066,,Standard Electric Company,03/19/2025,839.4,False,False
+2025-03,11,134067,,Turfix,03/19/2025,1200.0,False,False
+2025-03,11,134068,,"Wells Fargo Financial Leasing, Inc.",03/19/2025,5118.46,False,False
+2025-03,11,134069,,West Michigan Risk Mgmt Trust,03/19/2025,8900.5,False,False
+2025-03,11,134070,,Gateway Financial Solutions,03/28/2025,110.43,False,False
+2025-03,11,134071,,Michigan State Disbursement Unit,03/28/2025,447.5,False,False
+2025-03,11,134072,,Grand Rapids City Treasurer,03/28/2025,7462.97,False,False
+2025-03,11,134073,,Mea Financial Services,03/28/2025,199.4,False,False
+2025-03,11,134074,,United Way of Kent County,03/28/2025,83.1,False,False
+2025-03,11,134075,,ADN Administrators,03/27/2025,1712.25,False,False
+2025-03,11,134076,,Cedar Crest Dairy Inc.,03/27/2025,3120.46,False,False
+2025-03,11,134077,,Central Michigan Paper Co.,03/27/2025,1580.6,False,False
+2025-03,11,134078,,Cereal City Science,03/27/2025,175.28,False,False
+2025-03,11,134079,,Consumers Energy,03/27/2025,25788.05,False,False
+2025-03,11,134080,,DTE Energy,03/27/2025,8383.43,False,False
+2025-03,11,134081,,ESS Midwest Inc.,03/27/2025,26726.71,False,False
+2025-03,11,134082,,[individual],03/27/2025,2443.0,False,False
+2025-03,11,134083,,Foundation Building Materials,03/27/2025,633.99,False,False
+2025-03,11,134084,,Gordon Food Service,03/27/2025,8379.41,False,False
+2025-03,11,134085,,Great Lakes Coca-Cola Distribution,03/27/2025,314.05,False,False
+2025-03,11,134086,,Hat Creek Outfitters,03/27/2025,1228.89,False,False
+2025-03,11,134087,,Hire Quest,03/27/2025,11034.16,False,False
+2025-03,11,134088,,Johnson Controls Fire Protection LP,03/27/2025,1310.4,False,False
+2025-03,11,134089,,Kent Intermediate School District,03/27/2025,50.0,False,False
+2025-03,11,134090,,Messa,03/27/2025,292729.13,False,False
+2025-03,11,134091,,Michigan Office Solutions,03/27/2025,3583.77,False,False
+2025-03,11,134092,,ODP Business Solutions LLC,03/27/2025,59.54,False,False
+2025-03,11,134093,,Standard Electric Company,03/27/2025,243.01,False,False
+2025-03,11,134094,,Thornapple Kellogg Schools,03/27/2025,152.0,False,False
+2025-04,47,46,,Owen-Ames-Kimball Co.,04/15/2025,617.0,False,False
+2025-04,47,47,,Owen-Ames-Kimball Co.,04/23/2025,327088.37,False,False
+2025-04,47,48,,Pure Architects,04/23/2025,253017.82,False,False
+2025-04,29,29016,,Adlai E. Stevenson High School,04/03/2025,200.0,False,False
+2025-04,29,29017,,A-Plus Printing,04/03/2025,498.0,False,False
+2025-04,29,29018,,East Kentwood HS Athletic Dept,04/03/2025,300.0,False,False
+2025-04,29,29019,,[individual],04/03/2025,244.32,False,False
+2025-04,29,29020,,[individual],04/03/2025,323.6,False,False
+2025-04,29,29021,,Van Andel Institute,04/03/2025,1064.0,False,False
+2025-04,29,29022,,Zeeland West High School,04/03/2025,275.0,False,False
+2025-04,29,29023,,[individual],04/10/2025,168.07,False,False
+2025-04,29,29024,,[individual],04/10/2025,70.74,False,False
+2025-04,29,29025,,[individual],04/10/2025,40.35,False,False
+2025-04,29,29026,,American Youth Foundation,04/17/2025,2460.0,False,False
+2025-04,29,29027,,Dean Transportation,04/17/2025,2450.6,False,False
+2025-04,29,29028,,[individual],04/17/2025,24.68,False,False
+2025-04,29,29029,,Geskus Photography,04/17/2025,80.0,False,False
+2025-04,29,29030,,Gordon Food Service,04/17/2025,125.2,False,False
+2025-04,29,29031,,Grant Newton Media LLC,04/17/2025,2315.0,False,False
+2025-04,29,29032,,"Greyson Clothiers, LLC",04/17/2025,1776.0,False,False
+2025-04,29,29033,,Michigan Historical Museum,04/17/2025,420.0,False,False
+2025-04,29,29034,,SideCar Studios,04/17/2025,400.0,False,False
+2025-04,29,29035,,Wealthy PTO,04/17/2025,500.0,False,False
+2025-04,29,29036,,Cash,04/23/2025,250.0,False,False
+2025-04,29,29037,,Cash,04/23/2025,710.0,False,False
+2025-04,29,29038,,EGR Boys Lacrosse Team,04/23/2025,1180.0,False,False
+2025-04,29,29039,,ESS Midwest Inc.,04/23/2025,29358.3,False,False
+2025-04,11,134095,,[individual],04/03/2025,221.66,False,False
+2025-04,11,134096,,Dean Transportation,04/03/2025,10217.34,False,False
+2025-04,11,134097,,DTE Energy,04/03/2025,6571.46,False,False
+2025-04,11,134098,,[individual],04/03/2025,240.0,False,False
+2025-04,11,134099,,Gordon Food Service,04/03/2025,4724.09,False,False
+2025-04,11,134100,,Holland Christian High School,04/03/2025,250.0,False,False
+2025-04,11,134101,,Meyer Music,04/03/2025,1296.86,False,False
+2025-04,11,134102,,MIAAA,04/03/2025,160.0,False,False
+2025-04,11,134103,,[individual],04/03/2025,500.0,False,False
+2025-04,11,134104,,Thornapple Kellogg Schools,04/03/2025,400.0,False,False
+2025-04,11,134105,,"Universal Sign, Inc",04/03/2025,3520.0,False,False
+2025-04,11,134106,,Gateway Financial Solutions,04/11/2025,167.81,False,False
+2025-04,11,134107,,Michigan State Disbursement Unit,04/11/2025,447.5,False,False
+2025-04,11,134108,,Etna Supply Company,04/10/2025,785.88,False,False
+2025-04,11,134109,,"Excel Glass & Door, Inc.",04/10/2025,410.0,False,False
+2025-04,11,134110,,Lowe's,04/10/2025,429.36,False,False
+2025-04,11,134111,,Purity Cylinder Gases Inc.,04/10/2025,1216.09,False,False
+2025-04,11,134112,,State Supply Company,04/10/2025,124.8,False,False
+2025-04,11,134113,,ADN Administrators,04/17/2025,1696.6,False,False
+2025-04,11,134114,,[individual],04/17/2025,250.0,False,False
+2025-04,11,134115,,Aventric Technologies,04/17/2025,6342.0,False,False
+2025-04,11,134116,,Blythefield Country Club,04/17/2025,905.0,False,False
+2025-04,11,134117,,BP Energy Retail Company LLC,04/17/2025,16045.07,False,False
+2025-04,11,134118,,Cedar Crest Dairy Inc.,04/17/2025,2790.23,False,False
+2025-04,11,134119,,Central Michigan Paper Co.,04/17/2025,490.0,False,False
+2025-04,11,134120,,City of East Grand Rapids.,04/17/2025,12023.65,False,False
+2025-04,11,134121,,Consumers Energy,04/17/2025,34128.06,False,False
+2025-04,11,134122,,Copperline Plumbing,04/17/2025,3817.44,False,False
+2025-04,11,134123,,Dadd's Appliance Repair,04/17/2025,80.0,False,False
+2025-04,11,134124,,Dean Transportation,04/17/2025,5053.72,False,False
+2025-04,11,134125,,EGR Field Hockey Association,04/17/2025,5719.59,False,False
+2025-04,11,134126,,"Elevator Service, LLC",04/17/2025,2587.6,False,False
+2025-04,11,134127,,ESS Midwest Inc.,04/17/2025,34342.3,False,False
+2025-04,11,134128,,Gordon Food Service,04/17/2025,6256.78,False,False
+2025-04,11,134129,,"Grand Rapids Building Services, Inc.",04/17/2025,3363.0,False,False
+2025-04,11,134130,,Grand Rapids Christian High School,04/17/2025,175.0,False,False
+2025-04,11,134131,,Hedrick Associates,04/17/2025,2873.0,False,False
+2025-04,11,134132,,Hire Quest,04/17/2025,15601.27,False,False
+2025-04,11,134133,,Johnson Controls Fire Protection LP,04/17/2025,3631.82,False,False
+2025-04,11,134134,,Kent Communications Inc.,04/17/2025,223.24,False,False
+2025-04,11,134135,,Kent Intermediate School District,04/17/2025,101698.89,False,False
+2025-04,11,134136,,Meyer Music,04/17/2025,46.75,False,False
+2025-04,11,134137,,National Insurance Services,04/17/2025,5790.7,False,False
+2025-04,11,134138,,Racquet Sports,04/17/2025,1410.0,False,False
+2025-04,11,134139,,Standard Electric Company,04/17/2025,2.03,False,False
+2025-04,11,134140,,"Thrun Law Firm, P.C.",04/17/2025,1112.5,False,False
+2025-04,11,134141,,"Weatherproofing Technologies, Inc.",04/17/2025,1300.0,False,False
+2025-04,11,134142,,"Wells Fargo Financial Leasing, Inc.",04/17/2025,5118.46,False,False
+2025-04,11,134143,,Grand Rapids City Treasurer,04/25/2025,6908.26,False,False
+2025-04,11,134144,,Mea Financial Services,04/25/2025,316.16,False,False
+2025-04,11,134145,,Michigan State Disbursement Unit,04/25/2025,447.5,False,False
+2025-04,11,134146,,United Way of Kent County,04/25/2025,83.1,False,False
+2025-04,11,134147,,BSB Communications,04/23/2025,175.0,False,False
+2025-04,11,134148,,Buist Electric Inc.,04/23/2025,2955.81,False,False
+2025-04,11,134149,,Copperline Plumbing,04/23/2025,1626.51,False,False
+2025-04,11,134150,,"DIVE Cincinnati, Inc.",04/23/2025,6700.3,False,False
+2025-04,11,134151,,DTE Energy,04/23/2025,6884.63,False,False
+2025-04,11,134152,,ESS Midwest Inc.,04/23/2025,65791.15,False,False
+2025-04,11,134153,,Fire Pros Inc.,04/23/2025,990.6,False,False
+2025-04,11,134154,,Gordon Food Service,04/23/2025,5045.6,False,False
+2025-04,11,134155,,Great Lakes Coca-Cola Distribution,04/23/2025,337.4,False,False
+2025-04,11,134156,,Hire Quest,04/23/2025,5592.61,False,False
+2025-04,11,134157,,Messa,04/23/2025,289127.02,False,False
+2025-04,11,134158,,Meyer Music,04/23/2025,350.0,False,False
+2025-04,11,134159,,Michigan Office Solutions,04/23/2025,3625.16,False,False
+2025-04,11,134160,,People Driven Technology,04/23/2025,75165.3,False,False
+2025-04,11,134161,,Skyward Inc.,04/23/2025,20493.0,False,False
+2025-04,11,134162,,[individual],04/23/2025,936.0,False,False
+2025-04,11,134163,,Traverse City Central H. S.,04/23/2025,1200.0,False,False
+2025-04,11,134164,,West Catholic Athletics,04/23/2025,350.0,False,False
+2025-05,47,49,,Owen-Ames-Kimball Co.,05/01/2025,71230.25,False,False
+2025-05,47,50,,Custer Office Environments,05/08/2025,4297.64,False,False
+2025-05,47,51,,Pure Architects,05/08/2025,4083.11,False,False
+2025-05,47,52,,Owen-Ames-Kimball Co.,05/15/2025,15405.97,False,False
+2025-05,47,53,,Pure Architects,05/15/2025,251697.82,False,False
+2025-05,47,54,,SME,05/15/2025,3000.0,False,False
+2025-05,47,55,,Owen-Ames-Kimball Co.,05/21/2025,209146.88,False,False
+2025-05,46,282,,Sehi Computer Products,05/08/2025,5865.9,False,False
+2025-05,29,29040,,ACP Entertainment,05/01/2025,1495.83,False,False
+2025-05,29,29041,,Central Michigan Paper Co.,05/01/2025,1410.75,False,False
+2025-05,29,29042,,Gordon Food Service,05/01/2025,102.47,False,False
+2025-05,29,29043,,Grant Newton Media LLC,05/01/2025,4220.0,False,False
+2025-05,29,29044,,Historic Charlton Park,05/01/2025,282.0,False,False
+2025-05,29,29045,,[individual],05/01/2025,91.79,False,False
+2025-05,29,29046,,Rockford Baseball Academy,05/01/2025,222.0,False,False
+2025-05,29,29047,,[individual],05/01/2025,3000.0,False,False
+2025-05,29,29048,,[individual],05/08/2025,250.0,False,False
+2025-05,29,29049,,Cash,05/08/2025,352.0,False,False
+2025-05,29,29050,,[individual],05/08/2025,250.0,False,False
+2025-05,29,29051,,EGR Middle School PTO,05/08/2025,4295.0,False,False
+2025-05,29,29052,,[individual],05/08/2025,240.0,False,False
+2025-05,29,29053,,[individual],05/08/2025,233.8,False,False
+2025-05,29,29054,,[individual],05/08/2025,1000.0,False,False
+2025-05,29,29055,,[individual],05/08/2025,30.0,False,False
+2025-05,29,29056,,Holiday Coach Co.,05/08/2025,4132.3,False,False
+2025-05,29,29057,,ODP Business Solutions LLC,05/08/2025,89.24,False,False
+2025-05,29,29058,,Portland Public Schools,05/08/2025,100.0,False,False
+2025-05,29,29059,,[individual],05/08/2025,48.08,False,False
+2025-05,29,29060,,Cash,05/12/2025,135.0,False,False
+2025-05,29,29061,,Cig Jan Products Ltd.,05/12/2025,416.5,False,False
+2025-05,29,29062,,Cash,05/14/2025,300.0,False,False
+2025-05,29,29063,,Cash,05/15/2025,250.0,False,False
+2025-05,29,29064,,Dean Transportation,05/15/2025,7107.41,False,False
+2025-05,29,29065,,[individual],05/15/2025,1008.11,False,False
+2025-05,29,29066,,Murray Hotel,05/15/2025,19316.08,False,False
+2025-05,29,29067,,[individual],05/15/2025,42.6,False,False
+2025-05,29,29068,,[individual],05/15/2025,249.81,False,False
+2025-05,29,29069,,[individual],05/15/2025,500.0,False,False
+2025-05,29,29070,,[individual],05/21/2025,200.0,False,False
+2025-05,29,29071,,[individual],05/21/2025,300.0,False,False
+2025-05,29,29072,,Boulder Ridge Wild Animal Park,05/21/2025,1082.0,False,False
+2025-05,29,29073,,Bullseye Group LLC,05/21/2025,347.3,False,False
+2025-05,29,29074,,ESS Midwest Inc.,05/21/2025,43355.75,False,False
+2025-05,29,29075,,Island Slice Pizza,05/21/2025,1632.15,False,False
+2025-05,29,29076,,[individual],05/21/2025,260.6,False,False
+2025-05,29,29077,,[individual],05/21/2025,200.0,False,False
+2025-05,29,29078,,[individual],05/21/2025,200.0,False,False
+2025-05,29,29079,,[individual],05/21/2025,2350.0,False,False
+2025-05,29,29080,,[individual],05/29/2025,2100.0,False,False
+2025-05,29,29081,,[individual],05/29/2025,456.57,False,False
+2025-05,29,29082,,Forest Hills Public Schools - Aquatic Ctr.,05/29/2025,246.0,False,False
+2025-05,29,29083,,[individual],05/29/2025,1200.0,False,False
+2025-05,29,29084,,Image Quest,05/29/2025,3031.42,False,False
+2025-05,29,29085,,[individual],05/29/2025,60.0,False,False
+2025-05,29,29086,,Kids Food Basket,05/29/2025,468.11,False,False
+2025-05,11,134165,,"AAA Lead Inspections, Inc.",05/01/2025,860.0,False,False
+2025-05,11,134166,,"Active Internet Technologies, LLC",05/01/2025,13950.0,False,False
+2025-05,11,134167,,Cedar Crest Dairy Inc.,05/01/2025,3218.34,False,False
+2025-05,11,134168,,Chemsearchfe,05/01/2025,1395.0,False,False
+2025-05,11,134169,,Clark Hill PLC,05/01/2025,67.0,False,False
+2025-05,11,134170,,Consumers Energy,05/01/2025,24795.34,False,False
+2025-05,11,134171,,Crisis Prevention Institute,05/01/2025,200.0,False,False
+2025-05,11,134172,,Diamonds Sports Training,05/01/2025,300.0,False,False
+2025-05,11,134173,,DTE Energy,05/01/2025,4722.62,False,False
+2025-05,11,134174,,"Excel Glass & Door, Inc.",05/01/2025,1156.0,False,False
+2025-05,11,134175,,Gordon Food Service,05/01/2025,7061.74,False,False
+2025-05,11,134176,,[individual],05/01/2025,65.0,False,False
+2025-05,11,134177,,Messa,05/01/2025,666.95,False,False
+2025-05,11,134178,,Meyer Music,05/01/2025,561.43,False,False
+2025-05,11,134179,,"Midwest Air Filter, Inc.",05/01/2025,3134.04,False,False
+2025-05,11,134180,,Red Rover Technologies,05/01/2025,15393.36,False,False
+2025-05,11,134181,,"Thrun Law Firm, P.C.",05/01/2025,478.71,False,False
+2025-05,11,134182,,Valley Athletics,05/01/2025,295.22,False,False
+2025-05,11,134183,,Welch Tile & Marble,05/01/2025,2632.0,False,False
+2025-05,11,134184,,Wyoming High School,05/01/2025,400.0,False,False
+2025-05,11,134185,,Gateway Financial Solutions,05/09/2025,147.4,False,False
+2025-05,11,134186,,Michigan State Disbursement Unit,05/09/2025,447.5,False,False
+2025-05,11,134187,,Baxters Mobile Storage,05/06/2025,18450.0,False,False
+2025-05,11,134188,,"123.NET, Inc",05/08/2025,1146.64,False,False
+2025-05,11,134189,,BSB Communications,05/08/2025,87.5,False,False
+2025-05,11,134190,,Copperline Plumbing,05/08/2025,9445.2,False,False
+2025-05,11,134191,,[individual],05/08/2025,540.0,False,False
+2025-05,11,134192,,[individual],05/08/2025,1000.0,False,False
+2025-05,11,134193,,[individual],05/08/2025,540.0,False,False
+2025-05,11,134194,,[individual],05/08/2025,540.0,False,False
+2025-05,11,134195,,[individual],05/08/2025,540.0,False,False
+2025-05,11,134196,,"Elevator Service, LLC",05/08/2025,3740.06,False,False
+2025-05,11,134197,,[individual],05/08/2025,240.0,False,False
+2025-05,11,134198,,ESS Midwest Inc.,05/08/2025,34349.23,False,False
+2025-05,11,134199,,Exponential Inclusion LLC,05/08/2025,3943.75,False,False
+2025-05,11,134200,,Forest Hills Eastern High School,05/08/2025,250.0,False,False
+2025-05,11,134201,,[individual],05/08/2025,540.0,False,False
+2025-05,11,134202,,Gordon Food Service,05/08/2025,6955.0,False,False
+2025-05,11,134203,,[individual],05/08/2025,540.0,False,False
+2025-05,11,134204,,Hedrick Associates,05/08/2025,1020.0,False,False
+2025-05,11,134205,,Hire Quest,05/08/2025,6535.09,False,False
+2025-05,11,134206,,Inacomp TSG,05/08/2025,19219.28,False,False
+2025-05,11,134207,,Kent Communications Inc.,05/08/2025,421.85,False,False
+2025-05,11,134208,,Meal Magic Corporation,05/08/2025,4594.0,False,False
+2025-05,11,134209,,Meyer Music,05/08/2025,65.2,False,False
+2025-05,11,134210,,MIAAA,05/08/2025,155.0,False,False
+2025-05,11,134211,,Purity Cylinder Gases Inc.,05/08/2025,489.78,False,False
+2025-05,11,134212,,[individual],05/08/2025,540.0,False,False
+2025-05,11,134213,,[individual],05/08/2025,1000.0,False,False
+2025-05,11,134214,,[individual],05/08/2025,67.0,False,False
+2025-05,11,134215,,Turfix,05/08/2025,5800.0,False,False
+2025-05,11,134216,,Consumers Energy,05/13/2025,34197.74,False,False
+2025-05,11,134217,,BP Energy Retail Company LLC,05/15/2025,11735.09,False,False
+2025-05,11,134218,,Cedar Crest Dairy Inc.,05/15/2025,1621.2,False,False
+2025-05,11,134219,,City of East Grand Rapids.,05/15/2025,8395.23,False,False
+2025-05,11,134220,,[individual],05/15/2025,230.18,False,False
+2025-05,11,134221,,Corewell Health,05/15/2025,4546.27,False,False
+2025-05,11,134222,,Dean Transportation,05/15/2025,13060.5,False,False
+2025-05,11,134223,,EGR Crew,05/15/2025,1799.2,False,False
+2025-05,11,134224,,[individual],05/15/2025,240.0,False,False
+2025-05,11,134225,,Gordon Food Service,05/15/2025,5392.85,False,False
+2025-05,11,134226,,"Grand Rapids Building Services, Inc.",05/15/2025,3363.0,False,False
+2025-05,11,134227,,Hire Quest,05/15/2025,13332.06,False,False
+2025-05,11,134228,,[individual],05/15/2025,5000.0,False,False
+2025-05,11,134229,,Huntington National Bank.,05/15/2025,500.0,False,False
+2025-05,11,134230,,Kent Intermediate School District,05/15/2025,21419.1,False,False
+2025-05,11,134231,,[individual],05/15/2025,65.0,False,False
+2025-05,11,134232,,Meyer Music,05/15/2025,151.13,False,False
+2025-05,11,134233,,MSSA,05/15/2025,1400.0,False,False
+2025-05,11,134234,,National Insurance Services,05/15/2025,5763.68,False,False
+2025-05,11,134235,,Ottawa Hills High School,05/15/2025,325.0,False,False
+2025-05,11,134236,,Portage Northern High School,05/15/2025,300.0,False,False
+2025-05,11,134237,,[individual],05/15/2025,65.0,False,False
+2025-05,11,134238,,Sensitography,05/15/2025,300.0,False,False
+2025-05,11,134239,,Standard Electric Company,05/15/2025,570.39,False,False
+2025-05,11,134240,,"Wells Fargo Financial Leasing, Inc.",05/15/2025,5118.46,False,False
+2025-05,11,134241,,Gateway Financial Solutions,05/23/2025,174.32,False,False
+2025-05,11,134242,,Grand Rapids City Treasurer,05/23/2025,7221.86,False,False
+2025-05,11,134243,,Mea Financial Services,05/23/2025,316.16,False,False
+2025-05,11,134244,,Michigan State Disbursement Unit,05/23/2025,447.5,False,False
+2025-05,11,134245,,United Way of Kent County,05/23/2025,83.1,False,False
+2025-05,11,134246,,ADN Administrators,05/21/2025,1703.8,False,False
+2025-05,11,134247,,Consumers Energy,05/21/2025,38325.04,False,False
+2025-05,11,134248,,DTE Energy,05/21/2025,5910.37,False,False
+2025-05,11,134249,,ESS Midwest Inc.,05/21/2025,61899.76,False,False
+2025-05,11,134250,,Forest Hills Northern High,05/21/2025,300.0,False,False
+2025-05,11,134251,,Gordon Food Service,05/21/2025,1491.45,False,False
+2025-05,11,134252,,Grand Rapids Track Club Summer Youth Program,05/21/2025,180.0,False,False
+2025-05,11,134253,,Great Lakes Coca-Cola Distribution,05/21/2025,341.1,False,False
+2025-05,11,134254,,[individual],05/21/2025,100.0,False,False
+2025-05,11,134255,,Indian Trails Golf Course,05/21/2025,675.0,False,False
+2025-05,11,134256,,Kent Intermediate School District,05/21/2025,100.0,False,False
+2025-05,11,134257,,Messa,05/21/2025,291091.02,False,False
+2025-05,11,134258,,Meyer Music,05/21/2025,191.35,False,False
+2025-05,11,134259,,[individual],05/21/2025,500.0,False,False
+2025-05,11,134260,,Sehi Computer Products,05/21/2025,2346.36,False,False
+2025-05,11,134261,,[individual],05/21/2025,80.0,False,False
+2025-05,11,134262,,[individual],05/21/2025,1870.0,False,False
+2025-05,11,134263,,Thornapple Point Golf Course,05/21/2025,280.0,False,False
+2025-05,11,134264,,BSB Communications,05/29/2025,5684.94,False,False
+2025-05,11,134265,,Cedar Crest Dairy Inc.,05/29/2025,3972.56,False,False
+2025-05,11,134266,,Central Michigan Paper Co.,05/29/2025,3213.5,False,False
+2025-05,11,134267,,City of East Grand Rapids.,05/29/2025,2154.6,False,False
+2025-05,11,134268,,Consumers Energy,05/29/2025,28515.57,False,False
+2025-05,11,134269,,Creative Ice Rental,05/29/2025,195.0,False,False
+2025-05,11,134270,,[individual],05/29/2025,55.98,False,False
+2025-05,11,134271,,Forest Hills Eastern High School,05/29/2025,310.0,False,False
+2025-05,11,134272,,"Gallagher Student Health & Special Risk-GAIS, Inc",05/29/2025,22644.2,False,False
+2025-05,11,134273,,Graybar,05/29/2025,372.4,False,False
+2025-05,11,134274,,Hat Creek Outfitters,05/29/2025,2049.53,False,False
+2025-05,11,134275,,Hire Quest,05/29/2025,10165.99,False,False
+2025-05,11,134276,,Kent Intermediate School District,05/29/2025,23780.43,False,False
+2025-05,11,134277,,Michigan Office Solutions,05/29/2025,2140.0,False,False
+2025-05,11,134278,,MLive Media Group,05/29/2025,353.18,False,False
+2025-05,11,134279,,Photo Warehouse,05/29/2025,1044.8,False,False
+2025-05,11,134280,,Skyward Inc.,05/29/2025,149.0,False,False
+2025-05,11,134281,,[individual],05/29/2025,375.0,False,False
+2025-05,11,134282,,[individual],05/29/2025,2778.0,False,False
+2025-05,11,134283,,"Universal Sign, Inc",05/29/2025,2085.0,False,False
+2025-06,47,56,,Pure Architects,06/05/2025,4218.34,False,False
+2025-06,47,57,,Owen-Ames-Kimball Co.,06/19/2025,493267.09,False,False
+2025-06,47,58,,Pure Architects,06/19/2025,251852.82,False,False
+2025-06,29,29087,,[individual],06/05/2025,135.08,False,False
+2025-06,29,29088,,College Board,06/05/2025,67455.0,False,False
+2025-06,29,29089,,[individual],06/05/2025,462.0,False,False
+2025-06,29,29090,,Image Quest,06/05/2025,128.15,False,False
+2025-06,29,29091,,[individual],06/05/2025,100.0,False,False
+2025-06,29,29092,,[individual],06/05/2025,1781.78,False,False
+2025-06,29,29093,,MACAC,06/05/2025,60.0,False,False
+2025-06,29,29094,,[individual],06/05/2025,872.3,False,False
+2025-06,29,29095,,Dean Transportation,06/19/2025,1015.98,False,False
+2025-06,29,29096,,Gone Boarding LLC,06/19/2025,12499.0,False,False
+2025-06,29,29097,,Image Quest,06/19/2025,50.0,False,False
+2025-06,29,29098,,[individual],06/19/2025,135.0,False,False
+2025-06,29,29099,,NACAC,06/19/2025,330.0,False,False
+2025-06,29,29100,,ODP Business Solutions LLC,06/19/2025,59.07,False,False
+2025-06,29,29101,,[individual],06/19/2025,1500.0,False,False
+2025-06,29,29102,,Redwater,06/19/2025,3765.46,False,False
+2025-06,29,29103,,Sno Sites,06/19/2025,500.0,False,False
+2025-06,29,29104,,Dean Transportation,06/26/2025,2352.06,False,False
+2025-06,29,29105,,[individual],06/26/2025,783.0,False,False
+2025-06,29,29106,,[individual],06/26/2025,241.3,False,False
+2025-06,29,29107,,Holwerda-Snoap Sporting Goods,06/26/2025,390.0,False,False
+2025-06,29,29108,,Image Quest,06/26/2025,710.0,False,False
+2025-06,29,29109,,"The Screen Print Dept, Inc",06/26/2025,60.0,False,False
+2025-06,11,134284,,"123.NET, Inc",06/05/2025,561.82,False,False
+2025-06,11,134285,,Cedar Crest Dairy Inc.,06/05/2025,314.55,False,False
+2025-06,11,134286,,Central Michigan Paper Co.,06/05/2025,1360.0,False,False
+2025-06,11,134287,,City of East Grand Rapids.,06/05/2025,1723.29,False,False
+2025-06,11,134288,,[individual],06/05/2025,946.87,False,False
+2025-06,11,134289,,[individual],06/05/2025,713.16,False,False
+2025-06,11,134290,,DTE Energy,06/05/2025,2529.61,False,False
+2025-06,11,134291,,Energy Tax Savers,06/05/2025,1800.0,False,False
+2025-06,11,134292,,"Excel Glass & Door, Inc.",06/05/2025,1184.0,False,False
+2025-06,11,134293,,Floor Care Concepts,06/05/2025,560.0,False,False
+2025-06,11,134294,,Foremost Graphics Group,06/05/2025,3985.0,False,False
+2025-06,11,134295,,Gordon Food Service,06/05/2025,689.47,False,False
+2025-06,11,134296,,Hire Quest,06/05/2025,4153.33,False,False
+2025-06,11,134297,,Holwerda-Snoap Sporting Goods,06/05/2025,880.0,False,False
+2025-06,11,134298,,Instrumentalist Awards LLC,06/05/2025,319.0,False,False
+2025-06,11,134299,,International Baccalaureate Organizatio,06/05/2025,155.0,False,False
+2025-06,11,134300,,Kent Communications Inc.,06/05/2025,211.51,False,False
+2025-06,11,134301,,Kent Intermediate School District,06/05/2025,118944.58,False,False
+2025-06,11,134302,,Meyer Music,06/05/2025,69.3,False,False
+2025-06,11,134303,,Plummer's Environmental Svcs,06/05/2025,2174.55,False,False
+2025-06,11,134304,,Purity Cylinder Gases Inc.,06/05/2025,870.52,False,False
+2025-06,11,134305,,[individual],06/05/2025,211.96,False,False
+2025-06,11,134306,,[individual],06/05/2025,1402.0,False,False
+2025-06,11,134307,,Standard Electric Company,06/05/2025,118.55,False,False
+2025-06,11,134308,,Gateway Financial Solutions,06/13/2025,249.96,False,False
+2025-06,11,134309,,Michigan State Disbursement Unit,06/13/2025,168.0,False,False
+2025-06,11,134310,,AJZ Concrete LLC,06/19/2025,5600.0,False,False
+2025-06,11,134311,,BP Energy Retail Company LLC,06/19/2025,5471.02,False,False
+2025-06,11,134312,,Bricks 4 Kids,06/19/2025,320.0,False,False
+2025-06,11,134313,,[individual],06/19/2025,65.0,False,False
+2025-06,11,134314,,Chemsearchfe,06/19/2025,1394.95,False,False
+2025-06,11,134315,,City of East Grand Rapids.,06/19/2025,9261.34,False,False
+2025-06,11,134316,,Consumers Energy,06/19/2025,34782.48,False,False
+2025-06,11,134317,,Dean Transportation,06/19/2025,10217.34,False,False
+2025-06,11,134318,,[individual],06/19/2025,240.0,False,False
+2025-06,11,134319,,ESS Midwest Inc.,06/19/2025,43622.53,False,False
+2025-06,11,134320,,[individual],06/19/2025,300.0,False,False
+2025-06,11,134321,,Floor Care Concepts,06/19/2025,17957.53,False,False
+2025-06,11,134322,,[individual],06/19/2025,200.0,False,False
+2025-06,11,134323,,Foundation Building Materials,06/19/2025,406.0,False,False
+2025-06,11,134324,,[individual],06/19/2025,300.0,False,False
+2025-06,11,134325,,Gordon Food Service,06/19/2025,53.99,False,False
+2025-06,11,134326,,"Grand Rapids Building Services, Inc.",06/19/2025,3363.0,False,False
+2025-06,11,134327,,Halverson Engineering LLC,06/19/2025,1207.5,False,False
+2025-06,11,134328,,Hedrick Associates,06/19/2025,116.0,False,False
+2025-06,11,134329,,Hire Quest,06/19/2025,9061.67,False,False
+2025-06,11,134330,,[individual],06/19/2025,300.0,False,False
+2025-06,11,134331,,[individual],06/19/2025,67.0,False,False
+2025-06,11,134332,,Kent County Treasurer,06/19/2025,3972.6,False,False
+2025-06,11,134333,,Kent Intermediate School District,06/19/2025,22323.61,False,False
+2025-06,11,134334,,MASB,06/19/2025,6499.97,False,False
+2025-06,11,134335,,MC Hoops LLC,06/19/2025,225.0,False,False
+2025-06,11,134336,,Mercedes-Benz Van Center-Grand Rapids,06/19/2025,58215.0,False,False
+2025-06,11,134337,,Mercedes-Benz Van Center-Grand Rapids,06/19/2025,58263.0,False,False
+2025-06,11,134338,,Mercedes-Benz Van Center-Grand Rapids,06/19/2025,58263.0,False,False
+2025-06,11,134339,,MHSAA,06/19/2025,50.0,False,False
+2025-06,11,134340,,Michigan Department of State,06/19/2025,39.0,False,False
+2025-06,11,134341,,Michigan Office Solutions,06/19/2025,3508.55,False,False
+2025-06,11,134342,,Mighty Kicks West Michigan,06/19/2025,516.0,False,False
+2025-06,11,134343,,[individual],06/19/2025,30.0,False,False
+2025-06,11,134344,,MLive Media Group,06/19/2025,353.18,False,False
+2025-06,11,134345,,National Insurance Services,06/19/2025,5640.77,False,False
+2025-06,11,134346,,ODP Business Solutions LLC,06/19/2025,212.74,False,False
+2025-06,11,134347,,[individual],06/19/2025,300.0,False,False
+2025-06,11,134348,,[individual],06/19/2025,300.0,False,False
+2025-06,11,134349,,Sehi Computer Products,06/19/2025,2530.36,False,False
+2025-06,11,134350,,Sport Court Construction,06/19/2025,14280.0,False,False
+2025-06,11,134351,,Standard Electric Company,06/19/2025,97.86,False,False
+2025-06,11,134352,,[individual],06/19/2025,65.0,False,False
+2025-06,11,134353,,[individual],06/19/2025,642.0,False,False
+2025-06,11,134354,,"Thrun Law Firm, P.C.",06/19/2025,435.5,False,False
+2025-06,11,134355,,"Universal Sign, Inc",06/19/2025,4400.0,False,False
+2025-06,11,134356,,[individual],06/19/2025,300.0,False,False
+2025-06,11,134357,,[individual],06/19/2025,300.0,False,False
+2025-06,11,134358,,Grand Rapids City Treasurer,06/27/2025,8135.62,False,False
+2025-06,11,134359,,Mea Financial Services,06/27/2025,316.16,False,False
+2025-06,11,134360,,Michigan State Disbursement Unit,06/27/2025,168.0,False,False
+2025-06,11,134361,,United Way of Kent County,06/27/2025,83.1,False,False
+2025-06,11,134362,,[individual],06/26/2025,67.0,False,False
+2025-06,11,134363,,Consumers Energy,06/26/2025,25405.4,False,False
+2025-06,11,134364,,Copperline Plumbing,06/26/2025,2471.3,False,False
+2025-06,11,134365,,Dean Transportation,06/26/2025,250.52,False,False
+2025-06,11,134366,,Decker and Sons,06/26/2025,959.0,False,False
+2025-06,11,134367,,DTE Energy,06/26/2025,4656.57,False,False
+2025-06,11,134368,,EGR Hockey Boosters,06/26/2025,350.0,False,False
+2025-06,11,134369,,"Elevator Service, LLC",06/26/2025,980.0,False,False
+2025-06,11,134370,,Fire Pros Inc.,06/26/2025,3194.95,False,False
+2025-06,11,134371,,Flying Dutchman Flags,06/26/2025,384.42,False,False
+2025-06,11,134372,,Forest Hills Central High School,06/26/2025,525.0,False,False
+2025-06,11,134373,,Forest Hills Eastern High School,06/26/2025,110.0,False,False
+2025-06,11,134374,,[individual],06/26/2025,200.77,False,False
+2025-06,11,134375,,Holwerda-Snoap Sporting Goods,06/26/2025,390.0,False,False
+2025-06,11,134376,,Hudsonville High School,06/26/2025,200.0,False,False
+2025-06,11,134377,,Mattawan High School,06/26/2025,300.0,False,False
+2025-06,11,134378,,TK Elevator Corporation,06/26/2025,540.92,False,False
+2025-06,11,134379,,Viscomm Products,06/26/2025,396.9,False,False

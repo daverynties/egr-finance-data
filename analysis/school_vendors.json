@@ -1,0 +1,1188 @@
+{
+  "period": "FY2025 (July 1, 2024 \u2013 June 30, 2025)",
+  "total_checks": 17825511.4,
+  "total_payments": 1214,
+  "source": "EGRPS monthly Accounts Payable reports, EGRPS transparency page",
+  "method": "All payments transcribed. Jul-Nov 2024: payments >=$1,000 transcribed individually, smaller payments aggregated per fund. Dec 2024-Jun 2025: every row transcribed. Check numbers verified continuous. Private individuals anonymized as [individual].",
+  "caveat": "Payroll and most benefits are paid outside the check register. Checks are not total spending (General Fund spending was $40.0M).",
+  "top_10": [
+    {
+      "rank": 1,
+      "vendor": "Owen-Ames-Kimball",
+      "category": "Bond construction",
+      "fy2025_total": 5537389.68,
+      "pct_of_checks": 31.06,
+      "payments": 18,
+      "funds": "47"
+    },
+    {
+      "rank": 2,
+      "vendor": "MESSA",
+      "category": "Employee benefits",
+      "fy2025_total": 3186534.86,
+      "pct_of_checks": 17.88,
+      "payments": 12,
+      "funds": "11"
+    },
+    {
+      "rank": 3,
+      "vendor": "Pure Architects",
+      "category": "Bond construction",
+      "fy2025_total": 2612737.93,
+      "pct_of_checks": 14.66,
+      "payments": 21,
+      "funds": "11 41 47"
+    },
+    {
+      "rank": 4,
+      "vendor": "ESS Midwest",
+      "category": "Substitute / temp staffing",
+      "fy2025_total": 1099767.63,
+      "pct_of_checks": 6.17,
+      "payments": 31,
+      "funds": "11 29"
+    },
+    {
+      "rank": 5,
+      "vendor": "Consumers Energy",
+      "category": "Utilities",
+      "fy2025_total": 755941.46,
+      "pct_of_checks": 4.24,
+      "payments": 28,
+      "funds": "11"
+    },
+    {
+      "rank": 6,
+      "vendor": "Kent Intermediate School District",
+      "category": "Other school districts / ISDs",
+      "fy2025_total": 388208.32,
+      "pct_of_checks": 2.18,
+      "payments": 20,
+      "funds": "11 29"
+    },
+    {
+      "rank": 7,
+      "vendor": "Hire Quest",
+      "category": "Substitute / temp staffing",
+      "fy2025_total": 273984.38,
+      "pct_of_checks": 1.54,
+      "payments": 31,
+      "funds": "11"
+    },
+    {
+      "rank": 8,
+      "vendor": "Dean Transportation",
+      "category": "Transportation",
+      "fy2025_total": 229204.45,
+      "pct_of_checks": 1.29,
+      "payments": 43,
+      "funds": "11 29"
+    },
+    {
+      "rank": 9,
+      "vendor": "West Michigan Risk Mgmt Trust",
+      "category": "Insurance",
+      "fy2025_total": 227933.51,
+      "pct_of_checks": 1.28,
+      "payments": 6,
+      "funds": "11"
+    },
+    {
+      "rank": 10,
+      "vendor": "Mercedes-Benz Van Center-Grand Rapids",
+      "category": "Vehicles",
+      "fy2025_total": 174741.0,
+      "pct_of_checks": 0.98,
+      "payments": 3,
+      "funds": "11"
+    }
+  ],
+  "categories": [
+    {
+      "category": "Bond construction",
+      "total": 8188927.61,
+      "pct": 45.9
+    },
+    {
+      "category": "Employee benefits",
+      "total": 3274485.1,
+      "pct": 18.4
+    },
+    {
+      "category": "Substitute / temp staffing",
+      "total": 1373752.01,
+      "pct": 7.7
+    },
+    {
+      "category": "Individuals (anonymized)",
+      "total": 1358410.33,
+      "pct": 7.6
+    },
+    {
+      "category": "Utilities",
+      "total": 995597.72,
+      "pct": 5.6
+    },
+    {
+      "category": "Other school districts / ISDs",
+      "total": 511891.48,
+      "pct": 2.9
+    },
+    {
+      "category": "Technology",
+      "total": 455872.83,
+      "pct": 2.6
+    },
+    {
+      "category": "Vehicles",
+      "total": 235110.0,
+      "pct": 1.3
+    },
+    {
+      "category": "Transportation",
+      "total": 229204.45,
+      "pct": 1.3
+    },
+    {
+      "category": "Insurance",
+      "total": 227933.51,
+      "pct": 1.3
+    },
+    {
+      "category": "Food service",
+      "total": 177407.63,
+      "pct": 1.0
+    },
+    {
+      "category": "Student activity pass-through",
+      "total": 150447.08,
+      "pct": 0.8
+    },
+    {
+      "category": "City of EGR (services, joint facilities)",
+      "total": 128373.15,
+      "pct": 0.7
+    },
+    {
+      "category": "Payroll pass-through",
+      "total": 94208.29,
+      "pct": 0.5
+    },
+    {
+      "category": "Athletics officials",
+      "total": 71155.0,
+      "pct": 0.4
+    },
+    {
+      "category": "Equipment leases",
+      "total": 56303.06,
+      "pct": 0.3
+    }
+  ],
+  "bond_construction_monthly": [
+    {
+      "month": "2024-07",
+      "amount": 781773.66
+    },
+    {
+      "month": "2024-08",
+      "amount": 613009.21
+    },
+    {
+      "month": "2024-09",
+      "amount": 794416.32
+    },
+    {
+      "month": "2024-10",
+      "amount": 1053328.32
+    },
+    {
+      "month": "2024-11",
+      "amount": 176021.78
+    },
+    {
+      "month": "2024-12",
+      "amount": 475419.79
+    },
+    {
+      "month": "2025-01",
+      "amount": 843333.77
+    },
+    {
+      "month": "2025-02",
+      "amount": 929742.04
+    },
+    {
+      "month": "2025-03",
+      "amount": 627224.05
+    },
+    {
+      "month": "2025-04",
+      "amount": 580723.19
+    },
+    {
+      "month": "2025-05",
+      "amount": 558861.67
+    },
+    {
+      "month": "2025-06",
+      "amount": 749338.25
+    }
+  ],
+  "all_vendors": [
+    {
+      "rank": 1,
+      "vendor": "Owen-Ames-Kimball",
+      "category": "Bond construction",
+      "fy2025_total": 5537389.68,
+      "pct_of_checks": 31.06,
+      "payments": 18,
+      "funds": "47"
+    },
+    {
+      "rank": 2,
+      "vendor": "MESSA",
+      "category": "Employee benefits",
+      "fy2025_total": 3186534.86,
+      "pct_of_checks": 17.88,
+      "payments": 12,
+      "funds": "11"
+    },
+    {
+      "rank": 3,
+      "vendor": "Pure Architects",
+      "category": "Bond construction",
+      "fy2025_total": 2612737.93,
+      "pct_of_checks": 14.66,
+      "payments": 21,
+      "funds": "11 41 47"
+    },
+    {
+      "rank": 4,
+      "vendor": "ESS Midwest",
+      "category": "Substitute / temp staffing",
+      "fy2025_total": 1099767.63,
+      "pct_of_checks": 6.17,
+      "payments": 31,
+      "funds": "11 29"
+    },
+    {
+      "rank": 5,
+      "vendor": "Consumers Energy",
+      "category": "Utilities",
+      "fy2025_total": 755941.46,
+      "pct_of_checks": 4.24,
+      "payments": 28,
+      "funds": "11"
+    },
+    {
+      "rank": 6,
+      "vendor": "Kent Intermediate School District",
+      "category": "Other school districts / ISDs",
+      "fy2025_total": 388208.32,
+      "pct_of_checks": 2.18,
+      "payments": 20,
+      "funds": "11 29"
+    },
+    {
+      "rank": 7,
+      "vendor": "Hire Quest",
+      "category": "Substitute / temp staffing",
+      "fy2025_total": 273984.38,
+      "pct_of_checks": 1.54,
+      "payments": 31,
+      "funds": "11"
+    },
+    {
+      "rank": 8,
+      "vendor": "Dean Transportation",
+      "category": "Transportation",
+      "fy2025_total": 229204.45,
+      "pct_of_checks": 1.29,
+      "payments": 43,
+      "funds": "11 29"
+    },
+    {
+      "rank": 9,
+      "vendor": "West Michigan Risk Mgmt Trust",
+      "category": "Insurance",
+      "fy2025_total": 227933.51,
+      "pct_of_checks": 1.28,
+      "payments": 6,
+      "funds": "11"
+    },
+    {
+      "rank": 10,
+      "vendor": "Mercedes-Benz Van Center-Grand Rapids",
+      "category": "Vehicles",
+      "fy2025_total": 174741.0,
+      "pct_of_checks": 0.98,
+      "payments": 3,
+      "funds": "11"
+    },
+    {
+      "rank": 11,
+      "vendor": "Gordon Food Service",
+      "category": "Food service",
+      "fy2025_total": 144974.24,
+      "pct_of_checks": 0.81,
+      "payments": 30,
+      "funds": "11 29"
+    },
+    {
+      "rank": 12,
+      "vendor": "[individuals \u2014 refunds, reimbursements, officials]",
+      "category": "",
+      "fy2025_total": 138786.7,
+      "pct_of_checks": 0.78,
+      "payments": 220,
+      "funds": "11 29"
+    },
+    {
+      "rank": 13,
+      "vendor": "People Driven Technology",
+      "category": "Technology",
+      "fy2025_total": 128669.9,
+      "pct_of_checks": 0.72,
+      "payments": 7,
+      "funds": "11 46"
+    },
+    {
+      "rank": 14,
+      "vendor": "City of East Grand Rapids",
+      "category": "City of EGR (services, joint facilities)",
+      "fy2025_total": 128373.15,
+      "pct_of_checks": 0.72,
+      "payments": 21,
+      "funds": "11 29"
+    },
+    {
+      "rank": 15,
+      "vendor": "BP Energy Retail Company",
+      "category": "Utilities",
+      "fy2025_total": 122765.04,
+      "pct_of_checks": 0.69,
+      "payments": 11,
+      "funds": "11"
+    },
+    {
+      "rank": 16,
+      "vendor": "DTE Energy",
+      "category": "Utilities",
+      "fy2025_total": 116891.22,
+      "pct_of_checks": 0.66,
+      "payments": 21,
+      "funds": "11"
+    },
+    {
+      "rank": 17,
+      "vendor": "Sehi Computer Products",
+      "category": "Technology",
+      "fy2025_total": 111722.62,
+      "pct_of_checks": 0.63,
+      "payments": 4,
+      "funds": "11 46"
+    },
+    {
+      "rank": 18,
+      "vendor": "Payments under $1,000 (Jul\u2013Nov 2024, aggregated)",
+      "category": "",
+      "fy2025_total": 96804.64,
+      "pct_of_checks": 0.54,
+      "payments": 8,
+      "funds": "11 29"
+    },
+    {
+      "rank": 19,
+      "vendor": "Grand Rapids City Treasurer",
+      "category": "Payroll pass-through",
+      "fy2025_total": 88330.79,
+      "pct_of_checks": 0.5,
+      "payments": 14,
+      "funds": "11"
+    },
+    {
+      "rank": 20,
+      "vendor": "Skyward",
+      "category": "Technology",
+      "fy2025_total": 83102.0,
+      "pct_of_checks": 0.47,
+      "payments": 5,
+      "funds": "11"
+    },
+    {
+      "rank": 21,
+      "vendor": "Grand Rapids Public Schools",
+      "category": "Other school districts / ISDs",
+      "fy2025_total": 71803.16,
+      "pct_of_checks": 0.4,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 22,
+      "vendor": "ArbiterPay",
+      "category": "Athletics officials",
+      "fy2025_total": 71155.0,
+      "pct_of_checks": 0.4,
+      "payments": 5,
+      "funds": "11"
+    },
+    {
+      "rank": 23,
+      "vendor": "National Insurance Services",
+      "category": "Employee benefits",
+      "fy2025_total": 69125.39,
+      "pct_of_checks": 0.39,
+      "payments": 12,
+      "funds": "11"
+    },
+    {
+      "rank": 24,
+      "vendor": "College Board",
+      "category": "Student activity pass-through",
+      "fy2025_total": 67455.0,
+      "pct_of_checks": 0.38,
+      "payments": 1,
+      "funds": "29"
+    },
+    {
+      "rank": 25,
+      "vendor": "Grand Classroom",
+      "category": "Student activity pass-through",
+      "fy2025_total": 63676.0,
+      "pct_of_checks": 0.36,
+      "payments": 1,
+      "funds": "29"
+    },
+    {
+      "rank": 26,
+      "vendor": "Wells Fargo Financial Leasing",
+      "category": "Equipment leases",
+      "fy2025_total": 56303.06,
+      "pct_of_checks": 0.32,
+      "payments": 11,
+      "funds": "11"
+    },
+    {
+      "rank": 27,
+      "vendor": "Racquet Sports",
+      "category": "",
+      "fy2025_total": 53240.0,
+      "pct_of_checks": 0.3,
+      "payments": 2,
+      "funds": "11"
+    },
+    {
+      "rank": 28,
+      "vendor": "Ottawa Area ISD",
+      "category": "Other school districts / ISDs",
+      "fy2025_total": 51880.0,
+      "pct_of_checks": 0.29,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 29,
+      "vendor": "Calvin University",
+      "category": "",
+      "fy2025_total": 48008.01,
+      "pct_of_checks": 0.27,
+      "payments": 4,
+      "funds": "11"
+    },
+    {
+      "rank": 30,
+      "vendor": "Copperline Plumbing",
+      "category": "",
+      "fy2025_total": 47670.91,
+      "pct_of_checks": 0.27,
+      "payments": 13,
+      "funds": "11"
+    },
+    {
+      "rank": 31,
+      "vendor": "Todd Wenzel",
+      "category": "Vehicles",
+      "fy2025_total": 46969.0,
+      "pct_of_checks": 0.26,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 32,
+      "vendor": "AJZ Concrete",
+      "category": "",
+      "fy2025_total": 45738.5,
+      "pct_of_checks": 0.26,
+      "payments": 2,
+      "funds": "11"
+    },
+    {
+      "rank": 33,
+      "vendor": "Grand Rapids Building Services",
+      "category": "",
+      "fy2025_total": 42808.0,
+      "pct_of_checks": 0.24,
+      "payments": 13,
+      "funds": "11"
+    },
+    {
+      "rank": 34,
+      "vendor": "PowerStrength Training System",
+      "category": "",
+      "fy2025_total": 39490.0,
+      "pct_of_checks": 0.22,
+      "payments": 2,
+      "funds": "11"
+    },
+    {
+      "rank": 35,
+      "vendor": "Michigan Office Solutions",
+      "category": "",
+      "fy2025_total": 39325.28,
+      "pct_of_checks": 0.22,
+      "payments": 10,
+      "funds": "11"
+    },
+    {
+      "rank": 36,
+      "vendor": "Exponential Inclusion",
+      "category": "",
+      "fy2025_total": 39050.0,
+      "pct_of_checks": 0.22,
+      "payments": 6,
+      "funds": "11"
+    },
+    {
+      "rank": 37,
+      "vendor": "SME",
+      "category": "Bond construction",
+      "fy2025_total": 38800.0,
+      "pct_of_checks": 0.22,
+      "payments": 4,
+      "funds": "47"
+    },
+    {
+      "rank": 38,
+      "vendor": "International Baccalaureate Organizatio",
+      "category": "",
+      "fy2025_total": 36950.0,
+      "pct_of_checks": 0.21,
+      "payments": 4,
+      "funds": "11"
+    },
+    {
+      "rank": 39,
+      "vendor": "Central Michigan Paper",
+      "category": "",
+      "fy2025_total": 33298.85,
+      "pct_of_checks": 0.19,
+      "payments": 15,
+      "funds": "11 29"
+    },
+    {
+      "rank": 40,
+      "vendor": "Cedar Crest Dairy",
+      "category": "Food service",
+      "fy2025_total": 32433.39,
+      "pct_of_checks": 0.18,
+      "payments": 14,
+      "funds": "11"
+    },
+    {
+      "rank": 41,
+      "vendor": "Floor Care Concepts",
+      "category": "",
+      "fy2025_total": 30877.53,
+      "pct_of_checks": 0.17,
+      "payments": 3,
+      "funds": "11"
+    },
+    {
+      "rank": 42,
+      "vendor": "Instructure",
+      "category": "Technology",
+      "fy2025_total": 28700.0,
+      "pct_of_checks": 0.16,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 43,
+      "vendor": "Red Rover Technologies",
+      "category": "Technology",
+      "fy2025_total": 27116.72,
+      "pct_of_checks": 0.15,
+      "payments": 3,
+      "funds": "11"
+    },
+    {
+      "rank": 44,
+      "vendor": "Houghton Mifflin Harcourt",
+      "category": "",
+      "fy2025_total": 26000.0,
+      "pct_of_checks": 0.15,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 45,
+      "vendor": "Vector Tech Group",
+      "category": "Technology",
+      "fy2025_total": 25935.0,
+      "pct_of_checks": 0.15,
+      "payments": 1,
+      "funds": "46"
+    },
+    {
+      "rank": 46,
+      "vendor": "Maner Costerisan",
+      "category": "",
+      "fy2025_total": 24500.0,
+      "pct_of_checks": 0.14,
+      "payments": 2,
+      "funds": "11"
+    },
+    {
+      "rank": 47,
+      "vendor": "Elevator Service",
+      "category": "",
+      "fy2025_total": 23370.72,
+      "pct_of_checks": 0.13,
+      "payments": 7,
+      "funds": "11"
+    },
+    {
+      "rank": 48,
+      "vendor": "Gallagher Student Health & Special Risk-GAIS",
+      "category": "",
+      "fy2025_total": 22644.2,
+      "pct_of_checks": 0.13,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 49,
+      "vendor": "DeHamer Landscaping",
+      "category": "",
+      "fy2025_total": 21543.42,
+      "pct_of_checks": 0.12,
+      "payments": 2,
+      "funds": "11"
+    },
+    {
+      "rank": 50,
+      "vendor": "Savvas Learning Company",
+      "category": "",
+      "fy2025_total": 19806.54,
+      "pct_of_checks": 0.11,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 51,
+      "vendor": "Pylman Power",
+      "category": "",
+      "fy2025_total": 19735.0,
+      "pct_of_checks": 0.11,
+      "payments": 2,
+      "funds": "11"
+    },
+    {
+      "rank": 52,
+      "vendor": "Turnitin",
+      "category": "Technology",
+      "fy2025_total": 19400.31,
+      "pct_of_checks": 0.11,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 53,
+      "vendor": "Murray Hotel",
+      "category": "Student activity pass-through",
+      "fy2025_total": 19316.08,
+      "pct_of_checks": 0.11,
+      "payments": 1,
+      "funds": "29"
+    },
+    {
+      "rank": 54,
+      "vendor": "Inacomp TSG",
+      "category": "Technology",
+      "fy2025_total": 19219.28,
+      "pct_of_checks": 0.11,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 55,
+      "vendor": "ADN Administrators",
+      "category": "Employee benefits",
+      "fy2025_total": 18824.85,
+      "pct_of_checks": 0.11,
+      "payments": 9,
+      "funds": "11"
+    },
+    {
+      "rank": 56,
+      "vendor": "Baxters Mobile Storage",
+      "category": "",
+      "fy2025_total": 18450.0,
+      "pct_of_checks": 0.1,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 57,
+      "vendor": "Purity Cylinder Gases",
+      "category": "",
+      "fy2025_total": 18145.27,
+      "pct_of_checks": 0.1,
+      "payments": 11,
+      "funds": "11"
+    },
+    {
+      "rank": 58,
+      "vendor": "Christina Soontornvat",
+      "category": "",
+      "fy2025_total": 18000.0,
+      "pct_of_checks": 0.1,
+      "payments": 1,
+      "funds": "29"
+    },
+    {
+      "rank": 59,
+      "vendor": "HUDL",
+      "category": "",
+      "fy2025_total": 17700.0,
+      "pct_of_checks": 0.1,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 60,
+      "vendor": "Moss",
+      "category": "",
+      "fy2025_total": 17408.53,
+      "pct_of_checks": 0.1,
+      "payments": 1,
+      "funds": "46"
+    },
+    {
+      "rank": 61,
+      "vendor": "Scholastic",
+      "category": "",
+      "fy2025_total": 16690.14,
+      "pct_of_checks": 0.09,
+      "payments": 4,
+      "funds": "29"
+    },
+    {
+      "rank": 62,
+      "vendor": "Sport Court Construction",
+      "category": "",
+      "fy2025_total": 14280.0,
+      "pct_of_checks": 0.08,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 63,
+      "vendor": "Jan Miller Burkins Consulting",
+      "category": "",
+      "fy2025_total": 14078.0,
+      "pct_of_checks": 0.08,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 64,
+      "vendor": "AAA Lead Inspections",
+      "category": "",
+      "fy2025_total": 14035.0,
+      "pct_of_checks": 0.08,
+      "payments": 4,
+      "funds": "11 47"
+    },
+    {
+      "rank": 65,
+      "vendor": "Active Internet Technologies",
+      "category": "",
+      "fy2025_total": 13950.0,
+      "pct_of_checks": 0.08,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 66,
+      "vendor": "Fire Pros",
+      "category": "",
+      "fy2025_total": 13856.9,
+      "pct_of_checks": 0.08,
+      "payments": 6,
+      "funds": "11"
+    },
+    {
+      "rank": 67,
+      "vendor": "Turfix",
+      "category": "",
+      "fy2025_total": 13800.0,
+      "pct_of_checks": 0.08,
+      "payments": 4,
+      "funds": "11"
+    },
+    {
+      "rank": 68,
+      "vendor": "EGR Team Boosters",
+      "category": "",
+      "fy2025_total": 13650.0,
+      "pct_of_checks": 0.08,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 69,
+      "vendor": "Cereal City Science",
+      "category": "",
+      "fy2025_total": 13616.04,
+      "pct_of_checks": 0.08,
+      "payments": 5,
+      "funds": "11"
+    },
+    {
+      "rank": 70,
+      "vendor": "Meyer Music",
+      "category": "",
+      "fy2025_total": 13471.32,
+      "pct_of_checks": 0.08,
+      "payments": 20,
+      "funds": "11 29"
+    },
+    {
+      "rank": 71,
+      "vendor": "Royal Truck & Trailer",
+      "category": "Vehicles",
+      "fy2025_total": 13400.0,
+      "pct_of_checks": 0.08,
+      "payments": 2,
+      "funds": "11"
+    },
+    {
+      "rank": 72,
+      "vendor": "Gone Boarding",
+      "category": "",
+      "fy2025_total": 12499.0,
+      "pct_of_checks": 0.07,
+      "payments": 1,
+      "funds": "29"
+    },
+    {
+      "rank": 73,
+      "vendor": "BSB Communications",
+      "category": "",
+      "fy2025_total": 12212.39,
+      "pct_of_checks": 0.07,
+      "payments": 5,
+      "funds": "11"
+    },
+    {
+      "rank": 74,
+      "vendor": "Timber Wolf Young Life",
+      "category": "",
+      "fy2025_total": 12160.0,
+      "pct_of_checks": 0.07,
+      "payments": 1,
+      "funds": "29"
+    },
+    {
+      "rank": 75,
+      "vendor": "Aventric Technologies",
+      "category": "Technology",
+      "fy2025_total": 12007.0,
+      "pct_of_checks": 0.07,
+      "payments": 3,
+      "funds": "11"
+    },
+    {
+      "rank": 76,
+      "vendor": "FMX",
+      "category": "",
+      "fy2025_total": 11599.41,
+      "pct_of_checks": 0.07,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 77,
+      "vendor": "Scholastic Book Fairs",
+      "category": "",
+      "fy2025_total": 11570.34,
+      "pct_of_checks": 0.06,
+      "payments": 3,
+      "funds": "29"
+    },
+    {
+      "rank": 78,
+      "vendor": "Holiday Coach",
+      "category": "",
+      "fy2025_total": 11329.35,
+      "pct_of_checks": 0.06,
+      "payments": 3,
+      "funds": "29"
+    },
+    {
+      "rank": 79,
+      "vendor": "Corewell Health",
+      "category": "",
+      "fy2025_total": 10981.69,
+      "pct_of_checks": 0.06,
+      "payments": 5,
+      "funds": "11"
+    },
+    {
+      "rank": 80,
+      "vendor": "American Youth Foundation",
+      "category": "",
+      "fy2025_total": 10933.0,
+      "pct_of_checks": 0.06,
+      "payments": 2,
+      "funds": "29"
+    },
+    {
+      "rank": 81,
+      "vendor": "Grant Newton Media",
+      "category": "",
+      "fy2025_total": 10595.0,
+      "pct_of_checks": 0.06,
+      "payments": 4,
+      "funds": "11 29"
+    },
+    {
+      "rank": 82,
+      "vendor": "Critical Response Group",
+      "category": "",
+      "fy2025_total": 10317.0,
+      "pct_of_checks": 0.06,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 83,
+      "vendor": "Universal Sign",
+      "category": "",
+      "fy2025_total": 10005.0,
+      "pct_of_checks": 0.06,
+      "payments": 3,
+      "funds": "11"
+    },
+    {
+      "rank": 84,
+      "vendor": "East Grand Rapids Friends Of The Library",
+      "category": "",
+      "fy2025_total": 10000.0,
+      "pct_of_checks": 0.06,
+      "payments": 1,
+      "funds": "29"
+    },
+    {
+      "rank": 85,
+      "vendor": "Outside Pin Consulting Ltd",
+      "category": "",
+      "fy2025_total": 10000.0,
+      "pct_of_checks": 0.06,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 86,
+      "vendor": "Kent County Treasurer",
+      "category": "",
+      "fy2025_total": 9682.84,
+      "pct_of_checks": 0.05,
+      "payments": 3,
+      "funds": "11"
+    },
+    {
+      "rank": 87,
+      "vendor": "SA Morman & CO",
+      "category": "",
+      "fy2025_total": 8565.36,
+      "pct_of_checks": 0.05,
+      "payments": 2,
+      "funds": "11"
+    },
+    {
+      "rank": 88,
+      "vendor": "Superior Groundcover",
+      "category": "",
+      "fy2025_total": 8537.4,
+      "pct_of_checks": 0.05,
+      "payments": 2,
+      "funds": "11"
+    },
+    {
+      "rank": 89,
+      "vendor": "X-treme Demolition",
+      "category": "",
+      "fy2025_total": 7850.0,
+      "pct_of_checks": 0.04,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 90,
+      "vendor": "Thrun Law Firm, P.C",
+      "category": "",
+      "fy2025_total": 7823.71,
+      "pct_of_checks": 0.04,
+      "payments": 5,
+      "funds": "11"
+    },
+    {
+      "rank": 91,
+      "vendor": "EGR Middle School PTO",
+      "category": "",
+      "fy2025_total": 6795.0,
+      "pct_of_checks": 0.04,
+      "payments": 2,
+      "funds": "29"
+    },
+    {
+      "rank": 92,
+      "vendor": "DIVE Cincinnati",
+      "category": "",
+      "fy2025_total": 6700.3,
+      "pct_of_checks": 0.04,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 93,
+      "vendor": "YMCA Camp Manitou-Lin",
+      "category": "",
+      "fy2025_total": 6650.0,
+      "pct_of_checks": 0.04,
+      "payments": 1,
+      "funds": "29"
+    },
+    {
+      "rank": 94,
+      "vendor": "MASB",
+      "category": "",
+      "fy2025_total": 6499.97,
+      "pct_of_checks": 0.04,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 95,
+      "vendor": "Vormittag Tree Farm",
+      "category": "",
+      "fy2025_total": 6287.0,
+      "pct_of_checks": 0.04,
+      "payments": 2,
+      "funds": "29"
+    },
+    {
+      "rank": 96,
+      "vendor": "Buist Electric",
+      "category": "",
+      "fy2025_total": 6202.48,
+      "pct_of_checks": 0.03,
+      "payments": 3,
+      "funds": "11"
+    },
+    {
+      "rank": 97,
+      "vendor": "State Alliance of Michigan YMCAs",
+      "category": "",
+      "fy2025_total": 6090.0,
+      "pct_of_checks": 0.03,
+      "payments": 1,
+      "funds": "29"
+    },
+    {
+      "rank": 98,
+      "vendor": "Elevate Technology Partners",
+      "category": "",
+      "fy2025_total": 6000.0,
+      "pct_of_checks": 0.03,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 99,
+      "vendor": "State Of Mi - Dept Of Treasury",
+      "category": "",
+      "fy2025_total": 6000.0,
+      "pct_of_checks": 0.03,
+      "payments": 1,
+      "funds": "47"
+    },
+    {
+      "rank": 100,
+      "vendor": "Chemsearchfe",
+      "category": "",
+      "fy2025_total": 5989.8,
+      "pct_of_checks": 0.03,
+      "payments": 5,
+      "funds": "11"
+    },
+    {
+      "rank": 101,
+      "vendor": "Michigan State Disbursement Unit",
+      "category": "Payroll pass-through",
+      "fy2025_total": 5877.5,
+      "pct_of_checks": 0.03,
+      "payments": 16,
+      "funds": "11"
+    },
+    {
+      "rank": 102,
+      "vendor": "EGR Field Hockey Association",
+      "category": "",
+      "fy2025_total": 5719.59,
+      "pct_of_checks": 0.03,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 103,
+      "vendor": "Sports Imports",
+      "category": "",
+      "fy2025_total": 5554.2,
+      "pct_of_checks": 0.03,
+      "payments": 1,
+      "funds": "11"
+    },
+    {
+      "rank": 104,
+      "vendor": "Standard Electric Company",
+      "category": "",
+      "fy2025_total": 5524.24,
+      "pct_of_checks": 0.03,
+      "payments": 8,
+      "funds": "11"
+    },
+    {
+      "rank": 105,
+      "vendor": "Fifth Third Bank - for Cash",
+      "category": "",
+      "fy2025_total": 5500.0,
+      "pct_of_checks": 0.03,
+      "payments": 2,
+      "funds": "11 29"
+    },
+    {
+      "rank": 106,
+      "vendor": "Grand Rapids Community College",
+      "category": "",
+      "fy2025_total": 5456.76,
+      "pct_of_checks": 0.03,
+      "payments": 2,
+      "funds": "11"
+    }
+  ]
+}
