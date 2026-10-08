@@ -180,6 +180,32 @@
     .health-stat { padding: 26px; background: var(--surface); }
     .health-stat strong { display: block; margin: 11px 0 7px; color: var(--navy); font-size: 2rem; line-height: 1; }
     .health-stat p { margin: 0; color: var(--muted); font-size: .9rem; }
+    .peer-summary { display: grid; grid-template-columns: .82fr 1.18fr; gap: 28px; align-items: start; }
+    .peer-callout { padding: 30px; background: var(--navy); color: #fff; }
+    .peer-callout strong { display: block; margin: 12px 0 9px; font-size: clamp(2.7rem, 7vw, 4.8rem); line-height: .9; letter-spacing: -.05em; }
+    .peer-callout p { margin: 0; color: #d8e8ef; }
+    .peer-chart { display: grid; gap: 13px; padding-top: 4px; }
+    .peer-bar-row { display: grid; grid-template-columns: 112px 1fr 72px; gap: 12px; align-items: center; }
+    .peer-bar-row span { font-weight: 600; }
+    .peer-bar-track { height: 12px; background: var(--surface-2); }
+    .peer-bar-track i { display: block; width: var(--w); height: 100%; background: var(--sky); }
+    .peer-bar-row:first-child .peer-bar-track i { background: var(--teal); }
+    .peer-bar-row b { color: var(--navy); font: 500 .82rem/1.2 "IBM Plex Mono", monospace; text-align: right; }
+    .peer-table-wrap { margin-top: 34px; }
+    .peer-table { width: 100%; border-collapse: collapse; font-size: .94rem; }
+    .peer-table th, .peer-table td { padding: 14px 12px; border-bottom: 1px solid var(--line); text-align: right; }
+    .peer-table th { color: var(--muted); font-size: .8rem; font-weight: 600; vertical-align: bottom; }
+    .peer-table th:first-child, .peer-table td:first-child { padding-left: 0; text-align: left; }
+    .peer-table td:first-child { font-weight: 650; }
+    .peer-table td:not(:first-child) { font: 500 .82rem/1.2 "IBM Plex Mono", monospace; }
+    .peer-table tbody tr:first-child { background: var(--soft-blue); }
+    .peer-table tbody tr:first-child td:first-child { padding-left: 12px; }
+    .peer-takeaways { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; margin-top: 28px; background: var(--line); border: 1px solid var(--line); }
+    .peer-takeaway { padding: 24px; background: var(--surface); }
+    .peer-takeaway strong { display: block; margin-bottom: 7px; color: var(--navy); }
+    .peer-takeaway p { margin: 0; color: var(--muted); font-size: .92rem; }
+    .peer-method { margin-top: 24px; padding: 20px 22px; background: var(--surface-2); color: var(--muted); font-size: .88rem; }
+    .peer-method strong { color: var(--ink); }
     .obligation-total { margin-top: 24px; padding: 26px; display: grid; grid-template-columns: .8fr 1.2fr; gap: 30px; align-items: end; background: var(--navy); color: #fff; }
     .obligation-total .eyebrow { color: #a9d6ea; }
     .obligation-total strong { display: block; margin-top: 10px; font-size: clamp(2.5rem,6vw,4rem); line-height: .95; letter-spacing: -.045em; }
@@ -297,6 +323,16 @@
     .method-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; }
     .method-card { padding: 24px; background: var(--surface); border: 1px solid var(--line); }
     .method-card p, .method-card li { color: var(--muted); font-size: .92rem; }
+    .about-lead { padding: clamp(24px,4vw,38px); background: var(--navy); color: #fff; }
+    .about-lead p { max-width: 82ch; margin: 12px 0 0; color: #d8e8ef; font-size: 1.04rem; }
+    .about-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; }
+    .about-card { padding: 24px; background: var(--surface); border: 1px solid var(--line); }
+    .about-card.wide { grid-column: 1 / -1; }
+    .about-card p, .about-card li { color: var(--muted); font-size: .92rem; }
+    .about-card ul { margin: 14px 0 0; padding-left: 20px; }
+    .about-card li + li { margin-top: 9px; }
+    .raw-data { margin-top: 14px; padding: 22px 24px; background: var(--soft-blue); }
+    .raw-data p { margin: 7px 0 14px; color: var(--muted); }
     .source-links { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; }
     footer { padding: 36px 0 70px; border-top: 1px solid var(--line); color: var(--muted); font-size: .82rem; }
     .modal { position: fixed; inset: 0; z-index: 50; display: none; place-items: center; padding: 18px; background: rgba(2,15,24,.72); }
@@ -313,8 +349,9 @@
     :focus-visible { outline: 3px solid color-mix(in srgb, var(--sky) 70%, transparent); outline-offset: 3px; }
     @media (max-width: 850px) {
       .freshness { width: 100%; margin-left: 0; }
-      .hero-grid, .section-head, .explorer, .tax-shell, .savings, .budget-intro, .payroll-shell, .utility-shell, .obligation-total { grid-template-columns: 1fr; }
+      .hero-grid, .section-head, .explorer, .tax-shell, .savings, .budget-intro, .payroll-shell, .utility-shell, .obligation-total, .peer-summary { grid-template-columns: 1fr; }
       .health-grid { grid-template-columns: 1fr 1fr; }
+      .peer-takeaways { grid-template-columns: 1fr; }
       .big-number { margin-top: 18px; }
       .insight-grid { grid-template-columns: repeat(2,1fr); }
       .projects { grid-template-columns: repeat(2,1fr); }
@@ -336,7 +373,17 @@
       h1 { font-size: clamp(2.6rem, 15vw, 4.2rem); }
       .big-number { font-size: 4.25rem; }
       .section { padding: 66px 0; }
-      .insight-grid, .flags-grid, .projects, .method-grid, .context-pair, .health-grid, .watch-grid { grid-template-columns: 1fr; }
+      .insight-grid, .flags-grid, .projects, .method-grid, .about-grid, .context-pair, .health-grid, .watch-grid { grid-template-columns: 1fr; }
+      .about-card.wide { grid-column: auto; }
+      .peer-bar-row { grid-template-columns: 88px 1fr 64px; gap: 8px; font-size: .88rem; }
+      .peer-table, .peer-table tbody, .peer-table tr, .peer-table td { display: block; width: 100%; }
+      .peer-table thead { display: none; }
+      .peer-table tr { padding: 15px 0; border-bottom: 1px solid var(--line); }
+      .peer-table tbody tr:first-child { padding: 15px 12px; }
+      .peer-table td, .peer-table td:first-child { display: grid; grid-template-columns: 1fr auto; gap: 12px; padding: 5px 0; border: 0; text-align: right; }
+      .peer-table td::before { content: attr(data-label); color: var(--muted); font: 600 .78rem/1.2 "Source Sans 3", sans-serif; text-align: left; }
+      .peer-table td:first-child { display: block; margin-bottom: 7px; text-align: left; }
+      .peer-table td:first-child::before { content: none; }
       .ledger-row, .budget-row { grid-template-columns: 1fr auto; gap: 10px 14px; }
       .ledger-track, .pace-track { grid-column: 1 / -1; grid-row: 2; }
       .ledger-value, .budget-rate { grid-column: 2; grid-row: 1; }
@@ -368,7 +415,7 @@
       <span>Sections</span><span class="nav-toggle-icon" aria-hidden="true"></span>
     </button>
     <div class="nav-links" id="navLinks">
-      <a href="#overview">Overview</a><a href="#taxes">Taxes</a><a href="#revenue">Revenue</a><a href="#spending">Spending</a><a href="#budget">Budget</a><a href="#changes">Changes</a><a href="#payroll">Payroll</a><a href="#flags">Context</a><a href="#vendors">Vendors</a><a href="#projects">Projects</a><a href="#health">Health</a><a href="#utility">Utility</a><a href="#savings">Savings</a><a href="#ask-data">Ask</a><a href="#method">Method</a>
+      <a href="#overview">Overview</a><a href="#taxes">Taxes</a><a href="#revenue">Revenue</a><a href="#spending">Spending</a><a href="#budget">Budget</a><a href="#changes">Changes</a><a href="#payroll">Payroll</a><a href="#flags">Context</a><a href="#vendors">Vendors</a><a href="#projects">Projects</a><a href="#health">Health</a><a href="#compare">Compare</a><a href="#utility">Utility</a><a href="#savings">Savings</a><a href="#ask-data">Ask</a><a href="#method">Method</a><a href="#about">About</a>
     </div>
     <span class="freshness">Analysis dated Oct. 7, 2026</span>
   </div>
@@ -605,6 +652,47 @@
     <p class="scope-note">Debt, pension and OPEB figures are from the city’s audited FY2024 Annual Comprehensive Financial Report for the year ended June 30, 2024. FY2025 city pension contributions later fell from $1.38M to $1.10M; the audited FY2025 funded status was not part of the supplied report.</p>
   </section>
 
+  <section class="section wrap" id="compare">
+    <div class="section-head">
+      <h2>How EGR compares.</h2>
+      <p class="lede">Six nearby cities, one audited year and the same definitions. Per-resident figures make differently sized communities easier to compare without mixing budgets and actual results.</p>
+    </div>
+    <div class="peer-summary">
+      <div class="peer-callout">
+        <span class="eyebrow" style="color:#a9d6ea">Higher taxes, lean-ish spending</span>
+        <strong>$2,151</strong>
+        <p>EGR’s FY2024 governmental spending per resident — the highest of the six. Its 14.21-mill city levy is also the group’s highest, while the services behind it are consistent with a small, fully built-out residential city running its own police, fire, water and parks without a commercial tax base to share the load.</p>
+      </div>
+      <div class="peer-chart" role="img" aria-label="FY2024 total governmental spending per resident: East Grand Rapids 2,151 dollars, Grand Rapids 1,676 dollars, Grandville 1,358 dollars, Walker 1,068 dollars, Kentwood 975 dollars, and Wyoming 783 dollars">
+        <div class="peer-bar-row"><span>East GR</span><div class="peer-bar-track"><i style="--w:100%"></i></div><b>$2,151</b></div>
+        <div class="peer-bar-row"><span>Grand Rapids</span><div class="peer-bar-track"><i style="--w:77.9%"></i></div><b>$1,676</b></div>
+        <div class="peer-bar-row"><span>Grandville</span><div class="peer-bar-track"><i style="--w:63.1%"></i></div><b>$1,358</b></div>
+        <div class="peer-bar-row"><span>Walker</span><div class="peer-bar-track"><i style="--w:49.7%"></i></div><b>$1,068</b></div>
+        <div class="peer-bar-row"><span>Kentwood</span><div class="peer-bar-track"><i style="--w:45.3%"></i></div><b>$975</b></div>
+        <div class="peer-bar-row"><span>Wyoming</span><div class="peer-bar-track"><i style="--w:36.4%"></i></div><b>$783</b></div>
+      </div>
+    </div>
+    <div class="peer-table-wrap">
+      <table class="peer-table">
+        <thead><tr><th>City</th><th>2020 population</th><th>Total spending<br>per resident</th><th>General Fund<br>per resident</th><th>Public safety<br>per resident</th><th>Debt<br>per resident</th></tr></thead>
+        <tbody>
+          <tr><td>East Grand Rapids</td><td data-label="2020 population">11,371</td><td data-label="Total spending">$2,151</td><td data-label="General Fund">$1,331</td><td data-label="Public safety">$435</td><td data-label="Debt">$857</td></tr>
+          <tr><td>Grand Rapids</td><td data-label="2020 population">198,910</td><td data-label="Total spending">$1,676</td><td data-label="General Fund">$827</td><td data-label="Public safety">$594</td><td data-label="Debt">$730</td></tr>
+          <tr><td>Grandville</td><td data-label="2020 population">16,082</td><td data-label="Total spending">$1,358</td><td data-label="General Fund">$1,033</td><td data-label="Public safety">$464</td><td data-label="Debt">$646</td></tr>
+          <tr><td>Walker</td><td data-label="2020 population">25,138</td><td data-label="Total spending">$1,068</td><td data-label="General Fund">$760</td><td data-label="Public safety">$392</td><td data-label="Debt">$4</td></tr>
+          <tr><td>Kentwood</td><td data-label="2020 population">54,295</td><td data-label="Total spending">$975</td><td data-label="General Fund">$671</td><td data-label="Public safety">$444</td><td data-label="Debt">$3</td></tr>
+          <tr><td>Wyoming</td><td data-label="2020 population">76,518</td><td data-label="Total spending">$783</td><td data-label="General Fund">$327</td><td data-label="Public safety">$370</td><td data-label="Debt">$48</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="peer-takeaways">
+      <div class="peer-takeaway"><strong>EGR leads overall and in the General Fund</strong><p>Its $1,331 in General Fund spending per resident is roughly double Kentwood’s $671.</p></div>
+      <div class="peer-takeaway"><strong>Public safety ranks fourth</strong><p>EGR spends $435 per resident, below Grand Rapids, Grandville and Kentwood.</p></div>
+      <div class="peer-takeaway"><strong>Debt reflects different capital strategies</strong><p>EGR carries the most at $857 per resident. Kentwood and Walker are essentially debt-free. Walker also levies a city income tax, so its property-tax footprint looks smaller while residents pay through a different channel.</p></div>
+    </div>
+    <div class="peer-method"><strong>Methodology.</strong> All figures are FY2024 audited actuals from each city’s published audit or ACFR for the fiscal year ended June 30, 2024. Governmental fund expenditures, the public-safety expenditure line and governmental bonded, loan and lease debt are defined consistently; pension and OPEB are excluded. Per-capita figures use 2020 Census populations. No budgets are mixed in. EGR’s ACFR governmental total of $24.46 million differs slightly from this site’s FOIA-derived operating figure because the scopes differ; the comparison uses ACFR figures for every city so it remains apples-to-apples.</div>
+  </section>
+
   <section class="section wrap" id="utility">
     <div class="section-head">
       <h2>Water &amp; sewer: does the utility pay for itself?</h2>
@@ -702,6 +790,57 @@
           <a class="button" href="https://www.eastgrmi.gov/DocumentCenter/View/37/millagerates?bidId=" target="_blank" rel="noopener">Official millage rates ↗</a>
           <a class="button" href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/953?html=true" target="_blank" rel="noopener">Parking bond minutes ↗</a>
           <a class="button" href="https://www.eastgrmi.gov/550/Tax-Bill-Estimator-Millage-Rates" target="_blank" rel="noopener">City tax estimator ↗</a>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <section class="section wrap" id="about">
+    <div class="section-head">
+      <h2>About this page.</h2>
+      <p class="lede">The full provenance: what this project is, where every number came from, how it was checked and what the available records cannot establish.</p>
+    </div>
+    <div class="about-lead">
+      <h3>Independent, plain-English financial reporting</h3>
+      <p>This page explains where City of East Grand Rapids money comes from, where it goes, what changed and what questions are worth asking. It is not affiliated with the city government, a campaign or an advocacy group. It starts without a predetermined conclusion; when the finances look well managed, it says so.</p>
+    </div>
+    <details class="disclosure disclosure-wide" style="margin-top:14px">
+      <summary><span>Read the full provenance and limitations</span><small>sources · checks · gaps</small></summary>
+      <div class="disclosure-body">
+        <div class="about-grid">
+          <article class="about-card wide">
+            <h3>Where the numbers come from</h3>
+            <ul>
+              <li><strong>Nine financial spreadsheets obtained by FOIA on June 15, 2026</strong> from City Clerk Lori Parmenter: the chart of accounts; three years of fund-transfer reports; two check registers; FY2024 and FY2025 general-ledger transaction extracts; and year-to-date budget detail through March 31, 2026. The city redacted check numbers before release.</li>
+              <li><strong>City of East Grand Rapids FY2024 Annual Comprehensive Financial Report</strong> for the year ended June 30, 2024, published at eastgrmi.gov and used for debt, pension and retiree-health figures.</li>
+              <li><strong>The adopted FY2025–26 city budget,</strong> published at eastgrmi.gov.</li>
+              <li><strong>Michigan Department of Treasury local-finance data and audited financial reports</strong> for East Grand Rapids, Grand Rapids, Kentwood, Wyoming, Walker and Grandville. The comparison uses FY2024 audited actuals for all six.</li>
+              <li><strong>Millage records:</strong> the city’s official June 2026 millage spreadsheet and Kent County records.</li>
+              <li><strong>Parking bond records:</strong> official city commission minutes and adopted ballot language. The proposal is on the November 3, 2026 ballot and is not approved.</li>
+            </ul>
+          </article>
+          <article class="about-card">
+            <h3>How the numbers were checked</h3>
+            <p>The headline FY2025 spending figure of <strong>$26,702,474</strong> was computed from the general ledger and cross-checked against the audited financial report’s governmental-funds total; they match within $6. Check-register totals were verified against report footers to the cent. Every figure on this page traces to a source listed above.</p>
+          </article>
+          <article class="about-card">
+            <h3>“Needs additional documentation”</h3>
+            <p>This label appears wherever the available records could not verify the reason behind a figure. It is not an accusation. It means the paperwork needed to confirm the explanation was not among the files obtained.</p>
+          </article>
+          <article class="about-card wide">
+            <h3>What this page cannot tell you</h3>
+            <ul>
+              <li>Individual employee pay; the files contain twice-monthly payroll summaries, not individual paychecks.</li>
+              <li>Vendor names for some capital projects.</li>
+              <li>FY2024-dated check activity; the check files received begin in July 2024.</li>
+              <li>The city’s internal reasons for budget variances; the records provide the numbers, not management explanations.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="raw-data">
+          <strong>Get the raw data</strong>
+          <p>All source spreadsheets converted to CSV, the analysis files and this page’s code are public. Anyone can download them and check the work.</p>
+          <a class="button primary" href="https://github.com/daverynties/egr-finance-data" target="_blank" rel="noopener">github.com/daverynties/egr-finance-data ↗</a>
         </div>
       </div>
     </details>
