@@ -428,6 +428,30 @@
     .school-row .school-source { grid-column: 1 / -1; margin-top: -8px; }
     .school-note { margin-top: 18px; padding: 20px 22px; background: var(--soft-blue); color: var(--muted); }
     .school-note strong { color: var(--ink); }
+    .school-outcome-list { border-top: 1px solid var(--line); }
+    .school-outcome-list ul { margin: 0; padding: 0; list-style: none; }
+    .school-outcome-list li { padding: 18px 0; border-bottom: 1px solid var(--line); color: var(--muted); }
+    .school-outcome-list li strong { color: var(--ink); }
+    .school-peer-line { margin: 22px 0 0; padding: 20px 22px; background: var(--soft-blue); color: var(--muted); }
+    .school-peer-line strong { color: var(--ink); }
+    .school-subsection { margin-top: 52px; padding-top: 46px; border-top: 1px solid var(--line); }
+    .school-subsection-head { display: grid; grid-template-columns: .8fr 1.2fr; gap: 34px; align-items: end; margin-bottom: 26px; }
+    .school-subsection-head h3 { font-size: clamp(1.8rem, 4vw, 2.7rem); letter-spacing: -.03em; }
+    .school-subsection-head p { margin: 0; color: var(--muted); }
+    .school-compare-summary { display: grid; grid-template-columns: .7fr 1.3fr; gap: 24px; align-items: start; }
+    .school-compare-callout { padding: 28px; background: var(--panel); color: #fff; }
+    .school-compare-callout strong { display: block; margin: 12px 0 8px; font-size: clamp(2.8rem, 7vw, 4.6rem); line-height: .9; letter-spacing: -.05em; }
+    .school-compare-callout p { margin: 0; color: #d8e8ef; }
+    .school-compare-callout .school-source { color: #b9dce9; }
+    .school-table { width: 100%; border-collapse: collapse; font-size: .93rem; }
+    .school-table th, .school-table td { padding: 14px 12px; border-bottom: 1px solid var(--line); text-align: right; vertical-align: top; }
+    .school-table th { color: var(--muted); font-size: .78rem; font-weight: 600; }
+    .school-table th:first-child, .school-table td:first-child { padding-left: 0; text-align: left; }
+    .school-table td:first-child { font-weight: 650; }
+    .school-table td:not(:first-child) { font: 500 .82rem/1.3 "IBM Plex Mono", monospace; }
+    .school-table tbody tr:first-child { background: var(--soft-blue); }
+    .school-table tbody tr:first-child td:first-child { padding-left: 12px; }
+    .school-table .negative { color: var(--amber); }
     .school-bond { display: grid; grid-template-columns: .72fr 1.28fr; gap: 1px; background: var(--line); border: 1px solid var(--line); }
     .school-bond-lead { padding: 30px; background: var(--panel); color: #fff; }
     .school-bond-lead strong { display: block; margin: 14px 0 9px; font-size: clamp(3rem, 7vw, 5rem); line-height: .88; letter-spacing: -.05em; }
@@ -459,7 +483,7 @@
     :focus-visible { outline: 3px solid color-mix(in srgb, var(--sky) 70%, transparent); outline-offset: 3px; }
     @media (max-width: 850px) {
       .freshness { display: none; }
-      .hero-grid, .section-head, .explorer, .tax-shell, .budget-intro, .payroll-shell, .utility-shell, .obligation-total, .peer-summary, .ballot-detail-grid, .school-data-layout, .school-bond { grid-template-columns: 1fr; }
+      .hero-grid, .section-head, .explorer, .tax-shell, .budget-intro, .payroll-shell, .utility-shell, .obligation-total, .peer-summary, .ballot-detail-grid, .school-data-layout, .school-bond, .school-subsection-head, .school-compare-summary { grid-template-columns: 1fr; }
       .health-grid { grid-template-columns: 1fr 1fr; }
       .peer-takeaways { grid-template-columns: 1fr; }
       .big-number { margin-top: 18px; }
@@ -507,6 +531,14 @@
       .peer-table td::before { content: attr(data-label); color: var(--muted); font: 600 .78rem/1.2 "Source Sans 3", sans-serif; text-align: left; }
       .peer-table td:first-child { display: block; margin-bottom: 7px; text-align: left; }
       .peer-table td:first-child::before { content: none; }
+      .school-table, .school-table tbody, .school-table tr, .school-table td { display: block; width: 100%; }
+      .school-table thead { display: none; }
+      .school-table tr { padding: 15px 0; border-bottom: 1px solid var(--line); }
+      .school-table tbody tr:first-child { padding: 15px 12px; }
+      .school-table td, .school-table td:first-child { display: grid; grid-template-columns: 1fr auto; gap: 12px; padding: 5px 0; border: 0; text-align: right; }
+      .school-table td::before { content: attr(data-label); color: var(--muted); font: 600 .78rem/1.2 "Source Sans 3", sans-serif; text-align: left; }
+      .school-table td:first-child { display: block; margin-bottom: 7px; text-align: left; }
+      .school-table td:first-child::before { content: none; }
       .payroll-total { grid-template-columns: 1fr; gap: 18px; padding: 24px; }
       .payroll-table, .payroll-table tbody, .payroll-table tbody tr, .payroll-table tbody td { display: block; width: 100%; }
       .payroll-table thead { display: block; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
@@ -557,7 +589,7 @@
     </button>
     <div class="nav-links" id="navLinks">
       <a href="#overview" data-tab="city">Overview</a><a href="#taxes" data-tab="city">Taxes</a><a href="#ballot" data-tab="city">Ballot</a><a href="#spending" data-tab="city">Spending</a><a href="#payroll" data-tab="city">Payroll</a><a href="#compare" data-tab="city">Compare</a><a href="#about" data-tab="city">About</a>
-      <a href="#school-overview" data-tab="schools" hidden>Overview</a><a href="#school-snapshot" data-tab="schools" hidden>Budget</a><a href="#school-spending" data-tab="schools" hidden>Spending</a><a href="#school-revenue" data-tab="schools" hidden>Revenue</a><a href="#school-bond" data-tab="schools" hidden>Bond</a><a href="#school-gaps" data-tab="schools" hidden>Gaps</a>
+      <a href="#school-overview" data-tab="schools" hidden>Overview</a><a href="#school-snapshot" data-tab="schools" hidden>Audit</a><a href="#school-spending" data-tab="schools" hidden>Spending</a><a href="#school-revenue" data-tab="schools" hidden>Revenue</a><a href="#school-bond" data-tab="schools" hidden>Bond</a><a href="#school-gaps" data-tab="schools" hidden>Gaps</a>
     </div>
     <span class="freshness">Analysis dated Oct. 8, 2026</span>
     <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
@@ -1175,7 +1207,7 @@
     <details open class="disclosure disclosure-wide" style="margin-top:14px">
       <summary><span>Read the full provenance and limitations</span><small>sources · checks · gaps</small></summary>
       <div class="disclosure-body">
-        <p class="scope-note"><strong>Changelog.</strong> Oct 8, 2026: removed savings-scenarios section until after the Nov 3 vote; corrected reserve benchmark to the GFOA guideline; added About attribution block.</p>
+        <p class="scope-note"><strong>Changelog.</strong> Oct 8, 2026: removed savings-scenarios section until after the Nov 3 vote; corrected reserve benchmark to the GFOA guideline; added About attribution block. Oct 8: added Schools tab with audited FY2025 district figures, peer comparisons, and bond update; fixed ballot-section neutrality.</p>
         <div class="about-grid">
           <article class="about-card wide">
             <h3>Where the numbers come from</h3>
@@ -1232,84 +1264,188 @@
 
     <section class="section wrap" id="school-snapshot">
       <div class="section-head">
-        <h2>The district budget.</h2>
-        <p class="lede">These are 2025–26 board-approved budget figures, not audited actuals. The completed-year actuals begin in the next section.</p>
+        <h2>The audited General Fund.</h2>
+        <p class="lede">Completed-year FY2024–25 actuals from the district's audited financial report. The independent auditors issued a clean, unmodified opinion.</p>
       </div>
       <div class="school-stat-grid">
         <article class="school-stat">
-          <span class="eyebrow">Budgeted expenses</span>
-          <strong>$42.4M</strong>
-          <p>About 1.6 times the city's $26.7M in FY2025 actual spending.</p>
-          <span class="school-source">Sources: <a href="https://www.egrps.org/district-information/departments/finance" target="_blank" rel="noopener">EGRPS Finance</a>, 2025–26 board-approved budget; city FY2025 audited financial report for the comparison.</span>
+          <span class="eyebrow">Audited revenues</span>
+          <strong>$43.67M</strong>
+          <p>$43,669,267 in General Fund revenue.</p>
+          <span class="school-source">Source: EGRPS Audited Financial Report, year ended June 30, 2025.</span>
         </article>
         <article class="school-stat">
-          <span class="eyebrow">Budgeted revenues</span>
-          <strong>$42.5M</strong>
-          <p>The district's board-approved general-fund revenue budget.</p>
-          <span class="school-source">Source: <a href="https://www.egrps.org/district-information/departments/finance" target="_blank" rel="noopener">EGRPS Finance</a>, 2025–26 board-approved budget.</span>
+          <span class="eyebrow">Audited expenditures</span>
+          <strong>$40.00M</strong>
+          <p>$39,996,676 — about 1.5 times the city's $26.7M in FY2025 actual spending.</p>
+          <span class="school-source">Sources: EGRPS FY2025 audited financial report; city FY2025 audited financial report.</span>
         </article>
         <article class="school-stat">
-          <span class="eyebrow">Unassigned fund balance</span>
-          <strong>$10.1M</strong>
-          <p>23.92% of budgeted expenses.</p>
-          <span class="school-source">Source: <a href="https://www.egrps.org/district-information/departments/finance" target="_blank" rel="noopener">EGRPS Finance</a>, 2025–26 board-approved budget.</span>
+          <span class="eyebrow">General Fund surplus</span>
+          <strong>$2.94M</strong>
+          <p>$2,936,907 added to fund balance. Spending came in $2.12M (5.0%) under budget; the final budget expected about break-even.</p>
+          <span class="school-source">Source: EGRPS Audited Financial Report, year ended June 30, 2025.</span>
         </article>
         <article class="school-stat">
-          <span class="eyebrow">District scale</span>
-          <strong>~2,990</strong>
-          <p>Students, supported by about 359 employees. Operating spending was $14,570 per pupil in 2024–25.</p>
-          <span class="school-source">Sources: <a href="https://www.egrps.org/district-information/departments/finance" target="_blank" rel="noopener">EGRPS Finance</a> for enrollment and staffing; Mackinac Center / Michigan state FID data for per-pupil actuals.</span>
+          <span class="eyebrow">Ending fund balance</span>
+          <strong>$13.24M</strong>
+          <p>$13,235,592, up from $10,298,685.</p>
+          <span class="school-source">Source: EGRPS Audited Financial Report, year ended June 30, 2025.</span>
         </article>
       </div>
-      <div class="school-note"><strong>Enrollment.</strong> About 2,990 students in 2024–25. Enrollment trend not yet pulled — this matters because state funding follows the student. <span class="school-source">Source: EGRPS Finance for 2024–25 enrollment; trend not yet available.</span></div>
+      <div class="school-note"><strong>Available cushion.</strong> Unassigned fund balance was $10,002,405 — about 25% of expenditures, versus the school board's 10% minimum policy. <span class="school-source">Source: EGRPS Audited Financial Report, year ended June 30, 2025.</span></div>
+      <div class="school-note"><strong>Enrollment.</strong> The blended funding count was 2,981 students in 2024–25. Enrollment trend not yet pulled — this matters because state funding follows the student. <span class="school-source">Source: EGRPS Audited Financial Report, year ended June 30, 2025.</span></div>
+
+      <div class="section-head" style="margin-top:52px">
+        <h3>Long-term obligations</h3>
+        <p class="lede">The audit separates district bonds from obligations tied to statewide retirement systems.</p>
+      </div>
+      <div class="school-bond">
+        <div class="school-bond-lead">
+          <span class="eyebrow" style="color:#a9d6ea">Total long-term obligations</span>
+          <strong>$67.2M</strong>
+          <p>General obligation bonds account for $64.0M: $60.8M of principal plus a $3.2M premium.</p>
+          <span class="school-source">Source: EGRPS Audited Financial Report, year ended June 30, 2025.</span>
+        </div>
+        <div class="school-bond-detail">
+          <div class="school-bond-list">
+            <div class="school-bond-item">
+              <strong>Series I · $10,515,000</strong>
+              <p>The first borrowing from the voter-approved $158.9M bond carries a 5.00% rate and matures through 2053.</p>
+            </div>
+            <div class="school-bond-item">
+              <strong>Net pension liability · $41.3M</strong>
+              <p>This is the district's accounting share of the statewide teachers' retirement system (MPSERS), which the state largely controls. It is not directly comparable to the city's own pension plan.</p>
+            </div>
+            <div class="school-bond-item">
+              <strong>Retiree health (OPEB) · $7.37M asset</strong>
+              <p>The statewide retiree-health plan is overfunded; the district shows an asset, not a liability.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="school-note"><strong>Debt after the audit.</strong> Series II: $48,575,000 issued in FY2026 (including refunding portion). Total bonded debt was $98.5M outstanding at June 30, 2026, excluding the two remaining series. Debt millage stays at 9.95 mills. District taxable value rose 6.5% to $1.167B in 2026. <span class="school-source">Source: EGRPS FY2026 debt schedule and 2026 taxable-value records.</span></div>
     </section>
 
     <section class="section wrap" id="school-spending">
       <div class="section-head">
         <h2>Where school operating money went.</h2>
-        <p class="lede">FY2024–25 actuals from Michigan's state financial reporting data. Operating costs and bond-funded construction are shown separately.</p>
+        <p class="lede">Audited FY2024–25 General Fund current operating expenditures. Bond-funded construction and other non-current costs are excluded from this breakdown.</p>
       </div>
       <div class="school-data-layout">
         <div class="school-total">
-          <span class="eyebrow" style="color:#a9d6ea">Current operating expenditures</span>
-          <strong>$40.0M</strong>
-          <p>$14,570 per pupil in FY2024–25 actual spending.</p>
-          <span class="school-source">Source: Mackinac Center using Michigan state FID data, FY2024–25 actuals.</span>
+          <span class="eyebrow" style="color:#a9d6ea">Audited current operating expenditures</span>
+          <strong>$38.05M</strong>
+          <p>About $12,764 in current operating spending per pupil — roughly 16% below the statewide average of $15,208.</p>
+          <span class="school-source">Source: EGRPS Audited Financial Report, year ended June 30, 2025.</span>
         </div>
         <div class="school-breakdown">
           <div class="school-row">
-            <div class="school-row-name"><strong>Instruction</strong><span>About 60 cents of every operating dollar.</span></div>
-            <div class="school-row-track"><i style="--w:60.2%"></i></div>
-            <div class="school-row-value">$24.1M · 60.2%</div>
-            <span class="school-source">Source: Mackinac Center / Michigan state FID data, FY2024–25 actuals.</span>
+            <div class="school-row-name"><strong>Instruction</strong><span>Classroom instruction and instructional programs.</span></div>
+            <div class="school-row-track"><i style="--w:63.9%"></i></div>
+            <div class="school-row-value">$24,302,377 · 63.9%</div>
           </div>
           <div class="school-row">
-            <div class="school-row-name"><strong>Support services</strong><span>Services that support instruction and district operations.</span></div>
-            <div class="school-row-track"><i style="--w:37.2%"></i></div>
-            <div class="school-row-value">$14.9M · 37.2%</div>
-            <span class="school-source">Source: Mackinac Center / Michigan state FID data, FY2024–25 actuals.</span>
+            <div class="school-row-name"><strong>Operations &amp; maintenance</strong><span>Buildings, grounds and facility operations.</span></div>
+            <div class="school-row-track"><i style="--w:11.8%"></i></div>
+            <div class="school-row-value">$4,501,096 · 11.8%</div>
           </div>
           <div class="school-row">
-            <div class="school-row-name"><strong>Food service</strong><span>Reported separately from the instruction and support shares above.</span></div>
-            <div class="school-row-track"><i style="--w:2.5%"></i></div>
-            <div class="school-row-value">$1.0M</div>
-            <span class="school-source">Source: Mackinac Center / Michigan state FID data, FY2024–25 actuals.</span>
+            <div class="school-row-name"><strong>Pupil support</strong><span>Services provided directly to students.</span></div>
+            <div class="school-row-track"><i style="--w:7.1%"></i></div>
+            <div class="school-row-value">$2,719,261 · 7.1%</div>
           </div>
           <div class="school-row">
-            <div class="school-row-name"><strong>Community services</strong><span>Reported separately from the instruction and support shares above.</span></div>
-            <div class="school-row-track"><i style="--w:2.5%"></i></div>
-            <div class="school-row-value">$1.0M</div>
-            <span class="school-source">Source: Mackinac Center / Michigan state FID data, FY2024–25 actuals.</span>
+            <div class="school-row-name"><strong>School administration</strong><span>Administration at the school-building level.</span></div>
+            <div class="school-row-track"><i style="--w:6.2%"></i></div>
+            <div class="school-row-value">$2,356,785 · 6.2%</div>
           </div>
           <div class="school-row">
-            <div class="school-row-name"><strong>Facilities and construction</strong><span>Bond-related capital, separate from operating expenditures.</span></div>
-            <div class="school-row-track"><i style="--w:19.3%"></i></div>
-            <div class="school-row-value">$7.7M</div>
-            <span class="school-source">Source: Mackinac Center / Michigan state FID data, FY2024–25 actuals.</span>
+            <div class="school-row-name"><strong>Instructional staff support</strong><span>Services supporting teachers and instruction.</span></div>
+            <div class="school-row-track"><i style="--w:4%"></i></div>
+            <div class="school-row-value">$1,526,742 · 4.0%</div>
+          </div>
+          <div class="school-row">
+            <div class="school-row-name"><strong>Business, central &amp; other</strong><span>Business services, central support and other functions.</span></div>
+            <div class="school-row-track"><i style="--w:4.1%"></i></div>
+            <div class="school-row-value">$1,564,689 · 4.1%</div>
+          </div>
+          <div class="school-row">
+            <div class="school-row-name"><strong>General administration</strong><span>District-wide executive and board administration.</span></div>
+            <div class="school-row-track"><i style="--w:2.1%"></i></div>
+            <div class="school-row-value">$782,633 · 2.1%</div>
+          </div>
+          <div class="school-row">
+            <div class="school-row-name"><strong>Transportation</strong><span>Student transportation services.</span></div>
+            <div class="school-row-track"><i style="--w:.8%"></i></div>
+            <div class="school-row-value">$297,034 · 0.8%</div>
           </div>
         </div>
       </div>
-      <div class="school-note"><strong>Administration vs. classroom.</strong> Instruction is 60.2% of operating spending. Michigan school accounting groups administration inside support services, so the exact administrative-overhead percentage cannot be separated from these public summary numbers without the audit. <span class="school-source">Source: Mackinac Center / Michigan state FID data for the 60.2% instruction share; exact administration share not yet available.</span></div>
+      <div class="school-note"><strong>Administration and business combined.</strong> School administration, general administration, and business, central and other services totaled $4.70M — 12.4% of current operating spending.</div>
+      <div class="school-note"><strong>Personnel.</strong> Salaries, benefits and related personnel costs totaled $31.79M — 78% of all General Fund spending.</div>
+      <span class="school-source">Source for this section: EGRPS Audited Financial Report, year ended June 30, 2025.</span>
+
+      <div class="school-subsection" id="school-comparison">
+        <div class="school-subsection-head">
+          <h3>How EGR compares</h3>
+          <p>Two views of the same year: total revenue available per student, then how three nearby districts used their operating dollars.</p>
+        </div>
+        <div class="school-compare-summary">
+          <div class="school-compare-callout">
+            <span class="eyebrow" style="color:#a9d6ea">Revenue per pupil · FY2024–25</span>
+            <strong>$14,628</strong>
+            <p>Lower than 17 of 20 Kent County districts and slightly below the $14,960 state average. The main reason: EGR gets little state at-risk funding because few students qualify.</p>
+            <span class="school-source">Source: Michigan Department of Education Bulletin 1014, FY2024–25.</span>
+          </div>
+          <div>
+            <table class="school-table" aria-label="FY2024–25 school district spending comparison">
+              <thead><tr><th>District</th><th>Operating per pupil</th><th>Instruction</th><th>Admin + business</th><th>Transportation</th></tr></thead>
+              <tbody>
+                <tr><td>East Grand Rapids</td><td data-label="Operating per pupil">$12,764</td><td data-label="Instruction">63.9%</td><td data-label="Admin + business">12.4%</td><td data-label="Transportation">0.8%</td></tr>
+                <tr><td>Forest Hills</td><td data-label="Operating per pupil">$14,696</td><td data-label="Instruction">61.6%</td><td data-label="Admin + business">11.2%</td><td data-label="Transportation">4.4%</td></tr>
+                <tr><td>Rockford</td><td data-label="Operating per pupil">$14,714</td><td data-label="Instruction">60.8%</td><td data-label="Admin + business">11.5%</td><td data-label="Transportation">4.8%</td></tr>
+              </tbody>
+            </table>
+            <span class="school-source">Source for every table figure: Michigan Department of Education state FID, FY2024–25.</span>
+          </div>
+        </div>
+        <div class="school-note"><strong>Takeaway.</strong> EGR spends about $1,950 less per student (13% less) than its two closest peers, and puts a larger share into the classroom. EGR spends almost nothing on busing — it's a walkable district. <span class="school-source">Source: Michigan Department of Education state FID, FY2024–25.</span></div>
+      </div>
+
+      <div class="school-subsection" id="school-budgets-ahead">
+        <div class="school-subsection-head">
+          <h3>Budgets ahead</h3>
+          <p>These are board projections, not audited results. They show a near-balanced path through 2027–28, followed by a small projected shortfall.</p>
+        </div>
+        <table class="school-table" aria-label="EGRPS General Fund budget projections, June 2026">
+          <thead><tr><th></th><th>2025–26</th><th>2026–27</th><th>2027–28</th><th>2028–29</th></tr></thead>
+          <tbody>
+            <tr><td>Revenue</td><td data-label="2025–26">$43.53M</td><td data-label="2026–27">$41.94M</td><td data-label="2027–28">$42.89M</td><td data-label="2028–29">$43.62M</td></tr>
+            <tr><td>Expenses</td><td data-label="2025–26">$43.20M</td><td data-label="2026–27">$41.72M</td><td data-label="2027–28">$42.70M</td><td data-label="2028–29">$43.72M</td></tr>
+            <tr><td>Result</td><td data-label="2025–26">+$0.32M</td><td data-label="2026–27">+$0.22M</td><td data-label="2027–28">+$0.19M</td><td class="negative" data-label="2028–29">−$0.10M</td></tr>
+          </tbody>
+        </table>
+        <span class="school-source">Source for every table figure: EGRPS Board of Education budget projections, June 2026.</span>
+        <div class="school-note"><strong>What changes.</strong> Revenue falls about $1.6M in 2026–27 as one-time state money ends. Costs are cut about $566K through attrition (11 retirements, positions left unfilled — no layoffs). The district projects a small structural deficit by 2028–29 if state funding freezes. <span class="school-source">Source: EGRPS Board of Education budget projections, June 2026.</span></div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="school-outcomes">
+      <div class="section-head">
+        <h2>How students are doing</h2>
+        <p class="lede">Test scores come from the Education Recovery Scorecard (Stanford/Harvard), which converts state M-STEP results to a national scale. Score = grade levels above/below the 2019 national average, averaged over math and reading, grades 3–8.</p>
+      </div>
+      <div class="school-outcome-list">
+        <ul>
+          <li><strong>EGR students score about 2 grade levels above the national average</strong> — top 5% of U.S. districts in both math and reading.</li>
+          <li><strong>Lowest chronic absenteeism in the peer group:</strong> 8.3%, vs. 32.1% statewide.</li>
+          <li><strong>One soft spot:</strong> the learning-rate trend ranks in the 4th percentile nationally. Scores are high, but growth has slowed more than at peer districts.</li>
+          <li><strong>Income gap:</strong> low-income students score +0.44 grade levels vs. +2.17 for non-low-income. Both groups rank in the 90th+ percentile nationally within their group.</li>
+        </ul>
+        <p class="school-peer-line"><strong>Similar districts:</strong> Birmingham (+2.15), Forest Hills (+2.14), Rockford (+1.82). Michigan statewide: −0.71.</p>
+        <span class="school-source">Source for every figure in this section: <a href="https://edopportunity.org/reports/trends/2025/MI/report_MI_2612480_east-grand-rapids-public-schools.pdf" target="_blank" rel="noopener">Education Recovery Scorecard 2025</a>.</span>
+      </div>
     </section>
 
     <section class="section wrap" id="school-revenue">
@@ -1339,7 +1475,7 @@
               <span class="school-source">Source: Mackinac Center / Michigan state FID data, FY2024–25 actuals.</span>
             </div>
           </div>
-          <div class="school-note"><strong>Why $55.3M is higher than the $42.5M budget above.</strong> All-funds revenue of $55.3M exceeds the $42.5M general-fund budget because it includes debt-service and capital-project funds. The $55.3M is a completed-year actual; the $42.5M is the following year's board-approved budget. <span class="school-source">Sources: Mackinac Center / Michigan state FID data for FY2024–25 actuals; EGRPS Finance for the 2025–26 board-approved budget.</span></div>
+          <div class="school-note"><strong>Why $55.3M is higher than audited General Fund revenue of $43.67M.</strong> The all-funds figure also includes debt-service and capital-project funds. Both figures are completed-year FY2024–25 actuals, but they cover different sets of accounts. <span class="school-source">Sources: Mackinac Center / Michigan state FID data for all-funds actuals; EGRPS FY2025 audited financial report for General Fund revenue.</span></div>
         </div>
       </div>
     </section>
@@ -1368,6 +1504,16 @@
               <p>Woodcliff early-childhood classrooms, Memorial Field and other buildings.</p>
               <span class="school-source">Source: EGRPS public bond materials.</span>
             </div>
+            <div class="school-bond-item">
+              <strong>Series I · $10.515M outstanding at audit date</strong>
+              <p>The first series carries a 5.00% rate and matures through 2053.</p>
+              <span class="school-source">Source: EGRPS Audited Financial Report, year ended June 30, 2025.</span>
+            </div>
+            <div class="school-bond-item">
+              <strong>Series II · $48,575,000 issued in FY2026</strong>
+              <p>The total includes a refunding portion. It came after the FY2025 audit, so the audit's $64.0M general-obligation-bond balance is lower than the June 2026 total.</p>
+              <span class="school-source">Source: EGRPS FY2026 debt schedule.</span>
+            </div>
           </div>
         </div>
       </div>
@@ -1377,7 +1523,7 @@
         <div class="school-milestone"><span class="eyebrow">2030</span><strong>Phase 2 opens</strong><span class="school-source">Source: EGRPS project timeline.</span></div>
       </div>
       <div class="school-note"><strong>What it means for taxes.</strong> The bond is repaid through the district's debt millage. This is a different bond from the city's $9M parking proposal — different government, different ballot question, different tax line. <span class="school-source">Sources: EGRPS public bond materials; City of East Grand Rapids ballot materials for the separate $9M city proposal.</span></div>
-      <div class="school-note"><strong>Status gap.</strong> How much has been issued and spent so far was not in the public records reviewed.</div>
+      <div class="school-note"><strong>Bonded debt update.</strong> The district had $98.5M outstanding at June 30, 2026, excluding the two remaining series. Debt millage stays at 9.95 mills. District taxable value rose 6.5% to $1.167B in 2026. <span class="school-source">Source: EGRPS FY2026 debt schedule and 2026 taxable-value records.</span></div>
     </section>
 
     <section class="section wrap" id="school-gaps">
@@ -1386,11 +1532,10 @@
         <p class="lede">These gaps are not zeroes. They are items that need additional public records before they can be reported accurately.</p>
       </div>
       <div class="school-gaps">
-        <article class="school-gap"><strong>Audited financial statements</strong><p>Needed for exact debt, pension and OPEB liabilities.</p></article>
-        <article class="school-gap"><strong>Bond issuance and spending</strong><p>Issuance tranches and spending to date were not in the records reviewed.</p></article>
+        <article class="school-gap"><strong>Bond spending to date</strong><p>Project spending against the approved $158.9M bond was not found in the records reviewed.</p></article>
+        <article class="school-gap"><strong>Staffing trend</strong><p>About 359 employees now versus 286 in 2018–19 needs a definition check — FTE versus headcount — before publishing.</p></article>
         <article class="school-gap"><strong>Local revenue detail</strong><p>The split by millage type was not available in the reviewed data.</p></article>
       </div>
-      <div class="school-note"><strong>Compared to nearby districts.</strong> Per-pupil peer comparison not yet built — coming.</div>
       <div class="source-links" aria-label="School finance sources">
         <a class="button primary" href="https://www.egrps.org/district-information/departments/finance" target="_blank" rel="noopener">EGRPS finance page ↗</a>
         <span class="button" aria-label="Source: Mackinac Center using Michigan state FID data">Mackinac Center · Michigan state FID data</span>
