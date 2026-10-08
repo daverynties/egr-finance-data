@@ -8,6 +8,15 @@
     document.documentElement.dataset.theme = 'light';
   </script>
   <meta name="description" content="A plain-English, source-traceable look at East Grand Rapids city spending, vendors, projects and property taxes." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://egr-finance.vercel.app" />
+  <meta property="og:title" content="East Grand Rapids City Spending" />
+  <meta property="og:description" content="Where your tax dollars go — plain-English breakdown of city spending, the November 3 ballot measures, and how EGR compares to nearby cities. Sourced from public records." />
+  <meta property="og:image" content="https://egr-finance.vercel.app/assets/share-card.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="East Grand Rapids City Spending" />
+  <meta name="twitter:description" content="Where your tax dollars go — plain-English breakdown of city spending, the November 3 ballot measures, and how EGR compares to nearby cities. Sourced from public records." />
+  <meta name="twitter:image" content="https://egr-finance.vercel.app/assets/share-card.png" />
   <link rel="icon" href="data:," />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -312,6 +321,10 @@
     .proposal { margin-top: 18px; padding: 22px; background: var(--soft-amber); }
     .proposal-status { color: var(--amber); font: 500 .72rem/1.2 "IBM Plex Mono", monospace; text-transform: uppercase; letter-spacing: .06em; }
     .proposal strong { display: block; margin: 8px 0; font-size: 1.22rem; }
+    .tax-context { margin-top: 14px; padding: 20px 22px; background: var(--surface); border: 1px solid var(--line); }
+    .tax-context h3 { color: var(--navy); }
+    .tax-context p { margin: 7px 0 0; color: var(--muted); font-size: .92rem; }
+    .tax-context .tax-context-scope { margin-top: 9px; padding-top: 9px; border-top: 1px solid var(--line); font-size: .84rem; }
     .ballot-tldr { padding: clamp(26px, 5vw, 46px); background: var(--panel); color: #fff; }
     .ballot-tldr .eyebrow { color: #a9d6ea; }
     .ballot-tldr h3 { margin-top: 12px; font-size: clamp(1.7rem, 4vw, 2.7rem); line-height: 1; letter-spacing: -.035em; }
@@ -385,6 +398,53 @@
     .raw-data p { margin: 7px 0 14px; color: var(--muted); }
     .source-links { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; }
     footer { padding: 36px 0 70px; border-top: 1px solid var(--line); color: var(--muted); font-size: .82rem; }
+    .view-tabs { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .view-tabs .wrap { display: flex; gap: 4px; padding: 10px 0; }
+    .view-tab { min-width: 118px; border: 0; border-bottom: 3px solid transparent; background: transparent; padding: 12px 18px 10px; color: var(--muted); font-weight: 700; cursor: pointer; }
+    .view-tab:hover { color: var(--navy); background: var(--surface-2); }
+    .view-tab[aria-selected="true"] { border-bottom-color: var(--teal); color: var(--navy); }
+    .tab-panel[hidden], .nav-links a[hidden] { display: none; }
+    .school-explainer { padding: clamp(26px, 5vw, 46px); background: var(--panel); color: #fff; }
+    .school-explainer h2 { max-width: 820px; }
+    .school-explainer p { max-width: 90ch; margin: 20px 0 0; color: #d8e8ef; font-size: 1.08rem; }
+    .school-source { display: block; margin-top: 13px; color: var(--muted); font: 500 .72rem/1.45 "IBM Plex Mono", monospace; }
+    .school-source a { color: inherit; }
+    .school-explainer .school-source, .school-total .school-source, .school-bond-lead .school-source { color: #b9dce9; }
+    .school-stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+    .school-stat { min-height: 215px; padding: 26px; background: var(--surface); }
+    .school-stat strong { display: block; margin: 11px 0 9px; color: var(--navy); font-size: clamp(2rem, 4vw, 2.7rem); line-height: .95; letter-spacing: -.035em; }
+    .school-stat p { margin: 0; color: var(--muted); font-size: .92rem; }
+    .school-data-layout { display: grid; grid-template-columns: .72fr 1.28fr; gap: 28px; align-items: start; }
+    .school-total { padding: 30px; background: var(--panel); color: #fff; }
+    .school-total strong { display: block; margin: 13px 0 8px; font-size: clamp(3.5rem, 8vw, 5.5rem); line-height: .88; letter-spacing: -.055em; }
+    .school-total p { margin: 0; color: #d8e8ef; }
+    .school-breakdown { border-top: 1px solid var(--line); }
+    .school-row { display: grid; grid-template-columns: minmax(170px, 1.2fr) 1fr auto; gap: 18px; align-items: center; padding: 19px 0; border-bottom: 1px solid var(--line); }
+    .school-row-name strong { display: block; }
+    .school-row-name span { display: block; margin-top: 4px; color: var(--muted); font-size: .86rem; }
+    .school-row-track { height: 11px; background: var(--surface-2); }
+    .school-row-track i { display: block; width: var(--w); height: 100%; background: var(--teal); }
+    .school-row-value { min-width: 104px; color: var(--navy); font: 500 .83rem/1.35 "IBM Plex Mono", monospace; text-align: right; }
+    .school-row .school-source { grid-column: 1 / -1; margin-top: -8px; }
+    .school-note { margin-top: 18px; padding: 20px 22px; background: var(--soft-blue); color: var(--muted); }
+    .school-note strong { color: var(--ink); }
+    .school-bond { display: grid; grid-template-columns: .72fr 1.28fr; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+    .school-bond-lead { padding: 30px; background: var(--panel); color: #fff; }
+    .school-bond-lead strong { display: block; margin: 14px 0 9px; font-size: clamp(3rem, 7vw, 5rem); line-height: .88; letter-spacing: -.05em; }
+    .school-bond-lead p { margin: 0; color: #d8e8ef; }
+    .school-bond-detail { padding: 30px; background: var(--surface); }
+    .school-bond-list { display: grid; gap: 0; margin-top: 12px; }
+    .school-bond-item { padding: 18px 0; border-bottom: 1px solid var(--line); }
+    .school-bond-item:last-child { border-bottom: 0; }
+    .school-bond-item strong { display: block; color: var(--navy); font-size: 1.15rem; }
+    .school-bond-item p { margin: 6px 0 0; color: var(--muted); }
+    .school-timeline { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 22px; background: var(--line); border: 1px solid var(--line); }
+    .school-milestone { padding: 20px; background: var(--surface); }
+    .school-milestone strong { display: block; margin-top: 7px; color: var(--navy); }
+    .school-gaps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+    .school-gap { padding: 24px; background: var(--surface); }
+    .school-gap strong { display: block; margin-bottom: 7px; color: var(--navy); }
+    .school-gap p { margin: 0; color: var(--muted); font-size: .92rem; }
     .modal { position: fixed; inset: 0; z-index: 50; display: none; place-items: center; padding: 18px; background: rgba(2,15,24,.72); }
     .modal.open { display: grid; }
     .modal-card { width: min(720px, 100%); max-height: min(84vh, 780px); overflow: auto; background: var(--surface); color: var(--ink); padding: 28px; box-shadow: var(--shadow); border-radius: var(--radius-m); }
@@ -399,11 +459,11 @@
     :focus-visible { outline: 3px solid color-mix(in srgb, var(--sky) 70%, transparent); outline-offset: 3px; }
     @media (max-width: 850px) {
       .freshness { display: none; }
-      .hero-grid, .section-head, .explorer, .tax-shell, .budget-intro, .payroll-shell, .utility-shell, .obligation-total, .peer-summary, .ballot-detail-grid { grid-template-columns: 1fr; }
+      .hero-grid, .section-head, .explorer, .tax-shell, .budget-intro, .payroll-shell, .utility-shell, .obligation-total, .peer-summary, .ballot-detail-grid, .school-data-layout, .school-bond { grid-template-columns: 1fr; }
       .health-grid { grid-template-columns: 1fr 1fr; }
       .peer-takeaways { grid-template-columns: 1fr; }
       .big-number { margin-top: 18px; }
-      .insight-grid { grid-template-columns: repeat(2,1fr); }
+      .insight-grid, .school-stat-grid { grid-template-columns: repeat(2,1fr); }
       .projects { grid-template-columns: repeat(2,1fr); }
       .tax-chart { grid-template-columns: 150px 1fr; }
       .donut { width: 150px; }
@@ -431,7 +491,12 @@
       .section-disclosure > summary h2 { font-size: 1.8rem; }
       .section-disclosure > summary .lede { font-size: .95rem; }
       .section-disclosure-body { padding-bottom: 54px; }
-      .insight-grid, .flags-grid, .projects, .method-grid, .about-grid, .context-pair, .health-grid, .watch-grid, .ballot-choices { grid-template-columns: 1fr; }
+      .insight-grid, .flags-grid, .projects, .method-grid, .about-grid, .context-pair, .health-grid, .watch-grid, .ballot-choices, .school-stat-grid, .school-timeline, .school-gaps { grid-template-columns: 1fr; }
+      .view-tabs .wrap { padding: 8px 0; }
+      .view-tab { flex: 1 1 50%; min-width: 0; }
+      .school-row { grid-template-columns: 1fr auto; gap: 9px 14px; }
+      .school-row-track { grid-column: 1 / -1; grid-row: 2; }
+      .school-row .school-source { grid-row: 3; }
       .about-card.wide { grid-column: auto; }
       .peer-bar-row { grid-template-columns: 88px 1fr 64px; gap: 8px; font-size: .88rem; }
       .peer-table, .peer-table tbody, .peer-table tr, .peer-table td { display: block; width: 100%; }
@@ -491,9 +556,10 @@
       <span>Sections</span><span class="nav-toggle-icon" aria-hidden="true"></span>
     </button>
     <div class="nav-links" id="navLinks">
-      <a href="#overview">Overview</a><a href="#taxes">Taxes</a><a href="#ballot">Ballot</a><a href="#spending">Spending</a><a href="#payroll">Payroll</a><a href="#compare">Compare</a><a href="#about">About</a>
+      <a href="#overview" data-tab="city">Overview</a><a href="#taxes" data-tab="city">Taxes</a><a href="#ballot" data-tab="city">Ballot</a><a href="#spending" data-tab="city">Spending</a><a href="#payroll" data-tab="city">Payroll</a><a href="#compare" data-tab="city">Compare</a><a href="#about" data-tab="city">About</a>
+      <a href="#school-overview" data-tab="schools" hidden>Overview</a><a href="#school-snapshot" data-tab="schools" hidden>Budget</a><a href="#school-spending" data-tab="schools" hidden>Spending</a><a href="#school-revenue" data-tab="schools" hidden>Revenue</a><a href="#school-bond" data-tab="schools" hidden>Bond</a><a href="#school-gaps" data-tab="schools" hidden>Gaps</a>
     </div>
-    <span class="freshness">Analysis dated Oct. 7, 2026</span>
+    <span class="freshness">Analysis dated Oct. 8, 2026</span>
     <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
       <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 15.7A9 9 0 0 1 8.3 3.7 9 9 0 1 0 20.3 15.7Z"></path></svg>
       <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path></svg>
@@ -520,6 +586,14 @@
     <div class="scale-strip" id="scaleStrip" aria-label="FY2025 spending by category"></div>
   </section>
 
+  <div class="view-tabs" aria-label="Financial statements by government">
+    <div class="wrap" role="tablist" aria-label="Choose city or school finances">
+      <button class="view-tab" id="cityTab" type="button" role="tab" aria-selected="true" aria-controls="cityPanel" data-view="city">City</button>
+      <button class="view-tab" id="schoolsTab" type="button" role="tab" aria-selected="false" aria-controls="schoolsPanel" data-view="schools">Schools</button>
+    </div>
+  </div>
+
+  <div class="tab-panel" id="cityPanel" role="tabpanel" aria-labelledby="cityTab">
   <section class="section wrap">
     <div class="section-head">
       <h2>The short version.</h2>
@@ -562,6 +636,11 @@
         </div>
       </div>
     </div>
+    <aside class="tax-context" aria-labelledby="tax-context-title">
+      <h3 id="tax-context-title">The city is only part of your tax bill.</h3>
+      <p>City Hall's $26.7M budget is one slice. East Grand Rapids Public Schools — a separate taxing authority with its own elected board and budget — budgeted about $42.4M in expenses for 2025-26, roughly 1.6 times city spending. The calculator above breaks down each authority's millage share of your bill. <a href="https://www.egrps.org/district-information/departments/finance" target="_blank" rel="noopener">EGR Public Schools finance page</a></p>
+      <p class="tax-context-scope">This site covers city government finances only. School, county, and state figures come from those authorities' own published budgets.</p>
+    </aside>
   </section>
 
   <section class="section wrap" id="ballot">
@@ -583,7 +662,7 @@
         <article class="ballot-choice">
           <span>County proposal</span>
           <strong>0.98 mills · 2026–2045</strong>
-          <p>A renewal plus a 0.2468-mill increase. About $294 a year on a $300,000 home, including about $74 from the increase. Estimated first-year revenue: $37.3 million. An organized vote-no campaign exists.</p>
+          <p>A renewal plus a 0.2468-mill increase. About $294 a year on a $300,000 home, including about $74 from the increase. Estimated first-year revenue: $37.3 million.</p>
         </article>
         <article class="ballot-choice">
           <span>County renewal</span>
@@ -608,7 +687,6 @@
         <h3>Kent County jail millage</h3>
         <p><strong>0.98 mills for 2026–2045</strong> to expand, remodel, equip, operate and maintain Kent County correction and detention facilities, and to pay debt service on them.</p>
         <p>It renews the existing millage, which would otherwise expire after the 2029 levy, and increases it by 0.2468 mills. Estimated first-year revenue is $37.3 million.</p>
-        <p>An organized vote-no campaign exists at griid.org.</p>
       </article>
       <article class="ballot-card">
         <h3>Kent County zoo + museum millage</h3>
@@ -628,7 +706,15 @@
       <div class="qa-list">
         <details class="disclosure">
           <summary><span>Does the city’s own parking study say parking is adequate?</span></summary>
-          <div class="disclosure-body"><p>At a June 2026 work session, the city’s consultants, Progressive Engineering, reported that no part of the system exceeded the 85% occupancy benchmark used to signal tight supply. That is accurate, with an important qualification: the finding uses system-wide averages across on-street and off-street spaces, not peak event nights in Gaslight Village.</p></div>
+          <div class="disclosure-body"><p>The June 2026 consultant study reported no part of the system exceeded the 85% occupancy benchmark. That finding uses system-wide averages across on-street and off-street spaces. It does not reflect peak event nights in Gaslight Village.</p></div>
+        </details>
+        <details class="disclosure">
+          <summary><span>What happens if the bond fails?</span></summary>
+          <div class="disclosure-body"><p>The parking deck is not built. The city and schools would need another plan for event parking, and the existing lots would remain.</p></div>
+        </details>
+        <details class="disclosure">
+          <summary><span>Why a parking deck instead of more surface parking?</span></summary>
+          <div class="disclosure-body"><p>The site is constrained. A deck adds about 240 spaces on the existing footprint; surface expansion would require land the city does not have at that location.</p></div>
         </details>
         <details class="disclosure">
           <summary><span>Why should I pay $3,000 for something I’ll never use?</span></summary>
@@ -733,9 +819,9 @@
     </div>
     <div class="peer-summary">
       <div class="peer-callout">
-        <span class="eyebrow" style="color:#a9d6ea">Higher taxes, lean-ish spending</span>
+        <span class="eyebrow" style="color:#a9d6ea">Highest spending and city levy of six nearby cities</span>
         <strong>$2,151</strong>
-        <p>EGR’s FY2024 governmental spending per resident — the highest of the six. Its 14.21-mill city levy is also the group’s highest, while the services behind it are consistent with a small, fully built-out residential city running its own police, fire, water and parks without a commercial tax base to share the load.</p>
+        <p>EGR's FY2024 governmental spending per resident and its 14.21-mill city levy are the highest of the six. It is a small, fully built-out residential city running its own police, fire, water and parks without a commercial tax base.</p>
       </div>
       <div class="peer-chart" role="img" aria-label="FY2024 total governmental spending per resident: East Grand Rapids 2,151 dollars, Grand Rapids 1,676 dollars, Grandville 1,358 dollars, Walker 1,068 dollars, Kentwood 975 dollars, and Wyoming 783 dollars">
         <div class="peer-bar-row"><span>East GR</span><div class="peer-bar-track"><i style="--w:100%"></i></div><b>$2,151</b></div>
@@ -992,7 +1078,7 @@
           <p>Governmental debt, net pension liability and retiree-health liability combined. These audited obligations are distinct from one year’s operating spending.</p>
         </div>
         <div class="health-grid obligation-grid">
-          <div class="health-stat"><span class="eyebrow">Governmental debt</span><strong>$9,746,938</strong><p>Down from $10,483,247 a year earlier. That is $852 per resident and 0.81% of state equalized value. Debt has declined from $10.45M in 2015; the 2022 parks bond appears as the intervening bump.</p></div>
+          <div class="health-stat"><span class="eyebrow">Governmental debt</span><strong>$9,746,938</strong><p>Down from $10,483,247 a year earlier. That is $857 per resident and 0.81% of state equalized value. Debt has declined from $10.45M in 2015; the 2022 parks bond appears as the intervening bump.</p></div>
           <div class="health-stat"><span class="eyebrow">Net pension liability</span><strong>$8,474,514</strong><p>Down $3,365,691 during FY2024. The closed defined-benefit plan was 59.2% funded: $12.30M in assets against a $20.77M liability. A one-time $1.9M state grant went to the city because the plan was under 60% funded.</p></div>
           <div class="health-stat"><span class="eyebrow">Retiree health · OPEB</span><strong>$2,532,173</strong><p>The audited liability for other post-employment benefits, principally retiree health care.</p></div>
         </div>
@@ -1017,7 +1103,7 @@
       </summary>
       <div class="section-disclosure-body">
     <div class="utility-shell">
-      <div class="utility-answer"><span class="eyebrow" style="color:#a9d6ea">FY2025 operating margin</span><strong>24.7%</strong><p>Up from 18.8% in FY2024. The utility is neither subsidized by the General Fund nor subsidizing other city operations.</p></div>
+      <div class="utility-answer"><span class="eyebrow" style="color:#a9d6ea">FY2025 operating margin</span><strong>24.7%</strong><p>Up from 18.8% in FY2024. In FY2025 the utility covered its operating costs from customer charges.</p></div>
       <details open class="disclosure">
         <summary><span>See utility revenue and costs</span><small>$1.31M surplus</small></summary>
         <div class="disclosure-body">
@@ -1089,6 +1175,7 @@
     <details open class="disclosure disclosure-wide" style="margin-top:14px">
       <summary><span>Read the full provenance and limitations</span><small>sources · checks · gaps</small></summary>
       <div class="disclosure-body">
+        <p class="scope-note"><strong>Changelog.</strong> Oct 8, 2026: removed savings-scenarios section until after the Nov 3 vote; corrected reserve benchmark to the GFOA guideline; added About attribution block.</p>
         <div class="about-grid">
           <article class="about-card wide">
             <h3>Where the numbers come from</h3>
@@ -1132,8 +1219,186 @@
       </div>
     </details>
   </section>
+  </div>
+
+  <div class="tab-panel" id="schoolsPanel" role="tabpanel" aria-labelledby="schoolsTab" hidden>
+    <section class="section wrap" id="school-overview">
+      <div class="school-explainer">
+        <h2>Why schools are separate</h2>
+        <p>A Michigan school district is its own government — not a city department. East Grand Rapids Public Schools has its own elected school board, levies its own property taxes, adopts its own budget, and gets its own independent audit. The city commission has no say over school spending, and the school board has no say over city spending. The funding model is different too: nearly two-thirds of school revenue comes from the state per-pupil formula, while the city runs mostly on local property taxes. That's why this site treats them separately — different books, different government.</p>
+        <span class="school-source">Source for the funding mix: Mackinac Center using Michigan state FID data, FY2024–25 actuals.</span>
+      </div>
+    </section>
+
+    <section class="section wrap" id="school-snapshot">
+      <div class="section-head">
+        <h2>The district budget.</h2>
+        <p class="lede">These are 2025–26 board-approved budget figures, not audited actuals. The completed-year actuals begin in the next section.</p>
+      </div>
+      <div class="school-stat-grid">
+        <article class="school-stat">
+          <span class="eyebrow">Budgeted expenses</span>
+          <strong>$42.4M</strong>
+          <p>About 1.6 times the city's $26.7M in FY2025 actual spending.</p>
+          <span class="school-source">Sources: <a href="https://www.egrps.org/district-information/departments/finance" target="_blank" rel="noopener">EGRPS Finance</a>, 2025–26 board-approved budget; city FY2025 audited financial report for the comparison.</span>
+        </article>
+        <article class="school-stat">
+          <span class="eyebrow">Budgeted revenues</span>
+          <strong>$42.5M</strong>
+          <p>The district's board-approved general-fund revenue budget.</p>
+          <span class="school-source">Source: <a href="https://www.egrps.org/district-information/departments/finance" target="_blank" rel="noopener">EGRPS Finance</a>, 2025–26 board-approved budget.</span>
+        </article>
+        <article class="school-stat">
+          <span class="eyebrow">Unassigned fund balance</span>
+          <strong>$10.1M</strong>
+          <p>23.92% of budgeted expenses.</p>
+          <span class="school-source">Source: <a href="https://www.egrps.org/district-information/departments/finance" target="_blank" rel="noopener">EGRPS Finance</a>, 2025–26 board-approved budget.</span>
+        </article>
+        <article class="school-stat">
+          <span class="eyebrow">District scale</span>
+          <strong>~2,990</strong>
+          <p>Students, supported by about 359 employees. Operating spending was $14,570 per pupil in 2024–25.</p>
+          <span class="school-source">Sources: <a href="https://www.egrps.org/district-information/departments/finance" target="_blank" rel="noopener">EGRPS Finance</a> for enrollment and staffing; Mackinac Center / Michigan state FID data for per-pupil actuals.</span>
+        </article>
+      </div>
+      <div class="school-note"><strong>Enrollment.</strong> About 2,990 students in 2024–25. Enrollment trend not yet pulled — this matters because state funding follows the student. <span class="school-source">Source: EGRPS Finance for 2024–25 enrollment; trend not yet available.</span></div>
+    </section>
+
+    <section class="section wrap" id="school-spending">
+      <div class="section-head">
+        <h2>Where school operating money went.</h2>
+        <p class="lede">FY2024–25 actuals from Michigan's state financial reporting data. Operating costs and bond-funded construction are shown separately.</p>
+      </div>
+      <div class="school-data-layout">
+        <div class="school-total">
+          <span class="eyebrow" style="color:#a9d6ea">Current operating expenditures</span>
+          <strong>$40.0M</strong>
+          <p>$14,570 per pupil in FY2024–25 actual spending.</p>
+          <span class="school-source">Source: Mackinac Center using Michigan state FID data, FY2024–25 actuals.</span>
+        </div>
+        <div class="school-breakdown">
+          <div class="school-row">
+            <div class="school-row-name"><strong>Instruction</strong><span>About 60 cents of every operating dollar.</span></div>
+            <div class="school-row-track"><i style="--w:60.2%"></i></div>
+            <div class="school-row-value">$24.1M · 60.2%</div>
+            <span class="school-source">Source: Mackinac Center / Michigan state FID data, FY2024–25 actuals.</span>
+          </div>
+          <div class="school-row">
+            <div class="school-row-name"><strong>Support services</strong><span>Services that support instruction and district operations.</span></div>
+            <div class="school-row-track"><i style="--w:37.2%"></i></div>
+            <div class="school-row-value">$14.9M · 37.2%</div>
+            <span class="school-source">Source: Mackinac Center / Michigan state FID data, FY2024–25 actuals.</span>
+          </div>
+          <div class="school-row">
+            <div class="school-row-name"><strong>Food service</strong><span>Reported separately from the instruction and support shares above.</span></div>
+            <div class="school-row-track"><i style="--w:2.5%"></i></div>
+            <div class="school-row-value">$1.0M</div>
+            <span class="school-source">Source: Mackinac Center / Michigan state FID data, FY2024–25 actuals.</span>
+          </div>
+          <div class="school-row">
+            <div class="school-row-name"><strong>Community services</strong><span>Reported separately from the instruction and support shares above.</span></div>
+            <div class="school-row-track"><i style="--w:2.5%"></i></div>
+            <div class="school-row-value">$1.0M</div>
+            <span class="school-source">Source: Mackinac Center / Michigan state FID data, FY2024–25 actuals.</span>
+          </div>
+          <div class="school-row">
+            <div class="school-row-name"><strong>Facilities and construction</strong><span>Bond-related capital, separate from operating expenditures.</span></div>
+            <div class="school-row-track"><i style="--w:19.3%"></i></div>
+            <div class="school-row-value">$7.7M</div>
+            <span class="school-source">Source: Mackinac Center / Michigan state FID data, FY2024–25 actuals.</span>
+          </div>
+        </div>
+      </div>
+      <div class="school-note"><strong>Administration vs. classroom.</strong> Instruction is 60.2% of operating spending. Michigan school accounting groups administration inside support services, so the exact administrative-overhead percentage cannot be separated from these public summary numbers without the audit. <span class="school-source">Source: Mackinac Center / Michigan state FID data for the 60.2% instruction share; exact administration share not yet available.</span></div>
+    </section>
+
+    <section class="section wrap" id="school-revenue">
+      <div class="section-head">
+        <h2>Where school revenue comes from.</h2>
+        <p class="lede">The district's operating model is primarily state-funded. Local property taxes remain substantial, especially when debt-service and capital-project funds are included.</p>
+      </div>
+      <div class="school-data-layout">
+        <div class="school-total">
+          <span class="eyebrow" style="color:#a9d6ea">All-funds revenue · FY2024–25</span>
+          <strong>$55.3M</strong>
+          <p>Completed-year actuals across operating, debt-service and capital-project funds.</p>
+          <span class="school-source">Source: Mackinac Center using Michigan state FID data, FY2024–25 actuals.</span>
+        </div>
+        <div>
+          <div class="school-breakdown">
+            <div class="school-row">
+              <div class="school-row-name"><strong>State revenue</strong><span>Foundation allowance plus categorical funding.</span></div>
+              <div class="school-row-track"><i style="--w:63%"></i></div>
+              <div class="school-row-value">$34.9M · 63.0%</div>
+              <span class="school-source">Source: Mackinac Center / Michigan state FID data, FY2024–25 actuals.</span>
+            </div>
+            <div class="school-row">
+              <div class="school-row-name"><strong>Local revenue</strong><span>Property taxes.</span></div>
+              <div class="school-row-track"><i style="--w:36.1%"></i></div>
+              <div class="school-row-value">$20.0M · 36.1%</div>
+              <span class="school-source">Source: Mackinac Center / Michigan state FID data, FY2024–25 actuals.</span>
+            </div>
+          </div>
+          <div class="school-note"><strong>Why $55.3M is higher than the $42.5M budget above.</strong> All-funds revenue of $55.3M exceeds the $42.5M general-fund budget because it includes debt-service and capital-project funds. The $55.3M is a completed-year actual; the $42.5M is the following year's board-approved budget. <span class="school-source">Sources: Mackinac Center / Michigan state FID data for FY2024–25 actuals; EGRPS Finance for the 2025–26 board-approved budget.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="school-bond">
+      <div class="section-head">
+        <h2>The $158.9 million bond.</h2>
+        <p class="lede">Voters approved the school bond in November 2023 with 77.5% voting yes. It funds a multi-year high school transformation and work at other district properties.</p>
+      </div>
+      <div class="school-bond">
+        <div class="school-bond-lead">
+          <span class="eyebrow" style="color:#a9d6ea">Approved November 2023</span>
+          <strong>$158.9M</strong>
+          <p>77.5% voted yes.</p>
+          <span class="school-source">Source: EGRPS public bond materials and election results.</span>
+        </div>
+        <div class="school-bond-detail">
+          <div class="school-bond-list">
+            <div class="school-bond-item">
+              <strong>About $118M · high school transformation</strong>
+              <p>A 61,000-square-foot addition plus renovation of 100,000 square feet.</p>
+              <span class="school-source">Source: EGRPS public bond materials.</span>
+            </div>
+            <div class="school-bond-item">
+              <strong>About $40M · other district facilities</strong>
+              <p>Woodcliff early-childhood classrooms, Memorial Field and other buildings.</p>
+              <span class="school-source">Source: EGRPS public bond materials.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="school-timeline" aria-label="School bond project timeline">
+        <div class="school-milestone"><span class="eyebrow">June 2026</span><strong>Groundbreaking</strong><span class="school-source">Source: EGRPS project timeline.</span></div>
+        <div class="school-milestone"><span class="eyebrow">Fall 2028</span><strong>Phase 1 opens</strong><span class="school-source">Source: EGRPS project timeline.</span></div>
+        <div class="school-milestone"><span class="eyebrow">2030</span><strong>Phase 2 opens</strong><span class="school-source">Source: EGRPS project timeline.</span></div>
+      </div>
+      <div class="school-note"><strong>What it means for taxes.</strong> The bond is repaid through the district's debt millage. This is a different bond from the city's $9M parking proposal — different government, different ballot question, different tax line. <span class="school-source">Sources: EGRPS public bond materials; City of East Grand Rapids ballot materials for the separate $9M city proposal.</span></div>
+      <div class="school-note"><strong>Status gap.</strong> How much has been issued and spent so far was not in the public records reviewed.</div>
+    </section>
+
+    <section class="section wrap" id="school-gaps">
+      <div class="section-head">
+        <h2>What the records don't show yet.</h2>
+        <p class="lede">These gaps are not zeroes. They are items that need additional public records before they can be reported accurately.</p>
+      </div>
+      <div class="school-gaps">
+        <article class="school-gap"><strong>Audited financial statements</strong><p>Needed for exact debt, pension and OPEB liabilities.</p></article>
+        <article class="school-gap"><strong>Bond issuance and spending</strong><p>Issuance tranches and spending to date were not in the records reviewed.</p></article>
+        <article class="school-gap"><strong>Local revenue detail</strong><p>The split by millage type was not available in the reviewed data.</p></article>
+      </div>
+      <div class="school-note"><strong>Compared to nearby districts.</strong> Per-pupil peer comparison not yet built — coming.</div>
+      <div class="source-links" aria-label="School finance sources">
+        <a class="button primary" href="https://www.egrps.org/district-information/departments/finance" target="_blank" rel="noopener">EGRPS finance page ↗</a>
+        <span class="button" aria-label="Source: Mackinac Center using Michigan state FID data">Mackinac Center · Michigan state FID data</span>
+      </div>
+    </section>
+  </div>
 </main>
-<footer><div class="wrap">Amounts rounded for readability; drill-downs retain source precision. Analysis is a fixed snapshot dated October 7, 2026.</div></footer>
+<footer><div class="wrap">Amounts rounded for readability; drill-downs retain source precision. Analysis is a fixed snapshot dated October 8, 2026.</div></footer>
 
 <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
   <div class="modal-card"><div class="modal-top"><h2 id="modalTitle" style="font-size:2rem"></h2><button class="modal-close" id="modalClose" aria-label="Close">×</button></div><div id="modalBody"></div></div>
@@ -1151,15 +1416,43 @@
   setTheme(root.dataset.theme||'light');
   themeToggle.addEventListener('click',()=>setTheme(root.dataset.theme==='dark'?'light':'dark'));
   const jumpbar=document.querySelector('.jumpbar'), navToggle=document.getElementById('navToggle'), navLinks=document.getElementById('navLinks');
+  const tabButtons=Array.from(document.querySelectorAll('.view-tab'));
+  const panels={city:document.getElementById('cityPanel'),schools:document.getElementById('schoolsPanel')};
   function setMenu(open){jumpbar.classList.toggle('menu-open',open);navToggle.setAttribute('aria-expanded',String(open))}
+  function setActiveView(view,updateHash){
+    const next=view==='schools'?'schools':'city';
+    Object.entries(panels).forEach(([name,panel])=>{panel.hidden=name!==next});
+    tabButtons.forEach(button=>{
+      const selected=button.dataset.view===next;
+      button.setAttribute('aria-selected',String(selected));
+      button.tabIndex=selected?0:-1;
+    });
+    navLinks.querySelectorAll('a').forEach(link=>{link.hidden=link.dataset.tab!==next});
+    if(updateHash)history.replaceState(null,'',next==='schools'?'#schools':'#city');
+    if(matchMedia('(max-width: 580px)').matches)setMenu(false);
+  }
   navToggle.addEventListener('click',()=>setMenu(navToggle.getAttribute('aria-expanded')!=='true'));
+  tabButtons.forEach((button,index)=>{
+    button.addEventListener('click',()=>setActiveView(button.dataset.view,true));
+    button.addEventListener('keydown',event=>{
+      if(event.key!=='ArrowLeft'&&event.key!=='ArrowRight')return;
+      event.preventDefault();
+      const direction=event.key==='ArrowRight'?1:-1;
+      const next=tabButtons[(index+direction+tabButtons.length)%tabButtons.length];
+      next.focus();
+      setActiveView(next.dataset.view,true);
+    });
+  });
   document.querySelectorAll('.section-disclosure > summary').forEach(summary=>summary.addEventListener('click',e=>{
     e.preventDefault();
     const disclosure=summary.parentElement;
     disclosure.open=!disclosure.open;
   }));
-  navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',e=>{
+  navLinks.addEventListener('click',e=>{
+    const a=e.target.closest('a');
+    if(!a)return;
     e.preventDefault();
+    setActiveView(a.dataset.tab,false);
     const selector=a.getAttribute('href'), target=document.querySelector(selector);
     if(!target)return;
     const ownDisclosure=target.querySelector(':scope > details.section-disclosure');
@@ -1174,8 +1467,12 @@
       target.scrollIntoView({block:'start'});
       root.style.scrollBehavior=previousScrollBehavior;
     }));
-  }));
+  });
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&jumpbar.classList.contains('menu-open')){setMenu(false);navToggle.focus()}});
+  const initialHash=location.hash;
+  const initialView=initialHash==='#schools'||initialHash.startsWith('#school-')?'schools':'city';
+  setActiveView(initialView,false);
+  if(initialHash&&document.querySelector(initialHash))requestAnimationFrame(()=>document.querySelector(initialHash).scrollIntoView({block:'start'}));
   const money = n => new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
   const compact = n => n>=1000000 ? '$'+(n/1000000).toFixed(n>=10000000?1:2).replace(/\.0$/,'')+'M' : '$'+Math.round(n/1000)+'K';
   const categories = [
