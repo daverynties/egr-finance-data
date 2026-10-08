@@ -287,6 +287,28 @@
     .proposal { margin-top: 18px; padding: 22px; background: var(--soft-amber); }
     .proposal-status { color: var(--amber); font: 500 .72rem/1.2 "IBM Plex Mono", monospace; text-transform: uppercase; letter-spacing: .06em; }
     .proposal strong { display: block; margin: 8px 0; font-size: 1.22rem; }
+    .ballot-tldr { padding: clamp(26px, 5vw, 46px); background: var(--navy); color: #fff; }
+    .ballot-tldr .eyebrow { color: #a9d6ea; }
+    .ballot-tldr h3 { margin-top: 12px; font-size: clamp(1.7rem, 4vw, 2.7rem); line-height: 1; letter-spacing: -.035em; }
+    .ballot-tldr > p { max-width: 78ch; margin: 14px 0 0; color: #d8e8ef; }
+    .ballot-choices { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin-top: 28px; background: rgba(255,255,255,.24); border: 1px solid rgba(255,255,255,.24); }
+    .ballot-choice { padding: 24px; background: color-mix(in srgb, var(--navy) 88%, #fff 12%); }
+    .ballot-choice span { color: #b9dce9; font: 500 .72rem/1.2 "IBM Plex Mono", monospace; text-transform: uppercase; letter-spacing: .05em; }
+    .ballot-choice strong { display: block; margin: 8px 0 9px; font-size: 1.3rem; line-height: 1.2; }
+    .ballot-choice p { margin: 0; color: #d8e8ef; font-size: .94rem; }
+    .ballot-detail-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 14px; margin-top: 14px; }
+    .ballot-card { padding: 26px; background: var(--surface); border: 1px solid var(--line); }
+    .ballot-card h3 { margin-bottom: 14px; color: var(--navy); }
+    .ballot-card p { margin: 0; color: var(--muted); }
+    .ballot-card p + p { margin-top: 12px; }
+    .ballot-facts { margin: 0; padding-left: 20px; }
+    .ballot-facts li { color: var(--muted); }
+    .ballot-facts li + li { margin-top: 11px; }
+    .ballot-qa { margin-top: 34px; }
+    .ballot-qa > h3 { margin-bottom: 14px; font-size: 1.45rem; }
+    .qa-list { display: grid; gap: 8px; }
+    .qa-list .disclosure-body p { margin: 0; color: var(--muted); }
+    .qa-list .status { margin-bottom: 10px; }
     .savings { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
     .scenario { padding: 30px; background: var(--surface); border: 1px solid var(--line); }
     .scenario-output { margin: 25px 0 10px; color: var(--navy); font-size: 3rem; font-weight: 700; line-height: 1; }
@@ -369,7 +391,7 @@
     :focus-visible { outline: 3px solid color-mix(in srgb, var(--sky) 70%, transparent); outline-offset: 3px; }
     @media (max-width: 850px) {
       .freshness { width: 100%; margin-left: 0; }
-      .hero-grid, .section-head, .explorer, .tax-shell, .savings, .budget-intro, .payroll-shell, .utility-shell, .obligation-total, .peer-summary { grid-template-columns: 1fr; }
+      .hero-grid, .section-head, .explorer, .tax-shell, .savings, .budget-intro, .payroll-shell, .utility-shell, .obligation-total, .peer-summary, .ballot-detail-grid { grid-template-columns: 1fr; }
       .health-grid { grid-template-columns: 1fr 1fr; }
       .peer-takeaways { grid-template-columns: 1fr; }
       .big-number { margin-top: 18px; }
@@ -399,7 +421,7 @@
       .section-disclosure > summary h2 { font-size: 1.8rem; }
       .section-disclosure > summary .lede { font-size: .95rem; }
       .section-disclosure-body { padding-bottom: 54px; }
-      .insight-grid, .flags-grid, .projects, .method-grid, .about-grid, .context-pair, .health-grid, .watch-grid { grid-template-columns: 1fr; }
+      .insight-grid, .flags-grid, .projects, .method-grid, .about-grid, .context-pair, .health-grid, .watch-grid, .ballot-choices { grid-template-columns: 1fr; }
       .about-card.wide { grid-column: auto; }
       .peer-bar-row { grid-template-columns: 88px 1fr 64px; gap: 8px; font-size: .88rem; }
       .peer-table, .peer-table tbody, .peer-table tr, .peer-table td { display: block; width: 100%; }
@@ -441,7 +463,7 @@
       <span>Sections</span><span class="nav-toggle-icon" aria-hidden="true"></span>
     </button>
     <div class="nav-links" id="navLinks">
-      <a href="#overview">Overview</a><a href="#taxes">Taxes</a><a href="#revenue">Revenue</a><a href="#spending">Spending</a><a href="#budget">Budget</a><a href="#changes">Changes</a><a href="#payroll">Payroll</a><a href="#flags">Context</a><a href="#vendors">Vendors</a><a href="#projects">Projects</a><a href="#health">Health</a><a href="#compare">Compare</a><a href="#utility">Utility</a><a href="#savings">Savings</a><a href="#ask-data">Ask</a><a href="#method">Method</a><a href="#about">About</a>
+      <a href="#overview">Overview</a><a href="#taxes">Taxes</a><a href="#ballot">Ballot</a><a href="#revenue">Revenue</a><a href="#spending">Spending</a><a href="#budget">Budget</a><a href="#changes">Changes</a><a href="#payroll">Payroll</a><a href="#flags">Context</a><a href="#vendors">Vendors</a><a href="#projects">Projects</a><a href="#health">Health</a><a href="#compare">Compare</a><a href="#utility">Utility</a><a href="#savings">Savings</a><a href="#ask-data">Ask</a><a href="#method">Method</a><a href="#about">About</a>
     </div>
     <span class="freshness">Analysis dated Oct. 7, 2026</span>
   </div>
@@ -503,6 +525,76 @@
           <div>First-year estimate: <b id="parkingFirst">$178</b> at 0.5922 mills. Average: <b id="parkingAvg">$148</b> at 0.4925 mills.</div>
           <p style="margin:8px 0 0;color:var(--muted);font-size:.84rem">These dollar figures are arithmetic from the published millage rates, not official city sample-home estimates. Up to $9M in bonds; maximum 20-year term per series.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="ballot">
+    <div class="section-head">
+      <h2>November 3 ballot: the money questions.</h2>
+      <p class="lede">East Grand Rapids voters face two tax questions on November 3, 2026, alongside the midterm races for governor, U.S. Senate, U.S. House and the state legislature.</p>
+    </div>
+
+    <div class="ballot-tldr">
+      <div class="eyebrow">The whole ballot in 30 seconds</div>
+      <h3>Two proposals would affect local property-tax bills.</h3>
+      <p>One would finance a city parking and pedestrian-safety project. The other would renew and increase Kent County’s jail millage.</p>
+      <div class="ballot-choices">
+        <article class="ballot-choice">
+          <span>City proposal</span>
+          <strong>Up to $9 million · up to 20 years</strong>
+          <p>About $148 a year on a home with $300,000 in taxable value at the average millage — about $2,960 over 20 years. The city’s bond analysis estimates about $13.2 million in total debt service.</p>
+        </article>
+        <article class="ballot-choice">
+          <span>County proposal</span>
+          <strong>0.98 mills · 2026–2045</strong>
+          <p>A renewal plus a 0.2468-mill increase. About $294 a year on a $300,000 home, including about $74 from the increase. Estimated first-year revenue: $37.3 million. An organized vote-no campaign exists.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="ballot-detail-grid">
+      <article class="ballot-card">
+        <h3>City parking + pedestrian safety bond</h3>
+        <ul class="ballot-facts">
+          <li><strong>What it would build:</strong> a 240-space public parking deck on Bagley at the high school site; traffic signals at Lake and at Bagley/San Lu Rae; and pedestrian and micromobility safety infrastructure.</li>
+          <li><strong>Ballot name:</strong> “Public Parking Facility and Pedestrian Safety Bond Proposal.” It is not approved; voters decide November 3.</li>
+          <li><strong>Millage:</strong> an estimated 0.5922 mills in the first year and a 0.4925-mill simple average over the life of the bonds — about $49 a year per $100,000 of taxable value.</li>
+          <li><strong>Why a $9 million bond for a $15–18 million deck:</strong> the project is a 50/50 partnership with East Grand Rapids Public Schools, which report $7 million available from prior millages. The bond covers the city’s share; the city sizes the bond after construction bids.</li>
+          <li><strong>Not included in the bond:</strong> about $160,000 a year in ongoing deck maintenance and operations. That would come from the city budget.</li>
+        </ul>
+      </article>
+      <article class="ballot-card">
+        <h3>Kent County jail millage</h3>
+        <p><strong>0.98 mills for 2026–2045</strong> to expand, remodel, equip, operate and maintain Kent County correction and detention facilities, and to pay debt service on them.</p>
+        <p>It renews the existing millage, which would otherwise expire after the 2029 levy, and increases it by 0.2468 mills. Estimated first-year revenue is $37.3 million.</p>
+        <p>An organized vote-no campaign exists at griid.org.</p>
+      </article>
+    </div>
+
+    <div class="ballot-qa">
+      <h3>What residents are asking</h3>
+      <div class="qa-list">
+        <details class="disclosure">
+          <summary><span>Does the city’s own parking study say parking is adequate?</span></summary>
+          <div class="disclosure-body"><p>At a June 2026 work session, the city’s consultants, Progressive Engineering, reported that no part of the system exceeded the 85% occupancy benchmark used to signal tight supply. That is accurate, with an important qualification: the finding uses system-wide averages across on-street and off-street spaces, not peak event nights in Gaslight Village.</p></div>
+        </details>
+        <details class="disclosure">
+          <summary><span>Why should I pay $3,000 for something I’ll never use?</span></summary>
+          <div class="disclosure-body"><p>The 20-year total on a home with $300,000 in taxable value is about $2,960 at the average millage. The math behind the claim checks out; whether the project is worth that cost is the voter’s call.</p></div>
+        </details>
+        <details class="disclosure">
+          <summary><span>What happened to the earlier underground garage plan?</span></summary>
+          <div class="disclosure-body"><span class="status docs">Needs additional documentation</span><p>No public record was found explaining what happened to the prior concept for an underground garage beneath the science building.</p></div>
+        </details>
+        <details class="disclosure">
+          <summary><span>When was pedestrian safety added to the ballot language?</span></summary>
+          <div class="disclosure-body"><p>Pedestrian-safety and micromobility language was introduced with revised ballot language adopted by the commission in August 2026 on a 4–1–2 vote. Some residents have called it a late addition; supporters say it reflects the full project scope.</p></div>
+        </details>
+        <details class="disclosure">
+          <summary><span>Could the Lake/Bagley signal be built without the bond?</span></summary>
+          <div class="disclosure-body"><p>The bond includes a roughly $500,000 placeholder for the signal. Whether the city could or would fund it separately is a commission decision and is not settled in the records.</p></div>
+        </details>
       </div>
     </div>
   </section>
