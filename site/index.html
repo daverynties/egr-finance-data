@@ -82,7 +82,7 @@
     .jumpbar a { text-decoration: none; color: var(--muted); font-size: .86rem; font-weight: 600; }
     .jumpbar a:hover, .jumpbar a:focus { color: var(--navy); }
     .nav-brand { display: flex; flex: 0 0 auto; align-items: center; gap: 10px; }
-    .nav-mark { display: grid; width: 30px; height: 34px; flex: 0 0 auto; place-items: center; color: var(--navy); font-family: Georgia, "Times New Roman", serif; font-size: 2rem; font-weight: 700; line-height: 1; }
+    .nav-mark { display: grid; width: 30px; height: 34px; flex: 0 0 auto; place-items: center; color: var(--navy); font-family: "Source Sans 3", sans-serif; font-size: 2rem; font-weight: 700; line-height: 1; }
     .nav-title { color: var(--ink); font-size: .86rem; font-weight: 700; white-space: nowrap; }
     .nav-links { display: flex; flex-wrap: wrap; align-items: center; gap: 7px 16px; }
     .nav-toggle { display: none; border: 0; background: transparent; padding: 2px 0; align-items: center; justify-content: space-between; font-weight: 700; cursor: pointer; }
@@ -344,7 +344,8 @@
     .test-item span { color: var(--muted); font-size: .9rem; }
     .compact-section { padding: 0; }
     .section-disclosure { background: transparent; }
-    .section-disclosure > summary { position: relative; list-style: none; padding: 34px 58px 34px 0; cursor: pointer; }
+    .section-disclosure > summary { position: relative; list-style: none; padding: 34px 58px 34px 0; cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+    section[id] { scroll-margin-top: 74px; }
     .section-disclosure > summary::-webkit-details-marker { display: none; }
     .section-disclosure > summary::after { content: "+"; position: absolute; right: 4px; top: 50%; transform: translateY(-50%); color: var(--teal); font: 500 1.7rem/1 "IBM Plex Mono", monospace; }
     .section-disclosure[open] > summary::after { content: "−"; }
@@ -1181,15 +1182,28 @@
   themeToggle.addEventListener('click',()=>setTheme(root.dataset.theme==='dark'?'light':'dark'));
   const jumpbar=document.querySelector('.jumpbar'), navToggle=document.getElementById('navToggle'), navLinks=document.getElementById('navLinks');
   function setMenu(open){jumpbar.classList.toggle('menu-open',open);navToggle.setAttribute('aria-expanded',String(open))}
-  navToggle.onclick=()=>setMenu(navToggle.getAttribute('aria-expanded')!=='true');
+  navToggle.addEventListener('click',()=>setMenu(navToggle.getAttribute('aria-expanded')!=='true'));
+  document.querySelectorAll('.section-disclosure > summary').forEach(summary=>summary.addEventListener('click',e=>{
+    e.preventDefault();
+    const disclosure=summary.parentElement;
+    disclosure.open=!disclosure.open;
+  }));
   navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',e=>{
     e.preventDefault();
-    const target=document.querySelector(a.getAttribute('href'));
+    const selector=a.getAttribute('href'), target=document.querySelector(selector);
     if(!target)return;
+    const ownDisclosure=target.querySelector(':scope > details.section-disclosure');
+    if(ownDisclosure)ownDisclosure.open=true;
     let parentDisclosure=target.closest('details');
     while(parentDisclosure){parentDisclosure.open=true;parentDisclosure=parentDisclosure.parentElement.closest('details')}
     if(matchMedia('(max-width: 580px)').matches)setMenu(false);
-    requestAnimationFrame(()=>target.scrollIntoView({behavior:'smooth',block:'start'}));
+    history.replaceState(null,'',selector);
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{
+      const previousScrollBehavior=root.style.scrollBehavior;
+      root.style.scrollBehavior='auto';
+      target.scrollIntoView({block:'start'});
+      root.style.scrollBehavior=previousScrollBehavior;
+    }));
   }));
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&jumpbar.classList.contains('menu-open')){setMenu(false);navToggle.focus()}});
   const money = n => new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
