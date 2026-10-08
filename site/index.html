@@ -469,6 +469,30 @@
     .school-gap { padding: 24px; background: var(--surface); }
     .school-gap strong { display: block; margin-bottom: 7px; color: var(--navy); }
     .school-gap p { margin: 0; color: var(--muted); font-size: .92rem; }
+    .school-payee-table { border-top: 1px solid var(--line); }
+    .school-payee-row { display: grid; grid-template-columns: 42px minmax(220px,1.55fr) .8fr .55fr; gap: 18px; align-items: center; padding: 16px 0; border-bottom: 1px solid var(--line); }
+    .school-payee-amount, .school-payee-count { font: 500 .84rem/1.25 "IBM Plex Mono", monospace; text-align: right; }
+    .school-payee-amount { color: var(--navy); }
+    .school-payee-count { color: var(--muted); }
+    .school-category-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+    .school-category { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 10px 18px; align-items: center; padding: 16px 18px; background: var(--surface); }
+    .school-category strong { font-size: .97rem; }
+    .school-category b { color: var(--navy); font: 500 .82rem/1.2 "IBM Plex Mono", monospace; }
+    .school-category-track { grid-column: 1 / -1; height: 7px; background: var(--surface-2); }
+    .school-category-track i { display: block; width: var(--w); height: 100%; background: var(--teal); }
+    .school-pass-throughs { display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; margin-top: 16px; }
+    .school-pass-through { padding: 20px 22px; background: var(--soft-amber); }
+    .school-pass-through strong { display: block; color: var(--ink); }
+    .school-pass-through p { margin: 6px 0 0; color: var(--muted); font-size: .92rem; }
+    .school-monthly-chart { display: grid; grid-template-columns: repeat(12,minmax(0,1fr)); gap: 8px; align-items: end; min-height: 250px; margin-top: 22px; padding: 18px 18px 12px; background: var(--surface); border: 1px solid var(--line); }
+    .school-month { display: grid; grid-template-rows: auto 160px auto; gap: 7px; align-items: end; min-width: 0; text-align: center; }
+    .school-month b { color: var(--navy); font: 500 .68rem/1.15 "IBM Plex Mono", monospace; }
+    .school-month-bar { display: flex; height: 160px; align-items: end; background: linear-gradient(to top, var(--surface-2) 1px, transparent 1px); background-size: 100% 25%; }
+    .school-month-bar i { display: block; width: 100%; height: var(--h); background: var(--teal); min-height: 2px; }
+    .school-month span { color: var(--muted); font: 500 .7rem/1.2 "IBM Plex Mono", monospace; }
+    .school-method { margin-top: 16px; padding: 22px 24px; background: var(--surface-2); }
+    .school-method ul { margin: 12px 0 0; padding-left: 20px; color: var(--muted); font-size: .9rem; }
+    .school-method li + li { margin-top: 7px; }
     .modal { position: fixed; inset: 0; z-index: 50; display: none; place-items: center; padding: 18px; background: rgba(2,15,24,.72); }
     .modal.open { display: grid; }
     .modal-card { width: min(720px, 100%); max-height: min(84vh, 780px); overflow: auto; background: var(--surface); color: var(--ink); padding: 28px; box-shadow: var(--shadow); border-radius: var(--radius-m); }
@@ -494,6 +518,10 @@
       .vendor-row { grid-template-columns: 32px minmax(0,1fr) auto; }
       .vendor-context { grid-column: 2 / -1; }
       .vendor-change { display: none; }
+      .school-payee-row { grid-template-columns: 32px minmax(0,1fr) auto; }
+      .school-payee-row .vendor-context { grid-column: 2 / -1; }
+      .school-payee-count { display: none; }
+      .school-monthly-chart { grid-template-columns: repeat(6,minmax(0,1fr)); row-gap: 20px; }
     }
     @media (max-width: 580px) {
       .wrap { width: min(100% - 24px, 1160px); }
@@ -515,7 +543,7 @@
       .section-disclosure > summary h2 { font-size: 1.8rem; }
       .section-disclosure > summary .lede { font-size: .95rem; }
       .section-disclosure-body { padding-bottom: 54px; }
-      .insight-grid, .flags-grid, .projects, .method-grid, .about-grid, .context-pair, .health-grid, .watch-grid, .ballot-choices, .school-stat-grid, .school-timeline, .school-gaps { grid-template-columns: 1fr; }
+      .insight-grid, .flags-grid, .projects, .method-grid, .about-grid, .context-pair, .health-grid, .watch-grid, .ballot-choices, .school-stat-grid, .school-timeline, .school-gaps, .school-category-grid, .school-pass-throughs { grid-template-columns: 1fr; }
       .view-tabs .wrap { padding: 8px 0; }
       .view-tab { flex: 1 1 50%; min-width: 0; }
       .school-row { grid-template-columns: 1fr auto; gap: 9px 14px; }
@@ -589,7 +617,7 @@
     </button>
     <div class="nav-links" id="navLinks">
       <a href="#overview" data-tab="city">Overview</a><a href="#taxes" data-tab="city">Taxes</a><a href="#ballot" data-tab="city">Ballot</a><a href="#spending" data-tab="city">Spending</a><a href="#payroll" data-tab="city">Payroll</a><a href="#compare" data-tab="city">Compare</a><a href="#about" data-tab="city">About</a>
-      <a href="#school-overview" data-tab="schools" hidden>Overview</a><a href="#school-snapshot" data-tab="schools" hidden>Audit</a><a href="#school-spending" data-tab="schools" hidden>Spending</a><a href="#school-revenue" data-tab="schools" hidden>Revenue</a><a href="#school-bond" data-tab="schools" hidden>Bond</a><a href="#school-gaps" data-tab="schools" hidden>Gaps</a>
+      <a href="#school-overview" data-tab="schools" hidden>Overview</a><a href="#school-snapshot" data-tab="schools" hidden>Audit</a><a href="#school-spending" data-tab="schools" hidden>Spending</a><a href="#school-revenue" data-tab="schools" hidden>Revenue</a><a href="#school-bond" data-tab="schools" hidden>Bond</a><a href="#school-payees" data-tab="schools" hidden>Payees</a><a href="#school-gaps" data-tab="schools" hidden>Gaps</a>
     </div>
     <span class="freshness">Analysis dated Oct. 8, 2026</span>
     <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
@@ -1115,7 +1143,7 @@
           <div class="health-stat"><span class="eyebrow">Retiree health · OPEB</span><strong>$2,532,173</strong><p>The audited liability for other post-employment benefits, principally retiree health care.</p></div>
         </div>
         <div class="context-pair">
-          <div class="context-note"><strong>Total direct and overlapping debt · $78,020,799</strong><p>This includes the city’s $9.75M plus the East Grand Rapids taxpayer share of other units’ debt: schools $65.78M, Kent County $1.97M and GRCC $0.52M. Those overlapping amounts are borne through the other taxing units, not the city budget.</p></div>
+          <div class="context-note"><strong>Total direct and overlapping debt · $78,020,799</strong><p>This includes the city’s $9.75M plus the East Grand Rapids taxpayer share of other units’ debt: schools $65.78M, Kent County $1.97M and GRCC $0.52M. Those overlapping amounts are borne through the other taxing units, not the city budget.</p><p>As of June 30, 2024, before the district issued Series II of its 2023 bond in January 2026.</p></div>
           <div class="context-note"><strong>Proposed parking bond</strong><p>The $9M proposal is on the November 3, 2026 ballot and is not approved. By arithmetic, its first-year millage would add roughly 1.2% to the total homestead tax rate.</p></div>
         </div>
         <p class="scope-note">Debt, pension and OPEB figures are from the city’s audited FY2024 Annual Comprehensive Financial Report for the year ended June 30, 2024. FY2025 city pension contributions later fell from $1.38M to $1.10M; the audited FY2025 funded status was not part of the supplied report.</p>
@@ -1258,7 +1286,7 @@
       <div class="school-explainer">
         <h2>Why schools are separate</h2>
         <p>A Michigan school district is its own government — not a city department. East Grand Rapids Public Schools has its own elected school board, levies its own property taxes, adopts its own budget, and gets its own independent audit. The city commission has no say over school spending, and the school board has no say over city spending. The funding model is different too: nearly two-thirds of school revenue comes from the state per-pupil formula, while the city runs mostly on local property taxes. That's why this site treats them separately — different books, different government.</p>
-        <span class="school-source">Source for the funding mix: Mackinac Center using Michigan state FID data, FY2024–25 actuals.</span>
+        <span class="school-source">Source for the funding mix: Michigan Department of Education state FID, FY2024–25 actuals.</span>
       </div>
     </section>
 
@@ -1294,7 +1322,7 @@
         </article>
       </div>
       <div class="school-note"><strong>Available cushion.</strong> Unassigned fund balance was $10,002,405 — about 25% of expenditures, versus the school board's 10% minimum policy. <span class="school-source">Source: EGRPS Audited Financial Report, year ended June 30, 2025.</span></div>
-      <div class="school-note"><strong>Enrollment.</strong> The blended funding count was 2,981 students in 2024–25. Enrollment trend not yet pulled — this matters because state funding follows the student. <span class="school-source">Source: EGRPS Audited Financial Report, year ended June 30, 2025.</span></div>
+      <div class="school-note"><strong>Enrollment.</strong> The blended funding count was 2,981 students in 2024–25. This matters because state funding follows the student. <span class="school-source">Source: EGRPS Audited Financial Report, year ended June 30, 2025.</span></div>
 
       <div class="section-head" style="margin-top:52px">
         <h3>Long-term obligations</h3>
@@ -1458,7 +1486,7 @@
           <span class="eyebrow" style="color:#a9d6ea">All-funds revenue · FY2024–25</span>
           <strong>$55.3M</strong>
           <p>Completed-year actuals across operating, debt-service and capital-project funds.</p>
-          <span class="school-source">Source: Mackinac Center using Michigan state FID data, FY2024–25 actuals.</span>
+          <span class="school-source">Source: Michigan Department of Education state FID, FY2024–25 actuals.</span>
         </div>
         <div>
           <div class="school-breakdown">
@@ -1466,16 +1494,16 @@
               <div class="school-row-name"><strong>State revenue</strong><span>Foundation allowance plus categorical funding.</span></div>
               <div class="school-row-track"><i style="--w:63%"></i></div>
               <div class="school-row-value">$34.9M · 63.0%</div>
-              <span class="school-source">Source: Mackinac Center / Michigan state FID data, FY2024–25 actuals.</span>
+              <span class="school-source">Source: Michigan Department of Education state FID, FY2024–25 actuals.</span>
             </div>
             <div class="school-row">
               <div class="school-row-name"><strong>Local revenue</strong><span>Property taxes.</span></div>
               <div class="school-row-track"><i style="--w:36.1%"></i></div>
               <div class="school-row-value">$20.0M · 36.1%</div>
-              <span class="school-source">Source: Mackinac Center / Michigan state FID data, FY2024–25 actuals.</span>
+              <span class="school-source">Source: Michigan Department of Education state FID, FY2024–25 actuals.</span>
             </div>
           </div>
-          <div class="school-note"><strong>Why $55.3M is higher than audited General Fund revenue of $43.67M.</strong> The all-funds figure also includes debt-service and capital-project funds. Both figures are completed-year FY2024–25 actuals, but they cover different sets of accounts. <span class="school-source">Sources: Mackinac Center / Michigan state FID data for all-funds actuals; EGRPS FY2025 audited financial report for General Fund revenue.</span></div>
+          <div class="school-note"><strong>Why $55.3M is higher than audited General Fund revenue of $43.67M.</strong> The all-funds figure also includes debt-service and capital-project funds. Both figures are completed-year FY2024–25 actuals, but they cover different sets of accounts. <span class="school-source">Sources: Michigan Department of Education state FID for all-funds actuals; EGRPS FY2025 audited financial report for General Fund revenue.</span></div>
         </div>
       </div>
     </section>
@@ -1526,19 +1554,114 @@
       <div class="school-note"><strong>Bonded debt update.</strong> The district had $98.5M outstanding at June 30, 2026, excluding the two remaining series. Debt millage stays at 9.95 mills. District taxable value rose 6.5% to $1.167B in 2026. <span class="school-source">Source: EGRPS FY2026 debt schedule and 2026 taxable-value records.</span></div>
     </section>
 
+    <section class="section wrap" id="school-payees">
+      <div class="section-head">
+        <h2>FY2025 checks from East Grand Rapids Public Schools totaled $17.8 million.</h2>
+        <p class="lede">Payroll and most benefits are paid outside the check register, so checks are not total spending. The district's General Fund spending was $40.0M in FY2025.</p>
+      </div>
+
+      <details open class="disclosure disclosure-wide">
+        <summary><span>Who the schools pay</span><small>Top 10 payees · Jul 2024–Jun 2025</small></summary>
+        <div class="disclosure-body">
+          <div class="vendor-head"><div class="eyebrow">Top payees · FY2025 check dates</div><div class="eyebrow">81.3% of all school checks</div></div>
+          <div class="school-payee-table" aria-label="Top ten East Grand Rapids Public Schools payees in FY2025">
+            <div class="school-payee-row"><div class="vendor-rank">01</div><div><div class="vendor-name">Owen-Ames-Kimball</div><div class="vendor-context">Bond construction manager</div></div><div class="school-payee-amount">$5.54M</div><div class="school-payee-count">18 payments</div></div>
+            <div class="school-payee-row"><div class="vendor-rank">02</div><div><div class="vendor-name">MESSA</div><div class="vendor-context">Employee health insurance</div></div><div class="school-payee-amount">$3.19M</div><div class="school-payee-count">12 payments</div></div>
+            <div class="school-payee-row"><div class="vendor-rank">03</div><div><div class="vendor-name">Pure Architects</div><div class="vendor-context">Bond architect</div></div><div class="school-payee-amount">$2.61M</div><div class="school-payee-count">21 payments</div></div>
+            <div class="school-payee-row"><div class="vendor-rank">04</div><div><div class="vendor-name">ESS Midwest</div><div class="vendor-context">Substitute teachers</div></div><div class="school-payee-amount">$1.10M</div><div class="school-payee-count">31 payments</div></div>
+            <div class="school-payee-row"><div class="vendor-rank">05</div><div><div class="vendor-name">Consumers Energy</div><div class="vendor-context">Utility service</div></div><div class="school-payee-amount">$0.76M</div><div class="school-payee-count">28 payments</div></div>
+            <div class="school-payee-row"><div class="vendor-rank">06</div><div><div class="vendor-name">Kent ISD</div><div class="vendor-context">Intermediate school district</div></div><div class="school-payee-amount">$0.39M</div><div class="school-payee-count">20 payments</div></div>
+            <div class="school-payee-row"><div class="vendor-rank">07</div><div><div class="vendor-name">Hire Quest</div><div class="vendor-context">Temporary staffing</div></div><div class="school-payee-amount">$0.27M</div><div class="school-payee-count">31 payments</div></div>
+            <div class="school-payee-row"><div class="vendor-rank">08</div><div><div class="vendor-name">Dean Transportation</div><div class="vendor-context">Student transportation</div></div><div class="school-payee-amount">$0.23M</div><div class="school-payee-count">43 payments</div></div>
+            <div class="school-payee-row"><div class="vendor-rank">09</div><div><div class="vendor-name">West Michigan Risk Management Trust</div><div class="vendor-context">Insurance pool</div></div><div class="school-payee-amount">$0.23M</div><div class="school-payee-count">6 payments</div></div>
+            <div class="school-payee-row"><div class="vendor-rank">10</div><div><div class="vendor-name">Mercedes-Benz Van Center</div><div class="vendor-context">Vehicles</div></div><div class="school-payee-amount">$0.17M</div><div class="school-payee-count">3 payments</div></div>
+          </div>
+          <p class="scope-note">The top 10 received $14.49M of the $17.83M check total. These descriptions classify the payees; they do not assign a purpose to any individual purchase.</p>
+          <span class="school-source">Source: EGRPS monthly Accounts Payable reports, FY2025; compiled check-register analysis.</span>
+        </div>
+      </details>
+
+      <div class="school-subsection">
+        <div class="school-subsection-head">
+          <h3>What the checks covered</h3>
+          <p>Categories reflect the payee and fund recorded in the district's Accounts Payable reports. Bond construction and employee benefits together account for nearly two-thirds of checks.</p>
+        </div>
+        <div class="school-category-grid" aria-label="FY2025 school check categories">
+          <div class="school-category"><strong>Bond construction</strong><b>45.9%</b><div class="school-category-track"><i style="--w:45.9%"></i></div></div>
+          <div class="school-category"><strong>Employee benefits</strong><b>18.4%</b><div class="school-category-track"><i style="--w:18.4%"></i></div></div>
+          <div class="school-category"><strong>Substitute and temporary staffing</strong><b>7.7%</b><div class="school-category-track"><i style="--w:7.7%"></i></div></div>
+          <div class="school-category"><strong>Individuals, anonymized</strong><b>7.6%</b><div class="school-category-track"><i style="--w:7.6%"></i></div></div>
+          <div class="school-category"><strong>Utilities</strong><b>5.6%</b><div class="school-category-track"><i style="--w:5.6%"></i></div></div>
+          <div class="school-category"><strong>Other school districts and ISDs</strong><b>2.9%</b><div class="school-category-track"><i style="--w:2.9%"></i></div></div>
+          <div class="school-category"><strong>Technology</strong><b>2.6%</b><div class="school-category-track"><i style="--w:2.6%"></i></div></div>
+          <div class="school-category"><strong>Vehicles</strong><b>1.3%</b><div class="school-category-track"><i style="--w:1.3%"></i></div></div>
+          <div class="school-category"><strong>Transportation</strong><b>1.3%</b><div class="school-category-track"><i style="--w:1.3%"></i></div></div>
+          <div class="school-category"><strong>Insurance</strong><b>1.3%</b><div class="school-category-track"><i style="--w:1.3%"></i></div></div>
+          <div class="school-category"><strong>Food service</strong><b>1.0%</b><div class="school-category-track"><i style="--w:1%"></i></div></div>
+          <div class="school-category"><strong>Student activity pass-through</strong><b>0.8%</b><div class="school-category-track"><i style="--w:.8%"></i></div></div>
+          <div class="school-category"><strong>City services and joint facilities</strong><b>0.7%</b><div class="school-category-track"><i style="--w:.7%"></i></div></div>
+          <div class="school-category"><strong>Payroll pass-through</strong><b>0.5%</b><div class="school-category-track"><i style="--w:.5%"></i></div></div>
+          <div class="school-category"><strong>Athletics officials</strong><b>0.4%</b><div class="school-category-track"><i style="--w:.4%"></i></div></div>
+          <div class="school-category"><strong>Equipment leases</strong><b>0.3%</b><div class="school-category-track"><i style="--w:.3%"></i></div></div>
+          <div class="school-category"><strong>Uncategorized in the source analysis</strong><b>1.7%</b><div class="school-category-track"><i style="--w:1.7%"></i></div></div>
+        </div>
+        <span class="school-source">Source: EGRPS monthly Accounts Payable reports, FY2025; categories total $17,825,511.40.</span>
+        <div class="school-pass-throughs">
+          <div class="school-pass-through"><strong>Payroll withholdings · not district spending</strong><p>Income tax, state disbursement unit, union dues and charitable giving pass through the check register after being withheld.</p></div>
+          <div class="school-pass-through"><strong>Student-funded items · not district spending</strong><p>Fund 29 items include AP exam fees, class trips and other activity funded by students or families.</p></div>
+        </div>
+      </div>
+
+      <div class="school-subsection">
+        <div class="school-subsection-head">
+          <h3>Bond construction checks by month</h3>
+          <p>Fund 47 checks totaled $8.18M in FY2025, against the $158.9M bond authorization; Series I was $10.5M and Series II $48.6M.</p>
+        </div>
+        <div class="school-monthly-chart" role="img" aria-label="Monthly Fund 47 checks: July 781,773 dollars; August 613,009; September 794,416; October 1,053,328; November 176,022; December 475,420; January 843,334; February 929,742; March 627,224; April 580,723; May 558,862; June 749,338">
+          <div class="school-month"><b>$0.78M</b><div class="school-month-bar"><i style="--h:74.2%"></i></div><span>Jul</span></div>
+          <div class="school-month"><b>$0.61M</b><div class="school-month-bar"><i style="--h:58.2%"></i></div><span>Aug</span></div>
+          <div class="school-month"><b>$0.79M</b><div class="school-month-bar"><i style="--h:75.4%"></i></div><span>Sep</span></div>
+          <div class="school-month"><b>$1.05M</b><div class="school-month-bar"><i style="--h:100%"></i></div><span>Oct</span></div>
+          <div class="school-month"><b>$0.18M</b><div class="school-month-bar"><i style="--h:16.7%"></i></div><span>Nov</span></div>
+          <div class="school-month"><b>$0.48M</b><div class="school-month-bar"><i style="--h:45.1%"></i></div><span>Dec</span></div>
+          <div class="school-month"><b>$0.84M</b><div class="school-month-bar"><i style="--h:80.1%"></i></div><span>Jan</span></div>
+          <div class="school-month"><b>$0.93M</b><div class="school-month-bar"><i style="--h:88.3%"></i></div><span>Feb</span></div>
+          <div class="school-month"><b>$0.63M</b><div class="school-month-bar"><i style="--h:59.5%"></i></div><span>Mar</span></div>
+          <div class="school-month"><b>$0.58M</b><div class="school-month-bar"><i style="--h:55.1%"></i></div><span>Apr</span></div>
+          <div class="school-month"><b>$0.56M</b><div class="school-month-bar"><i style="--h:53.1%"></i></div><span>May</span></div>
+          <div class="school-month"><b>$0.75M</b><div class="school-month-bar"><i style="--h:71.1%"></i></div><span>Jun</span></div>
+        </div>
+        <span class="school-source">Source: EGRPS monthly Accounts Payable reports, Fund 47, July 2024–June 2025. Exact total: $8,183,192.05.</span>
+      </div>
+
+      <div class="school-note"><strong>City and schools, side by side.</strong> The city's FY2025 checks totaled $17.5M; the schools' $17.8M. Shown for context only. The two governments have different responsibilities, funds and payment systems.</div>
+      <div class="school-method">
+        <strong>How the check data was compiled</strong>
+        <ul>
+          <li>Source: the district's monthly Accounts Payable reports on the <a href="https://www.egrps.org/district-information/departments/finance" target="_blank" rel="noopener">EGRPS transparency page</a>.</li>
+          <li>July–November 2024 used the “Transaction Detail Register” format; December 2024–June 2025 used “Checks Issued.”</li>
+          <li>Payments under $1,000 were aggregated for July–November 2024.</li>
+          <li>Check numbers were verified as continuous across all 12 months.</li>
+          <li>Private individuals were anonymized.</li>
+          <li>1,214 payments totaled $17,825,511.40.</li>
+        </ul>
+        <div class="source-links"><a class="button primary" href="https://raw.githubusercontent.com/daverynties/egr-finance-data/main/analysis/egrps_ap_fy2025.csv" target="_blank" rel="noopener" download>Download the full FY2025 CSV ↗</a></div>
+      </div>
+    </section>
+
     <section class="section wrap" id="school-gaps">
       <div class="section-head">
         <h2>What the records don't show yet.</h2>
         <p class="lede">These gaps are not zeroes. They are items that need additional public records before they can be reported accurately.</p>
       </div>
       <div class="school-gaps">
-        <article class="school-gap"><strong>Bond spending to date</strong><p>Project spending against the approved $158.9M bond was not found in the records reviewed.</p></article>
+        <article class="school-gap"><strong>Full bond reconciliation</strong><p>The check register shows $8.18M in FY2025 Fund 47 payments, but a project-level reconciliation against the full $158.9M authorization was not found in the records reviewed.</p></article>
         <article class="school-gap"><strong>Staffing trend</strong><p>About 359 employees now versus 286 in 2018–19 needs a definition check — FTE versus headcount — before publishing.</p></article>
         <article class="school-gap"><strong>Local revenue detail</strong><p>The split by millage type was not available in the reviewed data.</p></article>
       </div>
       <div class="source-links" aria-label="School finance sources">
         <a class="button primary" href="https://www.egrps.org/district-information/departments/finance" target="_blank" rel="noopener">EGRPS finance page ↗</a>
-        <span class="button" aria-label="Source: Mackinac Center using Michigan state FID data">Mackinac Center · Michigan state FID data</span>
+        <span class="button" aria-label="Source: Michigan Department of Education state FID">Michigan Department of Education · state FID</span>
       </div>
     </section>
   </div>
