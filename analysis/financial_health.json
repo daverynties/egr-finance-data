@@ -1,89 +1,129 @@
 {
-  "as_of": "FY2025 audited (year ended 6/30/2025) unless noted",
-  "method": "Figures extracted from the city's audited ACFR (FY2025, via Nov 25, 2025 commission packet), the adopted FY2025-26 budget, and computed GL totals. Every number is labeled with its source; figures not found in the notes are marked 'needs additional documentation', not estimated.",
-  "general_fund_balance": {
-    "fy2025": {
-      "amount": 7281401,
-      "source": "ACFR FY2025 via Nov 25, 2025 commission packet (Finance Director memo)"
-    },
-    "fy2024": {
-      "amount": 6743882,
-      "source": "Derived: $7,281,401 minus the $537,519 FY2025 increase reported in the Finance Director memo"
-    },
-    "change_fy2025": {
-      "amount": 537519,
-      "source": "Finance Director memo to commission, Nov 25, 2025 packet"
-    },
-    "as_pct_of_gf_expenditures_fy2025": {
-      "value": 53.3,
-      "source": "Computed: $7,281,401 / $13,674,334 GF operating expenditures (GL)"
-    },
-    "benchmark_note": "Typical municipal benchmark is ~25% (two months of spending); EGR at ~53% is well above it. Source: findings-memo.md."
+ "as_of": "FY2025 audited (year ended 6/30/2025) unless noted",
+ "method": "Figures extracted from the city's audited ACFR (FY2025, via Nov 25, 2025 commission packet), the adopted FY2025-26 budget, and computed GL totals. Every number is labeled with its source; figures not found in the notes are marked 'needs additional documentation', not estimated.",
+ "general_fund_balance": {
+  "fy2025": {
+   "amount": 7281401,
+   "source": "ACFR FY2025 via Nov 25, 2025 commission packet (Finance Director memo)"
   },
-  "debt": {
-    "total_outstanding_debt": "needs additional documentation",
-    "annual_debt_service_paid": {
-      "fy2024": {
-        "amount": 947500,
-        "source": "GL actuals (debt-service accounts, dept 905)"
-      },
-      "fy2025": {
-        "amount": 1005485,
-        "source": "GL actuals (debt-service accounts, dept 905)"
-      }
-    },
-    "recent_bond_sales": [
-      {
-        "amount": 5180000,
-        "date": "April 2022",
-        "source": "Adopted FY2025-26 budget"
-      },
-      {
-        "amount": 1735000,
-        "date": "February 2025",
-        "source": "Adopted FY2025-26 budget; matches $1,735,000 bond proceeds on 372-000-6980.00 in FY2025 GL"
-      }
-    ],
-    "proposed_parking_bond": {
-      "amount": 9000000,
-      "status": "On Nov 3, 2026 ballot \u2014 NOT approved",
-      "first_year_millage": 0.5922,
-      "average_millage": 0.4925,
-      "source": "Official special-meeting minutes (resolutions 2026-147/147-A); commissioner's secondary write-up for ballot text"
-    },
-    "note": "Outstanding principal by issue and the full debt-service schedule were not in the research notes."
+  "fy2024": {
+   "amount": 6743882,
+   "source": "Derived: $7,281,401 minus the $537,519 FY2025 increase reported in the Finance Director memo"
   },
-  "pension": {
-    "db_pension_contribution": {
-      "fy2024": {
-        "amount": 1380000,
-        "source": "findings-memo.md (GL)"
-      },
-      "fy2025": {
-        "amount": 1100000,
-        "source": "findings-memo.md (GL)"
-      },
-      "note": "Why the contribution fell is not in the files \u2014 needs actuarial data."
-    },
-    "net_pension_liability": "needs additional documentation",
-    "funded_status": "needs additional documentation",
-    "note": "The pension trust fund (731) exists in the GL with $1.68M FY2025 benefit payments, but the ACFR's net pension liability and funded ratio were not captured in the research notes."
+  "change_fy2025": {
+   "amount": 537519,
+   "source": "Finance Director memo to commission, Nov 25, 2025 packet"
   },
-  "opeb": {
-    "opeb_trust_spending_fy2025": {
-      "amount": 432368,
-      "source": "GL actuals (fund 736)"
-    },
-    "net_opeb_liability": "needs additional documentation",
-    "note": "OPEB medical claims tripled ($59,967 -> $187,942); cause not in the files."
+  "as_pct_of_gf_expenditures_fy2025": {
+   "value": 53.3,
+   "source": "Computed: $7,281,401 / $13,674,334 GF operating expenditures (GL)"
   },
-  "budget_context": {
-    "adopted_fy2025_26_all_funds_budget": {
-      "revenues": 33810970,
-      "expenditures": 37669310,
-      "gf_revenues": 14974010,
-      "gf_expenditures": 15523170,
-      "source": "Adopted Budget FY 2025-2026 (official)"
-    }
+  "benchmark_note": "Typical municipal benchmark is ~25% (two months of spending); EGR at ~53% is well above it. Source: findings-memo.md."
+ },
+ "debt": {
+  "total_outstanding_debt": {
+   "as_of": "6/30/2024",
+   "governmental_activities_debt": 9746938,
+   "prior_year": 10483247,
+   "debt_per_capita": 852,
+   "debt_as_pct_of_sev": 0.81,
+   "population": 11441,
+   "source": "City of East Grand Rapids FY2024 ACFR (year ended 6/30/2024), eastgrmi.gov/ArchiveCenter/ViewFile/Item/1539 (Ratios of Outstanding Debt by Type; Ratios of General Bonded Debt Outstanding)"
+  },
+  "annual_debt_service_paid": {
+   "fy2024": {
+    "amount": 947500,
+    "source": "GL actuals (debt-service accounts, dept 905)"
+   },
+   "fy2025": {
+    "amount": 1005485,
+    "source": "GL actuals (debt-service accounts, dept 905)"
+   }
+  },
+  "recent_bond_sales": [
+   {
+    "amount": 5180000,
+    "date": "April 2022",
+    "source": "Adopted FY2025-26 budget"
+   },
+   {
+    "amount": 1735000,
+    "date": "February 2025",
+    "source": "Adopted FY2025-26 budget; matches $1,735,000 bond proceeds on 372-000-6980.00 in FY2025 GL"
+   }
+  ],
+  "proposed_parking_bond": {
+   "amount": 9000000,
+   "status": "On Nov 3, 2026 ballot \u2014 NOT approved",
+   "first_year_millage": 0.5922,
+   "average_millage": 0.4925,
+   "source": "Official special-meeting minutes (resolutions 2026-147/147-A); commissioner's secondary write-up for ballot text"
+  },
+  "note": "Outstanding principal by issue and the full debt-service schedule were not in the research notes.",
+  "direct_and_overlapping_debt": {
+   "as_of": "6/30/2024",
+   "city_direct": 9746938,
+   "overlapping_school_district_share": 65777568,
+   "overlapping_kent_county_share": 1971525,
+   "overlapping_grcc_share": 524768,
+   "total_direct_and_overlapping": 78020799,
+   "note": "Overlapping debt is borne by EGR property taxpayers via other taxing units, not the city budget.",
+   "source": "City of East Grand Rapids FY2024 ACFR (year ended 6/30/2024), eastgrmi.gov/ArchiveCenter/ViewFile/Item/1539 (Direct and Overlapping Governmental Activities Debt)"
   }
+ },
+ "pension": {
+  "db_pension_contribution": {
+   "fy2024": {
+    "amount": 1380000,
+    "source": "findings-memo.md (GL)"
+   },
+   "fy2025": {
+    "amount": 1100000,
+    "source": "findings-memo.md (GL)"
+   },
+   "note": "Why the contribution fell is not in the files \u2014 needs actuarial data."
+  },
+  "net_pension_liability": {
+   "as_of": "6/30/2024",
+   "amount": 8474514,
+   "total_pension_liability": 20771767,
+   "fiduciary_net_position": 12297253,
+   "change_during_fy2024": -3365691,
+   "source": "City of East Grand Rapids FY2024 ACFR (year ended 6/30/2024), eastgrmi.gov/ArchiveCenter/ViewFile/Item/1539 (Notes to Financial Statements; MD&A)"
+  },
+  "funded_status": {
+   "as_of": "6/30/2024",
+   "funded_ratio_pct": 59.2,
+   "note": "Plan closed to new entrants. City received a one-time $1.9M state grant in FY24 for municipalities under 60% funded (adopted FY2025-26 budget).",
+   "source": "City of East Grand Rapids FY2024 ACFR (year ended 6/30/2024), eastgrmi.gov/ArchiveCenter/ViewFile/Item/1539; adopted FY2025-26 budget (eastgrmi.gov/ArchiveCenter/ViewFile/Item/1648)"
+  },
+  "note": "Net pension liability and funded ratio now verified from the FY2024 ACFR. Why the FY2025 cash contribution fell ($1.38M -> $1.1M) still needs actuarial data."
+ },
+ "opeb": {
+  "opeb_trust_spending_fy2025": {
+   "amount": 432368,
+   "source": "GL actuals (fund 736)"
+  },
+  "net_opeb_liability": {
+   "as_of": "6/30/2024",
+   "amount": 2532173,
+   "source": "City of East Grand Rapids FY2024 ACFR (year ended 6/30/2024), eastgrmi.gov/ArchiveCenter/ViewFile/Item/1539 (MD&A: long-term liabilities)"
+  },
+  "note": "OPEB medical claims tripled ($59,967 -> $187,942); cause not in the files."
+ },
+ "budget_context": {
+  "adopted_fy2025_26_all_funds_budget": {
+   "revenues": 33810970,
+   "expenditures": 37669310,
+   "gf_revenues": 14974010,
+   "gf_expenditures": 15523170,
+   "source": "Adopted Budget FY 2025-2026 (official)"
+  }
+ },
+ "total_long_term_liabilities": {
+  "as_of": "6/30/2024",
+  "amount": 20753625,
+  "components": "governmental debt $9,746,938; net pension liability $8,474,514; OPEB liability $2,532,173",
+  "source": "City of East Grand Rapids FY2024 ACFR (year ended 6/30/2024), eastgrmi.gov/ArchiveCenter/ViewFile/Item/1539 (MD&A)"
+ }
 }
