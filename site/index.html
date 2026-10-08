@@ -299,6 +299,18 @@
     .project .project-amount { margin: 16px 0 8px; color: var(--navy); font-size: 1.7rem; font-weight: 650; line-height: 1.05; }
     .project p { color: var(--muted); font-size: .9rem; }
     .project .button { margin-top: auto; align-self: flex-start; }
+    .development-tracker { border-top: 1px solid var(--line); }
+    .development-row { padding: 25px 0; border-bottom: 1px solid var(--line); }
+    .development-heading { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 22px; align-items: start; }
+    .development-heading h3 { color: var(--navy); font-size: 1.3rem; }
+    .development-location { margin: 6px 0 0; color: var(--muted); font-size: .9rem; }
+    .development-location strong { color: var(--ink); }
+    .development-facts { display: grid; grid-template-columns: 1.05fr 1.25fr 1fr; gap: 1px; margin-top: 17px; background: var(--line); border: 1px solid var(--line); }
+    .development-fact { min-width: 0; padding: 16px 18px; background: var(--surface); }
+    .development-fact span { display: block; margin-bottom: 5px; color: var(--muted); font: 500 .68rem/1.2 "IBM Plex Mono", monospace; letter-spacing: .04em; text-transform: uppercase; }
+    .development-fact strong { display: block; font-size: .93rem; line-height: 1.4; }
+    .development-source { margin: 11px 0 0; color: var(--muted); font: 500 .72rem/1.45 "IBM Plex Mono", monospace; }
+    .development-source a { color: inherit; }
     .tax-shell { display: grid; grid-template-columns: .72fr 1.28fr; background: var(--surface); border: 1px solid var(--line); }
     .tax-input { padding: 32px; background: var(--panel); color: #fff; }
     .tax-input label { display: block; margin-top: 28px; color: #d8e8ef; }
@@ -384,6 +396,10 @@
     .method-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; }
     .method-card { padding: 24px; background: var(--surface); border: 1px solid var(--line); }
     .method-card p, .method-card li { color: var(--muted); font-size: .92rem; }
+    .changelog-list { border-top: 1px solid var(--line); }
+    .changelog-entry { display: grid; grid-template-columns: 130px 1fr; gap: 24px; padding: 15px 0; border-bottom: 1px solid var(--line); }
+    .changelog-entry time { color: var(--navy); font: 500 .76rem/1.45 "IBM Plex Mono", monospace; }
+    .changelog-entry p { margin: 0; color: var(--muted); font-size: .93rem; }
     .about-attribution { margin-bottom: 14px; padding: 20px 24px; background: var(--soft-blue); color: var(--ink); }
     .about-attribution p { max-width: 86ch; margin: 0; font-weight: 600; }
     .about-lead { padding: clamp(24px,4vw,38px); background: var(--panel); color: #fff; }
@@ -543,7 +559,10 @@
       .section-disclosure > summary h2 { font-size: 1.8rem; }
       .section-disclosure > summary .lede { font-size: .95rem; }
       .section-disclosure-body { padding-bottom: 54px; }
-      .insight-grid, .flags-grid, .projects, .method-grid, .about-grid, .context-pair, .health-grid, .watch-grid, .ballot-choices, .school-stat-grid, .school-timeline, .school-gaps, .school-category-grid, .school-pass-throughs { grid-template-columns: 1fr; }
+      .insight-grid, .flags-grid, .projects, .method-grid, .about-grid, .context-pair, .health-grid, .watch-grid, .ballot-choices, .school-stat-grid, .school-timeline, .school-gaps, .school-category-grid, .school-pass-throughs, .development-facts { grid-template-columns: 1fr; }
+      .development-heading { grid-template-columns: 1fr; gap: 12px; }
+      .development-heading .status { justify-self: start; }
+      .changelog-entry { grid-template-columns: 1fr; gap: 5px; }
       .view-tabs .wrap { padding: 8px 0; }
       .view-tab { flex: 1 1 50%; min-width: 0; }
       .school-row { grid-template-columns: 1fr auto; gap: 9px 14px; }
@@ -603,8 +622,6 @@
       *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
     }
   </style>
-<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
-<script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
@@ -618,7 +635,7 @@
       <span>Sections</span><span class="nav-toggle-icon" aria-hidden="true"></span>
     </button>
     <div class="nav-links" id="navLinks">
-      <a href="#overview" data-tab="city">Overview</a><a href="#taxes" data-tab="city">Taxes</a><a href="#ballot" data-tab="city">Ballot</a><a href="#spending" data-tab="city">Spending</a><a href="#payroll" data-tab="city">Payroll</a><a href="#compare" data-tab="city">Compare</a><a href="#about" data-tab="city">About</a>
+      <a href="#overview" data-tab="city">Overview</a><a href="#taxes" data-tab="city">Taxes</a><a href="#ballot" data-tab="city">Ballot</a><a href="#spending" data-tab="city">Spending</a><a href="#payroll" data-tab="city">Payroll</a><a href="#compare" data-tab="city">Compare</a><a href="#development" data-tab="city">Development</a><a href="#about" data-tab="city">About</a>
       <a href="#school-overview" data-tab="schools" hidden>Overview</a><a href="#school-snapshot" data-tab="schools" hidden>Audit</a><a href="#school-spending" data-tab="schools" hidden>Spending</a><a href="#school-revenue" data-tab="schools" hidden>Revenue</a><a href="#school-bond" data-tab="schools" hidden>Bond</a><a href="#school-payees" data-tab="schools" hidden>Payees</a><a href="#school-gaps" data-tab="schools" hidden>Gaps</a>
     </div>
     <span class="freshness">Analysis dated Oct. 8, 2026</span>
@@ -1113,6 +1130,100 @@
     </details>
   </section>
 
+  <section class="section wrap compact-section" id="development">
+    <details open class="section-disclosure">
+      <summary>
+        <div class="section-head">
+          <h2>Development tracker.</h2>
+          <p class="lede">Major public construction projects in East Grand Rapids, with costs and funding sources. Updated as projects advance.</p>
+        </div>
+      </summary>
+      <div class="section-disclosure-body">
+        <div class="development-tracker" aria-label="Active public development projects">
+          <article class="development-row">
+            <div class="development-heading">
+              <div>
+                <h3>City parking deck + pedestrian safety</h3>
+                <p class="development-location"><strong>Location:</strong> Bagley site at East Grand Rapids High School</p>
+              </div>
+              <span class="status docs">Awaiting voter approval</span>
+            </div>
+            <div class="development-facts">
+              <div class="development-fact"><span>Cost</span><strong>Up to $9M city bond; city share of a $15M–$18M total project</strong></div>
+              <div class="development-fact"><span>Funding source</span><strong>Proposed November 3, 2026 city bond; not yet approved</strong></div>
+              <div class="development-fact"><span>Timeline</span><strong>If approved, construction timing is not yet published</strong></div>
+            </div>
+            <p class="development-source">Source: <a href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/953?html=true" target="_blank" rel="noopener">East Grand Rapids City Commission bond-resolution materials ↗</a></p>
+          </article>
+
+          <article class="development-row">
+            <div class="development-heading">
+              <div>
+                <h3>East Grand Rapids High School transformation</h3>
+                <p class="development-location"><strong>Location:</strong> East Grand Rapids High School</p>
+              </div>
+              <span class="status">Under construction</span>
+            </div>
+            <div class="development-facts">
+              <div class="development-fact"><span>Cost</span><strong>About $118M in bond-funded work</strong></div>
+              <div class="development-fact"><span>Funding source</span><strong>2023 school bond: $158.9M authorized; Series I $10.515M outstanding at the FY2025 audit date and Series II $48.575M issued in FY2026</strong></div>
+              <div class="development-fact"><span>Timeline</span><strong>Groundbreaking summer 2026; phase 1 opens fall 2028; phase 2 opens in 2030</strong></div>
+            </div>
+            <p class="development-source">Sources: EGRPS public bond materials and project timeline; EGRPS FY2025 audited financial report; EGRPS FY2026 debt schedule.</p>
+          </article>
+
+          <article class="development-row">
+            <div class="development-heading">
+              <div>
+                <h3>Woodcliff Early Childhood Center + district projects</h3>
+                <p class="development-location"><strong>Locations:</strong> Woodcliff Early Childhood Center, Memorial Field and other district buildings</p>
+              </div>
+              <span class="status">Underway</span>
+            </div>
+            <div class="development-facts">
+              <div class="development-fact"><span>Cost</span><strong>About $40M for district facilities outside the high school transformation</strong></div>
+              <div class="development-fact"><span>Funding source</span><strong>2023 school bond</strong></div>
+              <div class="development-fact"><span>Timeline</span><strong>Work is underway; completion dates were not separately published in the supplied records</strong></div>
+            </div>
+            <p class="development-source">Source: EGRPS public bond materials. Scope includes five new early-childhood classrooms, Memorial Field and other district buildings.</p>
+          </article>
+
+          <article class="development-row">
+            <div class="development-heading">
+              <div>
+                <h3>Manhattan Park improvements</h3>
+                <p class="development-location"><strong>Location:</strong> Manhattan Park</p>
+              </div>
+              <span class="status">Active</span>
+            </div>
+            <div class="development-facts">
+              <div class="development-fact"><span>Cost</span><strong>$3.18M program figure; $3.02M recorded in FY2024 and FY2025 GL activity</strong></div>
+              <div class="development-fact"><span>Funding source</span><strong>City capital budget, funded through the 2021 Parks Improvement Millage</strong></div>
+              <div class="development-fact"><span>Timeline</span><strong>Construction ramped up in FY2025; a completion date was not verified in the supplied records</strong></div>
+            </div>
+            <p class="development-source">Sources: <a href="https://www.eastgrmi.gov/ArchiveCenter/ViewFile/Item/1648" target="_blank" rel="noopener">FY2025–26 city budget ↗</a>; FY2024 and FY2025 FOIA GL activity.</p>
+          </article>
+
+          <article class="development-row">
+            <div class="development-heading">
+              <div>
+                <h3>City building upgrades</h3>
+                <p class="development-location"><strong>Locations:</strong> Department of Public Works, library and other city buildings</p>
+              </div>
+              <span class="status">Accelerated in FY2025</span>
+            </div>
+            <div class="development-facts">
+              <div class="development-fact"><span>Cost</span><strong>$843K in FY2025 building capital-project activity</strong></div>
+              <div class="development-fact"><span>Funding source</span><strong>City capital budget</strong></div>
+              <div class="development-fact"><span>Timeline</span><strong>FY2025 work included a DPW salt-storage building, HVAC replacements, flooring and a library study room</strong></div>
+            </div>
+            <p class="development-source">Source: FY2025 FOIA GL activity and city chart of accounts. Examples include a $96,394 salt-building deposit, $109,118 in flooring replacements and a $56,285 library study-room payment.</p>
+          </article>
+        </div>
+      </div>
+    </details>
+  </section>
+
   <section class="section wrap compact-section" id="health">
     <details open class="section-disclosure">
       <summary>
@@ -1214,6 +1325,28 @@
         </div>
       </div>
     </details>
+      </div>
+    </details>
+  </section>
+
+  <section class="section wrap compact-section" id="changelog">
+    <details open class="section-disclosure">
+      <summary>
+        <div class="section-head">
+          <h2>Changelog.</h2>
+          <p class="lede">Recent additions and corrections to the public record.</p>
+        </div>
+      </summary>
+      <div class="section-disclosure-body">
+        <div class="changelog-list">
+          <div class="changelog-entry"><time datetime="2026-10-08">Oct. 8, 2026</time><p>Added Development Tracker — city and school construction projects in one view.</p></div>
+          <div class="changelog-entry"><time datetime="2026-10-08">Oct. 8, 2026</time><p>Added “Who the schools pay” — FY2025 school vendor data covering 1,214 checks and $17.8M, the top 10 payees, and a bond construction chart.</p></div>
+          <div class="changelog-entry"><time datetime="2026-10-08">Oct. 8, 2026</time><p>Added the Schools tab with audited FY2025 district figures, peer comparisons, test scores, and the $98.5M bond update.</p></div>
+          <div class="changelog-entry"><time datetime="2026-10-08">Oct. 8, 2026</time><p>Rebalanced the ballot section — removed a one-sided campaign link, added supporter questions, and stated the parking-study findings in plain facts.</p></div>
+          <div class="changelog-entry"><time datetime="2026-10-08">Oct. 8, 2026</time><p>Added the feedback and contributions section with a contact email and GitHub link.</p></div>
+          <div class="changelog-entry"><time datetime="2026-10-08">Oct. 8, 2026</time><p>Fixed the share preview image.</p></div>
+          <div class="changelog-entry"><time datetime="2026-10-07">Oct. 7, 2026</time><p>Initial launch — city spending, tax calculator, ballot measures, peer comparison, payroll, and financial health.</p></div>
+        </div>
       </div>
     </details>
   </section>
