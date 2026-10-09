@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" href="data:," />
+  <title>EGR Parking Deck Bond Guide</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650&display=swap');
+
+    :root{
+      --paper:#f6f8f7;
+      --surface:#ffffff;
+      --surface-2:#eef3f1;
+      --ink:#12201e;
+      --muted:#4f625e;
+      --line:#cbd7d3;
+      --line-strong:#9eb0aa;
+      --navy:#153f52;
+      --teal:#176c68;
+      --teal-soft:#dcecea;
+      --amber:#9a5d0b;
+      --amber-soft:#fff0d2;
+      --slate-soft:#e8eceb;
+      --shadow:0 1px 2px rgba(12,36,33,.08), 0 14px 36px rgba(12,36,33,.05);
+      --radius:12px;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --paper:#101816;
+        --surface:#17221f;
+        --surface-2:#1c2b27;
+        --ink:#f0f5f3;
+        --muted:#b4c2be;
+        --line:#314640;
+        --line-strong:#587068;
+        --navy:#88c4dc;
+        --teal:#72c8bf;
+        --teal-soft:#173c38;
+        --amber:#f2ba64;
+        --amber-soft:#493614;
+        --slate-soft:#263632;
+        --shadow:0 1px 2px rgba(0,0,0,.24), 0 18px 42px rgba(0,0,0,.18);
+      }
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:96px}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"Libre Franklin",sans-serif;line-height:1.58;font-size:16px}
+    a{color:var(--teal);text-decoration-thickness:1px;text-underline-offset:3px}
+    a:hover{text-decoration-thickness:2px}
+    button,select{font:inherit}
+    .topbar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 94%,transparent);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+    .topbar-inner{max-width:1160px;margin:auto;padding:10px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .date-chip{font-size:.75rem;font-weight:700;color:var(--navy);white-space:nowrap}
+    .nav{display:flex;gap:2px;flex-wrap:wrap;justify-content:flex-end}
+    .nav a{font-size:.72rem;font-weight:600;color:var(--muted);text-decoration:none;padding:6px 7px;border-radius:6px}
+    .nav a:hover,.nav a.active{color:var(--ink);background:var(--surface-2)}
+    .mobile-jump{display:none;width:100%;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:9px 10px}
+
+    main{max-width:1160px;margin:0 auto;padding:48px 24px 80px}
+    .hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);gap:56px;align-items:end;padding:22px 0 46px;border-bottom:1px solid var(--line)}
+    .eyebrow{margin:0 0 12px;color:var(--teal);font-weight:700;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+    h1,h2,h3{font-family:"Source Serif 4",serif;line-height:1.07;letter-spacing:-.025em}
+    h1{font-size:clamp(2.75rem,6vw,5.5rem);font-weight:650;margin:0;max-width:820px}
+    .deck-subtitle{font-size:clamp(1.08rem,2vw,1.32rem);line-height:1.45;color:var(--muted);margin:22px 0 0;max-width:780px}
+    .independence{font-size:.78rem;color:var(--muted);margin:16px 0 0;max-width:680px}
+    .ballot-card{background:var(--navy);color:#fff;padding:28px 26px;border-radius:var(--radius);box-shadow:var(--shadow)}
+    @media (prefers-color-scheme: dark){.ballot-card{color:#10201f}}
+    .ballot-card span{display:block;font-size:.73rem;text-transform:uppercase;letter-spacing:.09em;font-weight:700;opacity:.78}
+    .ballot-card strong{display:block;font-family:"Source Serif 4",serif;font-size:2.05rem;line-height:1.1;margin:7px 0 20px}
+    .ballot-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;border-top:1px solid rgba(255,255,255,.32);padding-top:18px}
+    @media (prefers-color-scheme: dark){.ballot-grid{border-color:rgba(0,0,0,.22)}}
+    .ballot-grid b{display:block;font-size:1.05rem}.ballot-grid small{display:block;opacity:.78;font-size:.72rem}
+
+    .summary{padding:56px 0 64px}
+    .section-kicker{font-size:.76rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--teal);margin:0 0 8px}
+    h2{font-size:clamp(2rem,4vw,3.35rem);margin:0 0 16px}
+    .lede{font-size:1.06rem;color:var(--muted);max-width:760px;margin:0}
+    .summary-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:34px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--shadow)}
+    .summary-card{padding:25px 25px 28px;min-width:0}
+    .summary-card+ .summary-card{border-left:1px solid var(--line)}
+    .summary-card .num{font-family:"Source Serif 4",serif;font-size:2rem;line-height:1;color:var(--navy);font-weight:650}
+    .summary-card h3{font-size:1.12rem;margin:14px 0 8px}.summary-card p{font-size:.9rem;margin:0;color:var(--muted)}
+    .bottom-line{display:grid;grid-template-columns:180px 1fr;gap:24px;margin-top:24px;padding:22px 24px;background:var(--teal-soft);border-left:4px solid var(--teal)}
+    .bottom-line strong{font-family:"Source Serif 4",serif;font-size:1.15rem}.bottom-line p{margin:0}
+
+    details.section{border-top:1px solid var(--line);scroll-margin-top:90px}
+    details.section:last-of-type{border-bottom:1px solid var(--line)}
+    details.section>summary{list-style:none;cursor:pointer;padding:34px 0 27px;display:grid;grid-template-columns:56px 1fr 28px;gap:16px;align-items:start}
+    details.section>summary::-webkit-details-marker{display:none}
+    .section-number{font-family:"Source Serif 4",serif;font-size:1.2rem;color:var(--teal);font-weight:650;padding-top:6px}
+    .section-title{font-family:"Source Serif 4",serif;font-size:clamp(1.75rem,3vw,2.45rem);font-weight:650;line-height:1.08;letter-spacing:-.02em}
+    .section-title small{display:block;font-family:"Libre Franklin",sans-serif;color:var(--muted);font-weight:400;letter-spacing:0;font-size:.82rem;line-height:1.45;margin-top:8px;max-width:760px}
+    .chevron{width:24px;height:24px;border:1px solid var(--line-strong);border-radius:50%;position:relative;margin-top:4px}
+    .chevron:before,.chevron:after{content:"";position:absolute;background:var(--ink);left:6px;right:6px;top:11px;height:1px}
+    .chevron:after{transform:rotate(90deg);transition:transform .2s ease}
+    details[open] .chevron:after{transform:rotate(0)}
+    .section-body{padding:0 0 54px 72px;max-width:1050px}
+    .prose{max-width:780px}.prose p{margin:0 0 17px}.prose h3{font-size:1.36rem;margin:32px 0 12px}
+    .cite{font-size:.68rem;vertical-align:super;font-weight:700;text-decoration:none;margin-left:2px;color:var(--teal)}
+    .inferred{font-size:.68rem;font-weight:700;color:var(--amber);white-space:nowrap}
+    .plain-list{padding:0;margin:18px 0;list-style:none;max-width:820px}
+    .plain-list li{padding:12px 0 12px 24px;border-bottom:1px solid var(--line);position:relative}
+    .plain-list li:before{content:"";position:absolute;left:0;top:21px;width:8px;height:8px;border-radius:50%;background:var(--teal)}
+
+    .finding{margin:28px 0;padding:24px 26px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow)}
+    .finding .label{color:var(--teal);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+    .finding blockquote{font-family:"Source Serif 4",serif;font-size:clamp(1.25rem,2.4vw,1.7rem);line-height:1.35;margin:10px 0 12px}
+    .finding p{margin:0;color:var(--muted);font-size:.88rem}
+
+    .chart-wrap{background:var(--surface);border:1px solid var(--line);padding:22px;margin:28px 0;box-shadow:var(--shadow)}
+    .chart-title{font-family:"Source Serif 4",serif;font-size:1.2rem;font-weight:650;margin:0}.chart-note{font-size:.77rem;color:var(--muted);margin:5px 0 16px}
+    .chart-svg{display:block;width:100%;height:auto;overflow:visible}.chart-svg text{font-family:"Libre Franklin",sans-serif;fill:var(--muted);font-size:13px}.chart-svg .value{fill:var(--ink);font-weight:700}.chart-svg .grid{stroke:var(--line);stroke-width:1}.chart-svg .threshold{stroke:var(--amber);stroke-width:2;stroke-dasharray:5 5}.chart-svg .bar{fill:var(--teal)}
+    .legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px;font-size:.75rem;color:var(--muted)}.legend i{display:inline-block;width:12px;height:4px;background:var(--teal);vertical-align:middle;margin-right:6px}.legend i.dash{height:0;border-top:2px dashed var(--amber);background:none}
+
+    .count-flow{display:grid;grid-template-columns:repeat(4,1fr);margin:28px 0;background:var(--surface);border:1px solid var(--line)}
+    .count-step{padding:22px;position:relative}.count-step+ .count-step{border-left:1px solid var(--line)}
+    .count-step b{display:block;font-family:"Source Serif 4",serif;color:var(--navy);font-size:2rem;line-height:1}.count-step span{display:block;font-size:.76rem;color:var(--muted);margin-top:8px}
+
+    .metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0}
+    .metric{background:var(--surface);border:1px solid var(--line);padding:20px;min-height:140px}.metric b{font-family:"Source Serif 4",serif;font-size:1.75rem;color:var(--navy);display:block;line-height:1.05}.metric span{display:block;font-size:.78rem;color:var(--muted);margin-top:9px}.metric .why{font-size:.72rem;margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
+
+    .table-wrap{margin:25px 0;border:1px solid var(--line);background:var(--surface)}
+    table{border-collapse:collapse;width:100%;font-size:.84rem;line-height:1.45}
+    th{text-align:left;color:var(--muted);font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;font-weight:700;background:var(--surface-2)}
+    th,td{padding:13px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+    tbody tr:last-child td{border-bottom:0}
+    td:first-child{font-weight:650;color:var(--ink)}
+    .verdict{display:inline-block;padding:3px 7px;border-radius:4px;font-size:.67rem;line-height:1.25;font-weight:700;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap}
+    .true{background:var(--teal-soft);color:var(--teal)}.misleading{background:var(--amber-soft);color:var(--amber)}.unverifiable{background:var(--slate-soft);color:var(--muted)}.false{background:#f6dddd;color:#8f2f2f}
+    @media (prefers-color-scheme: dark){.false{background:#492524;color:#ffaaa4}}
+
+    .timeline{margin:24px 0 4px;border-left:2px solid var(--line);padding-left:25px}.event{position:relative;padding:0 0 25px}.event:before{content:"";position:absolute;width:10px;height:10px;border-radius:50%;left:-31px;top:7px;background:var(--paper);border:2px solid var(--teal)}.event time{font-size:.72rem;color:var(--teal);font-weight:700}.event h3{font-family:"Libre Franklin",sans-serif;font-size:.93rem;letter-spacing:0;margin:4px 0}.event p{font-size:.82rem;color:var(--muted);margin:0;max-width:740px}
+
+    .risk-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}.risk{background:var(--surface);border:1px solid var(--line);padding:20px}.risk h3{font-family:"Libre Franklin",sans-serif;font-size:.93rem;letter-spacing:0;margin:0 0 8px}.risk p{font-size:.82rem;color:var(--muted);margin:0}
+    .question-list{counter-reset:q;list-style:none;padding:0;margin:24px 0}.question-list li{counter-increment:q;display:grid;grid-template-columns:34px 1fr;gap:12px;padding:15px 0;border-bottom:1px solid var(--line)}.question-list li:before{content:counter(q);width:27px;height:27px;border-radius:50%;display:grid;place-items:center;background:var(--slate-soft);color:var(--muted);font-size:.72rem;font-weight:700}.question-list b{display:block;margin-bottom:3px}.question-list span{color:var(--muted);font-size:.82rem}
+
+    .sources{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px;margin:24px 0;padding:0;list-style:none;counter-reset:source}
+    .sources li{counter-increment:source;display:grid;grid-template-columns:30px 1fr;gap:8px;border-bottom:1px solid var(--line);padding:11px 0;font-size:.79rem;color:var(--muted)}.sources li:before{content:counter(source);font-family:"Source Serif 4",serif;font-weight:650;color:var(--teal);font-size:1rem}.sources b{color:var(--ink)}
+    .method{background:var(--surface-2);padding:18px 20px;font-size:.78rem;color:var(--muted);max-width:840px}
+    footer{padding:42px 0 8px;color:var(--muted);font-size:.74rem;display:grid;grid-template-columns:1fr 1fr;gap:32px}
+    footer p{margin:0}
+
+
+    @media(max-width:820px){
+      .topbar-inner{padding:8px 16px;display:block}.date-chip,.nav{display:none}.mobile-jump{display:block}
+      main{padding:28px 18px 64px}.hero{grid-template-columns:1fr;gap:28px;padding-top:12px}.ballot-card{padding:22px}
+      .summary{padding:42px 0 48px}.summary-grid{grid-template-columns:1fr}.summary-card+ .summary-card{border-left:0;border-top:1px solid var(--line)}.bottom-line{grid-template-columns:1fr;gap:6px}
+      details.section>summary{grid-template-columns:42px 1fr 24px;gap:10px;padding:26px 0 22px}.section-body{padding-left:0;padding-bottom:44px}.section-number{font-size:1rem}
+      .count-flow{grid-template-columns:1fr 1fr}.count-step+ .count-step{border-left:0}.count-step:nth-child(even){border-left:1px solid var(--line)}.count-step:nth-child(n+3){border-top:1px solid var(--line)}
+      .metric-grid{grid-template-columns:1fr}.metric{min-height:0}.risk-grid{grid-template-columns:1fr}.sources{grid-template-columns:1fr}footer{grid-template-columns:1fr;gap:12px}
+      .table-wrap{border:0;background:transparent}.table-wrap table,.table-wrap thead,.table-wrap tbody,.table-wrap th,.table-wrap td,.table-wrap tr{display:block}.table-wrap thead{position:absolute;left:-9999px}.table-wrap tr{background:var(--surface);border:1px solid var(--line);margin-bottom:10px;padding:10px 13px}.table-wrap td{border:0;padding:6px 0 6px 42%;position:relative;min-height:30px}.table-wrap td:before{content:attr(data-label);position:absolute;left:0;top:7px;width:38%;color:var(--muted);font-size:.64rem;text-transform:uppercase;letter-spacing:.05em;font-weight:700}.table-wrap td:first-child{padding-left:0;font-size:.95rem;border-bottom:1px solid var(--line);margin-bottom:5px}.table-wrap td:first-child:before{display:none}
+    }
+    @media(max-width:440px){h1{font-size:2.62rem}.ballot-grid{grid-template-columns:1fr 1fr}.chart-wrap{padding:15px}.chart-svg text{font-size:12px}.count-step{padding:17px}.count-step b{font-size:1.65rem}.finding{padding:20px}.section-title{font-size:1.62rem}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.chevron:after{transition:none}}
+    @media print{.topbar,.chevron{display:none!important}body{background:#fff;color:#111}.hero{grid-template-columns:1fr 280px}details.section{display:block}details.section>.section-body{display:block!important}.section{break-inside:avoid-page}.finding,.metric,.chart-wrap,.table-wrap{box-shadow:none}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="date-chip">NOV. 3, 2026 BALLOT</div>
+      <nav class="nav" aria-label="Page sections">
+        <a href="#summary">Summary</a><a href="#need">Need</a><a href="#cost">Cost</a><a href="#financing">Financing</a><a href="#process">Process</a><a href="#alternatives">Alternatives</a><a href="#fact-check">Fact Check</a><a href="#risks">Risks</a><a href="#sources">Sources</a>
+      </nav>
+      <label for="mobileJump" style="position:absolute;left:-9999px">Jump to section</label>
+      <select id="mobileJump" class="mobile-jump" aria-label="Jump to section">
+        <option value="">Jump to a section…</option><option value="#summary">Summary</option><option value="#need">Need</option><option value="#cost">Cost</option><option value="#financing">Financing</option><option value="#process">Process</option><option value="#alternatives">Alternatives</option><option value="#fact-check">Fact Check</option><option value="#risks">Risks</option><option value="#sources">Sources</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">Independent voter guide</p>
+        <h1 id="page-title">East Grand Rapids Parking Deck Bond</h1>
+        <p class="deck-subtitle">A source-backed guide to the $9 million Public Parking Facility and Pedestrian Safety Bond Proposal on the November 3, 2026 ballot.<a class="cite" href="#s1" aria-label="Source 1">1</a></p>
+        <p class="independence">Built by an East Grand Rapids resident. Self-funded. Not affiliated with the City, the school district, or any campaign.</p>
+      </div>
+      <aside class="ballot-card" aria-label="Proposal at a glance">
+        <span>Proposal at a glance</span>
+        <strong>Up to $9M in city bonds</strong>
+        <div class="ballot-grid">
+          <div><b>20 years</b><small>maximum term</small></div>
+          <div><b>240</b><small>deck spaces</small></div>
+          <div><b>3 levels</b><small>on Bagley</small></div>
+          <div><b>~$7M</b><small>school share</small></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="summary" id="summary">
+      <p class="section-kicker">Executive summary</p>
+      <h2>The decision in one screen</h2>
+      <p class="lede">The proposal links a parking structure at EGR High School with traffic signals and pedestrian infrastructure. The case turns less on today’s utilization than on what happens when school construction removes spaces from 2028–2030.</p>
+      <div class="summary-grid">
+        <article class="summary-card">
+          <div class="num">$15.2M–$18.1M</div>
+          <h3>What is proposed</h3>
+          <p>A three-level, 240-space deck, plus signals and pedestrian work. The City would bond up to $9M; EGRPS has discussed roughly $7M toward the project.<a class="cite" href="#s1">1</a></p>
+        </article>
+        <article class="summary-card">
+          <div class="num">371 empty</div>
+          <h3>What the counts found</h3>
+          <p>The 2025 study’s system-wide peak was 71.7%: 939 of 1,310 spaces occupied. School lots reached 81% on a weekday and 86.8% on Saturday.<a class="cite" href="#s8">8</a></p>
+        </article>
+        <article class="summary-card">
+          <div class="num">~190 net</div>
+          <h3>What the deck adds</h3>
+          <p>After accounting for the surface lot it replaces, the deck adds about 190 spaces versus the post-construction, no-deck condition. <span class="inferred">inferred</span><a class="cite" href="#s1">1</a></p>
+        </article>
+      </div>
+      <div class="bottom-line">
+        <strong>Bottom line</strong>
+        <p>The strongest need case is a projected 2028–2030 construction-period shortage, not present-day system overcrowding. The strongest unresolved issues are the unsigned city–school agreement, long-term upkeep, and the lack of binding commitments on street-parking removal or free use.</p>
+      </div>
+    </section>
+
+    <details class="section" id="need" open>
+      <summary><span class="section-number">01</span><span class="section-title">Need<small>Current capacity is available; construction changes the campus math.</small></span><span class="chevron" aria-hidden="true"></span></summary>
+      <div class="section-body">
+        <div class="prose">
+          <p>The 2025 utilization counts do not show a system-wide shortage on the measured dates. At the busiest observed system hour, 939 of 1,310 spaces were occupied—71.7%—leaving 371 open.<a class="cite" href="#s8">8</a> The school lots reached 81% on the measured weekday and 86.8% on Saturday; the commonly used 85% benchmark was not reached system-wide on the weekday.<a class="cite" href="#s8">8</a><a class="cite" href="#s16">16</a></p>
+        </div>
+        <div class="chart-wrap" role="img" aria-label="Bar chart showing peak utilization: system-wide 71.7 percent, school weekday 81 percent, school Saturday 86.8 percent, and an 85 percent benchmark">
+          <p class="chart-title">Peak observed utilization</p><p class="chart-note">2025 counts; bars begin at zero. The dashed line marks the 85% benchmark.</p>
+          <svg class="chart-svg" viewBox="0 0 760 250" aria-hidden="true">
+            <line class="grid" x1="155" y1="205" x2="720" y2="205"/><line class="grid" x1="155" y1="160" x2="720" y2="160"/><line class="grid" x1="155" y1="115" x2="720" y2="115"/><line class="grid" x1="155" y1="70" x2="720" y2="70"/><line class="grid" x1="155" y1="25" x2="720" y2="25"/>
+            <text x="145" y="209" text-anchor="end">0%</text><text x="145" y="164" text-anchor="end">25%</text><text x="145" y="119" text-anchor="end">50%</text><text x="145" y="74" text-anchor="end">75%</text><text x="145" y="29" text-anchor="end">100%</text>
+            <line class="threshold" x1="155" y1="52" x2="720" y2="52"/>
+            <rect class="bar" x="200" y="76" width="100" height="129"/><rect class="bar" x="390" y="59" width="100" height="146"/><rect class="bar" x="580" y="49" width="100" height="156"/>
+            <text x="250" y="69" text-anchor="middle" class="value">71.7%</text><text x="440" y="52" text-anchor="middle" class="value">81.0%</text><text x="630" y="42" text-anchor="middle" class="value">86.8%</text>
+            <text x="250" y="226" text-anchor="middle">System peak</text><text x="440" y="226" text-anchor="middle">School weekday</text><text x="630" y="226" text-anchor="middle">School Saturday</text>
+          </svg>
+          <div class="legend"><span><i></i>Observed utilization</span><span><i class="dash"></i>85% benchmark</span></div>
+        </div>
+        <div class="prose">
+          <h3>Where the shortage comes from</h3>
+          <p>The high-school expansion changes the campus supply. The senior lot had 111 spaces; the expansion plan retains 40, creating a 71-space reduction.<a class="cite" href="#s5">5</a> That issue originates in the separately approved $158.9M school bond program, rather than in a measured shortage across the full district today.<a class="cite" href="#s5">5</a></p>
+        </div>
+        <div class="count-flow" aria-label="Campus parking counts over time">
+          <div class="count-step"><b>216</b><span>campus spaces before construction<a class="cite" href="#s5">5</a></span></div>
+          <div class="count-step"><b>~65</b><span>during 2028–2030 construction<a class="cite" href="#s5">5</a></span></div>
+          <div class="count-step"><b>144</b><span>afterward without the deck<a class="cite" href="#s5">5</a></span></div>
+          <div class="count-step"><b>~334</b><span>afterward with the deck <span class="inferred">inferred</span><a class="cite" href="#s1">1</a></span></div>
+        </div>
+        <div class="finding">
+          <div class="label">Key primary-source finding</div>
+          <blockquote>“Constructing the High School expansion without any parking improvements.”</blockquote>
+          <p>That was the Progressive Companies memo’s recommendation. It found on-street capacity within 1,500 feet and said a structure should be considered only after other options were explored. It also warned that a 30–60 minute exit could push students back to on-street parking.<a class="cite" href="#s5">5</a></p>
+        </div>
+      </div>
+    </details>
+
+    <details class="section" id="cost" open>
+      <summary><span class="section-number">02</span><span class="section-title">Cost<small>Construction is one part of the price; operation and renewal continue after opening.</small></span><span class="chevron" aria-hidden="true"></span></summary>
+      <div class="section-body">
+        <div class="metric-grid">
+          <div class="metric"><b>$15.25M</b><span>utilitarian OAK estimate, 2026 dollars<a class="cite" href="#s1">1</a></span><div class="why">The packet provides a total, not a line-item estimate.</div></div>
+          <div class="metric"><b>$16.91M</b><span>brick-facade estimate, 2026 dollars<a class="cite" href="#s1">1</a></span><div class="why">Escalated 2028 cases reach as high as $18.11M.</div></div>
+          <div class="metric"><b>$80K–$95K</b><span>per net new space <span class="inferred">inferred</span><a class="cite" href="#s1">1</a></span><div class="why">Uses roughly 190 net new spaces, not all 240 deck stalls.</div></div>
+        </div>
+        <div class="prose">
+          <p>An industry benchmark cited in the record is roughly $42,000 all-in per structured space.<a class="cite" href="#s17">17</a> Applied to 240 spaces, that implies a baseline near $10.1M; the $15.2M–$18.1M project range carries an estimated premium of roughly $5M–$8M. <span class="inferred">inferred</span> The record points to architectural treatment, heated walks and an elevator among the added features, but provides no released line-item budget to isolate each premium.<a class="cite" href="#s1">1</a></p>
+          <h3>Annual ownership cost</h3>
+          <p>The operating benchmark supplied by the City is $611 per space per year, or about $147,000 for 240 spaces. <span class="inferred">inferred</span> The source explicitly excludes depreciation.<a class="cite" href="#s6">6</a> Adding a planning allowance equal to about 1% of construction cost for major repairs and renewal produces a full-cost range of roughly $300,000–$330,000 per year. <span class="inferred">inferred</span> A 50% City share would be about $150,000–$165,000 annually. No dedicated funding source is identified in the reviewed materials.</p>
+        </div>
+        <div class="bottom-line"><strong>What $160K means</strong><p>The City’s stated estimate is consistent with routine operations for the whole structure. It is not a full lifecycle estimate if depreciation and capital repair reserves are excluded.<a class="cite" href="#s6">6</a></p></div>
+      </div>
+    </details>
+
+    <details class="section" id="financing" open>
+      <summary><span class="section-number">03</span><span class="section-title">Financing<small>The bond caps borrowing; the debt model shows the projected tax path.</small></span><span class="chevron" aria-hidden="true"></span></summary>
+      <div class="section-body">
+        <div class="metric-grid">
+          <div class="metric"><b>$13.21M</b><span>principal plus projected interest<a class="cite" href="#s7">7</a><a class="cite" href="#s9">9</a></span><div class="why">$9M principal + $4.21M interest at 4.13% TIC.</div></div>
+          <div class="metric"><b>0.5922</b><span>year-one mills<a class="cite" href="#s7">7</a></span><div class="why">Average modeled levy: 0.4925 mills.</div></div>
+          <div class="metric"><b>2%</b><span>annual taxable-value growth assumed<a class="cite" href="#s7">7</a></span><div class="why">Slower growth would require a higher millage for the same debt service.</div></div>
+        </div>
+        <div class="prose">
+          <p>The model equates to about $49 per year for each $100,000 of taxable value on average, or roughly $2,570 over 20 years for a median-value home. <span class="inferred">inferred</span> The corresponding average household share of total project debt is about $3,480. <span class="inferred">inferred</span><a class="cite" href="#s7">7</a><a class="cite" href="#s9">9</a></p>
+          <p>The City reported about $6.5M in unassigned general-fund balance, equal to 44% and above its 20%–25% target.<a class="cite" href="#s1">1</a> Using reserves could reduce borrowing, but paying the full City share from that balance would substantially reduce the cushion and would not solve ongoing operating costs.</p>
+          <h3>Local tax context</h3>
+          <p>EGR’s 2024 operating levy was 14.09 mills—high among nearby Kent County cities, though below Cedar Springs at 18.77 and Lowell at 15.95.<a class="cite" href="#s1">1</a> This comparison is context, not a measure of service equivalence or total household tax burden.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="section" id="process" open>
+      <summary><span class="section-number">04</span><span class="section-title">Governance &amp; process<small>The proposal moved from design funding to ballot language in under four months.</small></span><span class="chevron" aria-hidden="true"></span></summary>
+      <div class="section-body">
+        <div class="timeline">
+          <div class="event"><time>APRIL 20, 2026</time><h3>Design funding approved, 5–2</h3><p>The early recommendation described a smaller 213-space concept; underground parking was rejected for “safety concerns.”<a class="cite" href="#s2">2</a></p></div>
+          <div class="event"><time>JULY 20, 2026</time><h3>Financing routes reviewed</h3><p>The Commission considered limited-tax general-obligation bonds, which would not require a vote, and chose to proceed with voter-approved bonds.<a class="cite" href="#s4">4</a></p></div>
+          <div class="event"><time>AUGUST 3, 2026</time><h3>Postponement failed; ballot placement passed</h3><p>The postponement motion failed 2–4; Commissioner Hunter left at 8:23 p.m. The ballot-placement vote passed 4–1–1, with Wessely voting no and Groff-Blaszak abstaining.<a class="cite" href="#s1">1</a></p></div>
+          <div class="event"><time>AUGUST 6, 2026</time><h3>Ballot typo corrected, 4–1–2</h3><p>A special meeting corrected the millage language. This 4–1–2 record is separate from the August 3 ballot-placement vote.<a class="cite" href="#s1">1</a></p></div>
+        </div>
+        <div class="risk-grid">
+          <article class="risk"><h3>Subcommittee record</h3><p>Meetings stayed below quorum, so no minutes exist. The public record does not show how key project choices were made.</p></article>
+          <article class="risk"><h3>Late resolution</h3><p>A revised 33-page resolution arrived about 90 minutes before the August 3 vote and was not public beforehand.<a class="cite" href="#s1">1</a></p></article>
+          <article class="risk"><h3>Pedestrian scope</h3><p>Pedestrian-safety language was added in August, but no project list or dedicated budget was released.<a class="cite" href="#s1">1</a></p></article>
+          <article class="risk"><h3>Agreement not signed</h3><p>No executed intergovernmental agreement was identified. Cost share, ownership, access and the City’s third-level role therefore remain nonbinding.</p></article>
+        </div>
+        <div class="prose"><h3>Gaslight history</h3><p>The debate is shaped by the loss of a prior private parking structure in Gaslight Village and earlier development commitments. That history explains public skepticism, but it does not by itself establish the need, cost or legal obligations of this proposal. The current decision should be judged on the current agreements and data.</p></div>
+      </div>
+    </details>
+
+    <details class="section" id="alternatives" open>
+      <summary><span class="section-number">05</span><span class="section-title">Alternatives<small>The engineer’s preferred option was not the deck.</small></span><span class="chevron" aria-hidden="true"></span></summary>
+      <div class="section-body">
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Option</th><th>Spaces</th><th>Cost in record</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td data-label="Option">Use nearby on-street supply</td><td data-label="Spaces">89–111</td><td data-label="Cost">About $0</td><td data-label="Status">Engineer’s recommendation; not pursued<a class="cite" href="#s5">5</a></td></tr>
+              <tr><td data-label="Option">Bussing / demand-management pilot</td><td data-label="Spaces">Not stated</td><td data-label="Cost">Unpriced</td><td data-label="Status">Not pursued</td></tr>
+              <tr><td data-label="Option">Middle-school lot expansion</td><td data-label="Spaces">Up to 103</td><td data-label="Cost">Described as “less expensive”</td><td data-label="Status">Deferred<a class="cite" href="#s5">5</a></td></tr>
+              <tr><td data-label="Option">Two-story deck</td><td data-label="Spaces">~136–150</td><td data-label="Cost">Not released</td><td data-label="Status">Discussed only</td></tr>
+              <tr><td data-label="Option">Underground parking</td><td data-label="Spaces">Not stated</td><td data-label="Cost">Not published</td><td data-label="Status">Rejected for “safety concerns”<a class="cite" href="#s2">2</a></td></tr>
+              <tr><td data-label="Option">Shared parking</td><td data-label="Spaces">Depends on partners</td><td data-label="Cost">Not developed</td><td data-label="Status">Concept only</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="prose"><p>No student survey was conducted to test likely deck use, willingness to wait in an exit queue, or sensitivity to location. That leaves demand-management and behavior assumptions largely untested.</p></div>
+      </div>
+    </details>
+
+    <details class="section" id="fact-check" open>
+      <summary><span class="section-number">06</span><span class="section-title">Campaign fact check<small>Claims are rated against the primary record, not against the other campaign.</small></span><span class="chevron" aria-hidden="true"></span></summary>
+      <div class="section-body">
+        <h3 style="margin:0 0 10px">WalkSafeEGR / “No” campaign</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Claim</th><th>Verdict</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr><td data-label="Claim">“371 empty spaces”</td><td data-label="Verdict"><span class="verdict true">True</span></td><td data-label="Why">The system peak was 939 occupied of 1,310, leaving 371.<a class="cite" href="#s8">8</a></td></tr>
+              <tr><td data-label="Claim">“72% vs. 85%”</td><td data-label="Verdict"><span class="verdict true">True</span></td><td data-label="Why">Accurate for the measured weekday system peak; school lots exceeded 85% on Saturday.<a class="cite" href="#s8">8</a></td></tr>
+              <tr><td data-label="Claim">“$250K per space”</td><td data-label="Verdict"><span class="verdict misleading">Misleading</span></td><td data-label="Why">It divides a broad total by the original 71–72-space loss. The structure adds about 190 net spaces versus the no-deck end state.</td></tr>
+              <tr><td data-label="Claim">Parking-structure crime statistic</td><td data-label="Verdict"><span class="verdict misleading">Misleading</span></td><td data-label="Why">The cited research dates to 1996 and covers a broad structure category; it does not quantify expected incidents at this design.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3 style="margin:34px 0 10px">Safe Streets EGR / “Yes” campaign</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Claim</th><th>Verdict</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr><td data-label="Claim">“$13.2M total debt”</td><td data-label="Verdict"><span class="verdict true">True</span></td><td data-label="Why">The MFCI model shows $9M principal plus about $4.21M interest.<a class="cite" href="#s7">7</a><a class="cite" href="#s9">9</a></td></tr>
+              <tr><td data-label="Claim">“$49/year per $100K taxable value”</td><td data-label="Verdict"><span class="verdict true">True</span></td><td data-label="Why">Matches the modeled average 0.4925 mills. <span class="inferred">inferred</span><a class="cite" href="#s7">7</a></td></tr>
+              <tr><td data-label="Claim">Students would avoid a street crossing</td><td data-label="Verdict"><span class="verdict true">True</span></td><td data-label="Why">The cited memo supports that geometry, but the same memo recommended proceeding without parking improvements.<a class="cite" href="#s5">5</a></td></tr>
+              <tr><td data-label="Claim">Reallocated parking will create bike lanes</td><td data-label="Verdict"><span class="verdict unverifiable">Unverifiable</span></td><td data-label="Why">The resolution states the intent, but no binding street-by-street removal plan was found.<a class="cite" href="#s1">1</a></td></tr>
+              <tr><td data-label="Claim">Parking will remain free</td><td data-label="Verdict"><span class="verdict unverifiable">Unverifiable</span></td><td data-label="Why">An April memo and a September letter differ, and no binding agreement guarantees free use.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="legend"><span><span class="verdict true">True</span> supported by record</span><span><span class="verdict misleading">Misleading</span> technically grounded but missing decisive context</span><span><span class="verdict false">False</span> contradicted by record</span><span><span class="verdict unverifiable">Unverifiable</span> no binding or sufficient evidence found</span></div>
+      </div>
+    </details>
+
+    <details class="section" id="risks" open>
+      <summary><span class="section-number">07</span><span class="section-title">Risks &amp; open questions<small>The ballot sets borrowing authority; several implementation choices remain open.</small></span><span class="chevron" aria-hidden="true"></span></summary>
+      <div class="section-body">
+        <div class="risk-grid">
+          <article class="risk"><h3>Cost escalation</h3><p>The estimate assumes roughly 3.5% annual escalation—more than $500,000 for a year of delay on a $15M-plus project. <span class="inferred">inferred</span><a class="cite" href="#s1">1</a></p></article>
+          <article class="risk"><h3>Interest-rate exposure</h3><p>The modeled true interest cost rose from 3.33% to 4.13% across estimates. Final debt service depends on market conditions when bonds are sold.<a class="cite" href="#s7">7</a></p></article>
+          <article class="risk"><h3>Undefined extras</h3><p>Signal work, loading-dock accommodation, snow-melt systems and final facade choices are not fully itemized in the released estimate.</p></article>
+          <article class="risk"><h3>Behavior risk</h3><p>No student survey tests whether drivers will choose the deck, especially if departure queues are long or event pricing is later introduced.</p></article>
+        </div>
+        <ol class="question-list">
+          <li><div><b>Who owns, operates and repairs each level?</b><span>No signed city–school agreement was identified.</span></div></li>
+          <li><div><b>Which street spaces would actually be removed?</b><span>The rationale references reallocation, but no binding location map or timetable is published.</span></div></li>
+          <li><div><b>Will parking stay free?</b><span>No binding guarantee was found for daily or high-demand event use.</span></div></li>
+          <li><div><b>What is the pedestrian-safety scope?</b><span>No project list, cost allocation or performance target is published.</span></div></li>
+          <li><div><b>Can the deck open before the 2028–2030 low point?</b><span>The public record does not align a committed delivery date with the projected construction crunch.</span></div></li>
+          <li><div><b>What does crash data show at Lake and Bagley?</b><span>No location-specific crash analysis was identified in the reviewed materials.</span></div></li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="section" id="sources" open>
+      <summary><span class="section-number">08</span><span class="section-title">Sources &amp; method<small>Primary records lead; campaign and media material are used mainly to identify claims.</small></span><span class="chevron" aria-hidden="true"></span></summary>
+      <div class="section-body">
+        <ol class="sources">
+          <li id="s1"><div><b>August 3, 2026 City Commission packet</b><br>Staff memo, resolutions, OAK estimates and financing materials. <a href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/_08032026-950" target="_blank" rel="noopener noreferrer">Open official packet</a>.</div></li>
+          <li id="s2"><div><b>April 20, 2026 City Commission packet</b><br>Original subcommittee recommendation and design-funding record.</div></li>
+          <li id="s3"><div><b>June 29, 2026 City Commission packet</b><br>Parking utilization study and work-session materials.</div></li>
+          <li id="s4"><div><b>July 20, 2026 City Commission packet</b><br>Bond structure and financing options.</div></li>
+          <li id="s5"><div><b>Progressive Companies traffic memorandum</b><br>November 10, 2025; demand, alternatives and traffic-operation findings.</div></li>
+          <li id="s6"><div><b>La Fave operating-cost email</b><br>April 2026; Grand Rapids per-space benchmark and depreciation exclusion.</div></li>
+          <li id="s7"><div><b>MFCI bond analysis</b><br>$9M scenario, projected millage, rate and taxable-value assumptions.</div></li>
+          <li id="s8"><div><b>2025 parking-utilization dataset</b><br>Hourly school, public and private occupancy counts.</div></li>
+          <li id="s9"><div><b>$9M debt-service schedule</b><br>Year-by-year principal, interest and projected levy.</div></li>
+          <li id="s10"><div><b>WalkSafeEGR</b><br>Opposition campaign claims reviewed against primary records.</div></li>
+          <li id="s11"><div><b>Safe Streets EGR</b><br>Support campaign claims and document collection reviewed against primary records.</div></li>
+          <li id="s12"><div><b>East Grand Rapids Citizen Portal</b><br>Meeting records and summaries.</div></li>
+          <li id="s13"><div><b>East Insider</b><br>Local reporting and community context.</div></li>
+          <li id="s14"><div><b>FOX 17 and WGVU</b><br>Regional reporting.</div></li>
+          <li id="s15"><div><b>EGR community-group threads</b><br>Resident arguments and questions; not treated as proof of factual claims.</div></li>
+          <li id="s16"><div><b>Shared Parking manual</b><br>85% utilization benchmark context.</div></li>
+          <li id="s17"><div><b>Walker Consultants benchmark</b><br>Structured-parking cost context.</div></li>
+        </ol>
+        <div class="method"><b>Method.</b> Numbers are attributed to the closest available primary record. Campaign pages and community discussion are used to frame claims, not establish facts. “Inferred” marks arithmetic calculated from cited values rather than a figure stated verbatim in a source. Unreleased agreements, surveys, estimates and datasets are treated as missing—not assumed.</div>
+      </div>
+    </details>
+
+    <footer>
+      <p>Built by an East Grand Rapids resident. Self-funded. Not affiliated with the City of East Grand Rapids, EGR Public Schools, or any campaign.</p>
+      <p>Figures marked “inferred” are arithmetic from cited sources, not stated in any source. Last reviewed October 8, 2026.</p>
+    </footer>
+  </main>
+
+  <script>
+    (function(){
+      var jump=document.getElementById('mobileJump');
+      jump.addEventListener('change',function(){if(this.value){var el=document.querySelector(this.value);if(el){el.scrollIntoView({behavior:'smooth'});if(el.tagName==='DETAILS')el.open=true;}this.value='';}});
+      var links=[].slice.call(document.querySelectorAll('.nav a'));
+      var targets=links.map(function(a){return document.querySelector(a.getAttribute('href'));}).filter(Boolean);
+      if('IntersectionObserver' in window){
+        var obs=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){links.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id);});}});},{rootMargin:'-25% 0px -65% 0px'});
+        targets.forEach(function(t){obs.observe(t);});
+      }
+    })();
+  </script>
+</body>
+</html>
