@@ -4,7 +4,7 @@
 
 **Assessment:** **No**
 
-## Its assessment, verbatim
+## Its assessment, verbatim (asked after the panel sign-off)
 
 > **NO**
 >
@@ -29,6 +29,8 @@
 ### If you just want the bottom line
 
 *Asked directly how it would vote given all this information, the AI answered as follows.*
+
+The AI doesn't vote. It also won't cast a personal yes or no on a live ballot question, especially one that may appear in a public voter guide.
 
 **The record as it stands leans against this proposal as written.** Three reasons:
 
