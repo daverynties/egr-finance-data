@@ -19,3 +19,4 @@ Top fixes:
 - `vote-codex-gpt-6.1-sol.md`: Codex (gpt-6.1-sol, high reasoning): **No, 80%**.
 - `vote-grok-bot.md`: Grok Bot: **No, ~65%**.
 - `vote-comparison.md`: comparison with Claude (claude-opus-5-5), which declined to vote but says the record leans against. No Muse vote was found.
+- `council/`: Grok/Claude/Codex "run the city" council (Oct 8, 2026). `joint-recommendation.md` = signed joint memo (no bond sale or construction award until gates are met; vote proceeds), plus round 1/2 files, sign-offs, prompts. Claude best-fit call: NO.
