@@ -1,3 +1,5 @@
+> **Correction / clarification (added Oct 9, 2026):** Someone reported that the city's PUD document shows 166 units, not 147. Checking the documents: **166 comes from the original proposal.** The May 3, 2024 concept plan (in the June 11, 2024 Planning Commission introduction packet, memo dated June 6, 2024; https://www.eastgrmi.gov/DocumentCenter/View/4188) lists "166 new residential units" plus 14 townhomes, which is 180 total (583 parking spaces). Later versions: March 21 and April 16, 2025 concept plans: 149 (132 + 17 townhomes). Revised PUD amendment memo (dated July 14, 2025) and its exhibit: "149 to 151". July 2025 FAQ table: "141 to 151". **Aug 27, 2025 revised concept plan: 147 (130 + 17 townhomes)**, the version approved Oct 6, 2025 and listed on the city page. 147 is the current figure. 166 does not count existing units; Buildings A and B are commercial. One clarification: the PUD memo itself shows 149–151, not 147.
+
 # Joint summary (Grok, Codex, Claude), as of Oct 9, 2026
 
 **The project.** Gaslight Investors wants to finish the long-stalled 8.6-acre "Jade Pig" PUD site at 2255 Wealthy St / 515 Lakeside Dr SE. The plan is 147 homes (130 units plus 17 townhomes), 493 parking spaces, about 32,000 sq ft of new commercial space, and a 70 ft maximum height (the 2004 plan reached about 94 ft). The new structures are 2 mixed-use buildings, 3 residential buildings and a garage, next to existing buildings A and B. About 10% of units are proposed as "attainable" rentals at 100–120% of Kent County AMI, with no final commitment yet.
@@ -28,6 +30,15 @@ Codex CLI 0.162.0 has the `image_generation` feature (stable, enabled). In exec 
 
 ![timeline](gaslight_timeline.png)
 
+
+---
+
+## What residents are saying
+See [facebook-sentiment.md](facebook-sentiment.md). It was compiled by Muse from posts in three EGR Facebook groups (Apr 2025 to Oct 2026). It is paraphrased, contains no names, is not verified, and post links are withheld.
+- **Concerns:** scale and height out of character with the village; broken promises from the 2004 PUD (the parking deck was demolished) and process complaints, which the August ruling seemed to vindicate; Brownfield/TIF incentives (a "$20M+" figure is unsourced); traffic and parking near schools; lack of green space.
+- **Support:** the site has been an eyesore for 20 years; private property rights; tax base and business revitalization; housing diversity; the plan has already shrunk (7 to 5 stories).
+- **After the ruling:** ideas for a "Village Green" or city purchase of the lots, against "it's private property."
+- **Gap:** no detectable Facebook discussion of the 2026 Master Plan housing changes (Wealthy toward Rosewood, St. Stephen, Gaslight Plaza) in 18 months.
 
 ---
 
