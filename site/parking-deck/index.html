@@ -18,7 +18,7 @@
   <link rel="icon" href="data:," />
   <title>EGR Parking Deck Bond Guide</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:wght@600;650&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:wght@600;650&family=Caveat:wght@600&display=swap');
 
     :root{
       --paper:#f6f8f7;
@@ -404,10 +404,14 @@
     .resolution h4{margin:24px 0 8px;font:700 .8rem/1.2 "Source Sans 3",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--navy)}
     .resolution p{margin:0 0 8px}
     .resolution-list{margin:0;padding-left:22px}.resolution-list li{margin:0 0 7px}
-    .resolution-signatures{list-style:none;padding:0;margin:8px 0 10px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .resolution-signatures li{border-top:1px solid var(--ink);padding-top:6px}
-    .resolution-signatures .sig{display:block;font-weight:700}
-    .resolution-signatures small{color:var(--muted);font-size:.8rem}
+    .resolution-signatures{list-style:none;padding:0;margin:12px 0 10px;display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+    .resolution-signatures li{position:relative;padding-top:14px;--sig:var(--navy)}
+    .resolution-signatures .sig-claude{--sig:var(--teal)}.resolution-signatures .sig-codex{--sig:var(--navy-2)}
+    .resolution-signatures .sig{display:block;font:600 2.3rem/1 "Caveat","Segoe Script","Bradley Hand","Brush Script MT",cursive;color:var(--sig);transform:rotate(-4deg);transform-origin:left bottom;margin:0 0 2px 6px;white-space:nowrap}
+    .resolution-signatures .sig-claude .sig{transform:rotate(-2deg)}.resolution-signatures .sig-codex .sig{transform:rotate(-5deg)}
+    .sig-line{display:block;border-top:1px solid var(--ink);opacity:.55;margin:0 0 6px}
+    .sig-meta{display:block;font-size:.8rem;line-height:1.4;color:var(--muted)}.sig-meta strong{color:var(--ink)}
+    .sig-stamp{position:absolute;top:6px;right:2px;font:700 .62rem/1 "Source Sans 3",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--sig);border:1.5px solid var(--sig);border-radius:3px;padding:3px 5px;transform:rotate(6deg);opacity:.85}
     .ai-glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:14px 0 10px}
     .ai-glance div{background:var(--surface);padding:14px;text-align:center}
     .ai-glance span{display:block;font-weight:700;color:var(--muted);font-size:.9rem}
@@ -445,14 +449,14 @@
   <a class="skip" href="#content">Skip to content</a>
   <nav class="jumpbar" aria-label="Guide views">
     <div class="jumpbar-inner">
-      <a class="nav-brand" href="#front" aria-label="Parking Deck Bond Guide: quick guide">
+      <a class="nav-brand" href="#top" aria-label="Parking Deck Bond Guide: back to top and quick guide">
         <span class="nav-mark" aria-hidden="true">E</span>
         <span class="nav-title">Parking Deck Bond Guide</span>
       </a>
       <div class="view-tabs" role="list">
         <a class="view-tab" role="listitem" href="#front" data-view="front">Quick guide</a>
         <a class="view-tab" role="listitem" href="#full" data-view="full">Full analysis</a>
-        <a class="view-tab" role="listitem" href="#ai" data-view="ai">What the AIs think</a>
+        <a class="view-tab" role="listitem" href="#ai" data-view="ai">AI Review Panel</a>
         <a class="view-tab" role="listitem" href="#sources" data-view="sources">Sources</a>
       </div>
       <span class="freshness">Nov. 3, 2026 ballot</span>
@@ -560,7 +564,7 @@
 
       <nav class="tldr-actions" aria-label="More detail">
         <a href="#full">Full analysis</a>
-        <a href="#ai">What the AIs think</a>
+        <a href="#ai">AI Review Panel</a>
       </nav>
     </section>
 
@@ -574,7 +578,7 @@
         </nav>
         <aside class="about-guide" aria-labelledby="about-guide-title">
           <strong id="about-guide-title">About this guide</strong>
-          <p>Built from City Commission packets (April 20, June 29, July 20, and August 3), the Progressive Companies traffic memo and February 2026 follow-up, City operating-cost emails, the MFCI debt analysis, the 2025 parking study, the superintendent’s September 30 letter, and resident comment cards. Figures come from official City and school records where possible; where a figure relies on news reporting or a document posted on a campaign website, the source note says so. Figures marked “inferred” are this guide’s own calculations, with their assumptions stated alongside. AI model opinions are kept in a separate, labeled “What the AIs think” tab and are not part of the factual guide. Built by an East Grand Rapids resident. Self-funded. Not affiliated with the City, the school district, or any campaign.</p>
+          <p>Built from City Commission packets (April 20, June 29, July 20, and August 3), the Progressive Companies traffic memo and February 2026 follow-up, City operating-cost emails, the MFCI debt analysis, the 2025 parking study, the superintendent’s September 30 letter, and resident comment cards. Figures come from official City and school records where possible; where a figure relies on news reporting or a document posted on a campaign website, the source note says so. Figures marked “inferred” are this guide’s own calculations, with their assumptions stated alongside. AI model opinions are kept in a separate, labeled “AI Review Panel” tab and are not part of the factual guide. Built by an East Grand Rapids resident. Self-funded. Not affiliated with the City, the school district, or any campaign.</p>
         </aside>
       </header>
 <section class="summary" id="guide-summary">
@@ -789,7 +793,7 @@
     <section class="view-panel ai-panel" id="ai" aria-labelledby="ai-title">
       <header class="tldr-header" id="ai-analysis">
         <p class="section-kicker">AI opinions, separate from the guide</p>
-        <h2 id="ai-title">What the AIs think</h2>
+        <h2 id="ai-title">AI Review Panel</h2>
         <p class="lede">We asked four AI models to reason carefully through all the data available to them and say which outcome the evidence better supports. These aren’t votes or advice.</p>
       </header>
 
@@ -830,10 +834,25 @@
           </ul>
 
           <h4>Signatures</h4>
-          <ul class="resolution-signatures">
-            <li><span class="sig">Grok</span><small>Signed · drafted the joint text</small></li>
-            <li><span class="sig">Claude</span><small><code>claude-opus-5-5</code> · Signed with edits</small></li>
-            <li><span class="sig">Codex</span><small><code>gpt-6.1-sol</code>, high reasoning · Signed with edits</small></li>
+          <ul class="resolution-signatures" aria-label="Signatures">
+            <li class="sig-grok">
+              <span class="sig-stamp" aria-hidden="true">✓ Signed</span>
+              <span class="sig" aria-hidden="true">Grok</span>
+              <span class="sig-line" aria-hidden="true"></span>
+              <span class="sig-meta"><span class="sr-only">Signature: </span><strong>Grok</strong><br>Signed Oct 9, 2026 · drafted the joint text</span>
+            </li>
+            <li class="sig-claude">
+              <span class="sig-stamp" aria-hidden="true">✓ Signed</span>
+              <span class="sig" aria-hidden="true">Claude</span>
+              <span class="sig-line" aria-hidden="true"></span>
+              <span class="sig-meta"><span class="sr-only">Signature: </span><strong>Claude</strong> · <code>claude-opus-5-5</code><br>Signed Oct 9, 2026 · signed with edits</span>
+            </li>
+            <li class="sig-codex">
+              <span class="sig-stamp" aria-hidden="true">✓ Signed</span>
+              <span class="sig" aria-hidden="true">Codex</span>
+              <span class="sig-line" aria-hidden="true"></span>
+              <span class="sig-meta"><span class="sr-only">Signature: </span><strong>Codex</strong> · <code>gpt-6.1-sol</code>, high reasoning<br>Signed Oct 9, 2026 · signed with edits</span>
+            </li>
           </ul>
           <p class="resolution-meta">All three members signed. No dissents were recorded.</p>
       </article>
@@ -954,7 +973,7 @@
         <ul class="sources sources-plain">
           <li id="ai1"><div><b>Fact-check of this page (207 claims)</b><span class="src-meta">Oct. 8, 2026 · Codex (gpt-6.1-sol), AI-generated</span>Secondary. Checked the page’s claims against the record; used to find and fix errors. <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/codex-factcheck-2026-10-08.md" target="_blank" rel="noopener noreferrer">Open on GitHub</a>.</div></li>
           <li id="ai2"><div><b>Page anomaly audit and spot-check notes</b><span class="src-meta">Oct. 8, 2026 · Codex and Grok, AI-generated</span>Secondary. Flagged math, link and wording problems; used to find and fix errors. <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/codex-anomalies-2026-10-08.md" target="_blank" rel="noopener noreferrer">Audit</a>, <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/anomalies-verification-notes.md" target="_blank" rel="noopener noreferrer">spot-check</a>.</div></li>
-          <li id="ai3"><div><b>Independent best-fit write-ups</b><span class="src-meta">Oct. 8, 2026 · Codex and Grok, AI-generated</span>Secondary. Basis for the Codex and Grok cards in “What the AIs think.” <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-codex-gpt-6.1-sol.md" target="_blank" rel="noopener noreferrer">Codex</a>, <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-grok-bot.md" target="_blank" rel="noopener noreferrer">Grok</a>, <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-comparison.md" target="_blank" rel="noopener noreferrer">comparison</a>.</div></li>
+          <li id="ai3"><div><b>Independent best-fit write-ups</b><span class="src-meta">Oct. 8, 2026 · Codex and Grok, AI-generated</span>Secondary. Basis for the Codex and Grok cards in the “AI Review Panel” tab. <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-codex-gpt-6.1-sol.md" target="_blank" rel="noopener noreferrer">Codex</a>, <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-grok-bot.md" target="_blank" rel="noopener noreferrer">Grok</a>, <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-comparison.md" target="_blank" rel="noopener noreferrer">comparison</a>.</div></li>
           <li id="ai4"><div><b>Claude assessment of the record</b><span class="src-meta">Oct. 2026 · Claude (claude-opus-5-5), AI-generated</span>Secondary. Basis for the Claude card. <span class="no-copy">No public copy available</span>.</div></li>
           <li id="ai5"><div><b>Research summary (dossier) for this guide</b><span class="src-meta">Oct. 2026 · Prepared with AI assistance for this guide</span>Secondary. Collected news and record excerpts; any fact used on the page is cited to its original source above. <span class="no-copy">No public copy available</span>.</div></li>
         </ul>
@@ -962,7 +981,7 @@
       <section class="source-group" id="src-panel" aria-labelledby="src-panel-h">
         <h3 id="src-panel-h">AI review panel files <span class="secondary-tag">Secondary</span></h3>
         <ul class="sources sources-plain">
-          <li id="panel1"><div><b>Joint Recommendation of the AI Review Panel</b><span class="src-meta">Oct. 8–9, 2026 · Grok, Claude (claude-opus-5-5), Codex (gpt-6.1-sol)</span>The signed joint text summarized in “What the AIs think.” <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/council/joint-recommendation.md" target="_blank" rel="noopener noreferrer">Open on GitHub</a>.</div></li>
+          <li id="panel1"><div><b>Joint Recommendation of the AI Review Panel</b><span class="src-meta">Oct. 8–9, 2026 · Grok, Claude (claude-opus-5-5), Codex (gpt-6.1-sol)</span>The signed joint text, shown in full in the “AI Review Panel” tab. <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/council/joint-recommendation.md" target="_blank" rel="noopener noreferrer">Open on GitHub</a>.</div></li>
           <li id="panel2"><div><b>Round-by-round panel files</b><span class="src-meta">Oct. 8–9, 2026 · Grok, Claude, Codex</span>Round 1 memos, Round 2 responses, the joint draft, sign-offs and prompts. <a href="https://github.com/daverynties/egr-finance-data/tree/main/reviews/parking-deck/council" target="_blank" rel="noopener noreferrer">Open folder on GitHub</a>.</div></li>
         </ul>
       </section>
@@ -972,7 +991,7 @@
     <footer>
       <p>Built by an East Grand Rapids resident. Self-funded. Not affiliated with the City of East Grand Rapids, EGR Public Schools, or any campaign.</p>
       <p>Figures marked “inferred” are this guide’s calculations from cited sources, with assumptions stated alongside; they are not stated in any source. Last reviewed October 8, 2026.</p>
-      <p class="footer-ai-note">The “What the AIs think” tab contains AI model opinions and an AI exercise, not facts or advice. The rest of this guide reports sourced facts and labeled calculations.</p>
+      <p class="footer-ai-note">The “AI Review Panel” tab contains AI model opinions and an AI exercise, not facts or advice. The rest of this guide reports sourced facts and labeled calculations.</p>
     </footer>
   </main>
 
@@ -1006,6 +1025,12 @@
       }
       setTheme('light');
       themeToggle.addEventListener('click',function(){setTheme(root.dataset.theme==='dark'?'light':'dark');});
+      document.querySelector('.nav-brand').addEventListener('click',function(e){
+        e.preventDefault();
+        if(location.hash)location.hash='top';
+        window.scrollTo(0,0);
+        syncTabs();
+      });
       window.addEventListener('hashchange',syncTabs);
       syncTabs();
     })();
