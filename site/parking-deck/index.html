@@ -369,34 +369,98 @@
     @media(max-width:440px){h1{font-size:2.8rem}.ballot-card{padding:24px}.section-title{font-size:1.85rem}}
     @media(prefers-reduced-motion:reduce){.nav-toggle-icon,.nav-toggle-icon::before,.nav-toggle-icon::after{transition:none}}
     @media print{.jumpbar{display:none!important}}
+    /* v3 views: tabs work without JS via :target; deep links #front #full #ai */
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .view-tabs{display:flex;flex:1 1 auto;gap:4px;flex-wrap:wrap}
+    .view-tab{padding:8px 11px;border:1px solid transparent;color:var(--muted);font-size:.86rem;font-weight:700;text-decoration:none;white-space:nowrap}
+    .view-tab:hover{color:var(--navy);background:var(--surface-2)}
+    .view-tab.is-active,.view-tab[aria-current="page"]{color:var(--navy);border-color:var(--navy);background:var(--surface)}
+    @supports selector(:has(*)){
+      .view-panel{display:none}
+      .view-panel:target,.view-panel:has(:target){display:block}
+      main:not(:has(.view-panel:target)):not(:has(.view-panel :target)) #front{display:block}
+      body:not(:has(.view-panel:target)):not(:has(.view-panel :target)) .view-tab[data-view="front"],
+      body:has(#front:target,#front :target) .view-tab[data-view="front"],
+      body:has(#full:target,#full :target) .view-tab[data-view="full"],
+      body:has(#ai:target,#ai :target) .view-tab[data-view="ai"]{color:var(--navy);border-color:var(--navy);background:var(--surface)}
+    }
+    .front-panel{padding:48px 0 70px;max-width:900px;margin:0 auto}
+    .front-panel h4,.vote-effect h4{margin:0 0 10px;font:700 1.05rem/1.2 "Source Sans 3",sans-serif;color:var(--ink)}
+    .front-lead{margin:0 0 14px}
+    .cost-table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line);font-size:.95rem}
+    .cost-table th,.cost-table td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:right;vertical-align:bottom}
+    .cost-table th{text-transform:none;letter-spacing:0;background:transparent}.cost-table thead th{font-size:.8rem;color:var(--muted);font-weight:700;line-height:1.3;background:var(--surface-2)}.cost-table tbody th{color:var(--ink);font-size:inherit}
+    .cost-table th[scope="row"],.cost-table thead th:first-child{text-align:left}
+    .cost-table tbody tr:last-child>*{border-bottom:0}
+    .full-panel{padding-top:40px}
+    .full-header{max-width:900px;padding-bottom:10px}
+    .full-toc{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0 6px}
+    .full-toc a{padding:6px 10px;border:1px solid var(--line);background:var(--surface);font-size:.84rem;font-weight:600;text-decoration:none}
+    .ai-panel .assessment-intro{font-size:1.15rem;line-height:1.55;color:var(--ink);max-width:760px}
+    .ai-glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#bfd0ba;border:1px solid #bfd0ba;margin:0 0 12px}
+    .ai-glance div{background:var(--surface);padding:16px;text-align:center}
+    .ai-glance span{display:block;font-weight:700;color:var(--muted);font-size:.9rem}
+    .ai-glance b{display:block;font-size:1.6rem;line-height:1.2;color:var(--navy)}
+    .ai-note{margin:0 0 26px;color:var(--muted);font-size:.9rem;max-width:760px}
+    .ai-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:26px}
+    .ai-cards .assessment-piece{margin:0}
+    .ai-card p{margin:0 0 10px}
+    .ai-card-title{margin:0 0 6px!important;font-size:1.3rem!important}
+    .ai-fit{font-size:1.08rem}.ai-fit span{color:var(--muted)}
+    .ai-disclosure{font-size:.86rem;color:var(--muted)}
+    .ai-sources{margin-top:8px;font-size:.84rem;color:var(--muted)}
+    .ai-sources summary{cursor:pointer;font-weight:700;color:var(--navy)}
+    .ai-sources p{margin:8px 0 0}
+    .ai-council{background:var(--surface);border:1px solid var(--line-strong);border-left:5px solid var(--navy);padding:clamp(18px,3vw,28px)}
+    .ai-council h3{margin:0 0 10px;font-size:1.3rem}
+    .council-summary{background:var(--surface-2);padding:14px 18px;margin:0 0 14px}.council-summary p{margin:0 0 6px}.council-summary ol{margin:0;padding-left:22px}
+    .council-formal{border:1px solid var(--line);margin:0 0 18px;background:var(--bg)}
+    .council-formal>summary{cursor:pointer;padding:12px 16px;font-weight:700;color:var(--navy)}
+    .resolution{padding:clamp(16px,4vw,36px);border-top:1px solid var(--line);font-family:Georgia,"Times New Roman",serif;max-width:780px;margin:0 auto}
+    .resolution-head{text-align:center;border-bottom:3px double var(--line-strong);padding-bottom:14px;margin-bottom:18px}
+    .resolution-kind{margin:0;font:700 .75rem/1.2 "Source Sans 3",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+    .resolution h4{margin:8px 0;font-size:clamp(1.15rem,3vw,1.45rem);line-height:1.25;color:var(--ink)}
+    .resolution h5{margin:22px 0 8px;font:700 .82rem/1.2 "Source Sans 3",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--navy)}
+    .resolution-meta{margin:4px 0;font-size:.88rem;color:var(--muted)}
+    .resolution-list{padding-left:24px}.resolution-list li{margin-bottom:8px}
+    .resolution-signatures{list-style:none;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:10px 0}
+    .resolution-signatures li{border-top:1px solid var(--ink);padding-top:6px}
+    .resolution-signatures .sig{display:block;font-style:italic;font-size:1.15rem}
+    .resolution-signatures small{color:var(--muted);font-size:.78rem}
+    .council-how{font-size:.92rem}.council-how h4{margin:0 0 6px;font-size:1.05rem}.council-how ol{padding-left:22px;margin:0 0 8px}
+    body:has(#sources:target,#sources :target) .view-tab[data-view="sources"]{color:var(--navy);border-color:var(--navy);background:var(--surface)}
+    .sources-panel{padding:40px 0 60px}
+    .source-group{margin:28px 0}.source-group h3{font-size:1.35rem;margin:0 0 6px}
+    .src-meta{display:block;font-size:.8rem;color:var(--muted);margin:2px 0 4px}
+    .no-copy{font-style:italic;color:var(--muted)}
+    .sources-plain{list-style:none;padding-left:0}
+    .secondary-tag{display:inline-block;vertical-align:middle;font:700 .68rem/1 "Source Sans 3",sans-serif;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line-strong);color:var(--muted);padding:4px 6px;margin-left:6px}
+    .src-jump{display:block;margin-top:6px}
+    @media print{.view-panel{display:block!important}}
+    @media(max-width:600px){.resolution-signatures{grid-template-columns:1fr}}
+    @media(max-width:760px){
+      .view-tabs{grid-column:1/-1;order:3;display:grid;grid-template-columns:repeat(4,auto);gap:4px}
+      .view-tab{text-align:center;padding:9px 4px;font-size:.8rem;white-space:normal;line-height:1.15;border-color:var(--line)}
+      .front-panel{padding:34px 0 54px}
+      .cost-table{font-size:.86rem}.cost-table th,.cost-table td{padding:8px 6px}
+      .ai-glance{grid-template-columns:repeat(2,1fr)}
+      .ai-cards{grid-template-columns:1fr}
+    }
   </style>
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
-  <nav class="jumpbar" aria-label="Page sections">
+  <nav class="jumpbar" aria-label="Guide views">
     <div class="jumpbar-inner">
-      <a class="nav-brand" href="#guide-summary" aria-label="East Grand Rapids Parking Deck Bond Guide">
+      <a class="nav-brand" href="#front" aria-label="Parking Deck Bond Guide: quick guide">
         <span class="nav-mark" aria-hidden="true">E</span>
         <span class="nav-title">Parking Deck Bond Guide</span>
       </a>
-      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks">
-        <span>Sections</span><span class="nav-toggle-icon" aria-hidden="true"></span>
-      </button>
-      <div class="nav-links" id="navLinks">
-        <div class="nav-group">
-          <button class="nav-group-label" type="button" aria-expanded="false">Overview</button>
-          <div class="nav-menu"><a href="#guide-summary">Summary</a><a href="#need">Need</a><a href="#cost">Cost</a></div>
-        </div>
-        <div class="nav-group">
-          <button class="nav-group-label" type="button" aria-expanded="false">Analysis</button>
-          <div class="nav-menu"><a href="#financing">Financing</a><a href="#process">Process</a><a href="#alternatives">Alternatives</a></div>
-        </div>
-        <div class="nav-group">
-          <button class="nav-group-label" type="button" aria-expanded="false">Review</button>
-          <div class="nav-menu"><a href="#fact-check">Fact Check</a><a href="#risks">Risks</a><a href="#sources">Sources</a></div>
-        </div>
-        <a class="view-nav-link tldr-nav-link" href="#summary">Quick Summary</a>
-        <a class="view-nav-link ai-nav-link" href="#ai-analysis">AI Analysis</a>
+      <div class="view-tabs" role="list">
+        <a class="view-tab" role="listitem" href="#front" data-view="front">Quick guide</a>
+        <a class="view-tab" role="listitem" href="#full" data-view="full">Full analysis</a>
+        <a class="view-tab" role="listitem" href="#ai" data-view="ai">What the AIs think</a>
+        <a class="view-tab" role="listitem" href="#sources" data-view="sources">Sources</a>
       </div>
       <span class="freshness">Nov. 3, 2026 ballot</span>
       <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
@@ -414,10 +478,6 @@
           <p class="eyebrow">Independent voter guide</p>
         </div>
         <h1 id="page-title">East Grand Rapids Parking Deck Bond</h1>
-        <aside class="about-guide" aria-labelledby="about-guide-title">
-          <strong id="about-guide-title">About this guide</strong>
-          <p>Built from City Commission packets (April 20, June 29, July 20, and August 3), the Progressive Companies traffic memo and February 2026 follow-up, City operating-cost emails, the MFCI debt analysis, the 2025 parking study, the superintendent’s September 30 letter, and resident comment cards. Figures come from official City and school records where possible; where a figure relies on news reporting or a document posted on a campaign website, the source note says so. Figures marked “inferred” are this guide’s own calculations, with their assumptions stated alongside. AI model opinions are kept in a separate, labeled AI Analysis tab and are not part of the factual guide. Built by an East Grand Rapids resident. Self-funded. Not affiliated with the City, the school district, or any campaign.</p>
-        </aside>
         <p class="deck-subtitle">A source-backed guide to the $9 million Public Parking Facility and Pedestrian Safety Bond Proposal on the November 3, 2026 ballot.<a class="cite" href="#s1" aria-label="Source 1">1</a></p>
       </div>
       <aside class="ballot-card" aria-label="Proposal at a glance">
@@ -432,92 +492,99 @@
       </aside>
     </section>
 
-    <section class="tldr-tab-panel" id="summary" aria-labelledby="tldr-title">
-      <header class="tldr-header">
-        <p class="section-kicker">Under two minutes</p>
-        <h2 id="tldr-title">The short version</h2>
-        <p class="lede">On November 3, East Grand Rapids voters decide whether the City may borrow up to $9 million, repaid through a property tax over as long as 20 years, to pay its part of a shared city–school parking deck at the high school, traffic signals, and pedestrian and bike-safety work.</p>
+    <section class="view-panel front-panel" id="front" aria-labelledby="front-title">
+      <header class="tldr-header" id="summary">
+        <p class="section-kicker">Quick guide · about 2 minutes</p>
+        <h2 id="front-title">What you’re voting on</h2>
+        <p class="lede">On Nov. 3, voters decide if the City of East Grand Rapids can borrow up to $9 million. The money would pay the City’s share of a parking deck at the high school on Bagley Avenue, plus new traffic signals and safety work for people who walk and bike. A property tax would repay the loan over up to 20 years.</p>
       </header>
 
-      <section class="tldr-block" aria-labelledby="tldr-ballot-title">
-        <h3 id="tldr-ballot-title">What’s on the ballot</h3>
-        <ul class="tldr-list">
-          <li><strong>Amount:</strong> up to $9,000,000. The City could issue less.</li>
-          <li><strong>Bond type:</strong> general obligation unlimited-tax bonds, meaning the City levies whatever property tax is needed each year to repay them.</li>
-          <li><strong>Term:</strong> up to 20 years for each series of bonds.</li>
-          <li><strong>Purpose:</strong> part of the cost of a public parking deck on Bagley at the existing high-school lot, traffic signals at Lake and Bagley/San Lu Rae, and pedestrian and micromobility safety work.</li>
-          <li><strong>Estimated tax rate on the ballot:</strong> 0.5922 mills in the first year; 0.4925 mills on average over the life of the bonds.</li>
-        </ul>
-        <p class="tldr-note">From the adopted ballot language, quoted in full in the Financing section.<a class="cite" href="#s13">13</a><a class="cite" href="#s7">7</a></p>
+      <section class="tldr-block" aria-labelledby="front-cost-title">
+        <h3 id="front-cost-title">What it costs you</h3>
+        <p class="tldr-note front-lead">The tax is based on your home’s <strong>taxable value</strong>. You can find it on your tax bill. It is usually half of your home’s market value or less.</p>
+        <table class="cost-table">
+          <caption class="sr-only">Estimated bond tax by taxable value</caption>
+          <thead><tr><th scope="col">Taxable value</th><th scope="col">First year</th><th scope="col">20 years, value stays the same</th><th scope="col">20 years, value grows 2% a year</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">$100,000</th><td>$59</td><td>$985</td><td>$1,181</td></tr>
+            <tr><th scope="row">$200,000</th><td>$118</td><td>$1,970</td><td>$2,362</td></tr>
+            <tr><th scope="row">$300,000</th><td>$178</td><td>$2,955</td><td>$3,543</td></tr>
+          </tbody>
+        </table>
+        <p class="tldr-note">The City’s plan assumes total taxable value in the city grows 2% a year, so the tax rate drops over time. If your value grows at that pace too, you pay about the same each year. Our math from the City’s debt schedule. The cost of running the deck is not included.<a class="cite" href="#s9">9</a></p>
       </section>
 
-      <section class="tldr-block" aria-labelledby="tldr-cost-title">
-        <h3 id="tldr-cost-title">What it costs a household</h3>
-        <p class="tldr-cost"><strong>About $59 a year per $100,000 of taxable value</strong> in the first year.</p>
-        <p class="tldr-note">The ballot’s 0.4925-mill average ($49 per $100,000) assumes citywide taxable value grows 2% a year. Those per-year figures hold your own taxable value constant; if yours also rises about 2% a year, your bill stays near $59 per $100,000 every year. Example: at $200,000–$260,000 of taxable value, about $118–$154 in year one, and about $1,970–$2,560 over 20 years if your taxable value never changes, or about $2,360–$3,070 if it grows 2% a year. <span class="inferred">inferred</span><a class="cite" href="#s9">9</a> Your taxable value is on your assessment notice and is usually well below market value. Deck operating costs are not part of the bond.</p>
-      </section>
-
-      <section class="tldr-block" aria-labelledby="tldr-facts-title">
-        <h3 id="tldr-facts-title">Five key numbers</h3>
+      <section class="tldr-block" aria-labelledby="front-facts-title">
+        <h3 id="front-facts-title">Five key facts</h3>
         <div class="tldr-facts">
-          <div class="tldr-fact"><b>$15.2M–$18.1M</b><span>OAK’s deck-only cost estimates (2026–2028 dollars); signal and pedestrian work not itemized</span></div>
-          <div class="tldr-fact"><b>~$16M</b><span>City’s $9M cap plus the school’s ~$7M set-aside, below four of six estimates; no document says who pays overruns</span></div>
-          <div class="tldr-fact"><b>71 / ~65</b><span>campus spaces permanently lost to the high-school expansion / left during 2028–2030 construction</span></div>
-          <div class="tldr-fact"><b>371 of 1,310</b><span>study-area spaces empty at the busiest 2025 hour; some lots and streets near the school were over capacity</span></div>
-          <div class="tldr-fact"><b>No signed agreement</b><span>cost overruns, upkeep, public access and fees are not yet in a binding city–school document</span></div>
+          <div class="tldr-fact"><b>$15.2M–$18.1M</b><span>Estimated cost of the deck alone, not the signals or walking and biking work</span></div>
+          <div class="tldr-fact"><b>~$16M</b><span>Money named so far: the City’s $9M plus about $7M the schools set aside. That is less than most estimates.</span></div>
+          <div class="tldr-fact"><b>71 lost</b><span>Campus spaces the high-school expansion removes for good. About 65 would be left during 2028–2030 construction.</span></div>
+          <div class="tldr-fact"><b>371 of 1,310</b><span>Spaces in the area that were empty at the busiest hour in 2025. Some lots near the school were overfull.</span></div>
+          <div class="tldr-fact"><b>No signed deal</b><span>The City and schools have not signed an agreement on costs, upkeep or public use.</span></div>
         </div>
       </section>
 
-      <section class="tldr-block" aria-labelledby="tldr-cases-title">
-        <h3 id="tldr-cases-title">The strongest factual points on each side</h3>
+      <section class="tldr-block" aria-labelledby="front-sides-title">
+        <h3 id="front-sides-title">The strongest point on each side</h3>
         <div class="tldr-cases">
           <article class="tldr-case">
-            <h3>Points cited for YES</h3>
+            <h4>Points for YES</h4>
             <ul>
-              <li>The high-school expansion permanently removes 71 campus spaces, and the district projects about 65 campus spaces during 2028–2030 construction.</li>
-              <li>In the 2025 counts, some spots near the school were over capacity (San Lu Rae street parking up to 233%, the senior lot 106%), and school lots reached 86.8% on the Saturday count.</li>
-              <li>Students who park in the deck “will not be required to cross any streets,” per the City’s traffic consultant; the deck would also add public parking for school events and Gaslight Village.</li>
-              <li>The cost is shared: the school district has set aside about $7 million, and the Commission chose a public vote over bonds that would not need one.</li>
+              <li>The school loses 71 parking spaces for good. Only about 65 would be left on campus during construction.</li>
+              <li>Students who park in the deck would not have to cross a street. The deck would also add public parking for events and Gaslight Village.</li>
+              <li>The schools would share the cost, and voters get the final say.</li>
             </ul>
           </article>
           <article class="tldr-case">
-            <h3>Points cited for NO</h3>
+            <h4>Points for NO</h4>
             <ul>
-              <li>The City’s traffic consultant first recommended building the expansion “without any parking improvements,” trying street parking and the middle-school lot before a structure; its February 2026 letter said some options “may not be feasible” without naming them.</li>
-              <li>At the busiest 2025 hour, 371 of 1,310 spaces in the study area were empty (71.7% full).</li>
-              <li>The deck adds about 191 net spaces against a 71-space permanent loss, at roughly $80,000–$95,000 per net new space <span class="inferred">inferred</span>; no line-item estimate has been released.</li>
-              <li>No signed agreement covers overruns, upkeep, public access or fees, and no dedicated source pays the yearly operating cost.</li>
+              <li>The City’s traffic consultant said to try cheaper fixes first, like street parking and the middle-school lot. A later letter said some may not work but did not say which.</li>
+              <li>At the busiest hour in 2025, 371 of 1,310 spaces in the area were empty.</li>
+              <li>Key terms are not signed, such as who pays extra costs and when the public can park there.</li>
             </ul>
           </article>
         </div>
       </section>
 
-      <section class="tldr-block" aria-labelledby="tldr-vote-title">
-        <h3 id="tldr-vote-title">What your vote does</h3>
+      <section class="tldr-block" aria-labelledby="front-vote-title">
+        <h3 id="front-vote-title">What your vote does</h3>
         <div class="vote-effect">
-          <article><h3>YES</h3><p>Authorizes the City to issue up to $9 million of these bonds. The Commission still has to approve construction bids, a city–school agreement and the bond sale, and may borrow less than $9 million.<a class="cite" href="#s12">12</a></p></article>
-          <article><h3>NO</h3><p>The City cannot issue these bonds. The City Manager’s memo names May 2027 as the next ballot opportunity if the question is deferred.<a class="cite" href="#s1">1</a> The superintendent’s September 30 letter says the vote will help inform whether the district continues or pauses the deck.<a class="cite" href="#s18">18</a></p></article>
+          <article><h4>A YES vote</h4><p>The City may borrow up to $9 million for this project. The City Commission still has to approve the bids, a deal with the schools and the loan itself. It can borrow less.</p></article>
+          <article><h4>A NO vote</h4><p>The City cannot borrow this money. The earliest it could ask voters again is May 2027. The schools say the vote will help them decide whether to go ahead or pause.</p></article>
         </div>
       </section>
 
-      <section class="tldr-block" aria-labelledby="tldr-open-title">
-        <h3 id="tldr-open-title">Key open questions</h3>
+      <section class="tldr-block" aria-labelledby="front-open-title">
+        <h3 id="front-open-title">Questions still open</h3>
         <ul class="tldr-list">
-          <li>Who pays if bids come in above the roughly $16 million the City and school have named?</li>
-          <li>Who will own, run and repair the deck, and from what budget? About $160,000 a year has been cited for the whole deck; no funding source is named.</li>
-          <li>How many spaces will the public be able to use during school hours, and will parking stay free?</li>
-          <li>Can the deck open before the 2028–2030 construction low point? No published schedule shows that.</li>
-          <li>Which pedestrian and bike projects would the bond pay for? No project list or budget has been released.</li>
-          <li>Which of the consultant’s cheaper options were judged “not feasible,” and why?</li>
+          <li>Who pays if the deck costs more than the roughly $16 million named so far?</li>
+          <li>Who runs and repairs the deck, and with what money? About $160,000 a year has been mentioned.</li>
+          <li>Will the public be able to park there during school hours, and will it be free?</li>
+          <li>Can the deck open before the 2028–2030 construction crunch?</li>
         </ul>
       </section>
 
-      <div class="tldr-actions">
-        <a href="#guide-summary">Read the full factual guide</a>
-      </div>
+      <nav class="tldr-actions" aria-label="More detail">
+        <a href="#full">Full analysis</a>
+        <a href="#ai">What the AIs think</a>
+      </nav>
     </section>
 
-    <section class="summary" id="guide-summary">
+    <section class="view-panel full-panel" id="full" aria-labelledby="full-title">
+      <header class="full-header">
+        <p class="section-kicker">In depth</p>
+        <h2 id="full-title">Full analysis</h2>
+        <p class="lede">The detailed record behind the quick guide: sources, footnotes, math, process, alternatives and the campaign fact check.</p>
+        <nav class="full-toc" aria-label="Full analysis sections">
+          <a href="#guide-summary">Summary</a><a href="#need">Need</a><a href="#cost">Cost</a><a href="#financing">Financing</a><a href="#process">Process</a><a href="#alternatives">Alternatives</a><a href="#fact-check">Fact check</a><a href="#risks">Risks</a><a href="#sources">Sources</a>
+        </nav>
+        <aside class="about-guide" aria-labelledby="about-guide-title">
+          <strong id="about-guide-title">About this guide</strong>
+          <p>Built from City Commission packets (April 20, June 29, July 20, and August 3), the Progressive Companies traffic memo and February 2026 follow-up, City operating-cost emails, the MFCI debt analysis, the 2025 parking study, the superintendent’s September 30 letter, and resident comment cards. Figures come from official City and school records where possible; where a figure relies on news reporting or a document posted on a campaign website, the source note says so. Figures marked “inferred” are this guide’s own calculations, with their assumptions stated alongside. AI model opinions are kept in a separate, labeled “What the AIs think” tab and are not part of the factual guide. Built by an East Grand Rapids resident. Self-funded. Not affiliated with the City, the school district, or any campaign.</p>
+        </aside>
+      </header>
+<section class="summary" id="guide-summary">
       <p class="section-kicker">Executive summary</p>
       <h2>The decision in one screen</h2>
       <p class="lede">The proposal links a parking structure at EGR High School with traffic signals and pedestrian infrastructure. The case turns less on today’s utilization than on what happens when school construction removes spaces from 2028–2030.</p>
@@ -703,63 +770,6 @@
       </div>
     </details>
 
-    <section class="assessment-section ai-tab-panel" id="ai-analysis" aria-labelledby="ai-analysis-title">
-      <div class="section-body">
-        <div class="opinion-disclaimer" role="note">AI opinions, not facts and not recommendations. This tab is separate from the factual guide.</div>
-        <header class="ai-tab-heading">
-          <p class="section-kicker">Separate from the factual guide</p>
-          <h2 id="ai-analysis-title">AI analysis</h2>
-          <p class="assessment-intro">Each model was asked to reason at high effort using all of the data made available to it, and to say which outcome, yes or no, the evidence better supports, and why. This is each model’s evidence-based best fit, not a vote. The models did not all see the same material; the sources each one used are listed with its entry. These are AI opinions, not recommendations from any official body, campaign or the guide’s author, and they do not tell anyone how to vote. Agreement among models is not evidence that a conclusion is correct.</p>
-        </header>
-
-        <article class="assessment-piece claude" aria-labelledby="claude-assessment">
-          <p class="assessment-label" id="claude-assessment">Claude</p>
-          <p class="ai-meta"><strong>Model:</strong> <code>claude-opus-5-5</code> (Anthropic)</p>
-          <p class="ai-meta"><strong>Sources used:</strong> The full record gathered for this guide, including secondary research: City Commission packets (April 20, June 29, July 20, August 3 and August 6/17), the traffic memo and follow-up, the operating-cost emails and Shared Parking Manual page, the OAK estimate and MFCI debt analysis, the 2025 parking data and City parking map, the superintendent’s September 30 letter, the June 23 and July 22 design presentations, the comment cards, and a research dossier drawing on news reports.</p>
-          <p class="ai-vote"><strong>Evidence-based best fit:</strong> No (when asked for a one-word yes/no).</p>
-          <p class="assessment-bottom-line"><strong>Bottom line:</strong> “The record supports a real but temporary and fixable problem. The ballot asks voters to fund a permanent, larger solution whose key terms aren’t written down yet.”</p>
-          <h3>Three reasons</h3>
-          <ul class="change-list"><li>The parking crunch is mostly temporary, during 2028–2030 construction. Across the area, 371 of 1,310 spaces sat empty at the busiest hour in 2025.</li><li>The City’s own traffic engineer said to try cheaper options first, such as street parking and the middle-school lot, and that hasn’t been done.</li><li>Nothing important is signed yet: the city–school agreement, free public parking, and who pays to run and repair the deck.</li></ul>
-          <h3>What would change it</h3>
-          <p>A signed city–school agreement and an itemized cost estimate, made public.</p>
-        </article>
-        <article class="assessment-piece codex" aria-labelledby="codex-assessment">
-          <p class="assessment-label" id="codex-assessment">Codex</p>
-          <p class="ai-meta"><strong>Model:</strong> <code>gpt-6.1-sol</code> (OpenAI), high reasoning effort</p>
-          <p class="ai-meta"><strong>Sources used:</strong> Primary records only: the August 3 packet’s comment cards and emails (pp. 239–247), the $9M debt-service schedule, the 2025 parking-utilization data, the City operating-cost emails with the Shared Parking Manual page, the Nov. 10, 2025 traffic memo and Feb. 4, 2026 follow-up letter, and a transcription of the scanned pages checked against the images.</p>
-          <p class="ai-vote"><strong>Evidence-based best fit:</strong> No.</p>
-          <p class="assessment-bottom-line"><strong>Bottom line:</strong> The documents establish a real loss of school parking and a potential benefit from keeping students on campus, but not that a roughly 240-space deck is the best response at this financial commitment.</p>
-          <h3>Three reasons</h3>
-          <ul class="change-list"><li>The counts do not show a broad shortage: the peak was 939 of 1,310 spaces (71.7%), and public city lots never passed 65.7%.</li><li>The traffic consultant recommended other options first, and the February follow-up does not say which options fail or why.</li><li>Paying back the bonds costs $13.2 million, including $4.2 million in interest, but there is still no confirmed budget and no plan for who runs, repairs or gets to use the deck.</li></ul>
-          <h3>What would change it</h3>
-          <p>Location-specific shortage counts, a revised alternatives analysis, a verified budget, and a signed city–school agreement covering overruns, operations, repairs and public access.</p>
-        </article>
-        <article class="assessment-piece grok" aria-labelledby="grok-assessment">
-          <p class="assessment-label" id="grok-assessment">Grok</p>
-          <p class="ai-meta"><strong>Model:</strong> Grok</p>
-          <p class="ai-meta"><strong>Sources used:</strong> Primary records only, the same set as Codex: the August 3 packet’s comment cards and emails (pp. 239–247), the $9M debt-service schedule, the 2025 parking-utilization data, the City operating-cost emails with the Shared Parking Manual page, the Nov. 10, 2025 traffic memo and Feb. 4, 2026 follow-up letter, and a transcription of the scanned pages checked against the images.</p>
-          <p class="ai-vote"><strong>Evidence-based best fit:</strong> No.</p>
-          <p class="assessment-bottom-line"><strong>Bottom line:</strong> A campus parking problem after the high-school expansion is real, but the record does not show that this deck, at this size and cost and with this City share, is the right fix.</p>
-          <h3>Three reasons</h3>
-          <ul class="change-list"><li>The City’s traffic consultant ranked a structure last, and no released analysis explains why street parking and the middle-school lot were ruled out.</li><li>The need is small: losing 71 spaces would leave school lots about 2 spaces short on the busiest 2025 weekday, while 371 spaces nearby sat empty at the busiest hour.</li><li>The record has no itemized cost estimate, no project-specific operating plan, and no binding city–school agreement.</li></ul>
-          <h3>What would change it</h3>
-          <p>A published itemized cost estimate, a signed city–school agreement covering public access and upkeep, and an explanation of why street parking and the middle-school lot were ruled out.</p>
-        </article>
-        <article class="assessment-piece muse" aria-labelledby="muse-assessment">
-          <p class="assessment-label" id="muse-assessment">Muse</p>
-          <p class="ai-meta"><strong>Model:</strong> Muse Spark 1.3 (Meta)</p>
-          <p class="ai-meta"><strong>Sources used:</strong> This guide and the public record it cites.</p>
-          <p class="ai-meta"><strong>Disclosure:</strong> Muse also built this guide, so its opinion is not independent of the guide’s framing.</p>
-          <p class="ai-vote"><strong>Evidence-based best fit:</strong> No.</p>
-          <p class="assessment-bottom-line"><strong>Bottom line:</strong> “Voters are being asked to approve $9M before the terms exist.… ‘Not yet’ is the right answer when the paperwork isn’t done.”</p>
-          <h3>Three reasons</h3>
-          <ul class="change-list"><li>The shortage is real but temporary, tied to 2028–2030 construction; 371 spaces sat empty at the 2025 peak.</li><li>The consultant said to try street parking and the middle-school lot first, and no public document explains why those options were dropped.</li><li>Nothing is binding yet: no signed city–school agreement, no guaranteed free public parking, no maintenance funding and no pedestrian project list.</li></ul>
-          <h3>What would change it</h3>
-          <p>A signed city–school agreement and itemized costs before a later vote; the City could return to voters in May 2027.</p>
-        </article>
-      </div>
-    </section>
-
     <details class="section" id="risks" open>
       <summary><span class="section-number">07</span><span class="section-title">Risks &amp; open questions<small>The ballot sets borrowing authority; several implementation choices remain open.</small></span><span class="chevron" aria-hidden="true"></span></summary>
       <div class="section-body">
@@ -780,43 +790,213 @@
       </div>
     </details>
 
-    <details class="section" id="sources" open>
-      <summary><span class="section-number">08</span><span class="section-title">Sources &amp; method<small>Primary records lead; campaign and media material are used mainly to identify claims.</small></span><span class="chevron" aria-hidden="true"></span></summary>
-      <div class="section-body">
-        <ol class="sources">
-          <li id="s1"><div><b>August 3, 2026 City Commission packet</b><br>Staff memo, resolutions, OAK estimates, financing materials and resident correspondence. <a href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/_08032026-950" target="_blank" rel="noopener noreferrer">Open official packet</a>. <a class="source-back" href="#guide-summary" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s2"><div><b>April 20, 2026 City Commission packet</b><br>Original subcommittee recommendation, campus-space counts and design-funding record. <a href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/_04202026-933" target="_blank" rel="noopener noreferrer">Open official packet</a>. <a class="source-back" href="#need" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s3"><div><b>June 29, 2026 City Commission packet</b><br>Parking-utilization study and work-session materials. <a href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/_06292026-945" target="_blank" rel="noopener noreferrer">Open official packet</a>. <a class="source-back" href="#need" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s4"><div><b>July 20, 2026 City Commission packet</b><br>Bond structure, financing options and meeting record. <a href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/_07202026-948" target="_blank" rel="noopener noreferrer">Open official packet</a>. <a class="source-back" href="#cost" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s5"><div><b>Progressive Companies traffic memorandum and follow-up letter</b><br>November 10, 2025 memo and Joseph P. Eberle, PE’s February 4, 2026 letter to Doug La Fave. <a href="https://safestreetsegr.com/documents/progressive-traffic-memo-2025-11-10.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>. <a class="source-back" href="#need" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s6"><div><b>City parking-deck operating-cost correspondence</b><br>Doug La Fave’s April 23 and February 4, 2026 emails; Grand Rapids benchmark and depreciation exclusion. <a href="https://safestreetsegr.com/documents/city-parking-deck-operating-cost-2026.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>. <a class="source-back" href="#cost" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s7"><div><b>MFCI bond analysis</b><br>$9M scenario, projected millage, rate and taxable-value assumptions in the August 3 packet. <a href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/_08032026-950" target="_blank" rel="noopener noreferrer">Open official packet</a>. <a class="source-back" href="#financing" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s8"><div><b>2025 parking-utilization dataset</b><br>Hourly school, public and private occupancy counts in the June 29 packet. <a href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/_06292026-945" target="_blank" rel="noopener noreferrer">Open official packet</a>. <a class="source-back" href="#need" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s9"><div><b>$9M debt-service schedule</b><br>Year-by-year principal, interest and projected levy in the August 3 packet. <a href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/_08032026-950" target="_blank" rel="noopener noreferrer">Open official packet</a>. <a class="source-back" href="#financing" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s10"><div><b>WalkSafeEGR</b><br>Opposition campaign claims, used only to identify claims for checking. <a href="https://walksafeegr.org" target="_blank" rel="noopener noreferrer">Open campaign site</a>. <a class="source-back" href="#fact-check" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s11"><div><b>Safe Streets EGR</b><br>Support campaign claims, used only to identify claims for checking. <a href="https://safestreetsegr.com/" target="_blank" rel="noopener noreferrer">Open campaign site</a>. <a class="source-back" href="#fact-check" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s12"><div><b>East Grand Rapids Citizen Portal</b><br>Meeting record and summary of the August 3 ballot vote. <a href="https://citizenportal.ai/articles/8877397/michigan/kent-county/east-grand-rapids/commission-votes-to-place-up-to-9-million-bond-millage-on-nov-3-ballot-for-parking-deck-and-pedestrian-safety-measures" target="_blank" rel="noopener noreferrer">Open coverage</a>. <a class="source-back" href="#process" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s13"><div><b>East Insider: “Cutting Through the Noise on the Parking Deck Millage” (Sept. 30, 2026)</b><br>Published commentary by Commissioner Abbie Groff-Blaszak; quotes the adopted ballot language and describes the subcommittee and the August 3 timing. <a href="https://eastinsider.substack.com/p/cutting-through-the-noise-on-the" target="_blank" rel="noopener noreferrer">Open coverage</a>. <a class="source-back" href="#process" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s14"><div><b>FOX 17 regional reporting</b><br>Video coverage of the proposal and resident concerns. <a href="https://www.youtube.com/watch?v=RsD1NqB69tA" target="_blank" rel="noopener noreferrer">Open report</a>. <a class="source-back" href="#process" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s15"><div><b>EGR community-group threads</b><br>Resident arguments and questions; not treated as proof of factual claims. Public links were not included because the reviewed threads may require group access. <a class="source-back" href="#process" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s16"><div><b>Shared Parking Manual, 3rd ed., Fig. 5-1</b><br>2018 operating and repair-reserve cost figures circulated with the City’s February 4 email. This source does not establish the 85% occupancy rule of thumb. <a href="https://safestreetsegr.com/documents/city-parking-deck-operating-cost-2026.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>. <a class="source-back" href="#cost" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s17"><div><b>Walker Consultants benchmark</b><br>Structured-parking cost context cited in the reviewed record. <a href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/_06292026-945" target="_blank" rel="noopener noreferrer">Open June 29 packet</a>. <a class="source-back" href="#cost" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s18"><div><b>EGRPS superintendent’s September 30, 2026 letter</b><br>Construction-period space count and school-event parking statement. <span>Copy not publicly available online.</span> <a class="source-back" href="#need" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s19"><div><b>City of East Grand Rapids FY2025 ACFR</b><br>Unassigned general-fund balance of $6,511,815, or 44.01%. <a href="https://www.eastgrmi.gov/Archive.aspx?ADID=1653" target="_blank" rel="noopener noreferrer">Open ACFR</a>. <a class="source-back" href="#financing" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s20"><div><b>Kent County 2024 Apportionment Report</b><br>City operating, extra-voted and debt levy figures. <a href="https://www.accesskent.com/Departments/Equalization/pdfs/ApportionmentReports/2024.pdf" target="_blank" rel="noopener noreferrer">Open report</a>. <a class="source-back" href="#financing" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s21"><div><b>EGRPS Board minutes, April 20, 2026</b><br>5–1 vote to set aside about $7M from general and capital improvement funds. <a href="https://www.egrps.org/district-information/elections/bond-proposal/high-school-transformation-project/jointparking" target="_blank" rel="noopener noreferrer">Open district project page</a>. <a class="source-back" href="#guide-summary" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s22"><div><b>City parking map, September 12, 2025</b><br>Lot 11—the Bagley surface lot—shows 49 spaces; reproduced in the City parking-deck operating-cost materials. <a href="https://safestreetsegr.com/documents/city-parking-deck-operating-cost-2026.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>. <a class="source-back" href="#need" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s23"><div><b>U.S. Census Bureau QuickFacts</b><br>East Grand Rapids median owner-occupied home value, 2020–2024. <a href="https://www.census.gov/quickfacts/table/PST045224/2623980" target="_blank" rel="noopener noreferrer">Open QuickFacts</a>. <a class="source-back" href="#financing" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s24"><div><b>June 23, 2026 public presentation</b><br>Parking-access statements reproduced in the August 3 packet. <a href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/_08032026-950" target="_blank" rel="noopener noreferrer">Open official packet</a>. <a class="source-back" href="#fact-check" aria-label="Back to cited section">↩</a></div></li>
-        </ol>
-        <div class="method"><b>Method.</b> Numbers are attributed to the closest available primary record. Campaign pages and community discussion are used to frame claims, not establish facts. “Inferred” marks arithmetic calculated from cited values rather than a figure stated verbatim in a source. Unreleased agreements, surveys, estimates and datasets are treated as missing—not assumed.</div>
+
+    </section>
+
+    <section class="view-panel assessment-section ai-panel" id="ai" aria-labelledby="ai-title">
+      <div class="section-body" id="ai-analysis">
+        <header class="ai-tab-heading">
+          <p class="section-kicker">AI opinions, separate from the guide</p>
+          <h2 id="ai-title">What the AIs think</h2>
+          <p class="assessment-intro">We asked four AI models to reason carefully through all the data available to them and say which outcome the evidence better supports. These aren’t votes or advice.</p>
+        </header>
+
+        <div class="ai-glance" role="list" aria-label="Each model’s best fit at a glance">
+          <div role="listitem"><span>Claude</span><b>No</b></div>
+          <div role="listitem"><span>Codex</span><b>No</b></div>
+          <div role="listitem"><span>Grok</span><b>No</b></div>
+          <div role="listitem"><span>Muse</span><b>No</b></div>
+        </div>
+        <p class="ai-note">“Best fit” is each model’s read of the evidence, not a vote. The models did not all see the same material; open “Sources used” on each card. Agreement among models does not prove they are right.</p>
+
+        <div class="ai-cards">
+        <article class="assessment-piece ai-card claude" aria-labelledby="ai-claude">
+          <h3 class="ai-card-title" id="ai-claude">Claude</h3>
+          <p class="ai-fit"><span>Best fit:</span> <strong>No</strong></p>
+          <p><strong>Why:</strong> The City’s own traffic consultant said to try cheaper fixes first, and nothing important is signed yet, so approving $9 million now comes before the answers.</p>
+          <p><strong>What would change its mind:</strong> A signed city–school agreement and an itemized cost estimate.</p>
+          <details class="ai-sources"><summary>Sources used</summary><p><strong>Model:</strong> <code>claude-opus-5-5</code> (Anthropic). The full record gathered for this guide, including secondary research: City Commission packets, the traffic memo and follow-up, cost emails, the OAK estimate and debt analysis, the 2025 parking counts, the superintendent’s Sept. 30 letter, design presentations, comment cards, and a research summary drawing on news reports. <span class="src-jump">See: <a href="#src-official">Official records</a>, <a href="#src-news">news</a> and the <a href="#ai5">research summary</a> in Sources.</span></p></details>
+        </article>
+        <article class="assessment-piece ai-card codex" aria-labelledby="ai-codex">
+          <h3 class="ai-card-title" id="ai-codex">Codex</h3>
+          <p class="ai-fit"><span>Best fit:</span> <strong>No</strong></p>
+          <p><strong>Why:</strong> The counts show a real loss of school parking but not a broad shortage, and no one has shown that a 240-space deck is the best fix for the price.</p>
+          <p><strong>What would change its mind:</strong> Parking counts near the school, a priced comparison of other options, a firm budget and a signed agreement.</p>
+          <details class="ai-sources"><summary>Sources used</summary><p><strong>Model:</strong> <code>gpt-6.1-sol</code> (OpenAI), high reasoning effort. Primary records only: the August 3 packet’s comment cards and emails (pp. 239–247), the $9M debt-service schedule, the 2025 parking counts, the City operating-cost emails with the Shared Parking Manual page, the Nov. 10, 2025 traffic memo and Feb. 4, 2026 follow-up letter, and a transcription of the scanned pages. <span class="src-jump">See: <a href="#src-official">Official records</a> in Sources; write-up: <a href="#ai3">AI notes</a>.</span></p></details>
+        </article>
+        <article class="assessment-piece ai-card grok" aria-labelledby="ai-grok">
+          <h3 class="ai-card-title" id="ai-grok">Grok</h3>
+          <p class="ai-fit"><span>Best fit:</span> <strong>No</strong></p>
+          <p><strong>Why:</strong> The campus problem is real but small, the City’s consultant ranked a deck last, and there is no itemized cost or signed agreement.</p>
+          <p><strong>What would change its mind:</strong> An itemized cost, a signed agreement on public use and upkeep, and a reason the cheaper options were ruled out.</p>
+          <details class="ai-sources"><summary>Sources used</summary><p><strong>Model:</strong> Grok. Primary records only, the same set as Codex: the August 3 packet’s comment cards and emails (pp. 239–247), the $9M debt-service schedule, the 2025 parking counts, the City operating-cost emails with the Shared Parking Manual page, the Nov. 10, 2025 traffic memo and Feb. 4, 2026 follow-up letter, and a transcription of the scanned pages. <span class="src-jump">See: <a href="#src-official">Official records</a> in Sources; write-up: <a href="#ai3">AI notes</a>.</span></p></details>
+        </article>
+        <article class="assessment-piece ai-card muse" aria-labelledby="ai-muse">
+          <h3 class="ai-card-title" id="ai-muse">Muse</h3>
+          <p class="ai-fit"><span>Best fit:</span> <strong>No</strong></p>
+          <p><strong>Why:</strong> Voters are asked to approve $9 million before the key terms are in writing, so “not yet” fits the evidence better.</p>
+          <p><strong>What would change its mind:</strong> A signed agreement and itemized costs before a later vote, which could come as soon as May 2027.</p>
+          <p class="ai-disclosure"><strong>Disclosure:</strong> Muse also built this guide, so its view is not independent of how the guide is written.</p>
+          <details class="ai-sources"><summary>Sources used</summary><p><strong>Model:</strong> Muse Spark 1.3 (Meta). This guide and the public record it cites. <span class="src-jump">See: <a href="#sources">All sources</a> listed in Sources.</span></p></details>
+        </article>
+        </div>
+
+        <section class="ai-council" aria-labelledby="ai-council-title">
+          <p class="section-kicker">AI exercise · not advice · not an official City document</p>
+          <h3 id="ai-council-title">What the AIs would do if they ran the city</h3>
+          <div class="council-summary">
+            <p><strong>In short:</strong></p>
+            <ol>
+              <li>Let the Nov. 3 vote go ahead.</li>
+              <li>Borrow nothing and sign no construction contract until six conditions are met, including a signed City–school deal, real bids and a priced comparison that includes no deck.</li>
+              <li>If it fails, make a funded student-parking plan by Dec. 15, 2026, and wait until at least May 2027 to ask again.</li>
+            </ol>
+          </div>
+
+          <details class="council-formal">
+            <summary>Read the full joint recommendation</summary>
+            <article class="resolution" aria-labelledby="resolution-title">
+              <header class="resolution-head">
+                <p class="resolution-kind">Joint Recommendation</p>
+                <h4 id="resolution-title">Joint Recommendation of the AI Review Panel on the Bagley Parking Deck Bond Proposal</h4>
+                <p class="resolution-meta">Adopted October 8–9, 2026 · Regarding the $9 million Public Parking Facility and Pedestrian Safety Bond Proposal, November 3, 2026 ballot</p>
+                <p class="resolution-meta"><strong>Panel:</strong> Grok; Claude (<code>claude-opus-5-5</code>); Codex (<code>gpt-6.1-sol</code>, high reasoning)</p>
+              </header>
+
+              <h5>Findings</h5>
+              <ol class="resolution-list">
+                <li>The high-school expansion removes 71 campus spaces, and about 65 spaces remain on campus during 2028–2030 construction.<a class="cite" href="#s5">5</a><a class="cite" href="#s18">18</a></li>
+                <li>At the busiest 2025 hour, 371 of 1,310 area spaces were empty, but school lots reached 86.8% on one Saturday, so spare spaces elsewhere do not prove convenient parking at the school.<a class="cite" href="#s8">8</a></li>
+                <li>The City’s traffic consultant ranked a structure last, after on-street parking and the middle-school lot. The Feb. 4, 2026 follow-up says some options “may not be feasible” but names none.<a class="cite" href="#s5">5</a></li>
+                <li>No City–school agreement is signed. Free public use is promised in writing only for school-event attendees, and no operating budget line exists.<a class="cite" href="#s18">18</a><a class="cite" href="#s6">6</a></li>
+                <li>Deck-only estimates run from $15.25 million (plain concrete, 2026 dollars) to $18.11 million (brick, 2028 dollars). The $9 million plus about $7 million covers the low option and falls up to about $2.1 million short of the high one (panel’s arithmetic).<a class="cite" href="#s1">1</a><a class="cite" href="#s21">21</a></li>
+              </ol>
+
+              <h5>Recommendation</h5>
+              <p>The Panel recommends that the certified question go to voters on November 3. The City should sell no bonds and award no construction contract until every condition below is met. Borrowing should be sized to the bids, and the City Attorney should confirm the chosen project fits what voters approved. Whatever the vote, the City and schools should deliver a 2028–2030 student-access plan.</p>
+
+              <h5>Conditions</h5>
+              <ol class="resolution-list">
+                <li>A signed City–school agreement covering the cost split, a cap on the City’s share, school responsibility for its own overruns, the split of running and reserve costs, enforceable public hours with no-fee public use, and the 3-foot right-of-way.</li>
+                <li>A published itemized estimate and real bids, with borrowing limited to what the bids require.</li>
+                <li>A priced side-by-side comparison: a two-level deck, the plain-concrete Option 5, the middle-school lot, on-street management plus busing, and a no-deck alternative. Any brick upgrade is paid by the schools.</li>
+                <li>A funded 20-year running and reserve budget. The record supports about $56,000–$147,000 a year; the long-term repair reserve still needs an engineer’s estimate.</li>
+                <li>The schools’ contribution confirmed, plus a priced list of the walking and biking projects.</li>
+                <li>An exit and queue design for the 30–60 minute after-school load-out, and a construction schedule measured against 2028–2030.</li>
+              </ol>
+
+              <h5>If the measure fails</h5>
+              <p>By December 15, 2026, the City Manager and the schools deliver a funded access plan that follows the engineer’s sequence: on-street parking, then the middle-school lot. Any new ballot measure waits until the conditions are met, and no earlier than May 2027. (If it passes, the comparison, a draft agreement and a student survey are due by January 31, 2027.)</p>
+
+              <h5>Recorded differences</h5>
+              <ul class="resolution-list">
+                <li><strong>What to call it.</strong> Codex preferred calling it a “pause, alternatives first.” Claude and Grok preferred “proceed with conditions.” The text sets the substance and uses neither label.</li>
+                <li><strong>Default size.</strong> Claude preferred a two-level, plain-concrete deck by default unless the schools pay for the third level. Codex wanted two and three levels priced separately first. The text leaves the size to the comparison.</li>
+              </ul>
+
+              <h5>Signatures</h5>
+              <ul class="resolution-signatures">
+                <li><span class="sig">Grok</span><small>Signed · drafted the joint text</small></li>
+                <li><span class="sig">Claude</span><small><code>claude-opus-5-5</code> · Signed with edits</small></li>
+                <li><span class="sig">Codex</span><small><code>gpt-6.1-sol</code>, high reasoning · Signed with edits</small></li>
+              </ul>
+              <p class="resolution-meta">All three members signed. No dissents were recorded.</p>
+            </article>
+          </details>
+
+          <div class="council-how">
+            <h4>How this was created</h4>
+            <ol>
+              <li>Each model wrote its own decision memo, as if leading the city, from the same inputs: the primary records plus the research and fact-checks done for this guide. None saw the others’ memos.</li>
+              <li>Each read all three memos and replied with agreements, disagreements and a revised position.</li>
+              <li>Grok drafted a joint text. Claude and Codex each reviewed it once and proposed edits, which were added.</li>
+              <li>Each model was limited to three runs.</li>
+            </ol>
+            <p>This is an AI exercise. It is not advice and not an official City document. Muse was not on the panel. <a href="https://github.com/daverynties/egr-finance-data/tree/main/reviews/parking-deck/council" target="_blank" rel="noopener noreferrer">Read the round-by-round files on GitHub</a>.</p>
+          </div>
+        </section>
       </div>
-    </details>
+    </section>
+
+    <section class="view-panel sources-panel" id="sources" aria-labelledby="sources-title">
+      <header class="full-header">
+        <p class="section-kicker">Every source on this page</p>
+        <h2 id="sources-title">Sources</h2>
+        <p class="lede">Numbered sources match the footnotes in the guide. Primary records lead; news and campaign material are used mainly to find claims to check. AI write-ups are listed separately and are secondary.</p>
+        <nav class="full-toc" aria-label="Source groups"><a href="#src-official">Official records</a><a href="#src-reference">Reference data</a><a href="#src-news">News</a><a href="#src-campaign">Campaigns</a><a href="#src-ai">AI notes (secondary)</a><a href="#src-panel">AI panel files</a></nav>
+      </header>
+      <section class="source-group" id="src-official" aria-labelledby="src-official-h">
+        <h3 id="src-official-h">Official city, school and government records</h3>
+        <p class="tldr-note">Commission packets, minutes, memos, the debt schedule and the parking counts.</p>
+        <ol class="sources">
+          <li id="s1" value="1"><div><b>August 3, 2026 City Commission packet</b><span class="src-meta">Aug. 3, 2026 · City of East Grand Rapids</span>Staff memo, ballot resolutions, OAK cost estimates, financing materials and resident comment cards. <a href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/_08032026-950" target="_blank" rel="noopener noreferrer">Open official packet</a>. <a class="source-back" href="#guide-summary" aria-label="Back to cited section">↩</a></div></li>
+          <li id="s2" value="2"><div><b>April 20, 2026 City Commission packet</b><span class="src-meta">Apr. 20, 2026 · City of East Grand Rapids</span>Original subcommittee recommendation, campus-space counts and design funding. <a href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/_04202026-933" target="_blank" rel="noopener noreferrer">Open official packet</a>. <a class="source-back" href="#need" aria-label="Back to cited section">↩</a></div></li>
+          <li id="s3" value="3"><div><b>June 29, 2026 City Commission packet</b><span class="src-meta">June 29, 2026 · City of East Grand Rapids</span>Parking-utilization study and work-session materials. <a href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/_06292026-945" target="_blank" rel="noopener noreferrer">Open official packet</a>. <a class="source-back" href="#need" aria-label="Back to cited section">↩</a></div></li>
+          <li id="s4" value="4"><div><b>July 20, 2026 City Commission packet</b><span class="src-meta">July 20, 2026 · City of East Grand Rapids</span>Bond structure, financing options and meeting record. <a href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/_07202026-948" target="_blank" rel="noopener noreferrer">Open official packet</a>. <a class="source-back" href="#cost" aria-label="Back to cited section">↩</a></div></li>
+          <li id="s5" value="5"><div><b>Traffic memorandum and follow-up letter</b><span class="src-meta">Nov. 10, 2025; Feb. 4, 2026 · Progressive Companies, for the City (copy posted by Safe Streets EGR)</span>The 71 lost spaces, the ranked options (deck last) and the later “may not be feasible” letter. <a href="https://safestreetsegr.com/documents/progressive-traffic-memo-2025-11-10.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>. <a class="source-back" href="#need" aria-label="Back to cited section">↩</a></div></li>
+          <li id="s6" value="6"><div><b>City parking-deck operating-cost emails</b><span class="src-meta">Feb. 4 and Apr. 23, 2026 · City of East Grand Rapids, Doug La Fave (copy posted by Safe Streets EGR)</span>Running-cost figures and the Grand Rapids benchmark. <a href="https://safestreetsegr.com/documents/city-parking-deck-operating-cost-2026.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>. <a class="source-back" href="#cost" aria-label="Back to cited section">↩</a></div></li>
+          <li id="s7" value="7"><div><b>MFCI bond analysis</b><span class="src-meta">In the Aug. 3, 2026 packet · Municipal Financial Consultants, Inc., for the City</span>The $9M scenario, projected tax rate and the 2% taxable-value growth assumption. <a href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/_08032026-950" target="_blank" rel="noopener noreferrer">Open official packet</a>. <a class="source-back" href="#financing" aria-label="Back to cited section">↩</a></div></li>
+          <li id="s8" value="8"><div><b>2025 parking-utilization dataset</b><span class="src-meta">2025 counts; June 29, 2026 packet · City of East Grand Rapids</span>Hourly counts behind “371 of 1,310 empty” and the school-lot figures. <a href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/_06292026-945" target="_blank" rel="noopener noreferrer">Open official packet</a>. <a class="source-back" href="#need" aria-label="Back to cited section">↩</a></div></li>
+          <li id="s9" value="9"><div><b>$9M debt-service schedule</b><span class="src-meta">In the Aug. 3, 2026 packet · Municipal Financial Consultants, Inc., for the City</span>Year-by-year principal and interest used for the household cost table. <a href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/_08032026-950" target="_blank" rel="noopener noreferrer">Open official packet</a>. <a class="source-back" href="#financing" aria-label="Back to cited section">↩</a></div></li>
+          <li id="s18" value="18"><div><b>Superintendent’s letter on parking</b><span class="src-meta">Sept. 30, 2026 · East Grand Rapids Public Schools</span>About 65 campus spaces during construction; free parking promised for school-event attendees. <span class="no-copy">No public copy available</span>. <a class="source-back" href="#need" aria-label="Back to cited section">↩</a></div></li>
+          <li id="s19" value="19"><div><b>FY2025 Annual Comprehensive Financial Report</b><span class="src-meta">FY2025 · City of East Grand Rapids</span>Unassigned general-fund balance of $6,511,815 (44.01%). <a href="https://www.eastgrmi.gov/Archive.aspx?ADID=1653" target="_blank" rel="noopener noreferrer">Open ACFR</a>. <a class="source-back" href="#financing" aria-label="Back to cited section">↩</a></div></li>
+          <li id="s20" value="20"><div><b>2024 Apportionment Report</b><span class="src-meta">2024 · Kent County Equalization</span>City operating, voted and debt tax rates. <a href="https://www.accesskent.com/Departments/Equalization/pdfs/ApportionmentReports/2024.pdf" target="_blank" rel="noopener noreferrer">Open report</a>. <a class="source-back" href="#financing" aria-label="Back to cited section">↩</a></div></li>
+          <li id="s21" value="21"><div><b>EGRPS Board minutes and joint-parking project page</b><span class="src-meta">Apr. 20, 2026 · East Grand Rapids Public Schools</span>The 5–1 vote to set aside about $7M. <a href="https://www.egrps.org/district-information/elections/bond-proposal/high-school-transformation-project/jointparking" target="_blank" rel="noopener noreferrer">Open district project page</a>. <a class="source-back" href="#guide-summary" aria-label="Back to cited section">↩</a></div></li>
+          <li id="s22" value="22"><div><b>City parking map</b><span class="src-meta">Sept. 12, 2025 · City of East Grand Rapids (copy posted by Safe Streets EGR)</span>Lot 11, the Bagley surface lot, shows 49 spaces. <a href="https://safestreetsegr.com/documents/city-parking-deck-operating-cost-2026.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>. <a class="source-back" href="#need" aria-label="Back to cited section">↩</a></div></li>
+          <li id="s24" value="24"><div><b>June 23, 2026 public presentation</b><span class="src-meta">June 23, 2026 (in the Aug. 3 packet) · City of East Grand Rapids and EGRPS</span>Statements on public parking access. <a href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/_08032026-950" target="_blank" rel="noopener noreferrer">Open official packet</a>. <a class="source-back" href="#fact-check" aria-label="Back to cited section">↩</a></div></li>
+        </ol>
+      </section>
+      <section class="source-group" id="src-reference" aria-labelledby="src-reference-h">
+        <h3 id="src-reference-h">Reference data</h3>
+        <p class="tldr-note">Industry and federal figures cited in the record.</p>
+        <ol class="sources">
+          <li id="s16" value="16"><div><b>Shared Parking Manual, 3rd ed., Fig. 5-1</b><span class="src-meta">2018 cost figures; circulated Feb. 4, 2026 · Industry manual excerpt circulated by the City (copy posted by Safe Streets EGR)</span>Operating and repair-reserve cost range. Does not establish the 85% occupancy rule of thumb. <a href="https://safestreetsegr.com/documents/city-parking-deck-operating-cost-2026.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>. <a class="source-back" href="#cost" aria-label="Back to cited section">↩</a></div></li>
+          <li id="s17" value="17"><div><b>Walker Consultants parking-structure benchmark</b><span class="src-meta">In the June 29, 2026 packet · Walker Consultants</span>Structured-parking cost context. <a href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/_06292026-945" target="_blank" rel="noopener noreferrer">Open June 29 packet</a>. <a class="source-back" href="#cost" aria-label="Back to cited section">↩</a></div></li>
+          <li id="s23" value="23"><div><b>QuickFacts: East Grand Rapids city, Michigan</b><span class="src-meta">2020–2024 estimates · U.S. Census Bureau</span>Median owner-occupied home value, for context on taxable values. <a href="https://www.census.gov/quickfacts/table/PST045224/2623980" target="_blank" rel="noopener noreferrer">Open QuickFacts</a>. <a class="source-back" href="#financing" aria-label="Back to cited section">↩</a></div></li>
+        </ol>
+      </section>
+      <section class="source-group" id="src-news" aria-labelledby="src-news-h">
+        <h3 id="src-news-h">News and commentary</h3>
+        <ol class="sources">
+          <li id="s12" value="12"><div><b>“Commission votes to place up to $9 million bond millage on Nov. 3 ballot”</b><span class="src-meta">Aug. 2026 · Citizen Portal (citizenportal.ai)</span>Summary of the Aug. 3 meeting and ballot vote. <a href="https://citizenportal.ai/articles/8877397/michigan/kent-county/east-grand-rapids/commission-votes-to-place-up-to-9-million-bond-millage-on-nov-3-ballot-for-parking-deck-and-pedestrian-safety-measures" target="_blank" rel="noopener noreferrer">Open coverage</a>. <a class="source-back" href="#process" aria-label="Back to cited section">↩</a></div></li>
+          <li id="s13" value="13"><div><b>“Cutting Through the Noise on the Parking Deck Millage”</b><span class="src-meta">Sept. 30, 2026 · East Insider (Substack), by Commissioner Abbie Groff-Blaszak</span>Quotes the adopted ballot language; describes the subcommittee and Aug. 3 timing. <a href="https://eastinsider.substack.com/p/cutting-through-the-noise-on-the" target="_blank" rel="noopener noreferrer">Open coverage</a>. <a class="source-back" href="#process" aria-label="Back to cited section">↩</a></div></li>
+          <li id="s14" value="14"><div><b>FOX 17 report on the parking-deck proposal</b><span class="src-meta">Date not stated in our record · FOX 17 (WXMI), via YouTube</span>Video coverage of the proposal and resident concerns. <a href="https://www.youtube.com/watch?v=RsD1NqB69tA" target="_blank" rel="noopener noreferrer">Open report</a>. <a class="source-back" href="#process" aria-label="Back to cited section">↩</a></div></li>
+          <li id="s15" value="15"><div><b>EGR community-group threads</b><span class="src-meta">2026 · Residents (private groups)</span>Resident arguments and questions; not used as proof of facts. <span class="no-copy">No public copy available</span>. <a class="source-back" href="#process" aria-label="Back to cited section">↩</a></div></li>
+        </ol>
+      </section>
+      <section class="source-group" id="src-campaign" aria-labelledby="src-campaign-h">
+        <h3 id="src-campaign-h">Campaign sites (both sides)</h3>
+        <p class="tldr-note">Used only to find claims to check, not to establish facts.</p>
+        <ol class="sources">
+          <li id="s11" value="11"><div><b>Safe Streets EGR</b><span class="src-meta">2026 (viewed Oct. 2026) · Support campaign</span>Support claims, used only to find claims to check. Also hosts copies of some City documents. <a href="https://safestreetsegr.com/" target="_blank" rel="noopener noreferrer">Open campaign site</a>. <a class="source-back" href="#fact-check" aria-label="Back to cited section">↩</a></div></li>
+          <li id="s10" value="10"><div><b>WalkSafeEGR</b><span class="src-meta">2026 (viewed Oct. 2026) · Opposition campaign</span>Opposition claims, used only to find claims to check. <a href="https://walksafeegr.org" target="_blank" rel="noopener noreferrer">Open campaign site</a>. <a class="source-back" href="#fact-check" aria-label="Back to cited section">↩</a></div></li>
+        </ol>
+      </section>
+      <section class="source-group" id="src-ai" aria-labelledby="src-ai-h">
+        <h3 id="src-ai-h">AI summaries and research notes <span class="secondary-tag">Secondary</span></h3>
+        <p class="tldr-note">These are AI write-ups about the record, not the record itself. Nothing in the quick guide or full analysis relies on them as a source of fact.</p>
+        <ul class="sources sources-plain">
+          <li id="ai1"><div><b>Fact-check of this page (207 claims)</b><span class="src-meta">Oct. 8, 2026 · Codex (gpt-6.1-sol), AI-generated</span>Secondary. Checked the page’s claims against the record; used to find and fix errors. <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/codex-factcheck-2026-10-08.md" target="_blank" rel="noopener noreferrer">Open on GitHub</a>.</div></li>
+          <li id="ai2"><div><b>Page anomaly audit and spot-check notes</b><span class="src-meta">Oct. 8, 2026 · Codex and Grok, AI-generated</span>Secondary. Flagged math, link and wording problems; used to find and fix errors. <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/codex-anomalies-2026-10-08.md" target="_blank" rel="noopener noreferrer">Audit</a>, <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/anomalies-verification-notes.md" target="_blank" rel="noopener noreferrer">spot-check</a>.</div></li>
+          <li id="ai3"><div><b>Independent best-fit write-ups</b><span class="src-meta">Oct. 8, 2026 · Codex and Grok, AI-generated</span>Secondary. Basis for the Codex and Grok cards in “What the AIs think.” <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-codex-gpt-6.1-sol.md" target="_blank" rel="noopener noreferrer">Codex</a>, <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-grok-bot.md" target="_blank" rel="noopener noreferrer">Grok</a>, <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-comparison.md" target="_blank" rel="noopener noreferrer">comparison</a>.</div></li>
+          <li id="ai4"><div><b>Claude assessment of the record</b><span class="src-meta">Oct. 2026 · Claude (claude-opus-5-5), AI-generated</span>Secondary. Basis for the Claude card. <span class="no-copy">No public copy available</span>.</div></li>
+          <li id="ai5"><div><b>Research summary (dossier) for this guide</b><span class="src-meta">Oct. 2026 · Prepared with AI assistance for this guide</span>Secondary. Collected news and record excerpts; any fact used on the page is cited to its original source above. <span class="no-copy">No public copy available</span>.</div></li>
+        </ul>
+      </section>
+      <section class="source-group" id="src-panel" aria-labelledby="src-panel-h">
+        <h3 id="src-panel-h">AI review panel files <span class="secondary-tag">Secondary</span></h3>
+        <ul class="sources sources-plain">
+          <li id="panel1"><div><b>Joint Recommendation of the AI Review Panel</b><span class="src-meta">Oct. 8–9, 2026 · Grok, Claude (claude-opus-5-5), Codex (gpt-6.1-sol)</span>The signed joint text summarized in “What the AIs think.” <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/council/joint-recommendation.md" target="_blank" rel="noopener noreferrer">Open on GitHub</a>.</div></li>
+          <li id="panel2"><div><b>Round-by-round panel files</b><span class="src-meta">Oct. 8–9, 2026 · Grok, Claude, Codex</span>Round 1 memos, Round 2 responses, the joint draft, sign-offs and prompts. <a href="https://github.com/daverynties/egr-finance-data/tree/main/reviews/parking-deck/council" target="_blank" rel="noopener noreferrer">Open folder on GitHub</a>.</div></li>
+        </ul>
+      </section>
+      <div class="method"><b>Method.</b> Numbers are attributed to the closest available primary record. Campaign pages and community discussion are used to frame claims, not establish facts. “Inferred” marks arithmetic calculated from cited values rather than a figure stated verbatim in a source. Unreleased agreements, surveys, estimates and datasets are treated as missing—not assumed.</div>
+    </section>
 
     <footer>
       <p>Built by an East Grand Rapids resident. Self-funded. Not affiliated with the City of East Grand Rapids, EGR Public Schools, or any campaign.</p>
       <p>Figures marked “inferred” are this guide’s calculations from cited sources, with assumptions stated alongside; they are not stated in any source. Last reviewed October 8, 2026.</p>
-      <p class="footer-ai-note">The AI Analysis tab contains AI model opinions, not facts or recommendations. The rest of this guide reports sourced facts and labeled calculations.</p>
+      <p class="footer-ai-note">The “What the AIs think” tab contains AI model opinions and an AI exercise, not facts or advice. The rest of this guide reports sourced facts and labeled calculations.</p>
     </footer>
   </main>
 
@@ -824,108 +1004,34 @@
     (function(){
       var root=document.documentElement;
       var themeToggle=document.getElementById('themeToggle');
-      var jumpbar=document.querySelector('.jumpbar');
-      var navToggle=document.getElementById('navToggle');
-      var navLinks=document.getElementById('navLinks');
-      var links=[].slice.call(navLinks.querySelectorAll('a'));
-      var aiLink=navLinks.querySelector('.ai-nav-link');
-      var tldrLink=navLinks.querySelector('.tldr-nav-link');
-
+      var tabs=[].slice.call(document.querySelectorAll('.view-tab'));
       function setTheme(theme){
         root.dataset.theme=theme;
         var next=theme==='dark'?'light':'dark';
         themeToggle.setAttribute('aria-label','Switch to '+next+' mode');
         themeToggle.title='Switch to '+next+' mode';
       }
-      function setMenu(open){
-        jumpbar.classList.toggle('menu-open',open);
-        navToggle.setAttribute('aria-expanded',String(open));
+      function currentView(){
+        var t=location.hash?document.getElementById(decodeURIComponent(location.hash.slice(1))):null;
+        if(t){
+          if(t.tagName==='DETAILS')t.open=true;
+          var p=t.closest('.view-panel');
+          if(p)return p.id;
+        }
+        return 'front';
       }
-      function closeGroups(){
-        [].slice.call(document.querySelectorAll('.nav-group')).forEach(function(group){
-          group.classList.remove('open');
-          group.querySelector('.nav-group-label').setAttribute('aria-expanded','false');
+      function syncTabs(){
+        var v=currentView();
+        tabs.forEach(function(tab){
+          var on=tab.getAttribute('data-view')===v;
+          tab.classList.toggle('is-active',on);
+          if(on)tab.setAttribute('aria-current','page');else tab.removeAttribute('aria-current');
         });
       }
-      function setViewForHash(hash){
-        var isAi=hash==='#ai-analysis';
-        var isTldr=hash==='#summary';
-        document.body.classList.toggle('ai-view',isAi);
-        document.body.classList.toggle('tldr-view',isTldr);
-        if(aiLink)aiLink.classList.toggle('active',isAi);
-        if(tldrLink)tldrLink.classList.toggle('active',isTldr);
-        if(isAi||isTldr){
-          links.forEach(function(link){
-            if(link!==aiLink&&link!==tldrLink)link.classList.remove('active');
-          });
-        }else{
-          var target=hash?document.querySelector(hash):null;
-          if(target&&target.tagName==='DETAILS')target.open=true;
-        }
-      }
-      function scrollToHash(hash){
-        var target=hash?document.querySelector(hash):null;
-        if(target)requestAnimationFrame(function(){target.scrollIntoView({block:'start'});});
-      }
-
       setTheme('light');
-      setViewForHash(window.location.hash||'#guide-summary');
-      if(window.location.hash)scrollToHash(window.location.hash);
       themeToggle.addEventListener('click',function(){setTheme(root.dataset.theme==='dark'?'light':'dark');});
-      navToggle.addEventListener('click',function(){setMenu(navToggle.getAttribute('aria-expanded')!=='true');});
-      [].slice.call(document.querySelectorAll('.nav-group-label')).forEach(function(button){
-        button.addEventListener('click',function(){
-          if(window.matchMedia('(max-width:760px)').matches)return;
-          var group=button.parentElement;
-          var open=!group.classList.contains('open');
-          closeGroups();
-          group.classList.toggle('open',open);
-          button.setAttribute('aria-expanded',String(open));
-        });
-      });
-      document.addEventListener('click',function(event){
-        var anchor=event.target.closest('a[href^="#"]');
-        if(anchor){
-          var hash=anchor.getAttribute('href');
-          event.preventDefault();
-          setViewForHash(hash);
-          if(window.location.hash!==hash)history.pushState(null,'',hash);
-          scrollToHash(hash);
-        }
-        if(!event.target.closest('.nav-group'))closeGroups();
-      });
-      document.addEventListener('keydown',function(event){
-        if(event.key==='Escape'){
-          if(jumpbar.classList.contains('menu-open')){setMenu(false);navToggle.focus();}
-          else closeGroups();
-        }
-      });
-      window.addEventListener('hashchange',function(){
-        var hash=window.location.hash||'#guide-summary';
-        setViewForHash(hash);
-        scrollToHash(hash);
-      });
-
-      navLinks.addEventListener('click',function(event){
-        var link=event.target.closest('a');
-        if(!link)return;
-        closeGroups();
-        if(window.matchMedia('(max-width:760px)').matches)setMenu(false);
-      });
-
-      var factualLinks=links.filter(function(link){return link!==aiLink&&link!==tldrLink;});
-      var targets=factualLinks.map(function(link){return document.querySelector(link.getAttribute('href'));}).filter(Boolean);
-      if('IntersectionObserver' in window){
-        var observer=new IntersectionObserver(function(entries){
-          if(document.body.classList.contains('ai-view'))return;
-          entries.forEach(function(entry){
-            if(entry.isIntersecting){
-              factualLinks.forEach(function(link){link.classList.toggle('active',link.getAttribute('href')==='#'+entry.target.id);});
-            }
-          });
-        },{rootMargin:'-25% 0px -65% 0px'});
-        targets.forEach(function(target){observer.observe(target);});
-      }
+      window.addEventListener('hashchange',syncTabs);
+      syncTabs();
     })();
   </script>
 </body>
