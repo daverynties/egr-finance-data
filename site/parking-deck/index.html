@@ -18,7 +18,7 @@
   <link rel="icon" href="data:," />
   <title>EGR Parking Deck Bond Guide</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:wght@600;650&family=Caveat:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:wght@600;650&display=swap');
 
     :root{
       --paper:#f6f8f7;
@@ -404,23 +404,14 @@
     .resolution h4{margin:24px 0 8px;font:700 .8rem/1.2 "Source Sans 3",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--navy)}
     .resolution p{margin:0 0 8px}
     .resolution-list{margin:0;padding-left:22px}.resolution-list li{margin:0 0 7px}
-    .resolution-signatures{list-style:none;padding:0;margin:14px 0 12px;display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
-    .resolution-signatures li{margin:0}
-    .resolution-signatures .sig{display:block;font:600 1.9rem/1.15 "Caveat","Segoe Script","Bradley Hand",cursive;color:var(--ink);padding:0 4px 4px;border-bottom:1px solid var(--line-strong)}
-    .sig-meta{display:block;margin-top:6px;font-size:.78rem;color:var(--muted)}
-    @media(max-width:600px){.resolution-signatures{grid-template-columns:1fr;gap:28px}}
-    .ai-glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:14px 0 10px}
-    .ai-glance div{background:var(--surface);padding:14px;text-align:center}
-    .ai-glance span{display:block;font-weight:700;color:var(--muted);font-size:.9rem}
-    .ai-glance b{display:block;font-size:1.5rem;line-height:1.2;color:var(--navy)}
     .ai-cards{margin-top:18px}
     .ai-card h4{margin:0 0 4px;font-size:1.15rem}
     .ai-model{font-weight:400;font-size:.8rem;color:var(--muted)}
     .ai-card p{margin:0 0 9px}
-    .ai-fit{font-size:1.02rem}
+    .ai-fit{font-size:inherit}
     .ai-small{font-size:.84rem;color:var(--muted)}.ai-card .ai-small:last-child{margin:0}
     .ai-process{font-size:.92rem;border-bottom:0}.ai-process h3{font-size:1.1rem;margin:0 0 8px}.ai-process h3+p,.ai-process ol+h3{margin-top:18px}.ai-process ol{padding-left:22px;margin:0}.ai-process ol li{margin:0 0 5px}.ai-process p{margin:0 0 8px;color:var(--muted)}
-    @media(max-width:760px){.ai-glance{grid-template-columns:repeat(2,1fr)}.ai-panel{padding:34px 0 54px}}
+    @media(max-width:760px){.ai-panel{padding:34px 0 54px}}
     body:has(#sources:target,#sources :target) .view-tab[data-view="sources"]{color:var(--navy);border-color:var(--navy);background:var(--surface)}
     .sources-panel{padding:40px 0 60px}
     .source-group{margin:28px 0}.source-group h3{font-size:1.35rem;margin:0 0 6px}
@@ -434,13 +425,31 @@
     .panel-reminder{margin:8px 0 0;font-weight:600;color:var(--ink)}
     .ai-panel .resolution{margin-top:12px}
     .panel-github{margin:16px 0 0;font-size:.92rem}
+    .resolution-signed{margin:0;font-size:.88rem;color:var(--ink)}
+    .fit-table-wrap{margin:14px 0 8px}
+    .fit-table{width:100%;border-collapse:collapse;font-size:.86rem;line-height:1.4;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+    .fit-table th,.fit-table td{padding:7px 10px 7px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);background:none}
+    .fit-table thead th{font:600 .74rem/1.3 "Source Sans 3",sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line-strong)}
+    .fit-table tbody th{font-weight:700;color:var(--ink);text-transform:none;letter-spacing:0;font-size:inherit}
+    .fit-table tbody tr:last-child>*{border-bottom:0}
+    .fit-table td:nth-child(4){font-weight:700;white-space:nowrap}
+    .mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.76rem}
+    @media(max-width:640px){
+      .fit-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+      .fit-table,.fit-table tbody,.fit-table tr,.fit-table th,.fit-table td{display:block}
+      .fit-table tr{padding:8px 0;border-bottom:1px solid var(--line)}
+      .fit-table tbody tr:last-child{border-bottom:0}
+      .fit-table th,.fit-table td{border:0;padding:1px 0}
+      .fit-table td{display:grid;grid-template-columns:7.5em 1fr;gap:8px}
+      .fit-table td::before{content:attr(data-label);color:var(--muted);font-size:.78rem;font-weight:400}
+      .fit-table td:nth-child(4){white-space:normal}
+    }
     @media print{.view-panel{display:block!important}}
     @media(max-width:760px){
       .view-tabs{grid-column:1/-1;order:3;display:grid;grid-template-columns:repeat(4,auto);gap:4px}
       .view-tab{text-align:center;padding:9px 4px;font-size:.8rem;white-space:normal;line-height:1.15;border-color:var(--line)}
       .front-panel{padding:34px 0 54px}
       .cost-table{font-size:.86rem}.cost-table th,.cost-table td{padding:8px 6px}
-      .ai-glance{grid-template-columns:repeat(2,1fr)}
       .ai-cards{grid-template-columns:1fr}
     }
   </style>
@@ -799,11 +808,17 @@
 
       <section class="tldr-block" aria-labelledby="ai-fit-title">
         <h3 id="ai-fit-title">Each model’s best fit</h3>
-        <div class="ai-glance" role="list" aria-label="Each model’s best fit at a glance">
-          <div role="listitem"><span>Claude</span><b>No</b></div>
-          <div role="listitem"><span>Codex</span><b>No</b></div>
-          <div role="listitem"><span>Grok</span><b>No</b></div>
-          <div role="listitem"><span>Muse</span><b>No</b></div>
+        <div class="fit-table-wrap">
+          <table class="fit-table">
+            <caption class="sr-only">Each model’s best fit</caption>
+            <thead><tr><th scope="col">Model</th><th scope="col">Model ID</th><th scope="col">Sources</th><th scope="col">Best fit</th><th scope="col">What would change it</th></tr></thead>
+            <tbody>
+            <tr><th scope="row" data-label="Model">Claude</th><td data-label="Model ID"><span class="mono">claude-opus-5-5</span></td><td data-label="Sources">Full record, incl. secondary research</td><td data-label="Best fit">No</td><td data-label="What would change it">Signed city–school agreement; itemized cost estimate</td></tr>
+            <tr><th scope="row" data-label="Model">Codex</th><td data-label="Model ID"><span class="mono">gpt-6.1-sol (high)</span></td><td data-label="Sources">Primary records only</td><td data-label="Best fit">No</td><td data-label="What would change it">Counts near the school; priced alternatives; firm budget; signed agreement</td></tr>
+            <tr><th scope="row" data-label="Model">Grok</th><td data-label="Model ID"><span class="mono">—</span></td><td data-label="Sources">Primary records only</td><td data-label="Best fit">No</td><td data-label="What would change it">Itemized cost; signed agreement on public use and upkeep; why cheaper options were ruled out</td></tr>
+            <tr><th scope="row" data-label="Model">Muse</th><td data-label="Model ID"><span class="mono">Muse Spark 1.3</span></td><td data-label="Sources">This guide and its sources</td><td data-label="Best fit">No</td><td data-label="What would change it">Signed agreement and itemized costs before a later vote</td></tr>
+            </tbody>
+          </table>
         </div>
         <p class="tldr-note">The models did not all see the same material. Agreement among them does not prove they are right.</p>
         <div class="tldr-cases ai-cards">
@@ -896,21 +911,7 @@
           </ul>
 
           <h4>Signatures</h4>
-          <ul class="resolution-signatures" aria-label="Signatures">
-            <li>
-              <span class="sig" aria-hidden="true">Grok</span>
-              <span class="sig-meta"><span class="sr-only">Signed by </span>Grok</span>
-            </li>
-            <li>
-              <span class="sig" aria-hidden="true">Claude</span>
-              <span class="sig-meta"><span class="sr-only">Signed by </span>Claude · claude-opus-5-5</span>
-            </li>
-            <li>
-              <span class="sig" aria-hidden="true">Codex</span>
-              <span class="sig-meta"><span class="sr-only">Signed by </span>Codex · gpt-6.1-sol</span>
-            </li>
-          </ul>
-          <p class="resolution-meta">All three members signed. No dissents were recorded.</p>
+          <p class="resolution-signed">Signed: Grok · Claude (claude-opus-5-5) · Codex (gpt-6.1-sol). No dissents recorded.</p>
       </article>
 
       <p class="panel-github"><a href="https://github.com/daverynties/egr-finance-data/tree/main/reviews/parking-deck/council" target="_blank" rel="noopener noreferrer">Read the round-by-round files on GitHub</a>.</p>
