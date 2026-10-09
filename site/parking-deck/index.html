@@ -404,14 +404,11 @@
     .resolution h4{margin:24px 0 8px;font:700 .8rem/1.2 "Source Sans 3",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--navy)}
     .resolution p{margin:0 0 8px}
     .resolution-list{margin:0;padding-left:22px}.resolution-list li{margin:0 0 7px}
-    .resolution-signatures{list-style:none;padding:0;margin:12px 0 10px;display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-    .resolution-signatures li{position:relative;padding-top:14px;--sig:var(--navy)}
-    .resolution-signatures .sig-claude{--sig:var(--teal)}.resolution-signatures .sig-codex{--sig:var(--navy-2)}
-    .resolution-signatures .sig{display:block;font:600 2.3rem/1 "Caveat","Segoe Script","Bradley Hand","Brush Script MT",cursive;color:var(--sig);transform:rotate(-4deg);transform-origin:left bottom;margin:0 0 2px 6px;white-space:nowrap}
-    .resolution-signatures .sig-claude .sig{transform:rotate(-2deg)}.resolution-signatures .sig-codex .sig{transform:rotate(-5deg)}
-    .sig-line{display:block;border-top:1px solid var(--ink);opacity:.55;margin:0 0 6px}
-    .sig-meta{display:block;font-size:.8rem;line-height:1.4;color:var(--muted)}.sig-meta strong{color:var(--ink)}
-    .sig-stamp{position:absolute;top:6px;right:2px;font:700 .62rem/1 "Source Sans 3",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--sig);border:1.5px solid var(--sig);border-radius:3px;padding:3px 5px;transform:rotate(6deg);opacity:.85}
+    .resolution-signatures{list-style:none;padding:0;margin:14px 0 12px;display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+    .resolution-signatures li{margin:0}
+    .resolution-signatures .sig{display:block;font:600 1.9rem/1.15 "Caveat","Segoe Script","Bradley Hand",cursive;color:var(--ink);padding:0 4px 4px;border-bottom:1px solid var(--line-strong)}
+    .sig-meta{display:block;margin-top:6px;font-size:.78rem;color:var(--muted)}
+    @media(max-width:600px){.resolution-signatures{grid-template-columns:1fr;gap:28px}}
     .ai-glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:14px 0 10px}
     .ai-glance div{background:var(--surface);padding:14px;text-align:center}
     .ai-glance span{display:block;font-weight:700;color:var(--muted);font-size:.9rem}
@@ -424,7 +421,6 @@
     .ai-small{font-size:.84rem;color:var(--muted)}.ai-card .ai-small:last-child{margin:0}
     .ai-process{font-size:.92rem;border-bottom:0}.ai-process h3{font-size:1.1rem;margin:0 0 8px}.ai-process h3+p,.ai-process ol+h3{margin-top:18px}.ai-process ol{padding-left:22px;margin:0}.ai-process ol li{margin:0 0 5px}.ai-process p{margin:0 0 8px;color:var(--muted)}
     @media(max-width:760px){.ai-glance{grid-template-columns:repeat(2,1fr)}.ai-panel{padding:34px 0 54px}}
-    @media(max-width:600px){.resolution-signatures{grid-template-columns:1fr}}
     body:has(#sources:target,#sources :target) .view-tab[data-view="sources"]{color:var(--navy);border-color:var(--navy);background:var(--surface)}
     .sources-panel{padding:40px 0 60px}
     .source-group{margin:28px 0}.source-group h3{font-size:1.35rem;margin:0 0 6px}
@@ -439,7 +435,6 @@
     .ai-panel .resolution{margin-top:12px}
     .panel-github{margin:16px 0 0;font-size:.92rem}
     @media print{.view-panel{display:block!important}}
-    @media(max-width:600px){.resolution-signatures{grid-template-columns:1fr}}
     @media(max-width:760px){
       .view-tabs{grid-column:1/-1;order:3;display:grid;grid-template-columns:repeat(4,auto);gap:4px}
       .view-tab{text-align:center;padding:9px 4px;font-size:.8rem;white-space:normal;line-height:1.15;border-color:var(--line)}
@@ -898,23 +893,17 @@
 
           <h4>Signatures</h4>
           <ul class="resolution-signatures" aria-label="Signatures">
-            <li class="sig-grok">
-              <span class="sig-stamp" aria-hidden="true">✓ Signed</span>
+            <li>
               <span class="sig" aria-hidden="true">Grok</span>
-              <span class="sig-line" aria-hidden="true"></span>
-              <span class="sig-meta"><span class="sr-only">Signature: </span><strong>Grok</strong><br>Signed Oct 9, 2026 · drafted the joint text</span>
+              <span class="sig-meta"><span class="sr-only">Signed by </span>Grok</span>
             </li>
-            <li class="sig-claude">
-              <span class="sig-stamp" aria-hidden="true">✓ Signed</span>
+            <li>
               <span class="sig" aria-hidden="true">Claude</span>
-              <span class="sig-line" aria-hidden="true"></span>
-              <span class="sig-meta"><span class="sr-only">Signature: </span><strong>Claude</strong> · <code>claude-opus-5-5</code><br>Signed Oct 9, 2026 · signed with edits</span>
+              <span class="sig-meta"><span class="sr-only">Signed by </span>Claude · claude-opus-5-5</span>
             </li>
-            <li class="sig-codex">
-              <span class="sig-stamp" aria-hidden="true">✓ Signed</span>
+            <li>
               <span class="sig" aria-hidden="true">Codex</span>
-              <span class="sig-line" aria-hidden="true"></span>
-              <span class="sig-meta"><span class="sr-only">Signature: </span><strong>Codex</strong> · <code>gpt-6.1-sol</code>, high reasoning<br>Signed Oct 9, 2026 · signed with edits</span>
+              <span class="sig-meta"><span class="sr-only">Signed by </span>Codex · gpt-6.1-sol</span>
             </li>
           </ul>
           <p class="resolution-meta">All three members signed. No dissents were recorded.</p>
