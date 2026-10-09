@@ -396,38 +396,31 @@
     .full-header{max-width:900px;padding-bottom:10px}
     .full-toc{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0 6px}
     .full-toc a{padding:6px 10px;border:1px solid var(--line);background:var(--surface);font-size:.84rem;font-weight:600;text-decoration:none}
-    .ai-panel .assessment-intro{font-size:1.15rem;line-height:1.55;color:var(--ink);max-width:760px}
-    .ai-glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#bfd0ba;border:1px solid #bfd0ba;margin:0 0 12px}
-    .ai-glance div{background:var(--surface);padding:16px;text-align:center}
-    .ai-glance span{display:block;font-weight:700;color:var(--muted);font-size:.9rem}
-    .ai-glance b{display:block;font-size:1.6rem;line-height:1.2;color:var(--navy)}
-    .ai-note{margin:0 0 26px;color:var(--muted);font-size:.9rem;max-width:760px}
-    .ai-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:26px}
-    .ai-cards .assessment-piece{margin:0}
-    .ai-card p{margin:0 0 10px}
-    .ai-card-title{margin:0 0 6px!important;font-size:1.3rem!important}
-    .ai-fit{font-size:1.08rem}.ai-fit span{color:var(--muted)}
-    .ai-disclosure{font-size:.86rem;color:var(--muted)}
-    .ai-sources{margin-top:8px;font-size:.84rem;color:var(--muted)}
-    .ai-sources summary{cursor:pointer;font-weight:700;color:var(--navy)}
-    .ai-sources p{margin:8px 0 0}
-    .ai-council{background:var(--surface);border:1px solid var(--line-strong);border-left:5px solid var(--navy);padding:clamp(18px,3vw,28px)}
-    .ai-council h3{margin:0 0 10px;font-size:1.3rem}
-    .council-summary{background:var(--surface-2);padding:14px 18px;margin:0 0 14px}.council-summary p{margin:0 0 6px}.council-summary ol{margin:0;padding-left:22px}
-    .council-formal{border:1px solid var(--line);margin:0 0 18px;background:var(--bg)}
-    .council-formal>summary{cursor:pointer;padding:12px 16px;font-weight:700;color:var(--navy)}
-    .resolution{padding:clamp(16px,4vw,36px);border-top:1px solid var(--line);font-family:Georgia,"Times New Roman",serif;max-width:780px;margin:0 auto}
-    .resolution-head{text-align:center;border-bottom:3px double var(--line-strong);padding-bottom:14px;margin-bottom:18px}
-    .resolution-kind{margin:0;font:700 .75rem/1.2 "Source Sans 3",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-    .resolution h4{margin:8px 0;font-size:clamp(1.15rem,3vw,1.45rem);line-height:1.25;color:var(--ink)}
-    .resolution h5{margin:22px 0 8px;font:700 .82rem/1.2 "Source Sans 3",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--navy)}
-    .resolution-meta{margin:4px 0;font-size:.88rem;color:var(--muted)}
-    .resolution-list{padding-left:24px}.resolution-list li{margin-bottom:8px}
-    .resolution-signatures{list-style:none;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:10px 0}
+    .ai-panel{padding:48px 0 70px;max-width:900px;margin:0 auto}
+    .resolution{margin:32px 0 8px;padding:clamp(20px,4vw,34px);background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--navy)}
+    .resolution-kind{margin:0 0 8px;font:500 .74rem/1.3 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+    .resolution h3{margin:0 0 10px;font-size:clamp(1.35rem,3.2vw,1.8rem);line-height:1.2}
+    .resolution-meta{margin:2px 0;font-size:.9rem;color:var(--muted)}
+    .resolution h4{margin:24px 0 8px;font:700 .8rem/1.2 "Source Sans 3",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--navy)}
+    .resolution p{margin:0 0 8px}
+    .resolution-list{margin:0;padding-left:22px}.resolution-list li{margin:0 0 7px}
+    .resolution-signatures{list-style:none;padding:0;margin:8px 0 10px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
     .resolution-signatures li{border-top:1px solid var(--ink);padding-top:6px}
-    .resolution-signatures .sig{display:block;font-style:italic;font-size:1.15rem}
-    .resolution-signatures small{color:var(--muted);font-size:.78rem}
-    .council-how{font-size:.92rem}.council-how h4{margin:14px 0 6px;font-size:1.05rem}.council-how h4:first-child{margin-top:0}.council-how ol{padding-left:22px;margin:0 0 8px}
+    .resolution-signatures .sig{display:block;font-weight:700}
+    .resolution-signatures small{color:var(--muted);font-size:.8rem}
+    .ai-glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:14px 0 10px}
+    .ai-glance div{background:var(--surface);padding:14px;text-align:center}
+    .ai-glance span{display:block;font-weight:700;color:var(--muted);font-size:.9rem}
+    .ai-glance b{display:block;font-size:1.5rem;line-height:1.2;color:var(--navy)}
+    .ai-cards{margin-top:18px}
+    .ai-card h4{margin:0 0 4px;font-size:1.15rem}
+    .ai-model{font-weight:400;font-size:.8rem;color:var(--muted)}
+    .ai-card p{margin:0 0 9px}
+    .ai-fit{font-size:1.02rem}
+    .ai-small{font-size:.84rem;color:var(--muted)}.ai-card .ai-small:last-child{margin:0}
+    .ai-process{font-size:.92rem;border-bottom:0}.ai-process h3{font-size:1.1rem;margin:0 0 8px}.ai-process h3+p,.ai-process ol+h3{margin-top:18px}.ai-process ol{padding-left:22px;margin:0}.ai-process ol li{margin:0 0 5px}.ai-process p{margin:0 0 8px;color:var(--muted)}
+    @media(max-width:760px){.ai-glance{grid-template-columns:repeat(2,1fr)}.ai-panel{padding:34px 0 54px}}
+    @media(max-width:600px){.resolution-signatures{grid-template-columns:1fr}}
     body:has(#sources:target,#sources :target) .view-tab[data-view="sources"]{color:var(--navy);border-color:var(--navy);background:var(--surface)}
     .sources-panel{padding:40px 0 60px}
     .source-group{margin:28px 0}.source-group h3{font-size:1.35rem;margin:0 0 6px}
@@ -793,131 +786,112 @@
 
     </section>
 
-    <section class="view-panel assessment-section ai-panel" id="ai" aria-labelledby="ai-title">
-      <div class="section-body" id="ai-analysis">
-        <header class="ai-tab-heading">
-          <p class="section-kicker">AI opinions, separate from the guide</p>
-          <h2 id="ai-title">What the AIs think</h2>
-          <p class="assessment-intro">We asked four AI models to reason carefully through all the data available to them and say which outcome the evidence better supports. These aren’t votes or advice.</p>
-        </header>
+    <section class="view-panel ai-panel" id="ai" aria-labelledby="ai-title">
+      <header class="tldr-header" id="ai-analysis">
+        <p class="section-kicker">AI opinions, separate from the guide</p>
+        <h2 id="ai-title">What the AIs think</h2>
+        <p class="lede">We asked four AI models to reason carefully through all the data available to them and say which outcome the evidence better supports. These aren’t votes or advice.</p>
+      </header>
 
+      <article class="resolution" aria-labelledby="resolution-title">
+        <p class="resolution-kind">Featured · AI exercise, not advice, not an official City document</p>
+        <h3 id="resolution-title">Joint Recommendation of the AI Review Panel on the Bagley Parking Deck Bond Proposal</h3>
+        <p class="resolution-meta">Adopted October 8–9, 2026 · Regarding the $9 million Public Parking Facility and Pedestrian Safety Bond Proposal, November 3, 2026 ballot</p>
+        <p class="resolution-meta"><strong>Panel:</strong> Grok; Claude (<code>claude-opus-5-5</code>); Codex (<code>gpt-6.1-sol</code>, high reasoning)</p>
+        <h4>Findings</h4>
+          <ol class="resolution-list">
+            <li>The high-school expansion removes 71 campus spaces, and about 65 spaces remain on campus during 2028–2030 construction.<a class="cite" href="#s5">5</a><a class="cite" href="#s18">18</a></li>
+            <li>At the busiest 2025 hour, 371 of 1,310 area spaces were empty, but school lots reached 86.8% on one Saturday, so spare spaces elsewhere do not prove convenient parking at the school.<a class="cite" href="#s8">8</a></li>
+            <li>The City’s traffic consultant ranked a structure last, after on-street parking and the middle-school lot. The Feb. 4, 2026 follow-up says some options “may not be feasible” but names none.<a class="cite" href="#s5">5</a></li>
+            <li>No City–school agreement is signed. Free public use is promised in writing only for school-event attendees, and no operating budget line exists.<a class="cite" href="#s18">18</a><a class="cite" href="#s6">6</a></li>
+            <li>Deck-only estimates run from $15.25 million (plain concrete, 2026 dollars) to $18.11 million (brick, 2028 dollars). The $9 million plus about $7 million covers the low option and falls up to about $2.1 million short of the high one (panel’s arithmetic).<a class="cite" href="#s1">1</a><a class="cite" href="#s21">21</a></li>
+          </ol>
+
+          <h4>Recommendation</h4>
+          <p>The Panel recommends that the certified question go to voters on November 3. The City should sell no bonds and award no construction contract until every condition below is met. Borrowing should be sized to the bids, and the City Attorney should confirm the chosen project fits what voters approved. Whatever the vote, the City and schools should deliver a 2028–2030 student-access plan.</p>
+
+          <h4>Conditions</h4>
+          <ol class="resolution-list">
+            <li>A signed City–school agreement covering the cost split, a cap on the City’s share, school responsibility for its own overruns, the split of running and reserve costs, enforceable public hours with no-fee public use, and the 3-foot right-of-way.</li>
+            <li>A published itemized estimate and real bids, with borrowing limited to what the bids require.</li>
+            <li>A priced side-by-side comparison: a two-level deck, the plain-concrete Option 5, the middle-school lot, on-street management plus busing, and a no-deck alternative. Any brick upgrade is paid by the schools.</li>
+            <li>A funded 20-year running and reserve budget. The record supports about $56,000–$147,000 a year; the long-term repair reserve still needs an engineer’s estimate.</li>
+            <li>The schools’ contribution confirmed, plus a priced list of the walking and biking projects.</li>
+            <li>An exit and queue design for the 30–60 minute after-school load-out, and a construction schedule measured against 2028–2030.</li>
+          </ol>
+
+          <h4>If the measure fails</h4>
+          <p>By December 15, 2026, the City Manager and the schools deliver a funded access plan that follows the engineer’s sequence: on-street parking, then the middle-school lot. Any new ballot measure waits until the conditions are met, and no earlier than May 2027. (If it passes, the comparison, a draft agreement and a student survey are due by January 31, 2027.)</p>
+
+          <h4>Recorded differences</h4>
+          <ul class="resolution-list">
+            <li><strong>What to call it.</strong> Codex preferred calling it a “pause, alternatives first.” Claude and Grok preferred “proceed with conditions.” The text sets the substance and uses neither label.</li>
+            <li><strong>Default size.</strong> Claude preferred a two-level, plain-concrete deck by default unless the schools pay for the third level. Codex wanted two and three levels priced separately first. The text leaves the size to the comparison.</li>
+          </ul>
+
+          <h4>Signatures</h4>
+          <ul class="resolution-signatures">
+            <li><span class="sig">Grok</span><small>Signed · drafted the joint text</small></li>
+            <li><span class="sig">Claude</span><small><code>claude-opus-5-5</code> · Signed with edits</small></li>
+            <li><span class="sig">Codex</span><small><code>gpt-6.1-sol</code>, high reasoning · Signed with edits</small></li>
+          </ul>
+          <p class="resolution-meta">All three members signed. No dissents were recorded.</p>
+      </article>
+
+      <section class="tldr-block" aria-labelledby="ai-fit-title">
+        <h3 id="ai-fit-title">Each model’s best fit</h3>
         <div class="ai-glance" role="list" aria-label="Each model’s best fit at a glance">
           <div role="listitem"><span>Claude</span><b>No</b></div>
           <div role="listitem"><span>Codex</span><b>No</b></div>
           <div role="listitem"><span>Grok</span><b>No</b></div>
           <div role="listitem"><span>Muse</span><b>No</b></div>
         </div>
-        <p class="ai-note">“Best fit” is each model’s read of the evidence, not a vote. The models did not all see the same material; open “Sources used” on each card. Agreement among models does not prove they are right.</p>
-
-        <div class="ai-cards">
-        <article class="assessment-piece ai-card claude" aria-labelledby="ai-claude">
-          <h3 class="ai-card-title" id="ai-claude">Claude</h3>
-          <p class="ai-fit"><span>Best fit:</span> <strong>No</strong></p>
-          <p><strong>Why:</strong> The City’s own traffic consultant said to try cheaper fixes first, and nothing important is signed yet, so approving $9 million now comes before the answers.</p>
-          <p><strong>What would change its mind:</strong> A signed city–school agreement and an itemized cost estimate.</p>
-          <details class="ai-sources"><summary>Sources used</summary><p><strong>Model:</strong> <code>claude-opus-5-5</code> (Anthropic). The full record gathered for this guide, including secondary research: City Commission packets, the traffic memo and follow-up, cost emails, the OAK estimate and debt analysis, the 2025 parking counts, the superintendent’s Sept. 30 letter, design presentations, comment cards, and a research summary drawing on news reports. <span class="src-jump">See: <a href="#src-official">Official records</a>, <a href="#src-news">news</a> and the <a href="#ai5">research summary</a> in Sources.</span></p></details>
-        </article>
-        <article class="assessment-piece ai-card codex" aria-labelledby="ai-codex">
-          <h3 class="ai-card-title" id="ai-codex">Codex</h3>
-          <p class="ai-fit"><span>Best fit:</span> <strong>No</strong></p>
-          <p><strong>Why:</strong> The counts show a real loss of school parking but not a broad shortage, and no one has shown that a 240-space deck is the best fix for the price.</p>
-          <p><strong>What would change its mind:</strong> Parking counts near the school, a priced comparison of other options, a firm budget and a signed agreement.</p>
-          <details class="ai-sources"><summary>Sources used</summary><p><strong>Model:</strong> <code>gpt-6.1-sol</code> (OpenAI), high reasoning effort. Primary records only: the August 3 packet’s comment cards and emails (pp. 239–247), the $9M debt-service schedule, the 2025 parking counts, the City operating-cost emails with the Shared Parking Manual page, the Nov. 10, 2025 traffic memo and Feb. 4, 2026 follow-up letter, and a transcription of the scanned pages. <span class="src-jump">See: <a href="#src-official">Official records</a> in Sources; write-up: <a href="#ai3">AI notes</a>.</span></p></details>
-        </article>
-        <article class="assessment-piece ai-card grok" aria-labelledby="ai-grok">
-          <h3 class="ai-card-title" id="ai-grok">Grok</h3>
-          <p class="ai-fit"><span>Best fit:</span> <strong>No</strong></p>
-          <p><strong>Why:</strong> The campus problem is real but small, the City’s consultant ranked a deck last, and there is no itemized cost or signed agreement.</p>
-          <p><strong>What would change its mind:</strong> An itemized cost, a signed agreement on public use and upkeep, and a reason the cheaper options were ruled out.</p>
-          <details class="ai-sources"><summary>Sources used</summary><p><strong>Model:</strong> Grok. Primary records only, the same set as Codex: the August 3 packet’s comment cards and emails (pp. 239–247), the $9M debt-service schedule, the 2025 parking counts, the City operating-cost emails with the Shared Parking Manual page, the Nov. 10, 2025 traffic memo and Feb. 4, 2026 follow-up letter, and a transcription of the scanned pages. <span class="src-jump">See: <a href="#src-official">Official records</a> in Sources; write-up: <a href="#ai3">AI notes</a>.</span></p></details>
-        </article>
-        <article class="assessment-piece ai-card muse" aria-labelledby="ai-muse">
-          <h3 class="ai-card-title" id="ai-muse">Muse</h3>
-          <p class="ai-fit"><span>Best fit:</span> <strong>No</strong></p>
-          <p><strong>Why:</strong> Voters are asked to approve $9 million before the key terms are in writing, so “not yet” fits the evidence better.</p>
-          <p><strong>What would change its mind:</strong> A signed agreement and itemized costs before a later vote, which could come as soon as May 2027.</p>
-          <p class="ai-disclosure"><strong>Disclosure:</strong> Muse also built this guide, so its view is not independent of how the guide is written.</p>
-          <details class="ai-sources"><summary>Sources used</summary><p><strong>Model:</strong> Muse Spark 1.3 (Meta). This guide and the public record it cites. <span class="src-jump">See: <a href="#sources">All sources</a> listed in Sources.</span></p></details>
-        </article>
+        <p class="tldr-note">The models did not all see the same material. Agreement among them does not prove they are right.</p>
+        <div class="tldr-cases ai-cards">
+          <article class="tldr-case ai-card" aria-labelledby="ai-claude">
+            <h4 id="ai-claude">Claude <span class="ai-model"><code>claude-opus-5-5</code> (Anthropic)</span></h4>
+            <p class="ai-fit">Best fit: <strong>No</strong></p>
+            <p><strong>Why:</strong> The City’s own traffic consultant said to try cheaper fixes first, and nothing important is signed yet, so approving $9 million now comes before the answers.</p>
+            <p><strong>What would change its mind:</strong> A signed city–school agreement and an itemized cost estimate.</p>
+            <p class="ai-small">Sources used: <a href="#src-official">official records</a>, <a href="#src-news">news</a> and the <a href="#ai5">research summary</a>, including secondary research.</p>
+          </article>
+          <article class="tldr-case ai-card" aria-labelledby="ai-codex">
+            <h4 id="ai-codex">Codex <span class="ai-model"><code>gpt-6.1-sol</code> (OpenAI), high reasoning effort</span></h4>
+            <p class="ai-fit">Best fit: <strong>No</strong></p>
+            <p><strong>Why:</strong> The counts show a real loss of school parking but not a broad shortage, and no one has shown that a 240-space deck is the best fix for the price.</p>
+            <p><strong>What would change its mind:</strong> Parking counts near the school, a priced comparison of other options, a firm budget and a signed agreement.</p>
+            <p class="ai-small">Sources used: <a href="#src-official">primary records only</a>.</p>
+          </article>
+          <article class="tldr-case ai-card" aria-labelledby="ai-grok">
+            <h4 id="ai-grok">Grok</h4>
+            <p class="ai-fit">Best fit: <strong>No</strong></p>
+            <p><strong>Why:</strong> The campus problem is real but small, the City’s consultant ranked a deck last, and there is no itemized cost or signed agreement.</p>
+            <p><strong>What would change its mind:</strong> An itemized cost, a signed agreement on public use and upkeep, and a reason the cheaper options were ruled out.</p>
+            <p class="ai-small">Sources used: <a href="#src-official">primary records only</a>, the same set as Codex.</p>
+          </article>
+          <article class="tldr-case ai-card" aria-labelledby="ai-muse">
+            <h4 id="ai-muse">Muse <span class="ai-model">Muse Spark 1.3 (Meta)</span></h4>
+            <p class="ai-fit">Best fit: <strong>No</strong></p>
+            <p><strong>Why:</strong> Voters are asked to approve $9 million before the key terms are in writing, so “not yet” fits the evidence better.</p>
+            <p><strong>What would change its mind:</strong> A signed agreement and itemized costs before a later vote, which could come as soon as May 2027.</p>
+            <p class="ai-small">Muse also built this guide, so its view is not independent of how the guide is written.</p>
+            <p class="ai-small">Sources used: <a href="#sources">this guide and the sources it cites</a>.</p>
+          </article>
         </div>
+      </section>
 
-        <section class="ai-council" aria-labelledby="ai-council-title">
-          <p class="section-kicker">AI exercise · not advice · not an official City document</p>
-          <h3 id="ai-council-title">What the AIs would do if they ran the city</h3>
-          <div class="council-summary">
-            <p><strong>In short:</strong></p>
-            <ol>
-              <li>Let the Nov. 3 vote go ahead.</li>
-              <li>Borrow nothing and sign no construction contract until six conditions are met, including a signed City–school deal, real bids and a priced comparison that includes no deck.</li>
-              <li>If it fails, make a funded student-parking plan by Dec. 15, 2026, and wait until at least May 2027 to ask again.</li>
-            </ol>
-          </div>
-
-          <details class="council-formal">
-            <summary>Read the full joint recommendation</summary>
-            <article class="resolution" aria-labelledby="resolution-title">
-              <header class="resolution-head">
-                <p class="resolution-kind">Joint Recommendation</p>
-                <h4 id="resolution-title">Joint Recommendation of the AI Review Panel on the Bagley Parking Deck Bond Proposal</h4>
-                <p class="resolution-meta">Adopted October 8–9, 2026 · Regarding the $9 million Public Parking Facility and Pedestrian Safety Bond Proposal, November 3, 2026 ballot</p>
-                <p class="resolution-meta"><strong>Panel:</strong> Grok; Claude (<code>claude-opus-5-5</code>); Codex (<code>gpt-6.1-sol</code>, high reasoning)</p>
-              </header>
-
-              <h5>Findings</h5>
-              <ol class="resolution-list">
-                <li>The high-school expansion removes 71 campus spaces, and about 65 spaces remain on campus during 2028–2030 construction.<a class="cite" href="#s5">5</a><a class="cite" href="#s18">18</a></li>
-                <li>At the busiest 2025 hour, 371 of 1,310 area spaces were empty, but school lots reached 86.8% on one Saturday, so spare spaces elsewhere do not prove convenient parking at the school.<a class="cite" href="#s8">8</a></li>
-                <li>The City’s traffic consultant ranked a structure last, after on-street parking and the middle-school lot. The Feb. 4, 2026 follow-up says some options “may not be feasible” but names none.<a class="cite" href="#s5">5</a></li>
-                <li>No City–school agreement is signed. Free public use is promised in writing only for school-event attendees, and no operating budget line exists.<a class="cite" href="#s18">18</a><a class="cite" href="#s6">6</a></li>
-                <li>Deck-only estimates run from $15.25 million (plain concrete, 2026 dollars) to $18.11 million (brick, 2028 dollars). The $9 million plus about $7 million covers the low option and falls up to about $2.1 million short of the high one (panel’s arithmetic).<a class="cite" href="#s1">1</a><a class="cite" href="#s21">21</a></li>
-              </ol>
-
-              <h5>Recommendation</h5>
-              <p>The Panel recommends that the certified question go to voters on November 3. The City should sell no bonds and award no construction contract until every condition below is met. Borrowing should be sized to the bids, and the City Attorney should confirm the chosen project fits what voters approved. Whatever the vote, the City and schools should deliver a 2028–2030 student-access plan.</p>
-
-              <h5>Conditions</h5>
-              <ol class="resolution-list">
-                <li>A signed City–school agreement covering the cost split, a cap on the City’s share, school responsibility for its own overruns, the split of running and reserve costs, enforceable public hours with no-fee public use, and the 3-foot right-of-way.</li>
-                <li>A published itemized estimate and real bids, with borrowing limited to what the bids require.</li>
-                <li>A priced side-by-side comparison: a two-level deck, the plain-concrete Option 5, the middle-school lot, on-street management plus busing, and a no-deck alternative. Any brick upgrade is paid by the schools.</li>
-                <li>A funded 20-year running and reserve budget. The record supports about $56,000–$147,000 a year; the long-term repair reserve still needs an engineer’s estimate.</li>
-                <li>The schools’ contribution confirmed, plus a priced list of the walking and biking projects.</li>
-                <li>An exit and queue design for the 30–60 minute after-school load-out, and a construction schedule measured against 2028–2030.</li>
-              </ol>
-
-              <h5>If the measure fails</h5>
-              <p>By December 15, 2026, the City Manager and the schools deliver a funded access plan that follows the engineer’s sequence: on-street parking, then the middle-school lot. Any new ballot measure waits until the conditions are met, and no earlier than May 2027. (If it passes, the comparison, a draft agreement and a student survey are due by January 31, 2027.)</p>
-
-              <h5>Recorded differences</h5>
-              <ul class="resolution-list">
-                <li><strong>What to call it.</strong> Codex preferred calling it a “pause, alternatives first.” Claude and Grok preferred “proceed with conditions.” The text sets the substance and uses neither label.</li>
-                <li><strong>Default size.</strong> Claude preferred a two-level, plain-concrete deck by default unless the schools pay for the third level. Codex wanted two and three levels priced separately first. The text leaves the size to the comparison.</li>
-              </ul>
-
-              <h5>Signatures</h5>
-              <ul class="resolution-signatures">
-                <li><span class="sig">Grok</span><small>Signed · drafted the joint text</small></li>
-                <li><span class="sig">Claude</span><small><code>claude-opus-5-5</code> · Signed with edits</small></li>
-                <li><span class="sig">Codex</span><small><code>gpt-6.1-sol</code>, high reasoning · Signed with edits</small></li>
-              </ul>
-              <p class="resolution-meta">All three members signed. No dissents were recorded.</p>
-            </article>
-          </details>
-
-          <div class="council-how">
-            <h4>How this was created</h4>
-            <ol>
+      <section class="tldr-block ai-process" aria-labelledby="ai-how-title">
+        <h3 id="ai-how-title">How this was created</h3>
+        <ol>
               <li>Each model wrote its own decision memo, as if leading the city, from the same inputs: the primary records plus the research and fact-checks done for this guide. None saw the others’ memos.</li>
               <li>Each read all three memos and replied with agreements, disagreements and a revised position.</li>
               <li>Grok drafted a joint text. Claude and Codex each reviewed it once and proposed edits, which were added.</li>
               <li>Each model was limited to three runs.</li>
             </ol>
-            <h4>Human oversight: process only</h4>
-            <p>The guide’s organizer, an East Grand Rapids resident, set the rules and format of this exercise but did not write, edit or steer any model’s conclusions or the joint text. The rules: each panel model reasons on its own from the same set of records without seeing the others’ views, primary sources come first, there are no confidence scores, and each model gives an “evidence-based best fit” instead of a vote. The organizer chose the question and the format: what would you do if you ran the city? When Claude first declined to give a best-fit answer, the organizer asked it to give one. The organizer did not pick the outcome; Grok ran the process and drafted the joint text, which Claude and Codex reviewed.</p>
-            <p>This is an AI exercise. It is not advice and not an official City document. Muse was not on the panel. <a href="https://github.com/daverynties/egr-finance-data/tree/main/reviews/parking-deck/council" target="_blank" rel="noopener noreferrer">Read the round-by-round files on GitHub</a>.</p>
-          </div>
-        </section>
-      </div>
+        <h3 id="ai-oversight-title">Human oversight: process only</h3>
+        <p>The guide’s organizer, an East Grand Rapids resident, set the rules and format of this exercise but did not write, edit or steer any model’s conclusions or the joint text. The rules: each panel model reasons on its own from the same set of records without seeing the others’ views, primary sources come first, there are no confidence scores, and each model gives an “evidence-based best fit” instead of a vote. The organizer chose the question and the format: what would you do if you ran the city? When Claude first declined to give a best-fit answer, the organizer asked it to give one. The organizer did not pick the outcome; Grok ran the process and drafted the joint text, which Claude and Codex reviewed.</p>
+        <p>Muse was not on the panel. <a href="https://github.com/daverynties/egr-finance-data/tree/main/reviews/parking-deck/council" target="_blank" rel="noopener noreferrer">Read the round-by-round files on GitHub</a>.</p>
+      </section>
     </section>
 
     <section class="view-panel sources-panel" id="sources" aria-labelledby="sources-title">
