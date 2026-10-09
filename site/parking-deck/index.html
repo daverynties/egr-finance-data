@@ -434,7 +434,11 @@
     .panel-reminder{margin:8px 0 0;font-weight:600;color:var(--ink)}
     .ai-panel .resolution{margin-top:12px}
     .panel-github{margin:16px 0 0;font-size:.92rem}
-    .resolution-signed{margin:0;font-size:.88rem;color:var(--ink)}
+    .resolution-signatures{list-style:none;padding:0;margin:14px 0 10px;display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+    .resolution-signatures li{margin:0;padding-top:8px;border-top:1px solid var(--line-strong);font-size:.88rem;line-height:1.4}
+    .sig-name{display:block;color:var(--ink)}
+    .sig-id{display:block;font-size:.78rem;color:var(--muted)}
+    @media(max-width:600px){.resolution-signatures{grid-template-columns:1fr;gap:18px}}
     .fit-table-wrap{margin:14px 0 8px}
     .fit-table{width:100%;border-collapse:collapse;font-size:.86rem;line-height:1.4;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
     .fit-table th,.fit-table td{padding:7px 10px 7px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);background:none}
@@ -931,7 +935,12 @@
           </ul>
 
           <h4>Signatures</h4>
-          <p class="resolution-signed">Signed: Grok · Claude (claude-opus-5-5) · Codex (gpt-6.1-sol). No dissents recorded.</p>
+          <ul class="resolution-signatures" aria-label="Signatures">
+            <li><span class="sig-name">Grok</span></li>
+            <li><span class="sig-name">Claude</span><span class="sig-id">claude-opus-5-5</span></li>
+            <li><span class="sig-name">Codex</span><span class="sig-id">gpt-6.1-sol</span></li>
+          </ul>
+          <p class="resolution-meta">No dissents recorded.</p>
       </article>
 
       <p class="panel-github"><a href="https://github.com/daverynties/egr-finance-data/tree/main/reviews/parking-deck/council" target="_blank" rel="noopener noreferrer">Read the round-by-round files on GitHub</a>.</p>
