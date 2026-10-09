@@ -159,7 +159,8 @@
     .tldr-cost{font-size:1.22rem;line-height:1.5;margin:0}.tldr-cost strong{color:var(--navy)}
     .tldr-cases{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
     .tldr-case{background:var(--surface);padding:24px}.tldr-case h3{margin:0 0 12px}.tldr-case ul{margin:0;padding-left:19px}.tldr-case li{margin:8px 0}
-    .tldr-models{margin:0;padding:0;list-style:none}.tldr-models li{padding:11px 0;border-bottom:1px solid var(--line)}.tldr-models li:last-child{border-bottom:0}.tldr-models strong{display:inline-block;min-width:72px}
+    .tldr-models{margin:0;padding:0;list-style:none}.tldr-models li{padding:11px 0;border-bottom:1px solid var(--line)}.tldr-models li:last-child{border-bottom:0}.tldr-models strong{display:inline-block;min-width:72px}.tldr-model-meta{display:block;margin:4px 0 0 72px;color:var(--muted);font-size:.76rem;line-height:1.4}
+    .ai-opinion-note{margin:0 0 14px;color:var(--amber);font-weight:700}
     .tldr-actions{display:flex;gap:12px;flex-wrap:wrap;padding-top:28px}.tldr-actions a{display:inline-flex;padding:10px 14px;border:1px solid var(--navy);font-weight:700;text-decoration:none}.tldr-actions a:first-child{background:var(--navy);color:#fff}.tldr-actions a:last-child{color:var(--navy)}
     :root[data-theme="dark"] .tldr-actions a:first-child{color:#102638}
     .assessment-section{margin:0 calc(50% - 50vw);padding:42px max(24px,calc((100vw - 1160px)/2)) 78px;background:#edf2ea;border-top:1px solid #bfd0ba;border-bottom:1px solid #bfd0ba}
@@ -184,6 +185,9 @@
     .case h3{margin:0 0 12px;font-size:1.12rem}
     .case ul,.change-list{margin:0;padding-left:20px}.case li,.change-list li{margin:0 0 8px}
     .muse-vote{font-size:1.08rem;line-height:1.68;margin:0}
+    .ballot-quote{font-size:clamp(1rem,2vw,1.28rem)!important;line-height:1.5!important}
+    .vote-effect{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin:24px 0;background:var(--line);border:1px solid var(--line)}
+    .vote-effect article{background:var(--surface);padding:22px}.vote-effect h3{margin:0 0 8px;font:700 1rem/1.2 "Source Sans 3",sans-serif}.vote-effect p{margin:0;color:var(--muted);font-size:.9rem}
     :root[data-theme="dark"] .assessment-section{background:#17241b;border-color:#3f5c43}
     :root[data-theme="dark"] .opinion-disclaimer{background:#3d351d;border-color:#806e35;color:#f4e7b6}
     :root[data-theme="dark"] .assessment-piece{background:#1d2d22;border-right-color:#3f5c43;border-bottom-color:#3f5c43;border-left-color:#3f5c43;border-top-color:color-mix(in srgb,var(--model-accent) 58%,white)}
@@ -331,7 +335,7 @@
     .event h3,.risk h3{font-family:"Source Sans 3",sans-serif}
     .risk-grid{gap:1px;background:var(--line);border:1px solid var(--line)}.risk{border:0;padding:23px}
     .method{background:var(--surface-2)}
-    footer{margin-top:38px;padding:30px 0 8px;border-top:1px solid var(--line);font-size:.78rem}
+    footer{margin-top:38px;padding:30px 0 8px;border-top:1px solid var(--line);font-size:.78rem}.footer-ai-note{grid-column:1/-1}
     :focus-visible{outline:3px solid color-mix(in srgb,var(--sky) 70%,transparent);outline-offset:3px}
 
     @media(max-width:1040px){.freshness{display:none}.nav-title{display:none}.nav-links{gap:7px 12px}}
@@ -355,7 +359,8 @@
       details.section>summary{grid-template-columns:34px 1fr 24px;gap:10px;padding:35px 0 28px}.section-title{font-size:2rem}.section-body{padding:0 0 54px}
       .count-flow{gap:1px}.count-step:nth-child(even){border-left:0}.count-step:nth-child(n+3){border-top:0}
       .tldr-tab-panel{padding:42px 0 60px}.tldr-facts{grid-template-columns:1fr 1fr}.tldr-fact:last-child{grid-column:1/-1}.tldr-cases{grid-template-columns:1fr}.tldr-actions{display:grid}.tldr-actions a{justify-content:center}
-      .assessment-section{padding-left:12px;padding-right:12px}.assessment-section .section-body{padding-left:0}.opinion-disclaimer{padding:17px}.assessment-piece{padding:20px}.case-grid{grid-template-columns:1fr}.assessment-table td:first-child{width:auto}.assessment-table td:nth-child(2){width:auto}
+      .assessment-section{padding-left:12px;padding-right:12px}.assessment-section .section-body{padding-left:0}.opinion-disclaimer{padding:17px}.assessment-piece{padding:20px}.case-grid,.vote-effect{grid-template-columns:1fr}.assessment-table td:first-child{width:auto}.assessment-table td:nth-child(2){width:auto}
+      .tldr-model-meta{margin-left:0}
       footer{grid-template-columns:1fr;gap:12px}
     }
     @media(max-width:440px){h1{font-size:2.8rem}.ballot-card{padding:24px}.section-title{font-size:1.85rem}}
@@ -408,7 +413,7 @@
         <h1 id="page-title">East Grand Rapids Parking Deck Bond</h1>
         <aside class="about-guide" aria-labelledby="about-guide-title">
           <strong id="about-guide-title">About this guide</strong>
-          <p>Built from City Commission packets (April 20, June 29, July 20, and August 3), the Progressive Companies traffic memo and February 2026 follow-up, City operating-cost emails, the MFCI debt analysis, the 2025 parking study, the superintendent’s September 30 letter, and resident comment cards. Every figure traces to a primary source; “inferred” figures are arithmetic from cited values. Four independent models—Claude, Codex, Grok, and Muse—separately reviewed the record and published their votes in the <a href="#ai-analysis">AI Analysis tab</a>. Built by an East Grand Rapids resident. Self-funded. Not affiliated with the City, the school district, or any campaign.</p>
+          <p>Built from City Commission packets (April 20, June 29, July 20, and August 3), the Progressive Companies traffic memo and February 2026 follow-up, City operating-cost emails, the MFCI debt analysis, the 2025 parking study, the superintendent’s September 30 letter, and resident comment cards. Every figure traces to a cited source; figures marked “inferred” are our arithmetic. Some context comes from secondary reporting (East Insider) and campaign sites, linked as sources for their own claims only. Four independent models—Claude, Codex, Grok, and Muse—separately reviewed the record and published their votes in the <a href="#ai-analysis">AI Analysis tab</a>. Built by an East Grand Rapids resident. Self-funded. Not affiliated with the City, the school district, or any campaign.</p>
         </aside>
         <p class="deck-subtitle">A source-backed guide to the $9 million Public Parking Facility and Pedestrian Safety Bond Proposal on the November 3, 2026 ballot.<a class="cite" href="#s1" aria-label="Source 1">1</a></p>
       </div>
@@ -471,11 +476,12 @@
 
       <section class="tldr-block" aria-labelledby="tldr-models-title">
         <h3 id="tldr-models-title">What the four AI models said</h3>
+        <p class="ai-opinion-note">AI opinions — not neutral facts. Four independent models reviewed the same public record and published their takes.</p>
         <ul class="tldr-models">
-          <li><strong>Claude</strong> Lean no—the need is real, but key terms are not binding.</li>
-          <li><strong>Codex</strong> No, 80% confidence—the record does not show this 240-space deck is the best answer.</li>
-          <li><strong>Grok</strong> Lean no, 60–65%—the campus problem is real, but the size, cost, and City share are not justified.</li>
-          <li><strong>Muse</strong> No—the $9 million request comes before the governing terms and itemized costs.</li>
+          <li><strong>Claude</strong> Declined to vote; says the record leans against.<span class="tldr-model-meta">Claude Opus 5.5 · Anthropic · Full cited record, including secondary context</span></li>
+          <li><strong>Codex</strong> No, 80% confidence—the record does not show this 240-space deck is the best answer.<span class="tldr-model-meta">GPT-6.1-sol · OpenAI · Full cited record plus an independent 207-claim check</span></li>
+          <li><strong>Grok</strong> Lean no, 60–65%—the campus problem is real, but the size, cost, and City share are not justified.<span class="tldr-model-meta">Grok · xAI · Primary-record brief with recomputed cost, tax, and utilization</span></li>
+          <li><strong>Muse</strong> No—the $9 million request comes before the governing terms and itemized costs.<span class="tldr-model-meta">Muse Spark 1.3 · Meta · Assembled guide and cited public record</span></li>
         </ul>
       </section>
 
@@ -493,7 +499,7 @@
         <article class="summary-card">
           <div class="num">$15.2M–$18.1M</div>
           <h3>What is proposed</h3>
-          <p>A three-level, 240-space deck, plus signals and pedestrian work. The City would bond up to $9M. The school board voted 5–1 on April 20, 2026 to set aside about $7M from its general and capital improvement funds.<a class="cite" href="#s21">21</a> The $9M city bond plus the school’s ~$7M set-aside totals ~$16M, which falls within the OAK range; the exact split of the final cost has not been published.</p>
+          <p>A three-level, 240-space deck, plus signals and pedestrian work. The City would bond up to $9M. The school board voted 5–1 on April 20, 2026 to set aside about $7M from its general and capital improvement funds.<a class="cite" href="#s21">21</a> The $9M city bond plus the school’s ~$7M set-aside totals about $16M. That sits below four of the six OAK estimates ($15.2M–$18.1M); no document says who covers overruns. The OAK range covers the deck alone, while signal, loading-dock and pedestrian work is not separately itemized.</p>
         </article>
         <article class="summary-card">
           <div class="num">371 empty</div>
@@ -516,10 +522,11 @@
       <summary><span class="section-number">01</span><span class="section-title">Need<small>Current capacity is available; construction changes the campus math.</small></span><span class="chevron" aria-hidden="true"></span></summary>
       <div class="section-body">
         <div class="prose">
-          <p>The 2025 utilization counts do not show a system-wide shortage on the measured dates. At the busiest observed system hour, 939 of 1,310 spaces were occupied—71.7%—leaving 371 open.<a class="cite" href="#s8">8</a> The school lots reached 81% on the measured weekday and 86.8% on Saturday; the commonly used 85% benchmark was not reached system-wide on the weekday.<a class="cite" href="#s8">8</a><a class="cite" href="#s16">16</a></p>
+          <p>The 2025 utilization counts do not show a system-wide shortage on the measured dates. At the busiest observed system hour, 939 of 1,310 spaces were occupied—71.7%—leaving 371 open.<a class="cite" href="#s8">8</a> The school lots reached 81% on the measured weekday and 86.8% on Saturday; the commonly used 85% benchmark was not reached system-wide on the weekday.<a class="cite" href="#s8">8</a> The 85% figure is a commonly cited industry rule of thumb; no primary source in the record establishes it.</p>
+          <p>Pressure was much sharper closest to school: the 15-space San Lu Rae street segment reached 233.3% at 2 p.m. on May 8, and the 111-space senior lot reached 106.3% at 1 p.m. on March 12.<a class="cite" href="#s8">8</a> An internal secondary research note also estimates only about 80 spaces were available to the public during school hours; this guide could not tie that number to a published primary count, so it remains unconfirmed.</p>
         </div>
         <div class="chart-wrap" role="img" aria-label="Bar chart showing peak utilization: system-wide 71.7 percent, school weekday 81 percent, school Saturday 86.8 percent, and an 85 percent benchmark">
-          <p class="chart-title">Peak observed utilization</p><p class="chart-note">2025 counts; bars begin at zero. The dashed line marks the 85% benchmark.</p>
+          <p class="chart-title">Peak observed utilization</p><p class="chart-note">2025 counts; bars begin at zero. The dashed line marks a commonly cited 85% rule of thumb, not a primary-source standard in this record.</p>
           <svg class="chart-svg" viewBox="0 0 760 250" aria-hidden="true">
             <line class="grid" x1="155" y1="205" x2="720" y2="205"/><line class="grid" x1="155" y1="160" x2="720" y2="160"/><line class="grid" x1="155" y1="115" x2="720" y2="115"/><line class="grid" x1="155" y1="70" x2="720" y2="70"/><line class="grid" x1="155" y1="25" x2="720" y2="25"/>
             <text x="145" y="209" text-anchor="end">0%</text><text x="145" y="164" text-anchor="end">25%</text><text x="145" y="119" text-anchor="end">50%</text><text x="145" y="74" text-anchor="end">75%</text><text x="145" y="29" text-anchor="end">100%</text>
@@ -528,7 +535,7 @@
             <text x="250" y="69" text-anchor="middle" class="value">71.7%</text><text x="440" y="79" text-anchor="middle" class="value" style="fill:#fff">81.0%</text><text x="630" y="42" text-anchor="middle" class="value">86.8%</text>
             <text x="250" y="226" text-anchor="middle">System peak</text><text x="440" y="226" text-anchor="middle">School weekday</text><text x="630" y="226" text-anchor="middle">School Saturday</text>
           </svg>
-          <div class="legend"><span><i></i>Observed utilization</span><span><i class="dash"></i>85% benchmark</span></div>
+          <div class="legend"><span><i></i>Observed utilization</span><span><i class="dash"></i>85% rule of thumb</span></div>
         </div>
         <div class="prose">
           <h3>Where the shortage comes from</h3>
@@ -558,25 +565,34 @@
           <div class="metric"><b>$80K–$95K</b><span>per net new space <span class="inferred">inferred</span><a class="cite" href="#s1">1</a></span><div class="why">Uses roughly 190 net new spaces, not all 240 deck stalls.</div></div>
         </div>
         <div class="prose">
-          <p>An industry benchmark cited in the record is roughly $42,000 all-in per structured space.<a class="cite" href="#s17">17</a> Applied to 240 spaces, that implies a baseline near $10.1M; the $15.2M–$18.1M project range carries an estimated premium of roughly $5M–$8M. <span class="inferred">inferred</span> The record points to architectural treatment, heated walks and an elevator among the added features, but provides no released line-item budget to isolate each premium.<a class="cite" href="#s1">1</a> The $9M city bond plus the school’s ~$7M set-aside totals ~$16M, which falls within the OAK range; the exact split of the final cost has not been published.</p>
+          <p>An industry benchmark cited in the record is roughly $42,000 all-in per structured space.<a class="cite" href="#s17">17</a> Applied to 240 spaces, that implies a baseline near $10.1M; the $15.2M–$18.1M project range carries an estimated premium of roughly $5M–$8M. <span class="inferred">inferred</span> The record points to architectural treatment, heated walks and an elevator among the added features, but provides no released line-item budget to isolate each premium.<a class="cite" href="#s1">1</a> The $9M city bond plus the school’s ~$7M set-aside totals about $16M. That sits below four of the six OAK estimates ($15.2M–$18.1M); no document says who covers overruns. The OAK range covers the deck alone, while signal, loading-dock and pedestrian work is not separately itemized.</p>
           <h3>Annual ownership cost</h3>
           <p>The City’s figure traces to a deputy city manager’s April 23 email: Grand Rapids’ $611 per space, “not depreciation,” times 213 spaces, or $130,143, for the April 213-space design. At 240 spaces that is about $147,000. <span class="inferred">inferred</span><a class="cite" href="#s6">6</a> The Shared Parking Manual the City circulated puts basic operations at $175 and a repair sinking fund at $60 per space per year in 2018 dollars, about $70,000–$75,000 a year today for 240 spaces. <span class="inferred">inferred</span><a class="cite" href="#s16">16</a> Adding 1% of construction cost as a repair reserve gives an upper case near $300,000–$330,000. <span class="inferred">inferred</span> The realistic full annual cost is therefore about $70,000–$330,000; the City’s half about $35,000–$165,000. <span class="inferred">inferred</span> No dedicated funding source is identified.</p>
-          <p>Commissioner Schwartz said July 20: “the school needs two levels and the third is a possibility for the City.”<a class="cite" href="#s4">4</a> The April memo says a two-story deck meets the school’s no-net-loss goal.<a class="cite" href="#s2">2</a> If the total lands within the $15.2M–$18.1M range and the school contributes about $7M, the City’s portion would be about $8M–$9M and would fund roughly 118 spaces beyond the school’s stated need—about $68,000–$76,000 each. <span class="inferred">inferred</span> The school’s ~$7M is a board set-aside, not a confirmed final contribution, so this split remains illustrative rather than final.</p>
+          <p>Commissioner Schwartz said July 20: “the school needs two levels and the third is a possibility for the City.”<a class="cite" href="#s4">4</a> The April memo says a two-story deck meets the school’s no-net-loss goal.<a class="cite" href="#s2">2</a> If the total lands within the $15.2M–$18.1M range and the school contributes about $7M, the City’s portion would be about $7.6M–$9.1M and would fund roughly 118 spaces beyond the school’s stated need—about $68,000–$76,000 each. <span class="inferred">inferred</span> The school’s ~$7M is a board set-aside, not a confirmed final contribution, so this split remains illustrative rather than final.</p>
         </div>
-        <div class="bottom-line"><strong>What $160K means</strong><p>$160,000 is the City’s stated figure for its share of annual operations. It is consistent with one routine-operations benchmark for the whole structure; the reviewed records support a broader full-cost range once differing operations assumptions and a major-repair reserve are considered.<a class="cite" href="#s6">6</a><a class="cite" href="#s16">16</a></p></div>
+        <div class="bottom-line"><strong>What $160K means</strong><p>About $160,000 a year has been cited for the whole deck’s annual operations, not the City’s half, and that exact figure does not appear in the cited sources. The closest source-backed calculation is $611 × 240 spaces = $146,640 for the full structure, excluding depreciation. On an even split, the City’s illustrative share would be $73,320—roughly $80,000—not $160,000. <span class="inferred">inferred</span><a class="cite" href="#s6">6</a></p></div>
       </div>
     </details>
 
     <details class="section" id="financing" open>
       <summary><span class="section-number">03</span><span class="section-title">Financing<small>The bond caps borrowing; the debt model shows the projected tax path.</small></span><span class="chevron" aria-hidden="true"></span></summary>
       <div class="section-body">
+        <div class="finding" aria-labelledby="ballot-question-title">
+          <div class="label" id="ballot-question-title">What you are voting on</div>
+          <blockquote class="ballot-quote">“Shall the City of East Grand Rapids, Kent County, Michigan, borrow the principal amount of not to exceed $9,000,000 and issue its general obligation unlimited tax bonds for all or a portion of that amount in one or more series payable over not to exceed twenty years from the date of issue of each series to pay a portion of the cost of designing, acquiring and constructing a parking facility located on Bagley on or near the existing East Grand Rapids Public Schools parking lot, site acquisition, site work, traffic signals and related expenses and improvements?”</blockquote>
+          <p>These are unlimited-tax general obligation bonds. The ballot estimates 0.5922 mills in year one and a 0.4925-mill simple annual average.<a class="cite" href="#s1">1</a></p>
+        </div>
+        <div class="vote-effect" aria-label="What a yes or no vote does">
+          <article><h3>YES</h3><p>Authorizes the City to borrow up to $9 million through these bonds for the stated project scope. The amount ultimately issued could be lower.</p></article>
+          <article><h3>NO</h3><p>Rejects this bond authorization; it does not prohibit the project. The Commission could pursue a smaller or redesigned plan, use non-voter-approved bonds, or return to voters. The next regular opportunity identified in the record is May 2027.<a class="cite" href="#s1">1</a></p></article>
+        </div>
         <div class="metric-grid">
           <div class="metric"><b>$13.21M</b><span>principal plus projected interest<a class="cite" href="#s7">7</a><a class="cite" href="#s9">9</a></span><div class="why">$9M principal + $4.21M interest at 4.13% TIC.</div></div>
           <div class="metric"><b>0.5922</b><span>year-one mills<a class="cite" href="#s7">7</a></span><div class="why">Average modeled levy: 0.4925 mills.</div></div>
           <div class="metric"><b>2%</b><span>annual taxable-value growth assumed<a class="cite" href="#s7">7</a></span><div class="why">Slower growth would require a higher millage for the same debt service.</div></div>
         </div>
         <div class="prose">
-          <p>For a median home—about $521,000 market value and roughly $200,000–$260,000 taxable value—the model implies about $98–$128 a year on average, $118–$154 in year one, or $1,970–$2,560 over 20 years. <span class="inferred">inferred</span><a class="cite" href="#s7">7</a><a class="cite" href="#s23">23</a></p>
+          <p>For a median home—about $521,000 market value and roughly $200,000–$260,000 taxable value—the model implies about $98–$128 a year on average, $118–$154 in year one, or $1,970–$2,560 over 20 years. <span class="inferred">inferred</span><a class="cite" href="#s7">7</a><a class="cite" href="#s23">23</a> Those 20-year totals assume the home’s taxable value never rises. If it grows at the City model’s assumed 2% a year, the 20-year total is closer to about $2,360–$3,070. <span class="inferred">inferred</span></p>
           <p>The City reported $6,511,815 in unassigned general-fund balance, equal to 44.01% in the FY2025 ACFR and above its 20%–25% target.<a class="cite" href="#s19">19</a> That balance could not cover a $7.6M–$9.1M City share outright. Using any of it toward the project would substantially reduce the cushion and would not solve ongoing operating costs.</p>
           <h3>Local tax context</h3>
           <p>EGR’s 2024 city levy was 14.09 mills (operating 11.35, extra-voted 1.73, debt 1.01)—high among nearby Kent County cities, though below Cedar Springs at 18.77 and Lowell at 15.95.<a class="cite" href="#s20">20</a> This comparison is context, not a measure of service equivalence or total household tax burden.</p>
@@ -663,7 +679,7 @@
 
     <section class="assessment-section ai-tab-panel" id="ai-analysis" aria-labelledby="ai-analysis-title">
       <div class="section-body">
-        <div class="opinion-disclaimer" role="note">The following are AI-generated opinions based on the public record. They are not recommendations from any official body and do not tell anyone how to vote.</div>
+        <div class="opinion-disclaimer" role="note">These are AI-generated opinions based solely on the public record cited in this guide. Each model worked independently from the same sources. They are not recommendations from any official body, campaign, or the guide’s author, and they do not tell anyone how to vote.</div>
         <header class="ai-tab-heading">
           <p class="section-kicker">Independent model review</p>
           <h2 id="ai-analysis-title">AI analysis</h2>
@@ -672,7 +688,7 @@
 
         <article class="assessment-piece claude" aria-labelledby="claude-assessment">
           <p class="assessment-label" id="claude-assessment">Claude’s assessment (Oct 8, 2026)</p>
-          <p class="assessment-model">Model: claude-opus-5-5 (Anthropic) · Input: assembled guide and primary-source record</p>
+          <p class="assessment-model">Model: Claude Opus 5.5 (Anthropic) · Input: full cited record, including secondary context</p>
           <p class="assessment-bottom-line"><strong>Bottom line:</strong> “The record supports a real but temporary and fixable problem. The ballot asks voters to fund a permanent, larger solution whose key terms aren't written down yet.” On the evidence alone, the case for this proposal as presented is weaker than the case against it — not because the deck is unneeded or unaffordable, but because (1) the main promises (free public use, who maintains it, what the pedestrian safety money buys) aren't binding, (2) the city's own engineer ranked a structure last, and (3) the city's share mainly buys a third level beyond the school's own need. A voter who weights the 2028–2030 crunch or a shared Gaslight asset can reasonably vote yes; a voter who weighs cost discipline, process, or binding terms has solid grounds for no.</p>
 
           <h3>Where the record points, question by question</h3>
@@ -682,10 +698,10 @@
               <tbody>
                 <tr><td data-label="Question">Is there a shortage?</td><td data-label="Assessment">Not area-wide today; yes on campus during construction.</td><td data-label="What supports it">371 of 1,310 empty at 2025 peak; school lots hit 86.8% one Saturday; real gap is 71 senior-lot spaces; campus falls to ~65 in 2028–2030.<a class="cite" href="#s8">8</a><a class="cite" href="#s18">18</a></td></tr>
                 <tr><td data-label="Question">Is a deck the right fix?</td><td data-label="Assessment">Record leans no.</td><td data-label="What supports it">Engineer recommended no new parking, on-street first, middle school lot, structure only after other options explored; Feb. 4 letter says some options “may not be feasible” but names none.<a class="cite" href="#s5">5</a></td></tr>
-                <tr><td data-label="Question">Is the size right?</td><td data-label="Assessment">Bigger than the school needs.</td><td data-label="What supports it">Two levels give “no net loss”; the third level is “a possibility for the City” per Commissioner Schwartz. If the total is $15.2M–$18.1M and the school contributes about $7M, the City’s portion is about $8M–$9M for roughly 118 extra spaces, or about $68K–$76K each. The school amount is a set-aside, not a confirmed final contribution. <span class="inferred">inferred</span><a class="cite" href="#s2">2</a><a class="cite" href="#s4">4</a></td></tr>
+                <tr><td data-label="Question">Is the size right?</td><td data-label="Assessment">Bigger than the school needs.</td><td data-label="What supports it">Two levels give “no net loss”; the third level is “a possibility for the City” per Commissioner Schwartz. If the total is $15.2M–$18.1M and the school contributes about $7M, the City’s portion is about $7.6M–$9.1M for roughly 118 extra spaces, or about $68K–$76K each. The school amount is a set-aside, not a confirmed final contribution. <span class="inferred">inferred</span><a class="cite" href="#s2">2</a><a class="cite" href="#s4">4</a></td></tr>
                 <tr><td data-label="Question">Is the cost reasonable?</td><td data-label="Assessment">High.</td><td data-label="What supports it">$15.2–18.1M, ~$63–75K per space vs. ~$42K Michigan benchmark; ~$80–95K per net space <span class="inferred">inferred</span>; no line items released.<a class="cite" href="#s1">1</a><a class="cite" href="#s17">17</a></td></tr>
                 <tr><td data-label="Question">Tax impact?</td><td data-label="Assessment">Modest.</td><td data-label="What supports it">~$49/yr per $100K taxable; ~$98–128/yr median home <span class="inferred">inferred</span>; $13.2M total debt service.<a class="cite" href="#s7">7</a><a class="cite" href="#s9">9</a></td></tr>
-                <tr><td data-label="Question">Operating cost?</td><td data-label="Assessment">Unfunded and uncertain.</td><td data-label="What supports it">City's ~$160K from Grand Rapids $611/space “not depreciation”; realistic range $70–330K/yr <span class="inferred">inferred</span>; no funding source for city's half.<a class="cite" href="#s6">6</a><a class="cite" href="#s16">16</a></td></tr>
+                <tr><td data-label="Question">Operating cost?</td><td data-label="Assessment">Unfunded and uncertain.</td><td data-label="What supports it">About $160K has been cited for the whole deck, but is not stated in the cited sources; $611 × 240 = about $147K for the whole structure, excluding depreciation, and an even City half is about $73K. <span class="inferred">inferred</span> No funding source for the City’s share.<a class="cite" href="#s6">6</a><a class="cite" href="#s16">16</a></td></tr>
                 <tr><td data-label="Question">Process?</td><td data-label="Assessment">Weak.</td><td data-label="What supports it">No subcommittee minutes; East Insider reported that revised language arrived about 90 minutes before the vote; ballot placement passed 4–1–1. In the commission’s favor, it chose a public vote over non-voted bonds.<a class="cite" href="#s1">1</a><a class="cite" href="#s13">13</a></td></tr>
                 <tr><td data-label="Question">Binding commitments?</td><td data-label="Assessment">Almost none.</td><td data-label="What supports it">No signed agreement; June deck showed free parking but only signed letter promises no fee to school-event attendees; no pedestrian project list; no bike lane commitment.<a class="cite" href="#s18">18</a><a class="cite" href="#s24">24</a></td></tr>
                 <tr><td data-label="Question">Alternatives studied?</td><td data-label="Assessment">Not in public.</td><td data-label="What supports it">Middle school lot, bussing, demand management and two-level-only were never priced publicly; no student survey.</td></tr>
@@ -733,13 +749,14 @@
 
         <article class="assessment-piece muse" aria-labelledby="muse-assessment">
           <p class="assessment-label" id="muse-assessment">Muse’s assessment (Oct 8, 2026)</p>
-          <p class="assessment-model">Model: Muse Spark 1.3 (Meta) — the model powering this assistant · Input: assembled guide and primary-source record</p>
+          <p class="assessment-model">Model: Muse Spark 1.3 (Meta) · Input: assembled guide and cited public record</p>
+          <p class="assessment-model">Disclosure: Muse (this assistant) also built this voter guide from the same public record.</p>
           <p class="muse-vote">“I’d vote no. The shortage is real but temporary — it’s the 2028–2030 construction crunch, not a lasting gap. 371 spaces sat empty at peak in 2025. The City’s own engineer said try on-street parking and the middle school lot first, a structure only as a last resort, and no public document explains why those cheaper options were dropped. The bigger issue is that nothing is binding: no signed city–school agreement, no guaranteed free public parking, no maintenance funding, no pedestrian project list. Voters are being asked to approve $9M before the terms exist. And the City’s portion mainly buys a third level beyond what the school needs — about $68,000–$76,000 per space for that increment if the school ultimately contributes about $7M. <span class="inferred">inferred</span> A no vote isn’t a kill shot. The City can return in May 2027 with a signed agreement and itemized costs. ‘Not yet’ is the right answer when the paperwork isn’t done.”</p>
         </article>
 
         <article class="assessment-piece codex" aria-labelledby="codex-assessment">
           <p class="assessment-label" id="codex-assessment">Codex’s assessment (Oct 8, 2026)</p>
-          <p class="assessment-model">Model: gpt-6.1-sol (OpenAI), high reasoning effort · Input: primary-source record plus an independent check of 207 page claims</p>
+          <p class="assessment-model">Model: GPT-6.1-sol (OpenAI) · Input: full cited record plus an independent check of 207 page claims</p>
           <p class="assessment-bottom-line"><strong>Vote: No — 80% confidence, based on this record.</strong> The documents establish a real loss of school parking and a potential benefit from keeping students on campus. They do not establish that a roughly 240-space deck is the best response at the proposed financial commitment.</p>
 
           <h3>Top three reasons</h3>
@@ -771,7 +788,7 @@
               <thead><tr><th>Measure</th><th>Amount</th><th>Interpretation</th></tr></thead>
               <tbody>
                 <tr><td data-label="Measure">OAK project range</td><td data-label="Amount">$15.25M–$18.11M</td><td data-label="Interpretation">Low 2026 utilitarian case through the high escalated 2028 case; the packet provides totals, not line items.</td></tr>
-                <tr><td data-label="Measure">Named funding</td><td data-label="Amount">Up to $9M City + ~$7M school set-aside</td><td data-label="Interpretation">About $16M combined, within the OAK range. The final split is not published, and the school amount is a set-aside rather than a confirmed final contribution.</td></tr>
+                <tr><td data-label="Measure">Named funding</td><td data-label="Amount">Up to $9M City + ~$7M school set-aside</td><td data-label="Interpretation">About $16M combined—below four of the six OAK estimates. No released document identifies who covers overruns. The OAK range covers the deck alone; signal, loading-dock and pedestrian work is not separately itemized. The school amount is a set-aside, not a confirmed final contribution.</td></tr>
                 <tr><td data-label="Measure">Gross deck cost</td><td data-label="Amount">~$63K–$75K per stall</td><td data-label="Interpretation">Project range divided by 240 spaces. <span class="inferred">inferred</span></td></tr>
                 <tr><td data-label="Measure">Net new-space cost</td><td data-label="Amount">~$80K–$95K</td><td data-label="Interpretation">Project range divided by about 191 net new spaces after replacing the 49-space Bagley lot. <span class="inferred">inferred</span></td></tr>
                 <tr><td data-label="Measure">Debt repayment</td><td data-label="Amount">$13,212,287</td><td data-label="Interpretation">$9M principal plus $4,212,287 projected interest.</td></tr>
@@ -790,13 +807,14 @@
               </tbody>
             </table>
           </div>
+          <p class="assessment-model">These 20-year totals assume taxable value never rises. At the City model’s assumed 2% annual growth, the $200,000–$260,000 examples are closer to about $2,360–$3,070 over 20 years. <span class="inferred">inferred</span></p>
 
           <h3>Operating-cost read</h3>
           <div class="table-wrap">
             <table>
               <thead><tr><th>Figure</th><th>What it represents</th><th>Limitation</th></tr></thead>
               <tbody>
-                <tr><td data-label="Figure">$160K</td><td data-label="What it represents">City’s stated figure for its share of operations</td><td data-label="Limitation">No dedicated funding source is identified.</td></tr>
+                <tr><td data-label="Figure">About $160K</td><td data-label="What it represents">A cited whole-deck annual-operations figure; an even City half would be about $80K</td><td data-label="Limitation">The exact $160K is not stated in the cited sources; no dedicated funding source is identified.</td></tr>
                 <tr><td data-label="Figure">About $147K</td><td data-label="What it represents">Grand Rapids’ $611 per space benchmark applied to 240 spaces <span class="inferred">inferred</span></td><td data-label="Limitation">The underlying benchmark expressly excludes depreciation.</td></tr>
                 <tr><td data-label="Figure">About $70K–$75K</td><td data-label="What it represents">Inflation-adjusted basic operations plus the manual’s repair sinking fund <span class="inferred">inferred</span></td><td data-label="Limitation">A general benchmark, not a project-specific operating plan.</td></tr>
                 <tr><td data-label="Figure">About $300K–$330K</td><td data-label="What it represents">Upper case including a 1% construction-cost repair reserve <span class="inferred">inferred</span></td><td data-label="Limitation">Illustrative planning case, not a City estimate.</td></tr>
@@ -832,7 +850,7 @@
 
         <article class="assessment-piece grok" aria-labelledby="grok-assessment">
           <p class="assessment-label" id="grok-assessment">Grok’s assessment (Oct 8, 2026)</p>
-          <p class="assessment-model">Model: Grok Bot (xAI) · Input: primary-record brief with recomputed cost, tax and utilization figures</p>
+          <p class="assessment-model">Model: Grok (xAI) · Input: primary-record brief with recomputed cost, tax and utilization figures</p>
           <p class="assessment-bottom-line"><strong>Lean No, about 60–65%.</strong> On the primary record alone, the case for a campus problem after the expansion is real—removing 71 spaces would leave weekday school demand (294 at peak) exceeding remaining capacity (292). But the case that this deck, at this size and cost, with this City share, is the right fix is weak.</p>
 
           <h3>Key facts</h3>
@@ -840,7 +858,7 @@
             <table>
               <thead><tr><th>Topic</th><th>Record</th><th>Grok’s read</th></tr></thead>
               <tbody>
-                <tr><td data-label="Topic">Campus capacity after expansion</td><td data-label="Record">145 high-school spaces after the 71-space loss; the nearby middle-school lot brings the combined cited capacity to 292.</td><td data-label="Grok’s read">Against a 294-vehicle weekday school peak, the post-expansion campus case is genuinely tight.</td></tr>
+                <tr><td data-label="Topic">Campus capacity after expansion</td><td data-label="Record">the 2025 study’s school lots (363 spaces) minus the 71-space loss leaves 292.</td><td data-label="Grok’s read">Against a 294-vehicle weekday school peak, the post-expansion campus case is genuinely tight.</td></tr>
                 <tr><td data-label="Topic">System utilization</td><td data-label="Record">939 of 1,310 spaces occupied at peak; 371 open.</td><td data-label="Grok’s read">The problem is location-specific, not a broad district shortage.</td></tr>
                 <tr><td data-label="Topic">Saturday school peak</td><td data-label="Record">86.8%</td><td data-label="Grok’s read">Event pressure is real on at least one measured Saturday.</td></tr>
                 <tr><td data-label="Topic">Consultant sequence</td><td data-label="Record">Try other options first; structure last.</td><td data-label="Grok’s read">The public file does not close the alternatives question.</td></tr>
@@ -851,13 +869,13 @@
           </div>
 
           <h3>Tax recomputation</h3>
-          <p>The financing model’s average 0.4925 mills equals about $49.25 annually for each $100,000 of taxable value; the first-year 0.5922 mills equals about $59.22. At roughly $200,000–$260,000 in taxable value, that is about $98–$128 in an average year and $118–$154 in year one. Over 20 years, the model implies about $1,970–$2,560 for that range. <span class="inferred">inferred</span></p>
+          <p>The financing model’s average 0.4925 mills equals about $49.25 annually for each $100,000 of taxable value; the first-year 0.5922 mills equals about $59.22. At roughly $200,000–$260,000 in taxable value, that is about $98–$128 in an average year and $118–$154 in year one. Over 20 years, the model implies about $1,970–$2,560 for that range if taxable value never rises. If it grows at the City model’s assumed 2% a year, the total is closer to about $2,360–$3,070. <span class="inferred">inferred</span></p>
 
           <h3>Cost per space</h3>
           <p>Dividing the $15.25M–$18.11M range by all 240 deck stalls gives roughly $63,500–$75,500 per stall. Dividing by the approximately 191 net new spaces after the 49-space Bagley lot is replaced gives roughly $80,000–$95,000 per net new space. <span class="inferred">inferred</span></p>
 
           <h3>Operating cost</h3>
-          <p>The City’s stated $160,000 figure is for its share of annual operations. The record also supports multiple non-equivalent benchmarks: about $147,000 when the Grand Rapids $611-per-space figure is applied to 240 stalls, excluding depreciation; about $70,000–$75,000 for inflation-adjusted basic operations plus a sinking fund; and an illustrative $300,000–$330,000 upper case with a 1% repair reserve. <span class="inferred">inferred</span> Grok’s conclusion: the range is too wide to substitute for a project-specific operating plan.</p>
+          <p>About $160,000 has been cited for annual operations of the whole deck, not the City’s half, and the exact figure is not stated in the cited sources. The source-backed Grand Rapids benchmark produces about $147,000 for all 240 stalls, excluding depreciation; an even City half would be about $73,000, roughly $80,000. Other non-equivalent benchmarks range from about $70,000–$75,000 for inflation-adjusted basic operations plus a sinking fund to an illustrative $300,000–$330,000 upper case with a 1% repair reserve. <span class="inferred">inferred</span> Grok’s conclusion: the range is too wide to substitute for a project-specific operating plan.</p>
 
           <h3>Process facts</h3>
           <ul class="change-list">
@@ -900,7 +918,7 @@
             <table>
               <thead><tr><th>Model</th><th>Vote</th><th>Confidence</th><th>Top reason</th><th>What would flip it</th></tr></thead>
               <tbody>
-                <tr><td data-label="Model">Claude</td><td data-label="Vote">Leans no</td><td data-label="Confidence">Not quantified</td><td data-label="Top reason">Key terms are not binding and alternatives were not publicly closed out.</td><td data-label="What would flip it">Signed agreement, itemized estimate, two-level price, schedule and funded upkeep.</td></tr>
+                <tr><td data-label="Model">Claude</td><td data-label="Vote">Declined to vote; says the record leans against</td><td data-label="Confidence">Not quantified</td><td data-label="Top reason">Key terms are not binding and alternatives were not publicly closed out.</td><td data-label="What would flip it">Signed agreement, itemized estimate, two-level price, schedule and funded upkeep.</td></tr>
                 <tr><td data-label="Model">Codex</td><td data-label="Vote">No</td><td data-label="Confidence">80%</td><td data-label="Top reason">The record does not establish that a 240-space deck is the best response to the demonstrated need.</td><td data-label="What would flip it">Recurring location-specific shortage, revised alternatives analysis, verified budget and signed agreement.</td></tr>
                 <tr><td data-label="Model">Grok</td><td data-label="Vote">Lean no</td><td data-label="Confidence">60–65%</td><td data-label="Top reason">The campus problem is real, but the size, cost and City share are not adequately justified.</td><td data-label="What would flip it">Itemized estimate, signed access/O&amp;M agreement and alternatives explanation.</td></tr>
                 <tr><td data-label="Model">Muse</td><td data-label="Vote">No</td><td data-label="Confidence">Not quantified</td><td data-label="Top reason">Voters are being asked to approve $9M before the governing terms exist.</td><td data-label="What would flip it">A signed agreement and itemized costs before a later vote.</td></tr>
@@ -913,7 +931,7 @@
     </section>
 
     <details class="section" id="risks" open>
-      <summary><span class="section-number">08</span><span class="section-title">Risks &amp; open questions<small>The ballot sets borrowing authority; several implementation choices remain open.</small></span><span class="chevron" aria-hidden="true"></span></summary>
+      <summary><span class="section-number">07</span><span class="section-title">Risks &amp; open questions<small>The ballot sets borrowing authority; several implementation choices remain open.</small></span><span class="chevron" aria-hidden="true"></span></summary>
       <div class="section-body">
         <div class="risk-grid">
           <article class="risk"><h3>Cost escalation</h3><p>The estimate assumes roughly 3.5% annual escalation—more than $500,000 for a year of delay on a $15M-plus project. <span class="inferred">inferred</span><a class="cite" href="#s1">1</a></p></article>
@@ -933,7 +951,7 @@
     </details>
 
     <details class="section" id="sources" open>
-      <summary><span class="section-number">09</span><span class="section-title">Sources &amp; method<small>Primary records lead; campaign and media material are used mainly to identify claims.</small></span><span class="chevron" aria-hidden="true"></span></summary>
+      <summary><span class="section-number">08</span><span class="section-title">Sources &amp; method<small>Primary records lead; campaign and media material are used mainly to identify claims.</small></span><span class="chevron" aria-hidden="true"></span></summary>
       <div class="section-body">
         <ol class="sources">
           <li id="s1"><div><b>August 3, 2026 City Commission packet</b><br>Staff memo, resolutions, OAK estimates, financing materials and resident correspondence. <a href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/_08032026-950" target="_blank" rel="noopener noreferrer">Open official packet</a>. <a class="source-back" href="#guide-summary" aria-label="Back to cited section">↩</a></div></li>
@@ -951,7 +969,7 @@
           <li id="s13"><div><b>East Insider</b><br>Local reporting and community context. <a href="https://eastinsider.substack.com/p/city-commission-preview-september" target="_blank" rel="noopener noreferrer">Open coverage</a>. <a class="source-back" href="#process" aria-label="Back to cited section">↩</a></div></li>
           <li id="s14"><div><b>FOX 17 regional reporting</b><br>Video coverage of the proposal and resident concerns. <a href="https://www.youtube.com/watch?v=RsD1NqB69tA" target="_blank" rel="noopener noreferrer">Open report</a>. <a class="source-back" href="#process" aria-label="Back to cited section">↩</a></div></li>
           <li id="s15"><div><b>EGR community-group threads</b><br>Resident arguments and questions; not treated as proof of factual claims. Public links were not included because the reviewed threads may require group access. <a class="source-back" href="#process" aria-label="Back to cited section">↩</a></div></li>
-          <li id="s16"><div><b>Shared Parking Manual, 3rd ed., Fig. 5-1</b><br>85% utilization benchmark and 2018 operating/repair-reserve figures, circulated with the City’s February 4 email. <a href="https://safestreetsegr.com/documents/city-parking-deck-operating-cost-2026.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>. <a class="source-back" href="#cost" aria-label="Back to cited section">↩</a></div></li>
+          <li id="s16"><div><b>Shared Parking Manual, 3rd ed., Fig. 5-1</b><br>2018 operating and repair-reserve cost figures circulated with the City’s February 4 email. This source does not establish the 85% occupancy rule of thumb. <a href="https://safestreetsegr.com/documents/city-parking-deck-operating-cost-2026.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>. <a class="source-back" href="#cost" aria-label="Back to cited section">↩</a></div></li>
           <li id="s17"><div><b>Walker Consultants benchmark</b><br>Structured-parking cost context cited in the reviewed record. <a href="https://www.eastgrmi.gov/AgendaCenter/ViewFile/Agenda/_06292026-945" target="_blank" rel="noopener noreferrer">Open June 29 packet</a>. <a class="source-back" href="#cost" aria-label="Back to cited section">↩</a></div></li>
           <li id="s18"><div><b>EGRPS superintendent’s September 30, 2026 letter</b><br>Construction-period space count and school-event parking statement. <span>Copy not publicly available online.</span> <a class="source-back" href="#need" aria-label="Back to cited section">↩</a></div></li>
           <li id="s19"><div><b>City of East Grand Rapids FY2025 ACFR</b><br>Unassigned general-fund balance of $6,511,815, or 44.01%. <a href="https://www.eastgrmi.gov/Archive.aspx?ADID=1653" target="_blank" rel="noopener noreferrer">Open ACFR</a>. <a class="source-back" href="#financing" aria-label="Back to cited section">↩</a></div></li>
@@ -968,6 +986,7 @@
     <footer>
       <p>Built by an East Grand Rapids resident. Self-funded. Not affiliated with the City of East Grand Rapids, EGR Public Schools, or any campaign.</p>
       <p>Figures marked “inferred” are arithmetic from cited sources, not stated in any source. Last reviewed October 8, 2026.</p>
+      <p class="footer-ai-note">AI assessments are opinions generated from the cited public record. The factual sections of this guide are neutral; the AI section is not—it contains the models’ judgments.</p>
     </footer>
   </main>
 
