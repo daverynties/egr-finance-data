@@ -1,0 +1,1109 @@
+EAST GRAND RAPIDS
+MASTER PLAN AMENDMENT 2026
+
+
+
+
+                             1
+                  Acknowledgements
+Preparation of this Master Plan amendment was made possible by the
+active participation of the citizens of East Grand Rapids and, in particular,
+the residents and business owners within the planning subareas. Special
+thanks to the members of the Planning Commission for their thoughtful
+guidance, the City Commission for their valuable input, and City staff for
+their hands-on assistance throughout the process.
+
+City Commission
+Katie Favale, Mayor
+Ryan Burdick
+Abbie Groff-Blaszak
+Bradley Hunter
+Laura Schwartz
+Kate Skaggs
+Chris Wessely
+
+Planning Commission
+Mary Mapes, Chair
+Brian Miller, Vice Chair
+Matt Feyen, Secretary
+Steve Achram
+Greg Metz
+Peter Michell
+Christopher Rosmarin
+Laura Schwartz
+Thomas Tilma
+
+City Staff
+Shea Charles, City Manager
+Doug LaFave, Deputy City Manager
+Jay Gianotti, AICP, Zoning Administrator
+            Table of Contents
+
+Introduction ……………………………………………………………… 1
+
+Perspective ………………………………………………………………. 3
+
+Assets and Challenges ……………………………………………… 8
+
+Vision and Goals …………………………………………………….. 12
+
+Subareas …………………………………………………………………. 13
+
+Recommendations ………………………………………………….. 26
+
+Zoning Plan ……………………………………………………………. 27
+                               Introduction
+Purpose
+     East Grand Rapids has a long history of proactive planning to guide the development and
+     continued sustainability of the community. In addition to City-wide master plans, more focused
+     plans have been regularly prepared and updated for parks and recreation, transportation,
+     mobility, and utilities.
+
+     The most recent City-wide Master Plan was adopted in 2018. During the intervening years since
+     then, the City Commission, Planning Commission, and staﬀ have diligently pursued
+     implementation of the Plan’s goals and recommendations. While much has been accomplished in
+     a few years, more needs to be done to address remaining issues, new challenges, and emerging
+     opportunities.
+
+     As an essentially built-out City, East Grand Rapids is a stable community comprised primarily of
+     attractive residential neighborhoods. Pride in these areas is evident by the many renovation,
+     remodeling, and new construction projects routinely occurring throughout the City. Yet some
+     challenges do exist and warrant focused consideration. This Master Plan amendment, therefore,
+     doesn’t reexamine the entire City, but builds upon the foundation created by the 2018 Master
+     Plan as a supplement to that Plan. It focuses on speciﬁc neighborhoods that due to age, changes
+     in conditions, or unanticipated opportunities merit more detailed attention. More recent
+     demographic data are also incorporated to highlight changes in the City that reveal important
+     trends and distinguish East Grand Rapids from communities locally and across the nation.
+
+Summary of Process
+     Consistent with the City’s tradition of transparency and community involvement, the process of
+     preparing this supplement relied heavily on input from the community-at-large and the
+     stakeholders most directly aﬀected within the subareas. Individual interviews were conducted;
+     an interactive project website was created; a public opinion survey was posted which received
+     over 600 responses from throughout the City; comments were sought regarding each of the
+     individual subareas; and neighborhood meetings were held to further elicit input as planning
+     concepts were formulated.
+
+     Results of the public engagement eﬀorts were shared with the Planning Commission and City
+     Commission. During several work sessions, the Planning Commission set new planning goals and
+     reviewed, discussed, and reﬁned potential land use options.
+
+     Subsequently, a draft document was presented at a public hearing; further reﬁnements were
+     made; and the Plan was adopted by both the Planning Commission and City Commission.
+
+Relationship with Other Plans
+     While this Plan amendment is primarily focused on speciﬁc subareas, other critical elements of
+     the City’s development, character, and services were not ignored. East Grand Rapids continually
+     plans for the development, expansion, and maintenance of its infrastructure. For example, every
+     ﬁve years a new Parks & Recreation Plan is prepared to examine the adequacy and availability of
+     such facilities throughout the City. A Mobility-Bike Action Plan was adopted in 2021 identifying a
+
+
+
+
+                                                                                                     1
+list of improvements and new routes along with priorities for action. The City is also actively
+engaged in an on-going Sustainability Program toward achieving carbon neutrality for City
+facilities with the adoption of a Climate Action Plan. Information and recommendations from
+those plans have been relied on to provide guidance for this Master Plan amendment. Other
+plans, such as The Rapid’s Transit Master Plan, were also consulted.
+
+
+
+
+                                                                                             2
+                               Perspective
+Community Proﬁle
+    Despite being a mature, built-out community, East Grand Rapids remains vibrant. Recent
+    population estimates from the US Census Bureau indicate that the City has experienced nearly
+    seven percent growth since its 2010 low, rising from 10,694 to 11,394. Increases like this are
+    unusual for mature, inner ring cities which typically remain stable, at best, or experience
+    population declines.
+
+    Other demographic data oﬀer clues to this population uptick. Since 2010, the median age has
+    steadily declined and the average household size has increased, trends that also run contrary to
+    what has occurred in most mature cities across the nation. Younger families are moving into the
+    community, oﬀsetting the growth of the 65 and older population which, also contrary to national
+    trends, is relatively low at 11 percent of the total population compared to the national
+    percentage of 17.7 percent.
+
+     East Grand Rapids Trends 2010 - 2023
+                                         Population and Housing Changes
+     Factors                                                                          % Change
+                               2010              2020                2023*
+                                                                                      2010-2023
+     Population                10,694            11,371               11,394            + 6.5
+     Median Age                 38.1              37.7                 37.0             - 2.9
+     Persons ≥ 65 Yrs.          8.9 %            10.6 %               11.0 %           + 23.6
+     Median HH Income          99,489           145,000              168,487           + 69.4
+     Median Hsg. Value        249,100           409,200              502,000          + 100.01
+     Median Rent               1,043             1,636                1,845            + 77.0
+     Avg. HH Size               2.85              2.90                 2.98             + 4.5
+    * Census estimates
+
+    A comparison with other nearby, economically comparable metro area communities and Kent
+    County also adds perspective to how East Grand Rapids fares.
+
+    2023 US Census Estimate - Comparisons
+                           East Grand                     Cascade         Grand
+                                           Ada Twp.                                   Kent County
+                             Rapids                         Twp.        Rapids Twp.
+    Population               11,394         14,413         19,701            18,934     661,354
+    Median Age                37.0           42.8           43.2              41.4        36.5
+    Persons
+                             11.0 %         16.5 %         17.8 %            19.1 %      15.4 %
+    ≥ 65 Yrs.
+    Median HH Income        $168,487       $171,047       $133,401        $121,328      $79,756
+    Median Housing
+                            $502,000       $532,800       $469,600        $420,500      $309,900
+    Value
+    Median Monthly Rent      $1,845         $2,245         $1,739            $1,584      $1,270
+    Owner Occupancy          94.3 %         94.3 %         90.2 %            85.4 %      70.5 %
+    Persons/HH                2.98           2.83           2.72              2.58        2.56
+
+
+
+
+                                                                                                    3
+    These data show that East Grand Rapids has a:
+        • younger population than the other communities and comparable to Kent County
+        • greater household size than the other communities
+        • much lower proportion of 65+ residents than all, including Kent County
+        • very high proportion of owner-occupied dwellings, tied with Ada
+        • median income second to Ada and substantially higher than all others
+        • median housing value and monthly rent higher than all, except Ada
+
+     These data run counter to a common perception that East Grand Rapids is an aging community
+     unable to attract and keep young families. It is also worth noting that the three comparison
+     communities are townships with substantial land area available for new development, with large
+     areas devoted to commercial and employment oﬀerings, and served by highly regarded school
+     systems – factors that would typically attract young families. The reputation of the East Grand
+     Rapids school system and the “walkability” of the City are likely reasons for EGR’s continued
+     attractiveness to younger families.
+
+Infrastructure
+     East Grand Rapids has an established infrastructure of facilities and services supporting its
+     resident population and business center. The availability of such facilities and services is
+     important to the vitality, sustainability, and desirability of the community and has been cited
+     among the main reasons for living here.
+
+     Mobility.
+     Widely known
+     for            its
+     walkability and
+     active lifestyle,
+     the City boasts a
+     network         of
+     sidewalks
+     throughout
+     most of its
+     neighborhoods
+     and is actively
+     expanding its
+     accommodation
+     for     bicyclists
+     and other non-
+     motorized
+     enthusiasts via
+     designated bike
+     lanes and expanded pathways.
+
+     However, while those seeking an active lifestyle have many options from which to choose,
+     opportunities for those with physical disabilities or age-related disorders may not be as
+     widespread. It is essential that barriers to navigating the pedestrian environment, including
+     obstacles, uneven surfaces, street crossings, slopes and ramps, continue to be addressed to
+     increase safety and expand mobility opportunities for all.
+
+
+
+                                                                                                  4
+   Transit service oﬀers another mobility option to commuters, shoppers, and students. The Rapid
+   serves the City with two bus routes, one of which follows Breton and Wealthy Streets through the
+   Eastown neighborhood and Gaslight Village. The other route serves the southwest quadrant of
+   the City along Breton, Boston, Plymouth, and Hall Streets.
+
+    Recreation. Parks,
+    playgrounds, ball
+    ﬁelds, open spaces,
+    and natural areas
+    abound, oﬀering a
+    full range of leisure
+    pursuits.       Some
+    facilities are in
+    conjunction      with
+    the City’s schools,
+    while most others
+    surround        Reeds
+    Lake, which is in
+    itself    a    valued
+    recreational      and
+    scenic       amenity.
+    While there is a
+    relative abundance
+    of these facilities,
+    they tend to be
+    concentrated in the
+    City’s      northeast
+    quadrant. Except
+    for the playgrounds,
+    courts, and ball ﬁelds available at the various schools, no city parks are found in the western third
+    of the City and only one is located in the City’s southern half.
+
+    Schools. The East Grand Rapids school system ranks among the top 25 school districts in the
+    State of Michigan and is a major draw for many residents. Campuses for both the high school and
+    middle school are located in the heart of the City close to the Gaslight Village business district
+    and Reeds Lake. Three elementary schools are dispersed throughout the community.
+    According to the community opinion survey conducted for this Plan, “quality schools” ranked as
+    the number one reason why people chose East Grand Rapids as their place of residence.
+
+Community Engagement
+    Over 600 people from throughout the City, responded to the opinion survey on the Master Plan
+    website. Additional opportunity was available to offer comments specific to each of the four
+    individual subareas identified in the planning effort. Potential redevelopment options for two of
+    those areas were also posted to elicit further comments and ideas. That input is discussed in the
+    Subarea Chapter.
+
+
+
+
+                                                                                                       5
+In    the     community
+survey, when asked why
+residents chose to live in
+East Grand Rapids, the
+most            frequent
+                                  Quality Schools
+responses,            not
+surprisingly,       were           Close to Work
+“schools”             and
+                              Near Family/Friends
+“walkability”. Similarly,
+the      most      prized         Low Crime Rate
+qualities           were
+“community”,                          Walkability
+
+“schools”, “walkability”,           Recreational
+and “safety”.                         Amenities
+                                           Other
+
+However, when asked
+what residents liked
+least about the City, in one form or another “taxes”, “housing cost”, “traﬃc”, and “lack of
+diversity” were cited most frequently. The most serious issues, in order of ranking, were: “cost of
+housing”, “enforcement of traﬃc laws”, “lack of nearby shopping and services”, “property
+maintenance”, and “lack of housing options”.
+
+Despite the level of activity in Gaslight Village, respondents described the district as “tired” and
+
+
+
+
+                                                                                                   6
+“lacking shopping opportunities”. They also identiﬁed businesses that are desired. The top ﬁve
+were: “high-quality sit down restaurant”, “coﬀee shop”, “pharmacy”, “hardware store”, and
+“clothing store”.
+
+When asked what type
+of     housing      the
+respondent        would
+choose if they moved
+from their current            Smaller Single-family
+                                                                 33.6 %
+                                             home
+residence, nearly two-
+thirds (60.1 percent)
+                               Larger Single-family
+                                             home
+                                                                 39.9 %
+chose “smaller single-                  Townhome
+family           home”,                    Duplex
+“townhome”,
+“apartment            or        Apartment/Condo
+                                                            26.5 %
+condominium”,                  Accessory Dwelling
+“accessory dwelling”,                          Unit
+                                       Retirement
+or          “retirement                Community
+community”.        More                      Other
+than one-quarter (26.5
+percent)      of     all
+respondents would seek options other than a single- family home. However, approximately 44
+percent of all respondents stated they would move out of East Grand Rapids if they left their
+current residence, citing “taxes” and “children no longer in school” as the two principal reasons.
+
+
+
+
+                                                                                                7
+                         Assets and Challenges
+     East Grand Rapids enjoys an enviable reputation as a vibrant residential community whose many
+     assets create a healthy, safe, small town environment.
+
+     The opinion survey conducted in conjunction with this planning eﬀort conﬁrmed the
+     importance of some of the City’s strengths and identiﬁed others. Among its most notable assets
+     are its schools, ranked in the top 25 school systems in Michigan. In the opinion survey, “quality
+     schools” was cited most often as the reason for living in EGR.
+
+     “Walkability” came in a close second as the reason for living in the City. This is easy to
+     understand when considering the network of sidewalks available throughout the City and the
+     pathways and trails within City’s parks and open spaces. On any given day people can be seen
+     in all parts of the community walking dogs, strolling with friends, accompanying children to
+     school, and running.
+
+     While the sidewalks and pathways provide the infrastructure for walking, the neighborhoods
+     themselves create an inviting environment. The City’s neighborhoods are generally
+     characterized by mature, well-maintained homes (some dating from the early 1900s), tall trees
+     lining the streets, and manicured lawns.
+
+     Other attributes that enhance the quality of life and make East Grand Rapids distinctive include
+     its two lakes that occupy much of the northern part of the City. Reeds Lake, in particular, is a
+     unique feature in the heart of the community, oﬀering recreational opportunities, remarkable
+     views, space for public events, and a tranquil place to relax. Located nearly adjacent to Reeds
+     Lake, the Gaslight Village business district oﬀers a variety of shops, restaurants, and services in
+     an inviting and walkable setting. The proximity of Gaslight Village to Reeds Lake and its adjacent
+     Collins Park also creates a reciprocal relationship that encourages mutually supportive
+     interaction between the two destinations.
+
+     Though the City possesses many attractions, like other communities it is not without its
+     challenges. Frequent concerns expressed by the public and from analysis of available data
+     include:
+
+
+Housing Cost
+     Understandably, the cost of housing in the City is a signiﬁcant concern as it is throughout the
+     country. According to the most recent estimates released by the US Census Bureau, the median
+     housing value in East Grand Rapids in 2023 was $500,200, a 100 percent increase from the 2010
+     value of $249,100. In contrast, Kent County’s median value in 2023 was less than two-thirds
+     that of the City’s ($309,900 vs. $500,200) and only increased by 28 percent from 2010.
+
+     In addition, many respondents to the Plan’s opinion survey noted that moving to another home
+     within East Grand Rapids was not an option due to the escalated property taxes that would
+     result when a home is sold and reassessed.
+
+
+
+
+                                                                                                       8
+Traﬃc Safety
+     As a predominantly residential community, the creation of any major thoroughfares through East
+     Grand Rapids has been avoided. Speed limits are set at 25 mph, and streets are conﬁned to two
+     lanes with a few exceptions at major intersections. However, frustration was repeatedly
+     expressed by survey respondents with the perceived lack of enforcement of speed limits and the
+     conﬂicts between vehicles and pedestrians/cyclists.
+
+     The City also intends to work with a consultant in the near future with respect to a review of the
+     Department of Public Safety which will also include traffic enforcement.
+
+     To view the Department of Public Safety reports and data, please use the adjacent QR code.
+
+
+
+
+     An ambitious program of expanding bike lanes and pathways is also being instituted throughout
+     the City to improve mobility and increase safety. Recommendations from the Mobility-Bike
+     Action Plan are being implemented to expand the network of enhanced facilities for all road
+     users. To accomplish this, a shift from low utilization/convenient on-street parking will need to
+     give way to a focus on dedicated facilities for bikes. The city has already implemented several
+     bike network changes including dedicated bike lanes, advisory bike lanes, and a shadow network.
+     Eﬀorts to build out the remaining network that was called for by the community is underway.
+
+     Other measures designed to accommodate non-motorized traﬃc and reduce conﬂicts are being
+     explored.
+
+Commercial Opportunities
+     While the Gaslight Village business district appears to be thriving, many survey respondents cited
+     the need for more options. A desire for high quality sit-down restaurants was frequently
+     expressed. Breakfast and lunch restaurants were also noted as desirable. Additionally,
+     pharmacy, convenience, hardware, and clothing retailers ranked high among the requested
+     businesses. Added commercial space in the proposed planned development is expected to
+     address such expressed needs. Even current merchants have voiced a desire to have more
+     businesses in the district to draw additional visitors.
+
+     Another often-cited concern focused on the existing Gaslight/D&W Plaza and its relationship to
+     the remainder of Gaslight Village. Despite the fact that D&W is a signiﬁcant anchor store and the
+     200 plus space parking lot serves the entire business district, public sentiment favors
+
+
+
+
+                                                                                                     9
+     improvement. The Plaza’s suburban strip center character was frequently noted as being out of
+     place, as is the expansive parking lot fronting Wealthy Street. Many respondents commented
+     about the “tired” image of the plaza in general.
+
+
+Lack of Diversity
+    Many survey respondents perceive East Grand Rapids as lacking diversity in two ways that are,
+    in part, interconnected…socio-economic and housing. Frequent social comments included
+    terms such as “entitled”, “homogeneous”, “pretentious”, “insular”, and “elitist”.
+
+    With respect to housing, the opinion survey showed that over one-quarter of all respondents
+    would choose a housing type other than a single-family home. Condominiums, townhouses,
+    senior living, or apartments were cited as their next residence. However, nearly half of the
+    respondents said they would move out of the City, citing children no longer in school, taxes,
+    housing aﬀordability, and/or unavailable housing options as the reasons for such a decision.
+
+
+Age of Housing Stock
+     In addition to the lack of alternative housing choices, the City’s housing stock is old. According
+     to the US Census estimates, 69 percent of all housing in the City is at least 65 years old and more
+     than a quarter of all units (27.4 percent) were built prior to 1939. Only six percent of the housing
+     in East Grand Rapids has been constructed since 2000.
+
+     This may account for the ranking of “property maintenance” as the fourth most signiﬁcant
+     concern according to survey respondents. As an essentially built-out city, East Grand Rapids has
+     no large expanse of open land to accommodate new development. The continued availability of
+     quality housing will rely on individual home improvement to upgrade and repair existing homes
+     and modiﬁcation of zoning regulations to allow inﬁll and conversion to other residential options.
+
+Nonconforming Conditions
+     Many of the City’s established neighborhoods were created long before any zoning regulation. In
+     some areas, consistent with the trends of the times, homes were built on lots as small as or even
+     smaller than 4,000 sq. ft.
+
+     When zoning was eventually introduced, even the smallest required minimum lot size (5,000 sq.
+     ft.) was larger than many of those pre-existing lots, making them nonconforming. Nearly all lots
+     in some neighborhoods still remain nonconforming. The maps on the following page illustrate
+     current zoning and the signiﬁcant concentrations of lots that do not meet zoning requirements for lot
+     area and/or width throughout the City.
+
+     While nonconforming lots are occupied by homes, they are subject to limitations not applicable to
+     conforming lots. For example, the maximum allowed building height is less than that permitted
+     on conforming lots. Limits on maximum coverage for buildings and pavement also make it diﬃcult,
+     if not impossible, for such nonconforming lots to have a garage, accessory building, or patio.
+
+
+
+
+                                                                                                      10
+  Clusters of
+Nonconforming
+     Lots
+
+
+
+
+                11
+                           Vision and Goals
+Vision
+      East Grand Rapids will continue to be a highly desirable residential
+    community. Its long-term sustainability will be maintained through an
+    excellent school system, ongoing investment and enhancements in the
+ Gaslight Village business district, a variety of housing options for current and
+ future residents, ample preserved open spaces and parks, a comprehensive
+  network of trails and pathways for all users, and superior public services.
+
+
+Goals
+     The ﬁndings and recommendations of this Plan amendment are consistent with and intended to
+     support the goals of the 2018 Master Plan. The overarching theme for these goals is to support
+     the Plan’s vision and retain the viability of the City’s distinct neighborhoods. Many of the goals
+     listed below and in the 2018 Master Plan are aligned with goals more fully addressed in other
+     City plans such as the Mobility/Bike Plan, Parks & Recreation Plan, and Climate Action Plan for
+     City operations.
+
+
+ • Increase the variety of housing options available to accommodate aging-in-
+   place, new families, and young professionals at an attainable cost.
+ • Expand the network of trails, pathways, and designated lanes for biking,
+   walking, and running to create a “complete streets” mobility system.
+ • Achieve universal accessibility throughout the City for those persons with
+   mobility challenges.
+ • Provide open spaces in Gaslight Village for social interaction and community
+   events.
+ • Enhance the image and vitality of Gaslight Village by promoting additional
+   events, screening parking lots, encouraging more businesses, and
+   promoting a walkable environment.
+ • Preserve the City’s attractive, desirable neighborhoods through
+   enforcement of property maintenance regulations; prompt repair of
+   streets, sidewalks, and other infrastructure; and routine patrols by public
+   safety oﬃcers.
+ • Strive to achieve carbon neutrality for City operations by 2040.
+
+
+
+
+                                                                                                    12
+                              Subareas
+The City’s 2018 Master Plan addressed some localized issues but is mainly a plan for the
+community as a whole. Many of the recommendations found in that Plan have been
+implemented or are currently being worked on, while others remain on the “to-do” list.
+Therefore, this Plan is a supplement to the 2018 Plan and is more narrowly focused on a few
+speciﬁc areas of the City. Four subareas were selected for a closer look based on their existing
+character, age, proximity to other uses, susceptibility to external inﬂuences, and/or current mix
+of uses.
+
+Except for the Gaslight Village subarea, these are primarily mature residential neighborhoods,
+each with its own character and attributes. Each subarea is described on the following pages.
+
+Two of the subareas, Gaslight Village and St. Stephen neighborhood, include conceptual
+development plans. No individual concept is being singled out and recommended. They are
+presented as illustrations of what could be done consistent with the goals of this Plan and
+addressing comments oﬀered by those who participated in the opinion survey and attended
+neighborhood meetings. Any future development in either area is subject to the desires of the
+property owner, the feasibility of the use, and zoning approval by the City.
+
+
+
+
+                                                                                              13
+Gaslight Village                                                   11
+     Existing Conditions. The center of activity in the City is a vibrant mix of retail, restaurants, oﬃces,
+     lakefront park, pathways, municipal services, schools, and residential options clustered around
+     the Wealthy Street/Lakeside Drive intersection. Activity abounds throughout the “village” as
+     residents and visitors shop at the many unique stores, enjoy a variety of dining options, relax in
+     Collins Park, cast a lure on Reeds Lake, and walk their dogs or ride their bikes along the Reeds
+     Lake Trail.
+
+     A mix of homes, condominiums,
+     and apartments surrounds the
+     commercial core and the last
+     remaining undeveloped parcel of
+     signiﬁcant size in East Grand
+     Rapids. Once occupied by an
+     amusement park and later by a
+     medical clinic, parking deck, and
+     department store, the roughly
+     eight and a half acre vacant site
+     has been the subject of various
+     redevelopment proposals since
+     2004. Two commercial buildings,
+     approximately 77,000 square feet,
+     were developed along the
+     Wealthy Street frontage as the
+     first phase of an approved 2004
+     plan. However, the remainder of
+     the property awaits development.
+     This site also wraps around the
+     north and east sides of an existing
+     retail shopping center, Gaslight
+     Plaza.
+
+     The shopping center, developed in
+     1958 on about 3 acres, followed the prevalent development model of that period for shopping
+     centers, setting the “L-shaped” building back from the street and creating a large parking lot in
+     the foreground. While the center is successful and contains the City’s only grocery store, its
+     suburban design is out of character with the pedestrian-oriented business district surrounding it.
+
+     Business owners generally give high
+     marks to Gaslight Village for its
+     variety, charm, and level of activity.
+     However, like “downtown” merchants
+     elsewhere, they have expressed
+     concern about parking. While this is
+     often a matter of perception, to the
+     business owners it can be very real.
+     The 2018 Master Plan
+
+
+
+
+                                                                                                         14
+ included a parking study which concluded that parking was suﬃcient. However, the loss of a two-
+ story parking structure coupled with the recently proposed development of the remaining vacant
+ acreage will warrant another look. An updated study of all parking (public, private, and school)
+ in Gaslight Village was conducted in May 2025. Its findings were consistent with the 2018 study.
+
+ However, two significant developments are anticipated in Gaslight Village within the next few
+ years, whose immediate and long-term impact on parking is uncertain. One project is an
+ expansion of East Grand Rapids High School and the other is a mixed-use planned development.
+ During the construction phases of these projects, some currently available parking will be lost
+ and the parking demand resulting from completion of both developments needs to be studied.
+
+ The availability of a large parcel within Gaslight Village, as well as the presence of the Gaslight
+ Plaza, anchored by the City’s only grocery store, represent opportunities and challenges for the
+ community.
+
+ Approximately 20 years ago, the currently vacant property was acquired when the former
+ Jacobsen’s Department Store closed. A mixed-use development proposal consisting of
+ residential, oﬃce, and commercial uses was approved by the City and subsequently by the
+ voters. However, only the ﬁrst phase, consisting of two buildings along Wealthy Street, was
+ constructed prior to an economic downturn that halted continuation of the project. In
+ subsequent years, revised plans were presented, though each time unanticipated events (COVID,
+ high interest rates, recession, construction costs, market conditions, etc.) impeded moving
+ forward. A new mixed-use concept plan was submitted for the site in 2024 and, after several
+ revisions, was approved in 2025. Submittal of detailed final plans is expected in 2026.
+
+ The other major component of
+ this subarea, Gaslight Plaza,
+ essentially a shopping center
+ within the broader business
+ district, has been part of the
+ community for decades. Several
+ small businesses are located
+ here, as well as a large grocery
+ store. The expansive parking lot
+ in the foreground accommodates
+ customers for the shopping
+ center and other businesses.
+
+Regardless of its success in
+drawing customer traﬃc to the
+entire business district, the Plaza is
+basically a suburban strip center in
+the midst of a downtown. While
+most other businesses in the
+Village line the adjacent sidewalk
+and parking is either on the streets or concealed behind buildings, the Plaza parking lot dominates
+the frontage.
+
+
+
+
+                                                                                                 15
+Despite its prominence in the community, the
+business district lacks a sense of arrival at the
+Wealthy and Lovett Street intersection. Less than a
+block west of the Plaza, the business district abruptly
+ends and Wealthy Street becomes a residential
+street lined with stately homes. A d i s t i n c t
+s y m b o l a t t h i s p o r t a l would enhance the
+business district’s identity and create a formal entry.
+
+Neighborhood Input. In 2024 a revised concept plan
+was presented to the City for development of the
+remaining eight-plus acre vacant site north and east of the Gaslight Plaza. Similar to the original
+mixed-use development approved 20 years earlier, the new plan proposed more dwelling units
+as well as more residential options along with increased commercial space and revisions to the
+interior access and circulation system. The proposal generated almost immediate response from
+the community – both in support and in opposition.
+
+Much of the comment was in the context of the broader business district. While many people
+expressed support for the development and the resulting availability of more commercial space
+and additional housing opportunities, others were opposed to the scale of some buildings and
+the impact on traﬃc and parking.
+
+Relative to the overall business district, traﬃc congestion was identiﬁed as a signiﬁcant issue.
+Linked to traﬃc was concern about conﬂicts between vehicles and cyclists or pedestrians. This
+prompted many suggestions to separate vehicular and non-motorized traﬃc to reduce
+congestion and improve safety. Other comments proposed more public spaces within the
+business district for events, relaxation, and visual appeal. The image of the Gaslight Plaza was
+also the subject of several comments noting the need for physical improvements to the building
+and screening for the parking lot.
+
+Potential Changes. Future plans for the vacant site adjacent to Gaslight Plaza have been
+presented to the City and a concept plan was approved. Therefore, only a schematic layout is
+shown here to illustrate the desired integration of the new development with potential changes
+to the Gaslight Plaza. The attached concept sketches illustrate several possible and desirable
+scenarios based on input from the community and the goals of the Master Plan. Key elements to
+all are the retention of the grocery store, addition and/or replacement of commercial space,
+creation of prominent open space, retention of parking, connectivity with the future adjacent
+development, visual enhancement of the Wealthy Street frontage, and gateway identity. No one
+concept is being advocated over another. All are dependent on the owners of the Plaza and the
+individual businesses within the shopping center.
+
+
+
+
+                                                                                                16
+Renovation of the
+existing shopping center,
+new buildings along
+Wealthy, parking lot
+landscaping, pedestrian
+link to adjacent uses
+
+
+
+
+Renovated grocery, new
+buildings along Wealthy,
+retain some existing
+commercial, public
+plaza, parking lot
+landscaping, reorient
+parking, pedestrian links
+to adjacent uses
+
+
+
+
+                            17
+Renovated grocery, new
+buildings along Wealthy,
+upper floor residential,
+improved access from
+Shopping Center Drive,
+public plaza, pedestrian link
+to adjacent uses, parking
+lot landscaping, reorient
+parking lot
+
+
+
+
+  Renovated grocery, new
+  buildings along Wealthy,
+  improved access from
+  Shopping Center Drive,
+  public plaza, parking lot
+  landscaping
+
+
+
+
+                              18
+Greenwood Neighborhood                                                 11
+    Existing Conditions. Located just northwest of the Gaslight Village subarea, this small, well
+    maintained neighborhood dates back to the early 1900s. Many of those initial homes remain,
+    others have since been replaced. Stately trees dot the neighborhood adding to its character. For
+    decades, however, the neighborhood has contained a mix of other uses, including professional
+    oﬃces, retail, and multiple-family residential. The largest of these is a cluster of townhomes at
+    the west end of the subarea. Three oﬃce buildings occupy the property immediately east of the
+    townhomes. A mixed-use oﬃce/residence sits at the northwest corner of Lakeside Drive and
+    Greenwood Avenue and a two-family dwelling is located on Lansing Street in the center of the
+    otherwise single-family neighborhood.
+
+    A range of uses also surrounds
+    the neighborhood – mostly
+    single-family homes to the north
+    and west (plus a tract of vacant
+    city-owned property), single- and
+    two-family residences to the
+    immediate south, and expansive
+    city- owned open space to the
+    east. Just to the southeast lies a
+    portion of the vacant property
+    proposed       for     mixed-use
+    development as part of the City’s
+    Gaslight Village commercial core.
+
+    Typical of development patterns
+    in the early to mid-1900s, the
+    mix of uses within the
+    neighborhood has existed for
+    decades. One current oﬃce
+    building even predates several
+    neighborhood homes. Overall,
+    there is a nearly 50/50 balance
+    between single- family homes
+    and other uses.
+
+    Neighborhood Input. Despite
+    the neighborhood’s current and long- standing variety of residential and nonresidential uses,
+    most residents object to any further intrusion by non single-family homes. A few even suggest
+    phasing out the existing oﬃces, condos, and rental units to replace them with traditional homes.
+    While some others suggest that a mix of uses, especially residential variety, is desirable, the
+    predominant sentiment is opposed.
+
+    Other expressed concerns relate to traﬃc and the safety of pedestrians (especially children) and
+    cyclists. Enforcement of traﬃc laws, adding sidewalks in certain locations, and reconﬁguring
+    perceived dangerous intersections are among other frequent suggestions.
+
+
+
+
+                                                                                                  19
+   Potential Changes. On the face of it, this is clearly a mixed-use neighborhood. Its proximity to
+   Gaslight Village and the mixed-residential uses along Lovett, coupled with the existing oﬃce and
+   multi- family uses within the neighborhood, make it well-suited as a transition area between the
+   current and anticipated development to the south and the larger neighborhoods to the north.
+   Based on the proposed plans for the Gaslight Village expansion southeast of the neighborhood, the
+   future use along Lakeside Drive would be residential in the form of a row of townhomes,
+   complementing the already established land use pattern.
+
+   At the present time, considering the anticipated Gaslight mixed-use development, any change to
+   the Greenwood neighborhood seems premature. There is no immediate challenge that
+   necessitates a change to its current character, though future development to the south or further
+   changing conditions may warrant consideration of other uses.
+
+St. Stephen Neighborhood                                            11
+
+   Existing Conditions. Located at
+   the western edge of the City, this
+   predominantly single-family area
+   surrounds St. Stephen Catholic
+   church and school built in 1924. At
+   the time of this construction, the
+   neighborhood was new and
+   growing. Today the streets are
+   lined with attractive, well-
+   maintained single-family homes.
+   However, declining enrollments
+   and shortage of teachers
+   prompted the recent closing of
+   the elementary school. Likewise,
+   reductions in the number of
+   parishioners and a shortage of
+   priests has threatened the closing
+   of the church and its consolidation
+   with another nearby parish.
+
+   Currently, only about 20 percent
+   of the school building is occupied
+   by non-proﬁt organizations who
+   use the space intermittently two
+   or three days each week. Fuller
+   use of the space and the property
+   is desired. The church may continue to be used for other purposes until long-term plans are
+   finalized by the diocese.
+
+   While the St. Stephen property is surrounded on all sides by homes, the homes along the west side
+   of Gladstone Street abut the boundary line between East Grand Rapids and the City of Grand
+
+
+
+
+                                                                                                 20
+Rapids. Property in Grand Rapids adjacent to those homes is occupied by the Clark Retirement
+Community and Clark Condominiums, a large complex of aging-in-place facilities for senior
+residents.
+
+Neighborhood Input. The loss of the school and church disappointed many of the neighbors and
+concerns were expressed about the fate of the buildings and their surrounding property. One
+nearly universal comment voiced by the surrounding neighbors is the importance of the school’s
+play area and open space which for decades have served as a gathering place for area residents.
+
+Opinions are split about whether the
+school building, in particular, should
+be retained and occupied by some
+other use or should be razed and
+replaced with new housing or a
+neighborhood park.        Speciﬁcally,
+acquisition by the East Grand Rapids
+Public School District has been
+advocated, though unlikely. Other
+ideas for the building included
+community day care, senior center,
+recreation center, or community green space/neighborhood park.
+
+Regardless of the property’s ultimate fate, there is widespread concern about on-street parking
+which currently is in short supply and
+would only worsen unless additional
+oﬀ-street    parking     accompanies
+whatever new uses replace the school
+and ultimately the church. Concerns
+about density were also voiced if some
+form of residential use is to be
+developed.
+
+Potential Changes. A complicating
+and potentially costly consideration
+aﬀecting the future use of the school
+building is its physical connection to the church. In addition to sharing a wall, the two buildings
+share a mechanical system. Nevertheless, operating and maintaining the existing buildings is no
+doubt a costly proposition without a fuller use of the facilities.
+
+In addition to the suggestions proposed by neighbors, the school building or the property on
+which the building currently sits aﬀords other possibilities consistent with the character of the
+surrounding area and the goals of the Master Plan. Several development concepts are shown on
+the following pages for the school property only (pending a final determination regarding the
+church’s disposition). These are illustrative examples only. Implementation of any repurposing of
+the existing building or redevelopment of the site is dependent upon economic feasibility, as well
+as the willingness of the Diocese to allow such use(s) and the City’s approval of any necessary
+zoning change. Note that, even where new development is illustrated, each concept includes
+retaining play areas and gathering space as critical elements.
+
+
+
+                                                                                                21
+                        Retain existing buildings
+                        and reuse for EGR
+                        school or repurpose for
+                        day care, community
+                        center, senior housing,
+                        or other institutional
+                        use, and expand
+                        playground/open
+                        greenspace
+
+
+
+
+Remove existing
+buildings, add
+townhomes, on- site
+parking, playground,
+basketball court, and
+open greenspace
+
+
+
+
+                           Remove existing buildings,
+                           add single-family homes,
+                           on-site parking,
+                           playground, basketball
+                           court, and open
+                           greenspace
+
+
+
+
+                                                    22
+Remove buildings,
+add townhomes, on-
+site parking,
+playground,
+basketball court,
+and large
+greenspace
+
+
+
+
+ Remove existing
+ buildings, add
+ playground,
+ basketball court,
+ community building,
+ and expansive
+ greenspace
+
+
+
+
+                     23
+Northwest Wealthy Neighborhood                                                  11
+    Existing Conditions. Bounded
+    on the north by Robinson
+    Road and the south by Lake
+    Drive, this is one of the City’s
+    early neighborhoods. These
+    blocks abut the City of Grand
+    Rapids on the west, including
+    its Eastown business district.
+    Along the north edge is the
+    sprawling Aquinas College
+    campus and less than two
+    blocks      east     of     the
+    neighborhood is another large
+    institutional use, Corewell
+    Health-Blodgett Hospital.
+
+     This is a stable, well-
+     maintained neighborhood
+     where most of the homes
+     originate from the early
+     1900s and are built on
+     narrow lots of less than 5,000
+     sq. ft. While the structures
+     are predominantly single-
+     family homes, two-family
+     and multi-family buildings are found intermingled among the homes, especially south of Wealthy
+     Street, a principal travel route serving the hospital and Gaslight Village, which essentially bisects
+     the neighborhood. Most of these multi-unit structures, however, apparently predated zoning
+     regulations and are considered nonconforming uses.
+
+     Neighborhood Input. Overwhelmingly, the comments from residents of this area are positive.
+     Its proximity to shopping, parks, and open space; its character and charm; and its walkability
+     were cited over and over. According to current residents, there are few concerns despite the
+     neighborhood’s proximity to the college and popular Eastown business district. The most
+     frequently voiced issue related to the inconvenience created by the loss of on-street parking due
+     to the few multi-family residences in the midst of the neighborhood and occasional events at the
+     college. Other concerns related to enforcement of speed limits, maintenance and snow plowing
+     of sidewalks, and lack of proactive enforcement of property maintenance codes for rental units.
+     The need for designated crosswalks, especially along Wealthy Street, to improve safety and
+     accommodate the many walkers in the area was also expressed.
+
+     Potential Changes. Due in large part to issues related to on-street parking and maintenance of
+     existing rental units, there is concern regarding potential expansion of multi-family zoning in the
+     neighborhood, even for those properties that are already occupied by such uses. The small lot
+     sizes also present an obstacle which could either preclude such multi-family uses due to their
+     inability to meet minimum zoning requirements (though two-family conversions could be
+
+
+
+                                                                                                       24
+accommodated) or cause adjoining lots to be combined to allow construction of a new building
+in place of the previously existing homes.
+
+While rezoning the existing
+nonconforming uses in the
+midst of the neighborhood
+south of Wealthy Street is not
+recommended, a less intrusive
+approach should be considered
+in support of the Master Plan
+goals to provide more housing
+options in the community.
+Expanding the existing MFR
+(multi-family) zoning district
+east along both sides of Wealthy
+Street to Rosewood and
+including         the       one
+nonconforming multi-family use
+at the southeast corner of
+Wealthy and Rosewood would
+limit these potential uses to a
+major corridor, create a
+reasonable transition from the
+adjoining      Grand      Rapids
+transitional zoning, remove one
+nonconformity, provide more
+opportunity for alternative
+housing, and not intrude into
+the heart of the neighborhood.
+
+Such a change in zoning, while offering other options, would not automatically result in a sudden
+conversion of existing homes into two-family or multi-family units. Evidence of this is found in
+the existing MFR zoning district along Wealthy in which most of the properties have remained
+occupied by single-family homes. A similar change was previously implemented along both sides
+of Lovett Street west of Gaslight Village in which the R-3 single-family residential zoning was
+changed to MFR. The change offered owners more options but has not resulted in widespread
+conversions of homes into apartments.
+
+
+
+
+                                                                                              25
+                    Recommendations
+
+1.  Explore potential options such as new zoning districts, amending current
+    districts, and rezoning to alternate districts to provide greater ﬂexibility
+    for use of nonconforming lots.
+2. Increase opportunities for housing variety and attainability.
+3. Consider a zoning ordinance amendment to allow administrative
+    departures in lieu of variances for certain nonconforming conditions.
+4. Review older neighborhoods and consider coverage and setback
+    amendments in the R-2 and R-3 Residential Districts to allow accessory
+    buildings such as detached garages.
+5. Improve communication and outreach regarding enforcement of the City’s
+    property maintenance code.
+6. Create or enhance public spaces within Gaslight Village and Collins Park to
+    accommodate more community events and highlight Reeds Lake as a
+    prominent feature.
+7. Work with owners and tenants of the Gaslight Village Plaza to promote
+    inﬁll development along Wealthy street.
+8. Enhance the western gateway into Gaslight Village to create a sense of
+    arrival.
+9. Work with the Rapid to expand transit routes, service, and convenience to
+    reduce personal vehicle use.
+10. Incorporate inclusive design of all public facilities to ensure accessibility
+    for those with physical disabilities or age-related impairments.
+11. Continue to implement other City plans including Parks and Recreation
+    Plan, Mobility-Bike Action Plan, Climate Action Plan, and
+    Utilities/Infrastructure Plans.
+
+
+
+
+                                                                                26
+                                     Zoning Plan
+While the subarea plans are meant to offer reasonable development options for the specific areas,
+implementation of some of those options would necessitate zoning changes to those properties. Likewise,
+several Plan recommendations will require amendments to the zoning ordinance. The following table
+highlights the potential zoning adjustments.
+
+           Recommendation or Options                               Zoning Change
+  Reduce nonconformities                           Amend existing districts or adopt new district
+  Improve opportunities for expansion in mature
+                                                   Amend existing districts or adopt new district
+  neighborhoods
+  Increase administrative approvals                Amend ZBA provisions and site plan text
+  Expand housing options in Northwest Wealthy      Extend existing MFR zoning east along
+  Neighborhood                                     Wealthy
+  Provide additional housing in St. Stephen
+                                                   Amend existing districts or adopt new district
+  Neighborhood
+                                                   Review zoning ordinance to ensure potential
+  Redevelop Gaslight Village Plaza
+                                                   uses and changes are permitted
+  Increase opportunity for housing options         Amend zoning districts to allow more choice
+
+
+
+
+                                                                                                    27
+28
+
