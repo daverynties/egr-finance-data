@@ -445,7 +445,7 @@
     .fit-table thead th{font:600 .74rem/1.3 "Source Sans 3",sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line-strong)}
     .fit-table tbody th{font-weight:700;color:var(--ink);text-transform:none;letter-spacing:0;font-size:inherit}
     .fit-table tbody tr:last-child>*{border-bottom:0}
-    .fit-table td:nth-child(4){white-space:nowrap}
+    .fit-table td:nth-child(2){white-space:nowrap}.fit-table td:nth-child(4){width:9.5em}.fit-note{display:block;font-size:.76rem;color:var(--muted)}
     .mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.76rem}
     @media(max-width:640px){
       .fit-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
@@ -455,7 +455,7 @@
       .fit-table th,.fit-table td{border:0;padding:1px 0}
       .fit-table td{display:grid;grid-template-columns:7.5em 1fr;gap:8px}
       .fit-table td::before{content:attr(data-label);color:var(--muted);font-size:.78rem;font-weight:400}
-      .fit-table td:nth-child(4){white-space:normal}
+      .fit-table td:nth-child(4){white-space:normal;width:auto}.fit-table td:nth-child(2){white-space:normal}
     }
     @media print{.view-panel{display:block!important}}
     @media(max-width:760px){
@@ -816,20 +816,20 @@
       <header class="tldr-header" id="ai-analysis">
         <p class="section-kicker">AI opinions, separate from the guide</p>
         <h2 id="ai-title">AI Review Panel</h2>
-        <p class="lede">We asked four AI models to reason carefully through all the data available to them and say which outcome the evidence better supports. These aren’t votes or advice. A human organizer set the ground rules only and did not lean the models toward any outcome.</p>
+        <p class="lede">We asked four AI models to reason carefully through all the data available to them and say which outcome the evidence better supports. Each answer is the model’s assessment: its reading of the evidence, not a vote or advice. A human organizer set the ground rules only and did not lean the models toward any outcome.</p>
       </header>
 
       <section class="tldr-block" aria-labelledby="ai-fit-title">
-        <h3 id="ai-fit-title">Each model’s best fit</h3>
+        <h3 id="ai-fit-title">Each model’s assessment</h3>
         <div class="fit-table-wrap">
           <table class="fit-table">
-            <caption class="sr-only">Each model’s best fit</caption>
-            <thead><tr><th scope="col">Model</th><th scope="col">Model ID</th><th scope="col">Sources</th><th scope="col">Best fit</th><th scope="col">What would change it</th></tr></thead>
+            <caption class="sr-only">Each model’s assessment</caption>
+            <thead><tr><th scope="col">Model</th><th scope="col">Model ID</th><th scope="col">Sources</th><th scope="col">Assessment</th><th scope="col">What would change it</th></tr></thead>
             <tbody>
-            <tr><th scope="row" data-label="Model">Claude</th><td data-label="Model ID"><span class="mono">claude-opus-5-5</span></td><td data-label="Sources">Full record, incl. secondary research</td><td data-label="Best fit">No</td><td data-label="What would change it">Signed city–school agreement; itemized cost estimate</td></tr>
-            <tr><th scope="row" data-label="Model">Codex</th><td data-label="Model ID"><span class="mono">gpt-6.1-sol (high)</span></td><td data-label="Sources">Primary records only</td><td data-label="Best fit">No</td><td data-label="What would change it">Counts near the school; priced alternatives; firm budget; signed agreement</td></tr>
-            <tr><th scope="row" data-label="Model">Grok</th><td data-label="Model ID"><span class="mono">—</span></td><td data-label="Sources">Primary records only</td><td data-label="Best fit">No</td><td data-label="What would change it">Itemized cost; signed agreement on public use and upkeep; why cheaper options were ruled out</td></tr>
-            <tr><th scope="row" data-label="Model">Muse</th><td data-label="Model ID"><span class="mono">Muse Spark 1.3</span></td><td data-label="Sources">This guide and its sources</td><td data-label="Best fit">No</td><td data-label="What would change it">Signed agreement and itemized costs before a later vote</td></tr>
+            <tr><th scope="row" data-label="Model">Claude</th><td data-label="Model ID"><span class="mono">claude-opus-5-5</span></td><td data-label="Sources">Full record, incl. secondary research</td><td data-label="Assessment"><span>No <span class="fit-note">(declined to vote; assessment when asked)</span></span></td><td data-label="What would change it">Signed city–school agreement; itemized cost estimate</td></tr>
+            <tr><th scope="row" data-label="Model">Codex</th><td data-label="Model ID"><span class="mono">gpt-6.1-sol (high)</span></td><td data-label="Sources">Primary records only</td><td data-label="Assessment">No</td><td data-label="What would change it">Counts near the school; priced alternatives; firm budget; signed agreement</td></tr>
+            <tr><th scope="row" data-label="Model">Grok</th><td data-label="Model ID"><span class="mono">—</span></td><td data-label="Sources">Primary records only</td><td data-label="Assessment">No</td><td data-label="What would change it">Itemized cost; signed agreement on public use and upkeep; why cheaper options were ruled out</td></tr>
+            <tr><th scope="row" data-label="Model">Muse</th><td data-label="Model ID"><span class="mono">Muse Spark 1.3</span></td><td data-label="Sources">This guide and its sources</td><td data-label="Assessment">No</td><td data-label="What would change it">Signed agreement and itemized costs before a later vote</td></tr>
             </tbody>
           </table>
         </div>
@@ -838,9 +838,10 @@
           <article class="ai-card" aria-labelledby="ai-claude">
             <div class="ai-card-head">
               <h4 id="ai-claude">Claude</h4>
-              <span class="fit-pill"><span class="fit-pill-label">Best fit</span> No</span>
+              <span class="fit-pill"><span class="fit-pill-label">Assessment</span> No</span>
             </div>
             <p class="ai-model"><span class="mono">claude-opus-5-5</span> (Anthropic)</p>
+            <p class="ai-small">Declined to vote; assessment when asked: No</p>
             <p><span class="ai-label">Why</span>The City’s own traffic consultant said to try cheaper fixes first, and nothing important is signed yet, so approving $9 million now comes before the answers.</p>
             <p><span class="ai-label">What would change it</span>A signed city–school agreement and an itemized cost estimate.</p>
             <p class="ai-small">Sources used: <a href="#src-official">official records</a>, <a href="#src-news">news</a> and the <a href="#ai5">research summary</a>, including secondary research.</p>
@@ -849,7 +850,7 @@
           <article class="ai-card" aria-labelledby="ai-codex">
             <div class="ai-card-head">
               <h4 id="ai-codex">Codex</h4>
-              <span class="fit-pill"><span class="fit-pill-label">Best fit</span> No</span>
+              <span class="fit-pill"><span class="fit-pill-label">Assessment</span> No</span>
             </div>
             <p class="ai-model"><span class="mono">gpt-6.1-sol</span> (OpenAI), high reasoning effort</p>
             <p><span class="ai-label">Why</span>The counts show a real loss of school parking but not a broad shortage, and no one has shown that a 240-space deck is the best fix for the price.</p>
@@ -860,7 +861,7 @@
           <article class="ai-card" aria-labelledby="ai-grok">
             <div class="ai-card-head">
               <h4 id="ai-grok">Grok</h4>
-              <span class="fit-pill"><span class="fit-pill-label">Best fit</span> No</span>
+              <span class="fit-pill"><span class="fit-pill-label">Assessment</span> No</span>
             </div>
             <p><span class="ai-label">Why</span>The campus problem is real but small, the City’s consultant ranked a deck last, and there is no itemized cost or signed agreement.</p>
             <p><span class="ai-label">What would change it</span>An itemized cost, a signed agreement on public use and upkeep, and a reason the cheaper options were ruled out.</p>
@@ -870,7 +871,7 @@
           <article class="ai-card" aria-labelledby="ai-muse">
             <div class="ai-card-head">
               <h4 id="ai-muse">Muse</h4>
-              <span class="fit-pill"><span class="fit-pill-label">Best fit</span> No</span>
+              <span class="fit-pill"><span class="fit-pill-label">Assessment</span> No</span>
             </div>
             <p class="ai-model">Muse Spark 1.3 (Meta)</p>
             <p><span class="ai-label">Why</span>Voters are asked to approve $9 million before the key terms are in writing, so “not yet” fits the evidence better.</p>
@@ -893,7 +894,7 @@
         <p>Muse was not on the panel.</p>
         <div class="oversight-note">
           <h3 id="ai-oversight-title">Human oversight: process only</h3>
-          <p><strong>Human involvement was oversight only: setting the rules and format. The organizer took no position and did not steer any model toward Yes or No.</strong> The organizer, an East Grand Rapids resident, did not write or edit any model’s conclusions or the joint text. The rules: each panel model reasons on its own from the same set of records without seeing the others’ views, primary sources come first, there are no confidence scores, and each model gives an “evidence-based best fit” instead of a vote. The organizer chose the question and the format: what would you do if you ran the city? When Claude first declined to give a best-fit answer, the organizer asked it to give one, without suggesting which answer. Grok ran the process and drafted the joint text, which Claude and Codex reviewed.</p>
+          <p><strong>Human involvement was oversight only: setting the rules and format. The organizer took no position and did not steer any model toward Yes or No.</strong> The organizer, an East Grand Rapids resident, did not write or edit any model’s conclusions or the joint text. The rules: each panel model reasons on its own from the same set of records without seeing the others’ views, primary sources come first, there are no confidence scores, and each model gives an assessment of the evidence instead of a vote. The organizer chose the question and the format: what would you do if you ran the city? When Claude first declined to give an assessment, the organizer asked it to give an assessment, without suggesting which answer. Grok ran the process and drafted the joint text, which Claude and Codex reviewed.</p>
         </div>
       </section>
 
@@ -1006,7 +1007,7 @@
         <ul class="sources sources-plain">
           <li id="ai1"><div><b>Fact-check of this page (207 claims)</b><span class="src-meta">Oct. 8, 2026 · Codex (gpt-6.1-sol), AI-generated</span>Secondary. Checked the page’s claims against the record; used to find and fix errors. <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/codex-factcheck-2026-10-08.md" target="_blank" rel="noopener noreferrer">Open on GitHub</a>.</div></li>
           <li id="ai2"><div><b>Page anomaly audit and spot-check notes</b><span class="src-meta">Oct. 8, 2026 · Codex and Grok, AI-generated</span>Secondary. Flagged math, link and wording problems; used to find and fix errors. <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/codex-anomalies-2026-10-08.md" target="_blank" rel="noopener noreferrer">Audit</a>, <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/anomalies-verification-notes.md" target="_blank" rel="noopener noreferrer">spot-check</a>.</div></li>
-          <li id="ai3"><div><b>Independent best-fit write-ups</b><span class="src-meta">Oct. 8, 2026 · Codex and Grok, AI-generated</span>Secondary. Basis for the Codex and Grok cards in the “AI Review Panel” tab. <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-codex-gpt-6.1-sol.md" target="_blank" rel="noopener noreferrer">Codex</a>, <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-grok-bot.md" target="_blank" rel="noopener noreferrer">Grok</a>, <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-comparison.md" target="_blank" rel="noopener noreferrer">comparison</a>.</div></li>
+          <li id="ai3"><div><b>Independent assessment write-ups</b><span class="src-meta">Oct. 8, 2026 · Codex and Grok, AI-generated</span>Secondary. Basis for the Codex and Grok cards in the “AI Review Panel” tab. <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-codex-gpt-6.1-sol.md" target="_blank" rel="noopener noreferrer">Codex</a>, <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-grok-bot.md" target="_blank" rel="noopener noreferrer">Grok</a>, <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-comparison.md" target="_blank" rel="noopener noreferrer">comparison</a>.</div></li>
           <li id="ai4"><div><b>Claude assessment of the record</b><span class="src-meta">Oct. 2026 · Claude (claude-opus-5-5), AI-generated</span>Secondary. Basis for the Claude card. <span class="no-copy">No public copy available</span>.</div></li>
           <li id="ai5"><div><b>Research summary (dossier) for this guide</b><span class="src-meta">Oct. 2026 · Prepared with AI assistance for this guide</span>Secondary. Collected news and record excerpts; any fact used on the page is cited to its original source above. <span class="no-copy">No public copy available</span>.</div></li>
         </ul>

@@ -2,7 +2,7 @@
 
 *AI opinion, not advice. Part of the AI Review Panel on the EGR parking deck guide.*
 
-**Best fit:** **No**
+**Assessment:** **No**
 
 ## Full write-up
 

@@ -2,9 +2,9 @@
 
 *AI opinion, not advice. Part of the AI Review Panel on the EGR parking deck guide.*
 
-**Best fit:** Declined to vote; best fit when asked: **No**
+**Assessment:** Declined to vote; assessment when asked: **No**
 
-## Its best-fit answer, verbatim (asked after the panel sign-off)
+## Its assessment, verbatim (asked after the panel sign-off)
 
 > **NO**
 >
