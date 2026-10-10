@@ -647,7 +647,7 @@
     </button>
     <div class="nav-links" id="navLinks">
       <a href="#overview" data-tab="city">Overview</a><a href="#taxes" data-tab="city">Taxes</a><a href="#ballot" data-tab="city">Ballot</a><a href="#spending" data-tab="city">Spending</a><a href="#payroll" data-tab="city">Payroll</a><a href="#compare" data-tab="city">Compare</a><a href="#development" data-tab="city">Development</a><a href="#about" data-tab="city">About</a>
-      <a href="#school-overview" data-tab="schools" hidden>Overview</a><a href="#school-snapshot" data-tab="schools" hidden>Audit</a><a href="#school-spending" data-tab="schools" hidden>Spending</a><a href="#school-revenue" data-tab="schools" hidden>Revenue</a><a href="#school-bond" data-tab="schools" hidden>Bond</a><a href="#school-payees" data-tab="schools" hidden>Payees</a><a href="#school-gaps" data-tab="schools" hidden>Gaps</a>
+      <a href="#school-overview" data-tab="schools" hidden>Overview</a><a href="#school-snapshot" data-tab="schools" hidden>Audit</a><a href="#school-spending" data-tab="schools" hidden>Spending</a><a href="#school-revenue-sources" data-tab="schools" hidden>Revenue</a><a href="#school-bond" data-tab="schools" hidden>Bond</a><a href="#school-payees" data-tab="schools" hidden>Payees</a><a href="#school-gaps" data-tab="schools" hidden>Gaps</a>
       <a class="nav-ext" href="/parking-deck/">Parking deck</a>
     </div>
     <span class="freshness">Analysis dated Oct. 8, 2026</span>
@@ -1650,6 +1650,24 @@
         <span class="school-source">State reports Schools of Choice separately only for 2015–16 to 2020–21; totals for later years include Schools of Choice, tuition and other nonresident routes. This is a headcount, not class size.</span>
         <div class="school-note">The nonresident share in 2025–26 is the highest in the data since 2009–10. Total enrollment is roughly flat, so resident students fell from about 2,620 (2019–20) to about 2,540 (2025–26). Over the same period the city's under-18 population rose: about 3,379 in 2010, about 3,518 in 2020, and 3,801 ±240 in the ACS 2020–24 estimate. <span class="school-source">Sources: <a href="https://www.mischooldata.org/schools-of-choice-and-other-non-resident-enrollments/" target="_blank" rel="noopener">MI School Data, Schools of Choice and Other Non-Resident Enrollments</a> (district 41090); <a href="https://www.census.gov/quickfacts/eastgrandrapidscitymichigan" target="_blank" rel="noopener">U.S. Census 2010</a>, <a href="https://citypopulation.de/en/usa/places/michigan/kent/2623980__east_grand_rapids/" target="_blank" rel="noopener">2020 Census</a>, <a href="https://api.censusreporter.org/1.0/data/show/latest?table_ids=B09001&amp;geo_ids=16000US2623980" target="_blank" rel="noopener">ACS 2020–24 table B09001</a>.</span></div>
       </div>
+      <div class="school-subsection" id="school-revenue">
+        <div class="school-subsection-head">
+          <h3>Revenue and teacher pay</h3>
+          <p>General-fund revenue per pupil and average teacher salary for selected years.</p>
+        </div>
+        <table class="school-table" aria-label="EGRPS general-fund revenue per pupil and average teacher salary, selected years">
+          <thead><tr><th>School year</th><th>General-fund revenue per pupil</th><th>Average teacher salary</th></tr></thead>
+          <tbody>
+            <tr><td>2009–10</td><td data-label="General-fund revenue per pupil">$9,263</td><td data-label="Average teacher salary">$66,948</td></tr>
+            <tr><td>2011–12</td><td data-label="General-fund revenue per pupil">$9,554</td><td data-label="Average teacher salary">$70,211</td></tr>
+            <tr><td>2019–20</td><td data-label="General-fund revenue per pupil">$10,767</td><td data-label="Average teacher salary">$69,742</td></tr>
+            <tr><td>2023–24</td><td data-label="General-fund revenue per pupil">$14,534</td><td data-label="Average teacher salary">—</td></tr>
+            <tr><td>2024–25</td><td data-label="General-fund revenue per pupil">$14,628</td><td data-label="Average teacher salary">$76,546</td></tr>
+          </tbody>
+        </table>
+        <span class="school-source">Sources: <a href="https://mdoe.state.mi.us/SAMSPublic/Reports/others/b1014_25FINAL.pdf" target="_blank" rel="noopener">MDE Bulletin 1014</a> (district 41090); <a href="https://www.michigan.gov/mde/-/media/Project/Websites/mde/OFM/State-Aid/State-Aid-Payment-Information-Page/2025-26-Foundation-Amounts.pdf?rev=31b3a9a95864462dab9f1f2c5c4741a7" target="_blank" rel="noopener">MDE 2025–26 Foundation Amounts</a>.</span>
+        <div class="school-note">For comparison, the state's 2025-26 foundation allowance is $10,050 per pupil (MDE). Dollars are nominal (not inflation-adjusted).</div>
+      </div>
     </section>
 
     <section class="section wrap" id="school-outcomes">
@@ -1669,7 +1687,7 @@
       </div>
     </section>
 
-    <section class="section wrap" id="school-revenue">
+    <section class="section wrap" id="school-revenue-sources">
       <div class="section-head">
         <h2>Where school revenue comes from.</h2>
         <p class="lede">The district's operating model is primarily state-funded. Local property taxes remain substantial, especially when debt-service and capital-project funds are included.</p>
