@@ -1,0 +1,11 @@
+**Reject as drafted.** The concept merits investigation, but its financing and parking case are insufficient for endorsement.
+
+1. **Cost arithmetic is inconsistent.** Listed Tokyo costs total **$85.93M**, not $86.02M. Applying the stated percentages to $62.74M hard costs gives **$13.80M soft costs**, **$5.36M return**, and **$85.90M total**. Against $64.75M value, the gap is **$21.15M**. Free land plus half the revised return contributes **$6.68M**; with the assumed TIF and grant, approximately **$7.79M remains**, all contingent on uncommitted funding.
+
+2. **Residential area needs reconciliation.** Replacing ten 1,400-sf condos and sixteen 1,900-sf townhomes with twenty-six 1,400-sf homes removes **8,000 sf of stated home area**. Holding gross construction at 177,000 sf requires an explicit circulation/building-efficiency explanation. The 180-stall garage and 40/26 ownership split are new design choices, not source-established requirements.
+
+3. **Parking feasibility remains unproved.** The **240 total / 95 shared** arithmetic is correct. The older **395–397-space** demand model concerned another program and already assumed **5% retail modal reduction and 20% captive share**; walk-in trade cannot simply be counted again. School displacement is **71 vehicles**. The **$9M ballot ceiling is city borrowing**, not total project funding or guaranteed usable overflow capacity. §3(j) must also be reconciled with later demolition/access agreements.
+
+4. **Retail underwriting exceeds the evidence.** **20,000 sf / roughly 20 shops** is an assumption; PLAN.md names three tenant targets, not an established three-tenant count. At twenty equal shops, **75% occupancy means five vacancies**, reducing retail value to **$8.57M**. Asking rents support neither achieved rents nor lane demand. The sources specifically record staff’s pedestrian-mall warning; the draft should address it.
+
+5. **Votes are speculative.** Five votes are required for an amendment facing a qualifying protest, but the previous **four supporters are not committed**. Density remains **116 homes / 13.5 per acre**; smaller buildings do not reduce it. Neither retained green space nor “a different version” establishes a fifth vote.
