@@ -516,8 +516,10 @@
     .school-month-bar i { display: block; width: 100%; height: var(--h); background: var(--teal); min-height: 2px; }
     .school-month span { color: var(--muted); font: 500 .7rem/1.2 "IBM Plex Mono", monospace; }
     .school-method { margin-top: 16px; padding: 22px 24px; background: var(--surface-2); }
+    .school-method p { margin: 8px 0 0; color: var(--muted); font-size: .9rem; }
     .school-method ul { margin: 12px 0 0; padding-left: 20px; color: var(--muted); font-size: .9rem; }
     .school-method li + li { margin-top: 7px; }
+    #school-open-questions { margin-top: 28px; border: 1px solid var(--line); }
     .modal { position: fixed; inset: 0; z-index: 50; display: none; place-items: center; padding: 18px; background: rgba(2,15,24,.72); }
     .modal.open { display: grid; }
     .modal-card { width: min(720px, 100%); max-height: min(84vh, 780px); overflow: auto; background: var(--surface); color: var(--ink); padding: 28px; box-shadow: var(--shadow); border-radius: var(--radius-m); }
@@ -1689,6 +1691,16 @@
         </table>
         <span class="school-source">Experience is as reported to the state and may reflect years in the district rather than total teaching years. Earlier years are omitted because the state's staffing counts changed. Class size is available for K–3 only.</span>
         <span class="school-source">Sources: <a href="https://legacy.mischooldata.org/DistrictSchoolProfiles2/StaffingInformation/StaffingCounts3/StaffingCount.aspx" target="_blank" rel="noopener">MI School Data Staffing Count</a>; <a href="https://legacy.mischooldata.org/DistrictSchoolProfiles2/ReportCard/EducationDashboard4.aspx" target="_blank" rel="noopener">MI School Data Education Dashboard</a>.</span>
+      </div>
+      <div class="school-method" id="school-open-questions">
+        <strong>Open questions</strong>
+        <p>Public state and federal data can't answer these yet. Records from the district would.</p>
+        <ul>
+          <li>Actual class sizes by school and grade. The state publishes a K–3 average only.</li>
+          <li>How many nonresident students attend through Schools of Choice versus tuition. The state stopped separating these after 2020–21.</li>
+          <li>Why about 1 in 3 teachers is in their first year.</li>
+          <li>Where resident students who don't attend EGR are going.</li>
+        </ul>
       </div>
     </section>
 
