@@ -1,0 +1,38 @@
+You are an independent urban planner.
+
+Using ONLY the context packet below, write an independent plan. Really think, be bold but grounded. Cover, with headings:
+1. Core idea (2-3 sentences)
+2. Mobility system: pedestrian first, bikes, micromobility, autonomous pods/shuttles, service/parking subsystem
+3. Land use around the Gaslight site
+4. Public realm and lake connection
+5. Phasing: today (2026-27), 2030, 2035, 2040+
+6. Rough cost and funding approach
+7. What's politically realistic in EGR
+8. What's honestly speculative
+Output markdown only, no preamble. Do not use any tools or read files.
+Limit: under about 800 words.
+
+---
+# Context packet: Gaslight Village future plan (East Grand Rapids, MI), Oct 2026
+
+## Real geography (verified against OSM and a Google Maps screenshot)
+- Wealthy St SE runs diagonally NW→SE through Gaslight Village (secondary road, the main street).
+- The ~8.6-acre Gaslight Investors site (2255 Wealthy St SE / 515 Lakeside Dr SE) is NORTH of Wealthy and WEST of Lakeside Dr.
+- Lakeside Dr curves N–S along the west shore of Reeds Lake, just east of the site. Reeds Lake (~280 ac) is immediately east; John Collins Park and the waterfront are at the lake's SW shore near Lakeside/Lake Dr.
+- East Grand Rapids High School (and Middle School campus area) is SOUTH of Wealthy, between Wealthy and Lake Dr SE.
+- Lake Dr SE runs parallel to Wealthy, further south (a secondary arterial to Grand Rapids).
+- Wealthy Elementary is to the WEST along Wealthy. Grid side streets (Greenwood, Bagley, Pinecrest, San Jose, etc.).
+- Existing OSM paths: Reeds Lake Trail (footway/cycleway segments around the lake), many sidewalks; little on-street bike infrastructure.
+
+## Site and policy facts
+- Site zoned PUD; the 2004 Jade Pig PUD (up to 107 condos, 687 parking spaces, up to 7 stories/94 ft peak) staff says remains valid.
+- A 147-unit/493-space redevelopment approved 4–3 on Oct 6 2025 was VOIDED Aug 10 2026 (Judge Quist): resident protest petition valid, needed 2/3 vote (MCL 125.3403).
+- Existing Buildings A/B: two stories, ~77,500 sf C-1 retail/office. The old parking deck's upper level was demolished early 2025.
+- Nov 3 2026 ballot: up to $9M city borrowing (~0.49 mills) for a public/school parking deck. School memo: senior lot 111→40 spaces; combined surveyed peak occupancy 939/1,310 (72%); school peak 87%.
+- Traffic: ~6,900 daily trips estimated for redevelopment; Saturday peaks are higher than 2004 PUD.
+- EGR: ~12,000 residents, 3.4 sq mi, affluent, strong schools, engaged and height/density-skeptical residents; Michigan Housing TIF and brownfield tools exist; The Rapid bus serves Wealthy/Lake Dr lightly.
+- Stormwater from the site drains to Reeds Lake via a 36-inch system.
+- David's earlier "Gaslight Green" concept: 116 homes, 3–4 stories, a 1-acre Village Green deeded to the City, a 300-space wrapped shared garage, ~$14M unfunded gap.
+
+## Ask
+A bold, forward-looking, pedestrian-first plan for Gaslight Village and surroundings (Wealthy, Lakeside, Reeds Lake, Lake Dr, the high school, Wealthy Elementary). Think out of the box: car-light/car-free cores, bike networks, an edge or underground service/parking subsystem, autonomous pods/shuttles later. Stay grounded in the facts above. Do NOT read other files or search for other models' plans; work only from this packet.

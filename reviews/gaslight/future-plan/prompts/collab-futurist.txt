@@ -1,0 +1,294 @@
+planner-futurist (Codex gpt-6.1-sol): You are a transit and autonomous-mobility futurist. limit ~800 words.
+
+This is a COLLABORATIVE build-on round, not a critique. Below are the other planners' independent plans for Gaslight Village (East Grand Rapids). Read them and contribute how to COMBINE the best ideas: name the strongest ideas from others you'd adopt, fill gaps nobody covered, and strengthen others' concepts (make them more buildable, fundable or lovable). Do not list faults. Stay in your lens. Under about 400 words, markdown only, no preamble, no tools.
+
+--- planner-claude
+# Gaslight Village: Park Once, Walk to the Lake
+
+## 1. Core idea
+Make Gaslight Village somewhere you park once, or never, and then walk between the lake, the schools and Wealthy Street. The plan offers residents a clear trade: **less height, fewer parking spaces and less traffic than the 2004 PUD that is still valid**, and in return a car-light village core with a real front door onto Reeds Lake. Parking goes to the edges and serves several uses at once. The middle is for people.
+
+## 2. Mobility system
+**Pedestrian first**
+- Rebuild Wealthy St SE from Lakeside Dr to about Bagley as a **curbless, 15 mph shared street**. Use raised tables at every crossing, put no curb cuts on Wealthy, and keep it open to buses and through traffic. Close it to cars on Saturday mornings and during festivals.
+- Build a **"school spine"**: a continuous raised crossing and plaza linking the Gaslight site (north of Wealthy) to the high school and middle school (south of Wealthy). Students crossing to parking and food is the most important foot traffic in the village.
+
+**Bikes and micromobility**
+- Build the **Reeds Lake Ring**: close the gaps in the existing Reeds Lake Trail to a continuous 10–12 ft path, with the Gaslight frontage on Lakeside as the main section.
+- Build two **neighborhood greenways** on the grid streets (Greenwood and San Jose or Pinecrest) connecting Wealthy Elementary to the village and the high school. Treat them as Safe Routes to School corridors.
+- Add buffered bike lanes on Lake Dr SE toward Grand Rapids.
+- Put micromobility docks and secure bike parking at the garage, the Village Green, the high school and John Collins Park.
+
+**Service and parking subsystem**
+- Build one **shared, wrapped garage of about 400 spaces** on the Gaslight site, entered from the west or north edge of the site. It replaces 687 entitled spaces and serves residents, retail, the school and lake visitors on time-shared schedules.
+- Combined peak occupancy is only 72% (939 of 1,310 spaces), so the area needs better-managed parking, not much more of it. Use paid, dynamically priced public parking and keep weekday blocks for students.
+- Put loading underground or tucked into the garage edge. Add a small **delivery micro-hub** so cargo e-bikes handle the last 500 ft.
+
+**Autonomous pods and shuttles**
+- Build the garage with flat floors and 10–11 ft clear heights so it can become housing or a mobility hub later.
+- Reserve curb space now for a low-speed shuttle loop: Gaslight, high school, Collins Park, Lake Dr and the Rapid connections.
+
+## 3. Land use on the Gaslight site
+- **About 110–120 homes** in 3–4 story buildings, stepping down toward Lakeside and the neighbors. Include 15–20% attainable units for teachers and empty-nesters so the project qualifies for Housing TIF.
+- **Ground-floor retail and dining** fronting Wealthy and the Green. Phase out Buildings A and B rather than demolishing them first.
+- A **1-acre Village Green** deeded to the City and placed on the diagonal between Wealthy and the lake, so the lake can be seen from the main street.
+- A small **civic room** for school or library programs, ice-cream-scale retail, and rentals that support the lake.
+
+## 4. Public realm and lake connection
+- The Green doubles as **stormwater treatment**. Bioretention cells and a visible rain runnel catch the first inch of runoff before it reaches the 36-inch outfall to Reeds Lake. The lake connection is then ecological as well as visual.
+- Narrow Lakeside Dr along the site frontage. Use the space for a **lakeside promenade** with a raised crossing to the water and a short boardwalk or overlook.
+- Run continuous tree canopy along Wealthy and make winter programming (rink, market, lights) a design requirement.
+
+## 5. Phasing
+- **2026–27.** The Nov 3 bond vote decides the garage path:
+  - **If it passes:** build the city/school deck on the Gaslight site, inside a site plan that complies with the PUD. Do not build a standalone deck.
+  - **If it fails:** run a pricing and shared-use pilot on the existing 1,310 spaces.
+  - **Either way:** paint and plant a tactical pilot of the Wealthy shared street, open the school spine crossing, and adopt a resident-drafted form-based overlay through a supermajority-friendly process.
+- **2030.** The garage and first residential building are open, the Green is complete and Wealthy is reconstructed. The Ring and greenways are done.
+- **2035.** Second building and civic room. Shuttle pilot if the technology and cost hold up. Parking ratios fall as usage data allows.
+- **2040+.** Convert garage floors to housing or a mobility hub if demand falls. Car-free Wealthy hours become routine.
+
+## 6. Rough cost and funding
+| Item | Rough cost | Funding |
+|---|---|---|
+| Shared garage (~400 spaces) | $13–16M | $9M bond if it passes, plus developer share and parking revenue |
+| Wealthy shared street | $7–10M | MDOT TAP and Safe Routes grants, city capital |
+| Green and stormwater | $3–5M | EGLE and stormwater grants, Housing TIF |
+| Ring, greenways, Lake Dr | $3–5M | Trail grants, philanthropy |
+| Shuttle pilot | ~$1M/yr | Grant-funded only |
+
+Brownfield TIF applies only where eligibility is real. The roughly $14M gap from the earlier Gaslight Green concept shrinks if the bond money goes into one shared garage instead of two.
+
+## 7. What's politically realistic in EGR
+- Any rezoning faces a protest petition and the 2/3 vote it triggers (MCL 125.3403). The winning move is to **stay below the 2004 PUD on every metric**: height, units, parking and trips. Then the plan reads as a reduction, not an upzoning.
+- Lead with schools, the lake and safety. Leave density out of the pitch.
+- Make height a resident co-design decision, capped at 4 stories.
+- Treat the shared street and pricing as reversible pilots, and run them before any permanent changes.
+- Don't propose a full car closure of Wealthy. It is the main street and a bus route.
+
+## 8. What's honestly speculative
+- **Autonomous shuttles** by 2035 are not certain, so the plan builds for them without depending on them.
+- **Trip reductions** below the ~6,900 daily estimate depend on behavior change that hasn't been shown here yet.
+- **Retail viability** on a quieter, car-light street is unproven.
+- **Funding**: whether the bond passes, and whether brownfield or Housing TIF eligibility holds up, are both open.
+- **Developer appetite** for a smaller, cheaper-to-park project depends on interest rates and land cost.
+- **Narrowing Lakeside Dr** needs traffic analysis first.
+
+--- planner-codex
+## 1. Core idea
+
+Make Gaslight a village people can cross comfortably on foot, with a car-free interior, useful shops, new homes and a public green connected to Reeds Lake. Keep regional movement on Wealthy and Lake Drive, while concentrating parking and deliveries at the site’s edges. Build the walking network first; let future transport technology earn its place.
+
+## 2. Mobility system
+
+**Pedestrians first.** Create a continuous, accessible network linking Wealthy Elementary west along Wealthy, the high school south of Wealthy, the redevelopment and the waterfront. Use raised side-street crossings, shorter crossing distances and controlled crossings where warranted. Keep Wealthy open initially; test occasional pedestrian events before considering permanent restrictions.
+
+**Bikes and micromobility.** Establish a protected east–west route along Wealthy, subject to street-width feasibility, connecting school approaches and village destinations. Connect it to Lakeside and existing Reeds Lake Trail segments. Use parallel grid streets as low-speed neighborhood feeders. Provide secure bicycle storage and designated scooter parking; keep fast riding out of pedestrian gathering spaces.
+
+**Pods and shuttles.** First test an accessible, human-driven circulator connecting village parking, schools, waterfront and existing Rapid stops. Coordinate with The Rapid before creating a competing service. Consider autonomous operation later only if demand, safety, accessibility and operating costs support it.
+
+**Service and parking.** Locate a shared garage toward the site’s western edge, with shops or homes screening it. Keep vehicle access away from major waterfront crossings where feasible. Use a restricted perimeter service lane, scheduled deliveries and emergency access. Preserve convenient accessible parking and passenger drop-off. Treat 300 spaces as a ceiling to test, not an established requirement; count school and village demand separately by time and location.
+
+## 3. Land use around the Gaslight site
+
+Pursue approximately **110–125 homes in mostly three- and four-story buildings**, with smaller-scale frontage on Wealthy and height stepping down toward neighboring properties. Include apartments, downsizing options and family-sized homes; seek attainable rents through a defined subsidy agreement.
+
+Retain viable retail and office space where practical. Concentrate active storefronts along Wealthy and the green, with smaller premises that local businesses can occupy.
+
+Reserve approximately **one acre for a genuinely public Village Green**, secured through ownership or a permanent public-access agreement. Avoid an isolated lawn surrounded by garage entrances.
+
+Resolve the applicable PUD approval pathway before committing to a design. Staff’s position on the 2004 entitlement and the voided 2025 approval make procedural clarity essential.
+
+## 4. Public realm and lake connection
+
+Make the green a shaded everyday place: seating, play, flexible event space and winter-friendly lighting. Establish a legible walking route east across Lakeside toward the waterfront, then south to John Collins Park; do not imply that the lakefront belongs to the redevelopment.
+
+Use Lakeside as a slow waterfront street with safe crossings, subject to traffic and emergency-access review. Improve existing lake paths before adding structures over water.
+
+Require a site-wide stormwater strategy addressing the existing 36-inch drainage connection: capture, filter and delay runoff through planted areas, permeable surfaces and underground storage where necessary. Verify performance through engineering.
+
+## 5. Phasing
+
+- **Today, 2026–27:** Measure seasonal parking and traffic, including Saturday and school peaks. Pilot crossings, seating and bicycle parking. Evaluate the November deck vote independently of private redevelopment. Agree on public-space terms and an approval process.
+- **2030:** Deliver the first buildings, green, stormwater works and essential crossings. Construct only the shared parking capacity demonstrated to be necessary.
+- **2035:** Complete redevelopment and the protected school–village–lake network. Adjust parking prices, permits and shuttle service using observed demand.
+- **2040+:** Consider broader pedestrianization and autonomous shuttles if earlier phases demonstrate workable access and sustained demand.
+
+## 6. Rough cost and funding approach
+
+Allow **roughly $75–125 million in 2026 dollars**: $55–85 million for buildings, $12–20 million for shared parking and $8–20 million for public space, streets and stormwater. These are conceptual allowances, excluding land acquisition, financing and later inflation.
+
+Use private capital for buildings; investigate eligible Housing TIF and brownfield support for defined costs. Combine city capital and transportation grants for public improvements. Keep any voter-approved school/public deck borrowing separately accounted for. The earlier $14 million gap requires redesign, subsidy or reduced scope; naming a funding tool does not close it.
+
+## 7. What’s politically realistic in EGR
+
+A visible green, modest heights, safer school routes and verified parking provision offer the strongest starting coalition. Publish financial assumptions and enforceable public benefits before approval. Recognize legitimate concerns about traffic, height and municipal exposure. Permanent closure of Wealthy or substantial public subsidy would require stronger evidence and broader support.
+
+## 8. What’s honestly speculative
+
+Autonomous fleets, major reductions in household car ownership and extensive underground logistics are speculative. Underground parking also needs groundwater, soil and cost investigation. The durable investment is the connected public realm; advanced transport should remain an optional addition.
+--- planner-grok
+# Gaslight Village: The Lake Room (Grok Bot, independent round 1)
+
+## 1. Core idea
+Turn the quarter-mile between Wealthy Elementary and Reeds Lake into one "room" you cross on foot. Cars arrive at a single **edge mobility hub** on the west side of the Gaslight site and stop there; the interior of the site is car-free, Wealthy becomes a 15–20 mph village street, and Lakeside becomes the lake's front porch. The hub is built so that its parking floors can later be swapped for pod bays, bike storage and homes.
+
+## 2. Mobility system
+- **Pedestrian first.** A diagonal **Lake Walk** cuts through the site from the Wealthy/high-school crossing to Lakeside opposite John Collins Park. It is the backbone. Raised crossings go at Wealthy/Lakeside, at the high-school entrance and at mid-block. Sidewalks continue unbroken across side streets.
+- **Bikes.** Three loops: (1) the **Reeds Lake Ring**, which fills gaps in the existing Reeds Lake Trail, with Lakeside along the site as the showcase segment; (2) the **School Loop**, Wealthy Elementary → Greenwood/Bagley greenways → Gaslight → high school → Lake Dr, with bell-time "school streets"; (3) the **Grand Rapids link**, protected lanes on Lake Dr SE west toward the city.
+- **Micromobility.** A bike hall in the hub (300+ spaces, cargo bikes, e-bike charging) plus small docks at the Green, the high school and the park.
+- **Service/parking subsystem.** One **wrapped edge hub** with about 300 spaces, entered from Wealthy at the west edge of the site so no car crosses the Lake Walk. Below or beside it: a service court for loading, waste and a parcel micro-hub, with cargo-bike last 500 ft. Shared, priced, unbundled. Fully underground parking is the premium option only if geotech borings (20–50 ft) come back clean and the cost gap closes.
+- **Pods/shuttles.** Today: a staffed electric shuttle at peaks (school bells, Saturdays, events) on a loop from the hub to the high school, John Collins Park, Lake Dr and Rapid stops. 2035+: the same loop runs as a supervised low-speed autonomous route; hub floors become pod staging and charging.
+
+## 3. Land use
+- About 115 homes at 3 stories on the edges and 4 at the Wealthy core, aimed at downsizers, teachers and young families. Some are attainable via Housing TIF.
+- Small-grain storefronts (400–1,500 sf) along Wealthy and the Lake Walk. Adapt Buildings A/B instead of demolishing them on day one.
+- Outside the site: allow modest "missing middle" homes (duplexes and courtyard buildings) only on blocks touching Wealthy, by later, separate votes.
+
+## 4. Public realm and lake
+- A **1-acre Village Green** deeded to the City where the Lake Walk meets Lakeside, framing a view of the lake.
+- **Lakeside Dr as a lake porch**: narrowed at the site, with a raised promenade crossing, a boardwalk overlook and summer Saturday closures.
+- A **stormwater runnel**: rain gardens treat the first inch before the 36-inch outfall. The plan cleans Reeds Lake.
+
+## 5. Phasing
+- **2026–27:** Count parking (939/1,310 at peak). Do tactical pilots: paint, planters and raised crossings on Wealthy, school streets, 300 bike racks. Decide the Nov 3 deck vote on condition that any deck be the edge hub, flat-floored and convertible. Run a charrette aimed at a 2/3 vote.
+- **2030:** Hub and bike hall open. Phase 1 homes, the Green and the east half of the Lake Walk. Peak shuttle runs. Wealthy rebuilt to 20 mph.
+- **2035:** Full build. Lakeside lake porch. School Loop and Reeds Lake Ring complete. Autonomous shuttle pilot.
+- **2040+:** The interior is fully car-free, with time-limited car-free hours on Wealthy if the data supports them. Hub floors convert to homes or pod depot as demand falls.
+
+## 6. Cost and funding (screening)
+- Hub plus bike hall: ~$15–19M. Funded by the $9M bond if it passes, a school share and a private share.
+- Green, Lake Walk, stormwater: ~$6–8M. Funded by Brownfield/Housing TIF, Michigan stormwater and EGLE grants, and philanthropy.
+- Streets and bike loops: ~$4–6M. Funded by MDOT TAP, Safe Routes to School and city capital.
+- Shuttle: ~$0.4–0.8M/yr. Funded by a parking surplus, a district assessment and a Rapid partnership.
+- The private housing gap (~$14M in David's Gaslight Green) is still the hard part.
+
+## 7. Politically realistic
+Tactical pilots, school streets, the Green, a smaller wrapped garage and lower heights than the 2004 PUD: these can win a 2/3 vote. Permanent closure of Wealthy and new density off-site are not realistic before 2035.
+
+## 8. Speculative
+Autonomous shuttles in Michigan winters, underground parking costs, car-free hours on Wealthy, and parking demand actually falling.
+
+--- planner-urbanist
+# Gaslight Village: The Lake Lane Plan
+
+## 1. Core idea
+Put cars at the edge of Gaslight and give the middle to people. The 8.6-acre site becomes fine-grain blocks of 3–4 story homes. A covered pedestrian lane, built like a Japanese shotengai shopping street, runs diagonally from Wealthy St to Lakeside Dr and Reeds Lake. One shared, wrapped garage serves the school, the shops and the homes. Children, shoppers and seniors should be able to reach everything on foot or by bike, and the lake should be the reward at the end.
+
+## 2. Mobility system
+- **Pedestrian first:** Make the Village stretch of Wealthy a 20 mph "slow street." Add raised tables at Lakeside, the high school entrance and the mid-block lane, and run the sidewalks continuously across side streets. On Greenwood, Bagley, Pinecrest and San Jose, the blocks next to the schools become woonerven (shared streets where cars move at walking pace), with planters, chicanes and no through traffic.
+- **Bikes:** Build a "school spine" of protected or quiet-street routes linking Wealthy Elementary, Gaslight, the high school, the Reeds Lake Trail and Lake Dr. Make Lakeside Dr a fietsstraat, a bike street where cars are guests, at 15 mph. Put a covered, staffed bike hall for about 400 bikes in the garage's ground floor. Add 300 or more racks at the schools and the shops.
+- **Micromobility:** Place two mobility hubs, one at Wealthy/Lakeside and one by the high school. Each has e-bikes, cargo bikes, lockers and Rapid bus shelters.
+- **Pods and shuttles (later):** Keep a flexible curb lane on Wealthy and a pickup loop inside the garage. A low-speed autonomous loop could later run Gaslight → John Collins Park → Lake Dr → the Rapid. Nothing gets built for it until it proves itself elsewhere.
+- **Service and parking:** One shared garage of about 350 spaces sits on the site's west and north edge, wrapped with homes, with its entry close to Wealthy. Deliveries use a service court under or beside the garage, with timed windows and cargo-bike last-mile delivery into the car-free core. Spaces are pooled and priced, and home parking is sold separately from the units. The surveyed peak was only 72% occupancy (939 of 1,310 spaces), so the area is short on management, not on asphalt.
+
+## 3. Land use around the Gaslight site
+- About 120 homes at 3–4 stories, stepping down toward neighbors. One taller 5-story corner is allowed only if it's deep inside the site. The mix leans toward downsizers, seniors and teachers, the people EGR already wants to keep.
+- Keep and adapt Buildings A/B (about 77,500 sf). Add arcades and cut them into small shops of 400–1,500 sf: Japanese-scale cafés, repair shops, a grocer.
+- Ground floors along the lane are small, active storefronts. Blocks should be no wider than about 60 m, with an alley or passage every 40–60 m.
+- A Village Green of about 1 acre, deeded to the City, sits where the lane meets Lakeside.
+
+## 4. Public realm and lake connection
+- **The Lake Lane:** a 10–12 m wide, partly glass-roofed street usable all winter. It runs from the Wealthy/high school crossing to Lakeside, then on to the Reeds Lake Trail and John Collins Park.
+- **A visible stormwater runnel:** rain gardens and a surface channel along the lane clean runoff before it enters the 36-inch system to the lake. "This project makes Reeds Lake cleaner" is a real argument and a winning one.
+- **Saturday "Lakeside Open Street":** close Lakeside in summer for markets, and test permanent closure from the data.
+
+## 5. Phasing
+- **2026–27:**
+  - Vote on the $9M deck with conditions attached: built at the edge, wrapped, shared, with flat convertible floors.
+  - Launch a pilot of temporary materials (paint, planters, posts) on Wealthy and Lakeside.
+  - Start school streets at bell times and add 300 bike racks.
+  - Run a new PUD charrette written to win a 2/3 vote.
+- **2030:** garage and bike hall open. Phase 1 has about 60 homes, the Green and the eastern half of the lane. A/B are re-tenanted.
+- **2035:** the full Lake Lane, about 120 homes, a permanent Wealthy redesign and the complete school spine. Lakeside becomes a fietsstraat.
+- **2040+:** garage floors convert to housing, storage or a mobility depot as demand falls. Autonomous shuttles start only if proven elsewhere.
+
+## 6. Rough cost and funding approach
+
+| Item | Rough cost | Source |
+|---|---|---|
+| Shared garage + bike hall | ~$9–11M | Nov 2026 bond (~0.49 mills) plus school share |
+| Lane, Green, stormwater | ~$5–7M | Brownfield TIF, City, philanthropy |
+| Wealthy/Lakeside streets, bike spine | ~$3–5M | City capital, grants |
+| Housing and retail (private) | ~$55–70M | Developer; Michigan Housing TIF for attainable units |
+
+The earlier "Gaslight Green" concept had a ~$14M gap. Moving its garage into the public bond and trimming the parking ratio could close much of it.
+
+## 7. What's politically realistic in EGR
+- **Realistic:** 3–4 stories, a public green, cleaner lake water, safer walks to school, and fewer trips and spaces than the 2004 Jade Pig PUD (up to 7 stories, 687 spaces) that staff says is still valid. Comparing against that PUD is a fair argument, not a threat, and it's the strongest one available.
+- **Realistic:** school streets, the bike hall and the slow-street pilot. Parents push for these.
+- **Hard:** closing Lakeside full-time, parking ratios well under 1 per home, and any 5th story.
+- **Process:** the court voided the last approval because a valid protest petition required a 2/3 vote. Co-design with the protesting neighbors from day one.
+
+## 8. What's honestly speculative
+- Autonomous pods and shuttles: timing, safety record and cost are all unknown.
+- Whether the 6,900-trip estimate drops much with this design. Saturday retail peaks may stay car-heavy.
+- Whether merchants accept pooled, priced, edge parking.
+- More frequent Rapid service on Wealthy and Lake Dr. That isn't EGR's decision.
+- Converting garage floors to other uses after 2040. It depends on car ownership actually falling.
+- The cost figures are order-of-magnitude only and haven't been costed.
+
+--- planner-realist
+## 1. Core idea
+
+Make Gaslight a village people can cross, shop and live in without moving a car: a car-free interior north of Wealthy, connected to schools, neighborhoods and Reeds Lake. Concentrate parking and deliveries at its edges, and trade development flexibility for permanent public space, attainable housing and enforceable pedestrian improvements.
+
+## 2. Mobility system
+
+**Pedestrians first.** Create a continuous, accessible walking network through the site, with a roughly one-acre Village Green and several entrances. Prioritize short, conspicuous crossings of Wealthy toward the high school/middle school campus and of Lakeside toward the waterfront. Keep Wealthy open initially; test raised crossings, tighter intersections and temporary event closures before permanent street changes.
+
+**Bikes and micromobility.** Connect Wealthy Elementary, Gaslight, the school campus and Lake Dr through protected segments where feasible and neighborhood bicycle boulevards elsewhere. Provide secure bicycle parking and designated scooter parking. Separate through-cycling from crowded waterfront walks and the Green.
+
+**Shuttles and pods.** Start with better coordination of existing Rapid service and, if demand supports it, a small staffed shuttle linking neighborhood stops, schools and Gaslight. Reserve accessible boarding locations for eventual autonomous service; buy no proprietary pod infrastructure now.
+
+**Parking and service.** Make a wrapped, shared garage the principal arrival point, with access selected through traffic testing. Study approximately 220–300 spaces rather than prescribing 300. Put loading, waste collection and pickup bays along a service edge; allow timed deliveries and emergency access inside. Underground parking is an alternative to price, not a prerequisite.
+
+## 3. Land use around the Gaslight site
+
+Use approximately 110–120 homes as a negotiating starting point, with three-story frontage and selective fourth stories inside the site. Include rentals, smaller ownership homes and accessible units; secure some income-restricted housing through funding agreements.
+
+Keep active shops and services facing Wealthy and the Green. Evaluate retaining or adapting Buildings A/B before assuming demolition. Phase construction to preserve business continuity.
+
+Concentrate substantial growth on the 8.6-acre site. Pursue smaller infill near Gaslight separately, avoiding a village project that depends on simultaneous neighborhood rezoning.
+
+The valid 2004 PUD remains the negotiating baseline. The voided 2025 approval cannot authorize this plan.
+
+## 4. Public realm and lake connection
+
+Secure the Green through a deed and an explicit maintenance agreement before granting associated development benefits. Give it shade, seating, play opportunities and flexible event space.
+
+Connect it eastward across Lakeside to existing waterfront destinations, including John Collins Park, without turning the shoreline into a commercial extension. Improve trail continuity and accessibility.
+
+Treat lake protection as infrastructure: investigate the existing 36-inch drainage system and incorporate runoff storage, filtration and permeable surfaces where technically suitable. Resolve maintenance responsibility before construction.
+
+## 5. Phasing
+
+- **Today, 2026–27:** Establish the legal approval route; negotiate public benefits; measure parking by location and time; test crossings and event closures. Evaluate the November borrowing proposal on its public/school merits. Its passage would not authorize redevelopment.
+- **By 2030:** Deliver the first housing/commercial phase, permanent crossings, initial bicycle connections and shared parking justified by measured demand.
+- **By 2035:** Complete the Green and remaining development; adjust parking management and transit using observed performance.
+- **2040+:** Consider larger pedestrian zones and autonomous shuttles only after successful operations, accessible service and demonstrated demand.
+
+## 6. Rough cost and funding approach
+
+Illustrative **2026-dollar construction allowances**, excluding land acquisition and financing:
+
+| Component | Allowance |
+|---|---:|
+| Housing and commercial buildings | $60–90M |
+| Shared garage | $12–18M |
+| Green, streets, crossings and drainage | $8–12M |
+| **Total** | **$80–120M** |
+
+Use private equity and debt for revenue-producing buildings. Test Housing TIF and brownfield reimbursement against actual eligible costs and available increments; neither guarantees feasibility. Consider DDA/CIA tools only where legally available and fiscally justified, without counting the same tax revenue twice.
+
+Re-underwrite the earlier $14M gap rather than carrying it forward. The proposed $9M borrowing supports only its authorized public/school purpose. Additional millages require a specific public benefit and credible operating budget.
+
+## 7. What’s politically realistic in EGR
+
+Offer a visible bargain: moderate height, protected lake water, a permanent Green, functioning school access and transparent public costs. Publish parking evidence: 72% combined occupancy does not establish spare capacity beside every destination, especially with school peaks at 87%.
+
+Build support sufficient for the applicable two-thirds requirement under MCL 125.3403 if a valid protest applies. A narrow majority is a fragile foundation.
+
+## 8. What’s honestly speculative
+
+Autonomous pods, inexpensive underground construction, substantial reductions from the estimated 6,900 daily trips, and TIF closing the financing gap remain unproven. Preserve options for them; make the village work without them.

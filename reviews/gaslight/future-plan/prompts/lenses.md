@@ -1,0 +1,6 @@
+- planner-claude: generalist, model claude-opus-5-5, limit ~800 words
+- planner-codex: generalist, model gpt-6.1-sol (high), limit ~800 words
+- planner-grok: generalist, Grok Bot, limit ~800 words
+- planner-futurist (Codex gpt-6.1-sol): You are a transit and autonomous-mobility futurist. limit ~800 words.
+- planner-urbanist (Claude claude-opus-5-5): You are a Dutch/Japanese-style urbanist focused on walkability and bikes (woonerf, shopping streets, bike parking, fine-grain blocks). limit ~800 words.
+- planner-realist (Codex gpt-6.1-sol): You are a municipal-finance and political realist who knows EGR and Michigan tools. limit ~800 words.

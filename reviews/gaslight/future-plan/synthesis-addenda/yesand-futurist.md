@@ -1,0 +1,7 @@
+- **Yes, and make the shuttle useful before making it autonomous.** Coordinate departures with Rapid connections and publish maximum waits, operating hours and fares. Test the loop’s travel time: a shorter direct connection may serve riders better than one circuit through every destination.
+
+- **Yes, and guarantee access from the hub to every front door.** Provide sheltered, step-free boarding, wheelchair space and phone booking alongside any app. Allow booked accessible transport into the core where walking distance is a barrier. Treat these trips as essential access when applying the 15-riders/hour expansion gate.
+
+- **Yes, and make autonomy an operating decision, independent of the redevelopment schedule.** Require a full winter of supervised testing within a defined operating area, with published results for school crossings, snow-obscured markings, boarding and service interruptions. Specify who assists passengers and retrieves a disabled vehicle; remote supervision alone cannot provide physical help.
+
+- **Yes, and design for fewer cars without assuming that outcome.** Track person-trips, transit connections, parking spillover and empty shuttle miles alongside occupancy. Before adding garage capacity, test pricing and shared-parking agreements. Verify daylight, structural loads and exit requirements before promising conversion of garage floors into homes.

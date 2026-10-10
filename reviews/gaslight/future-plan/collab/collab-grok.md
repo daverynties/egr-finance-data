@@ -1,0 +1,8 @@
+## Grok Bot build-on: stitch it into one "school → village → lake" system
+
+- **Adopt:** Claude's school spine and Reeds Lake Ring; Urbanist's shotengai lane, fine-grain blocks, woonerf service lanes and bike parking at the door; Codex's and Realist's sizing of the garage by measurement (220–300 spaces) and their recorded agreements; Futurist's rule that shuttles come before autonomy, plus curb-as-infrastructure.
+- **One spine, three names, one route.** Claude's school spine, my Lake Walk and Urbanist's Lake Lane are the same line: high-school crossing → diagonal through the site → Green → Lakeside → John Collins Park. Call it the **Lake Walk** and make it the single first deliverable.
+- **Hub = the deck question.** Every plan puts parking at the west edge. Write that, plus flat floors of 3.5 m+, as the conditions on any Nov 3 deck dollars, so the bond and the vision point the same way.
+- **Gap: a district operator.** Merge Claude's Conservancy and Urbanist's merchants' association into one **Gaslight Village Partnership** that runs the Green, the snow-first routes, the shuttle pilot, curb management and the yearly scorecard. Fund it from net parking revenue plus a small assessment.
+- **Gap: phase gates with numbers.** Publish them in advance: garage tier 2 only if peak occupancy is above 85%; shuttle expansion only at about 15 riders/hour or more; the Wealthy car-free hours trial only once walk/bike share at school bells is 50% or higher.
+- **Strengthen pods.** The first "pod" is a cargo bike and an accessible staffed shuttle. Autonomy rides on the same stops and the same hub bays later. Nothing is proprietary.
