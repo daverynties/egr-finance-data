@@ -86,6 +86,9 @@
     .key-numbers ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 22px;font-size:.92rem;line-height:1.4}
     .key-numbers b{color:var(--navy)}
     .takeaway{margin:0 0 18px;font-size:1rem;line-height:1.5;max-width:780px}
+    .ai-teaser{margin:0 0 8px;padding:16px 0 24px;border-top:1px solid var(--line);max-width:780px}
+    .ai-teaser h2{font-size:1.05rem;margin:0 0 6px}
+    .ai-teaser p{font-size:.92rem;color:var(--muted);margin:0 0 6px}
     details.more{margin:14px 0 22px}
     details.more>summary{cursor:pointer;color:var(--teal);font-size:.88rem;font-weight:600;padding:4px 0}
     details.more[open]>summary{margin-bottom:8px}
@@ -506,7 +509,7 @@
       <div class="view-tabs" role="list">
         <a class="view-tab" role="listitem" href="#front" data-view="front">Quick guide</a>
         <a class="view-tab" role="listitem" href="#full" data-view="full">Full analysis</a>
-        <a class="view-tab" role="listitem" href="#ai" data-view="ai">AI Review Panel</a>
+        <a class="view-tab" role="listitem" href="#ai" data-view="ai">What do AI models think?</a>
         <a class="view-tab" role="listitem" href="#sources" data-view="sources">Sources</a>
       </div>
       <span class="freshness">Nov. 3, 2026 ballot</span>
@@ -627,7 +630,7 @@
 
       <nav class="tldr-actions" aria-label="More detail">
         <a href="#full">Full analysis</a>
-        <a href="#ai">AI Review Panel</a>
+        <a href="#ai">What do AI models think?</a>
       </nav>
     </section>
 
@@ -642,7 +645,7 @@
         <details class="more"><summary>Show details</summary>
         <aside class="about-guide" aria-labelledby="about-guide-title">
           <strong id="about-guide-title">About this guide</strong>
-          <p>Built from City Commission packets (April 20, June 29, July 20, and August 3), the Progressive Companies traffic memo and February 2026 follow-up, City operating-cost emails, the MFCI debt analysis, the 2025 parking study, the superintendent’s September 30 letter, and resident comment cards. Figures come from official City and school records where possible; where a figure relies on news reporting or a document posted on a campaign website, the source note says so. Figures marked “inferred” are this guide’s own calculations, with their assumptions stated alongside. AI model opinions are kept in a separate, labeled “AI Review Panel” tab and are not part of the factual guide. Built by an East Grand Rapids resident. Self-funded. Not affiliated with the City, the school district, or any campaign.</p>
+          <p>Built from City Commission packets (April 20, June 29, July 20, and August 3), the Progressive Companies traffic memo and February 2026 follow-up, City operating-cost emails, the MFCI debt analysis, the 2025 parking study, the superintendent’s September 30 letter, and resident comment cards. Figures come from official City and school records where possible; where a figure relies on news reporting or a document posted on a campaign website, the source note says so. Figures marked “inferred” are this guide’s own calculations, with their assumptions stated alongside. AI model opinions are kept in a separate, labeled “What do AI models think?” tab and are not part of the factual guide. Built by an East Grand Rapids resident. Self-funded. Not affiliated with the City, the school district, or any campaign.</p>
         </aside>
         </details>
       </header>
@@ -674,6 +677,12 @@
         <p>The 2025 counts found room system-wide (71.7% at the busiest hour) but tight spots near the high school. The expansion permanently removes 71 campus spaces, and the district projects about 65 campus spaces during 2028–2030 construction. Not yet settled: a signed city–school agreement, who pays overruns and upkeep, public access during school hours, and any street-parking changes.</p>
       </div>
     </section>
+
+    <aside class="ai-teaser" aria-labelledby="ai-teaser-title">
+      <h2 id="ai-teaser-title">What do AI models think?</h2>
+      <p>We asked four AI models to reason through the data; each gave an assessment of “No.” Their joint recommendation says the City should sell no bonds and award no construction contract until conditions are met, including a signed City–school agreement and a published itemized estimate. Agreement among them does not prove they are right.</p>
+      <p><a href="#ai">See the full AI review →</a></p>
+    </aside>
 
     <details class="section" id="need" open>
       <summary><span class="section-number">01</span><span class="section-title">Need<small>Current capacity is available; construction changes the campus math.</small></span><span class="chevron" aria-hidden="true"></span></summary>
@@ -907,7 +916,7 @@
     <section class="view-panel ai-panel" id="ai" aria-labelledby="ai-title">
       <header class="tldr-header" id="ai-analysis">
         <p class="section-kicker">AI opinions, separate from the guide</p>
-        <h2 id="ai-title">AI Review Panel</h2>
+        <h2 id="ai-title">What do AI models think?</h2>
         <p class="lede">We asked four AI models to reason carefully through all the data available to them and say which outcome the evidence better supports. Each answer is the model’s assessment: its reading of the evidence, not a vote or advice. A human organizer set the ground rules only and did not lean the models toward any outcome.</p>
         <p class="panel-transparency">Every document, prompt and model output is on <a href="https://github.com/daverynties/egr-finance-data/tree/main/reviews/parking-deck" target="_blank" rel="noopener noreferrer">GitHub</a>, so you can run your own analysis. The goal is full transparency: the models assessed only the context they were given.</p>
       </header>
@@ -1107,7 +1116,7 @@
         <ul class="sources sources-plain">
           <li id="ai1"><div><b>Fact-check of this page (207 claims)</b><span class="src-meta">Oct. 8, 2026 · Codex (gpt-6.1-sol), AI-generated</span>Secondary. Checked the page’s claims against the record; used to find and fix errors. <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/codex-factcheck-2026-10-08.md" target="_blank" rel="noopener noreferrer">Open on GitHub</a>.</div></li>
           <li id="ai2"><div><b>Page anomaly audit and spot-check notes</b><span class="src-meta">Oct. 8, 2026 · Codex and Grok, AI-generated</span>Secondary. Flagged math, link and wording problems; used to find and fix errors. <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/codex-anomalies-2026-10-08.md" target="_blank" rel="noopener noreferrer">Audit</a>, <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/anomalies-verification-notes.md" target="_blank" rel="noopener noreferrer">spot-check</a>.</div></li>
-          <li id="ai3"><div><b>Independent assessment write-ups</b><span class="src-meta">Oct. 8, 2026 · Codex and Grok, AI-generated</span>Secondary. Basis for the Codex and Grok cards in the “AI Review Panel” tab. <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-codex-gpt-6.1-sol.md" target="_blank" rel="noopener noreferrer">Codex</a>, <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-grok-bot.md" target="_blank" rel="noopener noreferrer">Grok</a>, <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-comparison.md" target="_blank" rel="noopener noreferrer">comparison</a>.</div></li>
+          <li id="ai3"><div><b>Independent assessment write-ups</b><span class="src-meta">Oct. 8, 2026 · Codex and Grok, AI-generated</span>Secondary. Basis for the Codex and Grok cards in the “What do AI models think?” tab. <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-codex-gpt-6.1-sol.md" target="_blank" rel="noopener noreferrer">Codex</a>, <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-grok-bot.md" target="_blank" rel="noopener noreferrer">Grok</a>, <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-comparison.md" target="_blank" rel="noopener noreferrer">comparison</a>.</div></li>
           <li id="ai4"><div><b>Claude assessment of the record</b><span class="src-meta">Oct. 2026 · Claude (claude-opus-5-5), AI-generated</span>Secondary. Basis for the Claude card. <span class="no-copy">No public copy available</span>.</div></li>
           <li id="ai5"><div><b>Research summary (dossier) for this guide</b><span class="src-meta">Oct. 2026 · Prepared with AI assistance for this guide</span>Secondary. Collected news and record excerpts; any fact used on the page is cited to its original source above. <span class="no-copy">No public copy available</span>.</div></li>
         </ul>
@@ -1115,7 +1124,7 @@
       <section class="source-group" id="src-panel" aria-labelledby="src-panel-h">
         <h3 id="src-panel-h">AI review panel files <span class="secondary-tag">Secondary</span></h3>
         <ul class="sources sources-plain">
-          <li id="panel1"><div><b>Joint Recommendation of the AI Review Panel</b><span class="src-meta">Oct. 8–9, 2026 · Grok, Claude (claude-opus-5-5), Codex (gpt-6.1-sol)</span>The signed joint text, shown in full in the “AI Review Panel” tab. <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/council/joint-recommendation.md" target="_blank" rel="noopener noreferrer">Open on GitHub</a>.</div></li>
+          <li id="panel1"><div><b>Joint Recommendation of the AI Review Panel</b><span class="src-meta">Oct. 8–9, 2026 · Grok, Claude (claude-opus-5-5), Codex (gpt-6.1-sol)</span>The signed joint text, shown in full in the “What do AI models think?” tab. <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/council/joint-recommendation.md" target="_blank" rel="noopener noreferrer">Open on GitHub</a>.</div></li>
           <li id="panel2"><div><b>Round-by-round panel files</b><span class="src-meta">Oct. 8–9, 2026 · Grok, Claude, Codex</span>Round 1 memos, Round 2 responses, the joint draft, sign-offs and prompts. <a href="https://github.com/daverynties/egr-finance-data/tree/main/reviews/parking-deck/council" target="_blank" rel="noopener noreferrer">Open folder on GitHub</a>.</div></li>
         </ul>
       </section>
@@ -1126,7 +1135,7 @@
     <footer>
       <p>Built by an East Grand Rapids resident. Self-funded. Not affiliated with the City of East Grand Rapids, EGR Public Schools, or any campaign.</p>
       <p>Figures marked “inferred” are this guide’s calculations from cited sources, with assumptions stated alongside; they are not stated in any source. Last reviewed October 12, 2026.</p>
-      <p class="footer-ai-note">The “AI Review Panel” tab contains AI model opinions and an AI exercise, not facts or advice. The rest of this guide reports sourced facts and labeled calculations.</p>
+      <p class="footer-ai-note">The “What do AI models think?” tab contains AI model opinions and an AI exercise, not facts or advice. The rest of this guide reports sourced facts and labeled calculations.</p>
     </footer>
   </main>
 
