@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <script>document.documentElement.dataset.theme = 'light';</script>
+  <meta name="description" content="Revenue, spending, fund balance and building-level per-pupil spending for every Michigan public school district and charter school, 2024–25. Sourced from state financial reports." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://egr-finance.vercel.app/michigan-schools/" />
+  <meta property="og:title" content="Michigan School Finance Explorer, 2024–25" />
+  <meta property="og:description" content="Every Michigan school district's revenue, spending per pupil, fund balance and building-level spending, from state financial reports. East Grand Rapids Public Schools featured." />
+  <meta property="og:image" content="https://egr-finance.vercel.app/assets/share-card.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:," />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="data/districts.json" as="fetch" crossorigin>
+  <title>Michigan School Finance Explorer, 2024–25</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f4f7f9;
+      --surface: #ffffff;
+      --surface-2: #eaf0f3;
+      --ink: #162a38;
+      --muted: #405563;
+      --line: #c7d3da;
+      --navy: #083f60;
+      --navy-2: #084c70;
+      --panel: #083f60;
+      --teal: #086e66;
+      --green: #1e6848;
+      --amber: #80520c;
+      --sky: #3f83a8;
+      --soft-blue: #dcebf3;
+      --soft-amber: #f5e7cc;
+      --soft-green: #dbece3;
+      --shadow: 0 16px 50px rgba(14, 42, 58, .08);
+      --radius-s: 8px;
+      --radius-m: 14px;
+      --radius-l: 24px;
+    }
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --bg: #101820;
+      --surface: #18232c;
+      --surface-2: #22313c;
+      --ink: #f2f6f8;
+      --muted: #bdcbd3;
+      --line: #425562;
+      --navy: #8fd4f4;
+      --navy-2: #9edcf6;
+      --panel: #0b3a57;
+      --teal: #6dd7c8;
+      --green: #85d8ac;
+      --amber: #f1c574;
+      --sky: #83c9ec;
+      --soft-blue: #203b4b;
+      --soft-amber: #3b321f;
+      --soft-green: #203a31;
+      --shadow: 0 16px 50px rgba(0, 0, 0, .3);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 400 17px/1.55 "Source Sans 3", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    button, input { font: inherit; }
+    a { color: var(--navy-2); text-underline-offset: 3px; }
+    button { color: inherit; }
+    .wrap { width: min(1160px, calc(100% - 36px)); margin: 0 auto; }
+    .skip { position: fixed; left: 12px; top: -60px; z-index: 99; padding: 10px 14px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-s); }
+    .skip:focus { top: 12px; }
+    .jumpbar {
+      position: sticky; top: 0; z-index: 20;
+      border-bottom: 1px solid color-mix(in srgb, var(--line) 75%, transparent);
+      background: color-mix(in srgb, var(--bg) 92%, transparent);
+      backdrop-filter: blur(12px);
+    }
+    .jumpbar .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 7px 16px; padding: 9px 0; }
+    .jumpbar a { text-decoration: none; color: var(--muted); font-size: .86rem; font-weight: 600; }
+    .jumpbar a:hover, .jumpbar a:focus { color: var(--navy); }
+    .nav-brand { display: flex; flex: 0 0 auto; align-items: center; gap: 10px; }
+    .nav-mark { display: grid; width: 30px; height: 34px; flex: 0 0 auto; place-items: center; color: var(--navy); font-family: "Source Sans 3", sans-serif; font-size: 2rem; font-weight: 700; line-height: 1; }
+    .nav-title { color: var(--ink); font-size: .86rem; font-weight: 700; white-space: nowrap; }
+    .nav-links { display: flex; flex-wrap: wrap; align-items: center; gap: 7px 16px; }
+    .nav-toggle { display: none; border: 0; background: transparent; padding: 2px 0; align-items: center; justify-content: space-between; font-weight: 700; cursor: pointer; }
+    .theme-toggle { display: grid; flex: 0 0 auto; width: 38px; height: 38px; place-items: center; border: 1px solid var(--line); border-radius: 50%; background: var(--surface); color: var(--navy); cursor: pointer; }
+    .theme-toggle:hover { background: var(--surface-2); }
+    .theme-toggle svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
+    .theme-toggle .icon-sun { display: none; }
+    :root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+    :root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+    .nav-toggle-icon, .nav-toggle-icon::before, .nav-toggle-icon::after { display: block; width: 20px; height: 2px; background: currentColor; content: ""; transition: transform .2s ease, opacity .2s ease; }
+    .nav-toggle-icon { position: relative; }
+    .nav-toggle-icon::before { position: absolute; top: -6px; }
+    .nav-toggle-icon::after { position: absolute; top: 6px; }
+    .nav-toggle[aria-expanded="true"] .nav-toggle-icon { background: transparent; }
+    .nav-toggle[aria-expanded="true"] .nav-toggle-icon::before { top: 0; transform: rotate(45deg); }
+    .nav-toggle[aria-expanded="true"] .nav-toggle-icon::after { top: 0; transform: rotate(-45deg); }
+    .freshness { margin-left: auto; color: var(--muted); font: 500 .72rem/1.2 "IBM Plex Mono", monospace; }
+    .hero { padding: clamp(68px, 10vw, 126px) 0 52px; }
+    .eyebrow { color: var(--navy-2); font: 500 .78rem/1.2 "IBM Plex Mono", monospace; letter-spacing: .08em; text-transform: uppercase; }
+    .hero-kicker { display: flex; align-items: center; gap: 12px; }
+    .hero-seal { width: 38px; height: 38px; flex: 0 0 auto; object-fit: cover; border-radius: 50%; }
+    h1 { max-width: 790px; margin: 17px 0 26px; font-size: clamp(2.7rem, 7vw, 6.25rem); line-height: .96; letter-spacing: -.055em; font-weight: 650; }
+    .hero-grid { display: grid; grid-template-columns: 1.35fr .65fr; gap: 60px; align-items: end; }
+    .hero-copy { max-width: 620px; color: var(--muted); font-size: clamp(1.1rem, 2vw, 1.35rem); }
+    .big-number { color: var(--navy); font-size: clamp(4rem, 10vw, 8.4rem); line-height: .8; letter-spacing: -.065em; font-weight: 700; white-space: nowrap; }
+    .big-number small { display: block; margin-top: 25px; color: var(--muted); font-size: .95rem; line-height: 1.4; letter-spacing: 0; font-weight: 500; }
+    .delta { display: inline-flex; align-items: center; gap: 8px; margin-top: 14px; color: var(--green); font-weight: 650; }
+    .delta::before { content: "↓"; }
+    .definition { margin-top: 22px; color: var(--muted); font-size: .88rem; max-width: 58ch; }
+    .scale-strip { margin: 46px 0 0; display: flex; height: 13px; overflow: hidden; border-radius: 2px; background: var(--line); }
+    .scale-strip span { min-width: 2px; transition: flex .45s ease; }
+    .section { padding: 90px 0; }
+    .section + .section { border-top: 1px solid var(--line); }
+    .section-head { display: grid; grid-template-columns: 1fr .9fr; gap: 46px; align-items: end; margin-bottom: 38px; }
+    h2 { margin: 0; max-width: 680px; font-size: clamp(2.25rem, 5vw, 4.5rem); line-height: 1; letter-spacing: -.045em; font-weight: 650; }
+    h3 { margin: 0; font-size: 1.2rem; line-height: 1.15; }
+    .lede { margin: 0; color: var(--muted); font-size: 1.08rem; max-width: 62ch; }
+    footer { padding: 36px 0 70px; border-top: 1px solid var(--line); color: var(--muted); font-size: .82rem; }
+    .hero { padding: clamp(48px, 8vw, 96px) 0 34px; }
+    h1 { font-size: clamp(2.5rem, 6vw, 5rem); }
+    .section { padding: 58px 0; }
+    .src { display: block; margin-top: 10px; color: var(--muted); font: 500 .72rem/1.45 "IBM Plex Mono", monospace; }
+    .src a { color: inherit; }
+    .mono { font-family: "IBM Plex Mono", monospace; font-weight: 500; }
+    .stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 30px; }
+    .stat-row > div { padding: 20px 22px; background: var(--surface); }
+    .stat-row strong { display: block; margin-top: 8px; color: var(--navy); font-size: clamp(1.7rem, 3.4vw, 2.4rem); line-height: 1; letter-spacing: -.03em; }
+    .stat-row span.sub { display: block; margin-top: 6px; color: var(--muted); font-size: .88rem; }
+    .picker { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 0 0 22px; }
+    .picker label { font-weight: 600; }
+    .picker input, .controls input, .controls select { padding: 10px 12px; border: 1px solid var(--line); border-radius: var(--radius-s); background: var(--surface); color: var(--ink); min-width: 0; }
+    .picker input { flex: 1 1 280px; max-width: 460px; }
+    .featured-tag { display: inline-block; margin-left: 8px; padding: 2px 8px; border-radius: 999px; background: var(--soft-green); color: var(--green); font: 500 .7rem/1.6 "IBM Plex Mono", monospace; letter-spacing: .05em; text-transform: uppercase; vertical-align: middle; }
+    .d-title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin-bottom: 6px; }
+    .d-title h2 { font-size: clamp(1.9rem, 4.4vw, 3.3rem); max-width: none; }
+    .d-meta { color: var(--muted); margin: 0 0 22px; }
+    .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+    .card { padding: 22px; background: var(--surface); }
+    .card strong { display: block; margin: 9px 0 8px; color: var(--navy); font-size: clamp(1.8rem, 3.4vw, 2.5rem); line-height: .95; letter-spacing: -.035em; }
+    .card p { margin: 0; color: var(--muted); font-size: .9rem; }
+    .card .pct { display: block; margin-top: 8px; color: var(--ink); font-size: .88rem; font-weight: 600; }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 34px; }
+    .panel-box { padding: 24px; background: var(--surface); border: 1px solid var(--line); }
+    .panel-box h3 { margin-bottom: 6px; }
+    .panel-box > p { margin: 0 0 14px; color: var(--muted); font-size: .92rem; }
+    .mix { display: flex; height: 18px; overflow: hidden; border-radius: 2px; background: var(--line); margin: 10px 0 12px; }
+    .mix i { display: block; height: 100%; }
+    .legend { display: grid; gap: 6px; font-size: .92rem; }
+    .legend div { display: flex; justify-content: space-between; gap: 10px; }
+    .legend b { font-weight: 600; }
+    .sw { display: inline-block; width: 11px; height: 11px; margin-right: 7px; border-radius: 2px; vertical-align: -1px; }
+    .bars { display: grid; gap: 12px; }
+    .bar-row { display: grid; grid-template-columns: minmax(120px, 1fr) 1.4fr auto; gap: 12px; align-items: center; font-size: .92rem; }
+    .bar-row.sub { font-size: .86rem; color: var(--muted); }
+    .bar-row.sub .bar-name { padding-left: 14px; }
+    .bar-track { position: relative; height: 10px; background: var(--surface-2); }
+    .bar-track i { display: block; height: 100%; background: var(--teal); }
+    .bar-track em { position: absolute; top: -4px; bottom: -4px; width: 2px; background: var(--amber); }
+    .bar-val { min-width: 92px; text-align: right; font: 500 .8rem/1.3 "IBM Plex Mono", monospace; color: var(--navy); }
+    .bar-val small { display: block; color: var(--muted); }
+    .key { margin-top: 12px; color: var(--muted); font-size: .82rem; }
+    .key .k-med { display: inline-block; width: 2px; height: 12px; background: var(--amber); margin: 0 6px 0 0; vertical-align: -1px; }
+    .tbl-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--line); background: var(--surface); }
+    table.t { width: 100%; border-collapse: collapse; font-size: .9rem; }
+    table.t th, table.t td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
+    table.t th:first-child, table.t td:first-child { text-align: left; white-space: normal; min-width: 180px; }
+    table.t thead th { position: sticky; top: 0; background: var(--surface-2); font-size: .8rem; font-weight: 700; color: var(--ink); }
+    table.t thead th button { all: unset; cursor: pointer; }
+    table.t thead th button:focus-visible { outline: 2px solid var(--navy); }
+    table.t thead th[aria-sort="ascending"] button::after { content: " ▲"; font-size: .7em; }
+    table.t thead th[aria-sort="descending"] button::after { content: " ▼"; font-size: .7em; }
+    table.t td.num { font-family: "IBM Plex Mono", monospace; font-size: .82rem; }
+    table.t tr.sel td { background: var(--soft-blue); font-weight: 600; }
+    table.t tr.medrow td { color: var(--muted); font-style: italic; background: var(--bg); }
+    table.t td a, table.t td button.lnk { color: var(--navy); }
+    button.lnk { border: 0; padding: 0; background: none; text-align: left; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; font: inherit; }
+    .sub-name { display: block; color: var(--muted); font-size: .8rem; }
+    .controls { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }
+    .controls input { flex: 1 1 240px; }
+    .count { margin: 0 0 10px; color: var(--muted); font-size: .88rem; }
+    .tbl-scroll { max-height: 70vh; overflow: auto; }
+    .note { margin-top: 18px; padding: 18px 20px; background: var(--soft-blue); color: var(--muted); font-size: .92rem; }
+    .note strong { color: var(--ink); }
+    .notes-list { margin: 0; padding-left: 20px; color: var(--muted); }
+    .notes-list li { margin-bottom: 10px; }
+    .notes-list strong { color: var(--ink); }
+    .back { display: inline-block; margin-bottom: 14px; font-weight: 600; }
+    @media (max-width: 900px) {
+      .cards { grid-template-columns: 1fr 1fr; }
+      .grid2 { grid-template-columns: 1fr; }
+      .section-head { grid-template-columns: 1fr; gap: 14px; }
+    }
+    @media (max-width: 620px) {
+      .freshness { display: none; }
+      .stat-row { grid-template-columns: 1fr; }
+      .cards { grid-template-columns: 1fr; }
+      .bar-row { grid-template-columns: 1fr auto; }
+      .bar-row .bar-track { grid-column: 1 / -1; grid-row: 2; }
+      .section { padding: 42px 0; }
+      table.t { font-size: .84rem; }
+      table.t th, table.t td { padding: 9px 8px; }
+      .hide-sm { display: none; }
+    }
+  </style>
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<nav class="jumpbar" aria-label="Page sections">
+  <div class="wrap">
+    <a class="nav-brand" href="/" style="text-decoration:none">
+      <span class="nav-mark" role="img" aria-label="East Grand Rapids E mark">E</span>
+      <span class="nav-title">East Grand Rapids City Spending</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#district">District</a><a href="#all">All districts</a><a href="#notes">Notes &amp; sources</a><a href="/">EGR city &amp; schools</a>
+    </div>
+    <span class="freshness">Data: 2024–25 school year</span>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 15.7A9 9 0 0 1 8.3 3.7 9 9 0 1 0 20.3 15.7Z"></path></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path></svg>
+    </button>
+  </div>
+</nav>
+<main id="content">
+  <section class="hero wrap" id="top">
+    <span class="eyebrow">Michigan school finance · 2024–25</span>
+    <h1>Every Michigan school district, by the numbers.</h1>
+    <p class="hero-copy">Revenue, spending per student, savings and building-level spending for all <span id="nDist">821</span> Michigan public school districts and charter schools, from the state's own financial reports. Pick any district to see how it compares with its neighbors and the state. East Grand Rapids Public Schools is shown first.</p>
+    <div class="stat-row" id="stateStats" aria-live="polite"></div>
+    <span class="src">Sources: Michigan Department of Education, <a href="https://www.michigan.gov/mde/services/financial-management/state-aid/publications/bulletin-1014-michigan-public-schools-ranked-by-select-financial-information" target="_blank" rel="noopener">Bulletin 1014</a> and <a href="https://mdoe.state.mi.us/SAMSPublic/Reports/others/25_Bulletin1011Export.xlsx">Bulletin 1011</a> (2024–25); CEPI / MI School Data <a href="https://www.mischooldata.org/school-level-expenditure-report/" target="_blank" rel="noopener">School-Level Expenditure</a> file (2024–25). Details in <a href="#notes">Notes &amp; sources</a>.</span>
+  </section>
+
+  <section class="section wrap" id="district">
+    <div class="picker">
+      <label for="pick">Choose a district</label>
+      <input id="pick" list="distList" placeholder="Type a district or charter school name" autocomplete="off" />
+      <datalist id="distList"></datalist>
+    </div>
+    <div id="detail" aria-live="polite"><p class="lede">Loading district data…</p></div>
+  </section>
+
+  <section class="section wrap" id="all">
+    <div class="section-head">
+      <h2>All districts.</h2>
+      <p class="lede">Search, filter and sort every district. Click a column heading to sort; click a name to open that district above. Figures are General Fund, per pupil, 2024–25.</p>
+    </div>
+    <div class="controls">
+      <input id="q" type="search" placeholder="Search by name" aria-label="Search districts by name" />
+      <select id="fCounty" aria-label="Filter by county"><option value="">All counties</option></select>
+      <select id="fType" aria-label="Filter by type"><option value="">All types</option><option>Traditional</option><option>Charter (PSA)</option></select>
+    </div>
+    <p class="count" id="allCount"></p>
+    <div class="tbl-wrap tbl-scroll">
+      <table class="t" id="allTable">
+        <thead><tr>
+          <th scope="col" data-k="name"><button type="button">District</button></th>
+          <th scope="col" data-k="fte"><button type="button">Students (FTE)</button></th>
+          <th scope="col" data-k="rev" class="hide-sm"><button type="button">Total revenue</button></th>
+          <th scope="col" data-k="revpp"><button type="button">Revenue / pupil</button></th>
+          <th scope="col" data-k="exppp"><button type="button">Spending / pupil</button></th>
+          <th scope="col" data-k="locsh" class="hide-sm"><button type="button">Local share</button></th>
+          <th scope="col" data-k="stsh" class="hide-sm"><button type="button">State share</button></th>
+          <th scope="col" data-k="fbpct" class="hide-sm"><button type="button">Fund balance % of spending</button></th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section wrap" id="notes">
+    <div class="section-head">
+      <h2>Notes &amp; sources.</h2>
+      <p class="lede">All figures are as reported by the state for the 2024–25 school year. Nothing here is adjusted, estimated or ranked by this site beyond simple medians and percentiles.</p>
+    </div>
+    <ul class="notes-list">
+      <li><strong>Revenue and spending per pupil</strong> are General Fund figures from MDE <a href="https://www.michigan.gov/mde/services/financial-management/state-aid/publications/bulletin-1014-michigan-public-schools-ranked-by-select-financial-information" target="_blank" rel="noopener">Bulletin 1014</a> (<a href="https://mdoe.state.mi.us/SAMSPublic/Reports/others/25_Bulletin1014Export.xlsx">2024–25 data file</a>), divided by the district's fall pupil count (FTE). They exclude debt, building and other separate funds, so bond-funded construction does not appear here.</li>
+      <li><strong>Local / state / federal shares</strong> are Bulletin 1014's revenue categories. "Local" includes property taxes and money received from the intermediate school district (ISD) and other Michigan public sources. Charter schools cannot levy property taxes, so their local share is usually small.</li>
+      <li><strong>Spending by area</strong> uses Bulletin 1014's function totals. Support services include administration, operations and maintenance, transportation, pupil and instructional-staff support and other services. "Other" is total General Fund spending minus instruction and support services (for example community services, capital outlay and transfers).</li>
+      <li><strong>Fund balance</strong> is the ending General Fund balance from MDE <a href="https://mdoe.state.mi.us/SAMSPublic/Reports/others/25_Bulletin1011Export.xlsx">Bulletin 1011</a> (2024–25), shown as a share of that year's total General Fund expenditures and transfers out.</li>
+      <li><strong>Building-level spending</strong> comes from CEPI's <a href="https://www.mischooldata.org/school-level-expenditure-report/" target="_blank" rel="noopener">School-Level Expenditure Report</a> (<a href="https://www.michigan.gov/cepi/-/media/Project/Websites/cepi/MISchoolData/2024-25/25-Port-74vSchool-Level-Expend-Download-File.csv">2024–25 download file</a>). It covers all funds except state-defined exclusions, so it is not directly comparable to the General Fund figures. "Districtwide" spending is not tied to a building and is split equally per pupil across all of a district's buildings.</li>
+      <li><strong>District type.</strong> Charter schools (public school academies, PSAs) are identified by their state district code (codes ending 700–799 or 900–999). ISD names come from CEPI's <a href="https://www.mischooldata.org/financial-data-files/" target="_blank" rel="noopener">2024–25 Financial Information Database</a> revenue file.</li>
+      <li><strong>Medians and percentiles</strong> count each district once, regardless of size. "Higher than X%" means the share of the 821 districts with a lower value. Very small districts and online charter schools can have unusual per-pupil figures.</li>
+      <li><strong>Missing:</strong> the 2024–25 bundle on MI School Data's Financial Data Files page contains revenue, balance-sheet and ESP files but not the detailed expenditure file, so spending by object (salaries, benefits, purchased services) is not shown yet. Building-level figures cover all buildings the state reports; some districts report few or none.</li>
+    </ul>
+    <p class="note"><strong>Independent resident project.</strong> Not affiliated with any school district, the State of Michigan, or any campaign. Spot an error? See <a href="/#feedback">feedback</a> on the main page.</p>
+  </section>
+</main>
+<footer><div class="wrap"><p>Built by an East Grand Rapids resident. Self-funded. Data: Michigan Department of Education and CEPI, 2024–25. Page built <span id="built"></span>.</p></div></footer>
+<script>
+(function(){
+  const root=document.documentElement, themeToggle=document.getElementById('themeToggle');
+  function setTheme(t){root.dataset.theme=t;const n=t==='dark'?'light':'dark';themeToggle.setAttribute('aria-label',`Switch to ${n} mode`);themeToggle.title=`Switch to ${n} mode`;}
+  setTheme(root.dataset.theme||'light');
+  themeToggle.addEventListener('click',()=>setTheme(root.dataset.theme==='dark'?'light':'dark'));
+})();
+(function(){
+  const FEATURED='41090';
+  const $=s=>document.querySelector(s);
+  const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const usd=v=>v==null?'—':'$'+Math.round(v).toLocaleString('en-US');
+  const big=v=>v==null?'—':(Math.abs(v)>=1e6?'$'+(v/1e6).toFixed(1)+'M':usd(v));
+  const num=v=>v==null?'—':Math.round(v).toLocaleString('en-US');
+  const pct=v=>v==null?'—':(v*100).toFixed(1)+'%';
+  let D=[], S={}, byCode={}, B=null, sortK='fte', sortDir=-1, nbSortK='fte', nbSortDir=-1;
+  function median(a){a=a.filter(v=>v!=null).sort((x,y)=>x-y);if(!a.length)return null;const m=a.length>>1;return a.length%2?a[m]:(a[m-1]+a[m])/2}
+  function pctile(k,v){if(v==null)return null;const a=D.filter(d=>d[k]!=null);return Math.round(100*a.filter(d=>d[k]<v).length/a.length)}
+  function peers(d){const g=d.isd?D.filter(x=>x.isd===d.isd):D.filter(x=>x.county===d.county);return {label:d.isd||(d.county+' County'),list:g}}
+  function card(label,val,sub,k,v){const p=pctile(k,v);return `<div class="card"><span class="eyebrow">${label}</span><strong>${val}</strong><p>${sub}</p>${p==null?'':`<span class="pct">Higher than ${p}% of Michigan districts</span>`}</div>`}
+  function barRows(rows,max){return rows.map(r=>`<div class="bar-row${r.sub?' sub':''}"><span class="bar-name">${r.n}</span><div class="bar-track" aria-hidden="true"><i style="width:${Math.min(100,100*(r.v||0)/max)}%"></i>${r.m!=null?`<em style="left:${Math.min(100,100*r.m/max)}%"></em>`:''}</div><span class="bar-val">${usd(r.v)}${r.m!=null?`<small>state ${usd(r.m)}</small>`:''}</span></div>`).join('')}
+  function render(code){
+    const d=byCode[code]||byCode[FEATURED]; if(!d)return;
+    const M=S.median, pg=peers(d), pm=k=>median(pg.list.map(x=>x[k]));
+    const other=d.exppp-d.instpp-d.sspp, mOther=M.exppp-M.instpp-M.sspp;
+    const max=Math.max(d.instpp,M.instpp,d.sspp,M.sspp,1);
+    const nb=pg.list.slice();
+    const h=[];
+    if(code!==FEATURED)h.push(`<a class="back" href="#d=${FEATURED}">← Back to East Grand Rapids Public Schools</a>`);
+    h.push(`<div class="d-title"><h2>${esc(d.name)}</h2>${d.code===FEATURED?'<span class="featured-tag">Featured</span>':''}</div>`);
+    h.push(`<p class="d-meta">${esc(d.type)} · ${esc(d.county)} County${d.isd?' · '+esc(d.isd):''} · District code ${esc(d.code)} · ${num(d.fte)} students (fall FTE)</p>`);
+    h.push(`<div class="cards">`+
+      card('Revenue per pupil',usd(d.revpp),`General Fund. State median ${usd(M.revpp)}; ${esc(pg.label)} median ${usd(pm('revpp'))}.`,'revpp',d.revpp)+
+      card('Spending per pupil',usd(d.exppp),`General Fund. State median ${usd(M.exppp)}; ${esc(pg.label)} median ${usd(pm('exppp'))}.`,'exppp',d.exppp)+
+      card('Total General Fund revenue',big(d.rev),`${usd(d.rev)} in 2024–25. Spending: ${usd(d.exp)}.`,null,null)+
+      card('Fund balance',pct(d.fbpct),`${usd(d.fb)} at year end, as a share of the year's spending. State median ${pct(M.fbpct)}.`,'fbpct',d.fbpct)+
+    `</div><span class="src">Sources: MDE Bulletin 1014 and Bulletin 1011, 2024–25.</span>`);
+    const mix=[['Local',d.locsh,d.locpp,'var(--navy)'],['State',d.stsh,d.stpp,'var(--teal)'],['Federal',d.fedsh,d.fedpp,'var(--amber)']];
+    h.push(`<div class="grid2"><div class="panel-box"><h3>Where the money comes from</h3><p>Share of General Fund revenue, 2024–25. State median local share: ${pct(M.locsh)}; state share: ${pct(M.stsh)}.</p>
+      <div class="mix" role="img" aria-label="Local ${pct(d.locsh)}, state ${pct(d.stsh)}, federal ${pct(d.fedsh)}">${mix.map(m=>`<i style="width:${(m[1]||0)*100}%;background:${m[3]}"></i>`).join('')}</div>
+      <div class="legend">${mix.map(m=>`<div><span><span class="sw" style="background:${m[3]}"></span>${m[0]}</span><b class="mono">${pct(m[1])} · ${usd(m[2])}/pupil</b></div>`).join('')}</div>
+      <span class="src">Source: MDE Bulletin 1014, 2024–25. "Local" includes ISD and other Michigan public sources.</span></div>
+      <div class="panel-box"><h3>Where it goes, per pupil</h3><p>General Fund spending by area, compared with the state median.</p>
+      <div class="bars">${barRows([{n:'Instruction',v:d.instpp,m:M.instpp},{n:'Support services',v:d.sspp,m:M.sspp},{n:'Administration',v:d.admpp,m:M.admpp,sub:1},{n:'Operations &amp; maintenance',v:d.opspp,m:M.opspp,sub:1},{n:'Transportation',v:d.trnpp,m:M.trnpp,sub:1},{n:'Other',v:other,m:mOther}],max)}</div>
+      <p class="key"><span class="k-med"></span>State median. Teachers: average salary ${usd(d.tsal)} (state median ${usd(M.tsal)}); ${num(d.ppt)} pupils per teacher (state median ${num(M.ppt)}).</p>
+      <span class="src">Source: MDE Bulletin 1014, 2024–25.</span></div></div>`);
+    h.push(`<div class="panel-box" style="margin-top:28px"><h3>Spending by school building</h3><p>Per-pupil spending at each building, all funds less state exclusions. Site-level spending is assigned to the building; districtwide spending is split equally per pupil across buildings.</p><div id="bldg">Loading buildings…</div><span class="src">Source: CEPI / MI School Data School-Level Expenditure file, 2024–25.</span></div>`);
+    h.push(`<div class="panel-box" style="margin-top:28px"><h3>Compared with ${esc(pg.label)} districts</h3><p>${nb.length} districts and charter schools in the same ${d.isd?'intermediate school district':'county'}. Click a heading to sort.</p><div class="tbl-wrap"><table class="t" id="nbTable"><thead><tr>
+      <th data-k="name"><button type="button">District</button></th><th data-k="fte"><button type="button">Students</button></th><th data-k="revpp"><button type="button">Revenue / pupil</button></th><th data-k="exppp"><button type="button">Spending / pupil</button></th><th data-k="locsh" class="hide-sm"><button type="button">Local share</button></th><th data-k="fbpct" class="hide-sm"><button type="button">Fund balance %</button></th></tr></thead><tbody></tbody></table></div><span class="src">Sources: MDE Bulletin 1014 and Bulletin 1011, 2024–25.</span></div>`);
+    $('#detail').innerHTML=h.join('');
+    renderNb(d,nb,pg.label);
+    $('#nbTable thead').addEventListener('click',e=>{const th=e.target.closest('th');if(!th)return;const k=th.dataset.k;if(nbSortK===k)nbSortDir*=-1;else{nbSortK=k;nbSortDir=k==='name'?1:-1}renderNb(d,nb,pg.label)});
+    loadBuildings().then(()=>renderBldg(d));
+    document.title=(d.code===FEATURED?'':d.name+' · ')+'Michigan School Finance Explorer, 2024–25';
+  }
+  function cmp(k,dir){return (a,b)=>{const x=a[k],y=b[k];if(x==null)return 1;if(y==null)return -1;return (typeof x==='string'?x.localeCompare(y):x-y)*dir}}
+  function setSortHeads(tbl,k,dir){tbl.querySelectorAll('thead th').forEach(th=>th.setAttribute('aria-sort',th.dataset.k===k?(dir>0?'ascending':'descending'):'none'))}
+  function renderNb(d,nb,label){
+    const tb=$('#nbTable tbody'), rows=nb.slice().sort(cmp(nbSortK,nbSortDir));
+    const m=k=>median(nb.map(x=>x[k]));
+    tb.innerHTML=rows.map(x=>`<tr class="${x.code===d.code?'sel':''}"><td>${x.code===d.code?esc(x.name):`<a href="#d=${x.code}">${esc(x.name)}</a>`}${x.type!=='Traditional'?'<span class="sub-name">Charter (PSA)</span>':''}</td><td class="num">${num(x.fte)}</td><td class="num">${usd(x.revpp)}</td><td class="num">${usd(x.exppp)}</td><td class="num hide-sm">${pct(x.locsh)}</td><td class="num hide-sm">${pct(x.fbpct)}</td></tr>`).join('')+
+      `<tr class="medrow"><td>${esc(label)} median</td><td class="num">${num(m('fte'))}</td><td class="num">${usd(m('revpp'))}</td><td class="num">${usd(m('exppp'))}</td><td class="num hide-sm">${pct(m('locsh'))}</td><td class="num hide-sm">${pct(m('fbpct'))}</td></tr>`+
+      `<tr class="medrow"><td>Michigan median (all ${S.count})</td><td class="num">${num(S.median.fte)}</td><td class="num">${usd(S.median.revpp)}</td><td class="num">${usd(S.median.exppp)}</td><td class="num hide-sm">${pct(S.median.locsh)}</td><td class="num hide-sm">${pct(S.median.fbpct)}</td></tr>`;
+    setSortHeads($('#nbTable'),nbSortK,nbSortDir);
+  }
+  let bP=null; function loadBuildings(){return bP||(bP=fetch('data/buildings.json').then(r=>r.json()).then(j=>{B=j}))}
+  function renderBldg(d){
+    const el=$('#bldg'); if(!el)return; const list=(B&&B[d.code])||[];
+    if(!list.length){el.innerHTML='<p class="lede">No building-level figures are reported for this district.</p>';return}
+    const rows=list.slice().sort((a,b)=>(b.total||0)-(a.total||0));
+    el.innerHTML=`<div class="tbl-wrap"><table class="t"><thead><tr><th>Building</th><th>Students</th><th class="hide-sm">Site-level</th><th class="hide-sm">Districtwide</th><th>Total per pupil</th></tr></thead><tbody>${rows.map(b=>`<tr><td>${esc(b.name)}</td><td class="num">${num(b.fte)}</td><td class="num hide-sm">${usd(b.site)}</td><td class="num hide-sm">${usd(b.dw)}</td><td class="num">${usd(b.total)}</td></tr>`).join('')}<tr class="medrow"><td>Michigan median building (${S.building_count.toLocaleString('en-US')} buildings)</td><td></td><td class="hide-sm"></td><td class="hide-sm"></td><td class="num">${usd(S.median_building_ppe)}</td></tr></tbody></table></div>`;
+  }
+  function renderAll(){
+    const q=$('#q').value.trim().toLowerCase(), c=$('#fCounty').value, t=$('#fType').value;
+    const rows=D.filter(d=>(!q||d.name.toLowerCase().includes(q))&&(!c||d.county===c)&&(!t||d.type===t)).sort(cmp(sortK,sortDir));
+    $('#allCount').textContent=`Showing ${rows.length} of ${D.length} districts.`;
+    $('#allTable tbody').innerHTML=rows.map(d=>`<tr class="${d.code===FEATURED?'sel':''}"><td><a href="#d=${d.code}">${esc(d.name)}</a><span class="sub-name">${esc(d.county)} County${d.type!=='Traditional'?' · Charter (PSA)':''}</span></td><td class="num">${num(d.fte)}</td><td class="num hide-sm">${big(d.rev)}</td><td class="num">${usd(d.revpp)}</td><td class="num">${usd(d.exppp)}</td><td class="num hide-sm">${pct(d.locsh)}</td><td class="num hide-sm">${pct(d.stsh)}</td><td class="num hide-sm">${pct(d.fbpct)}</td></tr>`).join('');
+    setSortHeads($('#allTable'),sortK,sortDir);
+  }
+  function route(){const m=location.hash.match(/^#d=(\d{5})$/);if(m){render(m[1]);$('#district').scrollIntoView({behavior:'smooth'});}}
+  fetch('data/districts.json').then(r=>r.json()).then(j=>{
+    D=j.districts;S=j.state;D.forEach(d=>byCode[d.code]=d);
+    $('#built').textContent=j.meta.built; $('#nDist').textContent=D.length;
+    $('#stateStats').innerHTML=`<div><span class="eyebrow">Districts &amp; charters</span><strong>${D.length}</strong><span class="sub">${S.count_traditional} traditional districts, ${D.length-S.count_traditional} charter schools</span></div><div><span class="eyebrow">Median revenue / pupil</span><strong>${usd(S.median.revpp)}</strong><span class="sub">General Fund, 2024–25. Statewide total ÷ all pupils: ${usd(S.weighted.revpp)}</span></div><div><span class="eyebrow">Median spending / pupil</span><strong>${usd(S.median.exppp)}</strong><span class="sub">General Fund, 2024–25. Statewide total ÷ all pupils: ${usd(S.weighted.exppp)}</span></div>`;
+    $('#distList').innerHTML=D.slice().sort((a,b)=>a.name.localeCompare(b.name)).map(d=>`<option value="${esc(d.name)}"></option>`).join('');
+    const counties=[...new Set(D.map(d=>d.county))].sort();
+    $('#fCounty').insertAdjacentHTML('beforeend',counties.map(c=>`<option>${esc(c)}</option>`).join(''));
+    const m=location.hash.match(/^#d=(\d{5})$/); render(m?m[1]:FEATURED); if(m)$('#district').scrollIntoView();
+    renderAll();
+  }).catch(()=>{$('#detail').innerHTML='<p class="lede">The district data could not be loaded. Please refresh the page.</p>'});
+  window.addEventListener('hashchange',route);
+  $('#pick').addEventListener('change',e=>{const v=e.target.value.trim().toLowerCase();const d=D.find(x=>x.name.toLowerCase()===v)||D.find(x=>x.name.toLowerCase().includes(v));if(d){location.hash='d='+d.code;e.target.value=''}});
+  ['#q','#fCounty','#fType'].forEach(s=>$(s).addEventListener('input',renderAll));
+  $('#allTable thead').addEventListener('click',e=>{const th=e.target.closest('th');if(!th)return;const k=th.dataset.k;if(sortK===k)sortDir*=-1;else{sortK=k;sortDir=k==='name'?1:-1}renderAll()});
+})();
+</script>
+</body>
+</html>

@@ -497,7 +497,6 @@
       <div class="view-tabs" role="list">
         <a class="view-tab" role="listitem" href="#front" data-view="front">Quick guide</a>
         <a class="view-tab" role="listitem" href="#full" data-view="full">Full analysis</a>
-        <a class="view-tab" role="listitem" href="#ai" data-view="ai">AI Review Panel</a>
         <a class="view-tab" role="listitem" href="#sources" data-view="sources">Sources</a>
       </div>
       <span class="freshness">Nov. 3, 2026 ballot</span>
@@ -617,7 +616,6 @@
 
       <nav class="tldr-actions" aria-label="More detail">
         <a href="#full">Full analysis</a>
-        <a href="#ai">AI Review Panel</a>
       </nav>
     </section>
 
@@ -631,7 +629,7 @@
         </nav>
         <aside class="about-guide" aria-labelledby="about-guide-title">
           <strong id="about-guide-title">About this guide</strong>
-          <p>Built from City Commission packets (April 20, June 29, July 20, and August 3), the Progressive Companies traffic memo and February 2026 follow-up, City operating-cost emails, the MFCI debt analysis, the 2025 parking study, the superintendent’s September 30 letter, and resident comment cards. Figures come from official City and school records where possible; where a figure relies on news reporting or a document posted on a campaign website, the source note says so. Figures marked “inferred” are this guide’s own calculations, with their assumptions stated alongside. AI model opinions are kept in a separate, labeled “AI Review Panel” tab and are not part of the factual guide. Built by an East Grand Rapids resident. Self-funded. Not affiliated with the City, the school district, or any campaign.</p>
+          <p>Built from City Commission packets (April 20, June 29, July 20, and August 3), the Progressive Companies traffic memo and February 2026 follow-up, City operating-cost emails, the MFCI debt analysis, the 2025 parking study, the superintendent’s September 30 letter, and resident comment cards. Figures come from official City and school records where possible; where a figure relies on news reporting or a document posted on a campaign website, the source note says so. Figures marked “inferred” are this guide’s own calculations, with their assumptions stated alongside. Built by an East Grand Rapids resident. Self-funded. Not affiliated with the City, the school district, or any campaign.</p>
         </aside>
       </header>
 <section class="summary" id="guide-summary">
@@ -861,147 +859,12 @@
 
     </section>
 
-    <section class="view-panel ai-panel" id="ai" aria-labelledby="ai-title">
-      <header class="tldr-header" id="ai-analysis">
-        <p class="section-kicker">AI opinions, separate from the guide</p>
-        <h2 id="ai-title">AI Review Panel</h2>
-        <p class="lede">We asked four AI models to reason carefully through all the data available to them and say which outcome the evidence better supports. Each answer is the model’s assessment: its reading of the evidence, not a vote or advice. A human organizer set the ground rules only and did not lean the models toward any outcome.</p>
-        <p class="panel-transparency">Every document, prompt and model output is on <a href="https://github.com/daverynties/egr-finance-data/tree/main/reviews/parking-deck" target="_blank" rel="noopener noreferrer">GitHub</a>, so you can run your own analysis. The goal is full transparency: the models assessed only the context they were given.</p>
-      </header>
-
-      <section class="tldr-block" aria-labelledby="ai-fit-title">
-        <h3 id="ai-fit-title">Each model’s assessment</h3>
-        <div class="fit-table-wrap">
-          <table class="fit-table">
-            <caption class="sr-only">Each model’s assessment</caption>
-            <thead><tr><th scope="col">Model</th><th scope="col">Model ID</th><th scope="col">Sources</th><th scope="col">Assessment</th><th scope="col">What would change it</th></tr></thead>
-            <tbody>
-            <tr><th scope="row" data-label="Model">Claude</th><td data-label="Model ID"><span class="mono">claude-opus-5-5</span></td><td data-label="Sources">Full record, incl. secondary research</td><td data-label="Assessment">No</td><td data-label="What would change it">Signed city–school agreement; itemized cost estimate</td></tr>
-            <tr><th scope="row" data-label="Model">Codex</th><td data-label="Model ID"><span class="mono">gpt-6.1-sol (high)</span></td><td data-label="Sources">Primary records only</td><td data-label="Assessment">No</td><td data-label="What would change it">Counts near the school; priced alternatives; firm budget; signed agreement</td></tr>
-            <tr><th scope="row" data-label="Model">Grok</th><td data-label="Model ID"><span class="mono">—</span></td><td data-label="Sources">Primary records only</td><td data-label="Assessment">No</td><td data-label="What would change it">Itemized cost; signed agreement on public use and upkeep; why cheaper options were ruled out</td></tr>
-            <tr><th scope="row" data-label="Model">Muse</th><td data-label="Model ID"><span class="mono">Muse Spark 1.3</span></td><td data-label="Sources">This guide and its sources</td><td data-label="Assessment">No</td><td data-label="What would change it">Signed agreement and itemized costs before a later vote</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="tldr-note">The models did not all see the same material. Agreement among them does not prove they are right.</p>
-        <div class="ai-cards">
-          <article class="ai-card" aria-labelledby="ai-claude">
-            <div class="ai-card-head">
-              <h4 id="ai-claude">Claude</h4>
-              <span class="fit-pill"><span class="fit-pill-label">Assessment</span> No</span>
-            </div>
-            <p class="ai-model"><span class="mono">claude-opus-5-5</span> (Anthropic)</p>
-            <p><span class="ai-label">Why</span>The City’s own traffic consultant said to try cheaper fixes first, and nothing important is signed yet, so approving $9 million now comes before the answers.</p>
-            <p><span class="ai-label">What would change it</span>A signed city–school agreement and an itemized cost estimate.</p>
-            <p class="ai-small">Sources used: <a href="#src-official">official records</a>, <a href="#src-news">news</a> and the <a href="#ai5">research summary</a>, including secondary research.</p>
-            <p class="ai-small"><a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/opinions/claude.md" target="_blank" rel="noopener noreferrer">Read full opinion on GitHub →<span class="sr-only"> (Claude, opens in a new tab)</span></a></p>
-          </article>
-          <article class="ai-card" aria-labelledby="ai-codex">
-            <div class="ai-card-head">
-              <h4 id="ai-codex">Codex</h4>
-              <span class="fit-pill"><span class="fit-pill-label">Assessment</span> No</span>
-            </div>
-            <p class="ai-model"><span class="mono">gpt-6.1-sol</span> (OpenAI), high reasoning effort</p>
-            <p><span class="ai-label">Why</span>The counts show a real loss of school parking but not a broad shortage, and no one has shown that a 240-space deck is the best fix for the price.</p>
-            <p><span class="ai-label">What would change it</span>Parking counts near the school, a priced comparison of other options, a firm budget and a signed agreement.</p>
-            <p class="ai-small">Sources used: <a href="#src-official">primary records only</a>.</p>
-            <p class="ai-small"><a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/opinions/codex.md" target="_blank" rel="noopener noreferrer">Read full opinion on GitHub →<span class="sr-only"> (Codex, opens in a new tab)</span></a></p>
-          </article>
-          <article class="ai-card" aria-labelledby="ai-grok">
-            <div class="ai-card-head">
-              <h4 id="ai-grok">Grok</h4>
-              <span class="fit-pill"><span class="fit-pill-label">Assessment</span> No</span>
-            </div>
-            <p><span class="ai-label">Why</span>The campus problem is real but small, the City’s consultant ranked a deck last, and there is no itemized cost or signed agreement.</p>
-            <p><span class="ai-label">What would change it</span>An itemized cost, a signed agreement on public use and upkeep, and a reason the cheaper options were ruled out.</p>
-            <p class="ai-small">Sources used: <a href="#src-official">primary records only</a>, the same set as Codex.</p>
-            <p class="ai-small"><a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/opinions/grok.md" target="_blank" rel="noopener noreferrer">Read full opinion on GitHub →<span class="sr-only"> (Grok, opens in a new tab)</span></a></p>
-          </article>
-          <article class="ai-card" aria-labelledby="ai-muse">
-            <div class="ai-card-head">
-              <h4 id="ai-muse">Muse</h4>
-              <span class="fit-pill"><span class="fit-pill-label">Assessment</span> No</span>
-            </div>
-            <p class="ai-model">Muse Spark 1.3 (Meta)</p>
-            <p><span class="ai-label">Why</span>Voters are asked to approve $9 million before the key terms are in writing, so “not yet” fits the evidence better.</p>
-            <p><span class="ai-label">What would change it</span>A signed agreement and itemized costs before a later vote, which could come as soon as May 2027.</p>
-            <p class="ai-small">Muse also built this guide, so its view is not independent of how the guide is written.</p>
-            <p class="ai-small">Sources used: <a href="#sources">this guide and the sources it cites</a>.</p>
-            <p class="ai-small">Muse did not produce a longer write-up.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="tldr-block ai-process" aria-labelledby="ai-how-title">
-        <h3 id="ai-how-title">How this was created</h3>
-        <ol>
-              <li>Each model wrote its own decision memo, as if leading the city, from the same inputs: the primary records plus the research and fact-checks done for this guide. None saw the others’ memos.</li>
-              <li>Each read all three memos and replied with agreements, disagreements and a revised position.</li>
-              <li>Grok drafted a joint text. Claude and Codex each reviewed it once and proposed edits, which were added.</li>
-              <li>Each model was limited to three runs.</li>
-            </ol>
-        <p>Muse was not on the panel.</p>
-        <div class="oversight-note">
-          <h3 id="ai-oversight-title">Human oversight: process only</h3>
-          <p><strong>Human involvement was oversight only: setting the rules and format. The organizer took no position and did not steer any model toward Yes or No.</strong> The organizer, an East Grand Rapids resident, did not write or edit any model’s conclusions or the joint text. The rules: each panel model reasons on its own from the same set of records without seeing the others’ views, primary sources come first, there are no confidence scores, and each model gives an assessment of the evidence instead of a vote. The organizer chose the question and the format: what would you do if you ran the city? Grok ran the process and drafted the joint text, which Claude and Codex reviewed.</p>
-        </div>
-      </section>
-
-      <p class="panel-reminder">Written and signed by the AI models. The human organizer did not edit it or take a side.</p>
-      <article class="resolution" aria-labelledby="resolution-title">
-        <p class="resolution-kind">AI exercise, not advice, not an official City document</p>
-        <h3 id="resolution-title">Joint Recommendation of the AI Review Panel on the Bagley Parking Deck Bond Proposal</h3>
-        <p class="resolution-meta">Adopted October 8–9, 2026 · Regarding the $9 million Public Parking Facility and Pedestrian Safety Bond Proposal, November 3, 2026 ballot</p>
-        <p class="resolution-meta"><strong>Panel:</strong> Grok; Claude (<code>claude-opus-5-5</code>); Codex (<code>gpt-6.1-sol</code>, high reasoning)</p>
-        <h4>Findings</h4>
-          <ol class="resolution-list">
-            <li>The high-school expansion removes 71 campus spaces, and about 65 spaces remain on campus during 2028–2030 construction.<a class="cite" href="#s5">5</a><a class="cite" href="#s18">18</a></li>
-            <li>At the busiest 2025 hour, 371 of 1,310 area spaces were empty, but school lots reached 86.8% on one Saturday, so spare spaces elsewhere do not prove convenient parking at the school.<a class="cite" href="#s8">8</a></li>
-            <li>The City’s traffic consultant ranked a structure last, after on-street parking and the middle-school lot. The Feb. 4, 2026 follow-up says some options “may not be feasible” but names none.<a class="cite" href="#s5">5</a></li>
-            <li>No City–school agreement is signed. Free public use is promised in writing only for school-event attendees, and no operating budget line exists.<a class="cite" href="#s18">18</a><a class="cite" href="#s6">6</a></li>
-            <li>Deck-only estimates run from $15.25 million (plain concrete, 2026 dollars) to $18.11 million (brick, 2028 dollars). The $9 million plus about $7 million covers the low option and falls up to about $2.1 million short of the high one (panel’s arithmetic).<a class="cite" href="#s1">1</a><a class="cite" href="#s21">21</a></li>
-          </ol>
-
-          <h4>Recommendation</h4>
-          <p>The Panel recommends that the certified question go to voters on November 3. The City should sell no bonds and award no construction contract until every condition below is met. Borrowing should be sized to the bids, and the City Attorney should confirm the chosen project fits what voters approved. Whatever the vote, the City and schools should deliver a 2028–2030 student-access plan.</p>
-
-          <h4>Conditions</h4>
-          <ol class="resolution-list">
-            <li>A signed City–school agreement covering the cost split, a cap on the City’s share, school responsibility for its own overruns, the split of running and reserve costs, enforceable public hours with no-fee public use, and the 3-foot right-of-way.</li>
-            <li>A published itemized estimate and real bids, with borrowing limited to what the bids require.</li>
-            <li>A priced side-by-side comparison: a two-level deck, the plain-concrete Option 5, the middle-school lot, on-street management plus busing, and a no-deck alternative. Any brick upgrade is paid by the schools.</li>
-            <li>A funded 20-year running and reserve budget. The record supports about $56,000–$147,000 a year; the long-term repair reserve still needs an engineer’s estimate.</li>
-            <li>The schools’ contribution confirmed, plus a priced list of the walking and biking projects.</li>
-            <li>An exit and queue design for the 30–60 minute after-school load-out, and a construction schedule measured against 2028–2030.</li>
-          </ol>
-
-          <h4>If the measure fails</h4>
-          <p>By December 15, 2026, the City Manager and the schools deliver a funded access plan that follows the engineer’s sequence: on-street parking, then the middle-school lot. Any new ballot measure waits until the conditions are met, and no earlier than May 2027. (If it passes, the comparison, a draft agreement and a student survey are due by January 31, 2027.)</p>
-
-          <h4>Recorded differences</h4>
-          <ul class="resolution-list">
-            <li><strong>What to call it.</strong> Codex preferred calling it a “pause, alternatives first.” Claude and Grok preferred “proceed with conditions.” The text sets the substance and uses neither label.</li>
-            <li><strong>Default size.</strong> Claude preferred a two-level, plain-concrete deck by default unless the schools pay for the third level. Codex wanted two and three levels priced separately first. The text leaves the size to the comparison.</li>
-          </ul>
-
-          <h4>Signatures</h4>
-          <ul class="resolution-signatures" aria-label="Signatures">
-            <li><span class="sig-name">Grok</span></li>
-            <li><span class="sig-name">Claude</span><span class="sig-id">claude-opus-5-5</span></li>
-            <li><span class="sig-name">Codex</span><span class="sig-id">gpt-6.1-sol</span></li>
-          </ul>
-          <p class="resolution-meta">No dissents recorded.</p>
-      </article>
-
-      <p class="panel-github"><a href="https://github.com/daverynties/egr-finance-data/tree/main/reviews/parking-deck/council" target="_blank" rel="noopener noreferrer">Read the round-by-round files on GitHub</a>.</p>
-    </section>
-
     <section class="view-panel sources-panel" id="sources" aria-labelledby="sources-title">
       <header class="full-header">
         <p class="section-kicker">Every source on this page</p>
         <h2 id="sources-title">Sources</h2>
-        <p class="lede">Numbered sources match the footnotes in the guide. Primary records lead; news and campaign material are used mainly to find claims to check. AI write-ups are listed separately and are secondary.</p>
-        <nav class="full-toc" aria-label="Source groups"><a href="#src-official">Official records</a><a href="#src-reference">Reference data</a><a href="#src-news">News</a><a href="#src-campaign">Campaigns</a><a href="#src-ai">AI notes (secondary)</a><a href="#src-panel">AI panel files</a></nav>
+        <p class="lede">Numbered sources match the footnotes in the guide. Primary records lead; news and campaign material are used mainly to find claims to check.</p>
+        <nav class="full-toc" aria-label="Source groups"><a href="#src-official">Official records</a><a href="#src-reference">Reference data</a><a href="#src-news">News</a><a href="#src-campaign">Campaigns</a></nav>
       </header>
       <section class="source-group" id="src-official" aria-labelledby="src-official-h">
         <h3 id="src-official-h">Official city, school and government records</h3>
@@ -1053,31 +916,12 @@
           <li id="s10" value="10"><div><b>WalkSafeEGR</b><span class="src-meta">2026 (viewed Oct. 2026) · Opposition campaign</span>Opposition claims, used only to find claims to check. <a href="https://walksafeegr.org" target="_blank" rel="noopener noreferrer">Open campaign site</a>. <a class="source-back" href="#fact-check" aria-label="Back to cited section">↩</a></div></li>
         </ol>
       </section>
-      <section class="source-group" id="src-ai" aria-labelledby="src-ai-h">
-        <h3 id="src-ai-h">AI summaries and research notes <span class="secondary-tag">Secondary</span></h3>
-        <p class="tldr-note">These are AI write-ups about the record, not the record itself. Nothing in the quick guide or full analysis relies on them as a source of fact.</p>
-        <ul class="sources sources-plain">
-          <li id="ai1"><div><b>Fact-check of this page (207 claims)</b><span class="src-meta">Oct. 8, 2026 · Codex (gpt-6.1-sol), AI-generated</span>Secondary. Checked the page’s claims against the record; used to find and fix errors. <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/codex-factcheck-2026-10-08.md" target="_blank" rel="noopener noreferrer">Open on GitHub</a>.</div></li>
-          <li id="ai2"><div><b>Page anomaly audit and spot-check notes</b><span class="src-meta">Oct. 8, 2026 · Codex and Grok, AI-generated</span>Secondary. Flagged math, link and wording problems; used to find and fix errors. <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/codex-anomalies-2026-10-08.md" target="_blank" rel="noopener noreferrer">Audit</a>, <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/anomalies-verification-notes.md" target="_blank" rel="noopener noreferrer">spot-check</a>.</div></li>
-          <li id="ai3"><div><b>Independent assessment write-ups</b><span class="src-meta">Oct. 8, 2026 · Codex and Grok, AI-generated</span>Secondary. Basis for the Codex and Grok cards in the “AI Review Panel” tab. <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-codex-gpt-6.1-sol.md" target="_blank" rel="noopener noreferrer">Codex</a>, <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-grok-bot.md" target="_blank" rel="noopener noreferrer">Grok</a>, <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/vote-comparison.md" target="_blank" rel="noopener noreferrer">comparison</a>.</div></li>
-          <li id="ai4"><div><b>Claude assessment of the record</b><span class="src-meta">Oct. 2026 · Claude (claude-opus-5-5), AI-generated</span>Secondary. Basis for the Claude card. <span class="no-copy">No public copy available</span>.</div></li>
-          <li id="ai5"><div><b>Research summary (dossier) for this guide</b><span class="src-meta">Oct. 2026 · Prepared with AI assistance for this guide</span>Secondary. Collected news and record excerpts; any fact used on the page is cited to its original source above. <span class="no-copy">No public copy available</span>.</div></li>
-        </ul>
-      </section>
-      <section class="source-group" id="src-panel" aria-labelledby="src-panel-h">
-        <h3 id="src-panel-h">AI review panel files <span class="secondary-tag">Secondary</span></h3>
-        <ul class="sources sources-plain">
-          <li id="panel1"><div><b>Joint Recommendation of the AI Review Panel</b><span class="src-meta">Oct. 8–9, 2026 · Grok, Claude (claude-opus-5-5), Codex (gpt-6.1-sol)</span>The signed joint text, shown in full in the “AI Review Panel” tab. <a href="https://github.com/daverynties/egr-finance-data/blob/main/reviews/parking-deck/council/joint-recommendation.md" target="_blank" rel="noopener noreferrer">Open on GitHub</a>.</div></li>
-          <li id="panel2"><div><b>Round-by-round panel files</b><span class="src-meta">Oct. 8–9, 2026 · Grok, Claude, Codex</span>Round 1 memos, Round 2 responses, the joint draft, sign-offs and prompts. <a href="https://github.com/daverynties/egr-finance-data/tree/main/reviews/parking-deck/council" target="_blank" rel="noopener noreferrer">Open folder on GitHub</a>.</div></li>
-        </ul>
-      </section>
       <div class="method"><b>Method.</b> Numbers are attributed to the closest available primary record. Campaign pages and community discussion are used to frame claims, not establish facts. “Inferred” marks arithmetic calculated from cited values rather than a figure stated verbatim in a source. Unreleased agreements, surveys, estimates and datasets are treated as missing—not assumed.</div>
     </section>
 
     <footer>
       <p>Built by an East Grand Rapids resident. Self-funded. Not affiliated with the City of East Grand Rapids, EGR Public Schools, or any campaign.</p>
       <p>Figures marked “inferred” are this guide’s calculations from cited sources, with assumptions stated alongside; they are not stated in any source. Last reviewed October 15, 2026.</p>
-      <p class="footer-ai-note">The “AI Review Panel” tab contains AI model opinions and an AI exercise, not facts or advice. The rest of this guide reports sourced facts and labeled calculations.</p>
     </footer>
   </main>
 
