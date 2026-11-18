@@ -89,6 +89,22 @@
     .notes-list li { margin-bottom: 10px; }
     .notes-list strong { color: var(--ink); }
     .back { display: inline-block; margin-bottom: 14px; font-weight: 600; }
+    .sc-controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 12px; }
+    .sc-controls select { padding: 9px 11px; border: 1px solid var(--line); border-radius: var(--radius-s); background: var(--surface); color: var(--ink); }
+    .sc-wrap { border: 1px solid var(--line); background: var(--surface); padding: 12px; }
+    #scatter { display: block; width: 100%; height: auto; }
+    #scatter .ax { stroke: var(--line); }
+    #scatter text { fill: var(--muted); font: 500 11px "IBM Plex Mono", monospace; }
+    #scatter circle.pt { stroke: var(--surface); stroke-width: .6; cursor: pointer; opacity: .85; }
+    #scatter circle.pt:hover { opacity: 1; stroke: var(--ink); }
+    #scatter circle.selpt { fill: none; stroke: var(--ink); stroke-width: 2.5; }
+    #scatter text.sellbl { fill: var(--ink); font: 700 12px "Source Sans 3", sans-serif; }
+    #scatter line.med { stroke: var(--muted); stroke-dasharray: 4 4; }
+    .sc-legend { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 10px; font-size: .86rem; color: var(--muted); }
+    .enr-bars { display: flex; align-items: flex-end; gap: 6px; height: 54px; margin: 10px 0 6px; }
+    .enr-bars i { flex: 1; background: var(--sky); min-height: 2px; }
+    .enr-years { display: flex; gap: 6px; font: 500 .68rem/1 "IBM Plex Mono", monospace; color: var(--muted); }
+    .enr-years span { flex: 1; text-align: center; }
     @media (max-width: 900px) {
       .cards { grid-template-columns: 1fr 1fr; }
       .grid2 { grid-template-columns: 1fr; }
@@ -118,7 +134,7 @@
       <span class="nav-title">East Grand Rapids City Spending</span>
     </a>
     <div class="nav-links" id="navLinks">
-      <a href="#district">District</a><a href="#all">All districts</a><a href="#notes">Notes &amp; sources</a><a href="/">EGR city &amp; schools</a>
+      <a href="#district">District</a><a href="#outcomes">Spending &amp; outcomes</a><a href="#all">All districts</a><a href="#notes">Notes &amp; sources</a><a href="/">EGR city &amp; schools</a>
     </div>
     <span class="freshness">Data: 2024–25 school year</span>
     <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
@@ -131,7 +147,7 @@
   <section class="hero wrap" id="top">
     <span class="eyebrow">Michigan school finance · 2024–25</span>
     <h1>Every Michigan school district, by the numbers.</h1>
-    <p class="hero-copy">Revenue, spending per student, savings and building-level spending for all <span id="nDist">821</span> Michigan public school districts and charter schools, from the state's own financial reports. Pick any district to see how it compares with its neighbors and the state. East Grand Rapids Public Schools is shown first.</p>
+    <p class="hero-copy">Revenue, spending per student, savings, building-level spending, graduation rates and student poverty levels for all <span id="nDist">821</span> Michigan public school districts and charter schools, from the state's own financial reports. Pick any district to see how it compares with its neighbors and the state. East Grand Rapids Public Schools is shown first.</p>
     <div class="stat-row" id="stateStats" aria-live="polite"></div>
     <span class="src">Sources: Michigan Department of Education, <a href="https://www.michigan.gov/mde/services/financial-management/state-aid/publications/bulletin-1014-michigan-public-schools-ranked-by-select-financial-information" target="_blank" rel="noopener">Bulletin 1014</a> and <a href="https://mdoe.state.mi.us/SAMSPublic/Reports/others/25_Bulletin1011Export.xlsx">Bulletin 1011</a> (2024–25); CEPI / MI School Data <a href="https://www.mischooldata.org/school-level-expenditure-report/" target="_blank" rel="noopener">School-Level Expenditure</a> file (2024–25). Details in <a href="#notes">Notes &amp; sources</a>.</span>
   </section>
@@ -145,10 +161,27 @@
     <div id="detail" aria-live="polite"><p class="lede">Loading district data…</p></div>
   </section>
 
+  <section class="section wrap" id="outcomes">
+    <div class="section-head">
+      <h2>Spending and graduation rates.</h2>
+      <p class="lede">Each dot is a district: General Fund spending per pupil (2024–25) against its four-year graduation rate (class of 2025). Color shows the share of students who are economically disadvantaged. Click a dot to open that district.</p>
+    </div>
+    <div class="sc-controls">
+      <label for="scBand"><strong>Show</strong></label>
+      <select id="scBand"><option value="">All districts</option><option value="sim">Similar poverty level to selected district (±10 points)</option><option value="0">Under 25% economically disadvantaged</option><option value="1">25–50%</option><option value="2">50–75%</option><option value="3">75% or more</option></select>
+      <select id="scType" aria-label="District type"><option value="">Traditional and charter</option><option>Traditional</option><option>Charter (PSA)</option></select>
+    </div>
+    <div class="sc-wrap"><svg id="scatter" viewBox="0 0 900 520" role="img" aria-label="Scatter chart of spending per pupil versus graduation rate"></svg>
+      <div class="sc-legend" id="scLegend"></div></div>
+    <p class="count" id="scCount" style="margin-top:10px"></p>
+    <div class="note"><strong>Read with care.</strong> This chart shows how two numbers line up; it does not show that spending causes graduation rates to rise or fall. Family income is strongly linked to test scores and graduation rates, which is why poverty level is shown, and districts with more students in poverty often receive more state and federal money per pupil for extra services. Districts without a graduation cohort (for example, no high school) or with fewer than 20 students in the cohort are left off; many of the lowest rates are at online, credit-recovery and alternative-education charter schools, and choosing “Traditional” removes most of them. Dashed lines are state medians.</div>
+    <span class="src">Sources: MDE Bulletin 1014 (2024–25); CEPI <a href="https://www.mischooldata.org/graddropout-rates-data-files/" target="_blank" rel="noopener">2025 Graduation and Dropout Report</a>; CEPI <a href="https://www.mischooldata.org/econdis-counts-data-files/" target="_blank" rel="noopener">Fall 2024 Economically Disadvantaged counts</a>.</span>
+  </section>
+
   <section class="section wrap" id="all">
     <div class="section-head">
       <h2>All districts.</h2>
-      <p class="lede">Search, filter and sort every district. Click a column heading to sort; click a name to open that district above. Figures are General Fund, per pupil, 2024–25.</p>
+      <p class="lede">Search, filter and sort every district. Click a column heading to sort; click a name to open that district above. Money figures are General Fund, per pupil, 2024–25; graduation is the class of 2025; economically disadvantaged share is fall 2024.</p>
     </div>
     <div class="controls">
       <input id="q" type="search" placeholder="Search by name" aria-label="Search districts by name" />
@@ -167,6 +200,9 @@
           <th scope="col" data-k="locsh" class="hide-sm"><button type="button">Local share</button></th>
           <th scope="col" data-k="stsh" class="hide-sm"><button type="button">State share</button></th>
           <th scope="col" data-k="fbpct" class="hide-sm"><button type="button">Fund balance % of spending</button></th>
+          <th scope="col" data-k="ed" class="hide-sm"><button type="button">Econ. disadvantaged</button></th>
+          <th scope="col" data-k="grad"><button type="button">4-yr grad rate</button></th>
+          <th scope="col" data-k="enrch" class="hide-sm"><button type="button">Enrollment change 2021–25</button></th>
         </tr></thead>
         <tbody></tbody>
       </table>
@@ -185,7 +221,11 @@
       <li><strong>Fund balance</strong> is the ending General Fund balance from MDE <a href="https://mdoe.state.mi.us/SAMSPublic/Reports/others/25_Bulletin1011Export.xlsx">Bulletin 1011</a> (2024–25), shown as a share of that year's total General Fund expenditures and transfers out.</li>
       <li><strong>Building-level spending</strong> comes from CEPI's <a href="https://www.mischooldata.org/school-level-expenditure-report/" target="_blank" rel="noopener">School-Level Expenditure Report</a> (<a href="https://www.michigan.gov/cepi/-/media/Project/Websites/cepi/MISchoolData/2024-25/25-Port-74vSchool-Level-Expend-Download-File.csv">2024–25 download file</a>). It covers all funds except state-defined exclusions, so it is not directly comparable to the General Fund figures. "Districtwide" spending is not tied to a building and is split equally per pupil across all of a district's buildings.</li>
       <li><strong>District type.</strong> Charter schools (public school academies, PSAs) are identified by their state district code (codes ending 700–799 or 900–999). ISD names come from CEPI's <a href="https://www.mischooldata.org/financial-data-files/" target="_blank" rel="noopener">2024–25 Financial Information Database</a> revenue file.</li>
-      <li><strong>Medians and percentiles</strong> count each district once, regardless of size. "Higher than X%" means the share of the 821 districts with a lower value. Very small districts and online charter schools can have unusual per-pupil figures.</li>
+      <li><strong>Medians and percentiles</strong> count each district once, regardless of size. "Higher than X%" means the share of the 821 districts with a lower value; "lower than X%" means the share with a higher value. Very small districts and online charter schools can have unusual per-pupil figures.</li>
+      <li><strong>Graduation rate</strong> is the four-year cohort rate for the class of 2025 (students who first entered 9th grade in fall 2021, adjusted for transfers) from CEPI's <a href="https://www.mischooldata.org/graddropout-rates-data-files/" target="_blank" rel="noopener">2025 Graduation and Dropout Report</a> (<a href="https://www.michigan.gov/cepi/-/media/Project/Websites/cepi/MISchoolData/2024-25/2025-Graduation-and-Dropout-Report-with-Subgroups.xlsx">data file</a>). Districts without a high school have no rate. The statewide rate is 84.0%.</li>
+      <li><strong>Economically disadvantaged</strong> is the share of a district's K-12 students identified as eligible for free or reduced-price meals or otherwise economically disadvantaged, fall 2024, from CEPI's <a href="https://www.mischooldata.org/econdis-counts-data-files/" target="_blank" rel="noopener">Economically Disadvantaged counts</a> (<a href="https://www.michigan.gov/cepi/-/media/Project/Websites/cepi/MISchoolData/2024-25/Fall_2024_EcoDis_District.xlsx">data file</a>). <strong>Enrollment change</strong> uses the total K-12 count in the fall 2021 and fall 2025 versions of the same file.</li>
+      <li><strong>Correlation is not causation.</strong> Spending, poverty, district size and outcomes are all related. Higher-poverty districts often receive extra per-pupil funding for added needs, and family income is strongly linked to test scores and graduation. Compare districts with similar poverty levels before drawing conclusions.</li>
+      <li><strong>Test scores are not included yet.</strong> MI School Data delivers its district-level M-STEP, PSAT and SAT proficiency files by email request rather than as a public direct download, so they are not part of this version.</li>
       <li><strong>Missing:</strong> the 2024–25 bundle on MI School Data's Financial Data Files page contains revenue, balance-sheet and ESP files but not the detailed expenditure file, so spending by object (salaries, benefits, purchased services) is not shown yet. Building-level figures cover all buildings the state reports; some districts report few or none.</li>
     </ul>
     <p class="note"><strong>Independent resident project.</strong> Not affiliated with any school district, the State of Michigan, or any campaign. Spot an error? See <a href="/#feedback">feedback</a> on the main page.</p>
@@ -204,14 +244,17 @@
   const $=s=>document.querySelector(s);
   const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   const usd=v=>v==null?'—':'$'+Math.round(v).toLocaleString('en-US');
-  const big=v=>v==null?'—':(Math.abs(v)>=1e6?'$'+(v/1e6).toFixed(1)+'M':usd(v));
+  const big=v=>v==null?'—':(Math.abs(v)>=1e9?'$'+(v/1e9).toFixed(2)+'B':Math.abs(v)>=1e6?'$'+(v/1e6).toFixed(1)+'M':usd(v));
   const num=v=>v==null?'—':Math.round(v).toLocaleString('en-US');
   const pct=v=>v==null?'—':(v*100).toFixed(1)+'%';
+  const sgn=v=>v==null?'—':(v>0?'+':v<0?'−':'')+Math.abs(v*100).toFixed(1)+'%';
+  let SEL='41090';
   let D=[], S={}, byCode={}, B=null, sortK='fte', sortDir=-1, nbSortK='fte', nbSortDir=-1;
   function median(a){a=a.filter(v=>v!=null).sort((x,y)=>x-y);if(!a.length)return null;const m=a.length>>1;return a.length%2?a[m]:(a[m-1]+a[m])/2}
-  function pctile(k,v){if(v==null)return null;const a=D.filter(d=>d[k]!=null);return Math.round(100*a.filter(d=>d[k]<v).length/a.length)}
+  function pctile(k,v){if(v==null)return null;const a=D.filter(d=>d[k]!=null);return Math.floor(100*a.filter(d=>d[k]<v).length/a.length)}
+  function pctHi(k,v){const a=D.filter(d=>d[k]!=null);return Math.floor(100*a.filter(d=>d[k]>v).length/a.length)}
   function peers(d){const g=d.isd?D.filter(x=>x.isd===d.isd):D.filter(x=>x.county===d.county);return {label:d.isd||(d.county+' County'),list:g}}
-  function card(label,val,sub,k,v){const p=pctile(k,v);return `<div class="card"><span class="eyebrow">${label}</span><strong>${val}</strong><p>${sub}</p>${p==null?'':`<span class="pct">Higher than ${p}% of Michigan districts</span>`}</div>`}
+  function card(label,val,sub,k,v){const p=pctile(k,v);return `<div class="card"><span class="eyebrow">${label}</span><strong>${val}</strong><p>${sub}</p>${p==null?'':`<span class="pct">${p>=50?`Higher than ${p}%`:`Lower than ${pctHi(k,v)}%`} of Michigan districts</span>`}</div>`}
   function barRows(rows,max){return rows.map(r=>`<div class="bar-row${r.sub?' sub':''}"><span class="bar-name">${r.n}</span><div class="bar-track" aria-hidden="true"><i style="width:${Math.min(100,100*(r.v||0)/max)}%"></i>${r.m!=null?`<em style="left:${Math.min(100,100*r.m/max)}%"></em>`:''}</div><span class="bar-val">${usd(r.v)}${r.m!=null?`<small>state ${usd(r.m)}</small>`:''}</span></div>`).join('')}
   function render(code){
     const d=byCode[code]||byCode[FEATURED]; if(!d)return;
@@ -229,6 +272,13 @@
       card('Total General Fund revenue',big(d.rev),`${usd(d.rev)} in 2024–25. Spending: ${usd(d.exp)}.`,null,null)+
       card('Fund balance',pct(d.fbpct),`${usd(d.fb)} at year end, as a share of the year's spending. State median ${pct(M.fbpct)}.`,'fbpct',d.fbpct)+
     `</div><span class="src">Sources: MDE Bulletin 1014 and Bulletin 1011, 2024–25.</span>`);
+    const enr=d.enr||[], emax=Math.max(1,...enr.filter(v=>v!=null));
+    h.push(`<h3 style="margin:34px 0 12px">Students and outcomes</h3><div class="cards">`+
+      card('Economically disadvantaged',pct(d.ed),`Share of K-12 students, fall 2024. State median ${pct(M.ed)}; ${esc(pg.label)} median ${pct(pm('ed'))}. Statewide: ${pct(S.ed_statewide)}.`,'ed',d.ed)+
+      card('4-year graduation rate',pct(d.grad),d.grad==null?'No graduation cohort reported for this district (for example, no high school).':`Class of 2025, cohort of ${num(d.gcoh)}. State median ${pct(M.grad)}; ${esc(pg.label)} median ${pct(pm('grad'))}. Statewide: ${pct(S.grad_statewide)}.`,'grad',d.grad)+
+      `<div class="card"><span class="eyebrow">K-12 enrollment, fall</span><strong>${sgn(d.enrch)}</strong><p>${num(enr[0])} in ${S.enr_years[0]} to ${num(enr[enr.length-1])} in ${S.enr_years[S.enr_years.length-1]}. State median change ${sgn(M.enrch)}.</p><div class="enr-bars" aria-hidden="true">${enr.map(v=>`<i style="height:${v==null?0:100*v/emax}%"></i>`).join('')}</div><div class="enr-years" aria-hidden="true">${S.enr_years.map(y=>`<span>${String(y).slice(2)}</span>`).join('')}</div></div>`+
+      card('Pupils per teacher',num(d.ppt),`Average teacher salary ${usd(d.tsal)}. State medians: ${num(M.ppt)} pupils per teacher, ${usd(M.tsal)} salary.`,null,null)+
+    `</div><span class="src">Sources: CEPI Fall 2024 Economically Disadvantaged and Fall 2021–2025 K-12 counts; CEPI 2025 Graduation and Dropout Report (4-year); MDE Bulletin 1014. "Higher/lower than X%" compares with all 821 districts and is not a ranking of quality.</span>`);
     const mix=[['Local',d.locsh,d.locpp,'var(--navy)'],['State',d.stsh,d.stpp,'var(--teal)'],['Federal',d.fedsh,d.fedpp,'var(--amber)']];
     h.push(`<div class="grid2"><div class="panel-box"><h3>Where the money comes from</h3><p>Share of General Fund revenue, 2024–25. State median local share: ${pct(M.locsh)}; state share: ${pct(M.stsh)}.</p>
       <div class="mix" role="img" aria-label="Local ${pct(d.locsh)}, state ${pct(d.stsh)}, federal ${pct(d.fedsh)}">${mix.map(m=>`<i style="width:${(m[1]||0)*100}%;background:${m[3]}"></i>`).join('')}</div>
@@ -240,11 +290,12 @@
       <span class="src">Source: MDE Bulletin 1014, 2024–25.</span></div></div>`);
     h.push(`<div class="panel-box" style="margin-top:28px"><h3>Spending by school building</h3><p>Per-pupil spending at each building, all funds less state exclusions. Site-level spending is assigned to the building; districtwide spending is split equally per pupil across buildings.</p><div id="bldg">Loading buildings…</div><span class="src">Source: CEPI / MI School Data School-Level Expenditure file, 2024–25.</span></div>`);
     h.push(`<div class="panel-box" style="margin-top:28px"><h3>Compared with ${esc(pg.label)} districts</h3><p>${nb.length} districts and charter schools in the same ${d.isd?'intermediate school district':'county'}. Click a heading to sort.</p><div class="tbl-wrap"><table class="t" id="nbTable"><thead><tr>
-      <th data-k="name"><button type="button">District</button></th><th data-k="fte"><button type="button">Students</button></th><th data-k="revpp"><button type="button">Revenue / pupil</button></th><th data-k="exppp"><button type="button">Spending / pupil</button></th><th data-k="locsh" class="hide-sm"><button type="button">Local share</button></th><th data-k="fbpct" class="hide-sm"><button type="button">Fund balance %</button></th></tr></thead><tbody></tbody></table></div><span class="src">Sources: MDE Bulletin 1014 and Bulletin 1011, 2024–25.</span></div>`);
+      <th data-k="name"><button type="button">District</button></th><th data-k="fte"><button type="button">Students</button></th><th data-k="revpp"><button type="button">Revenue / pupil</button></th><th data-k="exppp"><button type="button">Spending / pupil</button></th><th data-k="locsh" class="hide-sm"><button type="button">Local share</button></th><th data-k="fbpct" class="hide-sm"><button type="button">Fund balance %</button></th><th data-k="ed" class="hide-sm"><button type="button">Econ. disadv.</button></th><th data-k="grad"><button type="button">Grad rate</button></th></tr></thead><tbody></tbody></table></div><span class="src">Sources: MDE Bulletin 1014 and Bulletin 1011, 2024–25; CEPI Fall 2024 Economically Disadvantaged counts; CEPI 2025 Graduation and Dropout Report.</span></div>`);
     $('#detail').innerHTML=h.join('');
     renderNb(d,nb,pg.label);
     $('#nbTable thead').addEventListener('click',e=>{const th=e.target.closest('th');if(!th)return;const k=th.dataset.k;if(nbSortK===k)nbSortDir*=-1;else{nbSortK=k;nbSortDir=k==='name'?1:-1}renderNb(d,nb,pg.label)});
     loadBuildings().then(()=>renderBldg(d));
+    SEL=d.code; drawScatter();
     document.title=(d.code===FEATURED?'':d.name+' · ')+'Michigan School Finance Explorer, 2024–25';
   }
   function cmp(k,dir){return (a,b)=>{const x=a[k],y=b[k];if(x==null)return 1;if(y==null)return -1;return (typeof x==='string'?x.localeCompare(y):x-y)*dir}}
@@ -252,9 +303,9 @@
   function renderNb(d,nb,label){
     const tb=$('#nbTable tbody'), rows=nb.slice().sort(cmp(nbSortK,nbSortDir));
     const m=k=>median(nb.map(x=>x[k]));
-    tb.innerHTML=rows.map(x=>`<tr class="${x.code===d.code?'sel':''}"><td>${x.code===d.code?esc(x.name):`<a href="#d=${x.code}">${esc(x.name)}</a>`}${x.type!=='Traditional'?'<span class="sub-name">Charter (PSA)</span>':''}</td><td class="num">${num(x.fte)}</td><td class="num">${usd(x.revpp)}</td><td class="num">${usd(x.exppp)}</td><td class="num hide-sm">${pct(x.locsh)}</td><td class="num hide-sm">${pct(x.fbpct)}</td></tr>`).join('')+
-      `<tr class="medrow"><td>${esc(label)} median</td><td class="num">${num(m('fte'))}</td><td class="num">${usd(m('revpp'))}</td><td class="num">${usd(m('exppp'))}</td><td class="num hide-sm">${pct(m('locsh'))}</td><td class="num hide-sm">${pct(m('fbpct'))}</td></tr>`+
-      `<tr class="medrow"><td>Michigan median (all ${S.count})</td><td class="num">${num(S.median.fte)}</td><td class="num">${usd(S.median.revpp)}</td><td class="num">${usd(S.median.exppp)}</td><td class="num hide-sm">${pct(S.median.locsh)}</td><td class="num hide-sm">${pct(S.median.fbpct)}</td></tr>`;
+    tb.innerHTML=rows.map(x=>`<tr class="${x.code===d.code?'sel':''}"><td>${x.code===d.code?esc(x.name):`<a href="#d=${x.code}">${esc(x.name)}</a>`}${x.type!=='Traditional'?'<span class="sub-name">Charter (PSA)</span>':''}</td><td class="num">${num(x.fte)}</td><td class="num">${usd(x.revpp)}</td><td class="num">${usd(x.exppp)}</td><td class="num hide-sm">${pct(x.locsh)}</td><td class="num hide-sm">${pct(x.fbpct)}</td><td class="num hide-sm">${pct(x.ed)}</td><td class="num">${pct(x.grad)}</td></tr>`).join('')+
+      `<tr class="medrow"><td>${esc(label)} median</td><td class="num">${num(m('fte'))}</td><td class="num">${usd(m('revpp'))}</td><td class="num">${usd(m('exppp'))}</td><td class="num hide-sm">${pct(m('locsh'))}</td><td class="num hide-sm">${pct(m('fbpct'))}</td><td class="num hide-sm">${pct(m('ed'))}</td><td class="num">${pct(m('grad'))}</td></tr>`+
+      `<tr class="medrow"><td>Michigan median (all ${S.count})</td><td class="num">${num(S.median.fte)}</td><td class="num">${usd(S.median.revpp)}</td><td class="num">${usd(S.median.exppp)}</td><td class="num hide-sm">${pct(S.median.locsh)}</td><td class="num hide-sm">${pct(S.median.fbpct)}</td><td class="num hide-sm">${pct(S.median.ed)}</td><td class="num">${pct(S.median.grad)}</td></tr>`;
     setSortHeads($('#nbTable'),nbSortK,nbSortDir);
   }
   let bP=null; function loadBuildings(){return bP||(bP=fetch('data/buildings.json').then(r=>r.json()).then(j=>{B=j}))}
@@ -264,11 +315,39 @@
     const rows=list.slice().sort((a,b)=>(b.total||0)-(a.total||0));
     el.innerHTML=`<div class="tbl-wrap"><table class="t"><thead><tr><th>Building</th><th>Students</th><th class="hide-sm">Site-level</th><th class="hide-sm">Districtwide</th><th>Total per pupil</th></tr></thead><tbody>${rows.map(b=>`<tr><td>${esc(b.name)}</td><td class="num">${num(b.fte)}</td><td class="num hide-sm">${usd(b.site)}</td><td class="num hide-sm">${usd(b.dw)}</td><td class="num">${usd(b.total)}</td></tr>`).join('')}<tr class="medrow"><td>Michigan median building (${S.building_count.toLocaleString('en-US')} buildings)</td><td></td><td class="hide-sm"></td><td class="hide-sm"></td><td class="num">${usd(S.median_building_ppe)}</td></tr></tbody></table></div>`;
   }
+  const BANDS=[{n:'Under 25%',c:'#3f83a8'},{n:'25–50%',c:'#086e66'},{n:'50–75%',c:'#c4892a'},{n:'75% or more',c:'#a3423a'}];
+  const band=v=>v==null?null:v<.25?0:v<.5?1:v<.75?2:3;
+  function drawScatter(){
+    const svg=$('#scatter'); if(!svg||!D.length)return;
+    const sel=byCode[SEL], bv=$('#scBand').value, tv=$('#scType').value;
+    let pts=D.filter(d=>d.grad!=null&&d.gcoh>=20&&d.exppp);
+    if(tv)pts=pts.filter(d=>d.type===tv);
+    if(bv==='sim'&&sel&&sel.ed!=null)pts=pts.filter(d=>Math.abs(d.ed-sel.ed)<=.10);
+    else if(bv!==''&&bv!=='sim')pts=pts.filter(d=>band(d.ed)===+bv);
+    const W=900,H=520,L=64,R=18,T=16,B=50;
+    const xs=D.filter(d=>d.grad!=null&&d.gcoh>=20).map(d=>d.exppp).sort((a,b)=>a-b);
+    const x0=Math.floor(xs[Math.floor(xs.length*.01)]/2000)*2000, x1=Math.ceil(xs[Math.floor(xs.length*.98)]/2000)*2000;
+    const y0=.3,y1=1;
+    const X=v=>L+(Math.min(Math.max(v,x0),x1)-x0)/(x1-x0)*(W-L-R), Y=v=>T+(y1-Math.max(v,y0))/(y1-y0)*(H-T-B);
+    let g='';
+    for(let v=x0;v<=x1;v+=2000)g+=`<line class="ax" x1="${X(v)}" x2="${X(v)}" y1="${T}" y2="${H-B}"/><text x="${X(v)}" y="${H-B+18}" text-anchor="middle">$${v/1000}K</text>`;
+    for(let v=.3;v<=1.0001;v+=.1)g+=`<line class="ax" x1="${L}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}"/><text x="${L-8}" y="${Y(v)+4}" text-anchor="end">${Math.round(v*100)}%</text>`;
+    g+=`<text x="${(L+W-R)/2}" y="${H-8}" text-anchor="middle">General Fund spending per pupil, 2024–25 (values outside $${x0/1000}K–$${x1/1000}K shown at the edges)</text>`;
+    g+=`<text transform="translate(14 ${(T+H-B)/2}) rotate(-90)" text-anchor="middle">4-year graduation rate, class of 2025 (below 30% shown at the bottom)</text>`;
+    g+=`<line class="med" x1="${X(S.median.exppp)}" x2="${X(S.median.exppp)}" y1="${T}" y2="${H-B}"/><line class="med" x1="${L}" x2="${W-R}" y1="${Y(S.median.grad)}" y2="${Y(S.median.grad)}"/>`;
+    g+=pts.filter(d=>d.code!==SEL).map(d=>{const b=band(d.ed);return `<circle class="pt" data-c="${d.code}" cx="${X(d.exppp).toFixed(1)}" cy="${Y(d.grad).toFixed(1)}" r="${Math.min(9,3+Math.sqrt(d.fte)/18).toFixed(1)}" fill="${b==null?'#888':BANDS[b].c}"><title>${esc(d.name)}: ${usd(d.exppp)} per pupil, ${pct(d.grad)} graduation, ${pct(d.ed)} economically disadvantaged</title></circle>`}).join('');
+    if(sel&&sel.grad!=null&&sel.gcoh>=20){const cx=X(sel.exppp),cy=Y(sel.grad),b=band(sel.ed);
+      g+=`<circle class="pt" cx="${cx}" cy="${cy}" r="7" fill="${b==null?'#888':BANDS[b].c}"><title>${esc(sel.name)}</title></circle><circle class="selpt" cx="${cx}" cy="${cy}" r="12"/><text class="sellbl" x="${cx+(cx>W-260?-16:16)}" y="${cy-14}" text-anchor="${cx>W-260?'end':'start'}">${esc(sel.name)}</text>`}
+    svg.innerHTML=g;
+    $('#scLegend').innerHTML='<span><strong>Economically disadvantaged students:</strong></span>'+BANDS.map(b=>`<span><span class="sw" style="background:${b.c}"></span>${b.n}</span>`).join('')+'<span>Dot size reflects enrollment.</span>';
+    const noGrad=sel&&(sel.grad==null||sel.gcoh<20);
+    $('#scCount').textContent=`Showing ${pts.length} districts.`+(noGrad?` ${sel.name} is not shown because it has no graduation cohort of 20 or more.`:'');
+  }
   function renderAll(){
     const q=$('#q').value.trim().toLowerCase(), c=$('#fCounty').value, t=$('#fType').value;
     const rows=D.filter(d=>(!q||d.name.toLowerCase().includes(q))&&(!c||d.county===c)&&(!t||d.type===t)).sort(cmp(sortK,sortDir));
     $('#allCount').textContent=`Showing ${rows.length} of ${D.length} districts.`;
-    $('#allTable tbody').innerHTML=rows.map(d=>`<tr class="${d.code===FEATURED?'sel':''}"><td><a href="#d=${d.code}">${esc(d.name)}</a><span class="sub-name">${esc(d.county)} County${d.type!=='Traditional'?' · Charter (PSA)':''}</span></td><td class="num">${num(d.fte)}</td><td class="num hide-sm">${big(d.rev)}</td><td class="num">${usd(d.revpp)}</td><td class="num">${usd(d.exppp)}</td><td class="num hide-sm">${pct(d.locsh)}</td><td class="num hide-sm">${pct(d.stsh)}</td><td class="num hide-sm">${pct(d.fbpct)}</td></tr>`).join('');
+    $('#allTable tbody').innerHTML=rows.map(d=>`<tr class="${d.code===FEATURED?'sel':''}"><td><a href="#d=${d.code}">${esc(d.name)}</a><span class="sub-name">${esc(d.county)} County${d.type!=='Traditional'?' · Charter (PSA)':''}</span></td><td class="num">${num(d.fte)}</td><td class="num hide-sm">${big(d.rev)}</td><td class="num">${usd(d.revpp)}</td><td class="num">${usd(d.exppp)}</td><td class="num hide-sm">${pct(d.locsh)}</td><td class="num hide-sm">${pct(d.stsh)}</td><td class="num hide-sm">${pct(d.fbpct)}</td><td class="num hide-sm">${pct(d.ed)}</td><td class="num">${pct(d.grad)}</td><td class="num hide-sm">${sgn(d.enrch)}</td></tr>`).join('');
     setSortHeads($('#allTable'),sortK,sortDir);
   }
   function route(){const m=location.hash.match(/^#d=(\d{5})$/);if(m){render(m[1]);$('#district').scrollIntoView({behavior:'smooth'});}}
@@ -285,6 +364,8 @@
   window.addEventListener('hashchange',route);
   $('#pick').addEventListener('change',e=>{const v=e.target.value.trim().toLowerCase();const d=D.find(x=>x.name.toLowerCase()===v)||D.find(x=>x.name.toLowerCase().includes(v));if(d){location.hash='d='+d.code;e.target.value=''}});
   ['#q','#fCounty','#fType'].forEach(s=>$(s).addEventListener('input',renderAll));
+  ['#scBand','#scType'].forEach(s=>$(s).addEventListener('input',drawScatter));
+  $('#scatter').addEventListener('click',e=>{const c=e.target.closest('circle[data-c]');if(c)location.hash='d='+c.dataset.c});
   $('#allTable thead').addEventListener('click',e=>{const th=e.target.closest('th');if(!th)return;const k=th.dataset.k;if(sortK===k)sortDir*=-1;else{sortK=k;sortDir=k==='name'?1:-1}renderAll()});
 })();
 </script>
